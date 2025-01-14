@@ -94,4 +94,4 @@ jobs:
             -p cafe24api-client cafe24-webhook cafe24-get-auth-code
       - run: pnpm nx run-many -t publish --all
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
