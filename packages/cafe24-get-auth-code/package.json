@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-get-auth-code",
   "bin": {
-    "cafe24-get-auth-code": "workspace:^"
+    "cafe24-get-auth-code": "./bin/index.mjs"
   },
   "files": [
     "dist",

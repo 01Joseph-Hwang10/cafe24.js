@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { readFileSync, writeFileSync } = require('fs');
-const { isAbsolute, join } = require('path');
+const { readFileSync, writeFileSync } = require("fs");
+const { isAbsolute, join } = require("path");
 
 /**
  * @description
@@ -12,7 +12,7 @@ const { isAbsolute, join } = require('path');
  */
 function walkJson(path, reviver) {
   const fullPath = getFullPath(path);
-  const evaluated = JSON.parse(readFileSync(fullPath, 'utf-8'), reviver);
+  const evaluated = JSON.parse(readFileSync(fullPath, "utf-8"), reviver);
   writeFileSync(fullPath, JSON.stringify(evaluated, null, 2));
 }
 

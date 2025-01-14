@@ -22,8 +22,9 @@ const targets = [
 
 targets.forEach(target => {
   const packageJsonPath = join(target, "package.json");
+  const [, packageName] = target.split("/");
   walkJson(packageJsonPath, (key, value) => {
-    if (internalPackages.includes(key)) {
+    if (internalPackages.includes(key) && key !== packageName) {
       return "workspace:^";
     }
     return value;
