@@ -12,3 +12,9 @@ variable "npm_token" {
   description = "NPM token for publishing packages"
   sensitive   = true
 }
+
+variable "github_pat" {
+  type        = string
+  description = "GitHub Personal Access Token to create releases"
+  sensitive   = true
+}

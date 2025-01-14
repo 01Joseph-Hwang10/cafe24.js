@@ -29,3 +29,9 @@ resource "github_actions_secret" "npm_token" {
   secret_name     = "NPM_TOKEN"
   plaintext_value = var.npm_token
 }
+
+resource "github_actions_secret" "gh_pat" {
+  repository      = github_repository.cafe24js.name
+  secret_name     = "GH_PAT"
+  plaintext_value = var.github_pat
+}
