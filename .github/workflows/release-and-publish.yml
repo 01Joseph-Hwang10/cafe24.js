@@ -1,0 +1,95 @@
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-and-publish
+
+env:
+  # Package root directories go here
+  PACKAGES: |
+    [
+      "packages/cafe24api-client",
+      "packages/cafe24-webhook",
+      "packages/cafe24-types",
+      "packages/cafe24-get-auth-code"
+    ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    outputs:
+      releases_created: ${{ steps.release.outputs.releases_created }}
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GH_PAT }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+  prerelease:
+    needs: release
+    # if: ${{ needs.release.outputs.releases_created != 'true' }}
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup-node
+      - run: pnpm add --global semver
+      - uses: ./.github/actions/bump-prerelease
+        with:
+          packages: ${{ env.PACKAGES }}
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: bump prerelease version"
+
+  publish:
+    needs: [release, prerelease]
+    if: |
+      always() &&
+      needs.release.result == 'success' &&
+      (needs.prerelease.result == 'success' || needs.prerelease.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      # Setup
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: ./.github/actions/setup-node
+
+      # Rollback to workspace protocol that release-please changed
+      #
+      # NOTE: Recently, there was a proposed PR in `release-please` which
+      #       fixes this issue we are temporarily working around here.
+      #       Keep an eye on the PR linked below and remove this step
+      #       once the PR is merged and released.
+      #
+      #       https://github.com/googleapis/release-please/pull/2281
+      - run: node ./tools/use-workspace-protocol
+        if: ${{ needs.release.outputs.releases_created == 'true' }}
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rollback to workspace protocol"
+        if: ${{ needs.release.outputs.releases_created == 'true' }}
+
+      # Build and publish packages
+      - run: pnpm install --frozen-lockfile
+      - run: |
+          # As there's a dependency between the packages, we need to run publish
+          # on the packages in order.
+
+          pnpm nx run-many \
+            -t build \
+            -p internal cafe24-types
+
+          pnpm nx run-many \
+            -t build \
+            -p cafe24api-client cafe24-webhook cafe24-get-auth-code
+      - run: pnpm nx run-many -t publish --all

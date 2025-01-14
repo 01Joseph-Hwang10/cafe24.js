@@ -1,0 +1,20 @@
+{
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
+  "draft": false,
+  "prerelease": false,
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "updatePeerDependencies": true
+    }
+  ],
+  "release-type": "node",
+  "packages": {
+    "packages/cafe24api-client": {},
+    "packages/cafe24-webhook": {},
+    "packages/cafe24-types": {},
+    "packages/cafe24-get-auth-code": {}
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

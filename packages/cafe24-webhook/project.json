@@ -1,0 +1,37 @@
+{
+  "name": "cafe24-webhook",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/cafe24-webhook/src",
+  "projectType": "library",
+  "targets": {
+    "clear": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm run clear",
+        "cwd": "packages/cafe24-webhook"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "options": {
+        "command": "pnpm run build",
+        "cwd": "packages/cafe24-webhook"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm publish --no-git-checks || echo 'Already published: cafe24-webhook'",
+        "cwd": "packages/cafe24-webhook"
+      }
+    }
+  },
+  "tags": []
+}

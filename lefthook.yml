@@ -1,0 +1,5 @@
+# Use this to validate commit messages
+commit-msg:
+  commands:
+    lint-commit-message:
+      run: pnpm commitlint --edit {1}

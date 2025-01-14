@@ -1,0 +1,30 @@
+{
+  "name": "internal",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/internal/src",
+  "projectType": "library",
+  "targets": {
+    "clear": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm run clear",
+        "cwd": "packages/internal"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "options": {
+        "command": "pnpm run build",
+        "cwd": "packages/internal"
+      },
+      "configurations": {
+        "production": {}
+      }
+    }
+  },
+  "tags": []
+}

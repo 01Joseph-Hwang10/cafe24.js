@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.tsbuildinfo
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment Variables
+#
+# In this project, we follow vite's convention of using .env files.
+#
+# Vite divides environment variables 
+# to those that should be bundled into the client-side code 
+# (matching the pattern .env or .env.[mode])
+# and those that should be kept secret
+# (matching the pattern .env.local or .env.[mode].local).
+# 
+# See the link below to learn more about Vite's environment variables.
+#
+# https://vitejs.dev/guide/env-and-mode
+.env.local
+.env.*.local
+
+# NX
+.nx

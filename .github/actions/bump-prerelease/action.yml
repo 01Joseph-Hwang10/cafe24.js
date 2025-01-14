@@ -1,0 +1,24 @@
+name: bump-prerelease
+
+inputs:
+  packages:
+    description: 'The packages to bump prerelease versions for'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - shell: bash
+      run: |
+        BUMP_PRERELEASE="$(realpath .github/actions/bump-prerelease/bump-prerelease.bash)"
+        PUBLISHABLE_PACKAGES="${{ join(fromJSON(inputs.packages), ' ') }}"
+
+        for package in $PUBLISHABLE_PACKAGES
+        do
+          if [ -n "$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} -- $package || echo)" ]; then
+            echo "Changes found in $package, bumping prerelease version..."
+            (cd $package && $BUMP_PRERELEASE)
+          else
+            echo "No changes found in $package, skipping..."
+          fi
+        done

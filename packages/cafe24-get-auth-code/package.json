@@ -1,0 +1,34 @@
+{
+  "name": "cafe24-get-auth-code",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-get-auth-code",
+  "bin": {
+    "cafe24-get-auth-code": "./bin/index.mjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rimraf dist *.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.lib.json",
+    "test": "vitest --config vitest.config.ts"
+  },
+  "peerDependencies": {
+    "puppeteer": "^24.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "short-unique-id": "^5.2.0",
+    "wait": "^0.4.2",
+    "zod": "^3.24.1",
+    "zx": "^8.3.0"
+  }
+}

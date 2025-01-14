@@ -1,0 +1,25 @@
+{
+  "name": "internal",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rimraf dist *.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.lib.json",
+    "build:watch": "tsc -p tsconfig.lib.json --watch"
+  },
+  "dependencies": {
+    "case": "^1.6.3",
+    "fp-ts": "^2.16.9",
+    "short-unique-id": "^5.2.0"
+  }
+}

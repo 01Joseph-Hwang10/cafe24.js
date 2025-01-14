@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.eslint.json",
+  "include": [
+    "bin/**/*.*js",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "rollup.config.mjs",
+    "src/**/*.*ts",
+    "scripts/**/*.*ts",
+    "scripts/**/*.*js",
+  ]
+}

@@ -1,0 +1,3002 @@
+{
+  "shop": {
+    "shops": {
+      "id": "shop/shops",
+      "reference": "https://developers.cafe24.com/docs/api/dcollection/#shops",
+      "endpoints": [
+        {
+          "name": "retrieve-a-list-of-stores",
+          "path": "/api/shops",
+          "method": "GET",
+          "scopes": [
+            "dcollection.read_shop"
+          ],
+          "rateLimit": 40,
+          "request": {
+            "name": "retrieve-a-list-of-stores-request",
+            "properties": [
+              {
+                "name": "dcollection_store_category",
+                "description": "@description\nD.Collection 상점 표준 카테고리\n\n검색 가능한 값 : 카테고리 번호\ndcollection_store_category ",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_name",
+                "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "store_id",
+                "description": "@description\n상점 아이디",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_no",
+                "description": "@description\n멀티쇼핑몰 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_currency_code",
+                "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_language",
+                "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_grade",
+                "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_popular_age",
+                "description": "@description\n상점 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_sex",
+                "description": "@description\n인기 성별\n\nF : 여성\nM : 남성",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_region",
+                "description": "@description\n인기 지역\n\n서울\n경기\n인천\n강원\n충북\n세종\n충남\n대전\n경북\n대구\n울산\n부산\n경남\n전북\n전남\n광주\n제주",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_tags",
+                "description": "@description\n상점 태그\n\n검색 가능한 값 : 상점 태그 코드\ndcollection_store_taglist \n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [10]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "use_cafe24pay",
+                "description": "@description\n상점의 카페24페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "use_naverpay",
+                "description": "@description\n상점의 네이버페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "use_EMS",
+                "description": "@description\n상점의 우체국EMS 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "social_logins",
+                "description": "@description\nSNS 로그인 연동 채널\n\nfacebook : 페이스북\nkakao : 카카오\nnaver : 네이버\nline : 라인\ngoogle : 구글\napple : 애플",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shipping_fee_type",
+                "description": "@description\n상점의 기본 배송비 유형\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과\nE : 자동 책정 배송비(EMS) 사용\nF : 착불",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "benefits",
+                "description": "@description\n상점에서 제공하는 고객 혜택 유형\n\nDP : 기간 할인\nDR : 재구매 할인\nDQ : 대량구매 할인\nDM : 회원 할인\nDN : 신규 상품 할인\nDV : 배송비 할인\nPG : 사은품\nPB : 1+N 이벤트",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "global_payment_type",
+                "description": "@description\n상점에서 지원하는 해외 결제 서비스\n\nAX : 엑시즈\nEX : 엑심베이\nPP : 페이팔\nCG : 위챗페이\nEY : ECPAY\nPW : 페이먼트월",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_start_date",
+                "description": "@description\n상점 생성일 검색 시작 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_end_date",
+                "description": "@description\n상점 생성일 검색 종료 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "limit",
+                "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "10"
+              },
+              {
+                "name": "offset",
+                "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "0"
+              },
+              {
+                "name": "sort",
+                "description": "@description\n정렬 순서 값\n\ncreated_date : 상점 생성일\nshop_name : 상점명",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "order",
+                "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              }
+            ]
+          },
+          "response": {
+            "name": "retrieve-a-list-of-stores-response",
+            "properties": [
+              {
+                "name": "shops",
+                "required": true,
+                "type": {
+                  "type": "array",
+                  "element": {
+                    "type": "object",
+                    "schema": {
+                      "name": "shops-laFrsZX6",
+                      "properties": [
+                        {
+                          "name": "dcollection_store_category",
+                          "required": true,
+                          "type": {
+                            "type": "object",
+                            "schema": {
+                              "name": "dcollection_store_category-umAS0X0e",
+                              "properties": [
+                                {
+                                  "name": "depth1",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "name": "depth2",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "store_id",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_no",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "shop_url",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_currency_code",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_language",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_grade",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_popular_age",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_sex",
+                          "required": true,
+                          "type": {
+                            "type": "enum"
+                          }
+                        },
+                        {
+                          "name": "shop_region",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "social_logins",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "any"
+                            }
+                          }
+                        },
+                        {
+                          "name": "use_cafe24pay",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "use_naverpay",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "use_EMS",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "shipping_fee_type",
+                          "required": true,
+                          "type": {
+                            "type": "enum"
+                          }
+                        },
+                        {
+                          "name": "benefits",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "any"
+                            }
+                          }
+                        },
+                        {
+                          "name": "global_payment_type",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "name": "created_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        },
+                        {
+                          "name": "updated_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "example": "{\n    \"shops\": [\n        {\n            \"dcollection_store_category\": {\n                \"depth1\": \"D111111\",\n                \"depth2\": \"D111111\"\n            },\n            \"store_id\": \"examplepublic\",\n            \"shop_name\": \"example11\",\n            \"shop_no\": 4,\n            \"shop_url\": \"http://example11.com\",\n            \"shop_currency_code\": \"USD\",\n            \"shop_language\": \"zh_CN\",\n            \"shop_grade\": \"orange\",\n            \"shop_popular_age\": \"etc\",\n            \"shop_sex\": \"F\",\n            \"shop_region\": \"UNKNOWN\",\n            \"social_logins\": [],\n            \"use_cafe24pay\": false,\n            \"use_naverpay\": true,\n            \"use_EMS\": false,\n            \"shipping_fee_type\": \"M\",\n            \"benefits\": [],\n            \"global_payment_type\": [\n                \"EX\"\n            ],\n            \"created_date\": \"2022-09-05T15:36:09+09:00\",\n            \"updated_date\": \"2022-09-05T19:27:48+09:00\"\n        },\n        {\n            \"dcollection_store_category\": {\n                \"depth1\": \"D111111\",\n                \"depth2\": \"D111111\"\n            },\n            \"store_id\": \"examplepublic2\",\n            \"shop_name\": \"example22\",\n            \"shop_no\": \"2\",\n            \"shop_url\": \"http://examplepublic2.com\",\n            \"shop_currency_code\": \"USD\",\n            \"shop_language\": \"en_US\",\n            \"shop_grade\": \"orange\",\n            \"shop_popular_age\": \"etc\",\n            \"shop_sex\": \"F\",\n            \"shop_region\": \"UNKNOWN\",\n            \"social_logins\": [],\n            \"use_cafe24pay\": false,\n            \"use_naverpay\": true,\n            \"use_EMS\": false,\n            \"shipping_fee_type\": \"T\",\n            \"benefits\": [],\n            \"global_payment_type\": [\n                \"EX\"\n            ],\n            \"created_date\": \"2022-09-01T08:26:43+09:00\",\n            \"updated_date\": \"2022-09-02T19:27:48+09:00\"\n        }\n    ]\n}"
+          },
+          "reference": "https://developers.cafe24.com/docs/api/dcollection/#retrieve-a-list-of-stores"
+        }
+      ],
+      "schema": {
+        "name": "shops-properties",
+        "properties": [
+          {
+            "name": "dcollection_store_category",
+            "description": "@description\nD.Collection 상점 표준 카테고리",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "store_id",
+            "description": "@description\n상점 아이디",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_name",
+            "description": "@description\n상점명",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_no",
+            "description": "@description\n멀티쇼핑몰 번호",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_url",
+            "description": "@description\n상점 대표 도메인",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_currency_code",
+            "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_language",
+            "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_grade",
+            "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_popular_age",
+            "description": "@description\n상점 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_sex",
+            "description": "@description\n인기 성별\n\nF : 여성\nM : 남성",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_region",
+            "description": "@description\n인기 지역\n\n서울\n경기\n인천\n강원\n충북\n세종\n충남\n대전\n경북\n대구\n울산\n부산\n경남\n전북\n전남\n광주\n제주",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_tags",
+            "description": "@description\n상점 태그 코드",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "social_logins",
+            "description": "@description\nSNS 로그인 연동 채널\n\nfacebook : 페이스북\nkakao : 카카오\nnaver : 네이버\nline : 라인\ngoogle : 구글\napple : 애플",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "use_cafe24pay",
+            "description": "@description\n상점의 카페24페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "use_naverpay",
+            "description": "@description\n상점의 네이버페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "use_EMS",
+            "description": "@description\n상점의 우체국EMS 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shipping_fee_type",
+            "description": "@description\n상점의 기본 배송비 유형\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과\nE : 자동 책정 배송비(EMS) 사용\nF : 착불",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "benefits",
+            "description": "@description\n상점에서 제공하는 고객 혜택 유형\n\nDP : 기간 할인\nDR : 재구매 할인\nDQ : 대량구매 할인\nDM : 회원 할인\nDN : 신규 상품 할인\nDV : 배송비 할인\nPG : 사은품\nPB : 1+N 이벤트",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "global_payment_type",
+            "description": "@description\n상점에서 지원하는 해외 결제 서비스\n\nAX : 엑시즈\nEX : 엑심베이\nPP : 페이팔\nCG : 위챗페이\nEY : ECPAY\nPW : 페이먼트월",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "created_date",
+            "description": "@description\n상점 생성일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "updated_date",
+            "description": "@description\n상점 업데이트일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "product": {
+    "products": {
+      "id": "product/products",
+      "reference": "https://developers.cafe24.com/docs/api/dcollection/#products",
+      "endpoints": [
+        {
+          "name": "retrieve-a-list-of-products",
+          "path": "/api/products",
+          "method": "GET",
+          "scopes": [
+            "dcollection.read_product"
+          ],
+          "rateLimit": 40,
+          "request": {
+            "name": "retrieve-a-list-of-products-request",
+            "properties": [
+              {
+                "name": "dcollection_product_category",
+                "description": "@description\nD.Collection 상품 표준 카테고리\n\nMetaport 상품 표준 카테고리\n검색 가능한 값 : 중분류 또는 소분류 카테고리 번호\ndcollection_product_category \n중분류가 같은 소분류 카테고리에 한하여 소분류 카테고리는 (콤마)로 최대 10개까지 검색\n중분류 상품 카테고리와 소분류 상품 카테고리를 동시 요청 시 소분류 상품 카테고리만 검색",
+                "required": true,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_ukey",
+                "description": "@description\n상품의 고유키\n\n특정 상점의 상품을 구분하는 고유한 값\n검색 가능한 값\n구문 : \"${mall_id}_${shop_no}_${product_no}\"\n예시 : cafe24_1_1356\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_name",
+                "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "store_id",
+                "description": "@description\n상점 아이디\n\nproduct_ukey와 동시 사용 불가",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_no",
+                "description": "@description\n멀티쇼핑몰 번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_grade",
+                "description": "@description\n상점 인기도\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만\n\n@constraints\n배열 최대사이즈: [4]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_language",
+                "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_currency_code",
+                "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_name",
+                "description": "@description\n상품명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_no",
+                "description": "@description\n상품번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_status_type",
+                "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_min",
+                "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_max",
+                "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_pc_discount",
+                "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_mobile_discount",
+                "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_min",
+                "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_max",
+                "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_min",
+                "description": "@description\n모바일 할인 판매가 검색 최소 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_max",
+                "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_min",
+                "description": "@description\nPC 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_max",
+                "description": "@description\nPC 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_min",
+                "description": "@description\n모바일 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_max",
+                "description": "@description\n모바일 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_shipping",
+                "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_international_shipping",
+                "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "international_shipping_country",
+                "description": "@description\n상품이 배송될 수 있는 해외 국가",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_gift",
+                "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_coupon_discount",
+                "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_min",
+                "description": "@description\n상품 리뷰 수 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_max",
+                "description": "@description\n상품 리뷰 수 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_min",
+                "description": "@description\n상품 리뷰 평점 최소 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_max",
+                "description": "@description\n상품 리뷰 평점 최대 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "brand_name",
+                "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_standard_tags",
+                "description": "@description\nD.Collection에서 제공하는 상품 표준 태그\n\n상품 표준 태그 API를 조회하여 지원되는 태그 키와 값 확인 가능\nproduct_standard_tags 하위요소\nstandard_tag_key 태그 키\nstandard_tag_values 태그 값\n하나의 태그 키에 대한 태그 값은 ,(콤마)로 최대 10개까지 검색 가능\n\n,(콤마)로 여러 건을 검색할 수 있다.",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_popular_age",
+                "description": "@description\n상품 인기 연령대\n\n검색 가능한 값\n- teenager : 10대\n- twenties : 20대\n- thirties : 30대\n- forties : 40대\n- etc : 기타\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_start_date",
+                "description": "@description\n상품 생성일 검색 시작 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_end_date",
+                "description": "@description\n상품 생성일 검색 종료 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_start_date",
+                "description": "@description\n상품 업데이트일 검색 시작 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_end_date",
+                "description": "@description\n상품 업데이트일 검색 종료 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "limit",
+                "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "10"
+              },
+              {
+                "name": "offset",
+                "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "0"
+              },
+              {
+                "name": "sort",
+                "description": "@description\n정렬 순서 값\n\nmobile_discount_price : 모바일 할인 판매가\npc_discount_price : PC 할인 판매가\nmobile_discount_rate : 모바일 할인율\npc_discount_rate : PC 할인율\nprice : 상품 판매가\ncreated_date : 상품 생성일\nproduct_name : 상품명\nreview_count : 상품 리뷰 수\nreview_score : 상품 리뷰 평점\nhits_count : 페이지뷰수\npopularity_score : 인기지수",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "order",
+                "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              }
+            ]
+          },
+          "response": {
+            "name": "retrieve-a-list-of-products-response",
+            "properties": [
+              {
+                "name": "products",
+                "required": true,
+                "type": {
+                  "type": "array",
+                  "element": {
+                    "type": "object",
+                    "schema": {
+                      "name": "products-nNm6xZYi",
+                      "properties": [
+                        {
+                          "name": "dcollection_product_category",
+                          "required": true,
+                          "type": {
+                            "type": "object",
+                            "schema": {
+                              "name": "dcollection_product_category-XPOpIACy",
+                              "properties": [
+                                {
+                                  "name": "depth1",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "name": "depth2",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "name": "depth3",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "product_ukey",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "store_id",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_no",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "shop_grade",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_language",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_currency_code",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_no",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "product_code",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_url",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_status_type",
+                          "required": true,
+                          "type": {
+                            "type": "enum"
+                          }
+                        },
+                        {
+                          "name": "price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "pc_discount_price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "mobile_discount_price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "is_pc_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_mobile_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "pc_discount_rate",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "mobile_discount_rate",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "is_free_shipping",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_international_shipping",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "international_shipping_country",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "name": "is_free_gift",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_coupon_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "product_options",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "any"
+                            }
+                          }
+                        },
+                        {
+                          "name": "brand_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_standard_tags",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "object",
+                              "schema": {
+                                "name": "product_standard_tags-RYNXvDn0",
+                                "properties": [
+                                  {
+                                    "name": "standard_tags_key",
+                                    "required": true,
+                                    "type": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  {
+                                    "name": "standard_tags_values",
+                                    "required": true,
+                                    "type": {
+                                      "type": "string"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "name": "product_popular_age",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "detail_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "list_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "tiny_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "small_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "review_count",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "review_score",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "hits_count",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "expiration_date",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "created_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        },
+                        {
+                          "name": "updated_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "example": "{\n    \"products\": [\n        {\n            \"dcollection_product_category\": {\n                \"depth1\": \"C111111\",\n                \"depth2\": \"C111112\",\n                \"depth3\": \"C111113\"\n            },\n            \"product_ukey\": \"example_123_easd\",\n            \"shop_name\": \"example 123\",\n            \"store_id\": \"example123\",\n            \"shop_no\": 1,\n            \"shop_grade\": \"orange\",\n            \"shop_language\": \"ko_KR\",\n            \"shop_currency_code\": \"KRW\",\n            \"product_name\": \"Round Tshirts\",\n            \"product_no\": 1324,\n            \"product_code\": \"P1234DAK\",\n            \"product_url\": \"example_product.cafe24.com/product/detail.html?product_no=2038&utm_source=dcollection_gmp&utm_medium=test\",\n            \"product_status_type\": \"N\",\n            \"price\": \"1.00\",\n            \"pc_discount_price\": \"1.00\",\n            \"mobile_discount_price\": \"1.00\",\n            \"is_pc_discount\": false,\n            \"is_mobile_discount\": false,\n            \"pc_discount_rate\": 0,\n            \"mobile_discount_rate\": 0,\n            \"is_free_shipping\": false,\n            \"is_international_shipping\": false,\n            \"international_shipping_country\": [\n                \"MO\",\n                \"KZ\"\n            ],\n            \"is_free_gift\": false,\n            \"is_coupon_discount\": false,\n            \"product_options\": [],\n            \"brand_name\": \"Self-branding\",\n            \"product_standard_tags\": [\n                {\n                    \"standard_tags_key\": \"size\",\n                    \"standard_tags_values\": \"blue\"\n                },\n                {\n                    \"standard_tags_key\": \"size\",\n                    \"standard_tags_values\": \"black\"\n                }\n            ],\n            \"product_popular_age\": \"etc\",\n            \"detail_image\": \"example_product.cafe24.com/web/product/big/202101/a7a8984bb5334cec0bcf740d161c51ca.jpg\",\n            \"list_image\": \"example_product.cafe24.com/web/product/medium/202101/e1e18758f76ab8a09127a50b3b1a58c7.jpg\",\n            \"tiny_image\": \"example_product.cafe24.com/web/product/tiny/202101/800fb8076c56a1afdb9d60e40c8afb06.jpg\",\n            \"small_image\": \"example_product.cafe24.com/web/product/small/202101/4c301bde5caa62e076f74b29f484f713.jpg\",\n            \"review_count\": 0,\n            \"review_score\": 5,\n            \"hits_count\": 0,\n            \"expiration_date\": null,\n            \"created_date\": \"2022-08-21T05:22:32+09:00\",\n            \"updated_date\": \"2022-09-05T08:34:18+09:00\"\n        },\n        {\n            \"dcollection_product_category\": {\n                \"depth1\": \"C111111\",\n                \"depth2\": \"C111112\",\n                \"depth3\": \"C111113\"\n            },\n            \"product_ukey\": \"example_124_easd\",\n            \"shop_name\": \"example 124\",\n            \"store_id\": \"example124\",\n            \"shop_no\": 1,\n            \"shop_grade\": \"orange\",\n            \"shop_language\": \"ko_KR\",\n            \"shop_currency_code\": \"KRW\",\n            \"product_name\": \"Round Short-Sleeved T-Shirt\",\n            \"product_no\": 12345,\n            \"product_code\": \"P1234DB1\",\n            \"product_url\": \"example_product2.cafe24.com/product/detail.html?product_no=2068&utm_source=dcollection_gmp&utm_medium=test\",\n            \"product_status_type\": \"N\",\n            \"price\": \"1.00\",\n            \"pc_discount_price\": \"1.00\",\n            \"mobile_discount_price\": \"1.00\",\n            \"is_pc_discount\": false,\n            \"is_mobile_discount\": false,\n            \"pc_discount_rate\": 0,\n            \"mobile_discount_rate\": 0,\n            \"is_free_shipping\": false,\n            \"is_international_shipping\": false,\n            \"international_shipping_country\": [\n                \"AU\",\n                \"HK\"\n            ],\n            \"is_free_gift\": false,\n            \"is_coupon_discount\": true,\n            \"product_options\": [],\n            \"brand_name\": \"Self-branding\",\n            \"product_standard_tags\": [\n                {\n                    \"standard_tags_key\": \"size\",\n                    \"standard_tags_values\": \"red\"\n                },\n                {\n                    \"standard_tags_key\": \"sex\",\n                    \"standard_tags_values\": \"female\"\n                }\n            ],\n            \"product_popular_age\": \"etc\",\n            \"detail_image\": \"example_product2.cafe24.com/web/product/big/202101/c53cffaabe5b2e439ba68dea9892d1bc.jpg\",\n            \"list_image\": \"example_product2.cafe24.com/web/product/medium/202101/6f48e8bf588ddeb94fcd053b3b1b0423.jpg\",\n            \"tiny_image\": \"example_product2.cafe24.com/web/product/tiny/202101/2115afd33e6ffec7513e9fd66252d659.jpg\",\n            \"small_image\": \"example_product2.cafe24.com/web/product/small/202101/990bed38b403e0fb8cfa4e756cc2d8f0.jpg\",\n            \"review_count\": 0,\n            \"review_score\": 3,\n            \"hits_count\": 0,\n            \"expiration_date\": null,\n            \"created_date\": \"2022-07-14T08:31:28+09:00\",\n            \"updated_date\": \"2022-09-14T09:09:29+09:00\"\n        }\n    ]\n}"
+          },
+          "reference": "https://developers.cafe24.com/docs/api/dcollection/#retrieve-a-list-of-products"
+        },
+        {
+          "name": "retrieve-the-number-of-product-items",
+          "path": "/api/products/count",
+          "method": "GET",
+          "scopes": [
+            "dcollection.read_product"
+          ],
+          "rateLimit": 40,
+          "request": {
+            "name": "retrieve-the-number-of-product-items-request",
+            "properties": [
+              {
+                "name": "dcollection_product_category",
+                "description": "@description\nD.Collection 상품 표준 카테고리\n\n검색 가능한 값 : 중분류 또는 소분류 카테고리 번호\ndcollection_product_category \n중분류가 같은 소분류 카테고리에 한하여 소분류 카테고리는 (콤마)로 최대 10개까지 검색\n중분류 상품 카테고리와 소분류 상품 카테고리를 동시 요청 시 소분류 상품 카테고리만 검색",
+                "required": true,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_ukey",
+                "description": "@description\n상품의 고유키\n\n특정 상점의 상품을 구분하는 고유한 값\n검색 가능한 값\n구문 : \"${mall_id}_${shop_no}_${product_no}\"\n예시 : cafe24_1_1356\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_name",
+                "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "store_id",
+                "description": "@description\n상점 아이디\n\nproduct_ukey와 동시 사용 불가",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_no",
+                "description": "@description\n멀티쇼핑몰 번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_grade",
+                "description": "@description\n상점 인기도\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만\n\n@constraints\n배열 최대사이즈: [4]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_language",
+                "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_currency_code",
+                "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_name",
+                "description": "@description\n상품명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_no",
+                "description": "@description\n상품번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_status_type",
+                "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_min",
+                "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_max",
+                "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_pc_discount",
+                "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_mobile_discount",
+                "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_min",
+                "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_max",
+                "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_min",
+                "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_max",
+                "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_min",
+                "description": "@description\nPC 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_max",
+                "description": "@description\nPC 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_min",
+                "description": "@description\n모바일 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_max",
+                "description": "@description\n모바일 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_shipping",
+                "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_international_shipping",
+                "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "international_shipping_country",
+                "description": "@description\n상품이 배송될 수 있는 해외 국가",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_gift",
+                "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_coupon_discount",
+                "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_min",
+                "description": "@description\n상품 리뷰 수 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_max",
+                "description": "@description\n상품 리뷰 수 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_min",
+                "description": "@description\n상품 리뷰 평점 최소 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_max",
+                "description": "@description\n상품 리뷰 평점 최대 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "brand_name",
+                "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_standard_tags",
+                "description": "@description\nD.Collection에서 제공하는 상품 표준 태그\n\n상품 표준 태그 API를 조회하여 지원되는 태그 키와 값 확인 가능\nproduct_standard_tags 하위요소\nstandard_tag_key 태그 키\nstandard_tag_values 태그 값\n하나의 태그 키에 대한 태그 값은 ,(콤마)로 최대 10개까지 검색 가능\n\n,(콤마)로 여러 건을 검색할 수 있다.",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_popular_age",
+                "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_start_date",
+                "description": "@description\n상품 생성일 검색 시작 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_end_date",
+                "description": "@description\n상품 생성일 검색 종료 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_start_date",
+                "description": "@description\n상품 업데이트일 검색 시작 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_end_date",
+                "description": "@description\n상품 업데이트일 검색 종료 값\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              }
+            ]
+          },
+          "response": {
+            "name": "retrieve-the-number-of-product-items-response",
+            "properties": [
+              {
+                "name": "count",
+                "required": true,
+                "type": {
+                  "type": "number"
+                }
+              }
+            ],
+            "example": "{\n    \"count\": 86397\n}"
+          },
+          "reference": "https://developers.cafe24.com/docs/api/dcollection/#retrieve-the-number-of-product-items"
+        }
+      ],
+      "schema": {
+        "name": "products-properties",
+        "properties": [
+          {
+            "name": "dcollection_product_category",
+            "description": "@description\nD.Collection 상품 표준 카테고리",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_ukey",
+            "description": "@description\n상품의 고유키",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_name",
+            "description": "@description\n상점명",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "store_id",
+            "description": "@description\n상점 아이디",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_no",
+            "description": "@description\n멀티쇼핑몰 번호",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_grade",
+            "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_language",
+            "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_currency_code",
+            "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_name",
+            "description": "@description\n상품명",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_no",
+            "description": "@description\n상품번호",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_code",
+            "description": "@description\n상품코드",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_url",
+            "description": "@description\n상품 페이지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_status_type",
+            "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "price",
+            "description": "@description\n상품 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "pc_discount_price",
+            "description": "@description\nPC 할인 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "mobile_discount_price",
+            "description": "@description\n모바일 할인 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_pc_discount",
+            "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_mobile_discount",
+            "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "pc_discount_rate",
+            "description": "@description\nPC 할인율",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "mobile_discount_rate",
+            "description": "@description\n모바일 할인율",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_free_shipping",
+            "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_international_shipping",
+            "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "international_shipping_country",
+            "description": "@description\n상품이 배송될 수 있는 해외 국가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_free_gift",
+            "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_coupon_discount",
+            "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_options",
+            "description": "@description\n상품 옵션",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "brand_name",
+            "description": "@description\n브랜드 이름",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_standard_tags",
+            "description": "@description\nD.Collection에서 제공하는 상품 표준 태그",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_popular_age",
+            "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "detail_image",
+            "description": "@description\n상세 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "list_image",
+            "description": "@description\n목록 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "tiny_image",
+            "description": "@description\n작은 목록 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "small_image",
+            "description": "@description\n축소 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "review_count",
+            "description": "@description\n상품 리뷰 수",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "review_score",
+            "description": "@description\n상품 리뷰 평점",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "hits_count",
+            "description": "@description\n페이지뷰수",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "expiration_date",
+            "description": "@description\n상품 유효기간\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "created_date",
+            "description": "@description\n상품 생성일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "updated_date",
+            "description": "@description\n상품 업데이트일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          }
+        ]
+      }
+    },
+    "products-standardtags": {
+      "id": "product/products-standardtags",
+      "reference": "https://developers.cafe24.com/docs/api/dcollection/#products-standardtags",
+      "endpoints": [
+        {
+          "name": "retrieve-a-list-of-product-tag-properties",
+          "path": "/api/products/standardtags",
+          "method": "GET",
+          "scopes": [
+            "dcollection.read_product"
+          ],
+          "rateLimit": 40,
+          "request": {
+            "name": "retrieve-a-list-of-product-tag-properties-request",
+            "properties": [
+              {
+                "name": "limit",
+                "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "10"
+              },
+              {
+                "name": "offset",
+                "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "0"
+              }
+            ]
+          },
+          "response": {
+            "name": "retrieve-a-list-of-product-tag-properties-response",
+            "properties": [
+              {
+                "name": "standardtags",
+                "required": true,
+                "type": {
+                  "type": "array",
+                  "element": {
+                    "type": "object",
+                    "schema": {
+                      "name": "standardtags-JtmsTH1D",
+                      "properties": [
+                        {
+                          "name": "standard_tag_key",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "standard_tag_values",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "example": "{\n    \"standardtags\": [\n        {\n            \"standard_tag_key\": \"color\",\n            \"standard_tag_values\": [\n                \"black\",\n                \"gray\"\n            ]\n        },\n        {\n            \"standard_tag_key\": \"sex\",\n            \"standard_tag_values\": [\n                \"male\",\n                \"female\"\n            ]\n        }\n    ]\n}"
+          },
+          "reference": "https://developers.cafe24.com/docs/api/dcollection/#retrieve-a-list-of-product-tag-properties"
+        }
+      ],
+      "schema": {
+        "name": "products-standardtags-properties",
+        "properties": [
+          {
+            "name": "standard_tag_key",
+            "description": "@description\n표준 태그 키",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "standard_tag_values",
+            "description": "@description\n표준 태그 값",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          }
+        ]
+      }
+    },
+    "storeproducts": {
+      "id": "product/storeproducts",
+      "reference": "https://developers.cafe24.com/docs/api/dcollection/#storeproducts",
+      "endpoints": [
+        {
+          "name": "retrieve-a-list-of-products-with-mall-id",
+          "path": "/api/storeproducts",
+          "method": "GET",
+          "scopes": [
+            "dcollection.read_product"
+          ],
+          "rateLimit": 40,
+          "request": {
+            "name": "retrieve-a-list-of-products-with-mall-id-request",
+            "properties": [
+              {
+                "name": "store_id",
+                "description": "@description\n상점 아이디\n\n,(콤마)로 여러 건을 검색할 수 있다.",
+                "required": true,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_name",
+                "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "shop_no",
+                "description": "@description\n멀티쇼핑몰 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_name",
+                "description": "@description\n상품명",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_status_type",
+                "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_min",
+                "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "price_max",
+                "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_pc_discount",
+                "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_mobile_discount",
+                "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_min",
+                "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_price_max",
+                "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이하인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_min",
+                "description": "@description\n모바일 할인 판매가 검색 최소 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_price_max",
+                "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이하인 상품 검색\n소수점 2째 자리까지 입력",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_min",
+                "description": "@description\nPC 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "pc_discount_rate_max",
+                "description": "@description\nPC 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_min",
+                "description": "@description\n모바일 할인율 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "mobile_discount_rate_max",
+                "description": "@description\n모바일 할인율 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_shipping",
+                "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_international_shipping",
+                "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "international_shipping_country",
+                "description": "@description\n상품이 배송될 수 있는 해외 국가\n\n검색 가능한 값 : ISO 3166-1 국가 코드(2자리)",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_free_gift",
+                "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "is_coupon_discount",
+                "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_min",
+                "description": "@description\n상품 리뷰 수 최소 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_count_max",
+                "description": "@description\n상품 리뷰 수 최대 값",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_min",
+                "description": "@description\n상품 리뷰 평점 최소 값\n\n허용 범위 : 0.00 ~ 5.00\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "review_score_max",
+                "description": "@description\n상품 리뷰 평점 최대 값\n\n허용 범위 : 0.00 ~ 5.00\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이하인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "brand_name",
+                "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "product_popular_age",
+                "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_start_date",
+                "description": "@description\n상품 생성일 검색 시작 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "created_end_date",
+                "description": "@description\n상품 생성일 검색 종료 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_start_date",
+                "description": "@description\n상품 업데이트일 검색 시작 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "updated_end_date",
+                "description": "@description\n상품 업데이트일 검색 종료 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
+                "required": false,
+                "type": {
+                  "type": "any"
+                }
+              },
+              {
+                "name": "limit",
+                "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "10"
+              },
+              {
+                "name": "offset",
+                "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "0"
+              },
+              {
+                "name": "sort",
+                "description": "@description\n정렬 순서 값\n\nmobile_discount_price : 모바일 할인 판매가\npc_discount_price : PC 할인 판매가\nmobile_discount_rate : 모바일 할인율\npc_discount_rate : PC 할인율\nprice : 상품 판매가\ncreated_date : 상품 생성일\nproduct_name : 상품명\nreview_count : 상품 리뷰 수\nreview_score : 상품 리뷰 평점\nhits_count : 페이지뷰수\npopularity_score : 인기지수\n",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "mobile_discount_price"
+              },
+              {
+                "name": "order",
+                "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순\n",
+                "required": false,
+                "type": {
+                  "type": "any"
+                },
+                "default": "asc"
+              }
+            ]
+          },
+          "response": {
+            "name": "retrieve-a-list-of-products-with-mall-id-response",
+            "properties": [
+              {
+                "name": "store_products",
+                "required": true,
+                "type": {
+                  "type": "array",
+                  "element": {
+                    "type": "object",
+                    "schema": {
+                      "name": "store_products-DFTPLJb8",
+                      "properties": [
+                        {
+                          "name": "dcollection_product_category",
+                          "required": true,
+                          "type": {
+                            "type": "object",
+                            "schema": {
+                              "name": "dcollection_product_category-4J15wao4",
+                              "properties": [
+                                {
+                                  "name": "depth1",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "name": "depth2",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "name": "depth3",
+                                  "required": true,
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "product_ukey",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "store_id",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_no",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "shop_grade",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_language",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "shop_currency_code",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_no",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "product_code",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_url",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_status_type",
+                          "required": true,
+                          "type": {
+                            "type": "enum"
+                          }
+                        },
+                        {
+                          "name": "price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "pc_discount_price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "mobile_discount_price",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "is_pc_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_mobile_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "pc_discount_rate",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "mobile_discount_rate",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "is_free_shipping",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_international_shipping",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "international_shipping_country",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "name": "is_free_gift",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "is_coupon_discount",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "product_options",
+                          "required": true,
+                          "type": {
+                            "type": "array",
+                            "element": {
+                              "type": "any"
+                            }
+                          }
+                        },
+                        {
+                          "name": "brand_name",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "product_popular_age",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "detail_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "list_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "tiny_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "small_image",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "review_count",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "review_score",
+                          "required": true,
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "name": "hits_count",
+                          "required": true,
+                          "type": {
+                            "type": "number"
+                          }
+                        },
+                        {
+                          "name": "expiration_date",
+                          "required": true,
+                          "type": {
+                            "type": "any"
+                          }
+                        },
+                        {
+                          "name": "created_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        },
+                        {
+                          "name": "updated_date",
+                          "required": true,
+                          "type": {
+                            "type": "datetime"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "example": "{\n    \"store_products\": [\n        {\n            \"dcollection_product_category\": {\n                \"depth1\": \"C111111\",\n                \"depth2\": \"C111112\",\n                \"depth3\": \"C111113\"\n            },\n            \"product_ukey\": \"example_1_1324\",\n            \"shop_name\": \"example 123\",\n            \"store_id\": \"example\",\n            \"shop_no\": 1,\n            \"shop_grade\": \"orange\",\n            \"shop_language\": \"ko_KR\",\n            \"shop_currency_code\": \"KRW\",\n            \"product_name\": \"Round Tshirts\",\n            \"product_no\": 1324,\n            \"product_code\": \"P1234DAK\",\n            \"product_url\": \"example_product.cafe24.com/product/detail.html?product_no=2038&utm_source=dcollection_gmp&utm_medium=test\",\n            \"product_status_type\": \"N\",\n            \"price\": \"1.00\",\n            \"pc_discount_price\": \"1.00\",\n            \"mobile_discount_price\": \"1.00\",\n            \"is_pc_discount\": false,\n            \"is_mobile_discount\": false,\n            \"pc_discount_rate\": 0,\n            \"mobile_discount_rate\": 0,\n            \"is_free_shipping\": false,\n            \"is_international_shipping\": false,\n            \"international_shipping_country\": [\n                \"MO\",\n                \"KZ\"\n            ],\n            \"is_free_gift\": false,\n            \"is_coupon_discount\": false,\n            \"product_options\": [],\n            \"brand_name\": \"Self-branding\",\n            \"product_popular_age\": \"etc\",\n            \"detail_image\": \"example_product.cafe24.com/web/product/big/202101/a7a8984bb5334cec0bcf740d161c51ca.jpg\",\n            \"list_image\": \"example_product.cafe24.com/web/product/medium/202101/e1e18758f76ab8a09127a50b3b1a58c7.jpg\",\n            \"tiny_image\": \"example_product.cafe24.com/web/product/tiny/202101/800fb8076c56a1afdb9d60e40c8afb06.jpg\",\n            \"small_image\": \"example_product.cafe24.com/web/product/small/202101/4c301bde5caa62e076f74b29f484f713.jpg\",\n            \"review_count\": 0,\n            \"review_score\": \"5.0\",\n            \"hits_count\": 0,\n            \"expiration_date\": null,\n            \"created_date\": \"2022-08-21T05:22:32+09:00\",\n            \"updated_date\": \"2022-09-05T08:34:18+09:00\"\n        },\n        {\n            \"dcollection_product_category\": {\n                \"depth1\": \"C111111\",\n                \"depth2\": \"C111112\",\n                \"depth3\": \"C111113\"\n            },\n            \"product_ukey\": \"example_123_12345\",\n            \"shop_name\": \"example 123\",\n            \"store_id\": \"example\",\n            \"shop_no\": 1,\n            \"shop_grade\": \"orange\",\n            \"shop_language\": \"ko_KR\",\n            \"shop_currency_code\": \"KRW\",\n            \"product_name\": \"Round Short-Sleeved T-Shirt\",\n            \"product_no\": 12345,\n            \"product_code\": \"P1234DB1\",\n            \"product_url\": \"example_product2.cafe24.com/product/detail.html?product_no=2068&utm_source=dcollection_gmp&utm_medium=test\",\n            \"product_status_type\": \"N\",\n            \"price\": \"1.00\",\n            \"pc_discount_price\": \"1.00\",\n            \"mobile_discount_price\": \"1.00\",\n            \"is_pc_discount\": false,\n            \"is_mobile_discount\": false,\n            \"pc_discount_rate\": 0,\n            \"mobile_discount_rate\": 0,\n            \"is_free_shipping\": false,\n            \"is_international_shipping\": false,\n            \"international_shipping_country\": [\n                \"AU\",\n                \"HK\"\n            ],\n            \"is_free_gift\": false,\n            \"is_coupon_discount\": true,\n            \"product_options\": [],\n            \"brand_name\": \"Self-branding\",\n            \"product_popular_age\": \"etc\",\n            \"detail_image\": \"example_product2.cafe24.com/web/product/big/202101/c53cffaabe5b2e439ba68dea9892d1bc.jpg\",\n            \"list_image\": \"example_product2.cafe24.com/web/product/medium/202101/6f48e8bf588ddeb94fcd053b3b1b0423.jpg\",\n            \"tiny_image\": \"example_product2.cafe24.com/web/product/tiny/202101/2115afd33e6ffec7513e9fd66252d659.jpg\",\n            \"small_image\": \"example_product2.cafe24.com/web/product/small/202101/990bed38b403e0fb8cfa4e756cc2d8f0.jpg\",\n            \"review_count\": 0,\n            \"review_score\": \"3.0\",\n            \"hits_count\": 0,\n            \"expiration_date\": null,\n            \"created_date\": \"2022-07-14T08:31:28+09:00\",\n            \"updated_date\": \"2022-09-14T09:09:29+09:00\"\n        }\n    ]\n}"
+          },
+          "reference": "https://developers.cafe24.com/docs/api/dcollection/#retrieve-a-list-of-products-with-mall-id"
+        }
+      ],
+      "schema": {
+        "name": "storeproducts-properties",
+        "properties": [
+          {
+            "name": "dcollection_product_category",
+            "description": "@description\nD.Collection 상품 표준 카테고리",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_ukey",
+            "description": "@description\n상품의 고유키",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_name",
+            "description": "@description\n상점명",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "store_id",
+            "description": "@description\n상점 아이디",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_no",
+            "description": "@description\n멀티쇼핑몰 번호",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_grade",
+            "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_language",
+            "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "shop_currency_code",
+            "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_name",
+            "description": "@description\n상품명",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_no",
+            "description": "@description\n상품번호",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_code",
+            "description": "@description\n상품코드",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_url",
+            "description": "@description\n상품 페이지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_status_type",
+            "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "price",
+            "description": "@description\n상품 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "pc_discount_price",
+            "description": "@description\nPC 할인 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "mobile_discount_price",
+            "description": "@description\n모바일 할인 판매가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_pc_discount",
+            "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_mobile_discount",
+            "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "pc_discount_rate",
+            "description": "@description\nPC 할인율",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "mobile_discount_rate",
+            "description": "@description\n모바일 할인율",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_free_shipping",
+            "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_international_shipping",
+            "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "international_shipping_country",
+            "description": "@description\n상품이 배송될 수 있는 해외 국가",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_free_gift",
+            "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "is_coupon_discount",
+            "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_options",
+            "description": "@description\n상품 옵션",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "brand_name",
+            "description": "@description\n브랜드 이름",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_standard_tags",
+            "description": "@description\nD.Collection에서 제공하는 상품 표준 태그",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "product_popular_age",
+            "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "detail_image",
+            "description": "@description\n상세 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "list_image",
+            "description": "@description\n목록 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "tiny_image",
+            "description": "@description\n작은 목록 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "small_image",
+            "description": "@description\n축소 이미지 URL",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "review_count",
+            "description": "@description\n상품 리뷰 수",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "review_score",
+            "description": "@description\n상품 리뷰 평점",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "hits_count",
+            "description": "@description\n페이지뷰수",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "expiration_date",
+            "description": "@description\n상품 유효기간\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "created_date",
+            "description": "@description\n상품 생성일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          },
+          {
+            "name": "updated_date",
+            "description": "@description\n상품 업데이트일\n\n@constraints\n날짜",
+            "required": false,
+            "type": {
+              "type": "any"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

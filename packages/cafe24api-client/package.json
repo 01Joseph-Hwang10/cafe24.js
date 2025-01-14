@@ -1,0 +1,44 @@
+{
+  "name": "cafe24api-client",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24api-client",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rimraf dist *.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.lib.json",
+    "build:collector": "rollup -c scripts/collector/rollup.config.mjs --bundleConfigAsCjs",
+    "generate": "vite-node scripts/generator/generate.ts",
+    "test": "vitest --config vitest.config.ts"
+  },
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "case": "^1.6.3",
+    "cross-fetch": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "fp-ts": "^2.16.9",
+    "qs": "^6.13.1",
+    "url-join": "4",
+    "wait": "^0.4.2",
+    "cafe24-types": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/btoa": "^1.2.5",
+    "@types/qs": "^6.9.17",
+    "@types/url-join": "4",
+    "acorn": "^8.14.0",
+    "acorn-walk": "^8.3.4",
+    "astring": "^1.9.0",
+    "find-up": "^7.0.0",
+    "short-unique-id": "^5.2.0",
+    "internal": "workspace:^"
+  }
+}

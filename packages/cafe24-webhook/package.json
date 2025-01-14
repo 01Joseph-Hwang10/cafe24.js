@@ -1,0 +1,30 @@
+{
+  "name": "cafe24-webhook",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-webhook",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rimraf dist *.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.lib.json",
+    "build:collector": "rollup -c scripts/collector/rollup.config.mjs --bundleConfigAsCjs",
+    "generate": "vite-node scripts/generator/generate.ts",
+    "test": "vitest --config vitest.config.ts"
+  },
+  "dependencies": {
+    "cafe24-types": "workspace:^"
+  },
+  "devDependencies": {
+    "find-up": "^7.0.0",
+    "internal": "workspace:^",
+    "jsonc-parser": "^3.3.1"
+  }
+}

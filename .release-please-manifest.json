@@ -1,0 +1,6 @@
+{
+  "packages/cafe24api-client": "1.0.0",
+  "packages/cafe24-webhook": "1.0.0",
+  "packages/cafe24-types": "1.0.0",
+  "packages/cafe24-get-auth-code": "1.0.0"
+}
