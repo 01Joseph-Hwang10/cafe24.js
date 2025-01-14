@@ -9,7 +9,7 @@
 
 - [cafe24-types](./packages/cafe24-types/README.md): Cafe24 API에서 활용하는 데이터 타입 정의를 제공하는 패키지입니다. 
                                                      화면 코드(Display Code)나 필요 권한(Scope)이 포함되어 있습니다.
-- [cafe24api-client](./packages/cafe24api-client/README.md): Cafe24 REST API HTTP 클라이언트입니다.
+- [cafe24-api-client](./packages/cafe24-api-client/README.md): Cafe24 REST API HTTP 클라이언트입니다.
 - [cafe24-webhook](./packages/cafe24-webhook/README.md): Cafe24 Webhook 이벤트 데이터의 타입 정의를 제공하는 패키지입니다.
 - [cafe24-get-auth-code](./packages/cafe24-get-auth-code/README.md): Cafe24 OAuth 인증 코드를 받아오는 CLI 도구 및 라이브러리입니다.
 

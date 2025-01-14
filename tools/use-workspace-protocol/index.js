@@ -4,7 +4,7 @@ const walkJson = require("./walk-json");
 
 const internalPackages = [
   // Package name goes here
-  "cafe24api-client",
+  "cafe24-api-client",
   "cafe24-webhook",
   "cafe24-types",
   "cafe24-get-auth-code",
@@ -13,7 +13,7 @@ const internalPackages = [
 
 const targets = [
   // Package root path goes here
-  "packages/cafe24api-client",
+  "packages/cafe24-api-client",
   "packages/cafe24-webhook",
   "packages/cafe24-types",
   "packages/cafe24-get-auth-code",

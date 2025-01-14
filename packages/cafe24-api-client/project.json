@@ -1,14 +1,14 @@
 {
-  "name": "cafe24api-client",
+  "name": "cafe24-api-client",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/cafe24api-client/src",
+  "sourceRoot": "packages/cafe24-api-client/src",
   "projectType": "library",
   "targets": {
     "clear": {
       "executor": "nx:run-commands",
       "options": {
         "command": "pnpm run clear",
-        "cwd": "packages/cafe24api-client"
+        "cwd": "packages/cafe24-api-client"
       }
     },
     "build": {
@@ -19,7 +19,7 @@
       ],
       "options": {
         "command": "pnpm run build",
-        "cwd": "packages/cafe24api-client"
+        "cwd": "packages/cafe24-api-client"
       },
       "configurations": {
         "production": {}
@@ -28,8 +28,8 @@
     "publish": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "pnpm publish --no-git-checks || echo 'Already published: cafe24api-client'",
-        "cwd": "packages/cafe24api-client"
+        "command": "pnpm publish --no-git-checks || echo 'Already published: cafe24-api-client'",
+        "cwd": "packages/cafe24-api-client"
       }
     }
   },

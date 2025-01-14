@@ -99,46 +99,7 @@ importers:
         specifier: ^8.3.0
         version: 8.3.0
 
-  packages/cafe24-get-auth-code:
-    dependencies:
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.4.7
-      puppeteer:
-        specifier: ^24.0.0
-        version: 24.0.0(typescript@5.7.3)
-      short-unique-id:
-        specifier: ^5.2.0
-        version: 5.2.0
-      wait:
-        specifier: ^0.4.2
-        version: 0.4.2
-      zod:
-        specifier: ^3.24.1
-        version: 3.24.1
-      zx:
-        specifier: ^8.3.0
-        version: 8.3.0
-
-  packages/cafe24-types: {}
-
-  packages/cafe24-webhook:
-    dependencies:
-      cafe24-types:
-        specifier: workspace:^
-        version: link:../cafe24-types
-    devDependencies:
-      find-up:
-        specifier: ^7.0.0
-        version: 7.0.0
-      internal:
-        specifier: workspace:^
-        version: link:../internal
-      jsonc-parser:
-        specifier: ^3.3.1
-        version: 3.3.1
-
-  packages/cafe24api-client:
+  packages/cafe24-api-client:
     dependencies:
       btoa:
         specifier: ^1.2.1
@@ -195,6 +156,45 @@ importers:
       short-unique-id:
         specifier: ^5.2.0
         version: 5.2.0
+
+  packages/cafe24-get-auth-code:
+    dependencies:
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.7
+      puppeteer:
+        specifier: ^24.0.0
+        version: 24.0.0(typescript@5.7.3)
+      short-unique-id:
+        specifier: ^5.2.0
+        version: 5.2.0
+      wait:
+        specifier: ^0.4.2
+        version: 0.4.2
+      zod:
+        specifier: ^3.24.1
+        version: 3.24.1
+      zx:
+        specifier: ^8.3.0
+        version: 8.3.0
+
+  packages/cafe24-types: {}
+
+  packages/cafe24-webhook:
+    dependencies:
+      cafe24-types:
+        specifier: workspace:^
+        version: link:../cafe24-types
+    devDependencies:
+      find-up:
+        specifier: ^7.0.0
+        version: 7.0.0
+      internal:
+        specifier: workspace:^
+        version: link:../internal
+      jsonc-parser:
+        specifier: ^3.3.1
+        version: 3.3.1
 
   packages/internal:
     dependencies:

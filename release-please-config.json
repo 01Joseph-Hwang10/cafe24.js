@@ -11,7 +11,7 @@
   ],
   "release-type": "node",
   "packages": {
-    "packages/cafe24api-client": {},
+    "packages/cafe24-api-client": {},
     "packages/cafe24-webhook": {},
     "packages/cafe24-types": {},
     "packages/cafe24-get-auth-code": {}

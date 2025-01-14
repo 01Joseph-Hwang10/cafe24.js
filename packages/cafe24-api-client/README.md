@@ -1,11 +1,11 @@
-# cafe24api-client
+# cafe24-api-client
 
 [카페24 REST API](https://developers.cafe24.com/docs/api) HTTP 클라이언트입니다.
 
 ## Installation
 
 ```bash
-npm install cafe24api-client
+npm install cafe24-api-client
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install cafe24api-client
 ### Quick Start
 
 ```typescript
-import api from 'cafe24api-client';
+import api from 'cafe24-api-client';
 
 const client = new api.admin.Client({
   mallId: 'myMallId',
@@ -46,7 +46,7 @@ Cafe24에서는 [admin], [front], [d.collection], [analytics]의 4개 종류의 
 본 라이브러리에서는 이 4개의 API에 대한 Client를 각각 제공합니다.
 
 ```typescript
-import api from 'cafe24api-client';
+import api from 'cafe24-api-client';
 
 const admin = new api.admin.Client({/* ... */} satisfies api.admin.ClientOptions);
 const front = new api.front.Client({/* ... */} satisfies api.front.ClientOptions);
@@ -70,7 +70,7 @@ const analytics = new api.analytics.Client({/* ... */} satisfies api.analytics.C
 위의 내용들을 코드로 정리하면 아래와 같습니다.
 
 ```typescript
-import api from 'cafe24api-client';
+import api from 'cafe24-api-client';
 
 const front = new api.front.Client({
   clientId: 'myClientId',

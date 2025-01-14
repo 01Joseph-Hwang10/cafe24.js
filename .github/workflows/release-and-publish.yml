@@ -13,7 +13,7 @@ env:
   # Package root directories go here
   PACKAGES: |
     [
-      "packages/cafe24api-client",
+      "packages/cafe24-api-client",
       "packages/cafe24-webhook",
       "packages/cafe24-types",
       "packages/cafe24-get-auth-code"
@@ -91,7 +91,7 @@ jobs:
 
           pnpm nx run-many \
             -t build \
-            -p cafe24api-client cafe24-webhook cafe24-get-auth-code
+            -p cafe24-api-client cafe24-webhook cafe24-get-auth-code
       - run: pnpm nx run-many -t publish --all
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

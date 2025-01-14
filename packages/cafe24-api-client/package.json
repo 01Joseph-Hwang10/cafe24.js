@@ -1,10 +1,10 @@
 {
-  "name": "cafe24api-client",
+  "name": "cafe24-api-client",
   "version": "1.1.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24api-client",
+  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-api-client",
   "files": [
     "dist",
     "LICENSE",
