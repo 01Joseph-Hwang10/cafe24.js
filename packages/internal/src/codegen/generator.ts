@@ -1,12 +1,30 @@
-import { camel } from "case";
+import { camel, snake } from "case";
 import { map } from "fp-ts/lib/Array";
-import { pipe } from "fp-ts/lib/function";
+import { identity, pipe } from "fp-ts/lib/function";
 import { ArrayType, ObjectType, Property, Schema } from "../types";
 import { getOrEmpty } from "../utils";
 import { TypescriptInterfaceWriter } from "./writer";
 
 export class TypescriptInterfaceGenerator {
   protected readonly interface = new TypescriptInterfaceWriter();
+  protected readonly propertyCaseFormatter: (name: string) => string;
+
+  constructor(opts?: { propertyCase?: "camel" | "snake" | "none" }) {
+    const { propertyCase = "camel" } = opts || {};
+
+    switch (propertyCase) {
+      case "camel":
+        this.propertyCaseFormatter = camel;
+        break;
+      case "snake":
+        this.propertyCaseFormatter = snake;
+        break;
+      case "none":
+      default:
+        this.propertyCaseFormatter = identity;
+        break;
+    }
+  }
 
   generateFromSchema(
     name: string | null,
@@ -40,7 +58,7 @@ export class TypescriptInterfaceGenerator {
           }
 
           return {
-            name: camel(property.name),
+            name: this.propertyCaseFormatter(property.name),
             type,
             description: property.description,
             required: property.required,

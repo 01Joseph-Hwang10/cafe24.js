@@ -99,7 +99,9 @@ async function generate() {
   const spec = hydrateWebhookSpec(rawSpec);
 
   // Generate types
-  const interfaceGenerator = new TypescriptInterfaceGenerator();
+  const interfaceGenerator = new TypescriptInterfaceGenerator({
+    propertyCase: "none",
+  });
   const interfaceSourceCode = spec.events
     .map(({ name, schema, eventNo, scopes, description, example }) =>
       interfaceGenerator.generateFromSchema(name, schema, {

@@ -31,28 +31,28 @@ import {
  *
  */
 export interface OnAppDeleted {
-  eventNo: 90077;
+  event_no: 90077;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 앱 관리 상품명
      */
-    appName: string;
+    app_name: string;
     /**
      * @description
      * 앱 삭제일시
      */
-    deletedDate: Cafe24Datetime;
+    deleted_date: Cafe24Datetime;
   };
 }
 
@@ -81,28 +81,28 @@ export interface OnAppDeleted {
  *
  */
 export interface OnAppExpired {
-  eventNo: 90078;
+  event_no: 90078;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 앱 관리 상품명
      */
-    appName: string;
+    app_name: string;
     /**
      * @description
      * 앱 만료일시
      */
-    expiredDate: Cafe24Datetime;
+    expired_date: Cafe24Datetime;
   };
 }
 
@@ -133,34 +133,34 @@ export interface OnAppExpired {
  *
  */
 export interface OnAppExpirationExtended {
-  eventNo: 90079;
+  event_no: 90079;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 앱 관리 상품명
      */
-    appName: string;
-    expireDate: Cafe24Datetime;
+    app_name: string;
+    expire_date: Cafe24Datetime;
     /**
      * @description
      * 앱 만료일 연장 이전의 기존 만료일시
      */
-    previousExpireDate: Cafe24Datetime;
+    previous_expire_date: Cafe24Datetime;
     /**
      * @description
      * 앱 만료일 연장 일시
      */
-    updatedDate: Cafe24Datetime;
+    updated_date: Cafe24Datetime;
   };
 }
 
@@ -192,28 +192,28 @@ export interface OnAppExpirationExtended {
  *
  */
 export interface OnAppPayment {
-  eventNo: 90157;
+  event_no: 90157;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 주문번호
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제일시
      */
-    payedDate: Cafe24Date;
+    payed_date: Cafe24Date;
     /**
      * @description
      * 결제통화
@@ -262,23 +262,23 @@ export interface OnAppPayment {
  *
  */
 export interface OnAppPaymentRefundRequested {
-  eventNo: 90158;
+  event_no: 90158;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 주문번호
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 환불 사유 코드
@@ -290,17 +290,17 @@ export interface OnAppPaymentRefundRequested {
      * E : 구매자의 사유로 판매자와 합의하였음
      * Z : 기타사유
      */
-    reasonCode: Cafe24Enum;
+    reason_code: Cafe24Enum;
     /**
      * @description
      * 상세사유
      */
-    reasonDetail: string;
+    reason_detail: string;
     /**
      * @description
      * 요청일시
      */
-    requestDate: Cafe24Datetime;
+    request_date: Cafe24Datetime;
   };
 }
 
@@ -332,23 +332,23 @@ export interface OnAppPaymentRefundRequested {
  *
  */
 export interface OnAppPaymentRefundCompleted {
-  eventNo: 90159;
+  event_no: 90159;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 앱 ID
      */
-    clientId: string;
+    client_id: string;
     /**
      * @description
      * 주문번호
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제통화
@@ -358,13 +358,13 @@ export interface OnAppPaymentRefundCompleted {
      * @description
      * 환불금액
      */
-    refundedAmount: string;
-    expireDate: Cafe24Datetime;
+    refunded_amount: string;
+    expire_date: Cafe24Datetime;
     /**
      * @description
      * 환불일시
      */
-    refundedDate: Cafe24Datetime;
+    refunded_date: Cafe24Datetime;
   };
 }
 
@@ -409,36 +409,36 @@ export interface OnAppPaymentRefundCompleted {
  *
  */
 export interface OnAppOrderReturnCompleted {
-  eventNo: 90160;
+  event_no: 90160;
   resource: {
     /**
      * @description
      * 쇼핑몰 ID
      */
-    mallId: string;
-    eventShopNo: string;
+    mall_id: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문번호
      */
-    orderId: string;
-    claimCode: string;
-    claimReasonType: string;
-    claimReasonTypeText: string;
-    claimReason: string;
-    orderPriceAmount: string;
-    refundAmount: string;
-    shippingFee: string;
-    refundShippingFee: string;
-    refundRegionalSurcharge: string;
-    returnShippingFee: string;
-    returnRegionalSurcharge: string;
-    addDiscountAmount: string;
-    memberGradeDiscountAmount: string;
-    shippingDiscountAmount: string;
-    couponDiscountAmount: string;
-    pointUsed: string;
-    creditUsed: string;
+    order_id: string;
+    claim_code: string;
+    claim_reason_type: string;
+    claim_reason_type_text: string;
+    claim_reason: string;
+    order_price_amount: string;
+    refund_amount: string;
+    shipping_fee: string;
+    refund_shipping_fee: string;
+    refund_regional_surcharge: string;
+    return_shipping_fee: string;
+    return_regional_surcharge: string;
+    add_discount_amount: string;
+    member_grade_discount_amount: string;
+    shipping_discount_amount: string;
+    coupon_discount_amount: string;
+    point_used: string;
+    credit_used: string;
   };
 }
 
@@ -498,7 +498,7 @@ export interface OnAppOrderReturnCompleted {
  *
  */
 export interface OnProductCreated {
-  eventNo: 90001;
+  event_no: 90001;
   resource: {
     /**
      * @description
@@ -506,7 +506,7 @@ export interface OnProductCreated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -514,7 +514,7 @@ export interface OnProductCreated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품번호
@@ -522,29 +522,29 @@ export interface OnProductCreated {
      *
      *
      */
-    productNo: number;
-    productCode: string;
+    product_no: number;
+    product_code: string;
     /**
      * @description
      * 가입일
      *
      *
      */
-    createdDate: Cafe24Datetime;
+    created_date: Cafe24Datetime;
     /**
      * @description
      * 상품이 수정된 일시
      *
      * date
      */
-    updatedDate: Cafe24Datetime;
+    updated_date: Cafe24Datetime;
     /**
      * @description
      * 상품명
      *
      * 최대글자수 : [250자]
      */
-    productName: string;
+    product_name: string;
     /**
      * @description
      * 영문 상품명
@@ -552,21 +552,21 @@ export interface OnProductCreated {
      *
      * 최대글자수 : [250자]
      */
-    engProductName: string;
+    eng_product_name: string;
     /**
      * @description
      * 공금사 상품명
      *
      * 최대글자수 : [250자]
      */
-    supplyProductName: string;
+    supply_product_name: string;
     /**
      * @description
      * 상품의 모델명
      *
      * 최대글자수 : [100자]
      */
-    modelName: string;
+    model_name: string;
     /**
      * @description
      * 자체상품 코드
@@ -574,7 +574,7 @@ export interface OnProductCreated {
      *
      * 최대글자수 : [40자]
      */
-    customProductCode: string;
+    custom_product_code: string;
     /**
      * @description
      * 상품상태
@@ -587,21 +587,21 @@ export interface OnProductCreated {
      * F : 리퍼상품
      * S : 스크래치 상품
      */
-    productCondition: Cafe24Enum;
+    product_condition: Cafe24Enum;
     /**
      * @description
      * 상품 요약 설명
      *
      * 최대글자수 : [255자]
      */
-    summaryDescription: string;
+    summary_description: string;
     /**
      * @description
      * 상품 간략 설명
      *
      *
      */
-    simpleDescription: string;
+    simple_description: string;
     /**
      * @description
      * 상품 상세 설명
@@ -631,14 +631,14 @@ export interface OnProductCreated {
      *
      * 최소: [0]~최대: [2147483647]
      */
-    retailPrice: string;
+    retail_price: string;
     /**
      * @description
      * 상품 공급가
      *
      * 최소: [0]~최대: [2147483647]
      */
-    supplyPrice: string;
+    supply_price: string;
     /**
      * @description
      * 상품 판매가
@@ -652,7 +652,7 @@ export interface OnProductCreated {
      *
      * 최대글자수 : [20자]
      */
-    priceContent: any;
+    price_content: any;
     /**
      * @description
      * 성인인증이 필요한 상품인지 여부
@@ -660,7 +660,7 @@ export interface OnProductCreated {
      * T : 사용함
      * F : 사용안함
      */
-    adultCertification: Cafe24Enum;
+    adult_certification: Cafe24Enum;
     /**
      * @description
      * 제조사 코드
@@ -668,7 +668,7 @@ export interface OnProductCreated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    manufacturerCode: string;
+    manufacturer_code: string;
     /**
      * @description
      * 공급사 코드
@@ -676,7 +676,7 @@ export interface OnProductCreated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
     /**
      * @description
      * 브랜드 코드
@@ -684,7 +684,7 @@ export interface OnProductCreated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    brandCode: string;
+    brand_code: string;
     /**
      * @description
      * 트렌드 코드
@@ -692,29 +692,29 @@ export interface OnProductCreated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    trendCode: string;
+    trend_code: string;
     /**
      * @description
      * 제조일자
      *
      * date
      */
-    madeDate: Cafe24Date;
+    made_date: Cafe24Date;
     /**
      * @description
      * 출시일자
      *
      * date
      */
-    releaseDate: Cafe24Date;
+    release_date: Cafe24Date;
     /**
      * @description
      * 원산지
      *
      *
      */
-    originPlaceCode: number;
-    shippingScope: Cafe24Enum;
+    origin_place_code: number;
+    shipping_scope: Cafe24Enum;
     /**
      * @description
      * 번역상태
@@ -782,7 +782,7 @@ export interface OnProductCreated {
  *
  */
 export interface OnProductUpdated {
-  eventNo: 90002;
+  event_no: 90002;
   resource: {
     /**
      * @description
@@ -790,7 +790,7 @@ export interface OnProductUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -798,7 +798,7 @@ export interface OnProductUpdated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품번호
@@ -806,29 +806,29 @@ export interface OnProductUpdated {
      *
      *
      */
-    productNo: number;
-    productCode: string;
+    product_no: number;
+    product_code: string;
     /**
      * @description
      * 가입일
      *
      *
      */
-    createdDate: Cafe24Datetime;
+    created_date: Cafe24Datetime;
     /**
      * @description
      * 상품이 수정된 일시
      *
      * date
      */
-    updatedDate: Cafe24Datetime;
+    updated_date: Cafe24Datetime;
     /**
      * @description
      * 상품명
      *
      * 최대글자수 : [250자]
      */
-    productName: string;
+    product_name: string;
     /**
      * @description
      * 영문 상품명
@@ -836,21 +836,21 @@ export interface OnProductUpdated {
      *
      * 최대글자수 : [250자]
      */
-    engProductName: string;
+    eng_product_name: string;
     /**
      * @description
      * 공금사 상품명
      *
      * 최대글자수 : [250자]
      */
-    supplyProductName: string;
+    supply_product_name: string;
     /**
      * @description
      * 상품의 모델명
      *
      * 최대글자수 : [100자]
      */
-    modelName: string;
+    model_name: string;
     /**
      * @description
      * 자체상품 코드
@@ -858,7 +858,7 @@ export interface OnProductUpdated {
      *
      * 최대글자수 : [40자]
      */
-    customProductCode: string;
+    custom_product_code: string;
     /**
      * @description
      * 상품상태
@@ -871,21 +871,21 @@ export interface OnProductUpdated {
      * F : 리퍼상품
      * S : 스크래치 상품
      */
-    productCondition: Cafe24Enum;
+    product_condition: Cafe24Enum;
     /**
      * @description
      * 상품 요약 설명
      *
      * 최대글자수 : [255자]
      */
-    summaryDescription: string;
+    summary_description: string;
     /**
      * @description
      * 상품 간략 설명
      *
      *
      */
-    simpleDescription: string;
+    simple_description: string;
     /**
      * @description
      * 상품 상세 설명
@@ -915,14 +915,14 @@ export interface OnProductUpdated {
      *
      * 최소: [0]~최대: [2147483647]
      */
-    retailPrice: string;
+    retail_price: string;
     /**
      * @description
      * 상품 공급가
      *
      * 최소: [0]~최대: [2147483647]
      */
-    supplyPrice: string;
+    supply_price: string;
     /**
      * @description
      * 상품 판매가
@@ -936,7 +936,7 @@ export interface OnProductUpdated {
      *
      * 최대글자수 : [20자]
      */
-    priceContent: any;
+    price_content: any;
     /**
      * @description
      * 성인인증이 필요한 상품인지 여부
@@ -944,7 +944,7 @@ export interface OnProductUpdated {
      * T : 사용함
      * F : 사용안함
      */
-    adultCertification: Cafe24Enum;
+    adult_certification: Cafe24Enum;
     /**
      * @description
      * 제조사 코드
@@ -952,7 +952,7 @@ export interface OnProductUpdated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    manufacturerCode: string;
+    manufacturer_code: string;
     /**
      * @description
      * 공급사 코드
@@ -960,7 +960,7 @@ export interface OnProductUpdated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
     /**
      * @description
      * 브랜드 코드
@@ -968,7 +968,7 @@ export interface OnProductUpdated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    brandCode: string;
+    brand_code: string;
     /**
      * @description
      * 트렌드 코드
@@ -976,29 +976,29 @@ export interface OnProductUpdated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    trendCode: string;
+    trend_code: string;
     /**
      * @description
      * 제조일자
      *
      * date
      */
-    madeDate: Cafe24Date;
+    made_date: Cafe24Date;
     /**
      * @description
      * 출시일자
      *
      * date
      */
-    releaseDate: Cafe24Date;
+    release_date: Cafe24Date;
     /**
      * @description
      * 원산지
      *
      *
      */
-    originPlaceCode: number;
-    shippingScope: Cafe24Enum;
+    origin_place_code: number;
+    shipping_scope: Cafe24Enum;
     /**
      * @description
      * 번역상태
@@ -1039,7 +1039,7 @@ export interface OnProductUpdated {
  *
  */
 export interface OnBulkProductUpdate {
-  eventNo: 90041;
+  event_no: 90041;
   resource: {
     /**
      * @description
@@ -1047,7 +1047,7 @@ export interface OnBulkProductUpdate {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -1055,7 +1055,7 @@ export interface OnBulkProductUpdate {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품번호
@@ -1063,7 +1063,7 @@ export interface OnBulkProductUpdate {
      *
      *
      */
-    productNo: string;
+    product_no: string;
     action: string;
   };
 }
@@ -1097,7 +1097,7 @@ export interface OnBulkProductUpdate {
  *
  */
 export interface OnProductDeleted {
-  eventNo: 90003;
+  event_no: 90003;
   resource: {
     /**
      * @description
@@ -1105,7 +1105,7 @@ export interface OnProductDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -1113,7 +1113,7 @@ export interface OnProductDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품번호
@@ -1121,8 +1121,8 @@ export interface OnProductDeleted {
      *
      *
      */
-    productNo: number;
-    productCode: string;
+    product_no: number;
+    product_code: string;
   };
 }
 
@@ -1154,7 +1154,7 @@ export interface OnProductDeleted {
  *
  */
 export interface OnProductRestored {
-  eventNo: 90022;
+  event_no: 90022;
   resource: {
     /**
      * @description
@@ -1162,7 +1162,7 @@ export interface OnProductRestored {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -1170,7 +1170,7 @@ export interface OnProductRestored {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품번호
@@ -1178,7 +1178,7 @@ export interface OnProductRestored {
      *
      *
      */
-    productNo: number;
+    product_no: number;
   };
 }
 
@@ -1246,7 +1246,7 @@ export interface OnProductRestored {
  *
  */
 export interface OnProductInventoryChanged {
-  eventNo: 90075;
+  event_no: 90075;
   resource: {
     /**
      * @description
@@ -1254,7 +1254,7 @@ export interface OnProductInventoryChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 상품번호
@@ -1262,29 +1262,29 @@ export interface OnProductInventoryChanged {
      *
      *
      */
-    productNo: number;
-    productCode: string;
+    product_no: number;
+    product_code: string;
     /**
      * @description
      * 가입일
      *
      *
      */
-    createdDate: Cafe24Datetime;
+    created_date: Cafe24Datetime;
     /**
      * @description
      * 상품이 수정된 일시
      *
      * date
      */
-    updatedDate: Cafe24Datetime;
+    updated_date: Cafe24Datetime;
     /**
      * @description
      * 상품명
      *
      * 최대글자수 : [250자]
      */
-    productName: string;
+    product_name: string;
     /**
      * @description
      * 영문 상품명
@@ -1292,21 +1292,21 @@ export interface OnProductInventoryChanged {
      *
      * 최대글자수 : [250자]
      */
-    engProductName: string;
+    eng_product_name: string;
     /**
      * @description
      * 공금사 상품명
      *
      * 최대글자수 : [250자]
      */
-    supplyProductName: string;
+    supply_product_name: string;
     /**
      * @description
      * 상품의 모델명
      *
      * 최대글자수 : [100자]
      */
-    modelName: string;
+    model_name: string;
     /**
      * @description
      * 자체상품 코드
@@ -1314,7 +1314,7 @@ export interface OnProductInventoryChanged {
      *
      * 최대글자수 : [40자]
      */
-    customProductCode: string;
+    custom_product_code: string;
     /**
      * @description
      * 상품상태
@@ -1327,21 +1327,21 @@ export interface OnProductInventoryChanged {
      * F : 리퍼상품
      * S : 스크래치 상품
      */
-    productCondition: Cafe24Enum;
+    product_condition: Cafe24Enum;
     /**
      * @description
      * 상품 요약 설명
      *
      * 최대글자수 : [255자]
      */
-    summaryDescription: string;
+    summary_description: string;
     /**
      * @description
      * 상품 간략 설명
      *
      *
      */
-    simpleDescription: string;
+    simple_description: string;
     /**
      * @description
      * 상품 상세 설명
@@ -1371,14 +1371,14 @@ export interface OnProductInventoryChanged {
      *
      * 최소: [0]~최대: [2147483647]
      */
-    retailPrice: string;
+    retail_price: string;
     /**
      * @description
      * 상품 공급가
      *
      * 최소: [0]~최대: [2147483647]
      */
-    supplyPrice: string;
+    supply_price: string;
     /**
      * @description
      * 상품 판매가
@@ -1392,7 +1392,7 @@ export interface OnProductInventoryChanged {
      *
      * 최대글자수 : [20자]
      */
-    priceContent: any;
+    price_content: any;
     /**
      * @description
      * 성인인증이 필요한 상품인지 여부
@@ -1400,7 +1400,7 @@ export interface OnProductInventoryChanged {
      * T : 사용함
      * F : 사용안함
      */
-    adultCertification: Cafe24Enum;
+    adult_certification: Cafe24Enum;
     /**
      * @description
      * 제조사 코드
@@ -1408,7 +1408,7 @@ export interface OnProductInventoryChanged {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    manufacturerCode: string;
+    manufacturer_code: string;
     /**
      * @description
      * 공급사 코드
@@ -1416,7 +1416,7 @@ export interface OnProductInventoryChanged {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
     /**
      * @description
      * 브랜드 코드
@@ -1424,7 +1424,7 @@ export interface OnProductInventoryChanged {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    brandCode: string;
+    brand_code: string;
     /**
      * @description
      * 트렌드 코드
@@ -1432,29 +1432,29 @@ export interface OnProductInventoryChanged {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    trendCode: string;
+    trend_code: string;
     /**
      * @description
      * 제조일자
      *
      * date
      */
-    madeDate: Cafe24Date;
+    made_date: Cafe24Date;
     /**
      * @description
      * 출시일자
      *
      * date
      */
-    releaseDate: Cafe24Date;
+    release_date: Cafe24Date;
     /**
      * @description
      * 원산지
      *
      *
      */
-    originPlaceCode: number;
-    shippingScope: Cafe24Enum;
+    origin_place_code: number;
+    shipping_scope: Cafe24Enum;
     /**
      * @description
      * 번역상태
@@ -1469,8 +1469,8 @@ export interface OnProductInventoryChanged {
      *
      *
      */
-    statusText: string;
-    variantCode: string;
+    status_text: string;
+    variant_code: string;
     /**
      * @description
      * 품목 품절표시 사용 여부 ???
@@ -1478,7 +1478,7 @@ export interface OnProductInventoryChanged {
      * T : 사용함
      * F : 사용안함
      */
-    useSoldout: Cafe24Enum;
+    use_soldout: Cafe24Enum;
   };
 }
 
@@ -1516,7 +1516,7 @@ export interface OnProductInventoryChanged {
  *
  */
 export interface OnProductStockStatusChanged {
-  eventNo: 90150;
+  event_no: 90150;
   resource: {
     /**
      * @description
@@ -1524,7 +1524,7 @@ export interface OnProductStockStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -1532,7 +1532,7 @@ export interface OnProductStockStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품 품절 여부
@@ -1541,7 +1541,7 @@ export interface OnProductStockStatusChanged {
      *
      *
      */
-    soldOutByCurrentShop: Cafe24Enum;
+    sold_out_by_current_shop: Cafe24Enum;
     /**
      * @description
      * 상품번호
@@ -1549,7 +1549,7 @@ export interface OnProductStockStatusChanged {
      *
      *
      */
-    productNo: string;
+    product_no: string;
     /**
      * @description
      * 전체 쇼핑몰의 상품 품절 여부
@@ -1558,7 +1558,7 @@ export interface OnProductStockStatusChanged {
      *
      *
      */
-    soldOut: {
+    sold_out: {
       1: Cafe24Enum;
       2: Cafe24Enum;
       3: Cafe24Enum;
@@ -1632,7 +1632,7 @@ export interface OnProductStockStatusChanged {
  *
  */
 export interface OnOrderReceived {
-  eventNo: 90023;
+  event_no: 90023;
   resource: {
     /**
      * @description
@@ -1640,7 +1640,7 @@ export interface OnOrderReceived {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -1648,7 +1648,7 @@ export interface OnOrderReceived {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -1687,21 +1687,21 @@ export interface OnOrderReceived {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -1717,21 +1717,21 @@ export interface OnOrderReceived {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -1741,42 +1741,42 @@ export interface OnOrderReceived {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -1784,7 +1784,7 @@ export interface OnOrderReceived {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: any;
+    first_order: any;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -1792,7 +1792,7 @@ export interface OnOrderReceived {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -1808,21 +1808,21 @@ export interface OnOrderReceived {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: any;
+    bank_code: any;
     /**
      * @description
      * 결제수단 코드
@@ -1841,14 +1841,14 @@ export interface OnOrderReceived {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -1856,49 +1856,49 @@ export interface OnOrderReceived {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: string;
+    bank_account_no: string;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -1907,7 +1907,7 @@ export interface OnOrderReceived {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -1917,21 +1917,21 @@ export interface OnOrderReceived {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: Cafe24Date;
+    wished_delivery_date: Cafe24Date;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 매장수령여부
@@ -1939,14 +1939,14 @@ export interface OnOrderReceived {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -1962,21 +1962,21 @@ export interface OnOrderReceived {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
   };
 }
 
@@ -2052,7 +2052,7 @@ export interface OnOrderReceived {
  *
  */
 export interface OnOrderDeliveryStatusChanged {
-  eventNo: 90024;
+  event_no: 90024;
   resource: {
     /**
      * @description
@@ -2060,7 +2060,7 @@ export interface OnOrderDeliveryStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -2068,7 +2068,7 @@ export interface OnOrderDeliveryStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -2107,21 +2107,21 @@ export interface OnOrderDeliveryStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -2137,21 +2137,21 @@ export interface OnOrderDeliveryStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -2161,42 +2161,42 @@ export interface OnOrderDeliveryStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -2204,7 +2204,7 @@ export interface OnOrderDeliveryStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: any;
+    first_order: any;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -2212,7 +2212,7 @@ export interface OnOrderDeliveryStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -2228,21 +2228,21 @@ export interface OnOrderDeliveryStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: any;
+    bank_code: any;
     /**
      * @description
      * 결제수단 코드
@@ -2261,14 +2261,14 @@ export interface OnOrderDeliveryStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -2276,56 +2276,56 @@ export interface OnOrderDeliveryStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: string;
+    bank_account_no: string;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -2334,7 +2334,7 @@ export interface OnOrderDeliveryStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -2344,28 +2344,28 @@ export interface OnOrderDeliveryStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: Cafe24Date;
+    wished_delivery_date: Cafe24Date;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 반품승인일시
      *
      *
      */
-    returnConfirmedDate: any;
+    return_confirmed_date: any;
     /**
      * @description
      * 매장수령여부
@@ -2373,14 +2373,14 @@ export interface OnOrderDeliveryStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -2396,35 +2396,35 @@ export interface OnOrderDeliveryStatusChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
     /**
      * @description
      * 후불결제 포함여부
      *
      *
      */
-    includedDeferpayOrder: Cafe24Enum;
+    included_deferpay_order: Cafe24Enum;
     /**
      * @description
      * 후불결제 주문번호
      *
      *
      */
-    deferpayOrderId: string;
+    deferpay_order_id: string;
     /**
      * @description
      * 클레임 철회 여부
@@ -2439,7 +2439,7 @@ export interface OnOrderDeliveryStatusChanged {
      * 클레임이 철회된 주문만 해당 값이 반환됩니다.
      * C: 입금전 취소 철회 / E: 입금전 교환 철회
      */
-    withdrawType: Cafe24Enum;
+    withdraw_type: Cafe24Enum;
   };
 }
 
@@ -2476,7 +2476,7 @@ export interface OnOrderDeliveryStatusChanged {
  *
  */
 export interface OnBulkOrderDeliveryStatusChanged {
-  eventNo: 90071;
+  event_no: 90071;
   resource: {
     /**
      * @description
@@ -2484,7 +2484,7 @@ export interface OnBulkOrderDeliveryStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -2492,7 +2492,7 @@ export interface OnBulkOrderDeliveryStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -2531,28 +2531,28 @@ export interface OnBulkOrderDeliveryStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 후불결제 포함여부
      *
      *
      */
-    includedDeferpayOrder: string;
+    included_deferpay_order: string;
     /**
      * @description
      * 후불결제 주문번호
      *
      *
      */
-    deferpayOrderId: string;
+    deferpay_order_id: string;
   };
 }
 
@@ -2623,7 +2623,7 @@ export interface OnBulkOrderDeliveryStatusChanged {
  *
  */
 export interface OnOrderPaymentStatusChanged {
-  eventNo: 90025;
+  event_no: 90025;
   resource: {
     /**
      * @description
@@ -2631,7 +2631,7 @@ export interface OnOrderPaymentStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -2639,7 +2639,7 @@ export interface OnOrderPaymentStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -2678,21 +2678,21 @@ export interface OnOrderPaymentStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -2708,21 +2708,21 @@ export interface OnOrderPaymentStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -2732,42 +2732,42 @@ export interface OnOrderPaymentStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -2775,7 +2775,7 @@ export interface OnOrderPaymentStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -2783,7 +2783,7 @@ export interface OnOrderPaymentStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -2799,21 +2799,21 @@ export interface OnOrderPaymentStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -2832,14 +2832,14 @@ export interface OnOrderPaymentStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -2847,49 +2847,49 @@ export interface OnOrderPaymentStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -2898,7 +2898,7 @@ export interface OnOrderPaymentStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -2908,21 +2908,21 @@ export interface OnOrderPaymentStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 매장수령여부
@@ -2930,28 +2930,28 @@ export interface OnOrderPaymentStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
     /**
      * @description
      * 클레임 철회 여부
@@ -2966,7 +2966,7 @@ export interface OnOrderPaymentStatusChanged {
      * 클레임이 철회된 주문만 해당 값이 반환됩니다.
      * C: 입금전 취소 철회 / E: 입금전 교환 철회
      */
-    withdrawType: Cafe24Enum;
+    withdraw_type: Cafe24Enum;
   };
 }
 
@@ -3037,7 +3037,7 @@ export interface OnOrderPaymentStatusChanged {
  *
  */
 export interface OnOrderCancellationStatusChanged {
-  eventNo: 90026;
+  event_no: 90026;
   resource: {
     /**
      * @description
@@ -3045,7 +3045,7 @@ export interface OnOrderCancellationStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -3053,7 +3053,7 @@ export interface OnOrderCancellationStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -3092,21 +3092,21 @@ export interface OnOrderCancellationStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -3122,21 +3122,21 @@ export interface OnOrderCancellationStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -3146,42 +3146,42 @@ export interface OnOrderCancellationStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -3189,7 +3189,7 @@ export interface OnOrderCancellationStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -3197,7 +3197,7 @@ export interface OnOrderCancellationStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -3213,21 +3213,21 @@ export interface OnOrderCancellationStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -3246,14 +3246,14 @@ export interface OnOrderCancellationStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -3261,56 +3261,56 @@ export interface OnOrderCancellationStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -3319,7 +3319,7 @@ export interface OnOrderCancellationStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -3329,21 +3329,21 @@ export interface OnOrderCancellationStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 매장수령여부
@@ -3351,14 +3351,14 @@ export interface OnOrderCancellationStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -3374,21 +3374,21 @@ export interface OnOrderCancellationStatusChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
   };
 }
 
@@ -3423,7 +3423,7 @@ export interface OnOrderCancellationStatusChanged {
  *
  */
 export interface OnBulkOrderCancellationStatusChanged {
-  eventNo: 90072;
+  event_no: 90072;
   resource: {
     /**
      * @description
@@ -3431,7 +3431,7 @@ export interface OnBulkOrderCancellationStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -3439,7 +3439,7 @@ export interface OnBulkOrderCancellationStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -3478,14 +3478,14 @@ export interface OnBulkOrderCancellationStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
   };
 }
 
@@ -3559,7 +3559,7 @@ export interface OnBulkOrderCancellationStatusChanged {
  *
  */
 export interface OnOrderReturnStatusChanged {
-  eventNo: 90027;
+  event_no: 90027;
   resource: {
     /**
      * @description
@@ -3567,7 +3567,7 @@ export interface OnOrderReturnStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -3575,7 +3575,7 @@ export interface OnOrderReturnStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -3614,21 +3614,21 @@ export interface OnOrderReturnStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -3644,21 +3644,21 @@ export interface OnOrderReturnStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -3668,42 +3668,42 @@ export interface OnOrderReturnStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -3711,7 +3711,7 @@ export interface OnOrderReturnStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -3719,7 +3719,7 @@ export interface OnOrderReturnStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -3735,21 +3735,21 @@ export interface OnOrderReturnStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -3768,14 +3768,14 @@ export interface OnOrderReturnStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -3783,56 +3783,56 @@ export interface OnOrderReturnStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -3841,7 +3841,7 @@ export interface OnOrderReturnStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -3851,21 +3851,21 @@ export interface OnOrderReturnStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 매장수령여부
@@ -3873,14 +3873,14 @@ export interface OnOrderReturnStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -3896,30 +3896,30 @@ export interface OnOrderReturnStatusChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
-    claimReasonType: Cafe24Enum;
-    claimReason: string;
+    ordering_product_name: string;
+    claim_reason_type: Cafe24Enum;
+    claim_reason: string;
     /**
      * @description
      * 반품 사유
      *
      * 고객변심, 상품 불만족, 상품불량, 배송 오류
      */
-    claimReasonTypeText: string;
+    claim_reason_type_text: string;
   };
 }
 
@@ -3954,7 +3954,7 @@ export interface OnOrderReturnStatusChanged {
  *
  */
 export interface OnBulkOrderReturnStatusChanged {
-  eventNo: 90074;
+  event_no: 90074;
   resource: {
     /**
      * @description
@@ -3962,7 +3962,7 @@ export interface OnBulkOrderReturnStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -3970,7 +3970,7 @@ export interface OnBulkOrderReturnStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -4009,14 +4009,14 @@ export interface OnBulkOrderReturnStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
   };
 }
 
@@ -4087,7 +4087,7 @@ export interface OnBulkOrderReturnStatusChanged {
  *
  */
 export interface OnOrderExchangeStatusChanged {
-  eventNo: 90028;
+  event_no: 90028;
   resource: {
     /**
      * @description
@@ -4095,7 +4095,7 @@ export interface OnOrderExchangeStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -4103,7 +4103,7 @@ export interface OnOrderExchangeStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -4142,21 +4142,21 @@ export interface OnOrderExchangeStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -4172,21 +4172,21 @@ export interface OnOrderExchangeStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -4196,42 +4196,42 @@ export interface OnOrderExchangeStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -4239,7 +4239,7 @@ export interface OnOrderExchangeStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -4247,7 +4247,7 @@ export interface OnOrderExchangeStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -4263,21 +4263,21 @@ export interface OnOrderExchangeStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -4296,14 +4296,14 @@ export interface OnOrderExchangeStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -4311,56 +4311,56 @@ export interface OnOrderExchangeStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -4369,7 +4369,7 @@ export interface OnOrderExchangeStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -4379,21 +4379,21 @@ export interface OnOrderExchangeStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 매장수령여부
@@ -4401,14 +4401,14 @@ export interface OnOrderExchangeStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -4424,21 +4424,21 @@ export interface OnOrderExchangeStatusChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
   };
 }
 
@@ -4510,7 +4510,7 @@ export interface OnOrderExchangeStatusChanged {
  *
  */
 export interface OnOrderRefundStatusChanged {
-  eventNo: 90029;
+  event_no: 90029;
   resource: {
     /**
      * @description
@@ -4518,7 +4518,7 @@ export interface OnOrderRefundStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -4526,7 +4526,7 @@ export interface OnOrderRefundStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -4565,21 +4565,21 @@ export interface OnOrderRefundStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -4595,21 +4595,21 @@ export interface OnOrderRefundStatusChanged {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -4619,42 +4619,42 @@ export interface OnOrderRefundStatusChanged {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: any;
+    member_authentication: any;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -4662,7 +4662,7 @@ export interface OnOrderRefundStatusChanged {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -4670,7 +4670,7 @@ export interface OnOrderRefundStatusChanged {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -4686,21 +4686,21 @@ export interface OnOrderRefundStatusChanged {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -4719,14 +4719,14 @@ export interface OnOrderRefundStatusChanged {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -4734,56 +4734,56 @@ export interface OnOrderRefundStatusChanged {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -4792,7 +4792,7 @@ export interface OnOrderRefundStatusChanged {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -4802,28 +4802,28 @@ export interface OnOrderRefundStatusChanged {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: any;
+    wished_delivery_time: any;
     /**
      * @description
      * 반품승인일시
      *
      *
      */
-    returnConfirmedDate: any;
+    return_confirmed_date: any;
     /**
      * @description
      * 매장수령여부
@@ -4831,14 +4831,14 @@ export interface OnOrderRefundStatusChanged {
      * T : 매장수령
      * F : 매장수령 아님
      */
-    storePickup: Cafe24Enum;
+    store_pickup: Cafe24Enum;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -4854,21 +4854,21 @@ export interface OnOrderRefundStatusChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
   };
 }
 
@@ -4903,7 +4903,7 @@ export interface OnOrderRefundStatusChanged {
  *
  */
 export interface OnBulkOrderRefundStatusChanged {
-  eventNo: 90073;
+  event_no: 90073;
   resource: {
     /**
      * @description
@@ -4911,7 +4911,7 @@ export interface OnBulkOrderRefundStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -4919,7 +4919,7 @@ export interface OnBulkOrderRefundStatusChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -4958,14 +4958,14 @@ export interface OnBulkOrderRefundStatusChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
   };
 }
 
@@ -5034,7 +5034,7 @@ export interface OnBulkOrderRefundStatusChanged {
  *
  */
 export interface OnProductAddedToOrder {
-  eventNo: 90031;
+  event_no: 90031;
   resource: {
     /**
      * @description
@@ -5042,7 +5042,7 @@ export interface OnProductAddedToOrder {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5050,21 +5050,21 @@ export interface OnProductAddedToOrder {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 결제 PG사 이름
      *
      *
      */
-    paymentGatewayName: string;
+    payment_gateway_name: string;
     /**
      * @description
      * 화폐단위
@@ -5080,21 +5080,21 @@ export interface OnProductAddedToOrder {
      *
      * date
      */
-    orderDate: Cafe24Datetime;
+    order_date: Cafe24Datetime;
     /**
      * @description
      * 주문경로 텍스트
      *
      *
      */
-    orderPlaceName: string;
+    order_place_name: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원 인증 여부
@@ -5104,42 +5104,42 @@ export interface OnProductAddedToOrder {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: Cafe24Enum;
+    member_authentication: Cafe24Enum;
     /**
      * @description
      * 주문자명
      *
      *
      */
-    buyerName: string;
+    buyer_name: string;
     /**
      * @description
      * 주문자 이메일
      *
      *
      */
-    buyerEmail: string;
+    buyer_email: string;
     /**
      * @description
      * 주문자 일반 전화
      *
      *
      */
-    buyerPhone: string;
+    buyer_phone: string;
     /**
      * @description
      * 주문자 휴대 전화
      *
      *
      */
-    buyerCellphone: string;
+    buyer_cellphone: string;
     /**
      * @description
      * 주문 시 회원등급
      *
      *
      */
-    groupNoWhenOrdering: string;
+    group_no_when_ordering: string;
     /**
      * @description
      * 최초 주문여부
@@ -5147,7 +5147,7 @@ export interface OnProductAddedToOrder {
      * T : 최초 주문
      * F : 최초 주문 아님
      */
-    firstOrder: Cafe24Enum;
+    first_order: Cafe24Enum;
     /**
      * @description
      * 주문이 모바일에서 이루어졌는지 여부
@@ -5155,7 +5155,7 @@ export interface OnProductAddedToOrder {
      * T : 모바일 주문
      * F : 모바일 주문 아님
      */
-    orderFromMobile: Cafe24Enum;
+    order_from_mobile: Cafe24Enum;
     /**
      * @description
      * 결제 완료 여부
@@ -5171,21 +5171,21 @@ export interface OnProductAddedToOrder {
      *
      * date
      */
-    paymentDate: Cafe24Datetime;
+    payment_date: Cafe24Datetime;
     /**
      * @description
      * 결제자명
      *
      *
      */
-    billingName: string;
+    billing_name: string;
     /**
      * @description
      * 은행코드
      *
      * bank_code
      */
-    bankCode: string;
+    bank_code: string;
     /**
      * @description
      * 결제수단 코드
@@ -5204,14 +5204,14 @@ export interface OnProductAddedToOrder {
      * market_discount : 마켓할인
      * etc : 기타
      */
-    paymentMethod: string;
+    payment_method: string;
     /**
      * @description
      * 간편결제 결제사 이름
      *
      *
      */
-    easypayName: string;
+    easypay_name: string;
     /**
      * @description
      * 에스크로 사용여부
@@ -5219,56 +5219,56 @@ export interface OnProductAddedToOrder {
      * T : 에스크로 사용
      * F : 에스크로 미사용
      */
-    useEscrow: Cafe24Enum;
+    use_escrow: Cafe24Enum;
     /**
      * @description
      * 해당 주문건에 대한 쇼핑몰의 계좌번호
      *
      *
      */
-    bankAccountNo: Cafe24Date;
+    bank_account_no: Cafe24Date;
     /**
      * @description
      * 주문금액
      *
      *
      */
-    orderPriceAmount: string;
+    order_price_amount: string;
     /**
      * @description
      * 회원할인금액
      *
      *
      */
-    membershipDiscountAmount: string;
+    membership_discount_amount: string;
     /**
      * @description
      * 실결제금액
      *
      *
      */
-    actualPaymentAmount: string;
+    actual_payment_amount: string;
     /**
      * @description
      * 적립금 사용금액
      *
      *
      */
-    mileageSpentAmount: string;
+    mileage_spent_amount: string;
     /**
      * @description
      * 주문취소일
      *
      *
      */
-    cancelDate: any;
+    cancel_date: any;
     /**
      * @description
      * 배송비
      *
      *
      */
-    shippingFee: string;
+    shipping_fee: string;
     /**
      * @description
      * 배송비 타입
@@ -5277,7 +5277,7 @@ export interface OnProductAddedToOrder {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 배송상태
@@ -5287,28 +5287,28 @@ export interface OnProductAddedToOrder {
      * T : 배송완료
      * W : 배송보류
      */
-    shippingStatus: Cafe24Enum;
+    shipping_status: Cafe24Enum;
     /**
      * @description
      * 희망배송일
      *
      *
      */
-    wishedDeliveryDate: string;
+    wished_delivery_date: string;
     /**
      * @description
      * 희망배송시간
      *
      *
      */
-    wishedDeliveryTime: string;
+    wished_delivery_time: string;
     /**
      * @description
      * 배송 메세지
      *
      *
      */
-    shippingMessage: string;
+    shipping_message: string;
     /**
      * @description
      * 주문경로
@@ -5324,21 +5324,21 @@ export interface OnProductAddedToOrder {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
   };
 }
 
@@ -5374,7 +5374,7 @@ export interface OnProductAddedToOrder {
  *
  */
 export interface OnOrderRecipientInfoChanged {
-  eventNo: 90064;
+  event_no: 90064;
   resource: {
     /**
      * @description
@@ -5382,7 +5382,7 @@ export interface OnOrderRecipientInfoChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5390,7 +5390,7 @@ export interface OnOrderRecipientInfoChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -5429,14 +5429,14 @@ export interface OnOrderRecipientInfoChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 주문경로
@@ -5452,7 +5452,7 @@ export interface OnOrderRecipientInfoChanged {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
   };
 }
 
@@ -5493,7 +5493,7 @@ export interface OnOrderRecipientInfoChanged {
  *
  */
 export interface OnAdminNoteAddedToOrder {
-  eventNo: 90066;
+  event_no: 90066;
   resource: {
     /**
      * @description
@@ -5501,7 +5501,7 @@ export interface OnAdminNoteAddedToOrder {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5509,7 +5509,7 @@ export interface OnAdminNoteAddedToOrder {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -5548,21 +5548,21 @@ export interface OnAdminNoteAddedToOrder {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 관리자메모 변경일
      *
      * 쇼핑몰에 접수된 주문에 관리자메모가 등록된 경우
      */
-    requestedDate: Cafe24Date;
+    requested_date: Cafe24Date;
     /**
      * @description
      * 주문경로
@@ -5578,35 +5578,35 @@ export interface OnAdminNoteAddedToOrder {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 주문 상품
      *
      *
      */
-    orderingProductCode: string;
+    ordering_product_code: string;
     /**
      * @description
      * 주문 상품명
      *
      *
      */
-    orderingProductName: string;
+    ordering_product_name: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -5645,7 +5645,7 @@ export interface OnAdminNoteAddedToOrder {
  *
  */
 export interface OnAdminNoteUpdatedOnOrder {
-  eventNo: 90068;
+  event_no: 90068;
   resource: {
     /**
      * @description
@@ -5653,7 +5653,7 @@ export interface OnAdminNoteUpdatedOnOrder {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5661,7 +5661,7 @@ export interface OnAdminNoteUpdatedOnOrder {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -5700,21 +5700,21 @@ export interface OnAdminNoteUpdatedOnOrder {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 관리자메모 변경일
      *
      * 쇼핑몰에 접수된 주문에 관리자메모가 등록된 경우
      */
-    requestedDate: Cafe24Date;
+    requested_date: Cafe24Date;
     /**
      * @description
      * 주문경로
@@ -5730,21 +5730,21 @@ export interface OnAdminNoteUpdatedOnOrder {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -5783,7 +5783,7 @@ export interface OnAdminNoteUpdatedOnOrder {
  *
  */
 export interface OnAdminNoteDeletedFromOrder {
-  eventNo: 90069;
+  event_no: 90069;
   resource: {
     /**
      * @description
@@ -5791,7 +5791,7 @@ export interface OnAdminNoteDeletedFromOrder {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5799,7 +5799,7 @@ export interface OnAdminNoteDeletedFromOrder {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -5838,21 +5838,21 @@ export interface OnAdminNoteDeletedFromOrder {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 관리자메모 변경일
      *
      * 쇼핑몰에 접수된 주문에 관리자메모가 등록된 경우
      */
-    requestedDate: Cafe24Date;
+    requested_date: Cafe24Date;
     /**
      * @description
      * 주문경로
@@ -5868,21 +5868,21 @@ export interface OnAdminNoteDeletedFromOrder {
      * coupang:쿠팡
      * shopn:스마트스토어
      */
-    orderPlaceId: string;
+    order_place_id: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -5917,7 +5917,7 @@ export interface OnAdminNoteDeletedFromOrder {
  *
  */
 export interface OnOrderFormDeleted {
-  eventNo: 90070;
+  event_no: 90070;
   resource: {
     /**
      * @description
@@ -5925,7 +5925,7 @@ export interface OnOrderFormDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -5933,7 +5933,7 @@ export interface OnOrderFormDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -5972,14 +5972,14 @@ export interface OnOrderFormDeleted {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
   };
 }
 
@@ -6018,7 +6018,7 @@ export interface OnOrderFormDeleted {
  *
  */
 export interface OnProductAddedToCart {
-  eventNo: 90084;
+  event_no: 90084;
   resource: {
     /**
      * @description
@@ -6026,7 +6026,7 @@ export interface OnProductAddedToCart {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6034,14 +6034,14 @@ export interface OnProductAddedToCart {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 배송비 타입
@@ -6050,7 +6050,7 @@ export interface OnProductAddedToCart {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: Cafe24Enum;
+    shipping_type: Cafe24Enum;
     /**
      * @description
      * 상품번호
@@ -6058,10 +6058,10 @@ export interface OnProductAddedToCart {
      *
      *
      */
-    productNo: number;
-    variantCode: string;
+    product_no: number;
+    variant_code: string;
     quantity: number;
-    productBundle: Cafe24Enum;
+    product_bundle: Cafe24Enum;
   };
 }
 
@@ -6099,7 +6099,7 @@ export interface OnProductAddedToCart {
  *
  */
 export interface OnOrderShippingCodeChanged {
-  eventNo: 90162;
+  event_no: 90162;
   resource: {
     /**
      * @description
@@ -6107,7 +6107,7 @@ export interface OnOrderShippingCodeChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6115,7 +6115,7 @@ export interface OnOrderShippingCodeChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 주문 상태 관련 이벤트코드
@@ -6154,35 +6154,35 @@ export interface OnOrderShippingCodeChanged {
      * delete_admin_memo (관리자 메모 삭제)
      * old_order_delete (주문서 삭제)
      */
-    eventCode: string;
+    event_code: string;
     /**
      * @description
      * 주문번호
      *
      *
      */
-    orderId: string;
+    order_id: string;
     /**
      * @description
      * 배송번호
      *
      *
      */
-    shippingCode: string;
+    shipping_code: string;
     /**
      * @description
      * 배송업체 코드
      *
      *
      */
-    shippingCompanyCode: string;
+    shipping_company_code: string;
     /**
      * @description
      * 송장번호
      *
      *
      */
-    trackingNo: string;
+    tracking_no: string;
   };
 }
 
@@ -6232,7 +6232,7 @@ export interface OnOrderShippingCodeChanged {
  *
  */
 export interface OnNewMemberRegistered {
-  eventNo: 90032;
+  event_no: 90032;
   resource: {
     /**
      * @description
@@ -6240,7 +6240,7 @@ export interface OnNewMemberRegistered {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6248,15 +6248,15 @@ export interface OnNewMemberRegistered {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
-    groupNo: number;
+    member_id: string;
+    group_no: number;
     /**
      * @description
      * 주문자명
@@ -6270,28 +6270,28 @@ export interface OnNewMemberRegistered {
      *
      * 최대글자수 : [50자]
      */
-    nickName: string;
+    nick_name: string;
     /**
      * @description
      * 회원 영문이름
      *
      *
      */
-    nameEnglish: string;
+    name_english: string;
     /**
      * @description
      * 회원 이름 발음 표기(일본어)
      *
      *
      */
-    namePhonetic: string;
+    name_phonetic: string;
     /**
      * @description
      * 가입일
      *
      *
      */
-    createdDate: Cafe24Datetime;
+    created_date: Cafe24Datetime;
     /**
      * @description
      * 회원 인증 여부
@@ -6301,7 +6301,7 @@ export interface OnNewMemberRegistered {
      * B : 특별관리회원
      * J : 14세미만회원
      */
-    memberAuthentication: Cafe24Enum;
+    member_authentication: Cafe24Enum;
     /**
      * @description
      * 해당 회원의 생일
@@ -6353,28 +6353,28 @@ export interface OnNewMemberRegistered {
      * T : 수신
      * F : 수신안함
      */
-    newsMail: Cafe24Enum;
+    news_mail: Cafe24Enum;
     /**
      * @description
      * 총 마일리지
      *
      *
      */
-    totalMileage: string;
+    total_mileage: string;
     /**
      * @description
      * 가용 마일리지
      *
      *
      */
-    availableMileage: string;
+    available_mileage: string;
     /**
      * @description
      * 추천인 ID
      *
      *
      */
-    recommendId: string;
+    recommend_id: string;
     /**
      * @description
      * 지역코드
@@ -6389,7 +6389,7 @@ export interface OnNewMemberRegistered {
      * T : 사용
      * F : 사용안함
      */
-    useMobileApp: Cafe24Enum;
+    use_mobile_app: Cafe24Enum;
     /**
      * @description
      * 회원타입
@@ -6398,7 +6398,7 @@ export interface OnNewMemberRegistered {
      * c : 사업자
      * f : 외국인
      */
-    memberType: string;
+    member_type: string;
   };
 }
 
@@ -6425,7 +6425,7 @@ export interface OnNewMemberRegistered {
  *
  */
 export interface OnMemberLinkedSNSAccount {
-  eventNo: 90063;
+  event_no: 90063;
   resource: {
     /**
      * @description
@@ -6433,7 +6433,7 @@ export interface OnMemberLinkedSNSAccount {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6441,16 +6441,16 @@ export interface OnMemberLinkedSNSAccount {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
-    socialName: string;
-    socialMemberCode: number;
+    member_id: string;
+    social_name: string;
+    social_member_code: number;
   };
 }
 
@@ -6488,7 +6488,7 @@ export interface OnMemberLinkedSNSAccount {
  *
  */
 export interface OnMemberInfoChanged {
-  eventNo: 90080;
+  event_no: 90080;
   resource: {
     /**
      * @description
@@ -6496,7 +6496,7 @@ export interface OnMemberInfoChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6504,15 +6504,15 @@ export interface OnMemberInfoChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
-    diffKey: Array<string>;
+    member_id: string;
+    diff_key: Array<string>;
     /**
      * @description
      * 회원정보 변경위치
@@ -6520,7 +6520,7 @@ export interface OnMemberInfoChanged {
      * EC_FRONT : 프론트 회원정보수정에서 수정
      * EC_ADMIN : 몰 어드민에서 관리자가 수정
      */
-    subEventCode: string;
+    sub_event_code: string;
   };
 }
 
@@ -6552,7 +6552,7 @@ export interface OnMemberInfoChanged {
  *
  */
 export interface OnMemberLogin {
-  eventNo: 90143;
+  event_no: 90143;
   resource: {
     /**
      * @description
@@ -6560,7 +6560,7 @@ export interface OnMemberLogin {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6568,28 +6568,28 @@ export interface OnMemberLogin {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 회원등급명
      *
      *
      */
-    groupName: string;
+    group_name: string;
     /**
      * @description
      * 유입경로
      *
      * PC : PC로 접속 / Mobile : 모바일로 접속 mobile Web
      */
-    inflowName: string;
+    inflow_name: string;
   };
 }
 
@@ -6620,7 +6620,7 @@ export interface OnMemberLogin {
  *
  */
 export interface OnMemberGradeChanged {
-  eventNo: 90144;
+  event_no: 90144;
   resource: {
     /**
      * @description
@@ -6628,7 +6628,7 @@ export interface OnMemberGradeChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6636,15 +6636,15 @@ export interface OnMemberGradeChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
-    afterMemberGroupName: string;
+    member_id: string;
+    after_member_group_name: string;
   };
 }
 
@@ -6674,7 +6674,7 @@ export interface OnMemberGradeChanged {
  *
  */
 export interface OnMemberBecameDormant {
-  eventNo: 90145;
+  event_no: 90145;
   resource: {
     /**
      * @description
@@ -6682,7 +6682,7 @@ export interface OnMemberBecameDormant {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6690,14 +6690,14 @@ export interface OnMemberBecameDormant {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
   };
 }
 
@@ -6727,7 +6727,7 @@ export interface OnMemberBecameDormant {
  *
  */
 export interface OnMemberDormancyReleased {
-  eventNo: 90146;
+  event_no: 90146;
   resource: {
     /**
      * @description
@@ -6735,7 +6735,7 @@ export interface OnMemberDormancyReleased {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6743,14 +6743,14 @@ export interface OnMemberDormancyReleased {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
   };
 }
 
@@ -6780,7 +6780,7 @@ export interface OnMemberDormancyReleased {
  *
  */
 export interface OnMemberWithdrawal {
-  eventNo: 90147;
+  event_no: 90147;
   resource: {
     /**
      * @description
@@ -6788,7 +6788,7 @@ export interface OnMemberWithdrawal {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6796,14 +6796,14 @@ export interface OnMemberWithdrawal {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
   };
 }
 
@@ -6839,7 +6839,7 @@ export interface OnMemberWithdrawal {
  *
  */
 export interface OnMemberPointsChanged {
-  eventNo: 90148;
+  event_no: 90148;
   resource: {
     /**
      * @description
@@ -6847,24 +6847,24 @@ export interface OnMemberPointsChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: string;
+    shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
-    mileageMoney: number;
-    availMileage: number;
-    issueDatetime: Cafe24Date;
+    member_id: string;
+    mileage_money: number;
+    avail_mileage: number;
+    issue_datetime: Cafe24Date;
     /**
      * @description
      * 적립금 타입 코드
@@ -6878,7 +6878,7 @@ export interface OnMemberPointsChanged {
      *
      * 관리자 직접 적림금 부여, 주문취소로 인한 환불시 환불금을 적립금으로 부여 등
      */
-    caseText: string;
+    case_text: string;
     /**
      * @description
      * 적립 사유
@@ -6917,7 +6917,7 @@ export interface OnMemberPointsChanged {
  *
  */
 export interface OnPostCreated {
-  eventNo: 90033;
+  event_no: 90033;
   resource: {
     /**
      * @description
@@ -6925,7 +6925,7 @@ export interface OnPostCreated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -6933,14 +6933,14 @@ export interface OnPostCreated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 게시판 번호
      *
      *
      */
-    boardNo: number;
+    board_no: number;
     no: number;
     /**
      * @description
@@ -6950,14 +6950,14 @@ export interface OnPostCreated {
      * T : 있음
      * F : 없음
      */
-    hasParent: Cafe24Enum;
+    has_parent: Cafe24Enum;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -6996,7 +6996,7 @@ export interface OnPostCreated {
  *
  */
 export interface OnCommentAddedToPost {
-  eventNo: 90034;
+  event_no: 90034;
   resource: {
     /**
      * @description
@@ -7004,7 +7004,7 @@ export interface OnCommentAddedToPost {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7012,21 +7012,21 @@ export interface OnCommentAddedToPost {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 게시판 번호
      *
      *
      */
-    boardNo: number;
+    board_no: number;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -7040,14 +7040,14 @@ export interface OnCommentAddedToPost {
      *
      *
      */
-    commentMemberId: string;
+    comment_member_id: string;
     /**
      * @description
      * 댓글 작성자명
      *
      *
      */
-    commentWriter: string;
+    comment_writer: string;
   };
 }
 
@@ -7076,7 +7076,7 @@ export interface OnCommentAddedToPost {
  *
  */
 export interface OnUrgentInquiryReceived {
-  eventNo: 90035;
+  event_no: 90035;
   resource: {
     /**
      * @description
@@ -7084,7 +7084,7 @@ export interface OnUrgentInquiryReceived {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7092,14 +7092,14 @@ export interface OnUrgentInquiryReceived {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: any;
+    member_id: any;
     /**
      * @description
      * 작성자명
@@ -7137,7 +7137,7 @@ export interface OnUrgentInquiryReceived {
  *
  */
 export interface OnPostDeleted {
-  eventNo: 90036;
+  event_no: 90036;
   resource: {
     /**
      * @description
@@ -7145,7 +7145,7 @@ export interface OnPostDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7153,14 +7153,14 @@ export interface OnPostDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 게시판 번호
      *
      *
      */
-    boardNo: number;
+    board_no: number;
     no: number;
     /**
      * @description
@@ -7168,7 +7168,7 @@ export interface OnPostDeleted {
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -7207,7 +7207,7 @@ export interface OnPostDeleted {
  *
  */
 export interface OnCommentDeletedFromPost {
-  eventNo: 90037;
+  event_no: 90037;
   resource: {
     /**
      * @description
@@ -7215,7 +7215,7 @@ export interface OnCommentDeletedFromPost {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7223,21 +7223,21 @@ export interface OnCommentDeletedFromPost {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 게시판 번호
      *
      *
      */
-    boardNo: number;
+    board_no: number;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -7251,14 +7251,14 @@ export interface OnCommentDeletedFromPost {
      *
      *
      */
-    commentMemberId: string;
+    comment_member_id: string;
     /**
      * @description
      * 댓글 작성자명
      *
      *
      */
-    commentWriter: string;
+    comment_writer: string;
   };
 }
 
@@ -7287,7 +7287,7 @@ export interface OnCommentDeletedFromPost {
  *
  */
 export interface OnUrgentInquiryDeleted {
-  eventNo: 90038;
+  event_no: 90038;
   resource: {
     /**
      * @description
@@ -7295,7 +7295,7 @@ export interface OnUrgentInquiryDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7303,14 +7303,14 @@ export interface OnUrgentInquiryDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -7349,7 +7349,7 @@ export interface OnUrgentInquiryDeleted {
  *
  */
 export interface OnPostUpdated {
-  eventNo: 90039;
+  event_no: 90039;
   resource: {
     /**
      * @description
@@ -7357,7 +7357,7 @@ export interface OnPostUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7365,14 +7365,14 @@ export interface OnPostUpdated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 게시판 번호
      *
      *
      */
-    boardNo: number;
+    board_no: number;
     no: number;
     /**
      * @description
@@ -7382,14 +7382,14 @@ export interface OnPostUpdated {
      * T : 있음
      * F : 없음
      */
-    hasParent: Cafe24Enum;
+    has_parent: Cafe24Enum;
     /**
      * @description
      * 회원 아이디
      *
      *
      */
-    memberId: string;
+    member_id: string;
     /**
      * @description
      * 작성자명
@@ -7435,7 +7435,7 @@ export interface OnPostUpdated {
  *
  */
 export interface OnProductCategoryAdded {
-  eventNo: 90042;
+  event_no: 90042;
   resource: {
     /**
      * @description
@@ -7443,7 +7443,7 @@ export interface OnProductCategoryAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7451,21 +7451,21 @@ export interface OnProductCategoryAdded {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품분류의 고유한 일련 번호
      *
      *
      */
-    categoryNo: number;
+    category_no: number;
     /**
      * @description
      * 상품분류명
      *
      * 최대글자수 : [50자]
      */
-    categoryName: string;
+    category_name: string;
     /**
      * @description
      * 상품분류 표시상태
@@ -7474,7 +7474,7 @@ export interface OnProductCategoryAdded {
      * T : 표시함
      * F : 표시안함
      */
-    useDisplay: Cafe24Enum;
+    use_display: Cafe24Enum;
     /**
      * @description
      * 메인분류 표시상태
@@ -7482,7 +7482,7 @@ export interface OnProductCategoryAdded {
      * T : 표시함
      * F : 표시안함
      */
-    useMain: Cafe24Enum;
+    use_main: Cafe24Enum;
     /**
      * @description
      * 쇼핑몰 표시설정
@@ -7492,7 +7492,7 @@ export interface OnProductCategoryAdded {
      * M : 모바일
      * F : 모두 사용안함
      */
-    displayType: Cafe24Enum;
+    display_type: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열영역 구분
@@ -7500,7 +7500,7 @@ export interface OnProductCategoryAdded {
      * A : 전체
      * G : 영역별
      */
-    productDisplayScope: Cafe24Enum;
+    product_display_scope: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법
@@ -7509,7 +7509,7 @@ export interface OnProductCategoryAdded {
      * U : 사용자 지정
      * M : 자동정렬 + 사용자 지정
      */
-    productDisplayType: Cafe24Enum;
+    product_display_type: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 키
@@ -7523,7 +7523,7 @@ export interface OnProductCategoryAdded {
      * C : 조회수가 높은 상품
      * L : 좋아요수가 높은 상품
      */
-    productDisplayKey: Cafe24Enum;
+    product_display_key: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 순서
@@ -7531,7 +7531,7 @@ export interface OnProductCategoryAdded {
      * D: 내림차순
      * A : 오름차순
      */
-    productDisplaySort: Cafe24Enum;
+    product_display_sort: Cafe24Enum;
     /**
      * @description
      * 품절상품진열
@@ -7539,7 +7539,7 @@ export interface OnProductCategoryAdded {
      * B : 품절상품 맨 뒤로
      * N : 품절상품 상관없음
      */
-    soldoutProductDisplay: Cafe24Enum;
+    soldout_product_display: Cafe24Enum;
     /**
      * @description
      * 하위분류 상품진열
@@ -7548,7 +7548,7 @@ export interface OnProductCategoryAdded {
      * T : 진열함
      * F : 진열안함
      */
-    subCategoryProductDisplay: Cafe24Enum;
+    sub_category_product_display: Cafe24Enum;
   };
 }
 
@@ -7587,7 +7587,7 @@ export interface OnProductCategoryAdded {
  *
  */
 export interface OnProductCategoryUpdated {
-  eventNo: 90043;
+  event_no: 90043;
   resource: {
     /**
      * @description
@@ -7595,7 +7595,7 @@ export interface OnProductCategoryUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7603,21 +7603,21 @@ export interface OnProductCategoryUpdated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품분류의 고유한 일련 번호
      *
      *
      */
-    categoryNo: number;
+    category_no: number;
     /**
      * @description
      * 상품분류명
      *
      * 최대글자수 : [50자]
      */
-    categoryName: string;
+    category_name: string;
     /**
      * @description
      * 상품분류 표시상태
@@ -7626,7 +7626,7 @@ export interface OnProductCategoryUpdated {
      * T : 표시함
      * F : 표시안함
      */
-    useDisplay: Cafe24Enum;
+    use_display: Cafe24Enum;
     /**
      * @description
      * 메인분류 표시상태
@@ -7634,7 +7634,7 @@ export interface OnProductCategoryUpdated {
      * T : 표시함
      * F : 표시안함
      */
-    useMain: Cafe24Enum;
+    use_main: Cafe24Enum;
     /**
      * @description
      * 쇼핑몰 표시설정
@@ -7644,7 +7644,7 @@ export interface OnProductCategoryUpdated {
      * M : 모바일
      * F : 모두 사용안함
      */
-    displayType: Cafe24Enum;
+    display_type: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열영역 구분
@@ -7652,7 +7652,7 @@ export interface OnProductCategoryUpdated {
      * A : 전체
      * G : 영역별
      */
-    productDisplayScope: Cafe24Enum;
+    product_display_scope: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법
@@ -7661,7 +7661,7 @@ export interface OnProductCategoryUpdated {
      * U : 사용자 지정
      * M : 자동정렬 + 사용자 지정
      */
-    productDisplayType: Cafe24Enum;
+    product_display_type: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 키
@@ -7675,7 +7675,7 @@ export interface OnProductCategoryUpdated {
      * C : 조회수가 높은 상품
      * L : 좋아요수가 높은 상품
      */
-    productDisplayKey: Cafe24Enum;
+    product_display_key: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 순서
@@ -7683,7 +7683,7 @@ export interface OnProductCategoryUpdated {
      * D: 내림차순
      * A : 오름차순
      */
-    productDisplaySort: Cafe24Enum;
+    product_display_sort: Cafe24Enum;
     /**
      * @description
      * 품절상품진열
@@ -7691,7 +7691,7 @@ export interface OnProductCategoryUpdated {
      * B : 품절상품 맨 뒤로
      * N : 품절상품 상관없음
      */
-    soldoutProductDisplay: Cafe24Enum;
+    soldout_product_display: Cafe24Enum;
     /**
      * @description
      * 하위분류 상품진열
@@ -7700,7 +7700,7 @@ export interface OnProductCategoryUpdated {
      * T : 진열함
      * F : 진열안함
      */
-    subCategoryProductDisplay: Cafe24Enum;
+    sub_category_product_display: Cafe24Enum;
   };
 }
 
@@ -7732,7 +7732,7 @@ export interface OnProductCategoryUpdated {
  *
  */
 export interface OnBulkProductCategoryDisplaySettingsChanged {
-  eventNo: 90046;
+  event_no: 90046;
   resource: {
     /**
      * @description
@@ -7740,7 +7740,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7748,7 +7748,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품분류 진열영역 구분
@@ -7756,7 +7756,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      * A : 전체
      * G : 영역별
      */
-    productDisplayScope: Cafe24Enum;
+    product_display_scope: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법
@@ -7765,7 +7765,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      * U : 사용자 지정
      * M : 자동정렬 + 사용자 지정
      */
-    productDisplayType: Cafe24Enum;
+    product_display_type: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 키
@@ -7779,7 +7779,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      * C : 조회수가 높은 상품
      * L : 좋아요수가 높은 상품
      */
-    productDisplayKey: Cafe24Enum;
+    product_display_key: Cafe24Enum;
     /**
      * @description
      * 상품분류 진열방법 순서
@@ -7787,7 +7787,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
      * D: 내림차순
      * A : 오름차순
      */
-    productDisplaySort: Cafe24Enum;
+    product_display_sort: Cafe24Enum;
   };
 }
 
@@ -7816,7 +7816,7 @@ export interface OnBulkProductCategoryDisplaySettingsChanged {
  *
  */
 export interface OnProductCategoryDeleted {
-  eventNo: 90044;
+  event_no: 90044;
   resource: {
     /**
      * @description
@@ -7824,7 +7824,7 @@ export interface OnProductCategoryDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7832,14 +7832,14 @@ export interface OnProductCategoryDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 상품분류의 고유한 일련 번호
      *
      *
      */
-    categoryNo: number;
+    category_no: number;
   };
 }
 
@@ -7867,7 +7867,7 @@ export interface OnProductCategoryDeleted {
  *
  */
 export interface OnProductCategoryOrderChanged {
-  eventNo: 90045;
+  event_no: 90045;
   resource: {
     /**
      * @description
@@ -7875,7 +7875,7 @@ export interface OnProductCategoryOrderChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7883,7 +7883,7 @@ export interface OnProductCategoryOrderChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
   };
 }
 
@@ -7919,7 +7919,7 @@ export interface OnProductCategoryOrderChanged {
  *
  */
 export interface OnSupplierAdded {
-  eventNo: 90090;
+  event_no: 90090;
   resource: {
     /**
      * @description
@@ -7927,7 +7927,7 @@ export interface OnSupplierAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -7935,7 +7935,7 @@ export interface OnSupplierAdded {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 공급사 코드
@@ -7943,14 +7943,14 @@ export interface OnSupplierAdded {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
     /**
      * @description
      * 공급사명
      *
      *
      */
-    supplierName: string;
+    supplier_name: string;
     /**
      * @description
      * 공급사 사용여부
@@ -7958,7 +7958,7 @@ export interface OnSupplierAdded {
      * T: 사용함
      * F: 사용안함
      */
-    useSupplier: Cafe24Enum;
+    use_supplier: Cafe24Enum;
     /**
      * @description
      * 공급사 유형
@@ -7966,7 +7966,7 @@ export interface OnSupplierAdded {
      * D: 사입
      * C: 직배송
      */
-    tradingType: Cafe24Enum;
+    trading_type: Cafe24Enum;
     /**
      * @description
      * 공급사 구조
@@ -7976,7 +7976,7 @@ export interface OnSupplierAdded {
      * BS: 입점업체
      * ET: 기타
      */
-    supplierType: string;
+    supplier_type: string;
     /**
      * @description
      * 거래상태
@@ -7993,7 +7993,7 @@ export interface OnSupplierAdded {
      * P : 수수료형
      * D : 매입형
      */
-    paymentType: Cafe24Enum;
+    payment_type: Cafe24Enum;
     /**
      * @description
      * 수수료율
@@ -8010,7 +8010,7 @@ export interface OnSupplierAdded {
      * B: 주간정산
      * A: 월간정산
      */
-    paymentPeriod: Cafe24Enum;
+    payment_period: Cafe24Enum;
   };
 }
 
@@ -8046,7 +8046,7 @@ export interface OnSupplierAdded {
  *
  */
 export interface OnSupplierUpdated {
-  eventNo: 90091;
+  event_no: 90091;
   resource: {
     /**
      * @description
@@ -8054,7 +8054,7 @@ export interface OnSupplierUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8062,7 +8062,7 @@ export interface OnSupplierUpdated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 공급사 코드
@@ -8070,14 +8070,14 @@ export interface OnSupplierUpdated {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
     /**
      * @description
      * 공급사명
      *
      *
      */
-    supplierName: string;
+    supplier_name: string;
     /**
      * @description
      * 공급사 사용여부
@@ -8085,7 +8085,7 @@ export interface OnSupplierUpdated {
      * T: 사용함
      * F: 사용안함
      */
-    useSupplier: Cafe24Enum;
+    use_supplier: Cafe24Enum;
     /**
      * @description
      * 공급사 유형
@@ -8093,7 +8093,7 @@ export interface OnSupplierUpdated {
      * D: 사입
      * C: 직배송
      */
-    tradingType: Cafe24Enum;
+    trading_type: Cafe24Enum;
     /**
      * @description
      * 공급사 구조
@@ -8103,7 +8103,7 @@ export interface OnSupplierUpdated {
      * BS: 입점업체
      * ET: 기타
      */
-    supplierType: string;
+    supplier_type: string;
     /**
      * @description
      * 거래상태
@@ -8120,7 +8120,7 @@ export interface OnSupplierUpdated {
      * P : 수수료형
      * D : 매입형
      */
-    paymentType: Cafe24Enum;
+    payment_type: Cafe24Enum;
     /**
      * @description
      * 수수료율
@@ -8137,7 +8137,7 @@ export interface OnSupplierUpdated {
      * B: 주간정산
      * A: 월간정산
      */
-    paymentPeriod: Cafe24Enum;
+    payment_period: Cafe24Enum;
   };
 }
 
@@ -8165,7 +8165,7 @@ export interface OnSupplierUpdated {
  *
  */
 export interface OnBulkSupplierUpdate {
-  eventNo: 90092;
+  event_no: 90092;
   resource: {
     /**
      * @description
@@ -8173,7 +8173,7 @@ export interface OnBulkSupplierUpdate {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8181,7 +8181,7 @@ export interface OnBulkSupplierUpdate {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 공급사 코드
@@ -8189,7 +8189,7 @@ export interface OnBulkSupplierUpdate {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
   };
 }
 
@@ -8217,7 +8217,7 @@ export interface OnBulkSupplierUpdate {
  *
  */
 export interface OnSupplierDeleted {
-  eventNo: 90093;
+  event_no: 90093;
   resource: {
     /**
      * @description
@@ -8225,7 +8225,7 @@ export interface OnSupplierDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8233,7 +8233,7 @@ export interface OnSupplierDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 공급사 코드
@@ -8241,7 +8241,7 @@ export interface OnSupplierDeleted {
      * 형식 : [A-Z0-9]
      * 글자수 최소: [8자]~최대: [8자]
      */
-    supplierCode: string;
+    supplier_code: string;
   };
 }
 
@@ -8289,7 +8289,7 @@ export interface OnSupplierDeleted {
  *
  */
 export interface OnShippingProviderAdded {
-  eventNo: 90100;
+  event_no: 90100;
   resource: {
     /**
      * @description
@@ -8297,7 +8297,7 @@ export interface OnShippingProviderAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8305,21 +8305,21 @@ export interface OnShippingProviderAdded {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 배송업체 ID
      *
      *
      */
-    scId: string;
+    sc_id: string;
     /**
      * @description
      * 배송업체명
      *
      *
      */
-    scName: string;
+    sc_name: string;
     /**
      * @description
      * 기본배송사여부
@@ -8327,7 +8327,7 @@ export interface OnShippingProviderAdded {
      * T : 사용함
      * F : 사용안함
      */
-    isBasic: Cafe24Enum;
+    is_basic: Cafe24Enum;
     /**
      * @description
      * 대표 연락처
@@ -8355,7 +8355,7 @@ export interface OnShippingProviderAdded {
      *
      *
      */
-    shippingMoney: string;
+    shipping_money: string;
     homepage: string;
     /**
      * @description
@@ -8363,28 +8363,28 @@ export interface OnShippingProviderAdded {
      *
      *
      */
-    traceUrl: string;
+    trace_url: string;
     /**
      * @description
      * 보내는 사람 이름
      *
      *
      */
-    senderName: string;
+    sender_name: string;
     /**
      * @description
      * 보내는 사람 대표전화
      *
      *
      */
-    senderPhone: string;
+    sender_phone: string;
     /**
      * @description
      * 보내는 사람 휴대전화
      *
      *
      */
-    senderCellphone: string;
+    sender_cellphone: string;
     /**
      * @description
      * 배송상품 무게
@@ -8407,7 +8407,7 @@ export interface OnShippingProviderAdded {
      * 02 : 착불
      * 03 : 신용
      */
-    shippingType: string;
+    shipping_type: string;
     /**
      * @description
      * 박스 타입
@@ -8418,42 +8418,42 @@ export interface OnShippingProviderAdded {
      * 04 : 대
      * 05 : 특대
      */
-    boxType: string;
+    box_type: string;
     /**
      * @description
      * 보내는사람 주소(우편번호)
      *
      *
      */
-    senderZipcode: string;
+    sender_zipcode: string;
     /**
      * @description
      * 보내는사람 주소(기본주소)
      *
      *
      */
-    senderAddress1: string;
+    sender_address1: string;
     /**
      * @description
      * 보내는사람 주소(상세주소)
      *
      *
      */
-    senderAddress2: string;
+    sender_address2: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -8491,7 +8491,7 @@ export interface OnShippingProviderAdded {
  *
  */
 export interface OnShippingProviderUpdated {
-  eventNo: 90101;
+  event_no: 90101;
   resource: {
     /**
      * @description
@@ -8499,7 +8499,7 @@ export interface OnShippingProviderUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8507,21 +8507,21 @@ export interface OnShippingProviderUpdated {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 배송업체 ID
      *
      *
      */
-    scId: string;
+    sc_id: string;
     /**
      * @description
      * 배송업체명
      *
      *
      */
-    scName: string;
+    sc_name: string;
     /**
      * @description
      * 기본배송사여부
@@ -8529,7 +8529,7 @@ export interface OnShippingProviderUpdated {
      * T : 사용함
      * F : 사용안함
      */
-    isBasic: Cafe24Enum;
+    is_basic: Cafe24Enum;
     /**
      * @description
      * 대표 연락처
@@ -8557,7 +8557,7 @@ export interface OnShippingProviderUpdated {
      *
      *
      */
-    shippingMoney: string;
+    shipping_money: string;
     homepage: string;
     /**
      * @description
@@ -8565,21 +8565,21 @@ export interface OnShippingProviderUpdated {
      *
      *
      */
-    traceUrl: string;
+    trace_url: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -8609,7 +8609,7 @@ export interface OnShippingProviderUpdated {
  *
  */
 export interface OnShippingProviderDeleted {
-  eventNo: 90102;
+  event_no: 90102;
   resource: {
     /**
      * @description
@@ -8617,7 +8617,7 @@ export interface OnShippingProviderDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8625,28 +8625,28 @@ export interface OnShippingProviderDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 배송업체 ID
      *
      *
      */
-    scId: string;
+    sc_id: string;
     /**
      * @description
      * 처리자 ID
      *
      *
      */
-    executorId: string;
+    executor_id: string;
     /**
      * @description
      * 처리자 구분
      *
      *
      */
-    executeMethod: string;
+    execute_method: string;
   };
 }
 
@@ -8678,7 +8678,7 @@ export interface OnShippingProviderDeleted {
  *
  */
 export interface OnMultiStoreAdded {
-  eventNo: 90110;
+  event_no: 90110;
   resource: {
     /**
      * @description
@@ -8686,15 +8686,15 @@ export interface OnMultiStoreAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: string;
-    shopName: string;
+    shop_no: string;
+    shop_name: string;
     language: string;
     /**
      * @description
@@ -8705,7 +8705,7 @@ export interface OnMultiStoreAdded {
      * JPY : ¥ 엔
      */
     currency: string;
-    isActive: Cafe24Enum;
+    is_active: Cafe24Enum;
   };
 }
 
@@ -8735,7 +8735,7 @@ export interface OnMultiStoreAdded {
  *
  */
 export interface OnMultiStoreUpdated {
-  eventNo: 90111;
+  event_no: 90111;
   resource: {
     /**
      * @description
@@ -8743,16 +8743,16 @@ export interface OnMultiStoreUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: string;
-    shopName: string;
-    isActive: Cafe24Enum;
+    shop_no: string;
+    shop_name: string;
+    is_active: Cafe24Enum;
   };
 }
 
@@ -8780,7 +8780,7 @@ export interface OnMultiStoreUpdated {
  *
  */
 export interface OnMultiStoreDeleted {
-  eventNo: 90112;
+  event_no: 90112;
   resource: {
     /**
      * @description
@@ -8788,7 +8788,7 @@ export interface OnMultiStoreDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -8796,7 +8796,7 @@ export interface OnMultiStoreDeleted {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
   };
 }
 
@@ -8827,7 +8827,7 @@ export interface OnMultiStoreDeleted {
  *
  */
 export interface OnSuboperatorAdded {
-  eventNo: 90113;
+  event_no: 90113;
   resource: {
     /**
      * @description
@@ -8835,14 +8835,14 @@ export interface OnSuboperatorAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 부운영자ID
      *
      *
      */
-    subAdminId: string;
+    sub_admin_id: string;
     /**
      * @description
      * 부운영자 타입
@@ -8850,14 +8850,14 @@ export interface OnSuboperatorAdded {
      * A : 쇼핑몰운영자
      * S : 공급사운영자
      */
-    subAdminType: Cafe24Enum;
+    sub_admin_type: Cafe24Enum;
     /**
      * @description
      * 부운영자명
      *
      * 기본몰에 설정된 부운영자명/공급사 운영자명만 제공
      */
-    userName: string;
+    user_name: string;
     available: Cafe24Enum;
   };
 }
@@ -8890,7 +8890,7 @@ export interface OnSuboperatorAdded {
  *
  */
 export interface OnSuboperatorUpdated {
-  eventNo: 90114;
+  event_no: 90114;
   resource: {
     /**
      * @description
@@ -8898,14 +8898,14 @@ export interface OnSuboperatorUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 부운영자ID
      *
      *
      */
-    subAdminId: string;
+    sub_admin_id: string;
     /**
      * @description
      * 부운영자 타입
@@ -8913,14 +8913,14 @@ export interface OnSuboperatorUpdated {
      * A : 쇼핑몰운영자
      * S : 공급사운영자
      */
-    subAdminType: Cafe24Enum;
+    sub_admin_type: Cafe24Enum;
     /**
      * @description
      * 부운영자명
      *
      * 기본몰에 설정된 부운영자명/공급사 운영자명만 제공
      */
-    userName: string;
+    user_name: string;
     available: Cafe24Enum;
     /**
      * @description
@@ -8929,7 +8929,7 @@ export interface OnSuboperatorUpdated {
      * T : 허용함
      * F : 허용안함
      */
-    multishopAccessAuthority: string;
+    multishop_access_authority: string;
   };
 }
 
@@ -8957,7 +8957,7 @@ export interface OnSuboperatorUpdated {
  *
  */
 export interface OnSuboperatorDeleted {
-  eventNo: 90115;
+  event_no: 90115;
   resource: {
     /**
      * @description
@@ -8965,14 +8965,14 @@ export interface OnSuboperatorDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 부운영자ID
      *
      *
      */
-    subAdminId: string;
+    sub_admin_id: string;
   };
 }
 
@@ -9002,7 +9002,7 @@ export interface OnSuboperatorDeleted {
  *
  */
 export interface OnPrivacySettingsChanged {
-  eventNo: 90116;
+  event_no: 90116;
   resource: {
     /**
      * @description
@@ -9010,7 +9010,7 @@ export interface OnPrivacySettingsChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9018,7 +9018,7 @@ export interface OnPrivacySettingsChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 개인정보 제3자 제공동의 사용여부
@@ -9026,7 +9026,7 @@ export interface OnPrivacySettingsChanged {
      * T : 사용함
      * F : 사용안함
      */
-    useInformationAgreement: Cafe24Enum;
+    use_information_agreement: Cafe24Enum;
     /**
      * @description
      * 개인정보 위탁동의 사용여부
@@ -9034,7 +9034,7 @@ export interface OnPrivacySettingsChanged {
      * T : 사용함
      * F : 사용안함
      */
-    useConsignmentAgreement: Cafe24Enum;
+    use_consignment_agreement: Cafe24Enum;
   };
 }
 
@@ -9062,7 +9062,7 @@ export interface OnPrivacySettingsChanged {
  *
  */
 export interface OnStoreDomainAdded {
-  eventNo: 90117;
+  event_no: 90117;
   resource: {
     /**
      * @description
@@ -9070,7 +9070,7 @@ export interface OnStoreDomainAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 도메인 주소
@@ -9105,7 +9105,7 @@ export interface OnStoreDomainAdded {
  *
  */
 export interface OnStoreDomainToBeDeleted {
-  eventNo: 90119;
+  event_no: 90119;
   resource: {
     /**
      * @description
@@ -9113,7 +9113,7 @@ export interface OnStoreDomainToBeDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 도메인 주소
@@ -9154,7 +9154,7 @@ export interface OnStoreDomainToBeDeleted {
  *
  */
 export interface OnMyStoreInfoSettingsUpdated {
-  eventNo: 90121;
+  event_no: 90121;
   resource: {
     /**
      * @description
@@ -9162,7 +9162,7 @@ export interface OnMyStoreInfoSettingsUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9170,8 +9170,8 @@ export interface OnMyStoreInfoSettingsUpdated {
      *
      *
      */
-    eventShopNo: string;
-    shopName: string;
+    event_shop_no: string;
+    shop_name: string;
     /**
      * @description
      * 사업장 국가
@@ -9208,7 +9208,7 @@ export interface OnMyStoreInfoSettingsUpdated {
      *
      *
      */
-    presidentPhone: string;
+    president_phone: string;
   };
 }
 
@@ -9237,7 +9237,7 @@ export interface OnMyStoreInfoSettingsUpdated {
  *
  */
 export interface OnStoreDeleted {
-  eventNo: 90166;
+  event_no: 90166;
   resource: {
     /**
      * @description
@@ -9245,7 +9245,7 @@ export interface OnStoreDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9253,8 +9253,8 @@ export interface OnStoreDeleted {
      *
      *
      */
-    eventShopNo: string;
-    triggerName: string;
+    event_shop_no: string;
+    trigger_name: string;
   };
 }
 
@@ -9285,9 +9285,9 @@ export interface OnStoreDeleted {
  *
  */
 export interface OnStoreDormanted {
-  eventNo: 90167;
+  event_no: 90167;
   resource: {
-    triggerName: string;
+    trigger_name: string;
     sample: {
       /**
        * @description
@@ -9296,14 +9296,14 @@ export interface OnStoreDormanted {
        *
        *
        */
-      eventShopNo: string;
+      event_shop_no: string;
       /**
        * @description
        * 쇼핑몰 ID
        *
        *
        */
-      mallId: string;
+      mall_id: string;
     };
   };
 }
@@ -9333,7 +9333,7 @@ export interface OnStoreDormanted {
  *
  */
 export interface OnStoreDormantLifted {
-  eventNo: 90168;
+  event_no: 90168;
   resource: {
     /**
      * @description
@@ -9341,7 +9341,7 @@ export interface OnStoreDormantLifted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9349,8 +9349,8 @@ export interface OnStoreDormantLifted {
      *
      *
      */
-    eventShopNo: string;
-    triggerName: string;
+    event_shop_no: string;
+    trigger_name: string;
   };
 }
 
@@ -9379,7 +9379,7 @@ export interface OnStoreDormantLifted {
  *
  */
 export interface OnStoreBlocked {
-  eventNo: 90169;
+  event_no: 90169;
   resource: {
     /**
      * @description
@@ -9387,7 +9387,7 @@ export interface OnStoreBlocked {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9395,8 +9395,8 @@ export interface OnStoreBlocked {
      *
      *
      */
-    eventShopNo: string;
-    triggerName: string;
+    event_shop_no: string;
+    trigger_name: string;
   };
 }
 
@@ -9425,7 +9425,7 @@ export interface OnStoreBlocked {
  *
  */
 export interface OnKakaoSyncSettingsChanged {
-  eventNo: 90142;
+  event_no: 90142;
   resource: {
     /**
      * @description
@@ -9433,7 +9433,7 @@ export interface OnKakaoSyncSettingsChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9441,7 +9441,7 @@ export interface OnKakaoSyncSettingsChanged {
      *
      *
      */
-    eventShopNo: string;
+    event_shop_no: string;
     /**
      * @description
      * 카카오싱크 설정상태
@@ -9449,8 +9449,8 @@ export interface OnKakaoSyncSettingsChanged {
      * T : 사용함
      * F : 사용안함
      */
-    kakaosyncUsed: Cafe24Enum;
-    clientId: string;
+    kakaosync_used: Cafe24Enum;
+    client_id: string;
   };
 }
 
@@ -9499,7 +9499,7 @@ export interface OnKakaoSyncSettingsChanged {
  *
  */
 export interface OnStoreBenefitAdded {
-  eventNo: 90047;
+  event_no: 90047;
   resource: {
     /**
      * @description
@@ -9507,78 +9507,78 @@ export interface OnStoreBenefitAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: number;
-    benefitNo: number;
+    shop_no: number;
+    benefit_no: number;
     /**
      * @description
      * 혜택 진행여부
      *
      *
      */
-    useBenefit: Cafe24Enum;
+    use_benefit: Cafe24Enum;
     /**
      * @description
      * 혜택이름
      *
      *
      */
-    benefitName: string;
+    benefit_name: string;
     /**
      * @description
      * 혜택 시작일
      *
      *
      */
-    benefitStartDate: Cafe24Date;
+    benefit_start_date: Cafe24Date;
     /**
      * @description
      * 혜택 종료일
      *
      *
      */
-    benefitEndDate: Cafe24Date;
+    benefit_end_date: Cafe24Date;
     /**
      * @description
      * 혜택 참여대상 설정
      *
      *
      */
-    customerGroupList: Array<number>;
+    customer_group_list: Array<number>;
     /**
      * @description
      * 혜택 상품 범위 설정
      *
      *
      */
-    productBindingType: Cafe24Enum;
+    product_binding_type: Cafe24Enum;
     /**
      * @description
      * 혜택 적용 상품
      *
      *
      */
-    productList: Array<number>;
+    product_list: Array<number>;
     /**
      * @description
      * 혜택 적용 상품 분류
      *
      *
      */
-    addCategoryList: any;
+    add_category_list: any;
     /**
      * @description
      * 혜택 적용 제외상품
      *
      *
      */
-    exceptCategoryList: Array<number>;
+    except_category_list: Array<number>;
   };
 }
 
@@ -9627,7 +9627,7 @@ export interface OnStoreBenefitAdded {
  *
  */
 export interface OnStoreBenefitChanged {
-  eventNo: 90048;
+  event_no: 90048;
   resource: {
     /**
      * @description
@@ -9635,78 +9635,78 @@ export interface OnStoreBenefitChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: number;
-    benefitNo: number;
+    shop_no: number;
+    benefit_no: number;
     /**
      * @description
      * 혜택 진행여부
      *
      *
      */
-    useBenefit: Cafe24Enum;
+    use_benefit: Cafe24Enum;
     /**
      * @description
      * 혜택이름
      *
      *
      */
-    benefitName: string;
+    benefit_name: string;
     /**
      * @description
      * 혜택 시작일
      *
      *
      */
-    benefitStartDate: Cafe24Date;
+    benefit_start_date: Cafe24Date;
     /**
      * @description
      * 혜택 종료일
      *
      *
      */
-    benefitEndDate: Cafe24Date;
+    benefit_end_date: Cafe24Date;
     /**
      * @description
      * 혜택 참여대상 설정
      *
      *
      */
-    customerGroupList: Array<number>;
+    customer_group_list: Array<number>;
     /**
      * @description
      * 혜택 상품 범위 설정
      *
      *
      */
-    productBindingType: Cafe24Enum;
+    product_binding_type: Cafe24Enum;
     /**
      * @description
      * 혜택 적용 상품
      *
      *
      */
-    productList: Array<number>;
+    product_list: Array<number>;
     /**
      * @description
      * 혜택 적용 상품 분류
      *
      *
      */
-    addCategoryList: any;
+    add_category_list: any;
     /**
      * @description
      * 혜택 적용 제외상품
      *
      *
      */
-    exceptCategoryList: Array<number>;
+    except_category_list: Array<number>;
   };
 }
 
@@ -9735,7 +9735,7 @@ export interface OnStoreBenefitChanged {
  *
  */
 export interface OnStoreBenefitDeleted {
-  eventNo: 90050;
+  event_no: 90050;
   resource: {
     /**
      * @description
@@ -9743,15 +9743,15 @@ export interface OnStoreBenefitDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
      *
      *
      */
-    shopNo: number;
-    benefitNo: number;
+    shop_no: number;
+    benefit_no: number;
   };
 }
 
@@ -9784,7 +9784,7 @@ export interface OnStoreBenefitDeleted {
  *
  */
 export interface OnCouponUpdated {
-  eventNo: 90151;
+  event_no: 90151;
   resource: {
     /**
      * @description
@@ -9792,7 +9792,7 @@ export interface OnCouponUpdated {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9800,7 +9800,7 @@ export interface OnCouponUpdated {
      *
      *
      */
-    eventShopNo: number;
+    event_shop_no: number;
     /**
      * @description
      * 쿠폰타입
@@ -9809,22 +9809,22 @@ export interface OnCouponUpdated {
      *
      *
      */
-    couponType: Cafe24Enum;
+    coupon_type: Cafe24Enum;
     /**
      * @description
      * 쿠폰번호
      *
      *
      */
-    couponNo: number;
-    couponName: string;
+    coupon_no: number;
+    coupon_name: string;
     /**
      * @description
      * 쿠폰 발급 상태 코드
      *
      *
      */
-    issueStatusCode: string;
+    issue_status_code: string;
     /**
      * @description
      * 쿠폰 발급 상태
@@ -9833,7 +9833,7 @@ export interface OnCouponUpdated {
      *
      *
      */
-    issueStatus: string;
+    issue_status: string;
   };
 }
 
@@ -9863,7 +9863,7 @@ export interface OnCouponUpdated {
  *
  */
 export interface OnCouponDeleted {
-  eventNo: 90152;
+  event_no: 90152;
   resource: {
     /**
      * @description
@@ -9871,7 +9871,7 @@ export interface OnCouponDeleted {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9879,7 +9879,7 @@ export interface OnCouponDeleted {
      *
      *
      */
-    eventShopNo: number;
+    event_shop_no: number;
     /**
      * @description
      * 쿠폰타입
@@ -9888,14 +9888,14 @@ export interface OnCouponDeleted {
      *
      *
      */
-    couponType: Cafe24Enum;
+    coupon_type: Cafe24Enum;
     /**
      * @description
      * 쿠폰번호
      *
      *
      */
-    couponNo: number;
+    coupon_no: number;
   };
 }
 
@@ -9928,7 +9928,7 @@ export interface OnCouponDeleted {
  *
  */
 export interface OnCouponAdded {
-  eventNo: 90153;
+  event_no: 90153;
   resource: {
     /**
      * @description
@@ -9936,7 +9936,7 @@ export interface OnCouponAdded {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -9944,7 +9944,7 @@ export interface OnCouponAdded {
      *
      *
      */
-    eventShopNo: number;
+    event_shop_no: number;
     /**
      * @description
      * 쿠폰타입
@@ -9953,22 +9953,22 @@ export interface OnCouponAdded {
      *
      *
      */
-    couponType: Cafe24Enum;
+    coupon_type: Cafe24Enum;
     /**
      * @description
      * 쿠폰번호
      *
      *
      */
-    couponNo: number;
-    couponName: string;
+    coupon_no: number;
+    coupon_name: string;
     /**
      * @description
      * 쿠폰 발급 상태 코드
      *
      *
      */
-    issueStatusCode: string;
+    issue_status_code: string;
     /**
      * @description
      * 쿠폰 발급 상태
@@ -9977,7 +9977,7 @@ export interface OnCouponAdded {
      *
      *
      */
-    issueStatus: string;
+    issue_status: string;
   };
 }
 
@@ -10013,7 +10013,7 @@ export interface OnCouponAdded {
  *
  */
 export interface OnCouponIssuanceStatusChanged {
-  eventNo: 90154;
+  event_no: 90154;
   resource: {
     /**
      * @description
@@ -10021,7 +10021,7 @@ export interface OnCouponIssuanceStatusChanged {
      *
      *
      */
-    mallId: string;
+    mall_id: string;
     /**
      * @description
      * 멀티쇼핑몰 번호
@@ -10029,22 +10029,22 @@ export interface OnCouponIssuanceStatusChanged {
      *
      *
      */
-    eventShopNo: number;
+    event_shop_no: number;
     /**
      * @description
      * 쿠폰번호
      *
      *
      */
-    couponNo: number;
-    couponName: string;
+    coupon_no: number;
+    coupon_name: string;
     /**
      * @description
      * 쿠폰 발급 상태 코드
      *
      *
      */
-    issueStatusCode: string;
+    issue_status_code: string;
     /**
      * @description
      * 쿠폰 발급 상태
@@ -10053,7 +10053,7 @@ export interface OnCouponIssuanceStatusChanged {
      *
      *
      */
-    issueStatus: string;
+    issue_status: string;
     /**
      * @description
      * 발급 상태 변경 유형
@@ -10079,14 +10079,14 @@ export interface OnCouponIssuanceStatusChanged {
      *
      *
      */
-    startDate: Cafe24Date;
+    start_date: Cafe24Date;
     /**
      * @description
      * 해제일시
      *
      * 즉시 발급 중지일 경우 빈 값으로 나타납니다.
      */
-    endDate: Cafe24Date;
+    end_date: Cafe24Date;
   };
 }
 
