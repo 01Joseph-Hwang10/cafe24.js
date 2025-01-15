@@ -16,7 +16,7 @@ export const Auth = (self: base.Client) => ({
      */
     getAccessToken(
       request: GetAccessTokenRequest,
-      options?: base.RequestOptions<GetAccessTokenRequest>,
+      options?: base.RequestOptions,
     ): Promise<GetAccessTokenResponse> {
       const password = btoa(`${request.clientId}:${request.clientSecret}`);
       const headers = {
@@ -52,7 +52,7 @@ export const Auth = (self: base.Client) => ({
      */
     getAccessTokenUsingRefreshToken(
       request: GetAccessTokenUsingRefreshTokenRequest,
-      options?: base.RequestOptions<GetAccessTokenUsingRefreshTokenRequest>,
+      options?: base.RequestOptions,
     ): Promise<GetAccessTokenUsingRefreshTokenResponse> {
       const password = btoa(`${request.clientId}:${request.clientSecret}`);
       const headers = {
@@ -83,7 +83,7 @@ export const Auth = (self: base.Client) => ({
      */
     revokeAccessToken(
       request: RevokeAccessTokenRequest,
-      options?: base.RequestOptions<RevokeAccessTokenRequest>,
+      options?: base.RequestOptions,
     ): Promise<RevokeAccessTokenResponse> {
       const password = btoa(`${request.clientId}:${request.clientSecret}`);
       const headers = {
