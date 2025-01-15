@@ -5,6 +5,7 @@ import { pipe } from "fp-ts/lib/function";
 import { TaskQueue, TaskQueueOptions } from "../task-queue";
 import { valfilter, objectToCamelCase, objectToSnakeCase } from "../utils";
 import { map } from "fp-ts/lib/Array";
+import { Cafe24APIError } from "../error";
 
 /**
  * @description
@@ -219,7 +220,8 @@ export class Client {
       request = async () => {
         const response = await originalRequest();
         if (!response.ok) {
-          throw new Error(await response.text());
+          const error = await Cafe24APIError.fromResonse(response);
+          throw error;
         }
         return response;
       };
@@ -227,8 +229,11 @@ export class Client {
 
     const resolve = async () => {
       const response = await request();
-      const payload = await response.json().catch(() => {});
-      return objectToCamelCase(payload);
+      const payload = await response.json().catch(() => null);
+      if (payload) {
+        return objectToCamelCase(payload);
+      }
+      return await response.text();
     };
 
     if (this.taskQueueIsEnabled && fetchPolicy === "queue") {
