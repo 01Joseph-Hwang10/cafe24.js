@@ -8,6 +8,17 @@ class Client extends BaseClient {
     super(options);
     Object.assign(this, Endpoints(this));
   }
+
+  override copy() {
+    return new Client({
+      mallId: this.mallId,
+      taskQueue: this.taskQueue,
+      errorPolicy: this.errorPolicy,
+      fetchPolicy: this.fetchPolicy,
+      clientId: this.credentials.clientId,
+      clientSecret: this.credentials.clientSecret,
+    });
+  }
 }
 
 interface Client extends Endpoints {}

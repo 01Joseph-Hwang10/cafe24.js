@@ -22,17 +22,6 @@ export class Client extends base.Client {
     };
   }
 
-  override copy() {
-    return new Client({
-      mallId: this.mallId,
-      taskQueue: this.taskQueue,
-      errorPolicy: this.errorPolicy,
-      fetchPolicy: this.fetchPolicy,
-      clientId: this.credentials.clientId,
-      clientSecret: this.credentials.clientSecret,
-    });
-  }
-
   public setCredentials(credentials: Credentials) {
     this.credentials = credentials;
     return this;

@@ -10,16 +10,6 @@ export class Client extends base.Client {
     this.accessToken = options.accessToken;
   }
 
-  override copy() {
-    return new Client({
-      mallId: this.mallId,
-      accessToken: this.accessToken,
-      taskQueue: this.taskQueue,
-      errorPolicy: this.errorPolicy,
-      fetchPolicy: this.fetchPolicy,
-    });
-  }
-
   public setAccessToken(token: string) {
     this.accessToken = token;
     return this;

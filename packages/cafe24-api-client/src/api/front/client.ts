@@ -10,16 +10,6 @@ export class Client extends base.Client {
     this.clientId = options.clientId;
   }
 
-  override copy() {
-    return new Client({
-      mallId: this.mallId,
-      taskQueue: this.taskQueue,
-      errorPolicy: this.errorPolicy,
-      fetchPolicy: this.fetchPolicy,
-      clientId: this.clientId,
-    });
-  }
-
   public setClientId(clientId: string) {
     this.clientId = clientId;
     return this;
