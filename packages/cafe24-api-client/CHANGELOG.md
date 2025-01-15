@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.3.1...cafe24-api-client-v1.3.2) (2025-01-15)
+
+
+### Bug Fixes
+
+* typings ([95b3022](https://github.com/01Joseph-Hwang10/cafe24.js/commit/95b302244ef8f378392640967b75754ad886527a))
+
 ## [1.3.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.3.0...cafe24-api-client-v1.3.1) (2025-01-15)
 
 
