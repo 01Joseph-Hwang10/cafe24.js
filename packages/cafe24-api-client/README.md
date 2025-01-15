@@ -87,6 +87,20 @@ const { products } = await front.categoriesproducts.retrieveAListOfProductsByCat
 console.log(products);
 ```
 
+### Request/Response 타입 가져오기
+
+각 API 요청의 Request, Response 스키마는 interface로 정의되어 있는데, 
+본 패키지에서는 그 수가 너무 많아 이들을 직접 export 하지 않습니다.
+
+대신, `RequestType`과 `ResponseType`을 사용하여 Request, Response 타입을 가져올 수 있습니다.
+
+```typescript
+import api, { RequestType, ResponseType } from 'cafe24-api-client';
+
+type RetrieveAListOfProductsRequest = RequestType<api.admin.Client['products']['retrieveAListOfProducts']>;
+type RetrieveAListOfProductsResponse = ResponseType<api.admin.Client['products']['retrieveAListOfProducts']>;
+```
+
 ## License
 
 [MIT](./LICENSE)
