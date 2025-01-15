@@ -32,7 +32,7 @@ export class Client extends base.Client {
     method: base.HTTPMethod,
     path: string,
     payload: Record<string, any>,
-    options?: RequestOptions<T>,
+    options?: RequestOptions,
   ): Promise<R> {
     if (options?.accessToken) {
       options.headers = this.createHeaders({
@@ -49,7 +49,6 @@ export interface ClientOptions extends base.ClientOptions {
   accessToken?: string;
 }
 
-export interface RequestOptions<Response extends Record<string, any>>
-  extends base.RequestOptions<Response> {
+export interface RequestOptions extends base.RequestOptions {
   accessToken?: string;
 }
