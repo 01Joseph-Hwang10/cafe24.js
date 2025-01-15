@@ -29,3 +29,6 @@ export class Client extends base.Client {
 export interface ClientOptions extends base.ClientOptions {
   clientId?: string;
 }
+
+export interface RequestOptions<Input extends Record<string, any>>
+  extends base.RequestOptions<Input> {}

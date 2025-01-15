@@ -6,7 +6,7 @@ import {
   Cafe24Enum,
   Cafe24Datetime,
 } from "cafe24-types";
-import * as base from "../../client";
+import * as base from "../client";
 
 export type Endpoints = ReturnType<typeof Endpoints>;
 export const Endpoints = (self: base.Client) => ({

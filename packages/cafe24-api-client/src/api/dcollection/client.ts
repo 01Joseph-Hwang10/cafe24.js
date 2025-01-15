@@ -43,3 +43,6 @@ interface Credentials {
 export interface ClientOptions
   extends base.ClientOptions,
     Partial<Credentials> {}
+
+export interface RequestOptions<Input extends Record<string, any>>
+  extends base.RequestOptions<Input> {}
