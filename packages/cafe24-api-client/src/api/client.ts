@@ -173,7 +173,7 @@ export class Client {
     method: HTTPMethod,
     path: string,
     payload: Record<string, any>,
-    options?: RequestOptions<D>,
+    options?: RequestOptions,
   ): Promise<R> {
     // If the client is disposed, throw an error
     if (this.isDisposed) {
@@ -243,11 +243,11 @@ export class Client {
     return await resolve();
   }
 
-  protected async createQueryRequest<T extends Record<string, any>>(
+  protected async createQueryRequest(
     method: HTTPQueryMethod,
     path: string,
     payload: Record<string, any>,
-    options?: RequestOptions<T>,
+    options?: RequestOptions,
   ) {
     const formatter = options?.format ?? this.createParams;
 
@@ -262,11 +262,11 @@ export class Client {
     });
   }
 
-  protected async createMutationRequest<T extends Record<string, any>>(
+  protected async createMutationRequest(
     method: HTTPMutationMethod,
     path: string,
     payload: Record<string, any>,
-    options?: RequestOptions<T>,
+    options?: RequestOptions,
   ) {
     const formatter = options?.format ?? this.createBody;
 
@@ -303,12 +303,12 @@ function isMutation(method: HTTPMethod): method is HTTPMutationMethod {
   return ["POST", "PUT", "PATCH"].includes(method);
 }
 
-export interface RequestOptions<Response extends Record<string, any>> {
+export interface RequestOptions {
   /**
    * @description
    * List of fields to include in the response.
    */
-  fields?: (keyof Response)[];
+  fields?: string[];
   /**
    * @description
    * Additional headers to be included in the request.

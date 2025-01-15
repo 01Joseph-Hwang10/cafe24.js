@@ -30,5 +30,4 @@ export interface ClientOptions extends base.ClientOptions {
   clientId?: string;
 }
 
-export interface RequestOptions<Response extends Record<string, any>>
-  extends base.RequestOptions<Response> {}
+export interface RequestOptions extends base.RequestOptions {}

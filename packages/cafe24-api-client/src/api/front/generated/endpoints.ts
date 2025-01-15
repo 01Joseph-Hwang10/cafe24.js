@@ -32,7 +32,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -52,7 +52,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -84,7 +84,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -119,7 +119,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/v2/products", request, options);
     },
@@ -134,7 +134,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -155,7 +155,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions<RetrieveAProductResourceResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -186,7 +186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -218,7 +218,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions<RetrieveAProductDiscountedPriceResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -250,7 +250,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductViewsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -278,7 +278,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductIconsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -312,7 +312,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -345,7 +345,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductVariantsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -366,7 +366,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -396,7 +396,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -425,7 +425,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheDetailsOfAProduct(
       request: RetrieveTheDetailsOfAProductRequest,
-      options?: base.RequestOptions<RetrieveTheDetailsOfAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheDetailsOfAProductResponse> {
       return self.createRequest(
         "GET",
@@ -458,7 +458,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/categories", request, options);
     },
@@ -473,7 +473,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -494,7 +494,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions<RetrieveAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -524,7 +524,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShoppingCart(
       request: CreateAShoppingCartRequest,
-      options?: base.RequestOptions<CreateAShoppingCartResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAShoppingCartResponse> {
       return self.createRequest("POST", "/api/v2/carts", request, options);
     },
@@ -550,7 +550,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",

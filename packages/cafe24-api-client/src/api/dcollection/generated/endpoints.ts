@@ -24,7 +24,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStores(
       request: RetrieveAListOfStoresRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoresResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfStoresResponse> {
       return self.createRequest("GET", "/api/shops", request, options);
     },
@@ -43,7 +43,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/products", request, options);
     },
@@ -55,7 +55,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheNumberOfProductItems(
       request: RetrieveTheNumberOfProductItemsRequest,
-      options?: base.RequestOptions<RetrieveTheNumberOfProductItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheNumberOfProductItemsResponse> {
       return self.createRequest("GET", "/api/products/count", request, options);
     },
@@ -74,7 +74,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductTagProperties(
       request: RetrieveAListOfProductTagPropertiesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductTagPropertiesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductTagPropertiesResponse> {
       return self.createRequest(
         "GET",
@@ -98,7 +98,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsWithMallId(
       request: RetrieveAListOfProductsWithMallIdRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsWithMallIdResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsWithMallIdResponse> {
       return self.createRequest("GET", "/api/storeproducts", request, options);
     },

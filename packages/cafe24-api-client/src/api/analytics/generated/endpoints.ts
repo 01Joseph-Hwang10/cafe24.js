@@ -24,7 +24,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllAdeffectAddetails(
       request: ListAllAdeffectAddetailsRequest,
-      options?: base.RequestOptions<ListAllAdeffectAddetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllAdeffectAddetailsResponse> {
       return self.createRequest("GET", "/adeffect/addetails", request, options);
     },
@@ -46,7 +46,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllCartsAction(
       request: ListAllCartsActionRequest,
-      options?: base.RequestOptions<ListAllCartsActionResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllCartsActionResponse> {
       return self.createRequest("GET", "/carts/action", request, options);
     },
@@ -68,7 +68,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllMembersSales(
       request: ListAllMembersSalesRequest,
-      options?: base.RequestOptions<ListAllMembersSalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllMembersSalesResponse> {
       return self.createRequest("GET", "/members/sales", request, options);
     },
@@ -90,7 +90,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllPagesView(
       request: ListAllPagesViewRequest,
-      options?: base.RequestOptions<ListAllPagesViewResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllPagesViewResponse> {
       return self.createRequest("GET", "/pages/view", request, options);
     },
@@ -109,7 +109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsCategorydetails(
       request: ListAllProductsCategorydetailsRequest,
-      options?: base.RequestOptions<ListAllProductsCategorydetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllProductsCategorydetailsResponse> {
       return self.createRequest(
         "GET",
@@ -142,7 +142,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsSales(
       request: ListAllProductsSalesRequest,
-      options?: base.RequestOptions<ListAllProductsSalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllProductsSalesResponse> {
       return self.createRequest("GET", "/products/sales", request, options);
     },
@@ -167,7 +167,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     dataProductHitsAnalysisApi(
       request: DataProductHitsAnalysisApiRequest,
-      options?: base.RequestOptions<DataProductHitsAnalysisApiResponse>,
+      options?: base.RequestOptions,
     ): Promise<DataProductHitsAnalysisApiResponse> {
       return self.createRequest("GET", "/products/view", request, options);
     },
@@ -186,7 +186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesOrderdetails(
       request: ListAllSalesOrderdetailsRequest,
-      options?: base.RequestOptions<ListAllSalesOrderdetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllSalesOrderdetailsResponse> {
       return self.createRequest("GET", "/sales/orderdetails", request, options);
     },
@@ -211,7 +211,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPaymethods(
       request: ListAllSalesPaymethodsRequest,
-      options?: base.RequestOptions<ListAllSalesPaymethodsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllSalesPaymethodsResponse> {
       return self.createRequest("GET", "/sales/paymethods", request, options);
     },
@@ -241,7 +241,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPervisitors(
       request: ListAllSalesPervisitorsRequest,
-      options?: base.RequestOptions<ListAllSalesPervisitorsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllSalesPervisitorsResponse> {
       return self.createRequest("GET", "/sales/pervisitors", request, options);
     },
@@ -269,7 +269,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesTimes(
       request: ListAllSalesTimesRequest,
-      options?: base.RequestOptions<ListAllSalesTimesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllSalesTimesResponse> {
       return self.createRequest("GET", "/sales/times", request, options);
     },
@@ -293,7 +293,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsDailyactive(
       request: ListAllVisitorsDailyactiveRequest,
-      options?: base.RequestOptions<ListAllVisitorsDailyactiveResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitorsDailyactiveResponse> {
       return self.createRequest(
         "GET",
@@ -320,7 +320,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsPageview(
       request: ListAllVisitorsPageviewRequest,
-      options?: base.RequestOptions<ListAllVisitorsPageviewResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitorsPageviewResponse> {
       return self.createRequest("GET", "/visitors/pageview", request, options);
     },
@@ -344,7 +344,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsUnique(
       request: ListAllVisitorsUniqueRequest,
-      options?: base.RequestOptions<ListAllVisitorsUniqueResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitorsUniqueResponse> {
       return self.createRequest("GET", "/visitors/unique", request, options);
     },
@@ -378,7 +378,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsView(
       request: ListAllVisitorsViewRequest,
-      options?: base.RequestOptions<ListAllVisitorsViewResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitorsViewResponse> {
       return self.createRequest("GET", "/visitors/view", request, options);
     },
@@ -397,7 +397,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdkeywordsales(
       request: ListAllVisitpathsAdkeywordsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdkeywordsalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsAdkeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -436,7 +436,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAds(
       request: ListAllVisitpathsAdsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsAdsResponse> {
       return self.createRequest("GET", "/visitpaths/ads", request, options);
     },
@@ -461,7 +461,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdsales(
       request: ListAllVisitpathsAdsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdsalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsAdsalesResponse> {
       return self.createRequest("GET", "/visitpaths/adsales", request, options);
     },
@@ -491,7 +491,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomains(
       request: ListAllVisitpathsDomainsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsDomainsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsDomainsResponse> {
       return self.createRequest("GET", "/visitpaths/domains", request, options);
     },
@@ -519,7 +519,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomainsales(
       request: ListAllVisitpathsDomainsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsDomainsalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsDomainsalesResponse> {
       return self.createRequest(
         "GET",
@@ -543,7 +543,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeyworddetails(
       request: ListAllVisitpathsKeyworddetailsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeyworddetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsKeyworddetailsResponse> {
       return self.createRequest(
         "GET",
@@ -570,7 +570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywords(
       request: ListAllVisitpathsKeywordsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeywordsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsKeywordsResponse> {
       return self.createRequest(
         "GET",
@@ -597,7 +597,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywordsales(
       request: ListAllVisitpathsKeywordsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeywordsalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsKeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -625,7 +625,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsUrls(
       request: ListAllVisitpathsUrlsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsUrlsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ListAllVisitpathsUrlsResponse> {
       return self.createRequest("GET", "/visitpaths/urls", request, options);
     },

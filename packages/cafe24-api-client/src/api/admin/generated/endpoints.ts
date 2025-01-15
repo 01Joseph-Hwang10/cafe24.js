@@ -30,7 +30,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfActionLogs(
       request: RetrieveAListOfActionLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfActionLogsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfActionLogsResponse> {
       return self.createRequest(
         "GET",
@@ -51,7 +51,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnActionLog(
       request: RetrieveAnActionLogRequest,
-      options?: base.RequestOptions<RetrieveAnActionLogResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnActionLogResponse> {
       return self.createRequest(
         "GET",
@@ -79,7 +79,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheListOfAvailableVariablesForAutomatedMessages(
       request: RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequest,
-      options?: base.RequestOptions<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse> {
       return self.createRequest(
         "GET",
@@ -107,7 +107,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheAutomatedMessageSettings(
       request: RetrieveTheAutomatedMessageSettingsRequest,
-      options?: base.RequestOptions<RetrieveTheAutomatedMessageSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheAutomatedMessageSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -127,7 +127,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAutomatedMessage(
       request: UpdateAnAutomatedMessageRequest,
-      options?: base.RequestOptions<UpdateAnAutomatedMessageResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnAutomatedMessageResponse> {
       return self.createRequest(
         "PUT",
@@ -156,7 +156,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponSettings(
       request: RetrieveCouponSettingsRequest,
-      options?: base.RequestOptions<RetrieveCouponSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCouponSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -177,7 +177,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCouponSettings(
       request: UpdateCouponSettingsRequest,
-      options?: base.RequestOptions<UpdateCouponSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateCouponSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -205,7 +205,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCurrencySettings(
       request: RetrieveCurrencySettingsRequest,
-      options?: base.RequestOptions<RetrieveCurrencySettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCurrencySettingsResponse> {
       return self.createRequest(
         "GET",
@@ -234,7 +234,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADashboard(
       request: RetrieveADashboardRequest,
-      options?: base.RequestOptions<RetrieveADashboardResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveADashboardResponse> {
       return self.createRequest(
         "GET",
@@ -263,7 +263,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayContractDetails(
       request: RetrieveAListOfPaymentGatewayContractDetailsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayContractDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfPaymentGatewayContractDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -291,7 +291,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTransactionInformationOfAStore(
       request: RetrieveTheTransactionInformationOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveTheTransactionInformationOfAStoreResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheTransactionInformationOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -319,7 +319,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductImageSizeSettings(
       request: RetrieveProductImageSizeSettingsRequest,
-      options?: base.RequestOptions<RetrieveProductImageSizeSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveProductImageSizeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -339,7 +339,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductImageSizeSettings(
       request: UpdateProductImageSizeSettingsRequest,
-      options?: base.RequestOptions<UpdateProductImageSizeSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductImageSizeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -367,7 +367,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAKakaoChannelSenderProfileKey(
       request: RetrieveAKakaoChannelSenderProfileKeyRequest,
-      options?: base.RequestOptions<RetrieveAKakaoChannelSenderProfileKeyResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAKakaoChannelSenderProfileKeyResponse> {
       return self.createRequest(
         "GET",
@@ -395,7 +395,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheKakaoInfoTalkSettings(
       request: RetrieveTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions<RetrieveTheKakaoInfoTalkSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -415,7 +415,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheKakaoInfoTalkSettings(
       request: UpdateTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions<UpdateTheKakaoInfoTalkSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -444,7 +444,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSettingsForKakaopayOrders(
       request: RetrieveSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions<RetrieveSettingsForKakaopayOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -465,7 +465,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSettingsForKakaopayOrders(
       request: UpdateSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions<UpdateSettingsForKakaopayOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -496,7 +496,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMenus(
       request: RetrieveMenusRequest,
-      options?: base.RequestOptions<RetrieveMenusResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveMenusResponse> {
       return self.createRequest("GET", "/api/v2/admin/menus", request, options);
     },
@@ -520,7 +520,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMobileSettings(
       request: RetrieveMobileSettingsRequest,
-      options?: base.RequestOptions<RetrieveMobileSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveMobileSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -548,7 +548,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveNaverPaySettings(
       request: RetrieveNaverPaySettingsRequest,
-      options?: base.RequestOptions<RetrieveNaverPaySettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveNaverPaySettingsResponse> {
       return self.createRequest(
         "GET",
@@ -568,7 +568,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createNaverPaySettings(
       request: CreateNaverPaySettingsRequest,
-      options?: base.RequestOptions<CreateNaverPaySettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateNaverPaySettingsResponse> {
       return self.createRequest(
         "POST",
@@ -588,7 +588,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverPaySettings(
       request: UpdateNaverPaySettingsRequest,
-      options?: base.RequestOptions<UpdateNaverPaySettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateNaverPaySettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -616,7 +616,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderSettings(
       request: RetrieveOrderSettingsRequest,
-      options?: base.RequestOptions<RetrieveOrderSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveOrderSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -636,7 +636,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderSettings(
       request: UpdateOrderSettingsRequest,
-      options?: base.RequestOptions<UpdateOrderSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateOrderSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -660,7 +660,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderStatusDisplayed(
       request: RetrieveOrderStatusDisplayedRequest,
-      options?: base.RequestOptions<RetrieveOrderStatusDisplayedResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveOrderStatusDisplayedResponse> {
       return self.createRequest(
         "GET",
@@ -677,7 +677,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderStatusDisplayed(
       request: UpdateOrderStatusDisplayedRequest,
-      options?: base.RequestOptions<UpdateOrderStatusDisplayedResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateOrderStatusDisplayedResponse> {
       return self.createRequest(
         "PUT",
@@ -701,7 +701,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveEscrowSettings(
       request: RetrieveEscrowSettingsRequest,
-      options?: base.RequestOptions<RetrieveEscrowSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveEscrowSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -718,7 +718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateEscrowSettings(
       request: UpdateEscrowSettingsRequest,
-      options?: base.RequestOptions<UpdateEscrowSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateEscrowSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -748,7 +748,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGateway(
       request: CreateAPaymentGatewayRequest,
-      options?: base.RequestOptions<CreateAPaymentGatewayResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAPaymentGatewayResponse> {
       return self.createRequest(
         "POST",
@@ -770,7 +770,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentGateway(
       request: UpdateAPaymentGatewayRequest,
-      options?: base.RequestOptions<UpdateAPaymentGatewayResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -791,7 +791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentGateway(
       request: DeleteAPaymentGatewayRequest,
-      options?: base.RequestOptions<DeleteAPaymentGatewayResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -823,7 +823,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayMethods(
       request: RetrieveAListOfPaymentGatewayMethodsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayMethodsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfPaymentGatewayMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -843,7 +843,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGatewayMethod(
       request: CreateAPaymentGatewayMethodRequest,
-      options?: base.RequestOptions<CreateAPaymentGatewayMethodResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAPaymentGatewayMethodResponse> {
       return self.createRequest(
         "POST",
@@ -864,7 +864,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentMethodOfAPaymentGateway(
       request: UpdateAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions<UpdateAPaymentMethodOfAPaymentGatewayResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -884,7 +884,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentMethodOfAPaymentGateway(
       request: DeleteAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions<DeleteAPaymentMethodOfAPaymentGatewayResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -914,7 +914,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentMethods(
       request: RetrieveAListOfPaymentMethodsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentMethodsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -944,7 +944,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProvidersByPaymentMethod(
       request: RetrieveAListOfProvidersByPaymentMethodRequest,
-      options?: base.RequestOptions<RetrieveAListOfProvidersByPaymentMethodResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProvidersByPaymentMethodResponse> {
       return self.createRequest(
         "GET",
@@ -964,7 +964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheDisplayStatusOfAPaymentMethod(
       request: UpdateTheDisplayStatusOfAPaymentMethodRequest,
-      options?: base.RequestOptions<UpdateTheDisplayStatusOfAPaymentMethodResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateTheDisplayStatusOfAPaymentMethodResponse> {
       return self.createRequest(
         "PUT",
@@ -992,7 +992,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePointsSettings(
       request: RetrievePointsSettingsRequest,
-      options?: base.RequestOptions<RetrievePointsSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrievePointsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1012,7 +1012,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePointsSettings(
       request: UpdatePointsSettingsRequest,
-      options?: base.RequestOptions<UpdatePointsSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdatePointsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1040,7 +1040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductSettings(
       request: RetrieveProductSettingsRequest,
-      options?: base.RequestOptions<RetrieveProductSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveProductSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1068,7 +1068,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRedirects(
       request: RetrieveAListOfRedirectsRequest,
-      options?: base.RequestOptions<RetrieveAListOfRedirectsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfRedirectsResponse> {
       return self.createRequest(
         "GET",
@@ -1089,7 +1089,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARedirect(
       request: CreateARedirectRequest,
-      options?: base.RequestOptions<CreateARedirectResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateARedirectResponse> {
       return self.createRequest(
         "POST",
@@ -1109,7 +1109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateARedirect(
       request: UpdateARedirectRequest,
-      options?: base.RequestOptions<UpdateARedirectResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateARedirectResponse> {
       return self.createRequest(
         "PUT",
@@ -1129,7 +1129,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARedirect(
       request: DeleteARedirectRequest,
-      options?: base.RequestOptions<DeleteARedirectResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteARedirectResponse> {
       return self.createRequest(
         "DELETE",
@@ -1158,7 +1158,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettings(
       request: RetrieveSeoSettingsRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1179,7 +1179,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreSeoSettings(
       request: UpdateStoreSeoSettingsRequest,
-      options?: base.RequestOptions<UpdateStoreSeoSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateStoreSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1208,7 +1208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForShippingManager(
       request: RetrieveActivationInformationForShippingManagerRequest,
-      options?: base.RequestOptions<RetrieveActivationInformationForShippingManagerResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveActivationInformationForShippingManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1238,7 +1238,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShops(
       request: RetrieveAListOfShopsRequest,
-      options?: base.RequestOptions<RetrieveAListOfShopsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfShopsResponse> {
       return self.createRequest("GET", "/api/v2/admin/shops", request, options);
     },
@@ -1254,7 +1254,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShop(
       request: RetrieveAShopRequest,
-      options?: base.RequestOptions<RetrieveAShopResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAShopResponse> {
       return self.createRequest(
         "GET",
@@ -1284,7 +1284,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSmsSettings(
       request: RetrieveSmsSettingsRequest,
-      options?: base.RequestOptions<RetrieveSmsSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSmsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1301,7 +1301,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSmsSettings(
       request: UpdateSmsSettingsRequest,
-      options?: base.RequestOptions<UpdateSmsSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateSmsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1330,7 +1330,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncDetails(
       request: AppleLoginSyncDetailsRequest,
-      options?: base.RequestOptions<AppleLoginSyncDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<AppleLoginSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1350,7 +1350,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncSettings(
       request: AppleLoginSyncSettingsRequest,
-      options?: base.RequestOptions<AppleLoginSyncSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<AppleLoginSyncSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1379,7 +1379,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncDetails(
       request: KakaoSyncDetailsRequest,
-      options?: base.RequestOptions<KakaoSyncDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<KakaoSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1399,7 +1399,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncUpdates(
       request: KakaoSyncUpdatesRequest,
-      options?: base.RequestOptions<KakaoSyncUpdatesResponse>,
+      options?: base.RequestOptions,
     ): Promise<KakaoSyncUpdatesResponse> {
       return self.createRequest(
         "PUT",
@@ -1427,7 +1427,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     naverLoginDetails(
       request: NaverLoginDetailsRequest,
-      options?: base.RequestOptions<NaverLoginDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<NaverLoginDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1447,7 +1447,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverLoginSettings(
       request: UpdateNaverLoginSettingsRequest,
-      options?: base.RequestOptions<UpdateNaverLoginSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateNaverLoginSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1477,7 +1477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveStoreDetails(
       request: RetrieveStoreDetailsRequest,
-      options?: base.RequestOptions<RetrieveStoreDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveStoreDetailsResponse> {
       return self.createRequest("GET", "/api/v2/admin/store", request, options);
     },
@@ -1503,7 +1503,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreBankAccounts(
       request: RetrieveAListOfStoreBankAccountsRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoreBankAccountsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfStoreBankAccountsResponse> {
       return self.createRequest(
         "GET",
@@ -1535,7 +1535,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSubscriptionProducts(
       request: RetrieveAListOfSubscriptionProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfSubscriptionProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfSubscriptionProductsResponse> {
       return self.createRequest(
         "GET",
@@ -1555,7 +1555,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscriptionPaymentRule(
       request: CreateASubscriptionPaymentRuleRequest,
-      options?: base.RequestOptions<CreateASubscriptionPaymentRuleResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateASubscriptionPaymentRuleResponse> {
       return self.createRequest(
         "POST",
@@ -1575,7 +1575,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSubscriptionProducts(
       request: UpdateSubscriptionProductsRequest,
-      options?: base.RequestOptions<UpdateSubscriptionProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateSubscriptionProductsResponse> {
       return self.createRequest(
         "PUT",
@@ -1595,7 +1595,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSubscriptionProducts(
       request: DeleteSubscriptionProductsRequest,
-      options?: base.RequestOptions<DeleteSubscriptionProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteSubscriptionProductsResponse> {
       return self.createRequest(
         "DELETE",
@@ -1623,7 +1623,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForTaxManager(
       request: RetrieveActivationInformationForTaxManagerRequest,
-      options?: base.RequestOptions<RetrieveActivationInformationForTaxManagerResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveActivationInformationForTaxManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1654,7 +1654,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminUsers(
       request: RetrieveAListOfAdminUsersRequest,
-      options?: base.RequestOptions<RetrieveAListOfAdminUsersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfAdminUsersResponse> {
       return self.createRequest("GET", "/api/v2/admin/users", request, options);
     },
@@ -1670,7 +1670,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAdminUserDetails(
       request: RetrieveAdminUserDetailsRequest,
-      options?: base.RequestOptions<RetrieveAdminUserDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAdminUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1704,7 +1704,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBundles(
       request: RetrieveAListOfBundlesRequest,
-      options?: base.RequestOptions<RetrieveAListOfBundlesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfBundlesResponse> {
       return self.createRequest(
         "GET",
@@ -1725,7 +1725,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveABundle(
       request: RetrieveABundleRequest,
-      options?: base.RequestOptions<RetrieveABundleResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveABundleResponse> {
       return self.createRequest(
         "GET",
@@ -1746,7 +1746,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABundle(
       request: CreateABundleRequest,
-      options?: base.RequestOptions<CreateABundleResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateABundleResponse> {
       return self.createRequest(
         "POST",
@@ -1767,7 +1767,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABundle(
       request: UpdateABundleRequest,
-      options?: base.RequestOptions<UpdateABundleResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateABundleResponse> {
       return self.createRequest(
         "PUT",
@@ -1787,7 +1787,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABundle(
       request: DeleteABundleRequest,
-      options?: base.RequestOptions<DeleteABundleResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteABundleResponse> {
       return self.createRequest(
         "DELETE",
@@ -1819,7 +1819,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1839,7 +1839,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1860,7 +1860,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     addProductsToACategory(
       request: AddProductsToACategoryRequest,
-      options?: base.RequestOptions<AddProductsToACategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<AddProductsToACategoryResponse> {
       return self.createRequest(
         "POST",
@@ -1881,7 +1881,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductInProductCategory(
       request: UpdateAProductInProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAProductInProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductInProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -1902,7 +1902,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductByCategory(
       request: DeleteAProductByCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductByCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -1934,7 +1934,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1954,7 +1954,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInMainCategory(
       request: RetrieveACountOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsInMainCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1975,7 +1975,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setMainCategoryProducts(
       request: SetMainCategoryProductsRequest,
-      options?: base.RequestOptions<SetMainCategoryProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<SetMainCategoryProductsResponse> {
       return self.createRequest(
         "POST",
@@ -1996,7 +1996,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateFixedSortingOfProductsInMainCategory(
       request: UpdateFixedSortingOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<UpdateFixedSortingOfProductsInMainCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateFixedSortingOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -2017,7 +2017,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductInMainCategory(
       request: DeleteAProductInMainCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductInMainCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductInMainCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -2052,7 +2052,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2072,7 +2072,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2093,7 +2093,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions<RetrieveAProductResourceResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -2114,7 +2114,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProduct(
       request: CreateAProductRequest,
-      options?: base.RequestOptions<CreateAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2135,7 +2135,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProduct(
       request: UpdateAProductRequest,
-      options?: base.RequestOptions<UpdateAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2156,7 +2156,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProduct(
       request: DeleteAProductRequest,
-      options?: base.RequestOptions<DeleteAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2187,7 +2187,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAdditionalProductImage(
       request: CreateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<CreateAnAdditionalProductImageResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "POST",
@@ -2208,7 +2208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAdditionalProductImage(
       request: UpdateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<UpdateAnAdditionalProductImageResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "PUT",
@@ -2225,7 +2225,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAdditionalProductImage(
       request: DeleteAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<DeleteAnAdditionalProductImageResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnAdditionalProductImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2256,7 +2256,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductApprovalStatus(
       request: RetrieveAProductApprovalStatusRequest,
-      options?: base.RequestOptions<RetrieveAProductApprovalStatusResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductApprovalStatusResponse> {
       return self.createRequest(
         "GET",
@@ -2277,7 +2277,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductApprovalRequest(
       request: CreateAProductApprovalRequestRequest,
-      options?: base.RequestOptions<CreateAProductApprovalRequestResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAProductApprovalRequestResponse> {
       return self.createRequest(
         "POST",
@@ -2298,7 +2298,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductApprovalStatus(
       request: UpdateAProductApprovalStatusRequest,
-      options?: base.RequestOptions<UpdateAProductApprovalStatusResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductApprovalStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -2322,7 +2322,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedPropertiesByProduct(
       request: RetrieveUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<RetrieveUserDefinedPropertiesByProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "GET",
@@ -2339,7 +2339,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedPropertiesByProduct(
       request: UpdateUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<UpdateUserDefinedPropertiesByProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2356,7 +2356,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedPropertiesByProduct(
       request: DeleteUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<DeleteUserDefinedPropertiesByProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2373,7 +2373,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedProperties(
       request: RetrieveUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<RetrieveUserDefinedPropertiesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveUserDefinedPropertiesResponse> {
       return self.createRequest(
         "GET",
@@ -2390,7 +2390,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createUserDefinedProperties(
       request: CreateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<CreateUserDefinedPropertiesResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "POST",
@@ -2407,7 +2407,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedProperties(
       request: UpdateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<UpdateUserDefinedPropertiesResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "PUT",
@@ -2424,7 +2424,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedProperties(
       request: DeleteUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<DeleteUserDefinedPropertiesResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteUserDefinedPropertiesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2456,7 +2456,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2477,7 +2477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setDecorationImagesForAProduct(
       request: SetDecorationImagesForAProductRequest,
-      options?: base.RequestOptions<SetDecorationImagesForAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<SetDecorationImagesForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2498,7 +2498,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductDecorationImages(
       request: UpdateProductDecorationImagesRequest,
-      options?: base.RequestOptions<UpdateProductDecorationImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductDecorationImagesResponse> {
       return self.createRequest(
         "PUT",
@@ -2518,7 +2518,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductDecorationImage(
       request: RemoveAProductDecorationImageRequest,
-      options?: base.RequestOptions<RemoveAProductDecorationImageResponse>,
+      options?: base.RequestOptions,
     ): Promise<RemoveAProductDecorationImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2538,7 +2538,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDecorationImages(
       request: RetrieveAListOfDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDecorationImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2570,7 +2570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions<RetrieveAProductDiscountedPriceResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -2602,7 +2602,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductViewsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -2630,7 +2630,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductIconsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2651,7 +2651,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setIconsForAProduct(
       request: SetIconsForAProductRequest,
-      options?: base.RequestOptions<SetIconsForAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<SetIconsForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2672,7 +2672,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductIcons(
       request: UpdateProductIconsRequest,
-      options?: base.RequestOptions<UpdateProductIconsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductIconsResponse> {
       return self.createRequest(
         "PUT",
@@ -2693,7 +2693,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductIcon(
       request: RemoveAProductIconRequest,
-      options?: base.RequestOptions<RemoveAProductIconResponse>,
+      options?: base.RequestOptions,
     ): Promise<RemoveAProductIconResponse> {
       return self.createRequest(
         "DELETE",
@@ -2714,7 +2714,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIcons(
       request: RetrieveAListOfIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfIconsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2748,7 +2748,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadProductImages(
       request: UploadProductImagesRequest,
-      options?: base.RequestOptions<UploadProductImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<UploadProductImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2769,7 +2769,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteProductImages(
       request: DeleteProductImagesRequest,
-      options?: base.RequestOptions<DeleteProductImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteProductImagesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2791,7 +2791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadImages(
       request: UploadImagesRequest,
-      options?: base.RequestOptions<UploadImagesResponse>,
+      options?: base.RequestOptions,
     ): Promise<UploadImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2823,7 +2823,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductMemos(
       request: RetrieveAListOfProductMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductMemosResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductMemosResponse> {
       return self.createRequest(
         "GET",
@@ -2845,7 +2845,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductMemo(
       request: RetrieveAProductMemoRequest,
-      options?: base.RequestOptions<RetrieveAProductMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductMemoResponse> {
       return self.createRequest(
         "GET",
@@ -2866,7 +2866,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductMemo(
       request: CreateAProductMemoRequest,
-      options?: base.RequestOptions<CreateAProductMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAProductMemoResponse> {
       return self.createRequest(
         "POST",
@@ -2888,7 +2888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductMemo(
       request: UpdateAProductMemoRequest,
-      options?: base.RequestOptions<UpdateAProductMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -2909,7 +2909,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductMemo(
       request: DeleteAProductMemoRequest,
-      options?: base.RequestOptions<DeleteAProductMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -2943,7 +2943,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -2964,7 +2964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductOptions(
       request: CreateProductOptionsRequest,
-      options?: base.RequestOptions<CreateProductOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateProductOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -2987,7 +2987,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductOptions(
       request: UpdateProductOptionsRequest,
-      options?: base.RequestOptions<UpdateProductOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -3008,7 +3008,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductOption(
       request: DeleteAProductOptionRequest,
-      options?: base.RequestOptions<DeleteAProductOptionResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductOptionResponse> {
       return self.createRequest(
         "DELETE",
@@ -3040,7 +3040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductSSeoSettings(
       request: RetrieveAProductSSeoSettingsRequest,
-      options?: base.RequestOptions<RetrieveAProductSSeoSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductSSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -3061,7 +3061,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductSeoSettings(
       request: UpdateProductSeoSettingsRequest,
-      options?: base.RequestOptions<UpdateProductSeoSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -3093,7 +3093,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfAProductSProductTags(
       request: RetrieveACountOfAProductSProductTagsRequest,
-      options?: base.RequestOptions<RetrieveACountOfAProductSProductTagsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3114,7 +3114,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAProductSProductTags(
       request: RetrieveAListOfAProductSProductTagsRequest,
-      options?: base.RequestOptions<RetrieveAListOfAProductSProductTagsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3134,7 +3134,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductTags(
       request: CreateProductTagsRequest,
-      options?: base.RequestOptions<CreateProductTagsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateProductTagsResponse> {
       return self.createRequest(
         "POST",
@@ -3154,7 +3154,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductTag(
       request: DeleteAProductTagRequest,
-      options?: base.RequestOptions<DeleteAProductTagResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -3187,7 +3187,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductVariantsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -3208,7 +3208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3229,7 +3229,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariant(
       request: UpdateAProductVariantRequest,
-      options?: base.RequestOptions<UpdateAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductVariantResponse> {
       return self.createRequest(
         "PUT",
@@ -3250,7 +3250,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleProductVariants(
       request: UpdateMultipleProductVariantsRequest,
-      options?: base.RequestOptions<UpdateMultipleProductVariantsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateMultipleProductVariantsResponse> {
       return self.createRequest(
         "PUT",
@@ -3270,7 +3270,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductVariant(
       request: DeleteAProductVariantRequest,
-      options?: base.RequestOptions<DeleteAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductVariantResponse> {
       return self.createRequest(
         "DELETE",
@@ -3300,7 +3300,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3321,7 +3321,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariantInventory(
       request: UpdateAProductVariantInventoryRequest,
-      options?: base.RequestOptions<UpdateAProductVariantInventoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductVariantInventoryResponse> {
       return self.createRequest(
         "PUT",
@@ -3353,7 +3353,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderCancellation(
       request: RetrieveAnOrderCancellationRequest,
-      options?: base.RequestOptions<RetrieveAnOrderCancellationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnOrderCancellationResponse> {
       return self.createRequest(
         "GET",
@@ -3375,7 +3375,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderCancellations(
       request: CreateMultipleOrderCancellationsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderCancellationsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateMultipleOrderCancellationsResponse> {
       return self.createRequest(
         "POST",
@@ -3398,7 +3398,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetailsInBulk(
       request: ChangeCancellationDetailsInBulkRequest,
-      options?: base.RequestOptions<ChangeCancellationDetailsInBulkResponse>,
+      options?: base.RequestOptions,
     ): Promise<ChangeCancellationDetailsInBulkResponse> {
       return self.createRequest(
         "PUT",
@@ -3429,7 +3429,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACancellationRequestForMultipleItems(
       request: CreateACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<CreateACancellationRequestForMultipleItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -3451,7 +3451,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectACancellationRequestForMultipleItems(
       request: RejectACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectACancellationRequestForMultipleItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RejectACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3482,7 +3482,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCashReceipts(
       request: RetrieveAListOfCashReceiptsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCashReceiptsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCashReceiptsResponse> {
       return self.createRequest(
         "GET",
@@ -3503,7 +3503,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACashReceipt(
       request: CreateACashReceiptRequest,
-      options?: base.RequestOptions<CreateACashReceiptResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACashReceiptResponse> {
       return self.createRequest(
         "POST",
@@ -3524,7 +3524,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceipt(
       request: UpdateACashReceiptRequest,
-      options?: base.RequestOptions<UpdateACashReceiptResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACashReceiptResponse> {
       return self.createRequest(
         "PUT",
@@ -3552,7 +3552,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceiptCancellation(
       request: UpdateACashReceiptCancellationRequest,
-      options?: base.RequestOptions<UpdateACashReceiptCancellationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACashReceiptCancellationResponse> {
       return self.createRequest(
         "PUT",
@@ -3581,7 +3581,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACollectionRequest(
       request: UpdateACollectionRequestRequest,
-      options?: base.RequestOptions<UpdateACollectionRequestResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACollectionRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -3608,7 +3608,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     orderControl(
       request: OrderControlRequest,
-      options?: base.RequestOptions<OrderControlResponse>,
+      options?: base.RequestOptions,
     ): Promise<OrderControlResponse> {
       return self.createRequest(
         "PUT",
@@ -3638,7 +3638,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADraftOrder(
       request: CreateADraftOrderRequest,
-      options?: base.RequestOptions<CreateADraftOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateADraftOrderResponse> {
       return self.createRequest(
         "POST",
@@ -3668,7 +3668,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnExchange(
       request: RetrieveAnExchangeRequest,
-      options?: base.RequestOptions<RetrieveAnExchangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnExchangeResponse> {
       return self.createRequest(
         "GET",
@@ -3688,7 +3688,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleExchanges(
       request: CreateMultipleExchangesRequest,
-      options?: base.RequestOptions<CreateMultipleExchangesResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateMultipleExchangesResponse> {
       return self.createRequest(
         "POST",
@@ -3710,7 +3710,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderExchanges(
       request: UpdateMultipleOrderExchangesRequest,
-      options?: base.RequestOptions<UpdateMultipleOrderExchangesResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateMultipleOrderExchangesResponse> {
       return self.createRequest(
         "PUT",
@@ -3740,7 +3740,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     bulkExchangeRequestApi(
       request: BulkExchangeRequestApiRequest,
-      options?: base.RequestOptions<BulkExchangeRequestApiResponse>,
+      options?: base.RequestOptions,
     ): Promise<BulkExchangeRequestApiResponse> {
       return self.createRequest(
         "POST",
@@ -3762,7 +3762,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequestForMultipleItems(
       request: RejectAnExchangeRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectAnExchangeRequestForMultipleItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RejectAnExchangeRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3790,7 +3790,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrdersViaFulfillment(
       request: CreateShippingInformationForMultipleOrdersViaFulfillmentRequest,
-      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse> {
       return self.createRequest(
         "POST",
@@ -3818,7 +3818,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderLabels(
       request: RetrieveOrderLabelsRequest,
-      options?: base.RequestOptions<RetrieveOrderLabelsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveOrderLabelsResponse> {
       return self.createRequest(
         "GET",
@@ -3838,7 +3838,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderLabels(
       request: CreateMultipleOrderLabelsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderLabelsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateMultipleOrderLabelsResponse> {
       return self.createRequest(
         "POST",
@@ -3874,7 +3874,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrders(
       request: RetrieveAListOfOrdersRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3896,7 +3896,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrder(
       request: RetrieveAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -3916,7 +3916,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfOrders(
       request: RetrieveACountOfOrdersRequest,
-      options?: base.RequestOptions<RetrieveACountOfOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3938,7 +3938,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStatusForMultipleOrders(
       request: UpdateStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions<UpdateStatusForMultipleOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -3960,7 +3960,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderStatus(
       request: UpdateAnOrderStatusRequest,
-      options?: base.RequestOptions<UpdateAnOrderStatusResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -3991,7 +3991,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAutoCalculationSettingOfAnOrder(
       request: RemoveAutoCalculationSettingOfAnOrderRequest,
-      options?: base.RequestOptions<RemoveAutoCalculationSettingOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RemoveAutoCalculationSettingOfAnOrderResponse> {
       return self.createRequest(
         "DELETE",
@@ -4022,7 +4022,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerDetailsOfAnOrder(
       request: RetrieveCustomerDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveCustomerDetailsOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCustomerDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4043,7 +4043,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCustomerInformationOfAnOrder(
       request: UpdateCustomerInformationOfAnOrderRequest,
-      options?: base.RequestOptions<UpdateCustomerInformationOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateCustomerInformationOfAnOrderResponse> {
       return self.createRequest(
         "PUT",
@@ -4076,7 +4076,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerHistoryOfAnOrder(
       request: RetrieveAListOfCustomerHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerHistoryOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4109,7 +4109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellation(
       request: CreateAnOrderCancellationRequest,
-      options?: base.RequestOptions<CreateAnOrderCancellationResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4131,7 +4131,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetails(
       request: ChangeCancellationDetailsRequest,
-      options?: base.RequestOptions<ChangeCancellationDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<ChangeCancellationDetailsResponse> {
       return self.createRequest(
         "PUT",
@@ -4161,7 +4161,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderExchange(
       request: CreateAnOrderExchangeRequest,
-      options?: base.RequestOptions<CreateAnOrderExchangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderExchangeResponse> {
       return self.createRequest(
         "POST",
@@ -4183,7 +4183,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderExchange(
       request: UpdateAnOrderExchangeRequest,
-      options?: base.RequestOptions<UpdateAnOrderExchangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderExchangeResponse> {
       return self.createRequest(
         "PUT",
@@ -4212,7 +4212,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequest(
       request: RejectAnExchangeRequestRequest,
-      options?: base.RequestOptions<RejectAnExchangeRequestResponse>,
+      options?: base.RequestOptions,
     ): Promise<RejectAnExchangeRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -4246,7 +4246,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderItems(
       request: RetrieveAListOfOrderItemsRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfOrderItemsResponse> {
       return self.createRequest(
         "GET",
@@ -4266,7 +4266,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderItem(
       request: CreateAnOrderItemRequest,
-      options?: base.RequestOptions<CreateAnOrderItemResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderItemResponse> {
       return self.createRequest(
         "POST",
@@ -4287,7 +4287,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderItem(
       request: UpdateAnOrderItemRequest,
-      options?: base.RequestOptions<UpdateAnOrderItemResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderItemResponse> {
       return self.createRequest(
         "PUT",
@@ -4315,7 +4315,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderLabel(
       request: RetrieveAnOrderLabelRequest,
-      options?: base.RequestOptions<RetrieveAnOrderLabelResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnOrderLabelResponse> {
       return self.createRequest(
         "GET",
@@ -4335,7 +4335,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderLabel(
       request: CreateAnOrderLabelRequest,
-      options?: base.RequestOptions<CreateAnOrderLabelResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderLabelResponse> {
       return self.createRequest(
         "POST",
@@ -4355,7 +4355,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderLabel(
       request: UpdateAnOrderLabelRequest,
-      options?: base.RequestOptions<UpdateAnOrderLabelResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderLabelResponse> {
       return self.createRequest(
         "PUT",
@@ -4375,7 +4375,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderLabel(
       request: DeleteAnOrderLabelRequest,
-      options?: base.RequestOptions<DeleteAnOrderLabelResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnOrderLabelResponse> {
       return self.createRequest(
         "DELETE",
@@ -4403,7 +4403,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createOrderItemOptions(
       request: CreateOrderItemOptionsRequest,
-      options?: base.RequestOptions<CreateOrderItemOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateOrderItemOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -4423,7 +4423,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editOrderItemOptions(
       request: EditOrderItemOptionsRequest,
-      options?: base.RequestOptions<EditOrderItemOptionsResponse>,
+      options?: base.RequestOptions,
     ): Promise<EditOrderItemOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -4454,7 +4454,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderMemos(
       request: RetrieveAListOfOrderMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderMemosResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfOrderMemosResponse> {
       return self.createRequest(
         "GET",
@@ -4475,7 +4475,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderMemo(
       request: CreateAnOrderMemoRequest,
-      options?: base.RequestOptions<CreateAnOrderMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderMemoResponse> {
       return self.createRequest(
         "POST",
@@ -4496,7 +4496,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderMemo(
       request: UpdateAnOrderMemoRequest,
-      options?: base.RequestOptions<UpdateAnOrderMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -4516,7 +4516,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderMemo(
       request: DeleteAnOrderMemoRequest,
-      options?: base.RequestOptions<DeleteAnOrderMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnOrderMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -4536,7 +4536,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminMemosForAnOrder(
       request: RetrieveAListOfAdminMemosForAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfAdminMemosForAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfAdminMemosForAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4567,7 +4567,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderPaymentStatus(
       request: UpdateAnOrderPaymentStatusRequest,
-      options?: base.RequestOptions<UpdateAnOrderPaymentStatusResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderPaymentStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -4598,7 +4598,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentHistoryOfAnOrder(
       request: RetrievePaymentHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrievePaymentHistoryOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrievePaymentHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4619,7 +4619,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentDetailsOfAnOrder(
       request: RetrievePaymentDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrievePaymentDetailsOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrievePaymentDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4652,7 +4652,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientsOfAnOrder(
       request: RetrieveAListOfRecipientsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipientsOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfRecipientsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4674,7 +4674,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderRecipients(
       request: UpdateOrderRecipientsRequest,
-      options?: base.RequestOptions<UpdateOrderRecipientsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateOrderRecipientsResponse> {
       return self.createRequest(
         "PUT",
@@ -4695,7 +4695,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeShippingInformation(
       request: ChangeShippingInformationRequest,
-      options?: base.RequestOptions<ChangeShippingInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<ChangeShippingInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -4727,7 +4727,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientHistoryOfAnOrder(
       request: RetrieveAListOfRecipientHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipientHistoryOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfRecipientHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4757,7 +4757,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderRefund(
       request: UpdateAnOrderRefundRequest,
-      options?: base.RequestOptions<UpdateAnOrderRefundResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderRefundResponse> {
       return self.createRequest(
         "PUT",
@@ -4790,7 +4790,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderReturn(
       request: CreateAnOrderReturnRequest,
-      options?: base.RequestOptions<CreateAnOrderReturnResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderReturnResponse> {
       return self.createRequest(
         "POST",
@@ -4813,7 +4813,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderReturn(
       request: UpdateAnOrderReturnRequest,
-      options?: base.RequestOptions<UpdateAnOrderReturnResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -4847,7 +4847,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingInformationOfAnOrder(
       request: RetrieveAListOfShippingInformationOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingInformationOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfShippingInformationOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4867,7 +4867,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingInformation(
       request: CreateAnOrderShippingInformationRequest,
-      options?: base.RequestOptions<CreateAnOrderShippingInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderShippingInformationResponse> {
       return self.createRequest(
         "POST",
@@ -4889,7 +4889,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderShipping(
       request: UpdateAnOrderShippingRequest,
-      options?: base.RequestOptions<UpdateAnOrderShippingResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnOrderShippingResponse> {
       return self.createRequest(
         "PUT",
@@ -4910,7 +4910,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderShipping(
       request: DeleteAnOrderShippingRequest,
-      options?: base.RequestOptions<DeleteAnOrderShippingResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnOrderShippingResponse> {
       return self.createRequest(
         "DELETE",
@@ -4941,7 +4941,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingFeeCancellationDetailsOfAnOrder(
       request: RetrieveShippingFeeCancellationDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4963,7 +4963,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingFeeCancellation(
       request: CreateAnOrderShippingFeeCancellationRequest,
-      options?: base.RequestOptions<CreateAnOrderShippingFeeCancellationResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderShippingFeeCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4995,7 +4995,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellationOnStockShortage(
       request: CreateAnOrderCancellationOnStockShortageRequest,
-      options?: base.RequestOptions<CreateAnOrderCancellationOnStockShortageResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnOrderCancellationOnStockShortageResponse> {
       return self.createRequest(
         "POST",
@@ -5026,7 +5026,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderBenefitsAppliedToAnOrder(
       request: RetrieveAListOfOrderBenefitsAppliedToAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5054,7 +5054,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     calculateTotalDue(
       request: CalculateTotalDueRequest,
-      options?: base.RequestOptions<CalculateTotalDueResponse>,
+      options?: base.RequestOptions,
     ): Promise<CalculateTotalDueResponse> {
       return self.createRequest(
         "POST",
@@ -5086,7 +5086,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCouponsAppliedToAnOrder(
       request: RetrieveAListOfCouponsAppliedToAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfCouponsAppliedToAnOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCouponsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5118,7 +5118,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrafficSourceGroups(
       request: RetrieveAListOfTrafficSourceGroupsRequest,
-      options?: base.RequestOptions<RetrieveAListOfTrafficSourceGroupsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfTrafficSourceGroupsResponse> {
       return self.createRequest(
         "GET",
@@ -5139,7 +5139,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createATrafficSourceGroup(
       request: CreateATrafficSourceGroupRequest,
-      options?: base.RequestOptions<CreateATrafficSourceGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateATrafficSourceGroupResponse> {
       return self.createRequest(
         "POST",
@@ -5161,7 +5161,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateATrafficSourceGroup(
       request: UpdateATrafficSourceGroupRequest,
-      options?: base.RequestOptions<UpdateATrafficSourceGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateATrafficSourceGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -5182,7 +5182,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteATrafficSourceGroup(
       request: DeleteATrafficSourceGroupRequest,
-      options?: base.RequestOptions<DeleteATrafficSourceGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteATrafficSourceGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -5215,7 +5215,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfGroupTrafficSources(
       request: RetrieveAListOfGroupTrafficSourcesRequest,
-      options?: base.RequestOptions<RetrieveAListOfGroupTrafficSourcesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfGroupTrafficSourcesResponse> {
       return self.createRequest(
         "GET",
@@ -5235,7 +5235,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAGroupTrafficSource(
       request: CreateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<CreateAGroupTrafficSourceResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "POST",
@@ -5255,7 +5255,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAGroupTrafficSource(
       request: UpdateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<UpdateAGroupTrafficSourceResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "PUT",
@@ -5275,7 +5275,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAGroupTrafficSource(
       request: DeleteAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<DeleteAGroupTrafficSourceResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAGroupTrafficSourceResponse> {
       return self.createRequest(
         "DELETE",
@@ -5308,7 +5308,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPaymentAmount(
       request: RetrieveAPaymentAmountRequest,
-      options?: base.RequestOptions<RetrieveAPaymentAmountResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAPaymentAmountResponse> {
       return self.createRequest(
         "GET",
@@ -5340,7 +5340,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSalesChannels(
       request: RetrieveAListOfSalesChannelsRequest,
-      options?: base.RequestOptions<RetrieveAListOfSalesChannelsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfSalesChannelsResponse> {
       return self.createRequest(
         "GET",
@@ -5360,7 +5360,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASalesChannel(
       request: CreateASalesChannelRequest,
-      options?: base.RequestOptions<CreateASalesChannelResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateASalesChannelResponse> {
       return self.createRequest(
         "POST",
@@ -5381,7 +5381,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASalesChannel(
       request: UpdateASalesChannelRequest,
-      options?: base.RequestOptions<UpdateASalesChannelResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASalesChannelResponse> {
       return self.createRequest(
         "PUT",
@@ -5401,7 +5401,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASalesChannel(
       request: DeleteASalesChannelRequest,
-      options?: base.RequestOptions<DeleteASalesChannelResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteASalesChannelResponse> {
       return self.createRequest(
         "DELETE",
@@ -5430,7 +5430,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePaymentStatusForMultipleOrders(
       request: UpdatePaymentStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions<UpdatePaymentStatusForMultipleOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdatePaymentStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -5460,7 +5460,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRefunds(
       request: RetrieveAListOfRefundsRequest,
-      options?: base.RequestOptions<RetrieveAListOfRefundsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfRefundsResponse> {
       return self.createRequest(
         "GET",
@@ -5481,7 +5481,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveARefund(
       request: RetrieveARefundRequest,
-      options?: base.RequestOptions<RetrieveARefundResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveARefundResponse> {
       return self.createRequest(
         "GET",
@@ -5508,7 +5508,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePreOrderItem(
       request: RetrievePreOrderItemRequest,
-      options?: base.RequestOptions<RetrievePreOrderItemResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrievePreOrderItemResponse> {
       return self.createRequest(
         "GET",
@@ -5539,7 +5539,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReturn(
       request: RetrieveAReturnRequest,
-      options?: base.RequestOptions<RetrieveAReturnResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAReturnResponse> {
       return self.createRequest(
         "GET",
@@ -5561,7 +5561,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderReturns(
       request: CreateMultipleOrderReturnsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderReturnsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateMultipleOrderReturnsResponse> {
       return self.createRequest(
         "POST",
@@ -5584,7 +5584,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReturn(
       request: UpdateAReturnRequest,
-      options?: base.RequestOptions<UpdateAReturnResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -5614,7 +5614,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReturnRequestForMultipleItems(
       request: CreateAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<CreateAReturnRequestForMultipleItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -5636,7 +5636,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAReturnRequestForMultipleItems(
       request: RejectAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectAReturnRequestForMultipleItemsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RejectAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -5665,7 +5665,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrders(
       request: CreateShippingInformationForMultipleOrdersRequest,
-      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateShippingInformationForMultipleOrdersResponse> {
       return self.createRequest(
         "POST",
@@ -5686,7 +5686,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderShippings(
       request: UpdateMultipleOrderShippingsRequest,
-      options?: base.RequestOptions<UpdateMultipleOrderShippingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateMultipleOrderShippingsResponse> {
       return self.createRequest(
         "PUT",
@@ -5714,7 +5714,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASubscription(
       request: RetrieveASubscriptionRequest,
-      options?: base.RequestOptions<RetrieveASubscriptionResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASubscriptionResponse> {
       return self.createRequest(
         "GET",
@@ -5734,7 +5734,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscription(
       request: CreateASubscriptionRequest,
-      options?: base.RequestOptions<CreateASubscriptionResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateASubscriptionResponse> {
       return self.createRequest(
         "POST",
@@ -5755,7 +5755,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASubscription(
       request: UpdateASubscriptionRequest,
-      options?: base.RequestOptions<UpdateASubscriptionResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5783,7 +5783,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductVariantsInSubscription(
       request: UpdateProductVariantsInSubscriptionRequest,
-      options?: base.RequestOptions<UpdateProductVariantsInSubscriptionResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductVariantsInSubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5815,7 +5815,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerTiers(
       request: RetrieveAListOfCustomerTiersRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerTiersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5835,7 +5835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerTiers(
       request: RetrieveACountOfCustomerTiersRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerTiersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5856,7 +5856,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerTier(
       request: RetrieveACustomerTierRequest,
-      options?: base.RequestOptions<RetrieveACustomerTierResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerTierResponse> {
       return self.createRequest(
         "GET",
@@ -5888,7 +5888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerSCustomerTier(
       request: UpdateACustomerSCustomerTierRequest,
-      options?: base.RequestOptions<UpdateACustomerSCustomerTierResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACustomerSCustomerTierResponse> {
       return self.createRequest(
         "POST",
@@ -5912,7 +5912,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierSettings(
       request: RetrieveCustomerTierSettingsRequest,
-      options?: base.RequestOptions<RetrieveCustomerTierSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCustomerTierSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -5944,7 +5944,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomers(
       request: RetrieveAListOfCustomersRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomersResponse> {
       return self.createRequest(
         "GET",
@@ -5964,7 +5964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAccount(
       request: DeleteAnAccountRequest,
-      options?: base.RequestOptions<DeleteAnAccountResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnAccountResponse> {
       return self.createRequest(
         "DELETE",
@@ -5988,7 +5988,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierAutoUpdateDetails(
       request: RetrieveCustomerTierAutoUpdateDetailsRequest,
-      options?: base.RequestOptions<RetrieveCustomerTierAutoUpdateDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCustomerTierAutoUpdateDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -6019,7 +6019,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerMemos(
       request: RetrieveACountOfCustomerMemosRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerMemosResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6040,7 +6040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerMemos(
       request: RetrieveAListOfCustomerMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerMemosResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6061,7 +6061,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerMemo(
       request: RetrieveACustomerMemoRequest,
-      options?: base.RequestOptions<RetrieveACustomerMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerMemoResponse> {
       return self.createRequest(
         "GET",
@@ -6081,7 +6081,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerMemo(
       request: CreateACustomerMemoRequest,
-      options?: base.RequestOptions<CreateACustomerMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACustomerMemoResponse> {
       return self.createRequest(
         "POST",
@@ -6101,7 +6101,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerMemo(
       request: UpdateACustomerMemoRequest,
-      options?: base.RequestOptions<UpdateACustomerMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACustomerMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -6121,7 +6121,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerMemo(
       request: DeleteACustomerMemoRequest,
-      options?: base.RequestOptions<DeleteACustomerMemoResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteACustomerMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -6152,7 +6152,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSListOfPaymentMethods(
       request: RetrieveACustomerSListOfPaymentMethodsRequest,
-      options?: base.RequestOptions<RetrieveACustomerSListOfPaymentMethodsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerSListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -6172,7 +6172,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformation(
       request: DeleteCustomerSPaymentInformationRequest,
-      options?: base.RequestOptions<DeleteCustomerSPaymentInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteCustomerSPaymentInformationResponse> {
       return self.createRequest(
         "DELETE",
@@ -6189,7 +6189,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformationByPaymentMethodId(
       request: DeleteCustomerSPaymentInformationByPaymentMethodIdRequest,
-      options?: base.RequestOptions<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse> {
       return self.createRequest(
         "DELETE",
@@ -6213,7 +6213,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAppInstallationInformation(
       request: RetrieveAppInstallationInformationRequest,
-      options?: base.RequestOptions<RetrieveAppInstallationInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAppInstallationInformationResponse> {
       return self.createRequest(
         "GET",
@@ -6242,7 +6242,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSSocialAccount(
       request: RetrieveACustomerSSocialAccountRequest,
-      options?: base.RequestOptions<RetrieveACustomerSSocialAccountResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerSSocialAccountResponse> {
       return self.createRequest(
         "GET",
@@ -6275,7 +6275,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBoards(
       request: RetrieveAListOfBoardsRequest,
-      options?: base.RequestOptions<RetrieveAListOfBoardsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfBoardsResponse> {
       return self.createRequest(
         "GET",
@@ -6307,7 +6307,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPostsForABoard(
       request: RetrieveAListOfPostsForABoardRequest,
-      options?: base.RequestOptions<RetrieveAListOfPostsForABoardResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfPostsForABoardResponse> {
       return self.createRequest(
         "GET",
@@ -6328,7 +6328,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABoardPost(
       request: CreateABoardPostRequest,
-      options?: base.RequestOptions<CreateABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6350,7 +6350,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABoardPost(
       request: UpdateABoardPostRequest,
-      options?: base.RequestOptions<UpdateABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateABoardPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6371,7 +6371,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABoardPost(
       request: DeleteABoardPostRequest,
-      options?: base.RequestOptions<DeleteABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6403,7 +6403,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCommentsForABoardPost(
       request: RetrieveAListOfCommentsForABoardPostRequest,
-      options?: base.RequestOptions<RetrieveAListOfCommentsForABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCommentsForABoardPostResponse> {
       return self.createRequest(
         "GET",
@@ -6424,7 +6424,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACommentForABoardPost(
       request: CreateACommentForABoardPostRequest,
-      options?: base.RequestOptions<CreateACommentForABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACommentForABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6444,7 +6444,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACommentForABoardPost(
       request: DeleteACommentForABoardPostRequest,
-      options?: base.RequestOptions<DeleteACommentForABoardPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteACommentForABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6468,7 +6468,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCommentsInBulk(
       request: RetrieveCommentsInBulkRequest,
-      options?: base.RequestOptions<RetrieveCommentsInBulkResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCommentsInBulkResponse> {
       return self.createRequest(
         "GET",
@@ -6492,7 +6492,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsForBoard(
       request: RetrieveSeoSettingsForBoardRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsForBoardResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSeoSettingsForBoardResponse> {
       return self.createRequest(
         "GET",
@@ -6509,7 +6509,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSeoSettingsForBoard(
       request: UpdateSeoSettingsForBoardRequest,
-      options?: base.RequestOptions<UpdateSeoSettingsForBoardResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateSeoSettingsForBoardResponse> {
       return self.createRequest(
         "PUT",
@@ -6539,7 +6539,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTotalCountForMonthlyReviewsAndRatings(
       request: RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequest,
-      options?: base.RequestOptions<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse> {
       return self.createRequest(
         "GET",
@@ -6570,7 +6570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnUrgentInquiryPost(
       request: RetrieveAnUrgentInquiryPostRequest,
-      options?: base.RequestOptions<RetrieveAnUrgentInquiryPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6601,7 +6601,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReplyForUrgentInquiryPost(
       request: RetrieveAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<RetrieveAReplyForUrgentInquiryPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6621,7 +6621,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReplyForUrgentInquiryPost(
       request: CreateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<CreateAReplyForUrgentInquiryPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "POST",
@@ -6641,7 +6641,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReplyForUrgentInquiryPost(
       request: UpdateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<UpdateAReplyForUrgentInquiryPostResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6670,7 +6670,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDesginIcons(
       request: RetrieveAListOfDesginIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfDesginIconsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfDesginIconsResponse> {
       return self.createRequest("GET", "/api/v2/admin/icons", request, options);
     },
@@ -6698,7 +6698,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemes(
       request: RetrieveAListOfThemesRequest,
-      options?: base.RequestOptions<RetrieveAListOfThemesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6718,7 +6718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfThemes(
       request: RetrieveACountOfThemesRequest,
-      options?: base.RequestOptions<RetrieveACountOfThemesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6739,7 +6739,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveATheme(
       request: RetrieveAThemeRequest,
-      options?: base.RequestOptions<RetrieveAThemeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAThemeResponse> {
       return self.createRequest(
         "GET",
@@ -6770,7 +6770,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemePage(
       request: RetrieveAThemePageRequest,
-      options?: base.RequestOptions<RetrieveAThemePageResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAThemePageResponse> {
       return self.createRequest(
         "GET",
@@ -6791,7 +6791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAThemePage(
       request: CreateAThemePageRequest,
-      options?: base.RequestOptions<CreateAThemePageResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAThemePageResponse> {
       return self.createRequest(
         "POST",
@@ -6822,7 +6822,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerBenefits(
       request: RetrieveAListOfCustomerBenefitsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerBenefitsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6843,7 +6843,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerBenefits(
       request: RetrieveACountOfCustomerBenefitsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerBenefitsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6864,7 +6864,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerBenefit(
       request: RetrieveACustomerBenefitRequest,
-      options?: base.RequestOptions<RetrieveACustomerBenefitResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerBenefitResponse> {
       return self.createRequest(
         "GET",
@@ -6885,7 +6885,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerBenefit(
       request: CreateACustomerBenefitRequest,
-      options?: base.RequestOptions<CreateACustomerBenefitResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACustomerBenefitResponse> {
       return self.createRequest(
         "POST",
@@ -6906,7 +6906,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerBenefit(
       request: UpdateACustomerBenefitRequest,
-      options?: base.RequestOptions<UpdateACustomerBenefitResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACustomerBenefitResponse> {
       return self.createRequest(
         "PUT",
@@ -6926,7 +6926,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerBenefit(
       request: DeleteACustomerBenefitRequest,
-      options?: base.RequestOptions<DeleteACustomerBenefitResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteACustomerBenefitResponse> {
       return self.createRequest(
         "DELETE",
@@ -6957,7 +6957,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCoupons(
       request: RetrieveACountOfCouponsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCouponsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -6978,7 +6978,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCoupons(
       request: RetrieveAListOfCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCouponsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -6999,7 +6999,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACoupon(
       request: CreateACouponRequest,
-      options?: base.RequestOptions<CreateACouponResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACouponResponse> {
       return self.createRequest(
         "POST",
@@ -7033,7 +7033,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIssuedCoupons(
       request: RetrieveAListOfIssuedCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfIssuedCouponsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfIssuedCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7054,7 +7054,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createCouponIssuanceHistory(
       request: CreateCouponIssuanceHistoryRequest,
-      options?: base.RequestOptions<CreateCouponIssuanceHistoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateCouponIssuanceHistoryResponse> {
       return self.createRequest(
         "POST",
@@ -7086,7 +7086,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerCoupons(
       request: RetrieveAListOfCustomerCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerCouponsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7106,7 +7106,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerCoupons(
       request: RetrieveACountOfCustomerCouponsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerCouponsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7126,7 +7126,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerCoupon(
       request: DeleteACustomerCouponRequest,
-      options?: base.RequestOptions<DeleteACustomerCouponResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteACustomerCouponResponse> {
       return self.createRequest(
         "DELETE",
@@ -7150,7 +7150,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDiscountCodes(
       request: RetrieveAListOfDiscountCodesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDiscountCodesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfDiscountCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7167,7 +7167,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADiscountCode(
       request: RetrieveADiscountCodeRequest,
-      options?: base.RequestOptions<RetrieveADiscountCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveADiscountCodeResponse> {
       return self.createRequest(
         "GET",
@@ -7184,7 +7184,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADiscountCode(
       request: CreateADiscountCodeRequest,
-      options?: base.RequestOptions<CreateADiscountCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateADiscountCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7201,7 +7201,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateADiscountCode(
       request: UpdateADiscountCodeRequest,
-      options?: base.RequestOptions<UpdateADiscountCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateADiscountCodeResponse> {
       return self.createRequest(
         "PUT",
@@ -7218,7 +7218,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteADiscountCode(
       request: DeleteADiscountCodeRequest,
-      options?: base.RequestOptions<DeleteADiscountCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteADiscountCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7242,7 +7242,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponCodes(
       request: RetrieveCouponCodesRequest,
-      options?: base.RequestOptions<RetrieveCouponCodesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7259,7 +7259,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     generateCouponCode(
       request: GenerateCouponCodeRequest,
-      options?: base.RequestOptions<GenerateCouponCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<GenerateCouponCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7276,7 +7276,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCouponCode(
       request: DeleteCouponCodeRequest,
-      options?: base.RequestOptions<DeleteCouponCodeResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteCouponCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7300,7 +7300,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACodeOfCouponCodes(
       request: RetrieveACodeOfCouponCodesRequest,
-      options?: base.RequestOptions<RetrieveACodeOfCouponCodesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACodeOfCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7317,7 +7317,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     registerACodeOfCouponCodes(
       request: RegisterACodeOfCouponCodesRequest,
-      options?: base.RequestOptions<RegisterACodeOfCouponCodesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RegisterACodeOfCouponCodesResponse> {
       return self.createRequest(
         "POST",
@@ -7349,7 +7349,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAppInformation(
       request: RetrieveAnAppInformationRequest,
-      options?: base.RequestOptions<RetrieveAnAppInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnAppInformationResponse> {
       return self.createRequest("GET", "/api/v2/admin/apps", request, options);
     },
@@ -7366,7 +7366,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAppInformation(
       request: UpdateAnAppInformationRequest,
-      options?: base.RequestOptions<UpdateAnAppInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAnAppInformationResponse> {
       return self.createRequest("PUT", "/api/v2/admin/apps", request, options);
     },
@@ -7391,7 +7391,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retreiveACafe24StoreOrder(
       request: RetreiveACafe24StoreOrderRequest,
-      options?: base.RequestOptions<RetreiveACafe24StoreOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetreiveACafe24StoreOrderResponse> {
       return self.createRequest(
         "GET",
@@ -7413,7 +7413,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACafe24StoreOrder(
       request: CreateACafe24StoreOrderRequest,
-      options?: base.RequestOptions<CreateACafe24StoreOrderResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateACafe24StoreOrderResponse> {
       return self.createRequest(
         "POST",
@@ -7442,7 +7442,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCafe24StorePayments(
       request: RetrieveAListOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCafe24StorePaymentsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7462,7 +7462,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCafe24StorePayments(
       request: RetrieveACountOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCafe24StorePaymentsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7486,7 +7486,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDatabridgeWebhookLogs(
       request: RetrieveAListOfDatabridgeWebhookLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfDatabridgeWebhookLogsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfDatabridgeWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7516,7 +7516,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipes(
       request: RetrieveAListOfRecipesRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfRecipesResponse> {
       return self.createRequest(
         "GET",
@@ -7537,7 +7537,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARecipe(
       request: CreateARecipeRequest,
-      options?: base.RequestOptions<CreateARecipeResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateARecipeResponse> {
       return self.createRequest(
         "POST",
@@ -7557,7 +7557,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARecipe(
       request: DeleteARecipeRequest,
-      options?: base.RequestOptions<DeleteARecipeResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteARecipeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7587,7 +7587,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfScriptTags(
       request: RetrieveAListOfScriptTagsRequest,
-      options?: base.RequestOptions<RetrieveAListOfScriptTagsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7607,7 +7607,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfScriptTags(
       request: RetrieveACountOfScriptTagsRequest,
-      options?: base.RequestOptions<RetrieveACountOfScriptTagsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7628,7 +7628,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAScriptTag(
       request: RetrieveAScriptTagRequest,
-      options?: base.RequestOptions<RetrieveAScriptTagResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAScriptTagResponse> {
       return self.createRequest(
         "GET",
@@ -7648,7 +7648,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAScriptTag(
       request: CreateAScriptTagRequest,
-      options?: base.RequestOptions<CreateAScriptTagResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAScriptTagResponse> {
       return self.createRequest(
         "POST",
@@ -7669,7 +7669,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAScriptTag(
       request: UpdateAScriptTagRequest,
-      options?: base.RequestOptions<UpdateAScriptTagResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAScriptTagResponse> {
       return self.createRequest(
         "PUT",
@@ -7690,7 +7690,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAScriptTag(
       request: DeleteAScriptTagRequest,
-      options?: base.RequestOptions<DeleteAScriptTagResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAScriptTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -7718,7 +7718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfWebhookLogs(
       request: RetrieveAListOfWebhookLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfWebhookLogsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7746,7 +7746,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveWebhookSettings(
       request: RetrieveWebhookSettingsRequest,
-      options?: base.RequestOptions<RetrieveWebhookSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveWebhookSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -7763,7 +7763,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editWebhookSettings(
       request: EditWebhookSettingsRequest,
-      options?: base.RequestOptions<EditWebhookSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<EditWebhookSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -7794,7 +7794,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAutoLayouts(
       request: RetrieveAListOfAutoLayoutsRequest,
-      options?: base.RequestOptions<RetrieveAListOfAutoLayoutsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfAutoLayoutsResponse> {
       return self.createRequest(
         "GET",
@@ -7814,7 +7814,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAutoLayoutForSelectedProductCategory(
       request: CreateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<CreateAutoLayoutForSelectedProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7835,7 +7835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAutoLayoutForSelectedProductCategory(
       request: UpdateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAutoLayoutForSelectedProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7855,7 +7855,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAutoLayoutForSelectedProductCategory(
       request: DeleteAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<DeleteAutoLayoutForSelectedProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -7888,7 +7888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7908,7 +7908,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7929,7 +7929,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions<RetrieveAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -7950,7 +7950,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductCategory(
       request: CreateAProductCategoryRequest,
-      options?: base.RequestOptions<CreateAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7971,7 +7971,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategory(
       request: UpdateAProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7991,7 +7991,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductCategory(
       request: DeleteAProductCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -8022,7 +8022,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDecorationImageSettingsByCategory(
       request: RetrieveDecorationImageSettingsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveDecorationImageSettingsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveDecorationImageSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8043,7 +8043,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateDecorationImagesOfAProductCategory(
       request: UpdateDecorationImagesOfAProductCategoryRequest,
-      options?: base.RequestOptions<UpdateDecorationImagesOfAProductCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateDecorationImagesOfAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -8076,7 +8076,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsByCategory(
       request: RetrieveSeoSettingsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsByCategoryResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSeoSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8097,7 +8097,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategorySeo(
       request: UpdateAProductCategorySeoRequest,
-      options?: base.RequestOptions<UpdateAProductCategorySeoResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAProductCategorySeoResponse> {
       return self.createRequest(
         "PUT",
@@ -8126,7 +8126,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMainCategories(
       request: RetrieveAListOfMainCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfMainCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfMainCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/admin/mains", request, options);
     },
@@ -8152,7 +8152,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBrands(
       request: RetrieveAListOfBrandsRequest,
-      options?: base.RequestOptions<RetrieveAListOfBrandsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8172,7 +8172,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfBrands(
       request: RetrieveACountOfBrandsRequest,
-      options?: base.RequestOptions<RetrieveACountOfBrandsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8193,7 +8193,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABrand(
       request: CreateABrandRequest,
-      options?: base.RequestOptions<CreateABrandResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateABrandResponse> {
       return self.createRequest(
         "POST",
@@ -8214,7 +8214,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABrand(
       request: UpdateABrandRequest,
-      options?: base.RequestOptions<UpdateABrandResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateABrandResponse> {
       return self.createRequest(
         "PUT",
@@ -8234,7 +8234,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABrand(
       request: DeleteABrandRequest,
-      options?: base.RequestOptions<DeleteABrandResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteABrandResponse> {
       return self.createRequest(
         "DELETE",
@@ -8264,7 +8264,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomCategories(
       request: RetrieveAListOfCustomCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8284,7 +8284,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomCategories(
       request: RetrieveACountOfCustomCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomCategoriesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8317,7 +8317,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfManufacturers(
       request: RetrieveAListOfManufacturersRequest,
-      options?: base.RequestOptions<RetrieveAListOfManufacturersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8338,7 +8338,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAManufacturer(
       request: RetrieveAManufacturerRequest,
-      options?: base.RequestOptions<RetrieveAManufacturerResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAManufacturerResponse> {
       return self.createRequest(
         "GET",
@@ -8358,7 +8358,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfManufacturers(
       request: RetrieveACountOfManufacturersRequest,
-      options?: base.RequestOptions<RetrieveACountOfManufacturersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8378,7 +8378,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAManufacturer(
       request: CreateAManufacturerRequest,
-      options?: base.RequestOptions<CreateAManufacturerResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAManufacturerResponse> {
       return self.createRequest(
         "POST",
@@ -8399,7 +8399,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAManufacturer(
       request: UpdateAManufacturerRequest,
-      options?: base.RequestOptions<UpdateAManufacturerResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAManufacturerResponse> {
       return self.createRequest(
         "PUT",
@@ -8430,7 +8430,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrigins(
       request: RetrieveAListOfOriginsRequest,
-      options?: base.RequestOptions<RetrieveAListOfOriginsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -8460,7 +8460,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrends(
       request: RetrieveAListOfTrendsRequest,
-      options?: base.RequestOptions<RetrieveAListOfTrendsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8480,7 +8480,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfTrends(
       request: RetrieveACountOfTrendsRequest,
-      options?: base.RequestOptions<RetrieveACountOfTrendsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8510,7 +8510,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierSShippingSettings(
       request: RetrieveASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions<RetrieveASupplierSShippingSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8531,7 +8531,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierSShippingSettings(
       request: UpdateASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions<UpdateASupplierSShippingSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8564,7 +8564,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSuppliers(
       request: RetrieveAListOfSuppliersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSuppliersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8584,7 +8584,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSuppliers(
       request: RetrieveACountOfSuppliersRequest,
-      options?: base.RequestOptions<RetrieveACountOfSuppliersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8605,7 +8605,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplier(
       request: RetrieveASupplierRequest,
-      options?: base.RequestOptions<RetrieveASupplierResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASupplierResponse> {
       return self.createRequest(
         "GET",
@@ -8625,7 +8625,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplier(
       request: CreateASupplierRequest,
-      options?: base.RequestOptions<CreateASupplierResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateASupplierResponse> {
       return self.createRequest(
         "POST",
@@ -8646,7 +8646,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplier(
       request: UpdateASupplierRequest,
-      options?: base.RequestOptions<UpdateASupplierResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASupplierResponse> {
       return self.createRequest(
         "PUT",
@@ -8666,7 +8666,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplier(
       request: DeleteASupplierRequest,
-      options?: base.RequestOptions<DeleteASupplierResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteASupplierResponse> {
       return self.createRequest(
         "DELETE",
@@ -8698,7 +8698,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSupplierUsers(
       request: RetrieveAListOfSupplierUsersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSupplierUsersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8718,7 +8718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSupplierUsers(
       request: RetrieveACountOfSupplierUsersRequest,
-      options?: base.RequestOptions<RetrieveACountOfSupplierUsersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8739,7 +8739,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSupplierUserDetails(
       request: RetrieveSupplierUserDetailsRequest,
-      options?: base.RequestOptions<RetrieveSupplierUserDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveSupplierUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -8759,7 +8759,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplierUser(
       request: CreateASupplierUserRequest,
-      options?: base.RequestOptions<CreateASupplierUserResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8780,7 +8780,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUser(
       request: UpdateASupplierUserRequest,
-      options?: base.RequestOptions<UpdateASupplierUserResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASupplierUserResponse> {
       return self.createRequest(
         "PUT",
@@ -8800,7 +8800,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplierUser(
       request: DeleteASupplierUserRequest,
-      options?: base.RequestOptions<DeleteASupplierUserResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteASupplierUserResponse> {
       return self.createRequest(
         "DELETE",
@@ -8831,7 +8831,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSListOfRegionalShippingFees(
       request: RetrieveASupplierUserSListOfRegionalShippingFeesRequest,
-      options?: base.RequestOptions<RetrieveASupplierUserSListOfRegionalShippingFeesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASupplierUserSListOfRegionalShippingFeesResponse> {
       return self.createRequest(
         "GET",
@@ -8852,7 +8852,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createRegionalShippingFeeForASupplierUser(
       request: CreateRegionalShippingFeeForASupplierUserRequest,
-      options?: base.RequestOptions<CreateRegionalShippingFeeForASupplierUserResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateRegionalShippingFeeForASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8872,7 +8872,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSupplierUserSRegionalShippingFeeSettings(
       request: DeleteSupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<DeleteSupplierUserSRegionalShippingFeeSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteSupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "DELETE",
@@ -8903,7 +8903,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSRegionalShippingFeeSettings(
       request: RetrieveASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8924,7 +8924,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUserSRegionalShippingFeeSettings(
       request: UpdateASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<UpdateASupplierUserSRegionalShippingFeeSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8955,7 +8955,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingCarriers(
       request: RetrieveAListOfShippingCarriersRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingCarriersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfShippingCarriersResponse> {
       return self.createRequest(
         "GET",
@@ -8976,7 +8976,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingCarrier(
       request: RetrieveAShippingCarrierRequest,
-      options?: base.RequestOptions<RetrieveAShippingCarrierResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAShippingCarrierResponse> {
       return self.createRequest(
         "GET",
@@ -8997,7 +8997,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingCarrier(
       request: CreateAShippingCarrierRequest,
-      options?: base.RequestOptions<CreateAShippingCarrierResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAShippingCarrierResponse> {
       return self.createRequest(
         "POST",
@@ -9018,7 +9018,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingCarrier(
       request: UpdateAShippingCarrierRequest,
-      options?: base.RequestOptions<UpdateAShippingCarrierResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAShippingCarrierResponse> {
       return self.createRequest(
         "PUT",
@@ -9038,7 +9038,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingCarrier(
       request: DeleteAShippingCarrierRequest,
-      options?: base.RequestOptions<DeleteAShippingCarrierResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAShippingCarrierResponse> {
       return self.createRequest(
         "DELETE",
@@ -9068,7 +9068,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingReturnSettings(
       request: RetrieveShippingReturnSettingsRequest,
-      options?: base.RequestOptions<RetrieveShippingReturnSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveShippingReturnSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -9089,7 +9089,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreShippingReturnSettings(
       request: UpdateStoreShippingReturnSettingsRequest,
-      options?: base.RequestOptions<UpdateStoreShippingReturnSettingsResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateStoreShippingReturnSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -9118,7 +9118,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingOrigins(
       request: RetrieveAListOfShippingOriginsRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingOriginsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfShippingOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -9139,7 +9139,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingOrigin(
       request: RetrieveAShippingOriginRequest,
-      options?: base.RequestOptions<RetrieveAShippingOriginResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAShippingOriginResponse> {
       return self.createRequest(
         "GET",
@@ -9159,7 +9159,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingOrigin(
       request: CreateAShippingOriginRequest,
-      options?: base.RequestOptions<CreateAShippingOriginResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAShippingOriginResponse> {
       return self.createRequest(
         "POST",
@@ -9180,7 +9180,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingOrigin(
       request: UpdateAShippingOriginRequest,
-      options?: base.RequestOptions<UpdateAShippingOriginResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAShippingOriginResponse> {
       return self.createRequest(
         "PUT",
@@ -9201,7 +9201,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingOrigin(
       request: DeleteAShippingOriginRequest,
-      options?: base.RequestOptions<DeleteAShippingOriginResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAShippingOriginResponse> {
       return self.createRequest(
         "DELETE",
@@ -9231,7 +9231,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDailySales(
       request: RetrieveAListOfDailySalesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDailySalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfDailySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9261,7 +9261,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMonthlySales(
       request: RetrieveAListOfMonthlySalesRequest,
-      options?: base.RequestOptions<RetrieveAListOfMonthlySalesResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfMonthlySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9290,7 +9290,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlySalesStatisticsOfAStore(
       request: RetrieveHourlySalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveHourlySalesStatisticsOfAStoreResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveHourlySalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9320,7 +9320,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlyProductSalesStatisticsOfAStore(
       request: RetrieveHourlyProductSalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveHourlyProductSalesStatisticsOfAStoreResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveHourlyProductSalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9349,7 +9349,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASalesReport(
       request: RetrieveASalesReportRequest,
-      options?: base.RequestOptions<RetrieveASalesReportResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveASalesReportResponse> {
       return self.createRequest(
         "GET",
@@ -9380,7 +9380,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShoppingCart(
       request: RetrieveAShoppingCartRequest,
-      options?: base.RequestOptions<RetrieveAShoppingCartResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAShoppingCartResponse> {
       return self.createRequest("GET", "/api/v2/admin/carts", request, options);
     },
@@ -9405,7 +9405,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInCustomerWishlist(
       request: RetrieveACountOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsInCustomerWishlistResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9425,7 +9425,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInCustomerWishlist(
       request: RetrieveAListOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInCustomerWishlistResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9456,7 +9456,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9477,7 +9477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCartsContainingAProduct(
       request: RetrieveAListOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveAListOfCartsContainingAProductResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9507,7 +9507,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerInformation(
       request: RetrieveAListOfCustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9527,7 +9527,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerInformation(
       request: RetrieveACountOfCustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9548,7 +9548,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerInformation(
       request: RetrieveACustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveACustomerInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9569,7 +9569,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerInformation(
       request: UpdateACustomerInformationRequest,
-      options?: base.RequestOptions<UpdateACustomerInformationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateACustomerInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -9599,7 +9599,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomersWithAProductInWishlist(
       request: RetrieveAListOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomersWithAProductInWishlistResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9619,7 +9619,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomersWithAProductInWishlist(
       request: RetrieveACountOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomersWithAProductInWishlistResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9649,7 +9649,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCreditsByDateRange(
       request: RetrieveAListOfCreditsByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveAListOfCreditsByDateRangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfCreditsByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9680,7 +9680,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACreditReportByDateRange(
       request: RetrieveACreditReportByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveACreditReportByDateRangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACreditReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9712,7 +9712,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePoints(
       request: RetrievePointsRequest,
-      options?: base.RequestOptions<RetrievePointsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrievePointsResponse> {
       return self.createRequest(
         "GET",
@@ -9732,7 +9732,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     issueAndDeductPoints(
       request: IssueAndDeductPointsRequest,
-      options?: base.RequestOptions<IssueAndDeductPointsResponse>,
+      options?: base.RequestOptions,
     ): Promise<IssueAndDeductPointsResponse> {
       return self.createRequest(
         "POST",
@@ -9763,7 +9763,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAutomaticPointsExpiration(
       request: RetrieveAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<RetrieveAnAutomaticPointsExpirationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "GET",
@@ -9784,7 +9784,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAutomaticPointsExpiration(
       request: CreateAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<CreateAnAutomaticPointsExpirationResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "POST",
@@ -9804,7 +9804,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAutomaticPointsExpiration(
       request: DeleteAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<DeleteAnAutomaticPointsExpirationResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "DELETE",
@@ -9835,7 +9835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPointsReportByDateRange(
       request: RetrieveAPointsReportByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveAPointsReportByDateRangeResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAPointsReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9867,7 +9867,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendAnInvitationToActivateAccount(
       request: SendAnInvitationToActivateAccountRequest,
-      options?: base.RequestOptions<SendAnInvitationToActivateAccountResponse>,
+      options?: base.RequestOptions,
     ): Promise<SendAnInvitationToActivateAccountResponse> {
       return self.createRequest(
         "POST",
@@ -9896,7 +9896,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupList(
       request: RetrieveDistributionGroupListRequest,
-      options?: base.RequestOptions<RetrieveDistributionGroupListResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveDistributionGroupListResponse> {
       return self.createRequest(
         "GET",
@@ -9916,7 +9916,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupDetails(
       request: RetrieveDistributionGroupDetailsRequest,
-      options?: base.RequestOptions<RetrieveDistributionGroupDetailsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveDistributionGroupDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -9936,7 +9936,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADistributionGroup(
       request: CreateADistributionGroupRequest,
-      options?: base.RequestOptions<CreateADistributionGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<CreateADistributionGroupResponse> {
       return self.createRequest(
         "POST",
@@ -9956,7 +9956,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editDistributionGroup(
       request: EditDistributionGroupRequest,
-      options?: base.RequestOptions<EditDistributionGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<EditDistributionGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -9976,7 +9976,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteDistributionGroup(
       request: DeleteDistributionGroupRequest,
-      options?: base.RequestOptions<DeleteDistributionGroupResponse>,
+      options?: base.RequestOptions,
     ): Promise<DeleteDistributionGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -10008,7 +10008,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendASms(
       request: SendASmsRequest,
-      options?: base.RequestOptions<SendASmsResponse>,
+      options?: base.RequestOptions,
     ): Promise<SendASmsResponse> {
       return self.createRequest("POST", "/api/v2/admin/sms", request, options);
     },
@@ -10027,7 +10027,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheSmsBalance(
       request: RetrieveTheSmsBalanceRequest,
-      options?: base.RequestOptions<RetrieveTheSmsBalanceResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveTheSmsBalanceResponse> {
       return self.createRequest(
         "GET",
@@ -10059,7 +10059,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSmsSenders(
       request: RetrieveAListOfSmsSendersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSmsSendersResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfSmsSendersResponse> {
       return self.createRequest(
         "GET",
@@ -10088,7 +10088,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategoryTranslations(
       request: RetrieveAListOfProductCategoryTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoryTranslationsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductCategoryTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10109,7 +10109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductCategoryTranslation(
       request: UpdateProductCategoryTranslationRequest,
-      options?: base.RequestOptions<UpdateProductCategoryTranslationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductCategoryTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10137,7 +10137,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductTranslations(
       request: RetrieveAListOfProductTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductTranslationsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfProductTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10158,7 +10158,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductTranslation(
       request: UpdateProductTranslationRequest,
-      options?: base.RequestOptions<UpdateProductTranslationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateProductTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10186,7 +10186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreTranslations(
       request: RetrieveAListOfStoreTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoreTranslationsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfStoreTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10207,7 +10207,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheTranslationsOfAStore(
       request: UpdateTheTranslationsOfAStoreRequest,
-      options?: base.RequestOptions<UpdateTheTranslationsOfAStoreResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateTheTranslationsOfAStoreResponse> {
       return self.createRequest(
         "PUT",
@@ -10235,7 +10235,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemeTranslations(
       request: RetrieveAListOfThemeTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfThemeTranslationsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAListOfThemeTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10255,7 +10255,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemeTranslation(
       request: RetrieveAThemeTranslationRequest,
-      options?: base.RequestOptions<RetrieveAThemeTranslationResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveAThemeTranslationResponse> {
       return self.createRequest(
         "GET",
@@ -10276,7 +10276,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAThemeTranslation(
       request: UpdateAThemeTranslationRequest,
-      options?: base.RequestOptions<UpdateAThemeTranslationResponse>,
+      options?: base.RequestOptions,
     ): Promise<UpdateAThemeTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10304,7 +10304,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfDailyvisits(
       request: RetrieveACountOfDailyvisitsRequest,
-      options?: base.RequestOptions<RetrieveACountOfDailyvisitsResponse>,
+      options?: base.RequestOptions,
     ): Promise<RetrieveACountOfDailyvisitsResponse> {
       return self.createRequest(
         "GET",
