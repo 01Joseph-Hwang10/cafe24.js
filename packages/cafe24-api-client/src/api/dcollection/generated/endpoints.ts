@@ -24,7 +24,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStores(
       request: RetrieveAListOfStoresRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoresRequest>,
+      options?: base.RequestOptions<RetrieveAListOfStoresResponse>,
     ): Promise<RetrieveAListOfStoresResponse> {
       return self.createRequest("GET", "/api/shops", request, options);
     },
@@ -43,7 +43,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/products", request, options);
     },
@@ -55,7 +55,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheNumberOfProductItems(
       request: RetrieveTheNumberOfProductItemsRequest,
-      options?: base.RequestOptions<RetrieveTheNumberOfProductItemsRequest>,
+      options?: base.RequestOptions<RetrieveTheNumberOfProductItemsResponse>,
     ): Promise<RetrieveTheNumberOfProductItemsResponse> {
       return self.createRequest("GET", "/api/products/count", request, options);
     },
@@ -74,7 +74,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductTagProperties(
       request: RetrieveAListOfProductTagPropertiesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductTagPropertiesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductTagPropertiesResponse>,
     ): Promise<RetrieveAListOfProductTagPropertiesResponse> {
       return self.createRequest(
         "GET",
@@ -98,7 +98,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsWithMallId(
       request: RetrieveAListOfProductsWithMallIdRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsWithMallIdRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsWithMallIdResponse>,
     ): Promise<RetrieveAListOfProductsWithMallIdResponse> {
       return self.createRequest("GET", "/api/storeproducts", request, options);
     },
@@ -1485,7 +1485,8 @@ interface RetrieveAListOfProductsWithMallIdRequest {
  *             "updated_date": "2022-09-02T19:27:48+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfStoresResponse {
   shops: Array<{
@@ -1635,7 +1636,8 @@ interface RetrieveAListOfStoresResponse {
  *             "updated_date": "2022-09-14T09:09:29+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsResponse {
   products: Array<{
@@ -1693,7 +1695,8 @@ interface RetrieveAListOfProductsResponse {
  * ```json
  * {
  *     "count": 86397
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheNumberOfProductItemsResponse {
   count: number;
@@ -1719,7 +1722,8 @@ interface RetrieveTheNumberOfProductItemsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductTagPropertiesResponse {
   standardtags: Array<{
@@ -1828,7 +1832,8 @@ interface RetrieveAListOfProductTagPropertiesResponse {
  *             "updated_date": "2022-09-14T09:09:29+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsWithMallIdResponse {
   storeProducts: Array<{

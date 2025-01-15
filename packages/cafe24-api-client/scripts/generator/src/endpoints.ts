@@ -93,7 +93,7 @@ export function generateEndpointsModule(spec: APISpec) {
     "  Cafe24Enum,\n" +
     "  Cafe24Datetime,\n" +
     '} from "cafe24-types";\n' +
-    'import * as base from "../../client";\n\n\n' +
+    'import * as base from "../client";\n\n\n' +
     "export type Endpoints = ReturnType<typeof Endpoints>;\n" +
     "export const Endpoints = (self: base.Client) => (" +
     objectWriter.write({

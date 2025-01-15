@@ -30,7 +30,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfActionLogs(
       request: RetrieveAListOfActionLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfActionLogsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfActionLogsResponse>,
     ): Promise<RetrieveAListOfActionLogsResponse> {
       return self.createRequest(
         "GET",
@@ -51,7 +51,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnActionLog(
       request: RetrieveAnActionLogRequest,
-      options?: base.RequestOptions<RetrieveAnActionLogRequest>,
+      options?: base.RequestOptions<RetrieveAnActionLogResponse>,
     ): Promise<RetrieveAnActionLogResponse> {
       return self.createRequest(
         "GET",
@@ -79,7 +79,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheListOfAvailableVariablesForAutomatedMessages(
       request: RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequest,
-      options?: base.RequestOptions<RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequest>,
+      options?: base.RequestOptions<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse>,
     ): Promise<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse> {
       return self.createRequest(
         "GET",
@@ -107,7 +107,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheAutomatedMessageSettings(
       request: RetrieveTheAutomatedMessageSettingsRequest,
-      options?: base.RequestOptions<RetrieveTheAutomatedMessageSettingsRequest>,
+      options?: base.RequestOptions<RetrieveTheAutomatedMessageSettingsResponse>,
     ): Promise<RetrieveTheAutomatedMessageSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -127,7 +127,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAutomatedMessage(
       request: UpdateAnAutomatedMessageRequest,
-      options?: base.RequestOptions<UpdateAnAutomatedMessageRequest>,
+      options?: base.RequestOptions<UpdateAnAutomatedMessageResponse>,
     ): Promise<UpdateAnAutomatedMessageResponse> {
       return self.createRequest(
         "PUT",
@@ -156,7 +156,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponSettings(
       request: RetrieveCouponSettingsRequest,
-      options?: base.RequestOptions<RetrieveCouponSettingsRequest>,
+      options?: base.RequestOptions<RetrieveCouponSettingsResponse>,
     ): Promise<RetrieveCouponSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -177,7 +177,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCouponSettings(
       request: UpdateCouponSettingsRequest,
-      options?: base.RequestOptions<UpdateCouponSettingsRequest>,
+      options?: base.RequestOptions<UpdateCouponSettingsResponse>,
     ): Promise<UpdateCouponSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -205,7 +205,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCurrencySettings(
       request: RetrieveCurrencySettingsRequest,
-      options?: base.RequestOptions<RetrieveCurrencySettingsRequest>,
+      options?: base.RequestOptions<RetrieveCurrencySettingsResponse>,
     ): Promise<RetrieveCurrencySettingsResponse> {
       return self.createRequest(
         "GET",
@@ -234,7 +234,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADashboard(
       request: RetrieveADashboardRequest,
-      options?: base.RequestOptions<RetrieveADashboardRequest>,
+      options?: base.RequestOptions<RetrieveADashboardResponse>,
     ): Promise<RetrieveADashboardResponse> {
       return self.createRequest(
         "GET",
@@ -263,7 +263,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayContractDetails(
       request: RetrieveAListOfPaymentGatewayContractDetailsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayContractDetailsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayContractDetailsResponse>,
     ): Promise<RetrieveAListOfPaymentGatewayContractDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -291,7 +291,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTransactionInformationOfAStore(
       request: RetrieveTheTransactionInformationOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveTheTransactionInformationOfAStoreRequest>,
+      options?: base.RequestOptions<RetrieveTheTransactionInformationOfAStoreResponse>,
     ): Promise<RetrieveTheTransactionInformationOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -319,7 +319,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductImageSizeSettings(
       request: RetrieveProductImageSizeSettingsRequest,
-      options?: base.RequestOptions<RetrieveProductImageSizeSettingsRequest>,
+      options?: base.RequestOptions<RetrieveProductImageSizeSettingsResponse>,
     ): Promise<RetrieveProductImageSizeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -339,7 +339,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductImageSizeSettings(
       request: UpdateProductImageSizeSettingsRequest,
-      options?: base.RequestOptions<UpdateProductImageSizeSettingsRequest>,
+      options?: base.RequestOptions<UpdateProductImageSizeSettingsResponse>,
     ): Promise<UpdateProductImageSizeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -367,7 +367,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAKakaoChannelSenderProfileKey(
       request: RetrieveAKakaoChannelSenderProfileKeyRequest,
-      options?: base.RequestOptions<RetrieveAKakaoChannelSenderProfileKeyRequest>,
+      options?: base.RequestOptions<RetrieveAKakaoChannelSenderProfileKeyResponse>,
     ): Promise<RetrieveAKakaoChannelSenderProfileKeyResponse> {
       return self.createRequest(
         "GET",
@@ -395,7 +395,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheKakaoInfoTalkSettings(
       request: RetrieveTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions<RetrieveTheKakaoInfoTalkSettingsRequest>,
+      options?: base.RequestOptions<RetrieveTheKakaoInfoTalkSettingsResponse>,
     ): Promise<RetrieveTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -415,7 +415,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheKakaoInfoTalkSettings(
       request: UpdateTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions<UpdateTheKakaoInfoTalkSettingsRequest>,
+      options?: base.RequestOptions<UpdateTheKakaoInfoTalkSettingsResponse>,
     ): Promise<UpdateTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -444,7 +444,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSettingsForKakaopayOrders(
       request: RetrieveSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions<RetrieveSettingsForKakaopayOrdersRequest>,
+      options?: base.RequestOptions<RetrieveSettingsForKakaopayOrdersResponse>,
     ): Promise<RetrieveSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -465,7 +465,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSettingsForKakaopayOrders(
       request: UpdateSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions<UpdateSettingsForKakaopayOrdersRequest>,
+      options?: base.RequestOptions<UpdateSettingsForKakaopayOrdersResponse>,
     ): Promise<UpdateSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -496,7 +496,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMenus(
       request: RetrieveMenusRequest,
-      options?: base.RequestOptions<RetrieveMenusRequest>,
+      options?: base.RequestOptions<RetrieveMenusResponse>,
     ): Promise<RetrieveMenusResponse> {
       return self.createRequest("GET", "/api/v2/admin/menus", request, options);
     },
@@ -520,7 +520,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMobileSettings(
       request: RetrieveMobileSettingsRequest,
-      options?: base.RequestOptions<RetrieveMobileSettingsRequest>,
+      options?: base.RequestOptions<RetrieveMobileSettingsResponse>,
     ): Promise<RetrieveMobileSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -548,7 +548,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveNaverPaySettings(
       request: RetrieveNaverPaySettingsRequest,
-      options?: base.RequestOptions<RetrieveNaverPaySettingsRequest>,
+      options?: base.RequestOptions<RetrieveNaverPaySettingsResponse>,
     ): Promise<RetrieveNaverPaySettingsResponse> {
       return self.createRequest(
         "GET",
@@ -568,7 +568,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createNaverPaySettings(
       request: CreateNaverPaySettingsRequest,
-      options?: base.RequestOptions<CreateNaverPaySettingsRequest>,
+      options?: base.RequestOptions<CreateNaverPaySettingsResponse>,
     ): Promise<CreateNaverPaySettingsResponse> {
       return self.createRequest(
         "POST",
@@ -588,7 +588,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverPaySettings(
       request: UpdateNaverPaySettingsRequest,
-      options?: base.RequestOptions<UpdateNaverPaySettingsRequest>,
+      options?: base.RequestOptions<UpdateNaverPaySettingsResponse>,
     ): Promise<UpdateNaverPaySettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -616,7 +616,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderSettings(
       request: RetrieveOrderSettingsRequest,
-      options?: base.RequestOptions<RetrieveOrderSettingsRequest>,
+      options?: base.RequestOptions<RetrieveOrderSettingsResponse>,
     ): Promise<RetrieveOrderSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -636,7 +636,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderSettings(
       request: UpdateOrderSettingsRequest,
-      options?: base.RequestOptions<UpdateOrderSettingsRequest>,
+      options?: base.RequestOptions<UpdateOrderSettingsResponse>,
     ): Promise<UpdateOrderSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -660,7 +660,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderStatusDisplayed(
       request: RetrieveOrderStatusDisplayedRequest,
-      options?: base.RequestOptions<RetrieveOrderStatusDisplayedRequest>,
+      options?: base.RequestOptions<RetrieveOrderStatusDisplayedResponse>,
     ): Promise<RetrieveOrderStatusDisplayedResponse> {
       return self.createRequest(
         "GET",
@@ -677,7 +677,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderStatusDisplayed(
       request: UpdateOrderStatusDisplayedRequest,
-      options?: base.RequestOptions<UpdateOrderStatusDisplayedRequest>,
+      options?: base.RequestOptions<UpdateOrderStatusDisplayedResponse>,
     ): Promise<UpdateOrderStatusDisplayedResponse> {
       return self.createRequest(
         "PUT",
@@ -701,7 +701,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveEscrowSettings(
       request: RetrieveEscrowSettingsRequest,
-      options?: base.RequestOptions<RetrieveEscrowSettingsRequest>,
+      options?: base.RequestOptions<RetrieveEscrowSettingsResponse>,
     ): Promise<RetrieveEscrowSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -718,7 +718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateEscrowSettings(
       request: UpdateEscrowSettingsRequest,
-      options?: base.RequestOptions<UpdateEscrowSettingsRequest>,
+      options?: base.RequestOptions<UpdateEscrowSettingsResponse>,
     ): Promise<UpdateEscrowSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -748,7 +748,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGateway(
       request: CreateAPaymentGatewayRequest,
-      options?: base.RequestOptions<CreateAPaymentGatewayRequest>,
+      options?: base.RequestOptions<CreateAPaymentGatewayResponse>,
     ): Promise<CreateAPaymentGatewayResponse> {
       return self.createRequest(
         "POST",
@@ -770,7 +770,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentGateway(
       request: UpdateAPaymentGatewayRequest,
-      options?: base.RequestOptions<UpdateAPaymentGatewayRequest>,
+      options?: base.RequestOptions<UpdateAPaymentGatewayResponse>,
     ): Promise<UpdateAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -791,7 +791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentGateway(
       request: DeleteAPaymentGatewayRequest,
-      options?: base.RequestOptions<DeleteAPaymentGatewayRequest>,
+      options?: base.RequestOptions<DeleteAPaymentGatewayResponse>,
     ): Promise<DeleteAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -823,7 +823,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayMethods(
       request: RetrieveAListOfPaymentGatewayMethodsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayMethodsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfPaymentGatewayMethodsResponse>,
     ): Promise<RetrieveAListOfPaymentGatewayMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -843,7 +843,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGatewayMethod(
       request: CreateAPaymentGatewayMethodRequest,
-      options?: base.RequestOptions<CreateAPaymentGatewayMethodRequest>,
+      options?: base.RequestOptions<CreateAPaymentGatewayMethodResponse>,
     ): Promise<CreateAPaymentGatewayMethodResponse> {
       return self.createRequest(
         "POST",
@@ -864,7 +864,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentMethodOfAPaymentGateway(
       request: UpdateAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions<UpdateAPaymentMethodOfAPaymentGatewayRequest>,
+      options?: base.RequestOptions<UpdateAPaymentMethodOfAPaymentGatewayResponse>,
     ): Promise<UpdateAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -884,7 +884,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentMethodOfAPaymentGateway(
       request: DeleteAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions<DeleteAPaymentMethodOfAPaymentGatewayRequest>,
+      options?: base.RequestOptions<DeleteAPaymentMethodOfAPaymentGatewayResponse>,
     ): Promise<DeleteAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -914,7 +914,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentMethods(
       request: RetrieveAListOfPaymentMethodsRequest,
-      options?: base.RequestOptions<RetrieveAListOfPaymentMethodsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfPaymentMethodsResponse>,
     ): Promise<RetrieveAListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -944,7 +944,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProvidersByPaymentMethod(
       request: RetrieveAListOfProvidersByPaymentMethodRequest,
-      options?: base.RequestOptions<RetrieveAListOfProvidersByPaymentMethodRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProvidersByPaymentMethodResponse>,
     ): Promise<RetrieveAListOfProvidersByPaymentMethodResponse> {
       return self.createRequest(
         "GET",
@@ -964,7 +964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheDisplayStatusOfAPaymentMethod(
       request: UpdateTheDisplayStatusOfAPaymentMethodRequest,
-      options?: base.RequestOptions<UpdateTheDisplayStatusOfAPaymentMethodRequest>,
+      options?: base.RequestOptions<UpdateTheDisplayStatusOfAPaymentMethodResponse>,
     ): Promise<UpdateTheDisplayStatusOfAPaymentMethodResponse> {
       return self.createRequest(
         "PUT",
@@ -992,7 +992,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePointsSettings(
       request: RetrievePointsSettingsRequest,
-      options?: base.RequestOptions<RetrievePointsSettingsRequest>,
+      options?: base.RequestOptions<RetrievePointsSettingsResponse>,
     ): Promise<RetrievePointsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1012,7 +1012,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePointsSettings(
       request: UpdatePointsSettingsRequest,
-      options?: base.RequestOptions<UpdatePointsSettingsRequest>,
+      options?: base.RequestOptions<UpdatePointsSettingsResponse>,
     ): Promise<UpdatePointsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1040,7 +1040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductSettings(
       request: RetrieveProductSettingsRequest,
-      options?: base.RequestOptions<RetrieveProductSettingsRequest>,
+      options?: base.RequestOptions<RetrieveProductSettingsResponse>,
     ): Promise<RetrieveProductSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1068,7 +1068,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRedirects(
       request: RetrieveAListOfRedirectsRequest,
-      options?: base.RequestOptions<RetrieveAListOfRedirectsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfRedirectsResponse>,
     ): Promise<RetrieveAListOfRedirectsResponse> {
       return self.createRequest(
         "GET",
@@ -1089,7 +1089,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARedirect(
       request: CreateARedirectRequest,
-      options?: base.RequestOptions<CreateARedirectRequest>,
+      options?: base.RequestOptions<CreateARedirectResponse>,
     ): Promise<CreateARedirectResponse> {
       return self.createRequest(
         "POST",
@@ -1109,7 +1109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateARedirect(
       request: UpdateARedirectRequest,
-      options?: base.RequestOptions<UpdateARedirectRequest>,
+      options?: base.RequestOptions<UpdateARedirectResponse>,
     ): Promise<UpdateARedirectResponse> {
       return self.createRequest(
         "PUT",
@@ -1129,7 +1129,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARedirect(
       request: DeleteARedirectRequest,
-      options?: base.RequestOptions<DeleteARedirectRequest>,
+      options?: base.RequestOptions<DeleteARedirectResponse>,
     ): Promise<DeleteARedirectResponse> {
       return self.createRequest(
         "DELETE",
@@ -1158,7 +1158,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettings(
       request: RetrieveSeoSettingsRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsRequest>,
+      options?: base.RequestOptions<RetrieveSeoSettingsResponse>,
     ): Promise<RetrieveSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1179,7 +1179,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreSeoSettings(
       request: UpdateStoreSeoSettingsRequest,
-      options?: base.RequestOptions<UpdateStoreSeoSettingsRequest>,
+      options?: base.RequestOptions<UpdateStoreSeoSettingsResponse>,
     ): Promise<UpdateStoreSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1208,7 +1208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForShippingManager(
       request: RetrieveActivationInformationForShippingManagerRequest,
-      options?: base.RequestOptions<RetrieveActivationInformationForShippingManagerRequest>,
+      options?: base.RequestOptions<RetrieveActivationInformationForShippingManagerResponse>,
     ): Promise<RetrieveActivationInformationForShippingManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1238,7 +1238,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShops(
       request: RetrieveAListOfShopsRequest,
-      options?: base.RequestOptions<RetrieveAListOfShopsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfShopsResponse>,
     ): Promise<RetrieveAListOfShopsResponse> {
       return self.createRequest("GET", "/api/v2/admin/shops", request, options);
     },
@@ -1254,7 +1254,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShop(
       request: RetrieveAShopRequest,
-      options?: base.RequestOptions<RetrieveAShopRequest>,
+      options?: base.RequestOptions<RetrieveAShopResponse>,
     ): Promise<RetrieveAShopResponse> {
       return self.createRequest(
         "GET",
@@ -1284,7 +1284,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSmsSettings(
       request: RetrieveSmsSettingsRequest,
-      options?: base.RequestOptions<RetrieveSmsSettingsRequest>,
+      options?: base.RequestOptions<RetrieveSmsSettingsResponse>,
     ): Promise<RetrieveSmsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1301,7 +1301,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSmsSettings(
       request: UpdateSmsSettingsRequest,
-      options?: base.RequestOptions<UpdateSmsSettingsRequest>,
+      options?: base.RequestOptions<UpdateSmsSettingsResponse>,
     ): Promise<UpdateSmsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1330,7 +1330,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncDetails(
       request: AppleLoginSyncDetailsRequest,
-      options?: base.RequestOptions<AppleLoginSyncDetailsRequest>,
+      options?: base.RequestOptions<AppleLoginSyncDetailsResponse>,
     ): Promise<AppleLoginSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1350,7 +1350,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncSettings(
       request: AppleLoginSyncSettingsRequest,
-      options?: base.RequestOptions<AppleLoginSyncSettingsRequest>,
+      options?: base.RequestOptions<AppleLoginSyncSettingsResponse>,
     ): Promise<AppleLoginSyncSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1379,7 +1379,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncDetails(
       request: KakaoSyncDetailsRequest,
-      options?: base.RequestOptions<KakaoSyncDetailsRequest>,
+      options?: base.RequestOptions<KakaoSyncDetailsResponse>,
     ): Promise<KakaoSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1399,7 +1399,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncUpdates(
       request: KakaoSyncUpdatesRequest,
-      options?: base.RequestOptions<KakaoSyncUpdatesRequest>,
+      options?: base.RequestOptions<KakaoSyncUpdatesResponse>,
     ): Promise<KakaoSyncUpdatesResponse> {
       return self.createRequest(
         "PUT",
@@ -1427,7 +1427,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     naverLoginDetails(
       request: NaverLoginDetailsRequest,
-      options?: base.RequestOptions<NaverLoginDetailsRequest>,
+      options?: base.RequestOptions<NaverLoginDetailsResponse>,
     ): Promise<NaverLoginDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1447,7 +1447,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverLoginSettings(
       request: UpdateNaverLoginSettingsRequest,
-      options?: base.RequestOptions<UpdateNaverLoginSettingsRequest>,
+      options?: base.RequestOptions<UpdateNaverLoginSettingsResponse>,
     ): Promise<UpdateNaverLoginSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1477,7 +1477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveStoreDetails(
       request: RetrieveStoreDetailsRequest,
-      options?: base.RequestOptions<RetrieveStoreDetailsRequest>,
+      options?: base.RequestOptions<RetrieveStoreDetailsResponse>,
     ): Promise<RetrieveStoreDetailsResponse> {
       return self.createRequest("GET", "/api/v2/admin/store", request, options);
     },
@@ -1503,7 +1503,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreBankAccounts(
       request: RetrieveAListOfStoreBankAccountsRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoreBankAccountsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfStoreBankAccountsResponse>,
     ): Promise<RetrieveAListOfStoreBankAccountsResponse> {
       return self.createRequest(
         "GET",
@@ -1535,7 +1535,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSubscriptionProducts(
       request: RetrieveAListOfSubscriptionProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfSubscriptionProductsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfSubscriptionProductsResponse>,
     ): Promise<RetrieveAListOfSubscriptionProductsResponse> {
       return self.createRequest(
         "GET",
@@ -1555,7 +1555,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscriptionPaymentRule(
       request: CreateASubscriptionPaymentRuleRequest,
-      options?: base.RequestOptions<CreateASubscriptionPaymentRuleRequest>,
+      options?: base.RequestOptions<CreateASubscriptionPaymentRuleResponse>,
     ): Promise<CreateASubscriptionPaymentRuleResponse> {
       return self.createRequest(
         "POST",
@@ -1575,7 +1575,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSubscriptionProducts(
       request: UpdateSubscriptionProductsRequest,
-      options?: base.RequestOptions<UpdateSubscriptionProductsRequest>,
+      options?: base.RequestOptions<UpdateSubscriptionProductsResponse>,
     ): Promise<UpdateSubscriptionProductsResponse> {
       return self.createRequest(
         "PUT",
@@ -1595,7 +1595,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSubscriptionProducts(
       request: DeleteSubscriptionProductsRequest,
-      options?: base.RequestOptions<DeleteSubscriptionProductsRequest>,
+      options?: base.RequestOptions<DeleteSubscriptionProductsResponse>,
     ): Promise<DeleteSubscriptionProductsResponse> {
       return self.createRequest(
         "DELETE",
@@ -1623,7 +1623,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForTaxManager(
       request: RetrieveActivationInformationForTaxManagerRequest,
-      options?: base.RequestOptions<RetrieveActivationInformationForTaxManagerRequest>,
+      options?: base.RequestOptions<RetrieveActivationInformationForTaxManagerResponse>,
     ): Promise<RetrieveActivationInformationForTaxManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1654,7 +1654,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminUsers(
       request: RetrieveAListOfAdminUsersRequest,
-      options?: base.RequestOptions<RetrieveAListOfAdminUsersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfAdminUsersResponse>,
     ): Promise<RetrieveAListOfAdminUsersResponse> {
       return self.createRequest("GET", "/api/v2/admin/users", request, options);
     },
@@ -1670,7 +1670,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAdminUserDetails(
       request: RetrieveAdminUserDetailsRequest,
-      options?: base.RequestOptions<RetrieveAdminUserDetailsRequest>,
+      options?: base.RequestOptions<RetrieveAdminUserDetailsResponse>,
     ): Promise<RetrieveAdminUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1704,7 +1704,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBundles(
       request: RetrieveAListOfBundlesRequest,
-      options?: base.RequestOptions<RetrieveAListOfBundlesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfBundlesResponse>,
     ): Promise<RetrieveAListOfBundlesResponse> {
       return self.createRequest(
         "GET",
@@ -1725,7 +1725,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveABundle(
       request: RetrieveABundleRequest,
-      options?: base.RequestOptions<RetrieveABundleRequest>,
+      options?: base.RequestOptions<RetrieveABundleResponse>,
     ): Promise<RetrieveABundleResponse> {
       return self.createRequest(
         "GET",
@@ -1746,7 +1746,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABundle(
       request: CreateABundleRequest,
-      options?: base.RequestOptions<CreateABundleRequest>,
+      options?: base.RequestOptions<CreateABundleResponse>,
     ): Promise<CreateABundleResponse> {
       return self.createRequest(
         "POST",
@@ -1767,7 +1767,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABundle(
       request: UpdateABundleRequest,
-      options?: base.RequestOptions<UpdateABundleRequest>,
+      options?: base.RequestOptions<UpdateABundleResponse>,
     ): Promise<UpdateABundleResponse> {
       return self.createRequest(
         "PUT",
@@ -1787,7 +1787,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABundle(
       request: DeleteABundleRequest,
-      options?: base.RequestOptions<DeleteABundleRequest>,
+      options?: base.RequestOptions<DeleteABundleResponse>,
     ): Promise<DeleteABundleResponse> {
       return self.createRequest(
         "DELETE",
@@ -1819,7 +1819,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryResponse>,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1839,7 +1839,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryResponse>,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1860,7 +1860,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     addProductsToACategory(
       request: AddProductsToACategoryRequest,
-      options?: base.RequestOptions<AddProductsToACategoryRequest>,
+      options?: base.RequestOptions<AddProductsToACategoryResponse>,
     ): Promise<AddProductsToACategoryResponse> {
       return self.createRequest(
         "POST",
@@ -1881,7 +1881,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductInProductCategory(
       request: UpdateAProductInProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAProductInProductCategoryRequest>,
+      options?: base.RequestOptions<UpdateAProductInProductCategoryResponse>,
     ): Promise<UpdateAProductInProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -1902,7 +1902,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductByCategory(
       request: DeleteAProductByCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductByCategoryRequest>,
+      options?: base.RequestOptions<DeleteAProductByCategoryResponse>,
     ): Promise<DeleteAProductByCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -1934,7 +1934,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryResponse>,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1954,7 +1954,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInMainCategory(
       request: RetrieveACountOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsInMainCategoryRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsInMainCategoryResponse>,
     ): Promise<RetrieveACountOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1975,7 +1975,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setMainCategoryProducts(
       request: SetMainCategoryProductsRequest,
-      options?: base.RequestOptions<SetMainCategoryProductsRequest>,
+      options?: base.RequestOptions<SetMainCategoryProductsResponse>,
     ): Promise<SetMainCategoryProductsResponse> {
       return self.createRequest(
         "POST",
@@ -1996,7 +1996,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateFixedSortingOfProductsInMainCategory(
       request: UpdateFixedSortingOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<UpdateFixedSortingOfProductsInMainCategoryRequest>,
+      options?: base.RequestOptions<UpdateFixedSortingOfProductsInMainCategoryResponse>,
     ): Promise<UpdateFixedSortingOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -2017,7 +2017,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductInMainCategory(
       request: DeleteAProductInMainCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductInMainCategoryRequest>,
+      options?: base.RequestOptions<DeleteAProductInMainCategoryResponse>,
     ): Promise<DeleteAProductInMainCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -2052,7 +2052,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2072,7 +2072,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsResponse>,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2093,7 +2093,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions<RetrieveAProductResourceRequest>,
+      options?: base.RequestOptions<RetrieveAProductResourceResponse>,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -2114,7 +2114,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProduct(
       request: CreateAProductRequest,
-      options?: base.RequestOptions<CreateAProductRequest>,
+      options?: base.RequestOptions<CreateAProductResponse>,
     ): Promise<CreateAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2135,7 +2135,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProduct(
       request: UpdateAProductRequest,
-      options?: base.RequestOptions<UpdateAProductRequest>,
+      options?: base.RequestOptions<UpdateAProductResponse>,
     ): Promise<UpdateAProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2156,7 +2156,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProduct(
       request: DeleteAProductRequest,
-      options?: base.RequestOptions<DeleteAProductRequest>,
+      options?: base.RequestOptions<DeleteAProductResponse>,
     ): Promise<DeleteAProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2187,7 +2187,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAdditionalProductImage(
       request: CreateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<CreateAnAdditionalProductImageRequest>,
+      options?: base.RequestOptions<CreateAnAdditionalProductImageResponse>,
     ): Promise<CreateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "POST",
@@ -2208,7 +2208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAdditionalProductImage(
       request: UpdateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<UpdateAnAdditionalProductImageRequest>,
+      options?: base.RequestOptions<UpdateAnAdditionalProductImageResponse>,
     ): Promise<UpdateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "PUT",
@@ -2225,7 +2225,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAdditionalProductImage(
       request: DeleteAnAdditionalProductImageRequest,
-      options?: base.RequestOptions<DeleteAnAdditionalProductImageRequest>,
+      options?: base.RequestOptions<DeleteAnAdditionalProductImageResponse>,
     ): Promise<DeleteAnAdditionalProductImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2256,7 +2256,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductApprovalStatus(
       request: RetrieveAProductApprovalStatusRequest,
-      options?: base.RequestOptions<RetrieveAProductApprovalStatusRequest>,
+      options?: base.RequestOptions<RetrieveAProductApprovalStatusResponse>,
     ): Promise<RetrieveAProductApprovalStatusResponse> {
       return self.createRequest(
         "GET",
@@ -2277,7 +2277,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductApprovalRequest(
       request: CreateAProductApprovalRequestRequest,
-      options?: base.RequestOptions<CreateAProductApprovalRequestRequest>,
+      options?: base.RequestOptions<CreateAProductApprovalRequestResponse>,
     ): Promise<CreateAProductApprovalRequestResponse> {
       return self.createRequest(
         "POST",
@@ -2298,7 +2298,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductApprovalStatus(
       request: UpdateAProductApprovalStatusRequest,
-      options?: base.RequestOptions<UpdateAProductApprovalStatusRequest>,
+      options?: base.RequestOptions<UpdateAProductApprovalStatusResponse>,
     ): Promise<UpdateAProductApprovalStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -2322,7 +2322,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedPropertiesByProduct(
       request: RetrieveUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<RetrieveUserDefinedPropertiesByProductRequest>,
+      options?: base.RequestOptions<RetrieveUserDefinedPropertiesByProductResponse>,
     ): Promise<RetrieveUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "GET",
@@ -2339,7 +2339,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedPropertiesByProduct(
       request: UpdateUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<UpdateUserDefinedPropertiesByProductRequest>,
+      options?: base.RequestOptions<UpdateUserDefinedPropertiesByProductResponse>,
     ): Promise<UpdateUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2356,7 +2356,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedPropertiesByProduct(
       request: DeleteUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions<DeleteUserDefinedPropertiesByProductRequest>,
+      options?: base.RequestOptions<DeleteUserDefinedPropertiesByProductResponse>,
     ): Promise<DeleteUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2373,7 +2373,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedProperties(
       request: RetrieveUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<RetrieveUserDefinedPropertiesRequest>,
+      options?: base.RequestOptions<RetrieveUserDefinedPropertiesResponse>,
     ): Promise<RetrieveUserDefinedPropertiesResponse> {
       return self.createRequest(
         "GET",
@@ -2390,7 +2390,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createUserDefinedProperties(
       request: CreateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<CreateUserDefinedPropertiesRequest>,
+      options?: base.RequestOptions<CreateUserDefinedPropertiesResponse>,
     ): Promise<CreateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "POST",
@@ -2407,7 +2407,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedProperties(
       request: UpdateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<UpdateUserDefinedPropertiesRequest>,
+      options?: base.RequestOptions<UpdateUserDefinedPropertiesResponse>,
     ): Promise<UpdateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "PUT",
@@ -2424,7 +2424,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedProperties(
       request: DeleteUserDefinedPropertiesRequest,
-      options?: base.RequestOptions<DeleteUserDefinedPropertiesRequest>,
+      options?: base.RequestOptions<DeleteUserDefinedPropertiesResponse>,
     ): Promise<DeleteUserDefinedPropertiesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2456,7 +2456,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesResponse>,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2477,7 +2477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setDecorationImagesForAProduct(
       request: SetDecorationImagesForAProductRequest,
-      options?: base.RequestOptions<SetDecorationImagesForAProductRequest>,
+      options?: base.RequestOptions<SetDecorationImagesForAProductResponse>,
     ): Promise<SetDecorationImagesForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2498,7 +2498,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductDecorationImages(
       request: UpdateProductDecorationImagesRequest,
-      options?: base.RequestOptions<UpdateProductDecorationImagesRequest>,
+      options?: base.RequestOptions<UpdateProductDecorationImagesResponse>,
     ): Promise<UpdateProductDecorationImagesResponse> {
       return self.createRequest(
         "PUT",
@@ -2518,7 +2518,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductDecorationImage(
       request: RemoveAProductDecorationImageRequest,
-      options?: base.RequestOptions<RemoveAProductDecorationImageRequest>,
+      options?: base.RequestOptions<RemoveAProductDecorationImageResponse>,
     ): Promise<RemoveAProductDecorationImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2538,7 +2538,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDecorationImages(
       request: RetrieveAListOfDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDecorationImagesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfDecorationImagesResponse>,
     ): Promise<RetrieveAListOfDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2570,7 +2570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions<RetrieveAProductDiscountedPriceRequest>,
+      options?: base.RequestOptions<RetrieveAProductDiscountedPriceResponse>,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -2602,7 +2602,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductViewsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductViewsResponse>,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -2630,7 +2630,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductIconsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductIconsResponse>,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2651,7 +2651,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     setIconsForAProduct(
       request: SetIconsForAProductRequest,
-      options?: base.RequestOptions<SetIconsForAProductRequest>,
+      options?: base.RequestOptions<SetIconsForAProductResponse>,
     ): Promise<SetIconsForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2672,7 +2672,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductIcons(
       request: UpdateProductIconsRequest,
-      options?: base.RequestOptions<UpdateProductIconsRequest>,
+      options?: base.RequestOptions<UpdateProductIconsResponse>,
     ): Promise<UpdateProductIconsResponse> {
       return self.createRequest(
         "PUT",
@@ -2693,7 +2693,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductIcon(
       request: RemoveAProductIconRequest,
-      options?: base.RequestOptions<RemoveAProductIconRequest>,
+      options?: base.RequestOptions<RemoveAProductIconResponse>,
     ): Promise<RemoveAProductIconResponse> {
       return self.createRequest(
         "DELETE",
@@ -2714,7 +2714,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIcons(
       request: RetrieveAListOfIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfIconsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfIconsResponse>,
     ): Promise<RetrieveAListOfIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2748,7 +2748,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadProductImages(
       request: UploadProductImagesRequest,
-      options?: base.RequestOptions<UploadProductImagesRequest>,
+      options?: base.RequestOptions<UploadProductImagesResponse>,
     ): Promise<UploadProductImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2769,7 +2769,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteProductImages(
       request: DeleteProductImagesRequest,
-      options?: base.RequestOptions<DeleteProductImagesRequest>,
+      options?: base.RequestOptions<DeleteProductImagesResponse>,
     ): Promise<DeleteProductImagesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2791,7 +2791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadImages(
       request: UploadImagesRequest,
-      options?: base.RequestOptions<UploadImagesRequest>,
+      options?: base.RequestOptions<UploadImagesResponse>,
     ): Promise<UploadImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2823,7 +2823,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductMemos(
       request: RetrieveAListOfProductMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductMemosRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductMemosResponse>,
     ): Promise<RetrieveAListOfProductMemosResponse> {
       return self.createRequest(
         "GET",
@@ -2845,7 +2845,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductMemo(
       request: RetrieveAProductMemoRequest,
-      options?: base.RequestOptions<RetrieveAProductMemoRequest>,
+      options?: base.RequestOptions<RetrieveAProductMemoResponse>,
     ): Promise<RetrieveAProductMemoResponse> {
       return self.createRequest(
         "GET",
@@ -2866,7 +2866,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductMemo(
       request: CreateAProductMemoRequest,
-      options?: base.RequestOptions<CreateAProductMemoRequest>,
+      options?: base.RequestOptions<CreateAProductMemoResponse>,
     ): Promise<CreateAProductMemoResponse> {
       return self.createRequest(
         "POST",
@@ -2888,7 +2888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductMemo(
       request: UpdateAProductMemoRequest,
-      options?: base.RequestOptions<UpdateAProductMemoRequest>,
+      options?: base.RequestOptions<UpdateAProductMemoResponse>,
     ): Promise<UpdateAProductMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -2909,7 +2909,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductMemo(
       request: DeleteAProductMemoRequest,
-      options?: base.RequestOptions<DeleteAProductMemoRequest>,
+      options?: base.RequestOptions<DeleteAProductMemoResponse>,
     ): Promise<DeleteAProductMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -2943,7 +2943,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductOptionsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductOptionsResponse>,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -2964,7 +2964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductOptions(
       request: CreateProductOptionsRequest,
-      options?: base.RequestOptions<CreateProductOptionsRequest>,
+      options?: base.RequestOptions<CreateProductOptionsResponse>,
     ): Promise<CreateProductOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -2987,7 +2987,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductOptions(
       request: UpdateProductOptionsRequest,
-      options?: base.RequestOptions<UpdateProductOptionsRequest>,
+      options?: base.RequestOptions<UpdateProductOptionsResponse>,
     ): Promise<UpdateProductOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -3008,7 +3008,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductOption(
       request: DeleteAProductOptionRequest,
-      options?: base.RequestOptions<DeleteAProductOptionRequest>,
+      options?: base.RequestOptions<DeleteAProductOptionResponse>,
     ): Promise<DeleteAProductOptionResponse> {
       return self.createRequest(
         "DELETE",
@@ -3040,7 +3040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductSSeoSettings(
       request: RetrieveAProductSSeoSettingsRequest,
-      options?: base.RequestOptions<RetrieveAProductSSeoSettingsRequest>,
+      options?: base.RequestOptions<RetrieveAProductSSeoSettingsResponse>,
     ): Promise<RetrieveAProductSSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -3061,7 +3061,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductSeoSettings(
       request: UpdateProductSeoSettingsRequest,
-      options?: base.RequestOptions<UpdateProductSeoSettingsRequest>,
+      options?: base.RequestOptions<UpdateProductSeoSettingsResponse>,
     ): Promise<UpdateProductSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -3093,7 +3093,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfAProductSProductTags(
       request: RetrieveACountOfAProductSProductTagsRequest,
-      options?: base.RequestOptions<RetrieveACountOfAProductSProductTagsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfAProductSProductTagsResponse>,
     ): Promise<RetrieveACountOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3114,7 +3114,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAProductSProductTags(
       request: RetrieveAListOfAProductSProductTagsRequest,
-      options?: base.RequestOptions<RetrieveAListOfAProductSProductTagsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfAProductSProductTagsResponse>,
     ): Promise<RetrieveAListOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3134,7 +3134,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductTags(
       request: CreateProductTagsRequest,
-      options?: base.RequestOptions<CreateProductTagsRequest>,
+      options?: base.RequestOptions<CreateProductTagsResponse>,
     ): Promise<CreateProductTagsResponse> {
       return self.createRequest(
         "POST",
@@ -3154,7 +3154,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductTag(
       request: DeleteAProductTagRequest,
-      options?: base.RequestOptions<DeleteAProductTagRequest>,
+      options?: base.RequestOptions<DeleteAProductTagResponse>,
     ): Promise<DeleteAProductTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -3187,7 +3187,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductVariantsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductVariantsResponse>,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -3208,7 +3208,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveAProductVariantRequest>,
+      options?: base.RequestOptions<RetrieveAProductVariantResponse>,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3229,7 +3229,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariant(
       request: UpdateAProductVariantRequest,
-      options?: base.RequestOptions<UpdateAProductVariantRequest>,
+      options?: base.RequestOptions<UpdateAProductVariantResponse>,
     ): Promise<UpdateAProductVariantResponse> {
       return self.createRequest(
         "PUT",
@@ -3250,7 +3250,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleProductVariants(
       request: UpdateMultipleProductVariantsRequest,
-      options?: base.RequestOptions<UpdateMultipleProductVariantsRequest>,
+      options?: base.RequestOptions<UpdateMultipleProductVariantsResponse>,
     ): Promise<UpdateMultipleProductVariantsResponse> {
       return self.createRequest(
         "PUT",
@@ -3270,7 +3270,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductVariant(
       request: DeleteAProductVariantRequest,
-      options?: base.RequestOptions<DeleteAProductVariantRequest>,
+      options?: base.RequestOptions<DeleteAProductVariantResponse>,
     ): Promise<DeleteAProductVariantResponse> {
       return self.createRequest(
         "DELETE",
@@ -3300,7 +3300,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantRequest>,
+      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantResponse>,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3321,7 +3321,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariantInventory(
       request: UpdateAProductVariantInventoryRequest,
-      options?: base.RequestOptions<UpdateAProductVariantInventoryRequest>,
+      options?: base.RequestOptions<UpdateAProductVariantInventoryResponse>,
     ): Promise<UpdateAProductVariantInventoryResponse> {
       return self.createRequest(
         "PUT",
@@ -3353,7 +3353,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderCancellation(
       request: RetrieveAnOrderCancellationRequest,
-      options?: base.RequestOptions<RetrieveAnOrderCancellationRequest>,
+      options?: base.RequestOptions<RetrieveAnOrderCancellationResponse>,
     ): Promise<RetrieveAnOrderCancellationResponse> {
       return self.createRequest(
         "GET",
@@ -3375,7 +3375,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderCancellations(
       request: CreateMultipleOrderCancellationsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderCancellationsRequest>,
+      options?: base.RequestOptions<CreateMultipleOrderCancellationsResponse>,
     ): Promise<CreateMultipleOrderCancellationsResponse> {
       return self.createRequest(
         "POST",
@@ -3398,7 +3398,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetailsInBulk(
       request: ChangeCancellationDetailsInBulkRequest,
-      options?: base.RequestOptions<ChangeCancellationDetailsInBulkRequest>,
+      options?: base.RequestOptions<ChangeCancellationDetailsInBulkResponse>,
     ): Promise<ChangeCancellationDetailsInBulkResponse> {
       return self.createRequest(
         "PUT",
@@ -3429,7 +3429,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACancellationRequestForMultipleItems(
       request: CreateACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<CreateACancellationRequestForMultipleItemsRequest>,
+      options?: base.RequestOptions<CreateACancellationRequestForMultipleItemsResponse>,
     ): Promise<CreateACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -3451,7 +3451,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectACancellationRequestForMultipleItems(
       request: RejectACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectACancellationRequestForMultipleItemsRequest>,
+      options?: base.RequestOptions<RejectACancellationRequestForMultipleItemsResponse>,
     ): Promise<RejectACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3482,7 +3482,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCashReceipts(
       request: RetrieveAListOfCashReceiptsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCashReceiptsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCashReceiptsResponse>,
     ): Promise<RetrieveAListOfCashReceiptsResponse> {
       return self.createRequest(
         "GET",
@@ -3503,7 +3503,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACashReceipt(
       request: CreateACashReceiptRequest,
-      options?: base.RequestOptions<CreateACashReceiptRequest>,
+      options?: base.RequestOptions<CreateACashReceiptResponse>,
     ): Promise<CreateACashReceiptResponse> {
       return self.createRequest(
         "POST",
@@ -3524,7 +3524,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceipt(
       request: UpdateACashReceiptRequest,
-      options?: base.RequestOptions<UpdateACashReceiptRequest>,
+      options?: base.RequestOptions<UpdateACashReceiptResponse>,
     ): Promise<UpdateACashReceiptResponse> {
       return self.createRequest(
         "PUT",
@@ -3552,7 +3552,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceiptCancellation(
       request: UpdateACashReceiptCancellationRequest,
-      options?: base.RequestOptions<UpdateACashReceiptCancellationRequest>,
+      options?: base.RequestOptions<UpdateACashReceiptCancellationResponse>,
     ): Promise<UpdateACashReceiptCancellationResponse> {
       return self.createRequest(
         "PUT",
@@ -3581,7 +3581,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACollectionRequest(
       request: UpdateACollectionRequestRequest,
-      options?: base.RequestOptions<UpdateACollectionRequestRequest>,
+      options?: base.RequestOptions<UpdateACollectionRequestResponse>,
     ): Promise<UpdateACollectionRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -3608,7 +3608,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     orderControl(
       request: OrderControlRequest,
-      options?: base.RequestOptions<OrderControlRequest>,
+      options?: base.RequestOptions<OrderControlResponse>,
     ): Promise<OrderControlResponse> {
       return self.createRequest(
         "PUT",
@@ -3638,7 +3638,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADraftOrder(
       request: CreateADraftOrderRequest,
-      options?: base.RequestOptions<CreateADraftOrderRequest>,
+      options?: base.RequestOptions<CreateADraftOrderResponse>,
     ): Promise<CreateADraftOrderResponse> {
       return self.createRequest(
         "POST",
@@ -3668,7 +3668,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnExchange(
       request: RetrieveAnExchangeRequest,
-      options?: base.RequestOptions<RetrieveAnExchangeRequest>,
+      options?: base.RequestOptions<RetrieveAnExchangeResponse>,
     ): Promise<RetrieveAnExchangeResponse> {
       return self.createRequest(
         "GET",
@@ -3688,7 +3688,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleExchanges(
       request: CreateMultipleExchangesRequest,
-      options?: base.RequestOptions<CreateMultipleExchangesRequest>,
+      options?: base.RequestOptions<CreateMultipleExchangesResponse>,
     ): Promise<CreateMultipleExchangesResponse> {
       return self.createRequest(
         "POST",
@@ -3710,7 +3710,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderExchanges(
       request: UpdateMultipleOrderExchangesRequest,
-      options?: base.RequestOptions<UpdateMultipleOrderExchangesRequest>,
+      options?: base.RequestOptions<UpdateMultipleOrderExchangesResponse>,
     ): Promise<UpdateMultipleOrderExchangesResponse> {
       return self.createRequest(
         "PUT",
@@ -3740,7 +3740,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     bulkExchangeRequestApi(
       request: BulkExchangeRequestApiRequest,
-      options?: base.RequestOptions<BulkExchangeRequestApiRequest>,
+      options?: base.RequestOptions<BulkExchangeRequestApiResponse>,
     ): Promise<BulkExchangeRequestApiResponse> {
       return self.createRequest(
         "POST",
@@ -3762,7 +3762,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequestForMultipleItems(
       request: RejectAnExchangeRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectAnExchangeRequestForMultipleItemsRequest>,
+      options?: base.RequestOptions<RejectAnExchangeRequestForMultipleItemsResponse>,
     ): Promise<RejectAnExchangeRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3790,7 +3790,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrdersViaFulfillment(
       request: CreateShippingInformationForMultipleOrdersViaFulfillmentRequest,
-      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersViaFulfillmentRequest>,
+      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse>,
     ): Promise<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse> {
       return self.createRequest(
         "POST",
@@ -3818,7 +3818,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderLabels(
       request: RetrieveOrderLabelsRequest,
-      options?: base.RequestOptions<RetrieveOrderLabelsRequest>,
+      options?: base.RequestOptions<RetrieveOrderLabelsResponse>,
     ): Promise<RetrieveOrderLabelsResponse> {
       return self.createRequest(
         "GET",
@@ -3838,7 +3838,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderLabels(
       request: CreateMultipleOrderLabelsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderLabelsRequest>,
+      options?: base.RequestOptions<CreateMultipleOrderLabelsResponse>,
     ): Promise<CreateMultipleOrderLabelsResponse> {
       return self.createRequest(
         "POST",
@@ -3874,7 +3874,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrders(
       request: RetrieveAListOfOrdersRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrdersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfOrdersResponse>,
     ): Promise<RetrieveAListOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3896,7 +3896,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrder(
       request: RetrieveAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAnOrderResponse>,
     ): Promise<RetrieveAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -3916,7 +3916,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfOrders(
       request: RetrieveACountOfOrdersRequest,
-      options?: base.RequestOptions<RetrieveACountOfOrdersRequest>,
+      options?: base.RequestOptions<RetrieveACountOfOrdersResponse>,
     ): Promise<RetrieveACountOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3938,7 +3938,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStatusForMultipleOrders(
       request: UpdateStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions<UpdateStatusForMultipleOrdersRequest>,
+      options?: base.RequestOptions<UpdateStatusForMultipleOrdersResponse>,
     ): Promise<UpdateStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -3960,7 +3960,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderStatus(
       request: UpdateAnOrderStatusRequest,
-      options?: base.RequestOptions<UpdateAnOrderStatusRequest>,
+      options?: base.RequestOptions<UpdateAnOrderStatusResponse>,
     ): Promise<UpdateAnOrderStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -3991,7 +3991,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAutoCalculationSettingOfAnOrder(
       request: RemoveAutoCalculationSettingOfAnOrderRequest,
-      options?: base.RequestOptions<RemoveAutoCalculationSettingOfAnOrderRequest>,
+      options?: base.RequestOptions<RemoveAutoCalculationSettingOfAnOrderResponse>,
     ): Promise<RemoveAutoCalculationSettingOfAnOrderResponse> {
       return self.createRequest(
         "DELETE",
@@ -4022,7 +4022,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerDetailsOfAnOrder(
       request: RetrieveCustomerDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveCustomerDetailsOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveCustomerDetailsOfAnOrderResponse>,
     ): Promise<RetrieveCustomerDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4043,7 +4043,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCustomerInformationOfAnOrder(
       request: UpdateCustomerInformationOfAnOrderRequest,
-      options?: base.RequestOptions<UpdateCustomerInformationOfAnOrderRequest>,
+      options?: base.RequestOptions<UpdateCustomerInformationOfAnOrderResponse>,
     ): Promise<UpdateCustomerInformationOfAnOrderResponse> {
       return self.createRequest(
         "PUT",
@@ -4076,7 +4076,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerHistoryOfAnOrder(
       request: RetrieveAListOfCustomerHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerHistoryOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerHistoryOfAnOrderResponse>,
     ): Promise<RetrieveAListOfCustomerHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4109,7 +4109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellation(
       request: CreateAnOrderCancellationRequest,
-      options?: base.RequestOptions<CreateAnOrderCancellationRequest>,
+      options?: base.RequestOptions<CreateAnOrderCancellationResponse>,
     ): Promise<CreateAnOrderCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4131,7 +4131,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetails(
       request: ChangeCancellationDetailsRequest,
-      options?: base.RequestOptions<ChangeCancellationDetailsRequest>,
+      options?: base.RequestOptions<ChangeCancellationDetailsResponse>,
     ): Promise<ChangeCancellationDetailsResponse> {
       return self.createRequest(
         "PUT",
@@ -4161,7 +4161,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderExchange(
       request: CreateAnOrderExchangeRequest,
-      options?: base.RequestOptions<CreateAnOrderExchangeRequest>,
+      options?: base.RequestOptions<CreateAnOrderExchangeResponse>,
     ): Promise<CreateAnOrderExchangeResponse> {
       return self.createRequest(
         "POST",
@@ -4183,7 +4183,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderExchange(
       request: UpdateAnOrderExchangeRequest,
-      options?: base.RequestOptions<UpdateAnOrderExchangeRequest>,
+      options?: base.RequestOptions<UpdateAnOrderExchangeResponse>,
     ): Promise<UpdateAnOrderExchangeResponse> {
       return self.createRequest(
         "PUT",
@@ -4212,7 +4212,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequest(
       request: RejectAnExchangeRequestRequest,
-      options?: base.RequestOptions<RejectAnExchangeRequestRequest>,
+      options?: base.RequestOptions<RejectAnExchangeRequestResponse>,
     ): Promise<RejectAnExchangeRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -4246,7 +4246,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderItems(
       request: RetrieveAListOfOrderItemsRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderItemsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfOrderItemsResponse>,
     ): Promise<RetrieveAListOfOrderItemsResponse> {
       return self.createRequest(
         "GET",
@@ -4266,7 +4266,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderItem(
       request: CreateAnOrderItemRequest,
-      options?: base.RequestOptions<CreateAnOrderItemRequest>,
+      options?: base.RequestOptions<CreateAnOrderItemResponse>,
     ): Promise<CreateAnOrderItemResponse> {
       return self.createRequest(
         "POST",
@@ -4287,7 +4287,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderItem(
       request: UpdateAnOrderItemRequest,
-      options?: base.RequestOptions<UpdateAnOrderItemRequest>,
+      options?: base.RequestOptions<UpdateAnOrderItemResponse>,
     ): Promise<UpdateAnOrderItemResponse> {
       return self.createRequest(
         "PUT",
@@ -4315,7 +4315,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderLabel(
       request: RetrieveAnOrderLabelRequest,
-      options?: base.RequestOptions<RetrieveAnOrderLabelRequest>,
+      options?: base.RequestOptions<RetrieveAnOrderLabelResponse>,
     ): Promise<RetrieveAnOrderLabelResponse> {
       return self.createRequest(
         "GET",
@@ -4335,7 +4335,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderLabel(
       request: CreateAnOrderLabelRequest,
-      options?: base.RequestOptions<CreateAnOrderLabelRequest>,
+      options?: base.RequestOptions<CreateAnOrderLabelResponse>,
     ): Promise<CreateAnOrderLabelResponse> {
       return self.createRequest(
         "POST",
@@ -4355,7 +4355,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderLabel(
       request: UpdateAnOrderLabelRequest,
-      options?: base.RequestOptions<UpdateAnOrderLabelRequest>,
+      options?: base.RequestOptions<UpdateAnOrderLabelResponse>,
     ): Promise<UpdateAnOrderLabelResponse> {
       return self.createRequest(
         "PUT",
@@ -4375,7 +4375,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderLabel(
       request: DeleteAnOrderLabelRequest,
-      options?: base.RequestOptions<DeleteAnOrderLabelRequest>,
+      options?: base.RequestOptions<DeleteAnOrderLabelResponse>,
     ): Promise<DeleteAnOrderLabelResponse> {
       return self.createRequest(
         "DELETE",
@@ -4403,7 +4403,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createOrderItemOptions(
       request: CreateOrderItemOptionsRequest,
-      options?: base.RequestOptions<CreateOrderItemOptionsRequest>,
+      options?: base.RequestOptions<CreateOrderItemOptionsResponse>,
     ): Promise<CreateOrderItemOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -4423,7 +4423,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editOrderItemOptions(
       request: EditOrderItemOptionsRequest,
-      options?: base.RequestOptions<EditOrderItemOptionsRequest>,
+      options?: base.RequestOptions<EditOrderItemOptionsResponse>,
     ): Promise<EditOrderItemOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -4454,7 +4454,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderMemos(
       request: RetrieveAListOfOrderMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderMemosRequest>,
+      options?: base.RequestOptions<RetrieveAListOfOrderMemosResponse>,
     ): Promise<RetrieveAListOfOrderMemosResponse> {
       return self.createRequest(
         "GET",
@@ -4475,7 +4475,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderMemo(
       request: CreateAnOrderMemoRequest,
-      options?: base.RequestOptions<CreateAnOrderMemoRequest>,
+      options?: base.RequestOptions<CreateAnOrderMemoResponse>,
     ): Promise<CreateAnOrderMemoResponse> {
       return self.createRequest(
         "POST",
@@ -4496,7 +4496,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderMemo(
       request: UpdateAnOrderMemoRequest,
-      options?: base.RequestOptions<UpdateAnOrderMemoRequest>,
+      options?: base.RequestOptions<UpdateAnOrderMemoResponse>,
     ): Promise<UpdateAnOrderMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -4516,7 +4516,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderMemo(
       request: DeleteAnOrderMemoRequest,
-      options?: base.RequestOptions<DeleteAnOrderMemoRequest>,
+      options?: base.RequestOptions<DeleteAnOrderMemoResponse>,
     ): Promise<DeleteAnOrderMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -4536,7 +4536,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminMemosForAnOrder(
       request: RetrieveAListOfAdminMemosForAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfAdminMemosForAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfAdminMemosForAnOrderResponse>,
     ): Promise<RetrieveAListOfAdminMemosForAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4567,7 +4567,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderPaymentStatus(
       request: UpdateAnOrderPaymentStatusRequest,
-      options?: base.RequestOptions<UpdateAnOrderPaymentStatusRequest>,
+      options?: base.RequestOptions<UpdateAnOrderPaymentStatusResponse>,
     ): Promise<UpdateAnOrderPaymentStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -4598,7 +4598,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentHistoryOfAnOrder(
       request: RetrievePaymentHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrievePaymentHistoryOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrievePaymentHistoryOfAnOrderResponse>,
     ): Promise<RetrievePaymentHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4619,7 +4619,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentDetailsOfAnOrder(
       request: RetrievePaymentDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrievePaymentDetailsOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrievePaymentDetailsOfAnOrderResponse>,
     ): Promise<RetrievePaymentDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4652,7 +4652,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientsOfAnOrder(
       request: RetrieveAListOfRecipientsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipientsOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfRecipientsOfAnOrderResponse>,
     ): Promise<RetrieveAListOfRecipientsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4674,7 +4674,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderRecipients(
       request: UpdateOrderRecipientsRequest,
-      options?: base.RequestOptions<UpdateOrderRecipientsRequest>,
+      options?: base.RequestOptions<UpdateOrderRecipientsResponse>,
     ): Promise<UpdateOrderRecipientsResponse> {
       return self.createRequest(
         "PUT",
@@ -4695,7 +4695,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeShippingInformation(
       request: ChangeShippingInformationRequest,
-      options?: base.RequestOptions<ChangeShippingInformationRequest>,
+      options?: base.RequestOptions<ChangeShippingInformationResponse>,
     ): Promise<ChangeShippingInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -4727,7 +4727,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientHistoryOfAnOrder(
       request: RetrieveAListOfRecipientHistoryOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipientHistoryOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfRecipientHistoryOfAnOrderResponse>,
     ): Promise<RetrieveAListOfRecipientHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4757,7 +4757,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderRefund(
       request: UpdateAnOrderRefundRequest,
-      options?: base.RequestOptions<UpdateAnOrderRefundRequest>,
+      options?: base.RequestOptions<UpdateAnOrderRefundResponse>,
     ): Promise<UpdateAnOrderRefundResponse> {
       return self.createRequest(
         "PUT",
@@ -4790,7 +4790,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderReturn(
       request: CreateAnOrderReturnRequest,
-      options?: base.RequestOptions<CreateAnOrderReturnRequest>,
+      options?: base.RequestOptions<CreateAnOrderReturnResponse>,
     ): Promise<CreateAnOrderReturnResponse> {
       return self.createRequest(
         "POST",
@@ -4813,7 +4813,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderReturn(
       request: UpdateAnOrderReturnRequest,
-      options?: base.RequestOptions<UpdateAnOrderReturnRequest>,
+      options?: base.RequestOptions<UpdateAnOrderReturnResponse>,
     ): Promise<UpdateAnOrderReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -4847,7 +4847,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingInformationOfAnOrder(
       request: RetrieveAListOfShippingInformationOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingInformationOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfShippingInformationOfAnOrderResponse>,
     ): Promise<RetrieveAListOfShippingInformationOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4867,7 +4867,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingInformation(
       request: CreateAnOrderShippingInformationRequest,
-      options?: base.RequestOptions<CreateAnOrderShippingInformationRequest>,
+      options?: base.RequestOptions<CreateAnOrderShippingInformationResponse>,
     ): Promise<CreateAnOrderShippingInformationResponse> {
       return self.createRequest(
         "POST",
@@ -4889,7 +4889,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderShipping(
       request: UpdateAnOrderShippingRequest,
-      options?: base.RequestOptions<UpdateAnOrderShippingRequest>,
+      options?: base.RequestOptions<UpdateAnOrderShippingResponse>,
     ): Promise<UpdateAnOrderShippingResponse> {
       return self.createRequest(
         "PUT",
@@ -4910,7 +4910,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderShipping(
       request: DeleteAnOrderShippingRequest,
-      options?: base.RequestOptions<DeleteAnOrderShippingRequest>,
+      options?: base.RequestOptions<DeleteAnOrderShippingResponse>,
     ): Promise<DeleteAnOrderShippingResponse> {
       return self.createRequest(
         "DELETE",
@@ -4941,7 +4941,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingFeeCancellationDetailsOfAnOrder(
       request: RetrieveShippingFeeCancellationDetailsOfAnOrderRequest,
-      options?: base.RequestOptions<RetrieveShippingFeeCancellationDetailsOfAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse>,
     ): Promise<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4963,7 +4963,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingFeeCancellation(
       request: CreateAnOrderShippingFeeCancellationRequest,
-      options?: base.RequestOptions<CreateAnOrderShippingFeeCancellationRequest>,
+      options?: base.RequestOptions<CreateAnOrderShippingFeeCancellationResponse>,
     ): Promise<CreateAnOrderShippingFeeCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4995,7 +4995,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellationOnStockShortage(
       request: CreateAnOrderCancellationOnStockShortageRequest,
-      options?: base.RequestOptions<CreateAnOrderCancellationOnStockShortageRequest>,
+      options?: base.RequestOptions<CreateAnOrderCancellationOnStockShortageResponse>,
     ): Promise<CreateAnOrderCancellationOnStockShortageResponse> {
       return self.createRequest(
         "POST",
@@ -5026,7 +5026,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderBenefitsAppliedToAnOrder(
       request: RetrieveAListOfOrderBenefitsAppliedToAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfOrderBenefitsAppliedToAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse>,
     ): Promise<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5054,7 +5054,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     calculateTotalDue(
       request: CalculateTotalDueRequest,
-      options?: base.RequestOptions<CalculateTotalDueRequest>,
+      options?: base.RequestOptions<CalculateTotalDueResponse>,
     ): Promise<CalculateTotalDueResponse> {
       return self.createRequest(
         "POST",
@@ -5086,7 +5086,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCouponsAppliedToAnOrder(
       request: RetrieveAListOfCouponsAppliedToAnOrderRequest,
-      options?: base.RequestOptions<RetrieveAListOfCouponsAppliedToAnOrderRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCouponsAppliedToAnOrderResponse>,
     ): Promise<RetrieveAListOfCouponsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5118,7 +5118,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrafficSourceGroups(
       request: RetrieveAListOfTrafficSourceGroupsRequest,
-      options?: base.RequestOptions<RetrieveAListOfTrafficSourceGroupsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfTrafficSourceGroupsResponse>,
     ): Promise<RetrieveAListOfTrafficSourceGroupsResponse> {
       return self.createRequest(
         "GET",
@@ -5139,7 +5139,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createATrafficSourceGroup(
       request: CreateATrafficSourceGroupRequest,
-      options?: base.RequestOptions<CreateATrafficSourceGroupRequest>,
+      options?: base.RequestOptions<CreateATrafficSourceGroupResponse>,
     ): Promise<CreateATrafficSourceGroupResponse> {
       return self.createRequest(
         "POST",
@@ -5161,7 +5161,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateATrafficSourceGroup(
       request: UpdateATrafficSourceGroupRequest,
-      options?: base.RequestOptions<UpdateATrafficSourceGroupRequest>,
+      options?: base.RequestOptions<UpdateATrafficSourceGroupResponse>,
     ): Promise<UpdateATrafficSourceGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -5182,7 +5182,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteATrafficSourceGroup(
       request: DeleteATrafficSourceGroupRequest,
-      options?: base.RequestOptions<DeleteATrafficSourceGroupRequest>,
+      options?: base.RequestOptions<DeleteATrafficSourceGroupResponse>,
     ): Promise<DeleteATrafficSourceGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -5215,7 +5215,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfGroupTrafficSources(
       request: RetrieveAListOfGroupTrafficSourcesRequest,
-      options?: base.RequestOptions<RetrieveAListOfGroupTrafficSourcesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfGroupTrafficSourcesResponse>,
     ): Promise<RetrieveAListOfGroupTrafficSourcesResponse> {
       return self.createRequest(
         "GET",
@@ -5235,7 +5235,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAGroupTrafficSource(
       request: CreateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<CreateAGroupTrafficSourceRequest>,
+      options?: base.RequestOptions<CreateAGroupTrafficSourceResponse>,
     ): Promise<CreateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "POST",
@@ -5255,7 +5255,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAGroupTrafficSource(
       request: UpdateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<UpdateAGroupTrafficSourceRequest>,
+      options?: base.RequestOptions<UpdateAGroupTrafficSourceResponse>,
     ): Promise<UpdateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "PUT",
@@ -5275,7 +5275,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAGroupTrafficSource(
       request: DeleteAGroupTrafficSourceRequest,
-      options?: base.RequestOptions<DeleteAGroupTrafficSourceRequest>,
+      options?: base.RequestOptions<DeleteAGroupTrafficSourceResponse>,
     ): Promise<DeleteAGroupTrafficSourceResponse> {
       return self.createRequest(
         "DELETE",
@@ -5308,7 +5308,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPaymentAmount(
       request: RetrieveAPaymentAmountRequest,
-      options?: base.RequestOptions<RetrieveAPaymentAmountRequest>,
+      options?: base.RequestOptions<RetrieveAPaymentAmountResponse>,
     ): Promise<RetrieveAPaymentAmountResponse> {
       return self.createRequest(
         "GET",
@@ -5340,7 +5340,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSalesChannels(
       request: RetrieveAListOfSalesChannelsRequest,
-      options?: base.RequestOptions<RetrieveAListOfSalesChannelsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfSalesChannelsResponse>,
     ): Promise<RetrieveAListOfSalesChannelsResponse> {
       return self.createRequest(
         "GET",
@@ -5360,7 +5360,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASalesChannel(
       request: CreateASalesChannelRequest,
-      options?: base.RequestOptions<CreateASalesChannelRequest>,
+      options?: base.RequestOptions<CreateASalesChannelResponse>,
     ): Promise<CreateASalesChannelResponse> {
       return self.createRequest(
         "POST",
@@ -5381,7 +5381,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASalesChannel(
       request: UpdateASalesChannelRequest,
-      options?: base.RequestOptions<UpdateASalesChannelRequest>,
+      options?: base.RequestOptions<UpdateASalesChannelResponse>,
     ): Promise<UpdateASalesChannelResponse> {
       return self.createRequest(
         "PUT",
@@ -5401,7 +5401,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASalesChannel(
       request: DeleteASalesChannelRequest,
-      options?: base.RequestOptions<DeleteASalesChannelRequest>,
+      options?: base.RequestOptions<DeleteASalesChannelResponse>,
     ): Promise<DeleteASalesChannelResponse> {
       return self.createRequest(
         "DELETE",
@@ -5430,7 +5430,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePaymentStatusForMultipleOrders(
       request: UpdatePaymentStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions<UpdatePaymentStatusForMultipleOrdersRequest>,
+      options?: base.RequestOptions<UpdatePaymentStatusForMultipleOrdersResponse>,
     ): Promise<UpdatePaymentStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -5460,7 +5460,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRefunds(
       request: RetrieveAListOfRefundsRequest,
-      options?: base.RequestOptions<RetrieveAListOfRefundsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfRefundsResponse>,
     ): Promise<RetrieveAListOfRefundsResponse> {
       return self.createRequest(
         "GET",
@@ -5481,7 +5481,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveARefund(
       request: RetrieveARefundRequest,
-      options?: base.RequestOptions<RetrieveARefundRequest>,
+      options?: base.RequestOptions<RetrieveARefundResponse>,
     ): Promise<RetrieveARefundResponse> {
       return self.createRequest(
         "GET",
@@ -5508,7 +5508,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePreOrderItem(
       request: RetrievePreOrderItemRequest,
-      options?: base.RequestOptions<RetrievePreOrderItemRequest>,
+      options?: base.RequestOptions<RetrievePreOrderItemResponse>,
     ): Promise<RetrievePreOrderItemResponse> {
       return self.createRequest(
         "GET",
@@ -5539,7 +5539,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReturn(
       request: RetrieveAReturnRequest,
-      options?: base.RequestOptions<RetrieveAReturnRequest>,
+      options?: base.RequestOptions<RetrieveAReturnResponse>,
     ): Promise<RetrieveAReturnResponse> {
       return self.createRequest(
         "GET",
@@ -5561,7 +5561,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderReturns(
       request: CreateMultipleOrderReturnsRequest,
-      options?: base.RequestOptions<CreateMultipleOrderReturnsRequest>,
+      options?: base.RequestOptions<CreateMultipleOrderReturnsResponse>,
     ): Promise<CreateMultipleOrderReturnsResponse> {
       return self.createRequest(
         "POST",
@@ -5584,7 +5584,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReturn(
       request: UpdateAReturnRequest,
-      options?: base.RequestOptions<UpdateAReturnRequest>,
+      options?: base.RequestOptions<UpdateAReturnResponse>,
     ): Promise<UpdateAReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -5614,7 +5614,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReturnRequestForMultipleItems(
       request: CreateAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<CreateAReturnRequestForMultipleItemsRequest>,
+      options?: base.RequestOptions<CreateAReturnRequestForMultipleItemsResponse>,
     ): Promise<CreateAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -5636,7 +5636,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAReturnRequestForMultipleItems(
       request: RejectAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions<RejectAReturnRequestForMultipleItemsRequest>,
+      options?: base.RequestOptions<RejectAReturnRequestForMultipleItemsResponse>,
     ): Promise<RejectAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -5665,7 +5665,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrders(
       request: CreateShippingInformationForMultipleOrdersRequest,
-      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersRequest>,
+      options?: base.RequestOptions<CreateShippingInformationForMultipleOrdersResponse>,
     ): Promise<CreateShippingInformationForMultipleOrdersResponse> {
       return self.createRequest(
         "POST",
@@ -5686,7 +5686,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderShippings(
       request: UpdateMultipleOrderShippingsRequest,
-      options?: base.RequestOptions<UpdateMultipleOrderShippingsRequest>,
+      options?: base.RequestOptions<UpdateMultipleOrderShippingsResponse>,
     ): Promise<UpdateMultipleOrderShippingsResponse> {
       return self.createRequest(
         "PUT",
@@ -5714,7 +5714,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASubscription(
       request: RetrieveASubscriptionRequest,
-      options?: base.RequestOptions<RetrieveASubscriptionRequest>,
+      options?: base.RequestOptions<RetrieveASubscriptionResponse>,
     ): Promise<RetrieveASubscriptionResponse> {
       return self.createRequest(
         "GET",
@@ -5734,7 +5734,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscription(
       request: CreateASubscriptionRequest,
-      options?: base.RequestOptions<CreateASubscriptionRequest>,
+      options?: base.RequestOptions<CreateASubscriptionResponse>,
     ): Promise<CreateASubscriptionResponse> {
       return self.createRequest(
         "POST",
@@ -5755,7 +5755,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASubscription(
       request: UpdateASubscriptionRequest,
-      options?: base.RequestOptions<UpdateASubscriptionRequest>,
+      options?: base.RequestOptions<UpdateASubscriptionResponse>,
     ): Promise<UpdateASubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5783,7 +5783,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductVariantsInSubscription(
       request: UpdateProductVariantsInSubscriptionRequest,
-      options?: base.RequestOptions<UpdateProductVariantsInSubscriptionRequest>,
+      options?: base.RequestOptions<UpdateProductVariantsInSubscriptionResponse>,
     ): Promise<UpdateProductVariantsInSubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5815,7 +5815,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerTiers(
       request: RetrieveAListOfCustomerTiersRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerTiersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerTiersResponse>,
     ): Promise<RetrieveAListOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5835,7 +5835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerTiers(
       request: RetrieveACountOfCustomerTiersRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerTiersRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomerTiersResponse>,
     ): Promise<RetrieveACountOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5856,7 +5856,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerTier(
       request: RetrieveACustomerTierRequest,
-      options?: base.RequestOptions<RetrieveACustomerTierRequest>,
+      options?: base.RequestOptions<RetrieveACustomerTierResponse>,
     ): Promise<RetrieveACustomerTierResponse> {
       return self.createRequest(
         "GET",
@@ -5888,7 +5888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerSCustomerTier(
       request: UpdateACustomerSCustomerTierRequest,
-      options?: base.RequestOptions<UpdateACustomerSCustomerTierRequest>,
+      options?: base.RequestOptions<UpdateACustomerSCustomerTierResponse>,
     ): Promise<UpdateACustomerSCustomerTierResponse> {
       return self.createRequest(
         "POST",
@@ -5912,7 +5912,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierSettings(
       request: RetrieveCustomerTierSettingsRequest,
-      options?: base.RequestOptions<RetrieveCustomerTierSettingsRequest>,
+      options?: base.RequestOptions<RetrieveCustomerTierSettingsResponse>,
     ): Promise<RetrieveCustomerTierSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -5944,7 +5944,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomers(
       request: RetrieveAListOfCustomersRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomersResponse>,
     ): Promise<RetrieveAListOfCustomersResponse> {
       return self.createRequest(
         "GET",
@@ -5964,7 +5964,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAccount(
       request: DeleteAnAccountRequest,
-      options?: base.RequestOptions<DeleteAnAccountRequest>,
+      options?: base.RequestOptions<DeleteAnAccountResponse>,
     ): Promise<DeleteAnAccountResponse> {
       return self.createRequest(
         "DELETE",
@@ -5988,7 +5988,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierAutoUpdateDetails(
       request: RetrieveCustomerTierAutoUpdateDetailsRequest,
-      options?: base.RequestOptions<RetrieveCustomerTierAutoUpdateDetailsRequest>,
+      options?: base.RequestOptions<RetrieveCustomerTierAutoUpdateDetailsResponse>,
     ): Promise<RetrieveCustomerTierAutoUpdateDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -6019,7 +6019,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerMemos(
       request: RetrieveACountOfCustomerMemosRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerMemosRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomerMemosResponse>,
     ): Promise<RetrieveACountOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6040,7 +6040,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerMemos(
       request: RetrieveAListOfCustomerMemosRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerMemosRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerMemosResponse>,
     ): Promise<RetrieveAListOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6061,7 +6061,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerMemo(
       request: RetrieveACustomerMemoRequest,
-      options?: base.RequestOptions<RetrieveACustomerMemoRequest>,
+      options?: base.RequestOptions<RetrieveACustomerMemoResponse>,
     ): Promise<RetrieveACustomerMemoResponse> {
       return self.createRequest(
         "GET",
@@ -6081,7 +6081,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerMemo(
       request: CreateACustomerMemoRequest,
-      options?: base.RequestOptions<CreateACustomerMemoRequest>,
+      options?: base.RequestOptions<CreateACustomerMemoResponse>,
     ): Promise<CreateACustomerMemoResponse> {
       return self.createRequest(
         "POST",
@@ -6101,7 +6101,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerMemo(
       request: UpdateACustomerMemoRequest,
-      options?: base.RequestOptions<UpdateACustomerMemoRequest>,
+      options?: base.RequestOptions<UpdateACustomerMemoResponse>,
     ): Promise<UpdateACustomerMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -6121,7 +6121,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerMemo(
       request: DeleteACustomerMemoRequest,
-      options?: base.RequestOptions<DeleteACustomerMemoRequest>,
+      options?: base.RequestOptions<DeleteACustomerMemoResponse>,
     ): Promise<DeleteACustomerMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -6152,7 +6152,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSListOfPaymentMethods(
       request: RetrieveACustomerSListOfPaymentMethodsRequest,
-      options?: base.RequestOptions<RetrieveACustomerSListOfPaymentMethodsRequest>,
+      options?: base.RequestOptions<RetrieveACustomerSListOfPaymentMethodsResponse>,
     ): Promise<RetrieveACustomerSListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -6172,7 +6172,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformation(
       request: DeleteCustomerSPaymentInformationRequest,
-      options?: base.RequestOptions<DeleteCustomerSPaymentInformationRequest>,
+      options?: base.RequestOptions<DeleteCustomerSPaymentInformationResponse>,
     ): Promise<DeleteCustomerSPaymentInformationResponse> {
       return self.createRequest(
         "DELETE",
@@ -6189,7 +6189,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformationByPaymentMethodId(
       request: DeleteCustomerSPaymentInformationByPaymentMethodIdRequest,
-      options?: base.RequestOptions<DeleteCustomerSPaymentInformationByPaymentMethodIdRequest>,
+      options?: base.RequestOptions<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse>,
     ): Promise<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse> {
       return self.createRequest(
         "DELETE",
@@ -6213,7 +6213,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAppInstallationInformation(
       request: RetrieveAppInstallationInformationRequest,
-      options?: base.RequestOptions<RetrieveAppInstallationInformationRequest>,
+      options?: base.RequestOptions<RetrieveAppInstallationInformationResponse>,
     ): Promise<RetrieveAppInstallationInformationResponse> {
       return self.createRequest(
         "GET",
@@ -6242,7 +6242,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSSocialAccount(
       request: RetrieveACustomerSSocialAccountRequest,
-      options?: base.RequestOptions<RetrieveACustomerSSocialAccountRequest>,
+      options?: base.RequestOptions<RetrieveACustomerSSocialAccountResponse>,
     ): Promise<RetrieveACustomerSSocialAccountResponse> {
       return self.createRequest(
         "GET",
@@ -6275,7 +6275,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBoards(
       request: RetrieveAListOfBoardsRequest,
-      options?: base.RequestOptions<RetrieveAListOfBoardsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfBoardsResponse>,
     ): Promise<RetrieveAListOfBoardsResponse> {
       return self.createRequest(
         "GET",
@@ -6307,7 +6307,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPostsForABoard(
       request: RetrieveAListOfPostsForABoardRequest,
-      options?: base.RequestOptions<RetrieveAListOfPostsForABoardRequest>,
+      options?: base.RequestOptions<RetrieveAListOfPostsForABoardResponse>,
     ): Promise<RetrieveAListOfPostsForABoardResponse> {
       return self.createRequest(
         "GET",
@@ -6328,7 +6328,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABoardPost(
       request: CreateABoardPostRequest,
-      options?: base.RequestOptions<CreateABoardPostRequest>,
+      options?: base.RequestOptions<CreateABoardPostResponse>,
     ): Promise<CreateABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6350,7 +6350,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABoardPost(
       request: UpdateABoardPostRequest,
-      options?: base.RequestOptions<UpdateABoardPostRequest>,
+      options?: base.RequestOptions<UpdateABoardPostResponse>,
     ): Promise<UpdateABoardPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6371,7 +6371,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABoardPost(
       request: DeleteABoardPostRequest,
-      options?: base.RequestOptions<DeleteABoardPostRequest>,
+      options?: base.RequestOptions<DeleteABoardPostResponse>,
     ): Promise<DeleteABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6403,7 +6403,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCommentsForABoardPost(
       request: RetrieveAListOfCommentsForABoardPostRequest,
-      options?: base.RequestOptions<RetrieveAListOfCommentsForABoardPostRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCommentsForABoardPostResponse>,
     ): Promise<RetrieveAListOfCommentsForABoardPostResponse> {
       return self.createRequest(
         "GET",
@@ -6424,7 +6424,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACommentForABoardPost(
       request: CreateACommentForABoardPostRequest,
-      options?: base.RequestOptions<CreateACommentForABoardPostRequest>,
+      options?: base.RequestOptions<CreateACommentForABoardPostResponse>,
     ): Promise<CreateACommentForABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6444,7 +6444,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACommentForABoardPost(
       request: DeleteACommentForABoardPostRequest,
-      options?: base.RequestOptions<DeleteACommentForABoardPostRequest>,
+      options?: base.RequestOptions<DeleteACommentForABoardPostResponse>,
     ): Promise<DeleteACommentForABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6468,7 +6468,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCommentsInBulk(
       request: RetrieveCommentsInBulkRequest,
-      options?: base.RequestOptions<RetrieveCommentsInBulkRequest>,
+      options?: base.RequestOptions<RetrieveCommentsInBulkResponse>,
     ): Promise<RetrieveCommentsInBulkResponse> {
       return self.createRequest(
         "GET",
@@ -6492,7 +6492,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsForBoard(
       request: RetrieveSeoSettingsForBoardRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsForBoardRequest>,
+      options?: base.RequestOptions<RetrieveSeoSettingsForBoardResponse>,
     ): Promise<RetrieveSeoSettingsForBoardResponse> {
       return self.createRequest(
         "GET",
@@ -6509,7 +6509,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSeoSettingsForBoard(
       request: UpdateSeoSettingsForBoardRequest,
-      options?: base.RequestOptions<UpdateSeoSettingsForBoardRequest>,
+      options?: base.RequestOptions<UpdateSeoSettingsForBoardResponse>,
     ): Promise<UpdateSeoSettingsForBoardResponse> {
       return self.createRequest(
         "PUT",
@@ -6539,7 +6539,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTotalCountForMonthlyReviewsAndRatings(
       request: RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequest,
-      options?: base.RequestOptions<RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequest>,
+      options?: base.RequestOptions<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse>,
     ): Promise<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse> {
       return self.createRequest(
         "GET",
@@ -6570,7 +6570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnUrgentInquiryPost(
       request: RetrieveAnUrgentInquiryPostRequest,
-      options?: base.RequestOptions<RetrieveAnUrgentInquiryPostRequest>,
+      options?: base.RequestOptions<RetrieveAnUrgentInquiryPostResponse>,
     ): Promise<RetrieveAnUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6601,7 +6601,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReplyForUrgentInquiryPost(
       request: RetrieveAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<RetrieveAReplyForUrgentInquiryPostRequest>,
+      options?: base.RequestOptions<RetrieveAReplyForUrgentInquiryPostResponse>,
     ): Promise<RetrieveAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6621,7 +6621,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReplyForUrgentInquiryPost(
       request: CreateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<CreateAReplyForUrgentInquiryPostRequest>,
+      options?: base.RequestOptions<CreateAReplyForUrgentInquiryPostResponse>,
     ): Promise<CreateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "POST",
@@ -6641,7 +6641,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReplyForUrgentInquiryPost(
       request: UpdateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions<UpdateAReplyForUrgentInquiryPostRequest>,
+      options?: base.RequestOptions<UpdateAReplyForUrgentInquiryPostResponse>,
     ): Promise<UpdateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6670,7 +6670,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDesginIcons(
       request: RetrieveAListOfDesginIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfDesginIconsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfDesginIconsResponse>,
     ): Promise<RetrieveAListOfDesginIconsResponse> {
       return self.createRequest("GET", "/api/v2/admin/icons", request, options);
     },
@@ -6698,7 +6698,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemes(
       request: RetrieveAListOfThemesRequest,
-      options?: base.RequestOptions<RetrieveAListOfThemesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfThemesResponse>,
     ): Promise<RetrieveAListOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6718,7 +6718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfThemes(
       request: RetrieveACountOfThemesRequest,
-      options?: base.RequestOptions<RetrieveACountOfThemesRequest>,
+      options?: base.RequestOptions<RetrieveACountOfThemesResponse>,
     ): Promise<RetrieveACountOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6739,7 +6739,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveATheme(
       request: RetrieveAThemeRequest,
-      options?: base.RequestOptions<RetrieveAThemeRequest>,
+      options?: base.RequestOptions<RetrieveAThemeResponse>,
     ): Promise<RetrieveAThemeResponse> {
       return self.createRequest(
         "GET",
@@ -6770,7 +6770,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemePage(
       request: RetrieveAThemePageRequest,
-      options?: base.RequestOptions<RetrieveAThemePageRequest>,
+      options?: base.RequestOptions<RetrieveAThemePageResponse>,
     ): Promise<RetrieveAThemePageResponse> {
       return self.createRequest(
         "GET",
@@ -6791,7 +6791,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAThemePage(
       request: CreateAThemePageRequest,
-      options?: base.RequestOptions<CreateAThemePageRequest>,
+      options?: base.RequestOptions<CreateAThemePageResponse>,
     ): Promise<CreateAThemePageResponse> {
       return self.createRequest(
         "POST",
@@ -6822,7 +6822,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerBenefits(
       request: RetrieveAListOfCustomerBenefitsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerBenefitsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerBenefitsResponse>,
     ): Promise<RetrieveAListOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6843,7 +6843,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerBenefits(
       request: RetrieveACountOfCustomerBenefitsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerBenefitsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomerBenefitsResponse>,
     ): Promise<RetrieveACountOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6864,7 +6864,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerBenefit(
       request: RetrieveACustomerBenefitRequest,
-      options?: base.RequestOptions<RetrieveACustomerBenefitRequest>,
+      options?: base.RequestOptions<RetrieveACustomerBenefitResponse>,
     ): Promise<RetrieveACustomerBenefitResponse> {
       return self.createRequest(
         "GET",
@@ -6885,7 +6885,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerBenefit(
       request: CreateACustomerBenefitRequest,
-      options?: base.RequestOptions<CreateACustomerBenefitRequest>,
+      options?: base.RequestOptions<CreateACustomerBenefitResponse>,
     ): Promise<CreateACustomerBenefitResponse> {
       return self.createRequest(
         "POST",
@@ -6906,7 +6906,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerBenefit(
       request: UpdateACustomerBenefitRequest,
-      options?: base.RequestOptions<UpdateACustomerBenefitRequest>,
+      options?: base.RequestOptions<UpdateACustomerBenefitResponse>,
     ): Promise<UpdateACustomerBenefitResponse> {
       return self.createRequest(
         "PUT",
@@ -6926,7 +6926,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerBenefit(
       request: DeleteACustomerBenefitRequest,
-      options?: base.RequestOptions<DeleteACustomerBenefitRequest>,
+      options?: base.RequestOptions<DeleteACustomerBenefitResponse>,
     ): Promise<DeleteACustomerBenefitResponse> {
       return self.createRequest(
         "DELETE",
@@ -6957,7 +6957,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCoupons(
       request: RetrieveACountOfCouponsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCouponsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCouponsResponse>,
     ): Promise<RetrieveACountOfCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -6978,7 +6978,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCoupons(
       request: RetrieveAListOfCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCouponsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCouponsResponse>,
     ): Promise<RetrieveAListOfCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -6999,7 +6999,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACoupon(
       request: CreateACouponRequest,
-      options?: base.RequestOptions<CreateACouponRequest>,
+      options?: base.RequestOptions<CreateACouponResponse>,
     ): Promise<CreateACouponResponse> {
       return self.createRequest(
         "POST",
@@ -7033,7 +7033,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIssuedCoupons(
       request: RetrieveAListOfIssuedCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfIssuedCouponsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfIssuedCouponsResponse>,
     ): Promise<RetrieveAListOfIssuedCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7054,7 +7054,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createCouponIssuanceHistory(
       request: CreateCouponIssuanceHistoryRequest,
-      options?: base.RequestOptions<CreateCouponIssuanceHistoryRequest>,
+      options?: base.RequestOptions<CreateCouponIssuanceHistoryResponse>,
     ): Promise<CreateCouponIssuanceHistoryResponse> {
       return self.createRequest(
         "POST",
@@ -7086,7 +7086,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerCoupons(
       request: RetrieveAListOfCustomerCouponsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerCouponsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerCouponsResponse>,
     ): Promise<RetrieveAListOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7106,7 +7106,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerCoupons(
       request: RetrieveACountOfCustomerCouponsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerCouponsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomerCouponsResponse>,
     ): Promise<RetrieveACountOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7126,7 +7126,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerCoupon(
       request: DeleteACustomerCouponRequest,
-      options?: base.RequestOptions<DeleteACustomerCouponRequest>,
+      options?: base.RequestOptions<DeleteACustomerCouponResponse>,
     ): Promise<DeleteACustomerCouponResponse> {
       return self.createRequest(
         "DELETE",
@@ -7150,7 +7150,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDiscountCodes(
       request: RetrieveAListOfDiscountCodesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDiscountCodesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfDiscountCodesResponse>,
     ): Promise<RetrieveAListOfDiscountCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7167,7 +7167,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADiscountCode(
       request: RetrieveADiscountCodeRequest,
-      options?: base.RequestOptions<RetrieveADiscountCodeRequest>,
+      options?: base.RequestOptions<RetrieveADiscountCodeResponse>,
     ): Promise<RetrieveADiscountCodeResponse> {
       return self.createRequest(
         "GET",
@@ -7184,7 +7184,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADiscountCode(
       request: CreateADiscountCodeRequest,
-      options?: base.RequestOptions<CreateADiscountCodeRequest>,
+      options?: base.RequestOptions<CreateADiscountCodeResponse>,
     ): Promise<CreateADiscountCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7201,7 +7201,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateADiscountCode(
       request: UpdateADiscountCodeRequest,
-      options?: base.RequestOptions<UpdateADiscountCodeRequest>,
+      options?: base.RequestOptions<UpdateADiscountCodeResponse>,
     ): Promise<UpdateADiscountCodeResponse> {
       return self.createRequest(
         "PUT",
@@ -7218,7 +7218,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteADiscountCode(
       request: DeleteADiscountCodeRequest,
-      options?: base.RequestOptions<DeleteADiscountCodeRequest>,
+      options?: base.RequestOptions<DeleteADiscountCodeResponse>,
     ): Promise<DeleteADiscountCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7242,7 +7242,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponCodes(
       request: RetrieveCouponCodesRequest,
-      options?: base.RequestOptions<RetrieveCouponCodesRequest>,
+      options?: base.RequestOptions<RetrieveCouponCodesResponse>,
     ): Promise<RetrieveCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7259,7 +7259,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     generateCouponCode(
       request: GenerateCouponCodeRequest,
-      options?: base.RequestOptions<GenerateCouponCodeRequest>,
+      options?: base.RequestOptions<GenerateCouponCodeResponse>,
     ): Promise<GenerateCouponCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7276,7 +7276,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCouponCode(
       request: DeleteCouponCodeRequest,
-      options?: base.RequestOptions<DeleteCouponCodeRequest>,
+      options?: base.RequestOptions<DeleteCouponCodeResponse>,
     ): Promise<DeleteCouponCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7300,7 +7300,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACodeOfCouponCodes(
       request: RetrieveACodeOfCouponCodesRequest,
-      options?: base.RequestOptions<RetrieveACodeOfCouponCodesRequest>,
+      options?: base.RequestOptions<RetrieveACodeOfCouponCodesResponse>,
     ): Promise<RetrieveACodeOfCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7317,7 +7317,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     registerACodeOfCouponCodes(
       request: RegisterACodeOfCouponCodesRequest,
-      options?: base.RequestOptions<RegisterACodeOfCouponCodesRequest>,
+      options?: base.RequestOptions<RegisterACodeOfCouponCodesResponse>,
     ): Promise<RegisterACodeOfCouponCodesResponse> {
       return self.createRequest(
         "POST",
@@ -7349,7 +7349,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAppInformation(
       request: RetrieveAnAppInformationRequest,
-      options?: base.RequestOptions<RetrieveAnAppInformationRequest>,
+      options?: base.RequestOptions<RetrieveAnAppInformationResponse>,
     ): Promise<RetrieveAnAppInformationResponse> {
       return self.createRequest("GET", "/api/v2/admin/apps", request, options);
     },
@@ -7366,7 +7366,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAppInformation(
       request: UpdateAnAppInformationRequest,
-      options?: base.RequestOptions<UpdateAnAppInformationRequest>,
+      options?: base.RequestOptions<UpdateAnAppInformationResponse>,
     ): Promise<UpdateAnAppInformationResponse> {
       return self.createRequest("PUT", "/api/v2/admin/apps", request, options);
     },
@@ -7391,7 +7391,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retreiveACafe24StoreOrder(
       request: RetreiveACafe24StoreOrderRequest,
-      options?: base.RequestOptions<RetreiveACafe24StoreOrderRequest>,
+      options?: base.RequestOptions<RetreiveACafe24StoreOrderResponse>,
     ): Promise<RetreiveACafe24StoreOrderResponse> {
       return self.createRequest(
         "GET",
@@ -7413,7 +7413,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACafe24StoreOrder(
       request: CreateACafe24StoreOrderRequest,
-      options?: base.RequestOptions<CreateACafe24StoreOrderRequest>,
+      options?: base.RequestOptions<CreateACafe24StoreOrderResponse>,
     ): Promise<CreateACafe24StoreOrderResponse> {
       return self.createRequest(
         "POST",
@@ -7442,7 +7442,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCafe24StorePayments(
       request: RetrieveAListOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions<RetrieveAListOfCafe24StorePaymentsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCafe24StorePaymentsResponse>,
     ): Promise<RetrieveAListOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7462,7 +7462,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCafe24StorePayments(
       request: RetrieveACountOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions<RetrieveACountOfCafe24StorePaymentsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCafe24StorePaymentsResponse>,
     ): Promise<RetrieveACountOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7486,7 +7486,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDatabridgeWebhookLogs(
       request: RetrieveAListOfDatabridgeWebhookLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfDatabridgeWebhookLogsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfDatabridgeWebhookLogsResponse>,
     ): Promise<RetrieveAListOfDatabridgeWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7516,7 +7516,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipes(
       request: RetrieveAListOfRecipesRequest,
-      options?: base.RequestOptions<RetrieveAListOfRecipesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfRecipesResponse>,
     ): Promise<RetrieveAListOfRecipesResponse> {
       return self.createRequest(
         "GET",
@@ -7537,7 +7537,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARecipe(
       request: CreateARecipeRequest,
-      options?: base.RequestOptions<CreateARecipeRequest>,
+      options?: base.RequestOptions<CreateARecipeResponse>,
     ): Promise<CreateARecipeResponse> {
       return self.createRequest(
         "POST",
@@ -7557,7 +7557,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARecipe(
       request: DeleteARecipeRequest,
-      options?: base.RequestOptions<DeleteARecipeRequest>,
+      options?: base.RequestOptions<DeleteARecipeResponse>,
     ): Promise<DeleteARecipeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7587,7 +7587,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfScriptTags(
       request: RetrieveAListOfScriptTagsRequest,
-      options?: base.RequestOptions<RetrieveAListOfScriptTagsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfScriptTagsResponse>,
     ): Promise<RetrieveAListOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7607,7 +7607,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfScriptTags(
       request: RetrieveACountOfScriptTagsRequest,
-      options?: base.RequestOptions<RetrieveACountOfScriptTagsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfScriptTagsResponse>,
     ): Promise<RetrieveACountOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7628,7 +7628,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAScriptTag(
       request: RetrieveAScriptTagRequest,
-      options?: base.RequestOptions<RetrieveAScriptTagRequest>,
+      options?: base.RequestOptions<RetrieveAScriptTagResponse>,
     ): Promise<RetrieveAScriptTagResponse> {
       return self.createRequest(
         "GET",
@@ -7648,7 +7648,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAScriptTag(
       request: CreateAScriptTagRequest,
-      options?: base.RequestOptions<CreateAScriptTagRequest>,
+      options?: base.RequestOptions<CreateAScriptTagResponse>,
     ): Promise<CreateAScriptTagResponse> {
       return self.createRequest(
         "POST",
@@ -7669,7 +7669,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAScriptTag(
       request: UpdateAScriptTagRequest,
-      options?: base.RequestOptions<UpdateAScriptTagRequest>,
+      options?: base.RequestOptions<UpdateAScriptTagResponse>,
     ): Promise<UpdateAScriptTagResponse> {
       return self.createRequest(
         "PUT",
@@ -7690,7 +7690,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAScriptTag(
       request: DeleteAScriptTagRequest,
-      options?: base.RequestOptions<DeleteAScriptTagRequest>,
+      options?: base.RequestOptions<DeleteAScriptTagResponse>,
     ): Promise<DeleteAScriptTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -7718,7 +7718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfWebhookLogs(
       request: RetrieveAListOfWebhookLogsRequest,
-      options?: base.RequestOptions<RetrieveAListOfWebhookLogsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfWebhookLogsResponse>,
     ): Promise<RetrieveAListOfWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7746,7 +7746,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveWebhookSettings(
       request: RetrieveWebhookSettingsRequest,
-      options?: base.RequestOptions<RetrieveWebhookSettingsRequest>,
+      options?: base.RequestOptions<RetrieveWebhookSettingsResponse>,
     ): Promise<RetrieveWebhookSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -7763,7 +7763,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editWebhookSettings(
       request: EditWebhookSettingsRequest,
-      options?: base.RequestOptions<EditWebhookSettingsRequest>,
+      options?: base.RequestOptions<EditWebhookSettingsResponse>,
     ): Promise<EditWebhookSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -7794,7 +7794,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAutoLayouts(
       request: RetrieveAListOfAutoLayoutsRequest,
-      options?: base.RequestOptions<RetrieveAListOfAutoLayoutsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfAutoLayoutsResponse>,
     ): Promise<RetrieveAListOfAutoLayoutsResponse> {
       return self.createRequest(
         "GET",
@@ -7814,7 +7814,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAutoLayoutForSelectedProductCategory(
       request: CreateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<CreateAutoLayoutForSelectedProductCategoryRequest>,
+      options?: base.RequestOptions<CreateAutoLayoutForSelectedProductCategoryResponse>,
     ): Promise<CreateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7835,7 +7835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAutoLayoutForSelectedProductCategory(
       request: UpdateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAutoLayoutForSelectedProductCategoryRequest>,
+      options?: base.RequestOptions<UpdateAutoLayoutForSelectedProductCategoryResponse>,
     ): Promise<UpdateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7855,7 +7855,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAutoLayoutForSelectedProductCategory(
       request: DeleteAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions<DeleteAutoLayoutForSelectedProductCategoryRequest>,
+      options?: base.RequestOptions<DeleteAutoLayoutForSelectedProductCategoryResponse>,
     ): Promise<DeleteAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -7888,7 +7888,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductCategoriesResponse>,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7908,7 +7908,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductCategoriesResponse>,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7929,7 +7929,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions<RetrieveAProductCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAProductCategoryResponse>,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -7950,7 +7950,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductCategory(
       request: CreateAProductCategoryRequest,
-      options?: base.RequestOptions<CreateAProductCategoryRequest>,
+      options?: base.RequestOptions<CreateAProductCategoryResponse>,
     ): Promise<CreateAProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7971,7 +7971,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategory(
       request: UpdateAProductCategoryRequest,
-      options?: base.RequestOptions<UpdateAProductCategoryRequest>,
+      options?: base.RequestOptions<UpdateAProductCategoryResponse>,
     ): Promise<UpdateAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7991,7 +7991,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductCategory(
       request: DeleteAProductCategoryRequest,
-      options?: base.RequestOptions<DeleteAProductCategoryRequest>,
+      options?: base.RequestOptions<DeleteAProductCategoryResponse>,
     ): Promise<DeleteAProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -8022,7 +8022,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDecorationImageSettingsByCategory(
       request: RetrieveDecorationImageSettingsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveDecorationImageSettingsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveDecorationImageSettingsByCategoryResponse>,
     ): Promise<RetrieveDecorationImageSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8043,7 +8043,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateDecorationImagesOfAProductCategory(
       request: UpdateDecorationImagesOfAProductCategoryRequest,
-      options?: base.RequestOptions<UpdateDecorationImagesOfAProductCategoryRequest>,
+      options?: base.RequestOptions<UpdateDecorationImagesOfAProductCategoryResponse>,
     ): Promise<UpdateDecorationImagesOfAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -8076,7 +8076,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsByCategory(
       request: RetrieveSeoSettingsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveSeoSettingsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveSeoSettingsByCategoryResponse>,
     ): Promise<RetrieveSeoSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8097,7 +8097,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategorySeo(
       request: UpdateAProductCategorySeoRequest,
-      options?: base.RequestOptions<UpdateAProductCategorySeoRequest>,
+      options?: base.RequestOptions<UpdateAProductCategorySeoResponse>,
     ): Promise<UpdateAProductCategorySeoResponse> {
       return self.createRequest(
         "PUT",
@@ -8126,7 +8126,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMainCategories(
       request: RetrieveAListOfMainCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfMainCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfMainCategoriesResponse>,
     ): Promise<RetrieveAListOfMainCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/admin/mains", request, options);
     },
@@ -8152,7 +8152,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBrands(
       request: RetrieveAListOfBrandsRequest,
-      options?: base.RequestOptions<RetrieveAListOfBrandsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfBrandsResponse>,
     ): Promise<RetrieveAListOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8172,7 +8172,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfBrands(
       request: RetrieveACountOfBrandsRequest,
-      options?: base.RequestOptions<RetrieveACountOfBrandsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfBrandsResponse>,
     ): Promise<RetrieveACountOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8193,7 +8193,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABrand(
       request: CreateABrandRequest,
-      options?: base.RequestOptions<CreateABrandRequest>,
+      options?: base.RequestOptions<CreateABrandResponse>,
     ): Promise<CreateABrandResponse> {
       return self.createRequest(
         "POST",
@@ -8214,7 +8214,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABrand(
       request: UpdateABrandRequest,
-      options?: base.RequestOptions<UpdateABrandRequest>,
+      options?: base.RequestOptions<UpdateABrandResponse>,
     ): Promise<UpdateABrandResponse> {
       return self.createRequest(
         "PUT",
@@ -8234,7 +8234,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABrand(
       request: DeleteABrandRequest,
-      options?: base.RequestOptions<DeleteABrandRequest>,
+      options?: base.RequestOptions<DeleteABrandResponse>,
     ): Promise<DeleteABrandResponse> {
       return self.createRequest(
         "DELETE",
@@ -8264,7 +8264,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomCategories(
       request: RetrieveAListOfCustomCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomCategoriesResponse>,
     ): Promise<RetrieveAListOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8284,7 +8284,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomCategories(
       request: RetrieveACountOfCustomCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomCategoriesResponse>,
     ): Promise<RetrieveACountOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8317,7 +8317,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfManufacturers(
       request: RetrieveAListOfManufacturersRequest,
-      options?: base.RequestOptions<RetrieveAListOfManufacturersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfManufacturersResponse>,
     ): Promise<RetrieveAListOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8338,7 +8338,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAManufacturer(
       request: RetrieveAManufacturerRequest,
-      options?: base.RequestOptions<RetrieveAManufacturerRequest>,
+      options?: base.RequestOptions<RetrieveAManufacturerResponse>,
     ): Promise<RetrieveAManufacturerResponse> {
       return self.createRequest(
         "GET",
@@ -8358,7 +8358,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfManufacturers(
       request: RetrieveACountOfManufacturersRequest,
-      options?: base.RequestOptions<RetrieveACountOfManufacturersRequest>,
+      options?: base.RequestOptions<RetrieveACountOfManufacturersResponse>,
     ): Promise<RetrieveACountOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8378,7 +8378,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAManufacturer(
       request: CreateAManufacturerRequest,
-      options?: base.RequestOptions<CreateAManufacturerRequest>,
+      options?: base.RequestOptions<CreateAManufacturerResponse>,
     ): Promise<CreateAManufacturerResponse> {
       return self.createRequest(
         "POST",
@@ -8399,7 +8399,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAManufacturer(
       request: UpdateAManufacturerRequest,
-      options?: base.RequestOptions<UpdateAManufacturerRequest>,
+      options?: base.RequestOptions<UpdateAManufacturerResponse>,
     ): Promise<UpdateAManufacturerResponse> {
       return self.createRequest(
         "PUT",
@@ -8430,7 +8430,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrigins(
       request: RetrieveAListOfOriginsRequest,
-      options?: base.RequestOptions<RetrieveAListOfOriginsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfOriginsResponse>,
     ): Promise<RetrieveAListOfOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -8460,7 +8460,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrends(
       request: RetrieveAListOfTrendsRequest,
-      options?: base.RequestOptions<RetrieveAListOfTrendsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfTrendsResponse>,
     ): Promise<RetrieveAListOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8480,7 +8480,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfTrends(
       request: RetrieveACountOfTrendsRequest,
-      options?: base.RequestOptions<RetrieveACountOfTrendsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfTrendsResponse>,
     ): Promise<RetrieveACountOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8510,7 +8510,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierSShippingSettings(
       request: RetrieveASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions<RetrieveASupplierSShippingSettingsRequest>,
+      options?: base.RequestOptions<RetrieveASupplierSShippingSettingsResponse>,
     ): Promise<RetrieveASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8531,7 +8531,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierSShippingSettings(
       request: UpdateASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions<UpdateASupplierSShippingSettingsRequest>,
+      options?: base.RequestOptions<UpdateASupplierSShippingSettingsResponse>,
     ): Promise<UpdateASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8564,7 +8564,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSuppliers(
       request: RetrieveAListOfSuppliersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSuppliersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfSuppliersResponse>,
     ): Promise<RetrieveAListOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8584,7 +8584,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSuppliers(
       request: RetrieveACountOfSuppliersRequest,
-      options?: base.RequestOptions<RetrieveACountOfSuppliersRequest>,
+      options?: base.RequestOptions<RetrieveACountOfSuppliersResponse>,
     ): Promise<RetrieveACountOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8605,7 +8605,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplier(
       request: RetrieveASupplierRequest,
-      options?: base.RequestOptions<RetrieveASupplierRequest>,
+      options?: base.RequestOptions<RetrieveASupplierResponse>,
     ): Promise<RetrieveASupplierResponse> {
       return self.createRequest(
         "GET",
@@ -8625,7 +8625,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplier(
       request: CreateASupplierRequest,
-      options?: base.RequestOptions<CreateASupplierRequest>,
+      options?: base.RequestOptions<CreateASupplierResponse>,
     ): Promise<CreateASupplierResponse> {
       return self.createRequest(
         "POST",
@@ -8646,7 +8646,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplier(
       request: UpdateASupplierRequest,
-      options?: base.RequestOptions<UpdateASupplierRequest>,
+      options?: base.RequestOptions<UpdateASupplierResponse>,
     ): Promise<UpdateASupplierResponse> {
       return self.createRequest(
         "PUT",
@@ -8666,7 +8666,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplier(
       request: DeleteASupplierRequest,
-      options?: base.RequestOptions<DeleteASupplierRequest>,
+      options?: base.RequestOptions<DeleteASupplierResponse>,
     ): Promise<DeleteASupplierResponse> {
       return self.createRequest(
         "DELETE",
@@ -8698,7 +8698,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSupplierUsers(
       request: RetrieveAListOfSupplierUsersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSupplierUsersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfSupplierUsersResponse>,
     ): Promise<RetrieveAListOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8718,7 +8718,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSupplierUsers(
       request: RetrieveACountOfSupplierUsersRequest,
-      options?: base.RequestOptions<RetrieveACountOfSupplierUsersRequest>,
+      options?: base.RequestOptions<RetrieveACountOfSupplierUsersResponse>,
     ): Promise<RetrieveACountOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8739,7 +8739,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSupplierUserDetails(
       request: RetrieveSupplierUserDetailsRequest,
-      options?: base.RequestOptions<RetrieveSupplierUserDetailsRequest>,
+      options?: base.RequestOptions<RetrieveSupplierUserDetailsResponse>,
     ): Promise<RetrieveSupplierUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -8759,7 +8759,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplierUser(
       request: CreateASupplierUserRequest,
-      options?: base.RequestOptions<CreateASupplierUserRequest>,
+      options?: base.RequestOptions<CreateASupplierUserResponse>,
     ): Promise<CreateASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8780,7 +8780,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUser(
       request: UpdateASupplierUserRequest,
-      options?: base.RequestOptions<UpdateASupplierUserRequest>,
+      options?: base.RequestOptions<UpdateASupplierUserResponse>,
     ): Promise<UpdateASupplierUserResponse> {
       return self.createRequest(
         "PUT",
@@ -8800,7 +8800,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplierUser(
       request: DeleteASupplierUserRequest,
-      options?: base.RequestOptions<DeleteASupplierUserRequest>,
+      options?: base.RequestOptions<DeleteASupplierUserResponse>,
     ): Promise<DeleteASupplierUserResponse> {
       return self.createRequest(
         "DELETE",
@@ -8831,7 +8831,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSListOfRegionalShippingFees(
       request: RetrieveASupplierUserSListOfRegionalShippingFeesRequest,
-      options?: base.RequestOptions<RetrieveASupplierUserSListOfRegionalShippingFeesRequest>,
+      options?: base.RequestOptions<RetrieveASupplierUserSListOfRegionalShippingFeesResponse>,
     ): Promise<RetrieveASupplierUserSListOfRegionalShippingFeesResponse> {
       return self.createRequest(
         "GET",
@@ -8852,7 +8852,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createRegionalShippingFeeForASupplierUser(
       request: CreateRegionalShippingFeeForASupplierUserRequest,
-      options?: base.RequestOptions<CreateRegionalShippingFeeForASupplierUserRequest>,
+      options?: base.RequestOptions<CreateRegionalShippingFeeForASupplierUserResponse>,
     ): Promise<CreateRegionalShippingFeeForASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8872,7 +8872,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSupplierUserSRegionalShippingFeeSettings(
       request: DeleteSupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<DeleteSupplierUserSRegionalShippingFeeSettingsRequest>,
+      options?: base.RequestOptions<DeleteSupplierUserSRegionalShippingFeeSettingsResponse>,
     ): Promise<DeleteSupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "DELETE",
@@ -8903,7 +8903,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSRegionalShippingFeeSettings(
       request: RetrieveASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<RetrieveASupplierUserSRegionalShippingFeeSettingsRequest>,
+      options?: base.RequestOptions<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse>,
     ): Promise<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8924,7 +8924,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUserSRegionalShippingFeeSettings(
       request: UpdateASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions<UpdateASupplierUserSRegionalShippingFeeSettingsRequest>,
+      options?: base.RequestOptions<UpdateASupplierUserSRegionalShippingFeeSettingsResponse>,
     ): Promise<UpdateASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8955,7 +8955,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingCarriers(
       request: RetrieveAListOfShippingCarriersRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingCarriersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfShippingCarriersResponse>,
     ): Promise<RetrieveAListOfShippingCarriersResponse> {
       return self.createRequest(
         "GET",
@@ -8976,7 +8976,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingCarrier(
       request: RetrieveAShippingCarrierRequest,
-      options?: base.RequestOptions<RetrieveAShippingCarrierRequest>,
+      options?: base.RequestOptions<RetrieveAShippingCarrierResponse>,
     ): Promise<RetrieveAShippingCarrierResponse> {
       return self.createRequest(
         "GET",
@@ -8997,7 +8997,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingCarrier(
       request: CreateAShippingCarrierRequest,
-      options?: base.RequestOptions<CreateAShippingCarrierRequest>,
+      options?: base.RequestOptions<CreateAShippingCarrierResponse>,
     ): Promise<CreateAShippingCarrierResponse> {
       return self.createRequest(
         "POST",
@@ -9018,7 +9018,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingCarrier(
       request: UpdateAShippingCarrierRequest,
-      options?: base.RequestOptions<UpdateAShippingCarrierRequest>,
+      options?: base.RequestOptions<UpdateAShippingCarrierResponse>,
     ): Promise<UpdateAShippingCarrierResponse> {
       return self.createRequest(
         "PUT",
@@ -9038,7 +9038,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingCarrier(
       request: DeleteAShippingCarrierRequest,
-      options?: base.RequestOptions<DeleteAShippingCarrierRequest>,
+      options?: base.RequestOptions<DeleteAShippingCarrierResponse>,
     ): Promise<DeleteAShippingCarrierResponse> {
       return self.createRequest(
         "DELETE",
@@ -9068,7 +9068,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingReturnSettings(
       request: RetrieveShippingReturnSettingsRequest,
-      options?: base.RequestOptions<RetrieveShippingReturnSettingsRequest>,
+      options?: base.RequestOptions<RetrieveShippingReturnSettingsResponse>,
     ): Promise<RetrieveShippingReturnSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -9089,7 +9089,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreShippingReturnSettings(
       request: UpdateStoreShippingReturnSettingsRequest,
-      options?: base.RequestOptions<UpdateStoreShippingReturnSettingsRequest>,
+      options?: base.RequestOptions<UpdateStoreShippingReturnSettingsResponse>,
     ): Promise<UpdateStoreShippingReturnSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -9118,7 +9118,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingOrigins(
       request: RetrieveAListOfShippingOriginsRequest,
-      options?: base.RequestOptions<RetrieveAListOfShippingOriginsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfShippingOriginsResponse>,
     ): Promise<RetrieveAListOfShippingOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -9139,7 +9139,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingOrigin(
       request: RetrieveAShippingOriginRequest,
-      options?: base.RequestOptions<RetrieveAShippingOriginRequest>,
+      options?: base.RequestOptions<RetrieveAShippingOriginResponse>,
     ): Promise<RetrieveAShippingOriginResponse> {
       return self.createRequest(
         "GET",
@@ -9159,7 +9159,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingOrigin(
       request: CreateAShippingOriginRequest,
-      options?: base.RequestOptions<CreateAShippingOriginRequest>,
+      options?: base.RequestOptions<CreateAShippingOriginResponse>,
     ): Promise<CreateAShippingOriginResponse> {
       return self.createRequest(
         "POST",
@@ -9180,7 +9180,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingOrigin(
       request: UpdateAShippingOriginRequest,
-      options?: base.RequestOptions<UpdateAShippingOriginRequest>,
+      options?: base.RequestOptions<UpdateAShippingOriginResponse>,
     ): Promise<UpdateAShippingOriginResponse> {
       return self.createRequest(
         "PUT",
@@ -9201,7 +9201,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingOrigin(
       request: DeleteAShippingOriginRequest,
-      options?: base.RequestOptions<DeleteAShippingOriginRequest>,
+      options?: base.RequestOptions<DeleteAShippingOriginResponse>,
     ): Promise<DeleteAShippingOriginResponse> {
       return self.createRequest(
         "DELETE",
@@ -9231,7 +9231,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDailySales(
       request: RetrieveAListOfDailySalesRequest,
-      options?: base.RequestOptions<RetrieveAListOfDailySalesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfDailySalesResponse>,
     ): Promise<RetrieveAListOfDailySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9261,7 +9261,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMonthlySales(
       request: RetrieveAListOfMonthlySalesRequest,
-      options?: base.RequestOptions<RetrieveAListOfMonthlySalesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfMonthlySalesResponse>,
     ): Promise<RetrieveAListOfMonthlySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9290,7 +9290,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlySalesStatisticsOfAStore(
       request: RetrieveHourlySalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveHourlySalesStatisticsOfAStoreRequest>,
+      options?: base.RequestOptions<RetrieveHourlySalesStatisticsOfAStoreResponse>,
     ): Promise<RetrieveHourlySalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9320,7 +9320,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlyProductSalesStatisticsOfAStore(
       request: RetrieveHourlyProductSalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions<RetrieveHourlyProductSalesStatisticsOfAStoreRequest>,
+      options?: base.RequestOptions<RetrieveHourlyProductSalesStatisticsOfAStoreResponse>,
     ): Promise<RetrieveHourlyProductSalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9349,7 +9349,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASalesReport(
       request: RetrieveASalesReportRequest,
-      options?: base.RequestOptions<RetrieveASalesReportRequest>,
+      options?: base.RequestOptions<RetrieveASalesReportResponse>,
     ): Promise<RetrieveASalesReportResponse> {
       return self.createRequest(
         "GET",
@@ -9380,7 +9380,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShoppingCart(
       request: RetrieveAShoppingCartRequest,
-      options?: base.RequestOptions<RetrieveAShoppingCartRequest>,
+      options?: base.RequestOptions<RetrieveAShoppingCartResponse>,
     ): Promise<RetrieveAShoppingCartResponse> {
       return self.createRequest("GET", "/api/v2/admin/carts", request, options);
     },
@@ -9405,7 +9405,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInCustomerWishlist(
       request: RetrieveACountOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsInCustomerWishlistRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsInCustomerWishlistResponse>,
     ): Promise<RetrieveACountOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9425,7 +9425,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInCustomerWishlist(
       request: RetrieveAListOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInCustomerWishlistRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsInCustomerWishlistResponse>,
     ): Promise<RetrieveAListOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9456,7 +9456,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductResponse>,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9477,7 +9477,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCartsContainingAProduct(
       request: RetrieveAListOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveAListOfCartsContainingAProductRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCartsContainingAProductResponse>,
     ): Promise<RetrieveAListOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9507,7 +9507,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerInformation(
       request: RetrieveAListOfCustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomerInformationRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomerInformationResponse>,
     ): Promise<RetrieveAListOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9527,7 +9527,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerInformation(
       request: RetrieveACountOfCustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomerInformationRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomerInformationResponse>,
     ): Promise<RetrieveACountOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9548,7 +9548,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerInformation(
       request: RetrieveACustomerInformationRequest,
-      options?: base.RequestOptions<RetrieveACustomerInformationRequest>,
+      options?: base.RequestOptions<RetrieveACustomerInformationResponse>,
     ): Promise<RetrieveACustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9569,7 +9569,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerInformation(
       request: UpdateACustomerInformationRequest,
-      options?: base.RequestOptions<UpdateACustomerInformationRequest>,
+      options?: base.RequestOptions<UpdateACustomerInformationResponse>,
     ): Promise<UpdateACustomerInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -9599,7 +9599,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomersWithAProductInWishlist(
       request: RetrieveAListOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions<RetrieveAListOfCustomersWithAProductInWishlistRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCustomersWithAProductInWishlistResponse>,
     ): Promise<RetrieveAListOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9619,7 +9619,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomersWithAProductInWishlist(
       request: RetrieveACountOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions<RetrieveACountOfCustomersWithAProductInWishlistRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCustomersWithAProductInWishlistResponse>,
     ): Promise<RetrieveACountOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9649,7 +9649,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCreditsByDateRange(
       request: RetrieveAListOfCreditsByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveAListOfCreditsByDateRangeRequest>,
+      options?: base.RequestOptions<RetrieveAListOfCreditsByDateRangeResponse>,
     ): Promise<RetrieveAListOfCreditsByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9680,7 +9680,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACreditReportByDateRange(
       request: RetrieveACreditReportByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveACreditReportByDateRangeRequest>,
+      options?: base.RequestOptions<RetrieveACreditReportByDateRangeResponse>,
     ): Promise<RetrieveACreditReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9712,7 +9712,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePoints(
       request: RetrievePointsRequest,
-      options?: base.RequestOptions<RetrievePointsRequest>,
+      options?: base.RequestOptions<RetrievePointsResponse>,
     ): Promise<RetrievePointsResponse> {
       return self.createRequest(
         "GET",
@@ -9732,7 +9732,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     issueAndDeductPoints(
       request: IssueAndDeductPointsRequest,
-      options?: base.RequestOptions<IssueAndDeductPointsRequest>,
+      options?: base.RequestOptions<IssueAndDeductPointsResponse>,
     ): Promise<IssueAndDeductPointsResponse> {
       return self.createRequest(
         "POST",
@@ -9763,7 +9763,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAutomaticPointsExpiration(
       request: RetrieveAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<RetrieveAnAutomaticPointsExpirationRequest>,
+      options?: base.RequestOptions<RetrieveAnAutomaticPointsExpirationResponse>,
     ): Promise<RetrieveAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "GET",
@@ -9784,7 +9784,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAutomaticPointsExpiration(
       request: CreateAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<CreateAnAutomaticPointsExpirationRequest>,
+      options?: base.RequestOptions<CreateAnAutomaticPointsExpirationResponse>,
     ): Promise<CreateAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "POST",
@@ -9804,7 +9804,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAutomaticPointsExpiration(
       request: DeleteAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions<DeleteAnAutomaticPointsExpirationRequest>,
+      options?: base.RequestOptions<DeleteAnAutomaticPointsExpirationResponse>,
     ): Promise<DeleteAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "DELETE",
@@ -9835,7 +9835,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPointsReportByDateRange(
       request: RetrieveAPointsReportByDateRangeRequest,
-      options?: base.RequestOptions<RetrieveAPointsReportByDateRangeRequest>,
+      options?: base.RequestOptions<RetrieveAPointsReportByDateRangeResponse>,
     ): Promise<RetrieveAPointsReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9867,7 +9867,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendAnInvitationToActivateAccount(
       request: SendAnInvitationToActivateAccountRequest,
-      options?: base.RequestOptions<SendAnInvitationToActivateAccountRequest>,
+      options?: base.RequestOptions<SendAnInvitationToActivateAccountResponse>,
     ): Promise<SendAnInvitationToActivateAccountResponse> {
       return self.createRequest(
         "POST",
@@ -9896,7 +9896,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupList(
       request: RetrieveDistributionGroupListRequest,
-      options?: base.RequestOptions<RetrieveDistributionGroupListRequest>,
+      options?: base.RequestOptions<RetrieveDistributionGroupListResponse>,
     ): Promise<RetrieveDistributionGroupListResponse> {
       return self.createRequest(
         "GET",
@@ -9916,7 +9916,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupDetails(
       request: RetrieveDistributionGroupDetailsRequest,
-      options?: base.RequestOptions<RetrieveDistributionGroupDetailsRequest>,
+      options?: base.RequestOptions<RetrieveDistributionGroupDetailsResponse>,
     ): Promise<RetrieveDistributionGroupDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -9936,7 +9936,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADistributionGroup(
       request: CreateADistributionGroupRequest,
-      options?: base.RequestOptions<CreateADistributionGroupRequest>,
+      options?: base.RequestOptions<CreateADistributionGroupResponse>,
     ): Promise<CreateADistributionGroupResponse> {
       return self.createRequest(
         "POST",
@@ -9956,7 +9956,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     editDistributionGroup(
       request: EditDistributionGroupRequest,
-      options?: base.RequestOptions<EditDistributionGroupRequest>,
+      options?: base.RequestOptions<EditDistributionGroupResponse>,
     ): Promise<EditDistributionGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -9976,7 +9976,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteDistributionGroup(
       request: DeleteDistributionGroupRequest,
-      options?: base.RequestOptions<DeleteDistributionGroupRequest>,
+      options?: base.RequestOptions<DeleteDistributionGroupResponse>,
     ): Promise<DeleteDistributionGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -10008,7 +10008,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendASms(
       request: SendASmsRequest,
-      options?: base.RequestOptions<SendASmsRequest>,
+      options?: base.RequestOptions<SendASmsResponse>,
     ): Promise<SendASmsResponse> {
       return self.createRequest("POST", "/api/v2/admin/sms", request, options);
     },
@@ -10027,7 +10027,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheSmsBalance(
       request: RetrieveTheSmsBalanceRequest,
-      options?: base.RequestOptions<RetrieveTheSmsBalanceRequest>,
+      options?: base.RequestOptions<RetrieveTheSmsBalanceResponse>,
     ): Promise<RetrieveTheSmsBalanceResponse> {
       return self.createRequest(
         "GET",
@@ -10059,7 +10059,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSmsSenders(
       request: RetrieveAListOfSmsSendersRequest,
-      options?: base.RequestOptions<RetrieveAListOfSmsSendersRequest>,
+      options?: base.RequestOptions<RetrieveAListOfSmsSendersResponse>,
     ): Promise<RetrieveAListOfSmsSendersResponse> {
       return self.createRequest(
         "GET",
@@ -10088,7 +10088,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategoryTranslations(
       request: RetrieveAListOfProductCategoryTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoryTranslationsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductCategoryTranslationsResponse>,
     ): Promise<RetrieveAListOfProductCategoryTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10109,7 +10109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductCategoryTranslation(
       request: UpdateProductCategoryTranslationRequest,
-      options?: base.RequestOptions<UpdateProductCategoryTranslationRequest>,
+      options?: base.RequestOptions<UpdateProductCategoryTranslationResponse>,
     ): Promise<UpdateProductCategoryTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10137,7 +10137,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductTranslations(
       request: RetrieveAListOfProductTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductTranslationsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductTranslationsResponse>,
     ): Promise<RetrieveAListOfProductTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10158,7 +10158,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductTranslation(
       request: UpdateProductTranslationRequest,
-      options?: base.RequestOptions<UpdateProductTranslationRequest>,
+      options?: base.RequestOptions<UpdateProductTranslationResponse>,
     ): Promise<UpdateProductTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10186,7 +10186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreTranslations(
       request: RetrieveAListOfStoreTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfStoreTranslationsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfStoreTranslationsResponse>,
     ): Promise<RetrieveAListOfStoreTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10207,7 +10207,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheTranslationsOfAStore(
       request: UpdateTheTranslationsOfAStoreRequest,
-      options?: base.RequestOptions<UpdateTheTranslationsOfAStoreRequest>,
+      options?: base.RequestOptions<UpdateTheTranslationsOfAStoreResponse>,
     ): Promise<UpdateTheTranslationsOfAStoreResponse> {
       return self.createRequest(
         "PUT",
@@ -10235,7 +10235,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemeTranslations(
       request: RetrieveAListOfThemeTranslationsRequest,
-      options?: base.RequestOptions<RetrieveAListOfThemeTranslationsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfThemeTranslationsResponse>,
     ): Promise<RetrieveAListOfThemeTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10255,7 +10255,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemeTranslation(
       request: RetrieveAThemeTranslationRequest,
-      options?: base.RequestOptions<RetrieveAThemeTranslationRequest>,
+      options?: base.RequestOptions<RetrieveAThemeTranslationResponse>,
     ): Promise<RetrieveAThemeTranslationResponse> {
       return self.createRequest(
         "GET",
@@ -10276,7 +10276,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAThemeTranslation(
       request: UpdateAThemeTranslationRequest,
-      options?: base.RequestOptions<UpdateAThemeTranslationRequest>,
+      options?: base.RequestOptions<UpdateAThemeTranslationResponse>,
     ): Promise<UpdateAThemeTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10304,7 +10304,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfDailyvisits(
       request: RetrieveACountOfDailyvisitsRequest,
-      options?: base.RequestOptions<RetrieveACountOfDailyvisitsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfDailyvisitsResponse>,
     ): Promise<RetrieveACountOfDailyvisitsResponse> {
       return self.createRequest(
         "GET",
@@ -40279,7 +40279,8 @@ interface RetrieveACountOfDailyvisitsRequest {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/activitylogs?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfActionLogsResponse {
   activitylogs: Array<{
@@ -40309,7 +40310,8 @@ interface RetrieveAListOfActionLogsResponse {
  *         "process_date": "2020-02-01T00:00:00+09:00",
  *         "content": "Edit product name"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnActionLogResponse {
   activitylog: {
@@ -40344,7 +40346,8 @@ interface RetrieveAnActionLogResponse {
  *             "send_case": "Back-in-stock notification (Manual), Notification on shipment, Successful delivery, or Refund"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse {
   arguments: Array<{
@@ -40369,7 +40372,8 @@ interface RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse {
  *         "send_method": "S",
  *         "send_method_push": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheAutomatedMessageSettingsResponse {
   automessages: {
@@ -40391,7 +40395,8 @@ interface RetrieveTheAutomatedMessageSettingsResponse {
  *         "send_method": "S",
  *         "send_method_push": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnAutomatedMessageResponse {
   automessages: {
@@ -40451,7 +40456,8 @@ interface UpdateAnAutomatedMessageResponse {
  *         "download_image_type": "1",
  *         "background_image_type": "2"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveCouponSettingsResponse {
   coupon: {
@@ -40548,7 +40554,8 @@ interface RetrieveCouponSettingsResponse {
  *         "download_image_type": "1",
  *         "background_image_type": "2"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateCouponSettingsResponse {
   coupon: {
@@ -40607,7 +40614,8 @@ interface UpdateCouponSettingsResponse {
  *         "shop_currency_symbol": "$",
  *         "shop_currency_format": "￦[:PRICE:]"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveCurrencySettingsResponse {
   currency: {
@@ -40715,7 +40723,8 @@ interface RetrieveCurrencySettingsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveADashboardResponse {
   dashboard: Array<{
@@ -40805,7 +40814,8 @@ interface RetrieveADashboardResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfPaymentGatewayContractDetailsResponse {
   paymentgateway: {
@@ -40834,7 +40844,8 @@ interface RetrieveAListOfPaymentGatewayContractDetailsResponse {
  *         "first_payment_date": "2020-01-01",
  *         "payment_gateway_name": "cafe24payTest"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheTransactionInformationOfAStoreResponse {
   store: {
@@ -40863,7 +40874,8 @@ interface RetrieveTheTransactionInformationOfAStoreResponse {
  *             "small_image_height": 100
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveProductImageSizeSettingsResponse {
   image: {
@@ -40902,7 +40914,8 @@ interface RetrieveProductImageSizeSettingsResponse {
  *             "small_image_height": 100
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductImageSizeSettingsResponse {
   image: {
@@ -40930,7 +40943,8 @@ interface UpdateProductImageSizeSettingsResponse {
  *         "shop_no": 1,
  *         "kakao_senderkey": "e04b7660a7aedcc7916840e1e0add842b1608525"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAKakaoChannelSenderProfileKeyResponse {
   kakaoprofile: {
@@ -40947,7 +40961,8 @@ interface RetrieveAKakaoChannelSenderProfileKeyResponse {
  *         "shop_no": 1,
  *         "use_kakaoalimtalk": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheKakaoInfoTalkSettingsResponse {
   kakaoalimtalk: {
@@ -40964,7 +40979,8 @@ interface RetrieveTheKakaoInfoTalkSettingsResponse {
  *         "shop_no": 1,
  *         "use_kakaoalimtalk": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateTheKakaoInfoTalkSettingsResponse {
   kakaoalimtalk: {
@@ -40995,7 +41011,8 @@ interface UpdateTheKakaoInfoTalkSettingsResponse {
  *         "thirdparty_agree": "T",
  *         "thirdparty_agree_date": "2021-07-15T17:59:00+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSettingsForKakaopayOrdersResponse {
   kakaopay: {
@@ -41040,7 +41057,8 @@ interface RetrieveSettingsForKakaopayOrdersResponse {
  *         "thirdparty_agree": "T",
  *         "thirdparty_agree_date": "2021-07-15T17:59:00+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateSettingsForKakaopayOrdersResponse {
   kakaopay: {
@@ -41085,7 +41103,8 @@ interface UpdateSettingsForKakaopayOrdersResponse {
  *             "contains_app_url": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveMenusResponse {
   menus: Array<{
@@ -41107,7 +41126,8 @@ interface RetrieveMenusResponse {
  *         "use_mobile_page": "T",
  *         "use_mobile_domain_redirection": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveMobileSettingsResponse {
   mobile: {
@@ -41138,7 +41158,8 @@ interface RetrieveMobileSettingsResponse {
  *         "naver_button_mobile_product": "MA|1|2",
  *         "naver_button_mobile_basket": "MA|1|1"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveNaverPaySettingsResponse {
   naverpay: {
@@ -41180,7 +41201,8 @@ interface RetrieveNaverPaySettingsResponse {
  *         "naver_button_mobile_product": "MA|1|2",
  *         "naver_button_mobile_basket": "MA|1|1"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateNaverPaySettingsResponse {
   naverpay: {
@@ -41209,7 +41231,8 @@ interface CreateNaverPaySettingsResponse {
  *         "shop_no": 1,
  *         "authentication_key": "s_abcdefg"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateNaverPaySettingsResponse {
   naverpay: {
@@ -41252,7 +41275,8 @@ interface UpdateNaverPaySettingsResponse {
  *         "customer_pays_return_shipping": "F",
  *         "refund_bank_account_required": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveOrderSettingsResponse {
   order: {
@@ -41298,7 +41322,8 @@ interface RetrieveOrderSettingsResponse {
  *         "purchase_confirmation_auto_check_day": 1,
  *         "purchase_confirmation_auto_check_set_date": "2023-01-12"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateOrderSettingsResponse {
   order: {
@@ -41333,7 +41358,8 @@ interface UpdateOrderSettingsResponse {
  *             "reservation_custom_name": "Application for classes"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveOrderStatusDisplayedResponse {
   status: Array<{
@@ -41365,7 +41391,8 @@ interface RetrieveOrderStatusDisplayedResponse {
  *             "reservation_custom_name": "Application for classes"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateOrderStatusDisplayedResponse {
   status: Array<{
@@ -41389,7 +41416,8 @@ interface UpdateOrderStatusDisplayedResponse {
  *         "purchase_protection_amount": 0,
  *         "use_direct_pay": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveEscrowSettingsResponse {
   setting: {
@@ -41414,7 +41442,8 @@ interface RetrieveEscrowSettingsResponse {
  *         "pg_shipping_registration": "A",
  *         "use_direct_pay": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateEscrowSettingsResponse {
   setting: {
@@ -41448,7 +41477,8 @@ interface UpdateEscrowSettingsResponse {
  *         "membership_fee_type": "FREE",
  *         "service_limit_type": "A"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAPaymentGatewayResponse {
   paymentgateway: {
@@ -41485,7 +41515,8 @@ interface CreateAPaymentGatewayResponse {
  *         "membership_fee_type": "FREE",
  *         "service_limit_type": "A"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAPaymentGatewayResponse {
   paymentgateway: {
@@ -41509,7 +41540,8 @@ interface UpdateAPaymentGatewayResponse {
  *         "shop_no": 1,
  *         "client_id": "t9v2be4eYDif11NVvHbSsG"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAPaymentGatewayResponse {
   paymentgateway: {
@@ -41532,7 +41564,8 @@ interface DeleteAPaymentGatewayResponse {
  *             "available_shop_no": "1,3"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfPaymentGatewayMethodsResponse {
   paymentmethods: Array<{
@@ -41557,7 +41590,8 @@ interface RetrieveAListOfPaymentGatewayMethodsResponse {
  *         "payment_method_url": "http://img.cafe24.com/img/simplexi/common/h1_logo.png",
  *         "available_shop_no": "1,3"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAPaymentGatewayMethodResponse {
   paymentmethod: {
@@ -41582,7 +41616,8 @@ interface CreateAPaymentGatewayMethodResponse {
  *         "payment_method_url": "http://img.cafe24.com/img/simplexi/common/h1_logo.png",
  *         "available_shop_no": "1,3,4"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAPaymentMethodOfAPaymentGatewayResponse {
   paymentmethod: {
@@ -41603,7 +41638,8 @@ interface UpdateAPaymentMethodOfAPaymentGatewayResponse {
  *         "client_id": "t9v2be4eYDif11NVvHbSsG",
  *         "payment_method_code": "fd23rerewr45678"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAPaymentMethodOfAPaymentGatewayResponse {
   paymentmethod: {
@@ -41626,7 +41662,8 @@ interface DeleteAPaymentMethodOfAPaymentGatewayResponse {
  *             "code": "cod"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfPaymentMethodsResponse {
   paymentmethods: Array<{
@@ -41651,7 +41688,8 @@ interface RetrieveAListOfPaymentMethodsResponse {
  *             "display": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProvidersByPaymentMethodResponse {
   paymentproviders: Array<{
@@ -41669,7 +41707,8 @@ interface RetrieveAListOfProvidersByPaymentMethodResponse {
  *         "shop_no": 1,
  *         "display": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateTheDisplayStatusOfAPaymentMethodResponse {
   paymentprovider: {
@@ -41693,7 +41732,8 @@ interface UpdateTheDisplayStatusOfAPaymentMethodResponse {
  *         "display_type": "PW",
  *         "unusable_points_change_type": "M"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrievePointsSettingsResponse {
   point: {
@@ -41724,7 +41764,8 @@ interface RetrievePointsSettingsResponse {
  *         "display_type": "PW",
  *         "unusable_points_change_type": "M"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdatePointsSettingsResponse {
   point: {
@@ -41750,7 +41791,8 @@ interface UpdatePointsSettingsResponse {
  *         "price_rounding_unit": "1",
  *         "price_rounding_rule": "U"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveProductSettingsResponse {
   product: {
@@ -41779,7 +41821,8 @@ interface RetrieveProductSettingsResponse {
  *             "target": "https://developers.cafe24.com"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfRedirectsResponse {
   redirects: Array<{
@@ -41800,7 +41843,8 @@ interface RetrieveAListOfRedirectsResponse {
  *         "path": "/cafe24",
  *         "target": "https://www.cafe24.com"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateARedirectResponse {
   redirects: {
@@ -41821,7 +41865,8 @@ interface CreateARedirectResponse {
  *         "path": "/cafe24",
  *         "target": "https://www.cafe24.com"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateARedirectResponse {
   redirects: {
@@ -41840,7 +41885,8 @@ interface UpdateARedirectResponse {
  *         "shop_no": 1,
  *         "id": 1
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteARedirectResponse {
   redirects: {
@@ -41878,7 +41924,8 @@ interface DeleteARedirectResponse {
  *         "mobile_header_tag": "<meta name=\"googlebot\" content=\"noindex\"><meta name=\"googlebot-news\" content=\"nosnippet\">",
  *         "mobile_footer_tag": ""
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSeoSettingsResponse {
   seo: {
@@ -41937,7 +41984,8 @@ interface RetrieveSeoSettingsResponse {
  *         "mobile_header_tag": "<meta name=\"googlebot\" content=\"noindex\"><meta name=\"googlebot-news\" content=\"nosnippet\">",
  *         "mobile_footer_tag": ""
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateStoreSeoSettingsResponse {
   seo: {
@@ -41974,7 +42022,8 @@ interface UpdateStoreSeoSettingsResponse {
  *     "shippingmanager": {
  *         "use": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveActivationInformationForShippingManagerResponse {
   shippingmanager: {
@@ -42046,7 +42095,8 @@ interface RetrieveActivationInformationForShippingManagerResponse {
  *             "site_connect": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfShopsResponse {
   shops: Array<{
@@ -42110,7 +42160,8 @@ interface RetrieveAListOfShopsResponse {
  *         "channel": "",
  *         "site_connect": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAShopResponse {
   shop: {
@@ -42154,7 +42205,8 @@ interface RetrieveAShopResponse {
  *         "send_method": "S",
  *         "send_method_automatic": "L"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSmsSettingsResponse {
   sms: {
@@ -42181,7 +42233,8 @@ interface RetrieveSmsSettingsResponse {
  *         "send_method": "S",
  *         "send_method_automatic": "L"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateSmsSettingsResponse {
   sms: {
@@ -42208,7 +42261,8 @@ interface UpdateSmsSettingsResponse {
  *         "auth_key_file_name": "AuthKey_N2Q4JKNZSM.p8",
  *         "use_certification": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface AppleLoginSyncDetailsResponse {
   apple: {
@@ -42235,7 +42289,8 @@ interface AppleLoginSyncDetailsResponse {
  *         "auth_key_file_name": "AuthKey_N2Q4JKNZSM.p8",
  *         "use_certification": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface AppleLoginSyncSettingsResponse {
   apple: {
@@ -42263,7 +42318,8 @@ interface AppleLoginSyncSettingsResponse {
  *         "thirdparty_agree_date": "2020-11-05T17:59:00+09:00",
  *         "use_signup_result_page": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface KakaoSyncDetailsResponse {
   kakaosync: {
@@ -42289,7 +42345,8 @@ interface KakaoSyncDetailsResponse {
  *         "auto_login": "T",
  *         "use_signup_result_page": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface KakaoSyncUpdatesResponse {
   kakaosync: {
@@ -42311,7 +42368,8 @@ interface KakaoSyncUpdatesResponse {
  *         "client_id": "d3t09cT11SNX22U5swHK",
  *         "client_secret": "XxT3QPuMkU"
  *     }
- * }```
+ * }
+ * ```
  */
 interface NaverLoginDetailsResponse {
   naverlogin: {
@@ -42332,7 +42390,8 @@ interface NaverLoginDetailsResponse {
  *         "client_id": "d3t09cT11SNX22U5swHK",
  *         "client_secret": "XxT3QPuMkU"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateNaverLoginSettingsResponse {
   naverlogin: {
@@ -42391,7 +42450,8 @@ interface UpdateNaverLoginSettingsResponse {
  *             "FashionAccessories"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveStoreDetailsResponse {
   store: {
@@ -42461,7 +42521,8 @@ interface RetrieveStoreDetailsResponse {
  *             "use_account": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfStoreBankAccountsResponse {
   accounts: Array<{
@@ -42563,7 +42624,8 @@ interface RetrieveAListOfStoreBankAccountsResponse {
  *             "change_option": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfSubscriptionProductsResponse {
   shipments: Array<{
@@ -42637,7 +42699,8 @@ interface RetrieveAListOfSubscriptionProductsResponse {
  *         "shipments_start_date": 3,
  *         "change_option": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateASubscriptionPaymentRuleResponse {
   shipment: {
@@ -42710,7 +42773,8 @@ interface CreateASubscriptionPaymentRuleResponse {
  *         "shipments_start_date": 3,
  *         "change_option": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateSubscriptionProductsResponse {
   shipment: {
@@ -42746,7 +42810,8 @@ interface UpdateSubscriptionProductsResponse {
  *         "shop_no": 1,
  *         "subscription_no": 15
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteSubscriptionProductsResponse {
   shipment: {
@@ -42762,7 +42827,8 @@ interface DeleteSubscriptionProductsResponse {
  *     "taxmanager": {
  *         "use": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveActivationInformationForTaxManagerResponse {
   taxmanager: {
@@ -42794,7 +42860,8 @@ interface RetrieveActivationInformationForTaxManagerResponse {
  *             "last_login_date": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfAdminUsersResponse {
   users: Array<{
@@ -42938,7 +43005,8 @@ interface RetrieveAListOfAdminUsersResponse {
  *         },
  *         "access_permission": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAdminUserDetailsResponse {
   user: {
@@ -43265,7 +43333,8 @@ interface RetrieveAdminUserDetailsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfBundlesResponse {
   bundleproducts: Array<{
@@ -43529,7 +43598,8 @@ interface RetrieveAListOfBundlesResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveABundleResponse {
   bundleproduct: {
@@ -43825,7 +43895,8 @@ interface RetrieveABundleResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateABundleResponse {
   bundleproduct: {
@@ -44098,7 +44169,8 @@ interface CreateABundleResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateABundleResponse {
   bundleproduct: {
@@ -44211,7 +44283,8 @@ interface UpdateABundleResponse {
  *     "bundleproduct": {
  *         "product_no": 28
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteABundleResponse {
   bundleproduct: {
@@ -44252,7 +44325,8 @@ interface DeleteABundleResponse {
  *             "not_for_sale": false
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsByCategoryResponse {
   products: Array<{
@@ -44271,7 +44345,8 @@ interface RetrieveAListOfProductsByCategoryResponse {
  * ```json
  * {
  *     "count": 10
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsByCategoryResponse {
   count: number;
@@ -44289,7 +44364,8 @@ interface RetrieveACountOfProductsByCategoryResponse {
  *             14
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface AddProductsToACategoryResponse {
   product: {
@@ -44309,7 +44385,8 @@ interface AddProductsToACategoryResponse {
  *         "auto_sort": "F",
  *         "fixed_sort": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductInProductCategoryResponse {
   product: {
@@ -44329,7 +44406,8 @@ interface UpdateAProductInProductCategoryResponse {
  *         "display_group": 1,
  *         "product_no": 12
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductByCategoryResponse {
   product: {
@@ -44356,7 +44434,8 @@ interface DeleteAProductByCategoryResponse {
  *             "fixed_sort": false
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsInMainCategoryResponse {
   products: Array<{
@@ -44372,7 +44451,8 @@ interface RetrieveAListOfProductsInMainCategoryResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsInMainCategoryResponse {
   count: number;
@@ -44390,7 +44470,8 @@ interface RetrieveACountOfProductsInMainCategoryResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface SetMainCategoryProductsResponse {
   product: {
@@ -44411,7 +44492,8 @@ interface SetMainCategoryProductsResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateFixedSortingOfProductsInMainCategoryResponse {
   product: {
@@ -44428,7 +44510,8 @@ interface UpdateFixedSortingOfProductsInMainCategoryResponse {
  *         "shop_no": 1,
  *         "product_no": 7
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductInMainCategoryResponse {
   product: {
@@ -44688,7 +44771,8 @@ interface DeleteAProductInMainCategoryResponse {
  *             "market_sync": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsResponse {
   products: Array<{
@@ -44800,7 +44884,8 @@ interface RetrieveAListOfProductsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsResponse {
   count: number;
@@ -45010,7 +45095,8 @@ interface RetrieveACountOfProductsResponse {
  *         ],
  *         "market_sync": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductResourceResponse {
   product: {
@@ -45340,7 +45426,8 @@ interface RetrieveAProductResourceResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAProductResponse {
   product: {
@@ -45649,7 +45736,8 @@ interface CreateAProductResponse {
  *             9
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductResponse {
   product: {
@@ -45787,7 +45875,8 @@ interface UpdateAProductResponse {
  *     "product": {
  *         "product_no": 28
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductResponse {
   product: {
@@ -45819,7 +45908,8 @@ interface DeleteAProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnAdditionalProductImageResponse {
   additionalimage: {
@@ -45856,7 +45946,8 @@ interface CreateAnAdditionalProductImageResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnAdditionalProductImageResponse {
   additionalimage: {
@@ -45877,7 +45968,8 @@ interface UpdateAnAdditionalProductImageResponse {
  *         "shop_no": 1,
  *         "product_no": 20
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnAdditionalProductImageResponse {
   additionalimage: {
@@ -45895,7 +45987,8 @@ interface DeleteAnAdditionalProductImageResponse {
  *         "status": "C",
  *         "product_no": 7
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductApprovalStatusResponse {
   approve: {
@@ -45914,7 +46007,8 @@ interface RetrieveAProductApprovalStatusResponse {
  *         "status": "N",
  *         "product_no": 7
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAProductApprovalRequestResponse {
   approve: {
@@ -45933,7 +46027,8 @@ interface CreateAProductApprovalRequestResponse {
  *         "status": "C",
  *         "product_no": 7
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductApprovalStatusResponse {
   approve: {
@@ -45962,7 +46057,8 @@ interface UpdateAProductApprovalStatusResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveUserDefinedPropertiesByProductResponse {
   products: {
@@ -45994,7 +46090,8 @@ interface RetrieveUserDefinedPropertiesByProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateUserDefinedPropertiesByProductResponse {
   product: {
@@ -46026,7 +46123,8 @@ interface UpdateUserDefinedPropertiesByProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteUserDefinedPropertiesByProductResponse {
   product: {
@@ -46062,7 +46160,8 @@ interface DeleteUserDefinedPropertiesByProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductDecorationImagesResponse {
   decorationimage: {
@@ -46102,7 +46201,8 @@ interface RetrieveAListOfProductDecorationImagesResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface SetDecorationImagesForAProductResponse {
   decorationimage: {
@@ -46143,7 +46243,8 @@ interface SetDecorationImagesForAProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductDecorationImagesResponse {
   decorationimage: {
@@ -46168,7 +46269,8 @@ interface UpdateProductDecorationImagesResponse {
  *         "shop_no": 1,
  *         "code": "icon_02_01"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RemoveAProductDecorationImageResponse {
   decorationimage: {
@@ -46186,7 +46288,8 @@ interface RemoveAProductDecorationImageResponse {
  *         "mobile_discount_price": "6000.00",
  *         "app_discount_price": "5000.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductDiscountedPriceResponse {
   discountprice: {
@@ -46201,7 +46304,8 @@ interface RetrieveAProductDiscountedPriceResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductViewsResponse {
   count: number;
@@ -46227,7 +46331,8 @@ interface RetrieveACountOfProductViewsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductIconsResponse {
   icons: {
@@ -46262,7 +46367,8 @@ interface RetrieveAListOfProductIconsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface SetIconsForAProductResponse {
   icon: {
@@ -46297,7 +46403,8 @@ interface SetIconsForAProductResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductIconsResponse {
   icon: {
@@ -46320,7 +46427,8 @@ interface UpdateProductIconsResponse {
  *         "shop_no": 1,
  *         "code": "custom_1"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RemoveAProductIconResponse {
   icon: {
@@ -46341,7 +46449,8 @@ interface RemoveAProductIconResponse {
  *         "tiny_image": "https://{domain}/web/product/tiny/201801/995feab7d359875e073ae82b48192a7b.jpeg",
  *         "small_image": "https://{domain}/web/product/small/201801/995feab7d359875e073ae82b48192a7b.jpeg"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UploadProductImagesResponse {
   image: {
@@ -46362,7 +46471,8 @@ interface UploadProductImagesResponse {
  *         "shop_no": 1,
  *         "product_no": 20
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteProductImagesResponse {
   image: {
@@ -46389,7 +46499,8 @@ interface DeleteProductImagesResponse {
  *             "memo": "This is a sample memo."
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductMemosResponse {
   memos: Array<{
@@ -46410,7 +46521,8 @@ interface RetrieveAListOfProductMemosResponse {
  *         "created_date": "2018-01-18T11:19:27+09:00",
  *         "memo": "This is a sample memo."
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductMemoResponse {
   memo: {
@@ -46431,7 +46543,8 @@ interface RetrieveAProductMemoResponse {
  *         "created_date": "2018-01-18T11:19:27+09:00",
  *         "memo": "This is a sample memo."
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAProductMemoResponse {
   memo: {
@@ -46452,7 +46565,8 @@ interface CreateAProductMemoResponse {
  *         "created_date": "2018-01-18T11:19:27+09:00",
  *         "memo": "Curabitur mollis consequat ipsum ac."
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductMemoResponse {
   memo: {
@@ -46470,7 +46584,8 @@ interface UpdateAProductMemoResponse {
  *     "memo": {
  *         "memo_no": 12
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductMemoResponse {
   memo: {
@@ -46561,7 +46676,8 @@ interface DeleteAProductMemoResponse {
  *             "size_limit": 3
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductOptionsResponse {
   option: {
@@ -46661,7 +46777,8 @@ interface RetrieveAListOfProductOptionsResponse {
  *             "size_limit": 3
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateProductOptionsResponse {
   option: {
@@ -46783,7 +46900,8 @@ interface CreateProductOptionsResponse {
  *             "size_limit": 3
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductOptionsResponse {
   option: {
@@ -46829,7 +46947,8 @@ interface UpdateProductOptionsResponse {
  *     "option": {
  *         "product_no": 24
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductOptionResponse {
   option: {
@@ -46850,7 +46969,8 @@ interface DeleteAProductOptionResponse {
  *         "meta_alt": "image1, image2",
  *         "search_engine_exposure": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductSSeoSettingsResponse {
   seo: {
@@ -46877,7 +46997,8 @@ interface RetrieveAProductSSeoSettingsResponse {
  *         "meta_alt": "Upadted Alt Text",
  *         "search_engine_exposure": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductSeoSettingsResponse {
   seo: {
@@ -46896,7 +47017,8 @@ interface UpdateProductSeoSettingsResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfAProductSProductTagsResponse {
   count: number;
@@ -46913,7 +47035,8 @@ interface RetrieveACountOfAProductSProductTagsResponse {
  *             "Tag2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfAProductSProductTagsResponse {
   tags: {
@@ -46934,7 +47057,8 @@ interface RetrieveAListOfAProductSProductTagsResponse {
  *             "Tag2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateProductTagsResponse {
   tag: {
@@ -46953,7 +47077,8 @@ interface CreateProductTagsResponse {
  *         "product_no": 7,
  *         "tag": "Tag1"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductTagResponse {
   tag: {
@@ -47019,7 +47144,8 @@ interface DeleteAProductTagResponse {
  *             "image": "https://{domain}/web/product/medium/202402/b51c97e46192e6e2b97732cf196829ed.jpg"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductVariantsResponse {
   variants: Array<{
@@ -47072,7 +47198,8 @@ interface RetrieveAListOfProductVariantsResponse {
  *         "safety_inventory": 8,
  *         "image": "https://{domain}/web/product/extra/202402/620fafeb5c3f4616887b96c40579cbe2.png"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductVariantResponse {
   variant: {
@@ -47129,7 +47256,8 @@ interface RetrieveAProductVariantResponse {
  *             "safety_inventory": 10
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductVariantResponse {
   variant: {
@@ -47219,7 +47347,8 @@ interface UpdateAProductVariantResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateMultipleProductVariantsResponse {
   variants: Array<{
@@ -47254,7 +47383,8 @@ interface UpdateMultipleProductVariantsResponse {
  *         "product_no": 16,
  *         "variant_code": "P000000P000A"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductVariantResponse {
   variant: {
@@ -47278,7 +47408,8 @@ interface DeleteAProductVariantResponse {
  *         "safety_inventory": 0,
  *         "origin_code": "W00000BT"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveInventoryDetailsOfAProductVariantResponse {
   inventory: {
@@ -47309,7 +47440,8 @@ interface RetrieveInventoryDetailsOfAProductVariantResponse {
  *         "safety_inventory": 8,
  *         "origin_code": "W00000BT"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductVariantInventoryResponse {
   inventory: {
@@ -47341,7 +47473,8 @@ interface UpdateAProductVariantInventoryResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveUserDefinedPropertiesResponse {
   products: {
@@ -47368,7 +47501,8 @@ interface RetrieveUserDefinedPropertiesResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateUserDefinedPropertiesResponse {
   product: {
@@ -47395,7 +47529,8 @@ interface CreateUserDefinedPropertiesResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateUserDefinedPropertiesResponse {
   product: {
@@ -47418,7 +47553,8 @@ interface UpdateUserDefinedPropertiesResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteUserDefinedPropertiesResponse {
   product: {
@@ -47451,7 +47587,8 @@ interface DeleteUserDefinedPropertiesResponse {
  *             "path": "https://{domain}/web/upload/image_custom_615421761805558.gif"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfDecorationImagesResponse {
   decorationimages: Array<{
@@ -47482,7 +47619,8 @@ interface RetrieveAListOfDecorationImagesResponse {
  *             "path": "https://{domain}/web/upload/custom_115855429954932.gif"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfIconsResponse {
   icons: Array<{
@@ -47503,7 +47641,8 @@ interface RetrieveAListOfIconsResponse {
  *             "path": "https://{domain}/web/upload/NNEditor/20180130/4672d70e72991f3e54627a8be4aea995.png"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UploadImagesResponse {
   images: Array<{
@@ -47762,7 +47901,8 @@ interface UploadImagesResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnOrderCancellationResponse {
   cancellation: {
@@ -47974,7 +48114,8 @@ interface RetrieveAnOrderCancellationResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateMultipleOrderCancellationsResponse {
   cancellation: Array<{
@@ -48035,7 +48176,8 @@ interface CreateMultipleOrderCancellationsResponse {
  *             "exposed_undone_reason": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ChangeCancellationDetailsInBulkResponse {
   cancellation: Array<{
@@ -48089,7 +48231,8 @@ interface ChangeCancellationDetailsInBulkResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateACancellationRequestForMultipleItemsResponse {
   cancellationrequests: Array<{
@@ -48126,7 +48269,8 @@ interface CreateACancellationRequestForMultipleItemsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RejectACancellationRequestForMultipleItemsResponse {
   cancellationrequests: Array<{
@@ -48181,7 +48325,8 @@ interface RejectACancellationRequestForMultipleItemsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/cashreceipt?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCashReceiptsResponse {
   cashreceipt: Array<{
@@ -48222,7 +48367,8 @@ interface RetrieveAListOfCashReceiptsResponse {
  *         "supply_price": "12273.00",
  *         "vat": "1227.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACashReceiptResponse {
   cashreceipt: {
@@ -48255,7 +48401,8 @@ interface CreateACashReceiptResponse {
  *         "supply_price": "12273.00",
  *         "vat": "1227.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACashReceiptResponse {
   cashreceipt: {
@@ -48281,7 +48428,8 @@ interface UpdateACashReceiptResponse {
  *         "order_id": "20201013-0000096",
  *         "status": "canceled_request"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACashReceiptCancellationResponse {
   cancellation: {
@@ -48306,7 +48454,8 @@ interface UpdateACashReceiptCancellationResponse {
  *         "shipping_company_name": "KOREA EXPRESS",
  *         "collect_tracking_no": "636945749436"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACollectionRequestResponse {
   collectrequest: {
@@ -48327,7 +48476,8 @@ interface UpdateACollectionRequestResponse {
  *         "payments_control": "T",
  *         "direct_url": "https://samplemall.cafe24.com/disp/admin/myapps/list"
  *     }
- * }```
+ * }
+ * ```
  */
 interface OrderControlResponse {
   control: {
@@ -48402,7 +48552,8 @@ interface OrderControlResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateADraftOrderResponse {
   draftorders: Array<{
@@ -48921,7 +49072,8 @@ interface CreateADraftOrderResponse {
  *         "return_invoice_success": null,
  *         "return_invoice_fail_reason": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnExchangeResponse {
   exchange: {
@@ -49335,7 +49487,8 @@ interface RetrieveAnExchangeResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateMultipleExchangesResponse {
   exchange: Array<{
@@ -49414,7 +49567,8 @@ interface CreateMultipleExchangesResponse {
  *             "exposed_undone_reason": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateMultipleOrderExchangesResponse {
   exchange: Array<{
@@ -49477,7 +49631,8 @@ interface UpdateMultipleOrderExchangesResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface BulkExchangeRequestApiResponse {
   exchangerequests: Array<{
@@ -49529,7 +49684,8 @@ interface BulkExchangeRequestApiResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RejectAnExchangeRequestForMultipleItemsResponse {
   exchangerequests: Array<{
@@ -49578,7 +49734,8 @@ interface RejectAnExchangeRequestForMultipleItemsResponse {
  *             "post_express_flag": "S"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateShippingInformationForMultipleOrdersViaFulfillmentResponse {
   fulfillments: Array<{
@@ -49611,7 +49768,8 @@ interface CreateShippingInformationForMultipleOrdersViaFulfillmentResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/labels?limit=100&offset=100"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveOrderLabelsResponse {
   labels: {
@@ -49646,7 +49804,8 @@ interface RetrieveOrderLabelsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateMultipleOrderLabelsResponse {
   labels: Array<{
@@ -50136,7 +50295,8 @@ interface CreateMultipleOrderLabelsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/orders?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfOrdersResponse {
   orders: Array<{
@@ -50546,7 +50706,8 @@ interface RetrieveAListOfOrdersResponse {
  *         "social_member_code": null,
  *         "social_name": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnOrderResponse {
   order: {
@@ -50706,7 +50867,8 @@ interface RetrieveAnOrderResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfOrdersResponse {
   count: number;
@@ -50742,7 +50904,8 @@ interface RetrieveACountOfOrdersResponse {
  *             "show_shipping_address": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateStatusForMultipleOrdersResponse {
   orders: Array<{
@@ -50771,7 +50934,8 @@ interface UpdateStatusForMultipleOrdersResponse {
  *         "collect_points": "F",
  *         "show_shipping_address": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderStatusResponse {
   order: {
@@ -50792,7 +50956,8 @@ interface UpdateAnOrderStatusResponse {
  *         "shop_no": 1,
  *         "order_id": "20190805-0000011"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RemoveAutoCalculationSettingOfAnOrderResponse {
   autocalculation: {
@@ -50824,7 +50989,8 @@ interface RemoveAutoCalculationSettingOfAnOrderResponse {
  *         "buyer_address1": "sample street New York",
  *         "buyer_address2": "34"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveCustomerDetailsOfAnOrderResponse {
   buyer: {
@@ -50861,7 +51027,8 @@ interface RetrieveCustomerDetailsOfAnOrderResponse {
  *         "cellphone": "010-0000-0000",
  *         "customer_notification": "Customer Notify Sample"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateCustomerInformationOfAnOrderResponse {
   buyer: {
@@ -50903,7 +51070,8 @@ interface UpdateCustomerInformationOfAnOrderResponse {
  *             "user_name": "John Doe"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerHistoryOfAnOrderResponse {
   history: Array<{
@@ -50939,7 +51107,8 @@ interface RetrieveAListOfCustomerHistoryOfAnOrderResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderCancellationResponse {
   cancellation: {
@@ -50978,7 +51147,8 @@ interface CreateAnOrderCancellationResponse {
  *         "expose_order_detail": "T",
  *         "exposed_undone_reason": "Dear customer, It has been undone as discussed. Thank you."
  *     }
- * }```
+ * }
+ * ```
  */
 interface ChangeCancellationDetailsResponse {
   cancellation: {
@@ -51028,7 +51198,8 @@ interface ChangeCancellationDetailsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderExchangeResponse {
   exchange: {
@@ -51088,7 +51259,8 @@ interface CreateAnOrderExchangeResponse {
  *         "expose_order_detail": null,
  *         "exposed_undone_reason": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderExchangeResponse {
   exchange: {
@@ -51145,7 +51317,8 @@ interface UpdateAnOrderExchangeResponse {
  *             "fail": null
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RejectAnExchangeRequestResponse {
   exchangerequests: {
@@ -51620,7 +51793,8 @@ interface RejectAnExchangeRequestResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfOrderItemsResponse {
   items: Array<{
@@ -52026,7 +52200,8 @@ interface RetrieveAListOfOrderItemsResponse {
  *             "order_status_before_cs": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderItemResponse {
   items: Array<{
@@ -52175,7 +52350,8 @@ interface CreateAnOrderItemResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderItemResponse {
   item: {
@@ -52209,7 +52385,8 @@ interface UpdateAnOrderItemResponse {
  *             "label_2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnOrderLabelResponse {
   labels: {
@@ -52231,7 +52408,8 @@ interface RetrieveAnOrderLabelResponse {
  *             "label_2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderLabelResponse {
   label: {
@@ -52253,7 +52431,8 @@ interface CreateAnOrderLabelResponse {
  *             "label_2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderLabelResponse {
   label: {
@@ -52272,7 +52451,8 @@ interface UpdateAnOrderLabelResponse {
  *         "order_item_code": "20220928-0000013-01",
  *         "name": "label_1"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnOrderLabelResponse {
   label: {
@@ -52304,7 +52484,8 @@ interface DeleteAnOrderLabelResponse {
  *         ],
  *         "bundle_additional_options": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateOrderItemOptionsResponse {
   item: {
@@ -52339,7 +52520,8 @@ interface CreateOrderItemOptionsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface EditOrderItemOptionsResponse {
   item: {
@@ -52403,7 +52585,8 @@ interface EditOrderItemOptionsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfOrderMemosResponse {
   memos: Array<{
@@ -52450,7 +52633,8 @@ interface RetrieveAListOfOrderMemosResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderMemoResponse {
   memo: {
@@ -52496,7 +52680,8 @@ interface CreateAnOrderMemoResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderMemoResponse {
   memo: {
@@ -52524,7 +52709,8 @@ interface UpdateAnOrderMemoResponse {
  *         "shop_no": 1,
  *         "memo_no": 13
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnOrderMemoResponse {
   memo: {
@@ -52549,7 +52735,8 @@ interface DeleteAnOrderMemoResponse {
  *         "initial_estimated_payment_amount": "11000.00",
  *         "change_payment_amount_reason": "Remove shipping charge, add return fee"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderPaymentStatusResponse {
   payment: {
@@ -52601,7 +52788,8 @@ interface UpdateAnOrderPaymentStatusResponse {
  *             "claim_code": "B20221228-0000199"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrievePaymentHistoryOfAnOrderResponse {
   paymenttimeline: Array<{
@@ -52664,7 +52852,8 @@ interface RetrievePaymentHistoryOfAnOrderResponse {
  *         "payment_datetime": "2020-09-05 21:57:30",
  *         "created_datetime": "2020-09-05 21:53:37"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrievePaymentDetailsOfAnOrderResponse {
   paymenttimeline: {
@@ -52723,7 +52912,8 @@ interface RetrievePaymentDetailsOfAnOrderResponse {
  *             "shipping_code": "D-20200928-0000011-00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfRecipientsOfAnOrderResponse {
   receivers: Array<{
@@ -52826,7 +53016,8 @@ interface RetrieveAListOfRecipientsOfAnOrderResponse {
  *             "use_fast_delivery_time": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateOrderRecipientsResponse {
   receivers: Array<{
@@ -52902,7 +53093,8 @@ interface UpdateOrderRecipientsResponse {
  *         },
  *         "use_fast_delivery_time": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface ChangeShippingInformationResponse {
   receiver: {
@@ -52996,7 +53188,8 @@ interface ChangeShippingInformationResponse {
  *             "shipping_code": "D-20180903-0000243-01"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfRecipientHistoryOfAnOrderResponse {
   history: Array<{
@@ -53036,7 +53229,8 @@ interface RetrieveAListOfRecipientHistoryOfAnOrderResponse {
  *         "status": "complete",
  *         "reason": "Refund complete"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderRefundResponse {
   refund: {
@@ -53068,7 +53262,8 @@ interface UpdateAnOrderRefundResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderReturnResponse {
   return: {
@@ -53132,7 +53327,8 @@ interface CreateAnOrderReturnResponse {
  *         "expose_order_detail": null,
  *         "exposed_undone_reason": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderReturnResponse {
   return: {
@@ -53215,7 +53411,8 @@ interface UpdateAnOrderReturnResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfShippingInformationOfAnOrderResponse {
   shipments: Array<{
@@ -53251,7 +53448,8 @@ interface RetrieveAListOfShippingInformationOfAnOrderResponse {
  *             "carrier_id": 1
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderShippingInformationResponse {
   shipments: Array<{
@@ -53277,7 +53475,8 @@ interface CreateAnOrderShippingInformationResponse {
  *         "tracking_no": null,
  *         "shipping_company_code": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnOrderShippingResponse {
   shipment: {
@@ -53302,7 +53501,8 @@ interface UpdateAnOrderShippingResponse {
  *             "20181203-0000021-02"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnOrderShippingResponse {
   shipment: {
@@ -53389,7 +53589,8 @@ interface DeleteAnOrderShippingResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveShippingFeeCancellationDetailsOfAnOrderResponse {
   shippingfeecancellation: Array<{
@@ -53432,7 +53633,8 @@ interface RetrieveShippingFeeCancellationDetailsOfAnOrderResponse {
  *         "order_id": "20200814-0000011",
  *         "claim_code": "C20200814-0000001"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderShippingFeeCancellationResponse {
   shippingfeecancellation: {
@@ -53462,7 +53664,8 @@ interface CreateAnOrderShippingFeeCancellationResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnOrderCancellationOnStockShortageResponse {
   shortagecancellation: {
@@ -53507,7 +53710,8 @@ interface CreateAnOrderCancellationOnStockShortageResponse {
  *             "benefit_app_key": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse {
   benefits: Array<{
@@ -53596,7 +53800,8 @@ interface RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse {
  *         "vat_amount": "1600.00",
  *         "tax_amount": "1600.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CalculateTotalDueResponse {
   calculation: {
@@ -53674,7 +53879,8 @@ interface CalculateTotalDueResponse {
  *             "coupon_value_final": "0.00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCouponsAppliedToAnOrderResponse {
   coupons: Array<{
@@ -53703,7 +53909,8 @@ interface RetrieveAListOfCouponsAppliedToAnOrderResponse {
  *             "inflow_group_name": "Gmarket"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfTrafficSourceGroupsResponse {
   inflowgroups: Array<{
@@ -53720,7 +53927,8 @@ interface RetrieveAListOfTrafficSourceGroupsResponse {
  *         "inflow_group_id": "cafe24",
  *         "inflow_group_name": "Cafe24"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateATrafficSourceGroupResponse {
   inflowgroup: {
@@ -53737,7 +53945,8 @@ interface CreateATrafficSourceGroupResponse {
  *         "inflow_group_id": "cafe24",
  *         "inflow_group_name": "Cafe24"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateATrafficSourceGroupResponse {
   inflowgroup: {
@@ -53753,7 +53962,8 @@ interface UpdateATrafficSourceGroupResponse {
  *     "inflowgroup": {
  *         "inflow_group_id": "cafe24"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteATrafficSourceGroupResponse {
   inflowgroup: {
@@ -53777,7 +53987,8 @@ interface DeleteATrafficSourceGroupResponse {
  *             "inflow_icon": "https://img.echosting.cafe24.com/icon/ico_route_cafe24.gif"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfGroupTrafficSourcesResponse {
   inflows: Array<{
@@ -53796,7 +54007,8 @@ interface RetrieveAListOfGroupTrafficSourcesResponse {
  *         "inflow_name": "EdibotSocial",
  *         "inflow_icon": "https://img.echosting.cafe24.com/icon/ico_route_cafe24.gif"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAGroupTrafficSourceResponse {
   inflow: {
@@ -53815,7 +54027,8 @@ interface CreateAGroupTrafficSourceResponse {
  *         "inflow_name": "EdibotSocial",
  *         "inflow_icon": "https://img.echosting.cafe24.com/icon/ico_route_cafe24.gif"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAGroupTrafficSourceResponse {
   inflow: {
@@ -53833,7 +54046,8 @@ interface UpdateAGroupTrafficSourceResponse {
  *         "group_id": "cafe24",
  *         "inflow_id": "edibot_social"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAGroupTrafficSourceResponse {
   inflow: {
@@ -53894,7 +54108,8 @@ interface DeleteAGroupTrafficSourceResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfAdminMemosForAnOrderResponse {
   memos: Array<{
@@ -53966,7 +54181,8 @@ interface RetrieveAListOfAdminMemosForAnOrderResponse {
  *             "payment_amount": "4700.00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAPaymentAmountResponse {
   paymentamount: Array<{
@@ -54009,7 +54225,8 @@ interface RetrieveAPaymentAmountResponse {
  *             "sales_channel_icon": "https://img.echosting.cafe24.com/icon/ico_route_gmarket.jpg"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfSalesChannelsResponse {
   saleschannels: Array<{
@@ -54028,7 +54245,8 @@ interface RetrieveAListOfSalesChannelsResponse {
  *         "sales_channel_name": "MORUGI",
  *         "sales_channel_icon": "https://img.echosting.cafe24.com/icon/ico_route_morugi.jpg"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateASalesChannelResponse {
   saleschannel: {
@@ -54047,7 +54265,8 @@ interface CreateASalesChannelResponse {
  *         "sales_channel_name": "MORUGI",
  *         "sales_channel_icon": "https://img.echosting.cafe24.com/icon/ico_route_morugi.jpg"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASalesChannelResponse {
   saleschannel: {
@@ -54064,7 +54283,8 @@ interface UpdateASalesChannelResponse {
  *     "saleschannel": {
  *         "sales_channel_id": "MORUGI"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteASalesChannelResponse {
   saleschannel: {
@@ -54104,7 +54324,8 @@ interface DeleteASalesChannelResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdatePaymentStatusForMultipleOrdersResponse {
   payments: Array<{
@@ -54261,7 +54482,8 @@ interface UpdatePaymentStatusForMultipleOrdersResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfRefundsResponse {
   refunds: Array<{
@@ -54375,7 +54597,8 @@ interface RetrieveAListOfRefundsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveARefundResponse {
   refund: {
@@ -54520,7 +54743,8 @@ interface RetrieveARefundResponse {
  *             "hredf": "https://sample.cafe24api.com/api/v2/admin/reservations?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrievePreOrderItemResponse {
   reservations: Array<{
@@ -55069,7 +55293,8 @@ interface RetrievePreOrderItemResponse {
  *         "return_invoice_success": null,
  *         "return_invoice_fail_reason": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAReturnResponse {
   return: {
@@ -55321,7 +55546,8 @@ interface RetrieveAReturnResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateMultipleOrderReturnsResponse {
   return: Array<{
@@ -55430,7 +55656,8 @@ interface CreateMultipleOrderReturnsResponse {
  *             "exposed_undone_reason": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateAReturnResponse {
   return: Array<{
@@ -55505,7 +55732,8 @@ interface UpdateAReturnResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateAReturnRequestForMultipleItemsResponse {
   returnrequests: Array<{
@@ -55556,7 +55784,8 @@ interface CreateAReturnRequestForMultipleItemsResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RejectAReturnRequestForMultipleItemsResponse {
   returnrequests: Array<{
@@ -55603,7 +55832,8 @@ interface RejectAReturnRequestForMultipleItemsResponse {
  *             "carrier_id": 1
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateShippingInformationForMultipleOrdersResponse {
   shipments: Array<{
@@ -55642,7 +55872,8 @@ interface CreateShippingInformationForMultipleOrdersResponse {
  *             "shipping_company_code": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateMultipleOrderShippingsResponse {
   shipments: Array<{
@@ -55870,7 +56101,8 @@ interface UpdateMultipleOrderShippingsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveASubscriptionResponse {
   shipments: Array<{
@@ -55966,7 +56198,8 @@ interface RetrieveASubscriptionResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateASubscriptionResponse {
   shipments: Array<{
@@ -55992,7 +56225,8 @@ interface CreateASubscriptionResponse {
  *         "shipping_message": "Do Not Knock or Ring Bell",
  *         "subscription_state": "C"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASubscriptionResponse {
   shipments: {
@@ -56028,7 +56262,8 @@ interface UpdateASubscriptionResponse {
  *             "changed_variant_code": "P00000BQ000D"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateProductVariantsInSubscriptionResponse {
   items: Array<{
@@ -56090,7 +56325,8 @@ interface UpdateProductVariantsInSubscriptionResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerTiersResponse {
   customergroups: Array<{
@@ -56144,7 +56380,8 @@ interface RetrieveAListOfCustomerTiersResponse {
  * ```json
  * {
  *     "count": 1
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomerTiersResponse {
   count: number;
@@ -56198,7 +56435,8 @@ interface RetrieveACountOfCustomerTiersResponse {
  *             "number_of_discount_limit": null
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerTierResponse {
   customergroup: {
@@ -56265,7 +56503,8 @@ interface RetrieveACustomerTierResponse {
  *             "fixed_group": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface UpdateACustomerSCustomerTierResponse {
   customers: Array<{
@@ -56303,7 +56542,8 @@ interface UpdateACustomerSCustomerTierResponse {
  *         "discount_limit_begin_date": "2022-12-05",
  *         "discount_limit_end_date": "2023-01-05"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveCustomerTierSettingsResponse {
   customergroup: {
@@ -56379,7 +56619,8 @@ interface RetrieveCustomerTierSettingsResponse {
  *             "fixed_group": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomersResponse {
   customers: Array<{
@@ -56413,7 +56654,8 @@ interface RetrieveAListOfCustomersResponse {
  *         "shop_no": 1,
  *         "member_id": "sampleid"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnAccountResponse {
   customer: {
@@ -56435,7 +56677,8 @@ interface DeleteAnAccountResponse {
  *         "required_purchase_amount": 50000,
  *         "required_purchase_count": 5
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveCustomerTierAutoUpdateDetailsResponse {
   autoupdate: {
@@ -56454,7 +56697,8 @@ interface RetrieveCustomerTierAutoUpdateDetailsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomerMemosResponse {
   count: number;
@@ -56482,7 +56726,8 @@ interface RetrieveACountOfCustomerMemosResponse {
  *             "created_date": "2018-01-18T11:19:27+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerMemosResponse {
   memos: Array<{
@@ -56507,7 +56752,8 @@ interface RetrieveAListOfCustomerMemosResponse {
  *         "important_flag": "T",
  *         "created_date": "2018-01-18T11:19:27+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerMemoResponse {
   memo: {
@@ -56532,7 +56778,8 @@ interface RetrieveACustomerMemoResponse {
  *         "important_flag": "T",
  *         "created_date": "2018-01-18T11:19:27+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACustomerMemoResponse {
   memo: {
@@ -56557,7 +56804,8 @@ interface CreateACustomerMemoResponse {
  *         "important_flag": "T",
  *         "created_date": "2018-01-18T11:19:27+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACustomerMemoResponse {
   memo: {
@@ -56578,7 +56826,8 @@ interface UpdateACustomerMemoResponse {
  *         "shop_no": 1,
  *         "memo_no": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteACustomerMemoResponse {
   memo: {
@@ -56611,7 +56860,8 @@ interface DeleteACustomerMemoResponse {
  *             "payment_method_id": "20240808-0000257"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerSListOfPaymentMethodsResponse {
   paymentinformation: Array<{
@@ -56633,7 +56883,8 @@ interface RetrieveACustomerSListOfPaymentMethodsResponse {
  *         "shop_no": 1,
  *         "member_id": "sampleid"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteCustomerSPaymentInformationResponse {
   paymentinformation: {
@@ -56651,7 +56902,8 @@ interface DeleteCustomerSPaymentInformationResponse {
  *         "member_id": "sampleid",
  *         "payment_method_id": "20240808-0000123"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteCustomerSPaymentInformationByPaymentMethodIdResponse {
   paymentinformation: {
@@ -56681,7 +56933,8 @@ interface DeleteCustomerSPaymentInformationByPaymentMethodIdResponse {
  *             "use_push_flag": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAppInstallationInformationResponse {
   plusapp: Array<{
@@ -56704,7 +56957,8 @@ interface RetrieveAppInstallationInformationResponse {
  *         "social_member_code": "U1e0014229a08c2f95e12ee29904da597",
  *         "linked_date": "2019-02-18T13:03:11+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerSSocialAccountResponse {
   social: {
@@ -56752,7 +57006,8 @@ interface RetrieveACustomerSSocialAccountResponse {
  *             "image_resize": 587
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfBoardsResponse {
   boards: Array<{
@@ -56886,7 +57141,8 @@ interface RetrieveAListOfBoardsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/boards/4/articles?limit=10&offset=20"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfPostsForABoardResponse {
   articles: Array<{
@@ -57061,7 +57317,8 @@ interface RetrieveAListOfPostsForABoardResponse {
  *             "naverpay_review_id": "naverid"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateABoardPostResponse {
   articles: Array<{
@@ -57163,7 +57420,8 @@ interface CreateABoardPostResponse {
  *         "display_time_start_hour": "1",
  *         "display_time_end_hour": "12"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateABoardPostResponse {
   article: {
@@ -57218,7 +57476,8 @@ interface UpdateABoardPostResponse {
  *         "board_no": 1,
  *         "article_no": 1
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteABoardPostResponse {
   article: {
@@ -57315,7 +57574,8 @@ interface DeleteABoardPostResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCommentsForABoardPostResponse {
   comments: Array<{
@@ -57371,7 +57631,8 @@ interface RetrieveAListOfCommentsForABoardPostResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACommentForABoardPostResponse {
   comment: {
@@ -57406,7 +57667,8 @@ interface CreateACommentForABoardPostResponse {
  *         "article_no": 1,
  *         "comment_no": 1
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteACommentForABoardPostResponse {
   comment: {
@@ -57489,7 +57751,8 @@ interface DeleteACommentForABoardPostResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveCommentsInBulkResponse {
   comments: Array<{
@@ -57530,7 +57793,8 @@ interface RetrieveCommentsInBulkResponse {
  *         "meta_description": "[BOARD_GUIDE]",
  *         "meta_keywords": "[MALL_NAME], keyword1, keyword2"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSeoSettingsForBoardResponse {
   seo: {
@@ -57555,7 +57819,8 @@ interface RetrieveSeoSettingsForBoardResponse {
  *         "meta_description": "[BOARD_GUIDE]",
  *         "meta_keywords": "[MALL_NAME], keyword1, keyword2"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateSeoSettingsForBoardResponse {
   seo: {
@@ -57586,7 +57851,8 @@ interface UpdateSeoSettingsForBoardResponse {
  *             "rating_average": 3.3300000000000001
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse {
   monthlyreviews: Array<{
@@ -57669,7 +57935,8 @@ interface RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/urgentinquiry?limit=10&offset=20"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnUrgentInquiryPostResponse {
   urgentinquiry: Array<{
@@ -57725,7 +57992,8 @@ interface RetrieveAnUrgentInquiryPostResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAReplyForUrgentInquiryPostResponse {
   reply: {
@@ -57771,7 +58039,8 @@ interface RetrieveAReplyForUrgentInquiryPostResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAReplyForUrgentInquiryPostResponse {
   reply: {
@@ -57817,7 +58086,8 @@ interface CreateAReplyForUrgentInquiryPostResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAReplyForUrgentInquiryPostResponse {
   reply: {
@@ -57861,7 +58131,8 @@ interface UpdateAReplyForUrgentInquiryPostResponse {
  *             "description": "Zoom-in"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfDesginIconsResponse {
   icons: Array<{
@@ -57923,7 +58194,8 @@ interface RetrieveAListOfDesginIconsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfThemesResponse {
   themes: Array<{
@@ -57951,7 +58223,8 @@ interface RetrieveAListOfThemesResponse {
  * ```json
  * {
  *     "count": 1
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfThemesResponse {
   count: number;
@@ -57982,7 +58255,8 @@ interface RetrieveACountOfThemesResponse {
  *             "https://myshop.cafe24.com/shop1/skin-skin1"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAThemeResponse {
   theme: {
@@ -58015,7 +58289,8 @@ interface RetrieveAThemeResponse {
  *         "path": "/sample.html",
  *         "source": "<!--@layout(/layout/basic/main.html)-->\\n\\n<div module=\\\"Layout_Dummy\\\"></div>"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAThemePageResponse {
   page: {
@@ -58037,7 +58312,8 @@ interface RetrieveAThemePageResponse {
  *         "source": "<!--@layout(/layout/basic/main.html)-->\\n\\n<div module=\\\"Layout_Dummy\\\"></div>",
  *         "display_location": "MAIN"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAThemePageResponse {
   page: {
@@ -58101,7 +58377,8 @@ interface CreateAThemePageResponse {
  *             "available_coupon": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerBenefitsResponse {
   benefits: Array<{
@@ -58129,7 +58406,8 @@ interface RetrieveAListOfCustomerBenefitsResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomerBenefitsResponse {
   count: number;
@@ -58189,7 +58467,8 @@ interface RetrieveACountOfCustomerBenefitsResponse {
  *         "gift": null,
  *         "gift_product_bundle": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerBenefitResponse {
   benefit: {
@@ -58284,7 +58563,8 @@ interface RetrieveACustomerBenefitResponse {
  *         "gift": null,
  *         "gift_product_bundle": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACustomerBenefitResponse {
   benefit: {
@@ -58379,7 +58659,8 @@ interface CreateACustomerBenefitResponse {
  *         "gift": null,
  *         "gift_product_bundle": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACustomerBenefitResponse {
   benefit: {
@@ -58428,7 +58709,8 @@ interface UpdateACustomerBenefitResponse {
  *         "shop_no": 1,
  *         "benefit_no": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteACustomerBenefitResponse {
   benefit: {
@@ -58442,7 +58724,8 @@ interface DeleteACustomerBenefitResponse {
  * ```json
  * {
  *     "count": 24
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCouponsResponse {
   count: number;
@@ -58612,7 +58895,8 @@ interface RetrieveACountOfCouponsResponse {
  *             "send_email_for_issue": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCouponsResponse {
   coupons: Array<{
@@ -58732,7 +59016,8 @@ interface RetrieveAListOfCouponsResponse {
  *         },
  *         "discount_rate": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACouponResponse {
   coupon: {
@@ -58799,7 +59084,8 @@ interface CreateACouponResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/coupons/9000000000000000032/issues?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfIssuedCouponsResponse {
   issues: Array<{
@@ -58830,7 +59116,8 @@ interface RetrieveAListOfIssuedCouponsResponse {
  *             "9000000000000000031": 3
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateCouponIssuanceHistoryResponse {
   issues: {
@@ -58891,7 +59178,8 @@ interface CreateCouponIssuanceHistoryResponse {
  *             "available_end_datetime": "2019-09-23T23:00:00+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerCouponsResponse {
   coupons: Array<{
@@ -58920,7 +59208,8 @@ interface RetrieveAListOfCustomerCouponsResponse {
  * ```json
  * {
  *     "count": 7
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomerCouponsResponse {
   count: number;
@@ -58938,7 +59227,8 @@ interface RetrieveACountOfCustomerCouponsResponse {
  *             "9000000000000000041"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteACustomerCouponResponse {
   coupon: {
@@ -58978,7 +59268,8 @@ interface DeleteACustomerCouponResponse {
  *             "available_issue_count": 100
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfDiscountCodesResponse {
   discountcodes: Array<{
@@ -59020,7 +59311,8 @@ interface RetrieveAListOfDiscountCodesResponse {
  *         "available_user": "A",
  *         "max_usage_per_user": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveADiscountCodeResponse {
   discountcode: {
@@ -59068,7 +59360,8 @@ interface RetrieveADiscountCodeResponse {
  *         "available_user": "A",
  *         "max_usage_per_user": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateADiscountCodeResponse {
   discountcode: {
@@ -59116,7 +59409,8 @@ interface CreateADiscountCodeResponse {
  *         "available_user": "A",
  *         "max_usage_per_user": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateADiscountCodeResponse {
   discountcode: {
@@ -59146,7 +59440,8 @@ interface UpdateADiscountCodeResponse {
  *     "discountcode": {
  *         "discount_code_no": 23
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteADiscountCodeResponse {
   discountcode: {
@@ -59308,7 +59603,8 @@ interface DeleteADiscountCodeResponse {
  *             "use_notification_when_login": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveCouponCodesResponse {
   serialcoupons: Array<{
@@ -59432,7 +59728,8 @@ interface RetrieveCouponCodesResponse {
  *             "serial_code_length": 10
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface GenerateCouponCodeResponse {
   serialcoupons: {
@@ -59479,7 +59776,8 @@ interface GenerateCouponCodeResponse {
  *     "serialcoupon": {
  *         "coupon_no": "9000000000000000031"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteCouponCodeResponse {
   serialcoupon: {
@@ -59513,7 +59811,8 @@ interface DeleteCouponCodeResponse {
  *             "deleted": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveACodeOfCouponCodesResponse {
   serialcoupons: Array<{
@@ -59544,7 +59843,8 @@ interface RetrieveACodeOfCouponCodesResponse {
  *             "serial_code": "A1234567891Z"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RegisterACodeOfCouponCodesResponse {
   serialcoupons: Array<{
@@ -59565,7 +59865,8 @@ interface RegisterACodeOfCouponCodesResponse {
  *         "previous_version": "2019-12-11",
  *         "extension_type": "section"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnAppInformationResponse {
   app: {
@@ -59585,7 +59886,8 @@ interface RetrieveAnAppInformationResponse {
  *         "version": "2019-12-11",
  *         "extension_type": "section"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAnAppInformationResponse {
   app: {
@@ -59607,7 +59909,8 @@ interface UpdateAnAppInformationResponse {
  *         "automatic_payment": "F",
  *         "created_date": "2018-07-04T13:52:49+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetreiveACafe24StoreOrderResponse {
   order: {
@@ -59634,7 +59937,8 @@ interface RetreiveACafe24StoreOrderResponse {
  *         "automatic_payment": "F",
  *         "confirmation_url": "https://samplemall.cafe24.com/disp/common/myapps/order?signature=BAhpBBMxojw%3D--d1c0134218f0ff3c0f57cb3b57bcc34e6f170727"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateACafe24StoreOrderResponse {
   order: {
@@ -59686,7 +59990,8 @@ interface CreateACafe24StoreOrderResponse {
  *             "expiration_date": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCafe24StorePaymentsResponse {
   payments: Array<{
@@ -59712,7 +60017,8 @@ interface RetrieveAListOfCafe24StorePaymentsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCafe24StorePaymentsResponse {
   count: number;
@@ -59746,7 +60052,8 @@ interface RetrieveACountOfCafe24StorePaymentsResponse {
  *             "response_body": "{\"success\":false,\"error\":{\"message\" : \"\"\"Token \"4f735d6b-f18f-4eaf-969b-04f494ae29c0\" not found\"\"\",\"id\":null}}"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfDatabridgeWebhookLogsResponse {
   logs: Array<{
@@ -59778,7 +60085,8 @@ interface RetrieveAListOfDatabridgeWebhookLogsResponse {
  *             "active": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfRecipesResponse {
   recipes: Array<{
@@ -59802,7 +60110,8 @@ interface RetrieveAListOfRecipesResponse {
  *             "active": "T"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface CreateARecipeResponse {
   recipes: Array<{
@@ -59818,7 +60127,8 @@ interface CreateARecipeResponse {
  *     "recipe": {
  *         "recipe_code": "111490-111682"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteARecipeResponse {
   recipe: {
@@ -59866,7 +60176,8 @@ interface DeleteARecipeResponse {
  *             "updated_date": "2017-11-03T18:05:32+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfScriptTagsResponse {
   scripttags: Array<{
@@ -59888,7 +60199,8 @@ interface RetrieveAListOfScriptTagsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfScriptTagsResponse {
   count: number;
@@ -59919,7 +60231,8 @@ interface RetrieveACountOfScriptTagsResponse {
  *         "created_date": "2017-11-03T18:05:32+09:00",
  *         "updated_date": "2017-11-03T18:05:32+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAScriptTagResponse {
   scripttag: {
@@ -59961,7 +60274,8 @@ interface RetrieveAScriptTagResponse {
  *         "created_date": "2017-03-15T13:27:53+09:00",
  *         "updated_date": "2017-03-15T13:27:53+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAScriptTagResponse {
   scripttag: {
@@ -60003,7 +60317,8 @@ interface CreateAScriptTagResponse {
  *         "created_date": "2017-10-31T15:53:41+09:00",
  *         "updated_date": "2017-11-06T10:33:57+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAScriptTagResponse {
   scripttag: {
@@ -60027,7 +60342,8 @@ interface UpdateAScriptTagResponse {
  *     "scripttag": {
  *         "script_no": "1509699932016345"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAScriptTagResponse {
   scripttag: {
@@ -60067,7 +60383,8 @@ interface DeleteAScriptTagResponse {
  *             "response_body": "<html><head><title>403 Forbidden</title></head><body><center><h1>403 Forbidden</h1></center></body></html>"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfWebhookLogsResponse {
   logs: Array<{
@@ -60096,7 +60413,8 @@ interface RetrieveAListOfWebhookLogsResponse {
  *         ],
  *         "reception_status": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveWebhookSettingsResponse {
   webhook: {
@@ -60112,7 +60430,8 @@ interface RetrieveWebhookSettingsResponse {
  *     "webhook": {
  *         "reception_status": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface EditWebhookSettingsResponse {
   webhook: {
@@ -60175,7 +60494,8 @@ interface EditWebhookSettingsResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfAutoLayoutsResponse {
   autodisplay: Array<{
@@ -60224,7 +60544,8 @@ interface RetrieveAListOfAutoLayoutsResponse {
  *             41
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAutoLayoutForSelectedProductCategoryResponse {
   autodisplay: {
@@ -60273,7 +60594,8 @@ interface CreateAutoLayoutForSelectedProductCategoryResponse {
  *             41
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAutoLayoutForSelectedProductCategoryResponse {
   autodisplay: {
@@ -60302,7 +60624,8 @@ interface UpdateAutoLayoutForSelectedProductCategoryResponse {
  *     "autodisplay": {
  *         "display_no": 1
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAutoLayoutForSelectedProductCategoryResponse {
   autodisplay: {
@@ -60414,7 +60737,8 @@ interface DeleteAutoLayoutForSelectedProductCategoryResponse {
  *             "access_authority": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductCategoriesResponse {
   categories: Array<{
@@ -60470,7 +60794,8 @@ interface RetrieveAListOfProductCategoriesResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductCategoriesResponse {
   count: number;
@@ -60528,7 +60853,8 @@ interface RetrieveACountOfProductCategoriesResponse {
  *         "new_product_display_period": null,
  *         "access_authority": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductCategoryResponse {
   category: {
@@ -60631,7 +60957,8 @@ interface RetrieveAProductCategoryResponse {
  *         "new_product_display_period": null,
  *         "access_authority": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAProductCategoryResponse {
   category: {
@@ -60735,7 +61062,8 @@ interface CreateAProductCategoryResponse {
  *         "new_product_display_period": "W",
  *         "access_authority": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductCategoryResponse {
   category: {
@@ -60793,7 +61121,8 @@ interface UpdateAProductCategoryResponse {
  *     "category": {
  *         "category_no": 24
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAProductCategoryResponse {
   category: {
@@ -60825,7 +61154,8 @@ interface DeleteAProductCategoryResponse {
  *         "use_title_image_mobile": "F",
  *         "title_image_mobile": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveDecorationImageSettingsByCategoryResponse {
   decorationimage: {
@@ -60871,7 +61201,8 @@ interface RetrieveDecorationImageSettingsByCategoryResponse {
  *         "use_title_image_mobile": "F",
  *         "title_image_mobile": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateDecorationImagesOfAProductCategoryResponse {
   decorationimage: {
@@ -60906,7 +61237,8 @@ interface UpdateDecorationImagesOfAProductCategoryResponse {
  *         "meta_description": "This is a sample product.",
  *         "meta_keywords": "sample keyword1,sample keyword2, sample keyword3, ..."
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSeoSettingsByCategoryResponse {
   seo: {
@@ -60933,7 +61265,8 @@ interface RetrieveSeoSettingsByCategoryResponse {
  *         "meta_description": "This is a sample product.",
  *         "meta_keywords": "sample keyword1,sample keyword2, sample keyword3, ..."
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAProductCategorySeoResponse {
   seo: {
@@ -60967,7 +61300,8 @@ interface UpdateAProductCategorySeoResponse {
  *             "soldout_sort_type": "N"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfMainCategoriesResponse {
   mains: Array<{
@@ -61003,7 +61337,8 @@ interface RetrieveAListOfMainCategoriesResponse {
  *             "created_date": "2017-12-19T14:39:22+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfBrandsResponse {
   brands: Array<{
@@ -61022,7 +61357,8 @@ interface RetrieveAListOfBrandsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfBrandsResponse {
   count: number;
@@ -61040,7 +61376,8 @@ interface RetrieveACountOfBrandsResponse {
  *         "search_keyword": "keyword",
  *         "created_date": "2017-12-19T14:39:22+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateABrandResponse {
   brand: {
@@ -61065,7 +61402,8 @@ interface CreateABrandResponse {
  *         "search_keyword": "keyword",
  *         "created_date": "2017-12-19T14:39:22+09:00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateABrandResponse {
   brand: {
@@ -61085,7 +61423,8 @@ interface UpdateABrandResponse {
  *     "brand": {
  *         "brand_code": "B000000A"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteABrandResponse {
   brand: {
@@ -61117,7 +61456,8 @@ interface DeleteABrandResponse {
  *             "product_count": 3
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomCategoriesResponse {
   classifications: Array<{
@@ -61136,7 +61476,8 @@ interface RetrieveAListOfCustomCategoriesResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomCategoriesResponse {
   count: number;
@@ -61162,7 +61503,8 @@ interface RetrieveACountOfCustomCategoriesResponse {
  *             "use_manufacturer": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfManufacturersResponse {
   manufacturers: Array<{
@@ -61193,7 +61535,8 @@ interface RetrieveAListOfManufacturersResponse {
  *         "created_date": "2018-09-01T15:00:00+09:00",
  *         "use_manufacturer": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAManufacturerResponse {
   manufacturer: {
@@ -61218,7 +61561,8 @@ interface RetrieveAManufacturerResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfManufacturersResponse {
   count: number;
@@ -61242,7 +61586,8 @@ interface RetrieveACountOfManufacturersResponse {
  *         "address2": "Professional Construction Hall",
  *         "use_manufacturer": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAManufacturerResponse {
   manufacturer: {
@@ -61279,7 +61624,8 @@ interface CreateAManufacturerResponse {
  *         "address2": "Professional Construction Hall",
  *         "use_manufacturer": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAManufacturerResponse {
   manufacturer: {
@@ -61322,7 +61668,8 @@ interface UpdateAManufacturerResponse {
  *             "made_in_code": "KR"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfOriginsResponse {
   origin: Array<{
@@ -61355,7 +61702,8 @@ interface RetrieveAListOfOriginsResponse {
  *             "product_count": 3
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfTrendsResponse {
   trends: Array<{
@@ -61373,7 +61721,8 @@ interface RetrieveAListOfTrendsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfTrendsResponse {
   count: number;
@@ -61424,7 +61773,8 @@ interface RetrieveACountOfTrendsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveASupplierSShippingSettingsResponse {
   supplier: {
@@ -61502,7 +61852,8 @@ interface RetrieveASupplierSShippingSettingsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASupplierSShippingSettingsResponse {
   supplier: {
@@ -61639,7 +61990,8 @@ interface UpdateASupplierSShippingSettingsResponse {
  *             "fax": "02-0000-0000"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfSuppliersResponse {
   suppliers: Array<{
@@ -61689,7 +62041,8 @@ interface RetrieveAListOfSuppliersResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfSuppliersResponse {
   count: number;
@@ -61769,7 +62122,8 @@ interface RetrieveACountOfSuppliersResponse {
  *         "company_line": "Online",
  *         "company_introduction": "About company."
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveASupplierResponse {
   supplier: {
@@ -61902,7 +62256,8 @@ interface RetrieveASupplierResponse {
  *         "company_line": "Online",
  *         "company_introduction": "About company."
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateASupplierResponse {
   supplier: {
@@ -62035,7 +62390,8 @@ interface CreateASupplierResponse {
  *         "company_line": "Online",
  *         "company_introduction": "About company."
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASupplierResponse {
   supplier: {
@@ -62101,7 +62457,8 @@ interface UpdateASupplierResponse {
  *     "supplier": {
  *         "supplier_code": "S000000J"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteASupplierResponse {
   supplier: {
@@ -62141,7 +62498,8 @@ interface DeleteASupplierResponse {
  *             "permission_order_menu": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfSupplierUsersResponse {
   users: Array<{
@@ -62164,7 +62522,8 @@ interface RetrieveAListOfSupplierUsersResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfSupplierUsersResponse {
   count: number;
@@ -62205,7 +62564,8 @@ interface RetrieveACountOfSupplierUsersResponse {
  *         "permission_amount_inquiry": "T",
  *         "permission_order_menu": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveSupplierUserDetailsResponse {
   user: {
@@ -62280,7 +62640,8 @@ interface RetrieveSupplierUserDetailsResponse {
  *         "permission_order_menu": "T",
  *         "permission_amount_inquiry": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateASupplierUserResponse {
   user: {
@@ -62358,7 +62719,8 @@ interface CreateASupplierUserResponse {
  *         "permission_amount_inquiry": "T",
  *         "permission_order_menu": "T"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASupplierUserResponse {
   user: {
@@ -62395,7 +62757,8 @@ interface UpdateASupplierUserResponse {
  *     "user": {
  *         "user_id": "sampleid"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteASupplierUserResponse {
   user: {
@@ -62431,7 +62794,8 @@ interface DeleteASupplierUserResponse {
  *             "regional_surcharge_amount": "5000.00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveASupplierUserSListOfRegionalShippingFeesResponse {
   regionalsurcharges: Array<{
@@ -62463,7 +62827,8 @@ interface RetrieveASupplierUserSListOfRegionalShippingFeesResponse {
  *         "end_zipcode": "63644",
  *         "regional_surcharge_amount": "6000.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateRegionalShippingFeeForASupplierUserResponse {
   regionalsurcharge: {
@@ -62489,7 +62854,8 @@ interface CreateRegionalShippingFeeForASupplierUserResponse {
  *         "supplier_id": "sampleid",
  *         "regional_surcharge_no": 4
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteSupplierUserSRegionalShippingFeeSettingsResponse {
   regionalsurcharge: {
@@ -62511,7 +62877,8 @@ interface DeleteSupplierUserSRegionalShippingFeeSettingsResponse {
  *         "jeju_surcharge_amount": "2200",
  *         "remote_area_surcharge_amount": "2500"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveASupplierUserSRegionalShippingFeeSettingsResponse {
   regionalsurcharge: {
@@ -62536,7 +62903,8 @@ interface RetrieveASupplierUserSRegionalShippingFeeSettingsResponse {
  *         "jeju_surcharge_amount": 1500,
  *         "remote_area_surcharge_amount": 2000
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateASupplierUserSRegionalShippingFeeSettingsResponse {
   regionalsurcharge: {
@@ -62811,7 +63179,8 @@ interface UpdateASupplierUserSRegionalShippingFeeSettingsResponse {
  *             }
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfShippingCarriersResponse {
   carriers: Array<{
@@ -63034,7 +63403,8 @@ interface RetrieveAListOfShippingCarriersResponse {
  *             "sender_address2": null
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAShippingCarrierResponse {
   carrier: {
@@ -63240,7 +63610,8 @@ interface RetrieveAShippingCarrierResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAShippingCarrierResponse {
   carrier: {
@@ -63331,7 +63702,8 @@ interface CreateAShippingCarrierResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAShippingCarrierResponse {
   carrier: {
@@ -63353,7 +63725,8 @@ interface UpdateAShippingCarrierResponse {
  *         "shop_no": 1,
  *         "carrier_id": 4
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAShippingCarrierResponse {
   carrier: {
@@ -63490,7 +63863,8 @@ interface DeleteAShippingCarrierResponse {
  *         "supplier_shipping_calculation": "A",
  *         "supplier_regional_surcharge": "A"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveShippingReturnSettingsResponse {
   shipping: {
@@ -63647,7 +64021,8 @@ interface RetrieveShippingReturnSettingsResponse {
  *             "height": "9"
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateStoreShippingReturnSettingsResponse {
   shipping: {
@@ -63740,7 +64115,8 @@ interface UpdateStoreShippingReturnSettingsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/shippingorigins?offset=20&limit=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfShippingOriginsResponse {
   shippingorigins: Array<{
@@ -63786,7 +64162,8 @@ interface RetrieveAListOfShippingOriginsResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/shippingorigins/W000000Q"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAShippingOriginResponse {
   shippingorigin: {
@@ -63823,7 +64200,8 @@ interface RetrieveAShippingOriginResponse {
  *         "address2": "Professional Construction Hall",
  *         "variants": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAShippingOriginResponse {
   shippingorigin: {
@@ -63856,7 +64234,8 @@ interface CreateAShippingOriginResponse {
  *         "address2": "Professional Construction Hall",
  *         "variants": null
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAShippingOriginResponse {
   shippingorigin: {
@@ -63880,7 +64259,8 @@ interface UpdateAShippingOriginResponse {
  *     "shippingorigin": {
  *         "origin_code": "W000000Q"
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAShippingOriginResponse {
   shippingorigin: {
@@ -63908,7 +64288,8 @@ interface DeleteAShippingOriginResponse {
  *             "sales_count": 8
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfDailySalesResponse {
   dailysales: Array<{
@@ -63940,7 +64321,8 @@ interface RetrieveAListOfDailySalesResponse {
  *             "sales_count": 8
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfMonthlySalesResponse {
   monthlysales: Array<{
@@ -64008,7 +64390,8 @@ interface RetrieveAListOfMonthlySalesResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/reports/hourlysales?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveHourlySalesStatisticsOfAStoreResponse {
   hourlysales: Array<{
@@ -64083,7 +64466,8 @@ interface RetrieveHourlySalesStatisticsOfAStoreResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/reports/productsales?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveHourlyProductSalesStatisticsOfAStoreResponse {
   productsales: Array<{
@@ -64144,7 +64528,8 @@ interface RetrieveHourlyProductSalesStatisticsOfAStoreResponse {
  *             "total_sales": "23"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveASalesReportResponse {
   salesvolume: Array<{
@@ -64213,7 +64598,8 @@ interface RetrieveASalesReportResponse {
  *             "category_no": 1
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAShoppingCartResponse {
   carts: Array<{
@@ -64243,7 +64629,8 @@ interface RetrieveAShoppingCartResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsInCustomerWishlistResponse {
   count: number;
@@ -64288,7 +64675,8 @@ interface RetrieveACountOfProductsInCustomerWishlistResponse {
  *             "price_content": null
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsInCustomerWishlistResponse {
   wishlist: Array<{
@@ -64315,7 +64703,8 @@ interface RetrieveAListOfProductsInCustomerWishlistResponse {
  * ```json
  * {
  *     "count": 7
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCartsContainingAProductResponse {
   count: number;
@@ -64351,7 +64740,8 @@ interface RetrieveACountOfCartsContainingAProductResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/products/11/carts?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCartsContainingAProductResponse {
   carts: Array<{
@@ -64491,7 +64881,8 @@ interface RetrieveAListOfCartsContainingAProductResponse {
  *             "account_reactivation_date": "2018-01-18T11:19:27+09:00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomerInformationResponse {
   customersprivacy: Array<{
@@ -64556,7 +64947,8 @@ interface RetrieveAListOfCustomerInformationResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomerInformationResponse {
   count: number;
@@ -64625,7 +65017,8 @@ interface RetrieveACountOfCustomerInformationResponse {
  *             "KAKAO(2022-05-23 16:12:47)"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACustomerInformationResponse {
   customersprivacy: {
@@ -64722,7 +65115,8 @@ interface RetrieveACustomerInformationResponse {
  *         "refund_bank_account_holder": "John Doe",
  *         "gender": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateACustomerInformationResponse {
   customersprivacy: {
@@ -64767,7 +65161,8 @@ interface UpdateACustomerInformationResponse {
  *             "member_id": "sampleid2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCustomersWithAProductInWishlistResponse {
   customers: Array<{
@@ -64781,7 +65176,8 @@ interface RetrieveAListOfCustomersWithAProductInWishlistResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCustomersWithAProductInWishlistResponse {
   count: number;
@@ -64821,7 +65217,8 @@ interface RetrieveACountOfCustomersWithAProductInWishlistResponse {
  *             "order_id": "20180425-0000012"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfCreditsByDateRangeResponse {
   credits: Array<{
@@ -64850,7 +65247,8 @@ interface RetrieveAListOfCreditsByDateRangeResponse {
  *         "decrease_amount": "0.00",
  *         "credits_total": "1000.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveACreditReportByDateRangeResponse {
   report: {
@@ -64903,7 +65301,8 @@ interface RetrieveACreditReportByDateRangeResponse {
  *             "reason": "Expired Points"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrievePointsResponse {
   points: Array<{
@@ -64938,7 +65337,8 @@ interface RetrievePointsResponse {
  *         "type": "increase",
  *         "reason": "New products promotion"
  *     }
- * }```
+ * }
+ * ```
  */
 interface IssueAndDeductPointsResponse {
   points: {
@@ -64969,7 +65369,8 @@ interface IssueAndDeductPointsResponse {
  *             7
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAnAutomaticPointsExpirationResponse {
   autoexpiration: {
@@ -65003,7 +65404,8 @@ interface RetrieveAnAutomaticPointsExpirationResponse {
  *             7
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAnAutomaticPointsExpirationResponse {
   autoexpiration: {
@@ -65026,7 +65428,8 @@ interface CreateAnAutomaticPointsExpirationResponse {
  *     "autoexpiration": {
  *         "shop_no": 1
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteAnAutomaticPointsExpirationResponse {
   autoexpiration: {
@@ -65046,7 +65449,8 @@ interface DeleteAnAutomaticPointsExpirationResponse {
  *         "unavailable_points": "1500.00",
  *         "unavailable_coupon_points": "1169.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAPointsReportByDateRangeResponse {
   report: {
@@ -65067,7 +65471,8 @@ interface RetrieveAPointsReportByDateRangeResponse {
  *         "shop_no": 1,
  *         "member_id": "sampleid"
  *     }
- * }```
+ * }
+ * ```
  */
 interface SendAnInvitationToActivateAccountResponse {
   invitation: {
@@ -65142,7 +65547,8 @@ interface SendAnInvitationToActivateAccountResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/recipientgroups?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveDistributionGroupListResponse {
   recipientgroups: Array<{
@@ -65209,7 +65615,8 @@ interface RetrieveDistributionGroupListResponse {
  *         "use_mobile_app": "F",
  *         "plusapp_member_join": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveDistributionGroupDetailsResponse {
   recipientgroup: {
@@ -65272,7 +65679,8 @@ interface RetrieveDistributionGroupDetailsResponse {
  *         "use_mobile_app": "F",
  *         "plusapp_member_join": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateADistributionGroupResponse {
   recipientgroup: {
@@ -65335,7 +65743,8 @@ interface CreateADistributionGroupResponse {
  *         "use_mobile_app": "F",
  *         "plusapp_member_join": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface EditDistributionGroupResponse {
   recipientgroup: {
@@ -65375,7 +65784,8 @@ interface EditDistributionGroupResponse {
  *         "shop_no": 1,
  *         "group_no": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface DeleteDistributionGroupResponse {
   recipientgroup: {
@@ -65391,7 +65801,8 @@ interface DeleteDistributionGroupResponse {
  *     "sms": {
  *         "queue_code": "Q1810191529096VAeUD"
  *     }
- * }```
+ * }
+ * ```
  */
 interface SendASmsResponse {
   sms: {
@@ -65408,7 +65819,8 @@ interface SendASmsResponse {
  *         "sms_count": 10,
  *         "lms_count": 3
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheSmsBalanceResponse {
   sms: {
@@ -65434,7 +65846,8 @@ interface RetrieveTheSmsBalanceResponse {
  *             "auth_status": "20"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfSmsSendersResponse {
   senders: Array<{
@@ -65516,7 +65929,8 @@ interface RetrieveAListOfSmsSendersResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/translations/categories?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductCategoryTranslationsResponse {
   categories: Array<{
@@ -65574,7 +65988,8 @@ interface RetrieveAListOfProductCategoryTranslationsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductCategoryTranslationResponse {
   category: {
@@ -65781,7 +66196,8 @@ interface UpdateProductCategoryTranslationResponse {
  *             "href": "https://{mallid}.cafe24api.com/api/v2/admin/translations/products?limit=10&offset=10"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductTranslationsResponse {
   products: Array<{
@@ -65913,7 +66329,8 @@ interface RetrieveAListOfProductTranslationsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateProductTranslationResponse {
   product: {
@@ -65997,7 +66414,8 @@ interface UpdateProductTranslationResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfStoreTranslationsResponse {
   store: {
@@ -66071,7 +66489,8 @@ interface RetrieveAListOfStoreTranslationsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateTheTranslationsOfAStoreResponse {
   store: {
@@ -66130,7 +66549,8 @@ interface UpdateTheTranslationsOfAStoreResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfThemeTranslationsResponse {
   themes: Array<{
@@ -66155,7 +66575,8 @@ interface RetrieveAListOfThemeTranslationsResponse {
  *             "source": "{\\n    \\\"MEMBER_ID\\\": {\\n        \\\"FIND_YOUR_ID\\\": \\\"Find your ID\\\",\\n        \\\"NAME\\\": \\\"Name\\\",\\n        \\\"EMAIL_ADDRESS\\\": \\\"Email address\\\",\\n        \\\"LOG_IN\\\": \\\"Log in\\\",\\n        \\\"FORGOT_PASSWORD\\\": \\\"Forgot password?\\\"\\n    }\\n}"
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAThemeTranslationResponse {
   theme: {
@@ -66182,7 +66603,8 @@ interface RetrieveAThemeTranslationResponse {
  *             "source": "{\\n    \\\"MEMBER_ID\\\": {\\n        \\\"FIND_YOUR_ID\\\": \\\"Find your ID\\\",\\n        \\\"NAME\\\": \\\"Name\\\",\\n        \\\"EMAIL_ADDRESS\\\": \\\"Email address\\\",\\n        \\\"LOG_IN\\\": \\\"Log in\\\",\\n        \\\"FORGOT_PASSWORD\\\": \\\"Forgot password?\\\"\\n    }\\n}"
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface UpdateAThemeTranslationResponse {
   theme: {
@@ -66212,7 +66634,8 @@ interface UpdateAThemeTranslationResponse {
  *             "visitors_count": 1000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfDailyvisitsResponse {
   dailyvisits: Array<{

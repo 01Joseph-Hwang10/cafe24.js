@@ -303,12 +303,12 @@ function isMutation(method: HTTPMethod): method is HTTPMutationMethod {
   return ["POST", "PUT", "PATCH"].includes(method);
 }
 
-export interface RequestOptions<Input extends Record<string, any>> {
+export interface RequestOptions<Response extends Record<string, any>> {
   /**
    * @description
    * List of fields to include in the response.
    */
-  fields?: (keyof Input)[];
+  fields?: (keyof Response)[];
   /**
    * @description
    * Additional headers to be included in the request.

@@ -32,7 +32,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsByCategoryResponse>,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -52,7 +52,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsByCategoryResponse>,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -84,7 +84,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsInMainCategoryResponse>,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -119,7 +119,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductsResponse>,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/v2/products", request, options);
     },
@@ -134,7 +134,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductsResponse>,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -155,7 +155,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions<RetrieveAProductResourceRequest>,
+      options?: base.RequestOptions<RetrieveAProductResourceResponse>,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -186,7 +186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductDecorationImagesResponse>,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -218,7 +218,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions<RetrieveAProductDiscountedPriceRequest>,
+      options?: base.RequestOptions<RetrieveAProductDiscountedPriceResponse>,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -250,7 +250,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductViewsRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductViewsResponse>,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -278,7 +278,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductIconsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductIconsResponse>,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -312,7 +312,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductOptionsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductOptionsResponse>,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -345,7 +345,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductVariantsRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductVariantsResponse>,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -366,7 +366,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveAProductVariantRequest>,
+      options?: base.RequestOptions<RetrieveAProductVariantResponse>,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -396,7 +396,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantRequest>,
+      options?: base.RequestOptions<RetrieveInventoryDetailsOfAProductVariantResponse>,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -425,7 +425,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheDetailsOfAProduct(
       request: RetrieveTheDetailsOfAProductRequest,
-      options?: base.RequestOptions<RetrieveTheDetailsOfAProductRequest>,
+      options?: base.RequestOptions<RetrieveTheDetailsOfAProductResponse>,
     ): Promise<RetrieveTheDetailsOfAProductResponse> {
       return self.createRequest(
         "GET",
@@ -458,7 +458,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveAListOfProductCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveAListOfProductCategoriesResponse>,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/categories", request, options);
     },
@@ -473,7 +473,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions<RetrieveACountOfProductCategoriesRequest>,
+      options?: base.RequestOptions<RetrieveACountOfProductCategoriesResponse>,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -494,7 +494,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions<RetrieveAProductCategoryRequest>,
+      options?: base.RequestOptions<RetrieveAProductCategoryResponse>,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -524,7 +524,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShoppingCart(
       request: CreateAShoppingCartRequest,
-      options?: base.RequestOptions<CreateAShoppingCartRequest>,
+      options?: base.RequestOptions<CreateAShoppingCartResponse>,
     ): Promise<CreateAShoppingCartResponse> {
       return self.createRequest("POST", "/api/v2/carts", request, options);
     },
@@ -550,7 +550,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductRequest>,
+      options?: base.RequestOptions<RetrieveACountOfCartsContainingAProductResponse>,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -2256,7 +2256,8 @@ interface RetrieveACountOfCartsContainingAProductRequest {
  *             "product_article_count": 0
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsByCategoryResponse {
   products: Array<{
@@ -2317,7 +2318,8 @@ interface RetrieveAListOfProductsByCategoryResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsByCategoryResponse {
   count: number;
@@ -2458,7 +2460,8 @@ interface RetrieveACountOfProductsByCategoryResponse {
  *             "product_article_count": 0
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsInMainCategoryResponse {
   products: Array<{
@@ -2711,7 +2714,8 @@ interface RetrieveAListOfProductsInMainCategoryResponse {
  *             "market_sync": "F"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductsResponse {
   products: Array<{
@@ -2796,7 +2800,8 @@ interface RetrieveAListOfProductsResponse {
  * ```json
  * {
  *     "count": 2
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductsResponse {
   count: number;
@@ -2972,7 +2977,8 @@ interface RetrieveACountOfProductsResponse {
  *         ],
  *         "market_sync": "F"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductResourceResponse {
   product: {
@@ -3120,7 +3126,8 @@ interface RetrieveAProductResourceResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductDecorationImagesResponse {
   decorationimage: {
@@ -3145,7 +3152,8 @@ interface RetrieveAListOfProductDecorationImagesResponse {
  *         "mobile_discount_price": "6000.00",
  *         "app_discount_price": "5000.00"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductDiscountedPriceResponse {
   discountprice: {
@@ -3160,7 +3168,8 @@ interface RetrieveAProductDiscountedPriceResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductViewsResponse {
   count: number;
@@ -3186,7 +3195,8 @@ interface RetrieveACountOfProductViewsResponse {
  *             }
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductIconsResponse {
   icons: {
@@ -3282,7 +3292,8 @@ interface RetrieveAListOfProductIconsResponse {
  *             "size_limit": 3
  *         }
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductOptionsResponse {
   options: {
@@ -3367,7 +3378,8 @@ interface RetrieveAListOfProductOptionsResponse {
  *             "image": "https://{domain}/web/product/medium/202402/b51c97e46192e6e2b97732cf196829ed.jpg"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductVariantsResponse {
   variants: Array<{
@@ -3410,7 +3422,8 @@ interface RetrieveAListOfProductVariantsResponse {
  *         "safety_inventory": 8,
  *         "image": "https://{domain}/web/product/extra/202402/620fafeb5c3f4616887b96c40579cbe2.png"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductVariantResponse {
   variant: {
@@ -3440,7 +3453,8 @@ interface RetrieveAProductVariantResponse {
  *         "safety_inventory": 0,
  *         "origin_code": "W00000BT"
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveInventoryDetailsOfAProductVariantResponse {
   inventory: {
@@ -3553,7 +3567,8 @@ interface RetrieveInventoryDetailsOfAProductVariantResponse {
  *             15
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveTheDetailsOfAProductResponse {
   productsdetail: {
@@ -3682,7 +3697,8 @@ interface RetrieveTheDetailsOfAProductResponse {
  *             ]
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface RetrieveAListOfProductCategoriesResponse {
   categories: Array<{
@@ -3715,7 +3731,8 @@ interface RetrieveAListOfProductCategoriesResponse {
  * ```json
  * {
  *     "count": 3
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfProductCategoriesResponse {
   count: number;
@@ -3750,7 +3767,8 @@ interface RetrieveACountOfProductCategoriesResponse {
  *             "tag2"
  *         ]
  *     }
- * }```
+ * }
+ * ```
  */
 interface RetrieveAProductCategoryResponse {
   category: {
@@ -3845,7 +3863,8 @@ interface RetrieveAProductCategoryResponse {
  *         "basket_type": "A0000",
  *         "prepaid_shipping_fee": "P"
  *     }
- * }```
+ * }
+ * ```
  */
 interface CreateAShoppingCartResponse {
   carts: {
@@ -3875,7 +3894,8 @@ interface CreateAShoppingCartResponse {
  * ```json
  * {
  *     "count": 7
- * }```
+ * }
+ * ```
  */
 interface RetrieveACountOfCartsContainingAProductResponse {
   count: number;

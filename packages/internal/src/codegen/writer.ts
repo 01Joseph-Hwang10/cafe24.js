@@ -18,7 +18,7 @@ export class TypescriptEndpointMethodWriter {
       getOrEmpty(description && this.jsdoc.write(description)) +
       `${name}(\n` +
       `  request: ${request},\n` +
-      `  options?: base.RequestOptions<${request}>,\n` +
+      `  options?: base.RequestOptions<${response}>,\n` +
       `): Promise<${response}> {\n` +
       `  return self.createRequest("${method}", "${path}", request, options);\n` +
       `},\n`

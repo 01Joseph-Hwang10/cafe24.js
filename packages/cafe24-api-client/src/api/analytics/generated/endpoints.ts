@@ -24,7 +24,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllAdeffectAddetails(
       request: ListAllAdeffectAddetailsRequest,
-      options?: base.RequestOptions<ListAllAdeffectAddetailsRequest>,
+      options?: base.RequestOptions<ListAllAdeffectAddetailsResponse>,
     ): Promise<ListAllAdeffectAddetailsResponse> {
       return self.createRequest("GET", "/adeffect/addetails", request, options);
     },
@@ -46,7 +46,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllCartsAction(
       request: ListAllCartsActionRequest,
-      options?: base.RequestOptions<ListAllCartsActionRequest>,
+      options?: base.RequestOptions<ListAllCartsActionResponse>,
     ): Promise<ListAllCartsActionResponse> {
       return self.createRequest("GET", "/carts/action", request, options);
     },
@@ -68,7 +68,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllMembersSales(
       request: ListAllMembersSalesRequest,
-      options?: base.RequestOptions<ListAllMembersSalesRequest>,
+      options?: base.RequestOptions<ListAllMembersSalesResponse>,
     ): Promise<ListAllMembersSalesResponse> {
       return self.createRequest("GET", "/members/sales", request, options);
     },
@@ -90,7 +90,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllPagesView(
       request: ListAllPagesViewRequest,
-      options?: base.RequestOptions<ListAllPagesViewRequest>,
+      options?: base.RequestOptions<ListAllPagesViewResponse>,
     ): Promise<ListAllPagesViewResponse> {
       return self.createRequest("GET", "/pages/view", request, options);
     },
@@ -109,7 +109,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsCategorydetails(
       request: ListAllProductsCategorydetailsRequest,
-      options?: base.RequestOptions<ListAllProductsCategorydetailsRequest>,
+      options?: base.RequestOptions<ListAllProductsCategorydetailsResponse>,
     ): Promise<ListAllProductsCategorydetailsResponse> {
       return self.createRequest(
         "GET",
@@ -142,7 +142,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsSales(
       request: ListAllProductsSalesRequest,
-      options?: base.RequestOptions<ListAllProductsSalesRequest>,
+      options?: base.RequestOptions<ListAllProductsSalesResponse>,
     ): Promise<ListAllProductsSalesResponse> {
       return self.createRequest("GET", "/products/sales", request, options);
     },
@@ -167,7 +167,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     dataProductHitsAnalysisApi(
       request: DataProductHitsAnalysisApiRequest,
-      options?: base.RequestOptions<DataProductHitsAnalysisApiRequest>,
+      options?: base.RequestOptions<DataProductHitsAnalysisApiResponse>,
     ): Promise<DataProductHitsAnalysisApiResponse> {
       return self.createRequest("GET", "/products/view", request, options);
     },
@@ -186,7 +186,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesOrderdetails(
       request: ListAllSalesOrderdetailsRequest,
-      options?: base.RequestOptions<ListAllSalesOrderdetailsRequest>,
+      options?: base.RequestOptions<ListAllSalesOrderdetailsResponse>,
     ): Promise<ListAllSalesOrderdetailsResponse> {
       return self.createRequest("GET", "/sales/orderdetails", request, options);
     },
@@ -211,7 +211,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPaymethods(
       request: ListAllSalesPaymethodsRequest,
-      options?: base.RequestOptions<ListAllSalesPaymethodsRequest>,
+      options?: base.RequestOptions<ListAllSalesPaymethodsResponse>,
     ): Promise<ListAllSalesPaymethodsResponse> {
       return self.createRequest("GET", "/sales/paymethods", request, options);
     },
@@ -241,7 +241,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPervisitors(
       request: ListAllSalesPervisitorsRequest,
-      options?: base.RequestOptions<ListAllSalesPervisitorsRequest>,
+      options?: base.RequestOptions<ListAllSalesPervisitorsResponse>,
     ): Promise<ListAllSalesPervisitorsResponse> {
       return self.createRequest("GET", "/sales/pervisitors", request, options);
     },
@@ -269,7 +269,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesTimes(
       request: ListAllSalesTimesRequest,
-      options?: base.RequestOptions<ListAllSalesTimesRequest>,
+      options?: base.RequestOptions<ListAllSalesTimesResponse>,
     ): Promise<ListAllSalesTimesResponse> {
       return self.createRequest("GET", "/sales/times", request, options);
     },
@@ -293,7 +293,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsDailyactive(
       request: ListAllVisitorsDailyactiveRequest,
-      options?: base.RequestOptions<ListAllVisitorsDailyactiveRequest>,
+      options?: base.RequestOptions<ListAllVisitorsDailyactiveResponse>,
     ): Promise<ListAllVisitorsDailyactiveResponse> {
       return self.createRequest(
         "GET",
@@ -320,7 +320,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsPageview(
       request: ListAllVisitorsPageviewRequest,
-      options?: base.RequestOptions<ListAllVisitorsPageviewRequest>,
+      options?: base.RequestOptions<ListAllVisitorsPageviewResponse>,
     ): Promise<ListAllVisitorsPageviewResponse> {
       return self.createRequest("GET", "/visitors/pageview", request, options);
     },
@@ -344,7 +344,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsUnique(
       request: ListAllVisitorsUniqueRequest,
-      options?: base.RequestOptions<ListAllVisitorsUniqueRequest>,
+      options?: base.RequestOptions<ListAllVisitorsUniqueResponse>,
     ): Promise<ListAllVisitorsUniqueResponse> {
       return self.createRequest("GET", "/visitors/unique", request, options);
     },
@@ -378,7 +378,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsView(
       request: ListAllVisitorsViewRequest,
-      options?: base.RequestOptions<ListAllVisitorsViewRequest>,
+      options?: base.RequestOptions<ListAllVisitorsViewResponse>,
     ): Promise<ListAllVisitorsViewResponse> {
       return self.createRequest("GET", "/visitors/view", request, options);
     },
@@ -397,7 +397,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdkeywordsales(
       request: ListAllVisitpathsAdkeywordsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdkeywordsalesRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsAdkeywordsalesResponse>,
     ): Promise<ListAllVisitpathsAdkeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -436,7 +436,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAds(
       request: ListAllVisitpathsAdsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdsRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsAdsResponse>,
     ): Promise<ListAllVisitpathsAdsResponse> {
       return self.createRequest("GET", "/visitpaths/ads", request, options);
     },
@@ -461,7 +461,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdsales(
       request: ListAllVisitpathsAdsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsAdsalesRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsAdsalesResponse>,
     ): Promise<ListAllVisitpathsAdsalesResponse> {
       return self.createRequest("GET", "/visitpaths/adsales", request, options);
     },
@@ -491,7 +491,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomains(
       request: ListAllVisitpathsDomainsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsDomainsRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsDomainsResponse>,
     ): Promise<ListAllVisitpathsDomainsResponse> {
       return self.createRequest("GET", "/visitpaths/domains", request, options);
     },
@@ -519,7 +519,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomainsales(
       request: ListAllVisitpathsDomainsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsDomainsalesRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsDomainsalesResponse>,
     ): Promise<ListAllVisitpathsDomainsalesResponse> {
       return self.createRequest(
         "GET",
@@ -543,7 +543,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeyworddetails(
       request: ListAllVisitpathsKeyworddetailsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeyworddetailsRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsKeyworddetailsResponse>,
     ): Promise<ListAllVisitpathsKeyworddetailsResponse> {
       return self.createRequest(
         "GET",
@@ -570,7 +570,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywords(
       request: ListAllVisitpathsKeywordsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeywordsRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsKeywordsResponse>,
     ): Promise<ListAllVisitpathsKeywordsResponse> {
       return self.createRequest(
         "GET",
@@ -597,7 +597,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywordsales(
       request: ListAllVisitpathsKeywordsalesRequest,
-      options?: base.RequestOptions<ListAllVisitpathsKeywordsalesRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsKeywordsalesResponse>,
     ): Promise<ListAllVisitpathsKeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -625,7 +625,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsUrls(
       request: ListAllVisitpathsUrlsRequest,
-      options?: base.RequestOptions<ListAllVisitpathsUrlsRequest>,
+      options?: base.RequestOptions<ListAllVisitpathsUrlsResponse>,
     ): Promise<ListAllVisitpathsUrlsResponse> {
       return self.createRequest("GET", "/visitpaths/urls", request, options);
     },
@@ -2466,7 +2466,8 @@ interface ListAllVisitpathsUrlsRequest {
  *             "order_amount_per_buyer": "3800.60"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllAdeffectAddetailsResponse {
   addetails: Array<{
@@ -2502,7 +2503,8 @@ interface ListAllAdeffectAddetailsResponse {
  *             "product_name": "shirt2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllCartsActionResponse {
   count: Array<{
@@ -2532,7 +2534,8 @@ interface ListAllCartsActionResponse {
  *             "member_order_count": 2000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllMembersSalesResponse {
   sales: Array<{
@@ -2561,7 +2564,8 @@ interface ListAllMembersSalesResponse {
  *             "url": "cafe24.com2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllPagesViewResponse {
   pages: Array<{
@@ -2600,7 +2604,8 @@ interface ListAllPagesViewResponse {
  *             "sales_price_per_category": "12256.50"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllProductsCategorydetailsResponse {
   categorydetails: Array<{
@@ -2636,7 +2641,8 @@ interface ListAllProductsCategorydetailsResponse {
  *             "order_amount": 60000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllProductsSalesResponse {
   sales: Array<{
@@ -2664,7 +2670,8 @@ interface ListAllProductsSalesResponse {
  *             "product_name": "sampleProductNames2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface DataProductHitsAnalysisApiResponse {
   count: Array<{
@@ -2702,7 +2709,8 @@ interface DataProductHitsAnalysisApiResponse {
  *             "payment_method": "card2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllSalesOrderdetailsResponse {
   orderdetails: Array<{
@@ -2736,7 +2744,8 @@ interface ListAllSalesOrderdetailsResponse {
  *             "order_amount": 60000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllSalesPaymethodsResponse {
   paymethods: Array<{
@@ -2761,7 +2770,8 @@ interface ListAllSalesPaymethodsResponse {
  *             "order_amount_per_buyer": 60000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllSalesPervisitorsResponse {
   pervisitors: Array<{
@@ -2788,7 +2798,8 @@ interface ListAllSalesPervisitorsResponse {
  *             "order_amount": 60000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllSalesTimesResponse {
   times: Array<{
@@ -2813,7 +2824,8 @@ interface ListAllSalesTimesResponse {
  *             "user_count": 64
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitorsDailyactiveResponse {
   dailyactive: Array<{
@@ -2838,7 +2850,8 @@ interface ListAllVisitorsDailyactiveResponse {
  *             "hour": 2
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitorsPageviewResponse {
   pageview: Array<{
@@ -2862,7 +2875,8 @@ interface ListAllVisitorsPageviewResponse {
  *             "unique_visit_count": 64
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitorsUniqueResponse {
   unique: Array<{
@@ -2891,7 +2905,8 @@ interface ListAllVisitorsUniqueResponse {
  *             "re_visit_count": 24
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitorsViewResponse {
   view: Array<{
@@ -2921,7 +2936,8 @@ interface ListAllVisitorsViewResponse {
  *             "order_amount": 20000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsAdkeywordsalesResponse {
   adkeywordsales: Array<{
@@ -2946,7 +2962,8 @@ interface ListAllVisitpathsAdkeywordsalesResponse {
  *             "ad": "ad2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsAdsResponse {
   ads: Array<{
@@ -2971,7 +2988,8 @@ interface ListAllVisitpathsAdsResponse {
  *             "order_amount": 20000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsAdsalesResponse {
   adsales: Array<{
@@ -2995,7 +3013,8 @@ interface ListAllVisitpathsAdsalesResponse {
  *             "domain": "cafe24.com2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsDomainsResponse {
   domains: Array<{
@@ -3020,7 +3039,8 @@ interface ListAllVisitpathsDomainsResponse {
  *             "order_amount": 20000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsDomainsalesResponse {
   domainsales: Array<{
@@ -3056,7 +3076,8 @@ interface ListAllVisitpathsDomainsalesResponse {
  *             "order_amount_per_buyer": "3800.00"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsKeyworddetailsResponse {
   keyworddetails: Array<{
@@ -3085,7 +3106,8 @@ interface ListAllVisitpathsKeyworddetailsResponse {
  *             "visit_count": 2000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsKeywordsResponse {
   keywords: Array<{
@@ -3110,7 +3132,8 @@ interface ListAllVisitpathsKeywordsResponse {
  *             "order_amount": 20000
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsKeywordsalesResponse {
   keywordsales: Array<{
@@ -3134,7 +3157,8 @@ interface ListAllVisitpathsKeywordsalesResponse {
  *             "url": "cafe24.com2"
  *         }
  *     ]
- * }```
+ * }
+ * ```
  */
 interface ListAllVisitpathsUrlsResponse {
   urls: Array<{
