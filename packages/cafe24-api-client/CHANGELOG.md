@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.3.3...cafe24-api-client-v1.4.0) (2025-01-15)
+
+
+### Features
+
+* add request type & response type ([3cb9cfd](https://github.com/01Joseph-Hwang10/cafe24.js/commit/3cb9cfd3e42f49bea2a8a6cd41b521dada99a280))
+
+
+### Bug Fixes
+
+* typings ([59095e4](https://github.com/01Joseph-Hwang10/cafe24.js/commit/59095e43a9c7c02cb5e2aab90fcd4d9870ac97b0))
+
 ## [1.3.3](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.3.2...cafe24-api-client-v1.3.3) (2025-01-15)
 
 
