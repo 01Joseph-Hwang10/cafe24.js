@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.1...cafe24-api-client-v1.5.2) (2025-01-16)
+
+
+### Bug Fixes
+
+* dcollection types ([ae0f28d](https://github.com/01Joseph-Hwang10/cafe24.js/commit/ae0f28d6af9f85d8fa0ecd211d1741d55d1bad64))
+
 ## [1.5.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.0...cafe24-api-client-v1.5.1) (2025-01-16)
 
 
