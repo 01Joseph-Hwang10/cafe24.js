@@ -11,6 +11,7 @@ import {
 } from "../utils";
 import { map } from "fp-ts/lib/Array";
 import { Cafe24APIError } from "../error";
+import { snake } from "case";
 
 /**
  * @description
@@ -119,11 +120,8 @@ export class Client {
    * @param data
    * @param fields Comma-separated list of fields to include in the response.
    */
-  public createBody(
-    data: Record<string, any>,
-    fields?: string[],
-  ): Record<string, any> {
-    const { shop_no = 1, ...request } = data ?? {};
+  public createBody(data: Record<string, any>, fields?: string[]): any {
+    const { shop_no = 1, ...request } = objectToSnakeCase(data) ?? {};
     const body = {
       shop_no,
       fields: fields?.join(","),
@@ -135,6 +133,7 @@ export class Client {
     return pipe(
       body,
       valfilter(v => v !== undefined),
+      body => JSON.stringify(body),
     );
   }
 
@@ -150,15 +149,16 @@ export class Client {
     data: Record<string, any>,
     fields?: string[],
     embeds?: string[],
-  ): Record<string, any> {
+  ): string {
     const params = {
       fields: objectToSnakeCase(fields)?.join(","),
       embed: objectToSnakeCase(embeds)?.join(","),
-      ...data,
+      ...objectToSnakeCase(data),
     };
     return pipe(
       params,
       valfilter(v => v !== undefined),
+      params => qs.stringify(params, { encode: false }),
     );
   }
 
@@ -179,7 +179,7 @@ export class Client {
   >(
     method: HTTPMethod,
     path: string,
-    payload: Record<string, any>,
+    payload: D,
     options?: RequestOptions,
   ): Promise<R> {
     // If the client is disposed, throw an error
@@ -190,12 +190,11 @@ export class Client {
     const errorPolicy = options?.errorPolicy ?? this.errorPolicy;
     const fetchPolicy = options?.fetchPolicy ?? this.fetchPolicy;
 
-    const formattedPayload = objectToSnakeCase(payload);
     const formattedPath = pipe(
       path.split("/"),
       map(
         segment =>
-          (segment.startsWith("{") && formattedPayload[segment.slice(1, -1)]) ||
+          (segment.startsWith("{") && payload[snake(segment.slice(1, -1))]) ||
           segment,
       ),
       segments => segments.join("/"),
@@ -204,20 +203,10 @@ export class Client {
     let request: () => Promise<Response>;
     if (isQuery(method)) {
       request = () =>
-        this.createQueryRequest(
-          method,
-          formattedPath,
-          formattedPayload,
-          options,
-        );
+        this.createQueryRequest(method, formattedPath, payload, options);
     } else if (isMutation(method)) {
       request = () =>
-        this.createMutationRequest(
-          method,
-          formattedPath,
-          formattedPayload,
-          options,
-        );
+        this.createMutationRequest(method, formattedPath, payload, options);
     } else {
       throw new Error(`Unsupported method: ${method}`);
     }
@@ -238,7 +227,8 @@ export class Client {
       const response = await request();
       const payload = await response.json().catch(() => null);
       if (payload) {
-        return objectToCamelCase(payload);
+        const formatter = options?.format?.response ?? objectToCamelCase;
+        return formatter(payload);
       }
       return await response.text();
     };
@@ -256,7 +246,7 @@ export class Client {
     payload: Record<string, any>,
     options?: RequestOptions,
   ) {
-    const formatter = options?.format ?? this.createParams;
+    const formatter = options?.format?.request ?? this.createParams;
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
@@ -266,7 +256,7 @@ export class Client {
       options?.embed && unique(options.embed),
     );
 
-    return this.fetch(`${url}?${qs.stringify(params, { encode: false })}`, {
+    return this.fetch(`${url}?${params}`, {
       method,
       headers,
       ...options?.requestConfig,
@@ -279,7 +269,7 @@ export class Client {
     payload: Record<string, any>,
     options?: RequestOptions,
   ) {
-    const formatter = options?.format ?? this.createBody;
+    const formatter = options?.format?.request ?? this.createBody;
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
@@ -288,7 +278,7 @@ export class Client {
     return this.fetch(url, {
       method,
       headers,
-      body: JSON.stringify(body),
+      body,
       ...options?.requestConfig,
     });
   }
@@ -346,7 +336,10 @@ export interface RequestOptions<
    *
    * If not given, default formatter will be used.
    */
-  format?: Formatter;
+  format?: {
+    request?: Formatter;
+    response?: Formatter;
+  };
 }
 
 type Formatter = (

@@ -31,7 +31,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
-        format: data => qs.stringify(data, { encode: false }),
+        format: {
+          request: data => new URLSearchParams(data),
+        },
         headers,
       });
     },
@@ -66,7 +68,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
-        format: data => qs.stringify(data, { encode: false }),
+        format: {
+          request: data => new URLSearchParams(data),
+        },
         headers,
       });
     },
@@ -96,7 +100,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/revoke", params, {
         ...options,
-        format: data => qs.stringify(data, { encode: false }),
+        format: {
+          request: data => new URLSearchParams(data),
+        },
         headers,
       });
     },

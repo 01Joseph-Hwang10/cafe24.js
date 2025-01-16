@@ -43,21 +43,25 @@ describe("base.Client", () => {
     it("should create body with default shop_no", () => {
       const client = createClient();
       const body = client.createBody(data, fields);
-      expect(body).toEqual({
-        shop_no: 1,
-        fields: fields.join(","),
-        request: data,
-      });
+      expect(body).toEqual(
+        JSON.stringify({
+          shop_no: 1,
+          fields: fields.join(","),
+          request: data,
+        }),
+      );
     });
 
     it("should create body with custom shop_no", () => {
       const client = createClient();
       const body = client.createBody({ foo: "bar", shop_no: 2 }, fields);
-      expect(body).toEqual({
-        shop_no: 2,
-        fields: fields.join(","),
-        request: data,
-      });
+      expect(body).toEqual(
+        JSON.stringify({
+          shop_no: 2,
+          fields: fields.join(","),
+          request: data,
+        }),
+      );
     });
   });
 
@@ -65,10 +69,15 @@ describe("base.Client", () => {
     it("should create params", () => {
       const client = createClient();
       const params = client.createParams(data, fields);
-      expect(params).toEqual({
-        ...data,
-        fields: fields.join(","),
-      });
+      expect(params).toEqual(
+        qs.stringify(
+          {
+            fields: fields.join(","),
+            ...data,
+          },
+          { encode: false },
+        ),
+      );
     });
   });
 

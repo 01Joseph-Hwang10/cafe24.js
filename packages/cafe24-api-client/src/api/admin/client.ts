@@ -26,12 +26,12 @@ export class Client extends base.Client {
   }
 
   public override async createRequest<
-    T extends Record<string, any>,
+    D extends Record<string, any>,
     R extends Record<string, any> = Record<string, any>,
   >(
     method: base.HTTPMethod,
     path: string,
-    payload: Record<string, any>,
+    payload: D,
     options?: RequestOptions,
   ): Promise<R> {
     if (options?.accessToken) {
