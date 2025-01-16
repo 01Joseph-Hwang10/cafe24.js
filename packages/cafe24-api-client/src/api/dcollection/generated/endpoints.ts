@@ -1919,4 +1919,4 @@ type RetrieveAListOfProductTagPropertiesFields =
   keyof RetrieveAListOfProductTagPropertiesResponse["standardtags"][number];
 
 type RetrieveAListOfProductsWithMallIdFields =
-  keyof RetrieveAListOfProductsWithMallIdResponse["store_products"][number];
+  keyof RetrieveAListOfProductsWithMallIdResponse["storeProducts"][number];

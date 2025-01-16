@@ -162,12 +162,12 @@ export function generateEndpointsModule(spec: APISpec) {
     const responseName = pascal(schema.name);
     const firstProperty = schema.properties.at(0);
     if (firstProperty?.type instanceof ObjectType) {
-      return `type ${name} = keyof ${responseName}['${firstProperty.name}']`;
+      return `type ${name} = keyof ${responseName}['${camel(firstProperty.name)}']`;
     } else if (
       firstProperty?.type instanceof ArrayType &&
       firstProperty.type.element instanceof ObjectType
     ) {
-      return `type ${name} = keyof ${responseName}['${firstProperty.name}'][number]`;
+      return `type ${name} = keyof ${responseName}['${camel(firstProperty.name)}'][number]`;
     } else {
       return `type ${name} = string;`;
     }
