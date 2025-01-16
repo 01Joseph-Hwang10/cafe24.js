@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.3...cafe24-api-client-v1.5.4) (2025-01-16)
+
+
+### Bug Fixes
+
+* path params substitution ([5521247](https://github.com/01Joseph-Hwang10/cafe24.js/commit/55212470ccc695066f0b67873802e8b0710e5e9c))
+
 ## [1.5.3](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.2...cafe24-api-client-v1.5.3) (2025-01-16)
 
 
