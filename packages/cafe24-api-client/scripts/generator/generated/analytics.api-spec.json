@@ -19,6 +19,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -27,6 +28,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -36,6 +38,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -44,6 +47,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -52,6 +56,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -60,6 +65,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -69,6 +75,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -78,6 +85,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nad : 광고매체\nkeyword : 조회수\nvisit_count : 담긴수\npurchase_count : 구매건수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -87,6 +95,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -105,7 +114,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "addetails-iuyyCpUT",
+                      "name": "addetails-7FWJkZCo",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -188,6 +197,7 @@
             "name": "ad",
             "description": "@description\n광고매체\n\n네이버",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -196,6 +206,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nonepiece",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -204,6 +215,7 @@
             "name": "visit_count",
             "description": "@description\n방문수\n\n200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -212,6 +224,7 @@
             "name": "visit_rate",
             "description": "@description\n방문비율\n\n20.2",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -220,6 +233,7 @@
             "name": "purchase_count",
             "description": "@description\n구매건수\n\n1053",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -228,6 +242,7 @@
             "name": "purchase_rate",
             "description": "@description\n구매율\n\n15.5",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -236,6 +251,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n360000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -244,6 +260,7 @@
             "name": "order_amount_per_visitor",
             "description": "@description\n방문당매출\n\n1800",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -252,6 +269,7 @@
             "name": "order_amount_per_buyer",
             "description": "@description\n구매당매출\n\n1900",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -279,6 +297,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -287,6 +306,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -296,6 +316,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -304,6 +325,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -312,6 +334,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -320,6 +343,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -329,6 +353,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -338,6 +363,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nproduct_name : 상품명\ncount : 조회수\nadd_cart_count : 담긴수\nadd_cart_rate : 담김율\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -347,6 +373,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -365,7 +392,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "count-kd7rdi5y",
+                      "name": "count-5yRYQWfh",
                       "properties": [
                         {
                           "name": "add_cart_count",
@@ -420,6 +447,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n100",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -428,6 +456,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n셔츠",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -436,6 +465,7 @@
             "name": "count",
             "description": "@description\n조회수\n\n200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -444,6 +474,7 @@
             "name": "add_cart_count",
             "description": "@description\n담긴수\n\n30000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -452,6 +483,7 @@
             "name": "add_cart_rate",
             "description": "@description\n담김율\n\n30",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -479,6 +511,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -487,6 +520,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -496,6 +530,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -504,6 +539,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -512,6 +548,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -520,6 +557,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -538,7 +576,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "sales-6a9FfJY0",
+                      "name": "sales-aX0vVLPW",
                       "properties": [
                         {
                           "name": "nonmember_order_count",
@@ -586,6 +624,7 @@
             "name": "member_order_count",
             "description": "@description\n회원 구매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -594,6 +633,7 @@
             "name": "member_order_amount",
             "description": "@description\n회원 매출액\n\n90000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -602,6 +642,7 @@
             "name": "nonmember_order_count",
             "description": "@description\n비회원 구매건수\n\n2000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -610,6 +651,7 @@
             "name": "nonmember_order_amount",
             "description": "@description\n비회원 매출액\n\n80000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -637,6 +679,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -645,6 +688,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -654,6 +698,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -662,6 +707,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -670,6 +716,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -678,6 +725,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -687,6 +735,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -696,6 +745,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nurl : url\ncount : 조회수\nvisit_count : 방문자수\nfirst_visit_count : 처음접속수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -705,6 +755,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -723,7 +774,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "pages-DcTEoLk2",
+                      "name": "pages-K5jCVLS7",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -771,6 +822,7 @@
             "name": "url",
             "description": "@description\nurl\n\ncafe24.com",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -779,6 +831,7 @@
             "name": "count",
             "description": "@description\n접속수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -787,6 +840,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n2000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -795,6 +849,7 @@
             "name": "first_visit_count",
             "description": "@description\n처음접속수\n\n3000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -821,6 +876,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -829,6 +885,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -838,6 +895,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -846,6 +904,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -854,6 +913,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -862,6 +922,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -871,6 +932,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -880,6 +942,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nproduct_no : 상품번호\nproduct_name : 상품명\norder_count : 판매건수\norder_product_count : 판매물품수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -889,6 +952,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -907,7 +971,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "categorydetails-8BiM6Gbs",
+                      "name": "categorydetails-ZDeSU4gJ",
                       "properties": [
                         {
                           "name": "sales_count_per_category",
@@ -990,6 +1054,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n98766789",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -998,6 +1063,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n티셔츠",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1006,6 +1072,7 @@
             "name": "product_code",
             "description": "@description\n상품코드\n\nP00BDFAW",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1014,6 +1081,7 @@
             "name": "category_name",
             "description": "@description\n카테고리명\n\n상의",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1022,6 +1090,7 @@
             "name": "category_no",
             "description": "@description\n카테고리번호\n\n1591",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1030,6 +1099,7 @@
             "name": "sales_count_per_category",
             "description": "@description\n카테고리별 판매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1038,6 +1108,7 @@
             "name": "sales_item_per_category",
             "description": "@description\n카테고리별 판매물품수\n\n2000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1046,6 +1117,7 @@
             "name": "sales_price_per_category",
             "description": "@description\n카테고리별 상품판매금액\n\n30000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1054,6 +1126,7 @@
             "name": "carts_count_per_category",
             "description": "@description\n카테고리별 담긴수\n\n40000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1081,6 +1154,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1089,6 +1163,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1098,6 +1173,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1106,6 +1182,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1114,6 +1191,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1122,6 +1200,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1131,6 +1210,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1140,6 +1220,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nproduct_no : 상품번호\nproduct_name : 상품명\norder_count : 판매건수\norder_product_count : 판매물품수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1149,6 +1230,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1167,7 +1249,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "sales-N2naHFGn",
+                      "name": "sales-1jtGqXbz",
                       "properties": [
                         {
                           "name": "order_count",
@@ -1222,6 +1304,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n98766789",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1230,6 +1313,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n셔츠",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1238,6 +1322,7 @@
             "name": "order_count",
             "description": "@description\n판매건수\n\n3",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1246,6 +1331,7 @@
             "name": "order_product_count",
             "description": "@description\n판매물품수\n\n2",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1254,6 +1340,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n30000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1281,6 +1368,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1289,6 +1377,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1298,6 +1387,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1306,6 +1396,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1314,6 +1405,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1322,6 +1414,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1331,6 +1424,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1340,6 +1434,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nproduct_no : 상품번호\nproduct_name : 상품명\ncount : 조회수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1349,6 +1444,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1367,7 +1463,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "count-9gL1N70Z",
+                      "name": "count-qeoQVK80",
                       "properties": [
                         {
                           "name": "count",
@@ -1408,6 +1504,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n98766789",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1416,6 +1513,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n셔츠",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1424,6 +1522,7 @@
             "name": "count",
             "description": "@description\n조회수\n\n3",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1450,6 +1549,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1458,6 +1558,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1467,6 +1568,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1475,6 +1577,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1483,6 +1586,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1491,6 +1595,7 @@
                 "name": "orderId",
                 "description": "@description\n주문번호\n\n20240201-0000000\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1500,6 +1605,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1509,6 +1615,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1518,6 +1625,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\norder_id : 주문번호\nad : 광고매체\nkeyword : 검색어\npayment_method : 결제수단\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1527,6 +1635,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1545,7 +1654,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "orderdetails-L2wALoG3",
+                      "name": "orderdetails-fcRYA0Wy",
                       "properties": [
                         {
                           "name": "order_date",
@@ -1628,6 +1737,7 @@
             "name": "order_date",
             "description": "@description\n주문일\n\n2024-06-04",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1636,6 +1746,7 @@
             "name": "order_id",
             "description": "@description\n주문번호\n\n20240201-0000000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1644,6 +1755,7 @@
             "name": "ad",
             "description": "@description\n광고매체\n\nad",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1652,6 +1764,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nkeyword",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1660,6 +1773,7 @@
             "name": "medium",
             "description": "@description\n매체\n\nmedium",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1668,6 +1782,7 @@
             "name": "campaign",
             "description": "@description\n캠페인\n\ncampaign",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1676,6 +1791,7 @@
             "name": "content",
             "description": "@description\n콘텐츠\n\ncontent",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1684,6 +1800,7 @@
             "name": "payment_method",
             "description": "@description\n결제수단\n\ncard",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1692,6 +1809,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n218200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1719,6 +1837,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1727,6 +1846,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1736,6 +1856,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1744,6 +1865,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1752,6 +1874,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1760,6 +1883,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1769,6 +1893,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1778,6 +1903,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\npayment_method : 결제수단\nbuyers_count : 구매자수\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1787,6 +1913,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1805,7 +1932,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "paymethods-rYP1XN5D",
+                      "name": "paymethods-jTLqaPmR",
                       "properties": [
                         {
                           "name": "buyers_count",
@@ -1853,6 +1980,7 @@
             "name": "payment_method",
             "description": "@description\n결제수단\n\nc",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1861,6 +1989,7 @@
             "name": "buyers_count",
             "description": "@description\n구매자수\n\n100",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1869,6 +1998,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1877,6 +2007,7 @@
             "name": "order_amount",
             "description": "@description\n매출액 집계\n\n30000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1904,6 +2035,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1912,6 +2044,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1921,6 +2054,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1929,6 +2063,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1937,6 +2072,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1945,6 +2081,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1963,7 +2100,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "pervisitors-VdiZsGLn",
+                      "name": "pervisitors-kEBnZbKG",
                       "properties": [
                         {
                           "name": "order_amount_per_visitor",
@@ -1997,6 +2134,7 @@
             "name": "order_amount_per_visitor",
             "description": "@description\n방문 1인당 매출액\n\n10000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2005,6 +2143,7 @@
             "name": "order_amount_per_buyer",
             "description": "@description\n구매 1인당 매출액\n\n20000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2032,6 +2171,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2040,6 +2180,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2049,6 +2190,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2057,6 +2199,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2065,6 +2208,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2073,6 +2217,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2082,6 +2227,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2091,6 +2237,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nhour : 시간대\nbuyers_count : 구매자수\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2100,6 +2247,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2118,7 +2266,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "times-Yppmupny",
+                      "name": "times-KBN70C6F",
                       "properties": [
                         {
                           "name": "buyers_count",
@@ -2166,6 +2314,7 @@
             "name": "hour",
             "description": "@description\n시간\n\n1",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2174,6 +2323,7 @@
             "name": "buyers_count",
             "description": "@description\n구매자수\n\n100",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2182,6 +2332,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2190,6 +2341,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n30000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2217,6 +2369,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2225,6 +2378,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2234,6 +2388,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2242,6 +2397,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2250,6 +2406,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2258,6 +2415,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2267,6 +2425,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2276,6 +2435,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndate : 날짜\nuser_count : 사용자수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2285,6 +2445,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2303,7 +2464,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "dailyactive-WgIMQuo2",
+                      "name": "dailyactive-sO5xZzmH",
                       "properties": [
                         {
                           "name": "date",
@@ -2337,6 +2498,7 @@
             "name": "date",
             "description": "@description\n날짜\n\n2023-01-01",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2345,6 +2507,7 @@
             "name": "user_count",
             "description": "@description\n사용자수\n\n32",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2372,6 +2535,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2380,6 +2544,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2389,6 +2554,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2397,6 +2563,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2405,6 +2572,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2413,6 +2581,7 @@
                 "name": "format_type",
                 "description": "@description\n데이터 형식\n\nday: 일별\nhour: 시간별\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2422,6 +2591,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2431,6 +2601,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2440,6 +2611,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndate : 날짜\npage_view : 페이지뷰\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2449,6 +2621,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2467,7 +2640,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "pageview-TCJPrZlE",
+                      "name": "pageview-mESc6OEZ",
                       "properties": [
                         {
                           "name": "date",
@@ -2508,6 +2681,7 @@
             "name": "date",
             "description": "@description\n날짜\n\n2023-01-01",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2516,6 +2690,7 @@
             "name": "hour",
             "description": "@description\n시간\n\n1",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2524,6 +2699,7 @@
             "name": "page_view",
             "description": "@description\n페이지뷰\n\n32",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2551,6 +2727,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2559,6 +2736,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2568,6 +2746,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2576,6 +2755,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2584,6 +2764,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2592,6 +2773,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2601,6 +2783,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2610,6 +2793,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndate : 날짜\nunique_visit_count : 순방문자수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2619,6 +2803,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2637,7 +2822,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "unique-PBPOCJas",
+                      "name": "unique-kp5udBer",
                       "properties": [
                         {
                           "name": "date",
@@ -2671,6 +2856,7 @@
             "name": "date",
             "description": "@description\n날짜\n\n2023-01-01",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2679,6 +2865,7 @@
             "name": "unique_visit_count",
             "description": "@description\n순방문자수\n\n32",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2706,6 +2893,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2714,6 +2902,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2723,6 +2912,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2731,6 +2921,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2739,6 +2930,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2747,6 +2939,7 @@
                 "name": "format_type",
                 "description": "@description\n데이터 형식\n\nday: 일별\nhour: 시간별\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2756,6 +2949,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2765,6 +2959,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2774,6 +2969,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndate : 날짜\nvisit_count : 방문자수\nfirst_visit_count : 처음방문자수\nre_visit_count : 재방문자수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2783,6 +2979,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2801,7 +2998,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "view-rp5axMQD",
+                      "name": "view-QJyV3lS2",
                       "properties": [
                         {
                           "name": "date",
@@ -2856,6 +3053,7 @@
             "name": "date",
             "description": "@description\n날짜\n\n2023-01-01",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2864,6 +3062,7 @@
             "name": "hour",
             "description": "@description\n시간\n\n1",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2872,6 +3071,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n32",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2880,6 +3080,7 @@
             "name": "first_visit_count",
             "description": "@description\n처음방문자수\n\n20",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2888,6 +3089,7 @@
             "name": "re_visit_count",
             "description": "@description\n재방문자수\n\n12",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2914,6 +3116,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2922,6 +3125,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2931,6 +3135,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2939,6 +3144,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2947,6 +3153,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2955,6 +3162,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2964,6 +3172,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2973,6 +3182,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nkeyword : 검색어\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2982,6 +3192,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3000,7 +3211,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "adkeywordsales-VbVOd8Za",
+                      "name": "adkeywordsales-pjBRbeY2",
                       "properties": [
                         {
                           "name": "ad",
@@ -3048,6 +3259,7 @@
             "name": "ad",
             "description": "@description\n광고매체명\n\nad",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3056,6 +3268,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nkeyword",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3064,6 +3277,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3072,6 +3286,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n10000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3099,6 +3314,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3107,6 +3323,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3116,6 +3333,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3124,6 +3342,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3132,6 +3351,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3140,6 +3360,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3149,6 +3370,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3158,6 +3380,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nad : 광고매체명\nvisit_count : 방문수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3167,6 +3390,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3185,7 +3409,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "ads-BBenm1zY",
+                      "name": "ads-n58wOEa1",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -3219,6 +3443,7 @@
             "name": "ad",
             "description": "@description\n광고매체명\n\nad",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3227,6 +3452,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n32",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3254,6 +3480,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3262,6 +3489,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3271,6 +3499,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3279,6 +3508,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3287,6 +3517,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3295,6 +3526,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3304,6 +3536,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3313,6 +3546,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nad : 광고매체명\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3322,6 +3556,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3340,7 +3575,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "adsales-vsdtUdu1",
+                      "name": "adsales-bwjnL6Rd",
                       "properties": [
                         {
                           "name": "ad",
@@ -3381,6 +3616,7 @@
             "name": "ad",
             "description": "@description\n광고매체명\n\nad",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3389,6 +3625,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3397,6 +3634,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n10000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3424,6 +3662,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3432,6 +3671,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3441,6 +3681,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3449,6 +3690,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3457,6 +3699,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3465,6 +3708,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3474,6 +3718,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3483,6 +3728,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndomain : 도메인\nvisit_count : 방문수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3492,6 +3738,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3510,7 +3757,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "domains-n73F5srl",
+                      "name": "domains-ydUffca7",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -3544,6 +3791,7 @@
             "name": "domain",
             "description": "@description\n도메인\n\ncafe24.com",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3552,6 +3800,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3579,6 +3828,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3587,6 +3837,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3596,6 +3847,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3604,6 +3856,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3612,6 +3865,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3620,6 +3874,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3629,6 +3884,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3638,6 +3894,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\ndomain : 도메인\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3647,6 +3904,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3665,7 +3923,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "domainsales-I63kx6nZ",
+                      "name": "domainsales-R3BtDNMI",
                       "properties": [
                         {
                           "name": "order_count",
@@ -3706,6 +3964,7 @@
             "name": "domain",
             "description": "@description\n도메인\n\ncafe24.com",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3714,6 +3973,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3722,6 +3982,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n10000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3748,6 +4009,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3756,6 +4018,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3765,6 +4028,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3773,6 +4037,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3781,6 +4046,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -3789,6 +4055,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3798,6 +4065,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3807,6 +4075,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nkeyword : 검색어\nengine: 검색엔진\npurchase_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3816,6 +4085,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -3834,7 +4104,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "keyworddetails-yZkRvPFf",
+                      "name": "keyworddetails-Hup7nBKn",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -3910,6 +4180,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nonepiece",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3918,6 +4189,7 @@
             "name": "engine",
             "description": "@description\n검색엔진\n\n네이버",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3926,6 +4198,7 @@
             "name": "visit_count",
             "description": "@description\n방문수\n\n200",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3934,6 +4207,7 @@
             "name": "purchase_count",
             "description": "@description\n구매건수\n\n1053",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3942,6 +4216,7 @@
             "name": "purchase_rate",
             "description": "@description\n구매율\n\n15.5",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3950,6 +4225,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n360000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3958,6 +4234,7 @@
             "name": "order_amount_per_visitor",
             "description": "@description\n방문당매출\n\n1800",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3966,6 +4243,7 @@
             "name": "order_amount_per_buyer",
             "description": "@description\n구매당매출\n\n1900",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3993,6 +4271,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4001,6 +4280,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4010,6 +4290,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4018,6 +4299,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4026,6 +4308,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4034,6 +4317,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4043,6 +4327,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4052,6 +4337,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nkeyword : 검색어\nvisit_count : 방문수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4061,6 +4347,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4079,7 +4366,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "keywords-oSP8d9lH",
+                      "name": "keywords-tGXEBF7r",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -4113,6 +4400,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nkeyword",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4121,6 +4409,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4148,6 +4437,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4156,6 +4446,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4165,6 +4456,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4173,6 +4465,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4181,6 +4474,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4189,6 +4483,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4198,6 +4493,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4207,6 +4503,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nkeyword : 검색어\norder_count : 구매건수\norder_amount : 매출액\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4216,6 +4513,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4234,7 +4532,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "keywordsales-hF4LnfHL",
+                      "name": "keywordsales-VC1tp8X5",
                       "properties": [
                         {
                           "name": "order_count",
@@ -4275,6 +4573,7 @@
             "name": "keyword",
             "description": "@description\n검색어\n\nkeyword",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4283,6 +4582,7 @@
             "name": "order_count",
             "description": "@description\n구매건수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4291,6 +4591,7 @@
             "name": "order_amount",
             "description": "@description\n매출액\n\n10000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4318,6 +4619,7 @@
                 "name": "mall_id",
                 "description": "@description\n몰 아이디\n\n샘플 아이디",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4326,6 +4628,7 @@
                 "name": "shop_no",
                 "description": "@description\n샵 번호\n\n샵 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4335,6 +4638,7 @@
                 "name": "start_date",
                 "description": "@description\n시작일\n\n2023-01-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4343,6 +4647,7 @@
                 "name": "end_date",
                 "description": "@description\n종료일\n\n2023-02-01",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4351,6 +4656,7 @@
                 "name": "device_type",
                 "description": "@description\n디바이스 타입\n\npc: pc\nmobile: 모바일\ntotal: 전체",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4359,6 +4665,7 @@
                 "name": "limit",
                 "description": "@description\n응답 갯수\n\n최소: 50\n최대: 1000\n기본: 100\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4368,6 +4675,7 @@
                 "name": "offset",
                 "description": "@description\n오프셋\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4377,6 +4685,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 값\n\nurl : url\nvisit_count : 방문수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4386,6 +4695,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\ndesc: 내림차순\nasc: 오름차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4404,7 +4714,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "urls-AWOQ5gdS",
+                      "name": "urls-vENsGtX1",
                       "properties": [
                         {
                           "name": "visit_count",
@@ -4438,6 +4748,7 @@
             "name": "url",
             "description": "@description\nurl\n\ncafe24.com",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4446,6 +4757,7 @@
             "name": "visit_count",
             "description": "@description\n방문자수\n\n1000",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }

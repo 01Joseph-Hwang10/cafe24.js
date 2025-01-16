@@ -41,7 +41,7 @@ export class TypescriptInterfaceGenerator {
           schema.example && `@example\n\`\`\`json\n${schema.example}\n\`\`\``,
         ),
       properties: pipe(
-        schema.properties,
+        schema.fields,
         filterDuplicates,
         map(property => {
           let type: string;

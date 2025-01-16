@@ -28,6 +28,7 @@ export class KeyValueTableConverter {
           ),
         required: row.key.isRequired,
         default: row.value.default,
+        embed: row.key.isEmbed,
         type: row.childAttributes
           ? this.childAttributeTableConverter.toObjectType(row.childAttributes)
           : new PrimitiveType("any"),

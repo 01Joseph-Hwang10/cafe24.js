@@ -137,13 +137,18 @@ export function collect() {
         //
         // Collect request schema
         //
-        const requestProperties = kvTableConverter.toProperties(
-          new KeyValueTable(
-            requestContainer.querySelector(
-              ":scope > div.table-area:last-child > table",
-            )!,
-          ),
-        );
+        const hasRequestSchema =
+          requestContainer.querySelectorAll(":scope > div.table-area").length >
+          1;
+        const requestProperties = hasRequestSchema
+          ? kvTableConverter.toProperties(
+              new KeyValueTable(
+                requestContainer.querySelector(
+                  ":scope > div.table-area:last-child > table",
+                )!,
+              ),
+            )
+          : [];
 
         // We collect request payload example only for POST and PUT methods
         // for now because it's a hassle to parse the example code for other methods

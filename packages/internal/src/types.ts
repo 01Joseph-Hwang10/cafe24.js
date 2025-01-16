@@ -2,6 +2,7 @@ interface PropertyInit {
   name: string;
   description?: string;
   required?: boolean;
+  embed?: boolean;
   type: PropertyType;
   default?: any;
   example?: any;
@@ -52,6 +53,7 @@ export class Property {
       type: PropertyType.fromJSON(json.type),
       default: json.default,
       example: json.example,
+      embed: json.embed,
     });
   }
 
@@ -62,6 +64,7 @@ export class Property {
     this.type = opts.type;
     this.default = opts.default;
     this.example = opts.example;
+    this.embed = opts.embed;
   }
 
   toJSON() {
@@ -69,6 +72,7 @@ export class Property {
       name: this.name,
       description: this.description,
       required: this.required,
+      embed: this.embed,
       type: this.type.toJSON(),
       default: this.default,
       example: this.example,
@@ -200,6 +204,14 @@ export class Schema {
   public name: string;
   public properties: Property[];
   public example?: string;
+
+  get fields() {
+    return this.properties.filter(({ embed }) => !embed);
+  }
+
+  get embeds() {
+    return this.properties.filter(({ embed }) => embed);
+  }
 
   static fromJSON(json: SchemaInit): Schema {
     return new Schema({

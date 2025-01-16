@@ -11,7 +11,7 @@
  *
  * Options:
  *   --debug             Enable debug mode.
- *   --no-cache          Disable caching of the API spec.
+ *   --no-cache          Don't use cached webhook spec files.
  */
 
 import "zx/globals";
@@ -191,7 +191,7 @@ const typesPath = join(WORKSPACE_ROOT, "src/types/types.ts");
 const eventMapPath = join(WORKSPACE_ROOT, "src/types/event-map.ts");
 
 debug && console.log(`Debug mode enabled.`);
-cache && console.log(`Caching enabled.`);
+cache && console.log(`Using cached webhook spec files.`);
 console.log(`Generating types for webhook schemas...`);
 
 generate().then(process.exit).catch(raise);

@@ -30,4 +30,7 @@ export interface ClientOptions extends base.ClientOptions {
   clientId?: string;
 }
 
-export interface RequestOptions extends base.RequestOptions {}
+export interface RequestOptions<
+  Field extends string = string,
+  Embed extends string = string,
+> extends base.RequestOptions<Field, Embed> {}

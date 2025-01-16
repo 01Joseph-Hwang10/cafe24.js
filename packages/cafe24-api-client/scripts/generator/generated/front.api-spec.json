@@ -21,6 +21,7 @@
                 "name": "mobile",
                 "description": "@description\n모바일 설정값 조회 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -29,6 +30,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -38,6 +40,7 @@
                 "name": "category_no",
                 "description": "@description\n분류 번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -46,6 +49,7 @@
                 "name": "display_group",
                 "description": "@description\n상세 상품분류\n\n1 : 일반상품\n2 : 추천상품\n3 : 신상품\n\n@constraints\n최소: [1]~최대: [3]",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -54,6 +58,7 @@
                 "name": "limit",
                 "description": "@description\n조회결과 최대건수\n\n\n@constraints\n최소: [1]~최대: [200]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -63,6 +68,7 @@
                 "name": "offset",
                 "description": "@description\n조회결과 시작위치\n\n\n@constraints\n최대값: [8000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -81,7 +87,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "products-KjbkLeHa",
+                      "name": "products-QSwXZeE0",
                       "properties": [
                         {
                           "name": "shop_no",
@@ -161,7 +167,7 @@
                             "element": {
                               "type": "object",
                               "schema": {
-                                "name": "point_amount-7HCJOeSo",
+                                "name": "point_amount-Rb6K4STl",
                                 "properties": [
                                   {
                                     "name": "payment_method",
@@ -272,7 +278,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "expiration_date-9NCeC6Zm",
+                              "name": "expiration_date-AMYLmFkt",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -361,7 +367,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "promotion_period-ghFJrvVx",
+                              "name": "promotion_period-d0SFHvui",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -452,6 +458,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -461,6 +468,7 @@
                 "name": "category_no",
                 "description": "@description\n분류 번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -469,6 +477,7 @@
                 "name": "display_group",
                 "description": "@description\n상세 상품분류\n\n1 : 일반상품\n2 : 추천상품\n3 : 신상품\n\n@constraints\n최소: [1]~최대: [3]",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -498,6 +507,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -506,6 +516,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -514,6 +525,7 @@
             "name": "product_name",
             "description": "@description\n상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -522,6 +534,7 @@
             "name": "manufacturer_name",
             "description": "@description\n제조사",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -530,6 +543,7 @@
             "name": "origin_place_value",
             "description": "@description\n원산지",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -538,6 +552,7 @@
             "name": "retail_price",
             "description": "@description\n상품 소비자가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -546,6 +561,7 @@
             "name": "price",
             "description": "@description\n판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -554,6 +570,7 @@
             "name": "interest_free_period",
             "description": "@description\n무이자할부 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -562,6 +579,7 @@
             "name": "eng_product_name",
             "description": "@description\n영문 상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -570,6 +588,7 @@
             "name": "custom_product_code",
             "description": "@description\n자체상품 코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -578,6 +597,7 @@
             "name": "point_amount",
             "description": "@description\n적립금",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -586,6 +606,7 @@
             "name": "brand_name",
             "description": "@description\n브랜드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -594,6 +615,7 @@
             "name": "model_name",
             "description": "@description\n모델명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -602,6 +624,7 @@
             "name": "price_excluding_tax",
             "description": "@description\n상품 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -610,6 +633,7 @@
             "name": "tax",
             "description": "@description\n세액",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -618,6 +642,7 @@
             "name": "product_code",
             "description": "@description\n상품코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -626,6 +651,7 @@
             "name": "simple_description",
             "description": "@description\n상품 간략 설명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -634,6 +660,7 @@
             "name": "summary_description",
             "description": "@description\n상품요약설명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -642,6 +669,7 @@
             "name": "supplier_name",
             "description": "@description\n공급사명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -650,6 +678,7 @@
             "name": "made_date",
             "description": "@description\n제조일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -658,6 +687,7 @@
             "name": "review_count",
             "description": "@description\n사용후기 갯수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -666,6 +696,7 @@
             "name": "expiration_date",
             "description": "@description\n유효기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -674,6 +705,7 @@
             "name": "coupon_discounted_price",
             "description": "@description\n쿠폰적용가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -682,6 +714,7 @@
             "name": "trend_name",
             "description": "@description\n트렌드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -690,6 +723,7 @@
             "name": "shipping_scope",
             "description": "@description\n배송정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -698,6 +732,7 @@
             "name": "shipping_fee_type",
             "description": "@description\n배송비 타입\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -706,6 +741,7 @@
             "name": "shipping_rates",
             "description": "@description\n구간별 배송비",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -714,6 +750,7 @@
             "name": "shipping_fee",
             "description": "@description\n배송비",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -722,6 +759,7 @@
             "name": "discount_price",
             "description": "@description\n할인판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -730,6 +768,7 @@
             "name": "optimum_discount_price",
             "description": "@description\n최적할인가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -738,6 +777,7 @@
             "name": "shipping_method",
             "description": "@description\n배송방법",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -746,6 +786,7 @@
             "name": "promotion_period",
             "description": "@description\n할인 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -754,6 +795,7 @@
             "name": "color",
             "description": "@description\n상품색상",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -762,6 +804,7 @@
             "name": "translated_additional_description",
             "description": "@description\n상품 추가설명 번역정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -770,6 +813,7 @@
             "name": "stock_quantity",
             "description": "@description\n재고수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -778,6 +822,7 @@
             "name": "question_count",
             "description": "@description\n상품문의(수)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -786,6 +831,7 @@
             "name": "product_article_count",
             "description": "@description\n상품자유게시판(수)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -814,6 +860,7 @@
                 "name": "mobile",
                 "description": "@description\n모바일 설정값 조회 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -822,6 +869,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -831,6 +879,7 @@
                 "name": "display_group",
                 "description": "@description\n메인분류 번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -839,6 +888,7 @@
                 "name": "limit",
                 "description": "@description\n조회결과 최대건수\n\n\n@constraints\n최소: [1]~최대: [200]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -848,6 +898,7 @@
                 "name": "offset",
                 "description": "@description\n조회결과 시작위치\n\n\n@constraints\n최대값: [8000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -866,7 +917,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "products-naLS73fS",
+                      "name": "products-6FtVIbZM",
                       "properties": [
                         {
                           "name": "shop_no",
@@ -946,7 +997,7 @@
                             "element": {
                               "type": "object",
                               "schema": {
-                                "name": "point_amount-OK9QyVgv",
+                                "name": "point_amount-Ie56UxD8",
                                 "properties": [
                                   {
                                     "name": "payment_method",
@@ -1057,7 +1108,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "expiration_date-VXggq4cp",
+                              "name": "expiration_date-xmJF6eG7",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -1146,7 +1197,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "promotion_period-VDL1x2Io",
+                              "name": "promotion_period-vqmRUBAh",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -1229,6 +1280,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1237,6 +1289,7 @@
             "name": "product_no",
             "description": "@description\n상품번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1245,6 +1298,7 @@
             "name": "product_name",
             "description": "@description\n상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1253,6 +1307,7 @@
             "name": "manufacturer_name",
             "description": "@description\n제조사",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1261,6 +1316,7 @@
             "name": "origin_place_value",
             "description": "@description\n원산지",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1269,6 +1325,7 @@
             "name": "retail_price",
             "description": "@description\n상품 소비자가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1277,6 +1334,7 @@
             "name": "price",
             "description": "@description\n판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1285,6 +1343,7 @@
             "name": "interest_free_period",
             "description": "@description\n무이자할부 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1293,6 +1352,7 @@
             "name": "eng_product_name",
             "description": "@description\n영문 상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1301,6 +1361,7 @@
             "name": "custom_product_code",
             "description": "@description\n자체상품 코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1309,6 +1370,7 @@
             "name": "point_amount",
             "description": "@description\n적립금",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1317,6 +1379,7 @@
             "name": "brand_name",
             "description": "@description\n브랜드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1325,6 +1388,7 @@
             "name": "model_name",
             "description": "@description\n모델명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1333,6 +1397,7 @@
             "name": "price_excluding_tax",
             "description": "@description\n상품 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1341,6 +1406,7 @@
             "name": "tax",
             "description": "@description\n세액",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1349,6 +1415,7 @@
             "name": "product_code",
             "description": "@description\n상품코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1357,6 +1424,7 @@
             "name": "simple_description",
             "description": "@description\n상품 간략 설명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1365,6 +1433,7 @@
             "name": "summary_description",
             "description": "@description\n상품요약설명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1373,6 +1442,7 @@
             "name": "supplier_name",
             "description": "@description\n공급사명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1381,6 +1451,7 @@
             "name": "made_date",
             "description": "@description\n제조일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1389,6 +1460,7 @@
             "name": "review_count",
             "description": "@description\n사용후기 갯수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1397,6 +1469,7 @@
             "name": "expiration_date",
             "description": "@description\n유효기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1405,6 +1478,7 @@
             "name": "coupon_discounted_price",
             "description": "@description\n쿠폰적용가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1413,6 +1487,7 @@
             "name": "trend_name",
             "description": "@description\n트렌드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1421,6 +1496,7 @@
             "name": "shipping_scope",
             "description": "@description\n배송정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1429,6 +1505,7 @@
             "name": "shipping_fee_type",
             "description": "@description\n배송비 타입\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1437,6 +1514,7 @@
             "name": "shipping_rates",
             "description": "@description\n구간별 배송비",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1445,6 +1523,7 @@
             "name": "shipping_fee",
             "description": "@description\n배송비",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1453,6 +1532,7 @@
             "name": "discount_price",
             "description": "@description\n할인판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1461,6 +1541,7 @@
             "name": "optimum_discount_price",
             "description": "@description\n최적할인가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1469,6 +1550,7 @@
             "name": "shipping_method",
             "description": "@description\n배송방법",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1477,6 +1559,7 @@
             "name": "promotion_period",
             "description": "@description\n할인 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1485,6 +1568,7 @@
             "name": "color",
             "description": "@description\n상품색상",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1493,6 +1577,7 @@
             "name": "translated_additional_description",
             "description": "@description\n상품 추가설명 번역정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1501,6 +1586,7 @@
             "name": "stock_quantity",
             "description": "@description\n재고수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1509,6 +1595,7 @@
             "name": "question_count",
             "description": "@description\n상품문의(수)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1517,6 +1604,7 @@
             "name": "product_article_count",
             "description": "@description\n상품자유게시판(수)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1545,6 +1633,7 @@
                 "name": "channeldiscountprices",
                 "description": "@description\n상품 할인판매가 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1553,6 +1642,7 @@
                 "name": "discountprice",
                 "description": "@description\n상품 할인판매가 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1561,6 +1651,7 @@
                 "name": "decorationimages",
                 "description": "@description\n꾸미기 이미지 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1569,6 +1660,7 @@
                 "name": "benefits",
                 "description": "@description\n혜택 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1577,6 +1669,7 @@
                 "name": "options",
                 "description": "@description\n상품 옵션 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1585,6 +1678,7 @@
                 "name": "variants",
                 "description": "@description\n품목 리소스\n\n상품당 품목정보를 100개까지 조회할 수 있음.\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1593,6 +1687,7 @@
                 "name": "additionalimages",
                 "description": "@description\n추가 이미지 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1601,6 +1696,7 @@
                 "name": "hits",
                 "description": "@description\n상품 조회수 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -1609,6 +1705,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1618,6 +1715,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n조회하고자 하는 상품의 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1626,6 +1724,7 @@
                 "name": "display",
                 "description": "@description\n진열상태\n\n진열 혹은 미진열 되어있는 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1634,6 +1733,7 @@
                 "name": "selling",
                 "description": "@description\n판매상태\n\n판매중이거나 판매안함 상태의 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1642,6 +1742,7 @@
                 "name": "product_name",
                 "description": "@description\n상품명\n\n검색어를 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1650,6 +1751,7 @@
                 "name": "product_code",
                 "description": "@description\n상품코드\n\n검색어를 상품코드에 포함하고 있는 상품 검색(대소문자 구분 필요)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1658,6 +1760,7 @@
                 "name": "brand_code",
                 "description": "@description\n브랜드 코드\n\n브랜드 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1666,6 +1769,7 @@
                 "name": "manufacturer_code",
                 "description": "@description\n제조사 코드\n\n제조사 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1674,6 +1778,7 @@
                 "name": "supplier_code",
                 "description": "@description\n공급사 코드\n\n공급사 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1682,6 +1787,7 @@
                 "name": "trend_code",
                 "description": "@description\n트렌드 코드\n\n트렌드 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1690,6 +1796,7 @@
                 "name": "product_tag",
                 "description": "@description\n상품 검색어\n\n검색어를 상품 검색어 또는 태그에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1698,6 +1805,7 @@
                 "name": "custom_product_code",
                 "description": "@description\n자체상품 코드\n\n검색어를 자체상품코드에 포함하고 있는 상품 검색(대소문자 구분 필요)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1706,6 +1814,7 @@
                 "name": "custom_variant_code",
                 "description": "@description\n자체 품목 코드\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1714,6 +1823,7 @@
                 "name": "price_min",
                 "description": "@description\n상품 판매가 검색 최소값\n\n판매가가 해당 범위 이상인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1722,6 +1832,7 @@
                 "name": "price_max",
                 "description": "@description\n상품 판매가 검색 최대값\n\n판매가가 해당 범위 이하인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1730,6 +1841,7 @@
                 "name": "retail_price_min",
                 "description": "@description\n상품 소비자가 검색 최소값\n\n소비자가가 해당 범위 이상인 상품 검색\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1738,6 +1850,7 @@
                 "name": "retail_price_max",
                 "description": "@description\n상품 소비자가 검색 최대값\n\n소비자가가 해당 범위 이하인 상품 검색\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1746,6 +1859,7 @@
                 "name": "supply_price_min",
                 "description": "@description\n상품 공급가 검색 최소값\n\n공급가가 해당 범위 이하인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1754,6 +1868,7 @@
                 "name": "supply_price_max",
                 "description": "@description\n상품 공급가 검색 최대값\n\n공급가가 해당 범위 이상인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1762,6 +1877,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상품 등록일 검색 시작일\n\n상품 등록일이 해당 날짜 이후인 상품 검색.\n\n등록일 검색 종료일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1770,6 +1886,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상품 등록일 검색 종료일\n\n상품 등록일이 해당 날짜 이전인 상품 검색.\n\n등록일 검색 시작일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1778,6 +1895,7 @@
                 "name": "updated_start_date",
                 "description": "@description\n상품 수정일 검색 시작일\n\n상품 수정일이 해당 날짜 이후인 상품 검색.\n\n수정일 검색 종료일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1786,6 +1904,7 @@
                 "name": "updated_end_date",
                 "description": "@description\n상품 수정일 검색 종료일\n\n상품 수정일이 해당 날짜 이전인 상품 검색.\n\n수정일 검색 시작일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1794,6 +1913,7 @@
                 "name": "category",
                 "description": "@description\n분류 번호\n\n특정 분류에 진열된 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1802,6 +1922,7 @@
                 "name": "eng_product_name",
                 "description": "@description\n영문 상품명\n\n검색어를 영문 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1810,6 +1931,7 @@
                 "name": "supply_product_name",
                 "description": "@description\n공급사 상품명\n\n검색어를 공급사 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1818,6 +1940,7 @@
                 "name": "internal_product_name",
                 "description": "@description\n상품명(관리용)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1826,6 +1949,7 @@
                 "name": "model_name",
                 "description": "@description\n모델명\n\n검색어를 모델명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1834,6 +1958,7 @@
                 "name": "product_condition",
                 "description": "@description\n상품 상태\n\n특정 상품 상태 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1842,6 +1967,7 @@
                 "name": "origin_place_value",
                 "description": "@description\n원산지정보\n\n원산지가 \"기타(1800)\"일 경우 원산지로 입력 가능한 정보.\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1850,6 +1976,7 @@
                 "name": "stock_quantity_max",
                 "description": "@description\n재고수량 검색 최대값\n\n재고가 해당 값 이하로 남아있는 상품 검색.\n\n품목을 여러개 갖고 있는 상품의 경우 해당 조건에 해당하는 품목이 하나라도 있을 경우 검색함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1858,6 +1985,7 @@
                 "name": "stock_quantity_min",
                 "description": "@description\n재고수량 검색 최소값\n\n재고가 해당 값 이상 남아있는 상품 검색.\n\n품목을 여러개 갖고 있는 상품의 경우 해당 조건에 해당하는 품목이 하나라도 있을 경우 검색함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1866,6 +1994,7 @@
                 "name": "stock_safety_max",
                 "description": "@description\n안전재고수량 검색 최대값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1874,6 +2003,7 @@
                 "name": "stock_safety_min",
                 "description": "@description\n안전재고수량 검색 최소값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1882,6 +2012,7 @@
                 "name": "product_weight",
                 "description": "@description\n상품 중량\n\n해당 중량의 상품 검색.\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1890,6 +2021,7 @@
                 "name": "classification_code",
                 "description": "@description\n자체분류\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1898,6 +2030,7 @@
                 "name": "use_inventory",
                 "description": "@description\n재고 사용여부\n\n해당 상품 품목이 재고를 사용하고 있는지 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1906,6 +2039,7 @@
                 "name": "category_unapplied",
                 "description": "@description\n미적용 분류 검색\n\n분류가 등록되지 않은 상품에 대하여 검색함.\n\nT: 미적용 분류 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1914,6 +2048,7 @@
                 "name": "include_sub_category",
                 "description": "@description\n하위분류 포함 검색\n\n하위분류에 등록된 상품을 포함하여 검색함.\n\nT: 포함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1922,6 +2057,7 @@
                 "name": "additional_information_key",
                 "description": "@description\n추가항목 검색조건 키\n\n추가항목에 대하여 검색하기 위한 키. 검색을 위해선 key 와 value 모두 필요함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1930,6 +2066,7 @@
                 "name": "additional_information_value",
                 "description": "@description\n추가항목 검색조건 값\n\n추가항목에 대하여 검색하기 위한 키의 값. 검색을 위해선 key 와 value 모두 필요함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1938,6 +2075,7 @@
                 "name": "approve_status",
                 "description": "@description\n승인상태 검색\n\nN : 승인요청 (신규상품) 상태값\nE : 승인요청 (상품수정) 상태값\nC : 승인완료 상태값\nR : 승인거절 상태값\nI : 검수진행중 상태값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1946,6 +2084,7 @@
                 "name": "since_product_no",
                 "description": "@description\n해당 상품번호 이후 검색\n\n특정 상품번호 이후의 상품들을 검색. 해당 검색조건 사용시 offset과 관계 없이 모든 상품을 검색할 수 있다.\n\n※ 해당 검색 조건 사용시 다음 파라메터로는 사용할 수 없다.\n\nproduct_no\nsort\norder\noffset\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1954,6 +2093,7 @@
                 "name": "product_bundle",
                 "description": "@description\n세트상품 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1962,6 +2102,7 @@
                 "name": "option_type",
                 "description": "@description\n옵션 구성방식\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nC : 조합 일체선택형\nS : 조합 분리선택형\nE : 상품 연동형\nF : 독립 선택형",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1970,6 +2111,7 @@
                 "name": "market_sync",
                 "description": "@description\n마켓 연동 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1978,6 +2120,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 순서 값\n\ncreated_date : 등록일\nupdated_date : 수정일\nproduct_name : 상품명",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1986,6 +2129,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\nasc : 순차정렬\ndesc : 역순 정렬",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1994,6 +2138,7 @@
                 "name": "offset",
                 "description": "@description\n조회결과 시작위치\n\n조회결과 시작위치\n\n\n@constraints\n최대값: [5000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2003,6 +2148,7 @@
                 "name": "limit",
                 "description": "@description\n조회결과 최대건수\n\n조회하고자 하는 최대 건수를 지정할 수 있음.\n예) 10 입력시 10건만 표시함.\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2021,7 +2167,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "products-96xT2Wxb",
+                      "name": "products-Sg2fleG9",
                       "properties": [
                         {
                           "name": "shop_no",
@@ -2240,7 +2386,7 @@
                             "element": {
                               "type": "object",
                               "schema": {
-                                "name": "points_amount-GkKsqFvM",
+                                "name": "points_amount-yq2A0MfC",
                                 "properties": [
                                   {
                                     "name": "payment_method",
@@ -2351,7 +2497,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "expiration_date-SJL0RCHV",
+                              "name": "expiration_date-UFdHdwJr",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -2405,7 +2551,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "icon_show_period-cJmqkIMX",
+                              "name": "icon_show_period-l0VGVzTb",
                               "properties": [
                                 {
                                   "name": "start_date",
@@ -2448,7 +2594,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "list_icon-SH1shOwg",
+                              "name": "list_icon-TBd3nKIQ",
                               "properties": [
                                 {
                                   "name": "soldout_icon",
@@ -2570,6 +2716,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2579,6 +2726,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n조회하고자 하는 상품의 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2587,6 +2735,7 @@
                 "name": "display",
                 "description": "@description\n진열상태\n\n진열 혹은 미진열 되어있는 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2595,6 +2744,7 @@
                 "name": "selling",
                 "description": "@description\n판매상태\n\n판매중이거나 판매안함 상태의 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2603,6 +2753,7 @@
                 "name": "product_name",
                 "description": "@description\n상품명\n\n검색어를 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2611,6 +2762,7 @@
                 "name": "product_code",
                 "description": "@description\n상품코드\n\n상품 코드\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2619,6 +2771,7 @@
                 "name": "brand_code",
                 "description": "@description\n브랜드 코드\n\n브랜드 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2627,6 +2780,7 @@
                 "name": "manufacturer_code",
                 "description": "@description\n제조사 코드\n\n제조사 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2635,6 +2789,7 @@
                 "name": "supplier_code",
                 "description": "@description\n공급사 코드\n\n공급사 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2643,6 +2798,7 @@
                 "name": "trend_code",
                 "description": "@description\n트렌드 코드\n\n트렌드 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2651,6 +2807,7 @@
                 "name": "product_tag",
                 "description": "@description\n상품 검색어\n\n검색어를 상품 검색어 또는 태그에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2659,6 +2816,7 @@
                 "name": "custom_product_code",
                 "description": "@description\n자체상품 코드\n\n검색어를 자체상품코드에 포함하고 있는 상품 검색(대소문자 구분 필요)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2667,6 +2825,7 @@
                 "name": "custom_variant_code",
                 "description": "@description\n자체 품목 코드\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2675,6 +2834,7 @@
                 "name": "price_min",
                 "description": "@description\n상품 판매가 검색 최소값\n\n판매가가 해당 범위 이상인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2683,6 +2843,7 @@
                 "name": "price_max",
                 "description": "@description\n상품 판매가 검색 최대값\n\n판매가가 해당 범위 이하인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2691,6 +2852,7 @@
                 "name": "retail_price_min",
                 "description": "@description\n상품 소비자가 검색 최소값\n\n소비자가가 해당 범위 이상인 상품 검색\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2699,6 +2861,7 @@
                 "name": "retail_price_max",
                 "description": "@description\n상품 소비자가 검색 최대값\n\n소비자가가 해당 범위 이하인 상품 검색\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2707,6 +2870,7 @@
                 "name": "supply_price_min",
                 "description": "@description\n상품 공급가 검색 최소값\n\n공급가가 해당 범위 이하인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2715,6 +2879,7 @@
                 "name": "supply_price_max",
                 "description": "@description\n상품 공급가 검색 최대값\n\n공급가가 해당 범위 이상인 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2723,6 +2888,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상품 등록일 검색 시작일\n\n상품 등록일이 해당 날짜 이후인 상품 검색.\n\n등록일 검색 종료일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2731,6 +2897,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상품 등록일 검색 종료일\n\n상품 등록일이 해당 날짜 이전인 상품 검색.\n\n등록일 검색 시작일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2739,6 +2906,7 @@
                 "name": "updated_start_date",
                 "description": "@description\n상품 수정일 검색 시작일\n\n상품 수정일이 해당 날짜 이후인 상품 검색.\n\n수정일 검색 종료일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2747,6 +2915,7 @@
                 "name": "updated_end_date",
                 "description": "@description\n상품 수정일 검색 종료일\n\n상품 수정일이 해당 날짜 이전인 상품 검색.\n\n수정일 검색 시작일과 같이 사용해야함.\n\n검색 시작일과 종료일이 동일할 경우 해당 날짜로만 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2755,6 +2924,7 @@
                 "name": "category",
                 "description": "@description\n분류 번호\n\n특정 분류에 진열된 상품 검색.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2763,6 +2933,7 @@
                 "name": "eng_product_name",
                 "description": "@description\n영문 상품명\n\n검색어를 영문 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2771,6 +2942,7 @@
                 "name": "supply_product_name",
                 "description": "@description\n공급사 상품명\n\n검색어를 공급사 상품명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2779,6 +2951,7 @@
                 "name": "internal_product_name",
                 "description": "@description\n상품명(관리용)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2787,6 +2960,7 @@
                 "name": "model_name",
                 "description": "@description\n모델명\n\n검색어를 모델명에 포함하고 있는 상품 검색(대소문자 구분 없음)\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2795,6 +2969,7 @@
                 "name": "product_condition",
                 "description": "@description\n상품 상태\n\n특정 상품 상태 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2803,6 +2978,7 @@
                 "name": "origin_place_value",
                 "description": "@description\n원산지정보\n\n원산지가 \"기타(1800)\"일 경우 원산지로 입력 가능한 정보.\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2811,6 +2987,7 @@
                 "name": "stock_quantity_max",
                 "description": "@description\n재고수량 검색 최대값\n\n재고가 해당 값 이하로 남아있는 상품 검색.\n\n품목을 여러개 갖고 있는 상품의 경우 해당 조건에 해당하는 품목이 하나라도 있을 경우 검색함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2819,6 +2996,7 @@
                 "name": "stock_quantity_min",
                 "description": "@description\n재고수량 검색 최소값\n\n재고가 해당 값 이상 남아있는 상품 검색.\n\n품목을 여러개 갖고 있는 상품의 경우 해당 조건에 해당하는 품목이 하나라도 있을 경우 검색함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2827,6 +3005,7 @@
                 "name": "stock_safety_max",
                 "description": "@description\n안전재고수량 검색 최대값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2835,6 +3014,7 @@
                 "name": "stock_safety_min",
                 "description": "@description\n안전재고수량 검색 최소값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2843,6 +3023,7 @@
                 "name": "product_weight",
                 "description": "@description\n상품 중량\n\n해당 중량의 상품 검색.\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2851,6 +3032,7 @@
                 "name": "classification_code",
                 "description": "@description\n자체분류\n\n자체분류 코드가 일치하는 상품 검색\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2859,6 +3041,7 @@
                 "name": "use_inventory",
                 "description": "@description\n재고 사용여부\n\n해당 상품 품목이 재고를 사용하고 있는지 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2867,6 +3050,7 @@
                 "name": "category_unapplied",
                 "description": "@description\n미적용 분류 검색\n\n분류가 등록되지 않은 상품에 대하여 검색함.\n\nT: 미적용 분류 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2875,6 +3059,7 @@
                 "name": "include_sub_category",
                 "description": "@description\n하위분류 포함 검색\n\n하위분류에 등록된 상품을 포함하여 검색함.\n\nT: 포함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2883,6 +3068,7 @@
                 "name": "additional_information_key",
                 "description": "@description\n추가항목 검색조건 키\n\n추가항목에 대하여 검색하기 위한 키. 검색을 위해선 key 와 value 모두 필요함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2891,6 +3077,7 @@
                 "name": "additional_information_value",
                 "description": "@description\n추가항목 검색조건 값\n\n추가항목에 대하여 검색하기 위한 키의 값. 검색을 위해선 key 와 value 모두 필요함.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2899,6 +3086,7 @@
                 "name": "approve_status",
                 "description": "@description\n승인상태 검색\n\nN : 승인요청 (신규상품) 상태값\nE : 승인요청 (상품수정) 상태값\nC : 승인완료 상태값\nR : 승인거절 상태값\nI : 검수진행중 상태값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2907,6 +3095,7 @@
                 "name": "since_product_no",
                 "description": "@description\n해당 상품번호 이후 검색\n\n특정 상품번호 이후의 상품들을 검색. 해당 검색조건 사용시 offset과 관계 없이 모든 상품을 검색할 수 있다.\n\n※ 해당 검색 조건 사용시 다음 파라메터로는 사용할 수 없다.\n\nproduct_no\nsort\norder\noffset\n\n@constraints\n최소값: [0],최대값: [2147483647]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2915,6 +3104,7 @@
                 "name": "product_bundle",
                 "description": "@description\n세트상품 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2923,6 +3113,7 @@
                 "name": "option_type",
                 "description": "@description\n옵션 구성방식\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nC : 조합 일체선택형\nS : 조합 분리선택형\nE : 상품 연동형\nF : 독립 선택형",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2931,6 +3122,7 @@
                 "name": "market_sync",
                 "description": "@description\n마켓 연동 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2968,6 +3160,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2977,6 +3170,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n조회하고자 하는 상품의 번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2985,6 +3179,7 @@
                 "name": "variants",
                 "description": "@description\n품목 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -2993,6 +3188,7 @@
                 "name": "memos",
                 "description": "@description\n메모 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3001,6 +3197,7 @@
                 "name": "hits",
                 "description": "@description\n상품 조회수 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3009,6 +3206,7 @@
                 "name": "seo",
                 "description": "@description\n상품 Seo 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3017,6 +3215,7 @@
                 "name": "tags",
                 "description": "@description\n상품 태그 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3025,6 +3224,7 @@
                 "name": "options",
                 "description": "@description\n상품 옵션 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3033,6 +3233,7 @@
                 "name": "discountprice",
                 "description": "@description\n상품 할인판매가 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3041,6 +3242,7 @@
                 "name": "decorationimages",
                 "description": "@description\n꾸미기 이미지 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3049,6 +3251,7 @@
                 "name": "benefits",
                 "description": "@description\n혜택 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3057,6 +3260,7 @@
                 "name": "additionalimages",
                 "description": "@description\n추가 이미지 리소스",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3065,6 +3269,7 @@
                 "name": "custom_properties",
                 "description": "@description\n사용자 정의 속성",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -3080,7 +3285,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "product-tSPAu7jI",
+                    "name": "product-9Rk7CaXe",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -3104,7 +3309,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "category-YTzSD2Pw",
+                              "name": "category-ry83p7B6",
                               "properties": [
                                 {
                                   "name": "category_no",
@@ -3425,7 +3630,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "points_amount-Pqg869A9",
+                              "name": "points_amount-QoPGhWz6",
                               "properties": [
                                 {
                                   "name": "payment_method",
@@ -3557,7 +3762,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "expiration_date-qvrTH661",
+                            "name": "expiration_date-Ufe8qO1a",
                             "properties": [
                               {
                                 "name": "start_date",
@@ -3611,7 +3816,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "icon_show_period-GFIgeitW",
+                            "name": "icon_show_period-Vd9qOxKT",
                             "properties": [
                               {
                                 "name": "start_date",
@@ -3672,7 +3877,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "shipping_period-JdKsiqnH",
+                            "name": "shipping_period-48OqIM12",
                             "properties": [
                               {
                                 "name": "minimum",
@@ -3721,7 +3926,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "shipping_rates-BlMxeG7w",
+                              "name": "shipping_rates-3RpxD0hL",
                               "properties": [
                                 {
                                   "name": "shipping_rates_min",
@@ -3776,7 +3981,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "list_icon-NncOmuEp",
+                            "name": "list_icon-xpeYdKnR",
                             "properties": [
                               {
                                 "name": "soldout_icon",
@@ -3811,7 +4016,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "additional_information-XOIUxIer",
+                              "name": "additional_information-QPdwKMmI",
                               "properties": [
                                 {
                                   "name": "key",
@@ -3857,7 +4062,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "relational_product-ZgKRfXLl",
+                              "name": "relational_product-JH0FPViS",
                               "properties": [
                                 {
                                   "name": "product_no",
@@ -3940,6 +4145,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3948,6 +4154,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3956,6 +4163,7 @@
             "name": "product_code",
             "description": "@description\n상품코드\n\n시스템이 상품에 부여한 코드. 해당 쇼핑몰 내에서 상품코드는 중복되지 않음.\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [8자]~최대: [8자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3964,6 +4172,7 @@
             "name": "custom_product_code",
             "description": "@description\n자체상품 코드\n\n사용자가 상품에 부여 가능한 코드. 재고 관리등의 이유로 자체적으로 상품을 관리 하고 있는 경우 사용함.\n\n@constraints\n최대글자수 : [40자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3972,6 +4181,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n상품의 이름. 상품명은 상품을 구분하는 가장 기초적인 정보이며 검색 정보가 된다. HTML을 사용하여 입력이 가능하다.\n\n@constraints\n최대글자수 : [250자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3980,6 +4190,7 @@
             "name": "eng_product_name",
             "description": "@description\n영문 상품명\n\n상품의 영문 이름. 해외 배송 등에 사용 가능함.\n\n@constraints\n최대글자수 : [250자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3988,6 +4199,7 @@
             "name": "model_name",
             "description": "@description\n모델명\n\n상품의 모델명.\n\n@constraints\n최대글자수 : [100자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -3996,6 +4208,7 @@
             "name": "price_excluding_tax",
             "description": "@description\n상품가(세금 제외)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4004,6 +4217,7 @@
             "name": "price",
             "description": "@description\n상품 판매가\n\n상품의 판매 가격. 쿠폰 및 혜택을 적용하기 전의 가격.\n상품 등록시엔 모든 멀티 쇼핑몰에 동일한 가격으로 등록하며, 멀티쇼핑몰별로 다른 가격을 입력하고자 할 경우 상품 수정을 통해 가격을 다르게 입력할 수 있다.\n※ 판매가 = [ 공급가 + (공급가 * 마진율) + 추가금액 ]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4012,6 +4226,7 @@
             "name": "retail_price",
             "description": "@description\n상품 소비자가\n\n시중에 판매되는 소비자 가격. 쇼핑몰의 가격을 강조하기 위한 비교 목적으로 사용함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4020,6 +4235,7 @@
             "name": "display",
             "description": "@description\n진열상태\n\n상품을 쇼핑몰에 진열할지 여부. 상품을 쇼핑몰에 진열할 경우 설정한 상품분류와 메인화면에 표시된다. 상품이 쇼핑몰에 진열되어 있지 않으면 쇼핑몰 화면에 표시되지 않아 접근할 수 없으며 상품을 구매할 수 없다.\n\nT : 진열함\nF : 진열안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4028,6 +4244,7 @@
             "name": "selling",
             "description": "@description\n판매상태\n\n상품을 쇼핑몰에 판매할지 여부. 상품을 진열한 상태로 판매를 중지할 경우 상품은 쇼핑몰에 표시되지만 \"품절\"로 표시되어 상품을 구매할 수 없다. 상품이 \"진열안함\"일 경우 \"판매함\" 상태여도 상품에 접근할 수 없기 때문에 구매할 수 없다.\n\nT : 판매함\nF : 판매안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4036,6 +4253,7 @@
             "name": "product_used_month",
             "description": "@description\n중고상품 사용 개월\n\n@constraints\n최대값: [2147483647]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4044,6 +4262,7 @@
             "name": "summary_description",
             "description": "@description\n상품요약설명\n\n상품에 대한 요약 정보. 상품 진열 화면에서 노출 가능한 설명. HTML을 사용하여 입력이 가능하다.\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정']에서 노출되도록 설정 가능하다.\n\n@constraints\n최대글자수 : [255자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4052,6 +4271,7 @@
             "name": "product_tag",
             "description": "@description\n상품 검색어\n\n쇼핑 큐레이션 사용 시 - 배열 최대사이즈 : [100]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4060,6 +4280,7 @@
             "name": "tax_calculation",
             "description": "@description\n세금 계산 유형\n\nA : 자동 계산\nM : 수동 계산",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4068,6 +4289,7 @@
             "name": "price_content",
             "description": "@description\n판매가 대체문구\n\n상품의 가격 대신 표시되는 문구. 품절이나 상품이 일시적으로 판매 불가할 때 사용.\n\n@constraints\n최대글자수 : [20자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4076,6 +4298,7 @@
             "name": "buy_limit_by_product",
             "description": "@description\n구매제한 개별 설정여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4084,6 +4307,7 @@
             "name": "buy_limit_type",
             "description": "@description\n구매제한\n\n해당 상품을 구매할 수 있는 회원 정보 표시.\n\nN : 회원만 구매하며\n구매버튼 감추기\nM : 회원만 구매하며\n구매버튼 보이기\nF : 구매제한 안함\nO : 지정된 회원만 구매하며 구매버튼 감추기\nD : 지정된 회원만 구매하며 구매버튼 보이기",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4092,6 +4316,7 @@
             "name": "buy_group_list",
             "description": "@description\n구매가능 회원 등급",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4100,6 +4325,7 @@
             "name": "buy_member_id_list",
             "description": "@description\n구매가능 회원아이디",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4108,6 +4334,7 @@
             "name": "repurchase_restriction",
             "description": "@description\n재구매 제한\n\nT : 재구매 불가\nF : 제한안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4116,6 +4343,7 @@
             "name": "single_purchase_restriction",
             "description": "@description\n단독구매 제한\n\nT : 단독구매 불가\nF : 제한안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4124,6 +4352,7 @@
             "name": "buy_unit_type",
             "description": "@description\n구매단위 타입\n\n해당 상품의 구매 단위를 1개 이상으로 설정한 경우 해당 구매 단위를 품목 단위로 할 것인지, 상품 단위로 할 것인지에 대한 설정\n\nP : 상품 기준\nO : 품목 기준",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4132,6 +4361,7 @@
             "name": "buy_unit",
             "description": "@description\n구매단위\n\n구매할 수 있는 최소한의 단위 표시.\n예) 구매 주문단위가 세 개일 경우, 3개, 6개, 9개 단위로 구매 가능함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4140,6 +4370,7 @@
             "name": "order_quantity_limit_type",
             "description": "@description\n주문수량 제한 기준\n\n해당 상품의 주문 수량 제한시 제한 기준을 품목 단위로 할 것인지, 상품 단위로 할 것인지에 대한 설정\n\nP : 상품 기준\nO : 품목 기준",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4148,6 +4379,7 @@
             "name": "minimum_quantity",
             "description": "@description\n최소 주문수량\n\n주문 가능한 최소한의 주문 수량. 주문 수량 미만으로 구매 할 수 없음.\n\n@constraints\n최대값: [2147483647]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4156,6 +4388,7 @@
             "name": "maximum_quantity",
             "description": "@description\n최대 주문수량\n\n주문 가능한 최대한의 주문 수량. 주문 수량을 초과하여 구매 할 수 없음.\n\n최대 주문수량이 \"제한없음\"일 경우 \"0\"으로 표시된다.\n\n@constraints\n최대값: [2147483647]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4164,6 +4397,7 @@
             "name": "points_by_product",
             "description": "@description\n적립금 개별설정 사용여부\n\nF : 기본설정 사용\nT : 개별설정",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4172,6 +4406,7 @@
             "name": "points_setting_by_payment",
             "description": "@description\n결제방식별 적립금 설정 여부\n\nB : 기본 적립금설정 사용\nC : 결제방식에 따른 적립",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4180,6 +4415,7 @@
             "name": "points_amount",
             "description": "@description\n적립금 설정 정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4188,6 +4424,7 @@
             "name": "adult_certification",
             "description": "@description\n성인인증\n\n성인인증이 필요한 상품인지 여부. 성인인증이 필요한 상품인 구매를 위해서는 본인인증을 거쳐야함.\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4196,6 +4433,7 @@
             "name": "detail_image",
             "description": "@description\n상세이미지\n\n상품 상세 화면에 표시되는 상품 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4204,6 +4442,7 @@
             "name": "list_image",
             "description": "@description\n목록이미지\n\n상품 분류 화면, 메인 화면, 상품 검색 화면에 표시되는 상품의 목록 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4212,6 +4451,7 @@
             "name": "tiny_image",
             "description": "@description\n작은목록이미지\n\n최근 본 상품 영역에 표시되는 상품의 목록 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4220,6 +4460,7 @@
             "name": "small_image",
             "description": "@description\n축소이미지\n\n상품 상세 화면 하단에 표시되는 상품 목록 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4228,6 +4469,7 @@
             "name": "use_naverpay",
             "description": "@description\n네이버페이 사용여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4236,6 +4478,7 @@
             "name": "naverpay_type",
             "description": "@description\n네이버페이 판매타입\n\nC : 네이버페이 + 쇼핑몰 동시판매 상품\nO : 네이버페이 전용상품",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4244,6 +4487,7 @@
             "name": "manufacturer_code",
             "description": "@description\n제조사 코드\n\n제조사를 등록하면 자동으로 생성되는 코드로 상품에 특정 제조사를 지정할 때 사용.\n\n미입력시 자체제작(M0000000) 사용\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [8자]~최대: [8자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4252,6 +4496,7 @@
             "name": "trend_code",
             "description": "@description\n트렌드 코드\n\n트렌드를 등록하면 자동으로 생성되는 코드로 상품에 특정 트렌드를 지정할 때 사용.\n\n미입력시 기본트렌드(T0000000) 사용\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [8자]~최대: [8자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4260,6 +4505,7 @@
             "name": "brand_code",
             "description": "@description\n브랜드 코드\n\n브랜드를 등록하면 자동으로 생성되는 코드로 상품에 특정 브랜드를 지정할 때 사용.\n\n미입력시 자체브랜드(B0000000) 사용\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [8자]~최대: [8자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4268,6 +4514,7 @@
             "name": "made_date",
             "description": "@description\n제조일자\n\n상품을 제조한 제조일자.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4276,6 +4523,7 @@
             "name": "expiration_date",
             "description": "@description\n유효기간\n\n상품을 정상적으로 사용할 수 있는 기간. 상품권이나 티켓 같은 무형 상품, 식품이나 화장품 같은 유형 상품의 유효기간을 표시.\n\n주로 상품권이나 티켓 같은 무형 상품에 사용되며, 해당 무형 상품의 유효기간을 표시.\n\n@constraints\n배열 최대사이즈: [2]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4284,6 +4532,7 @@
             "name": "origin_classification",
             "description": "@description\n원산지 국내/국외/기타\n\nF : 국내\nT : 국외\nE : 기타",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4292,6 +4541,7 @@
             "name": "origin_place_no",
             "description": "@description\n원산지 번호\n\n원산지 번호를 List all Origin API를 통해 원산지를 조회하여 입력\norigin_classification이 F(국내)인 경우, 해외 여부(foreign)가 \"F\"인 원산지만 입력 가능함.\norigin_classification이 T(해외)인 경우, 해외 여부(foreign)가 \"T\"인 원산지만 입력 가능함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4300,6 +4550,7 @@
             "name": "origin_place_value",
             "description": "@description\n원산지기타정보\n\n원산지가 \"기타(1800)\"일 경우 원산지로 입력 가능한 정보.\n\n@constraints\n최대글자수 : [30자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4308,6 +4559,7 @@
             "name": "made_in_code",
             "description": "@description\n원산지 국가코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4316,6 +4568,7 @@
             "name": "icon_show_period",
             "description": "@description\n아이콘 노출 기간\n\n상품에 설정한 아이콘이 노출되는 기간.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4324,6 +4577,7 @@
             "name": "icon",
             "description": "@description\n아이콘\n\n상품에 표시되는 아이콘. 상품 판매를 강조하기 위한 목적으로 사용이 가능함.\n\n@constraints\n배열 최대사이즈: [5]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4332,6 +4586,7 @@
             "name": "product_material",
             "description": "@description\n상품소재\n\n상품의 소재. 복합 소재일 경우 상품의 소재와 함유랑을 함께 입력해야함. (예 : 면 80%, 레이온 20%)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4340,6 +4595,7 @@
             "name": "list_icon",
             "description": "@description\n추천 / 품절 / 신상품 아이콘 노출 여부\n\n추천, 품절, 신상품 아이콘을 목록에서 표시하는지 여부\n\n※ 품절 아이콘\n\n● 상품이 품절 상태임을 알려주는 아이콘\n● 재고관리 및 품절 기능을 사용하는 상품에 대해 재고가 없을 경우 표시\n\n※ 추천, 신상품 아이콘\n\n● 상품분류나 메인화면의 추천상품, 신상품 영역에 진열된 상품인 경우, 설정에 따라 해당 아이콘을 표시함\n\n※ 아이콘 노출 여부 설정위치 : [쇼핑몰 설정 > 상품 설정 > '상품 정책 설정 > 상품 관련 설정 > 상품 아이콘 설정']",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4348,6 +4604,7 @@
             "name": "approve_status",
             "description": "@description\n승인요청 결과\n\nN : 승인요청 (신규상품)\nE : 승인요청 (상품수정)\nC : 승인완료\nR : 승인거절\nI : 검수진행중\nEmpty Value : 요청된적 없음",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4356,6 +4613,7 @@
             "name": "sold_out",
             "description": "@description\n품절여부\n\nT : 품절\nF : 품절아님",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4364,6 +4622,7 @@
             "name": "discountprice",
             "description": "@description\n상품 할인판매가 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4372,6 +4631,7 @@
             "name": "decorationimages",
             "description": "@description\n꾸미기 이미지 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4380,6 +4640,7 @@
             "name": "benefits",
             "description": "@description\n혜택 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4388,6 +4649,7 @@
             "name": "options",
             "description": "@description\n상품 옵션 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4396,6 +4658,7 @@
             "name": "variants",
             "description": "@description\n품목 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4404,6 +4667,7 @@
             "name": "hits",
             "description": "@description\n상품 조회수 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4412,6 +4676,7 @@
             "name": "clearance_category_code",
             "description": "@description\n해외통관코드\n\nclearance_category_code \n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [8자]~최대: [8자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4420,6 +4685,7 @@
             "name": "additionalimages",
             "description": "@description\n추가 이미지 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4428,6 +4694,7 @@
             "name": "exposure_limit_type",
             "description": "@description\n표시제한 범위\n\nA : 모두에게 표시\nM : 회원에게만 표시",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4436,6 +4703,7 @@
             "name": "exposure_group_list",
             "description": "@description\n표시대상 회원 등급",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4444,6 +4712,7 @@
             "name": "set_product_type",
             "description": "@description\n세트상품 타입\n\nC : 일반세트\nS : 분리세트",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4452,6 +4721,7 @@
             "name": "use_kakaopay",
             "description": "@description\n카카오페이 사용여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4460,6 +4730,7 @@
             "name": "shipping_fee_type",
             "description": "@description\n배송비 타입\n\n(개별배송비를 사용할 경우) 상품의 배송비 타입.\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4468,6 +4739,7 @@
             "name": "main",
             "description": "@description\n메인진열\n\n상품을 \"추천상품\", \"신상품\"과 같은 메인진열에 진열할 경우, 메인 진열 번호를 표시한다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4476,6 +4748,7 @@
             "name": "channeldiscountprices",
             "description": "@description\n상품 할인판매가 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4484,6 +4757,7 @@
             "name": "market_sync",
             "description": "@description\n마켓 연동 여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4492,6 +4766,7 @@
             "name": "memos",
             "description": "@description\n메모 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4500,6 +4775,7 @@
             "name": "seo",
             "description": "@description\n상품 Seo 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4508,6 +4784,7 @@
             "name": "category",
             "description": "@description\n분류 번호\n\n해당 상품이 진열되어있는 상품 분류.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4516,6 +4793,7 @@
             "name": "project_no",
             "description": "@description\n기획전 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4524,6 +4802,7 @@
             "name": "description",
             "description": "@description\n상품상세설명\n\n상품에 보다 상세한 정보가 포함되어있는 설명. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4532,6 +4811,7 @@
             "name": "mobile_description",
             "description": "@description\n모바일 상품 상세설명\n\n입력시 모바일 쇼핑몰에서 상품상세설명 대신 모바일 상품 상세 설명을 대신 표시함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4540,6 +4820,7 @@
             "name": "separated_mobile_description",
             "description": "@description\n모바일 별도 등록\n\nT : 직접등록\nF : 상품 상세설명 동일",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4548,6 +4829,7 @@
             "name": "payment_info",
             "description": "@description\n상품결제안내\n\n상품의 결제 방법에 대한 안내 문구. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4556,6 +4838,7 @@
             "name": "shipping_info",
             "description": "@description\n상품배송안내\n\n상품의 배송 방법에 대한 안내 문구. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4564,6 +4847,7 @@
             "name": "exchange_info",
             "description": "@description\n교환/반품안내\n\n상품의 교환/반품 방법에 대한 안내 문구. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4572,6 +4856,7 @@
             "name": "service_info",
             "description": "@description\n서비스문의/안내\n\n제품의 사후 고객 서비스 방법 대한 안내 문구. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4580,6 +4865,7 @@
             "name": "product_tax_type_text",
             "description": "@description\n부가세 표시 문구\n\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정 > 추가설정 > 판매가 부가세 표시문구']에서 설정한 문구 표시\ntax_calculation이 A(자동계산)일 경우 null로 반환됨.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4588,6 +4874,7 @@
             "name": "simple_description",
             "description": "@description\n상품 간략 설명\n\n상품에 대한 간략한 정보. 상품 진열 화면에서 노출 가능한 설명. HTML을 사용하여 입력이 가능하다.\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정']에서 노출되도록 설정 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4596,6 +4883,7 @@
             "name": "tags",
             "description": "@description\n상품 태그 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4604,6 +4892,7 @@
             "name": "has_option",
             "description": "@description\n옵션 사용여부\n\n해당 상품이 옵션을 갖고 있는지에 대한 여부. 옵션을 갖고 있는 상품은 사이즈나 색상과 같은 다양한 선택지를 제공한다.\n\nT : 옵션사용함\nF : 옵션 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4612,6 +4901,7 @@
             "name": "soldout_message",
             "description": "@description\n품절표시 문구\n\n@constraints\n최대글자수 : [250자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4620,6 +4910,7 @@
             "name": "option_type",
             "description": "@description\n옵션 구성방식\n\n옵션을 사용할 경우, 옵션의 유형 표시\n\n● 조합 일체선택형 : 하나의 셀렉스박스(버튼 이나 라디오버튼)에 모든 옵션이 조합되어 표시됨\n● 조합 분리선택형 : 옵션을 각각의 셀렉스박스(버튼 이나 라디오버튼)로 선택할 수 있으며 옵션명을 기준으로 옵션값을 조합할 수 있음\n● 상품 연동형 : 옵션표시방식은 조합형과 유사하지만 필수옵션과 선택옵션을 선택할 수 있음. 옵션의 조합을 제한 없이 생성할 수 있음.\n● 독립 선택형 : 독립적인 조건 여러개를 각각 선택할 수 있는 옵션으로 옵션 값이 조합되지 않고 각각의 품목으로 생성됨.\n\nC : 조합 일체선택형\nS : 조합 분리선택형\nE : 상품 연동형\nF : 독립 선택형",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4628,6 +4919,7 @@
             "name": "shipping_calculation",
             "description": "@description\n배송 계산 유형\n\nA : 자동 계산\nM : 수동 계산",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4636,6 +4928,7 @@
             "name": "shipping_method",
             "description": "@description\n배송방법\n\n(개별배송비를 사용할 경우) 배송 수단 및 방법\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\n01 : 택배\n02 : 빠른등기\n03 : 일반등기\n04 : 직접배송\n05 : 퀵배송\n06 : 기타\n07 : 화물배송\n08 : 매장직접수령\n09 : 배송필요 없음",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4644,6 +4937,7 @@
             "name": "prepaid_shipping_fee",
             "description": "@description\n배송비 선결제 설정\n\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\nC : 착불\nP : 선결제\nB : 선결제/착불",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4652,6 +4946,7 @@
             "name": "shipping_period",
             "description": "@description\n배송기간\n\n(개별배송비를 사용할 경우) 상품 배송시 평균적으로 소요되는 배송 기간.\nshipping_calculation이 A(자동계산)일 경우 null로 반환.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4660,6 +4955,7 @@
             "name": "shipping_scope",
             "description": "@description\n배송정보\n\n국내에만 배송이 가능한 상품인지 해외에도 배송이 가능한 상품인지 표시. [쇼핑몰 설정 > 배송 설정 > '배송 정책 설정 > 배송비 설정 > 개별배송비 설정'] 에서 상품별 개별배송료 설정이 사용안함인 경우 설정 불가.\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\nA : 국내배송\nC : 해외배송\nB : 국내/해외배송",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4668,6 +4964,7 @@
             "name": "shipping_area",
             "description": "@description\n배송지역\n\n(개별배송비를 사용할 경우) 상품을 배송할 수 있는 지역.\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\n@constraints\n최대글자수 : [255자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4676,6 +4973,7 @@
             "name": "shipping_rates",
             "description": "@description\n구간별 배송비\n\n개별배송비를 사용할 경우 상품의 개별 배송비.\n\nshipping_fee_type이 R, N일 경우 배열 안에 shipping_fee를 정의하여 배송비를 설정할 수 있다.\n\nshipping_fee_type이 M, D, W, C일 경우 배열 안에 다음과 같이 정의하여 배송비 구간을 설정할 수 있다.\nshipping_rates_min : 배송비 구간 시작 기준\nshipping_rates_max : 배송비 구간 종료 기준\nshipping_fee : 배송비\n\nshipping_calculation이 A(자동계산)일 경우 null로 반환.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4684,6 +4982,7 @@
             "name": "product_shipping_type",
             "description": "@description\n상품 배송유형\n\nD : 사입배송\nC : 직접배송\nE : 기타(창고/위탁)",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4692,6 +4991,7 @@
             "name": "origin_place_code",
             "description": "@description\n원산지 코드\n\n상품의 원산지 코드.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4700,6 +5000,7 @@
             "name": "additional_information",
             "description": "@description\n추가항목\n\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정']에서 추가한 추가항목.\n\n기본적인 상품 정보 외에 추가로 표시항 항목이 있을 때 추가하여 사용함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4708,6 +5009,7 @@
             "name": "relational_product",
             "description": "@description\n관련상품\n\n해당 상품과 비슷한 상품 혹은 대체 가능한 상품. 관련 상품 등록시 해당 상품의 상세페이지 하단에 노출된다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4716,6 +5018,7 @@
             "name": "select_one_by_option",
             "description": "@description\n옵션별로 한 개씩 선택 (독립형 옵션)\n\n독립형 옵션을 사용할 경우, 하나의 옵션을 여러개 중복하여 선택할 수 없고 한개씩만 선택 가능함.\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4724,6 +5027,7 @@
             "name": "custom_properties",
             "description": "@description\n상품 Seo 리소스",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4752,6 +5056,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4761,6 +5066,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4776,7 +5082,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "decorationimage-qwvpfHSE",
+                    "name": "decorationimage-hobxeBc4",
                     "properties": [
                       {
                         "name": "use_show_date",
@@ -4807,7 +5113,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "image_list-ptggMd6I",
+                              "name": "image_list-fjVQ5xdq",
                               "properties": [
                                 {
                                   "name": "code",
@@ -4859,6 +5165,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4867,6 +5174,7 @@
             "name": "use_show_date",
             "description": "@description\n표시기간 사용 여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4875,6 +5183,7 @@
             "name": "show_start_date",
             "description": "@description\n표시기간 시작 일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4883,6 +5192,7 @@
             "name": "show_end_date",
             "description": "@description\n표시기간 종료 일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4891,6 +5201,7 @@
             "name": "image_list",
             "description": "@description\n꾸미기 이미지 리스트\n\n수평위치(image_horizontal_position)\nL : 왼쪽\nC : 가운데\nR : 오른쪽\n\n수직위치(image_vertical_position)\nT : 상단\nC : 중단\nB : 하단",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4919,6 +5230,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -4928,6 +5240,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -4943,7 +5256,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "discountprice-uAtzqEHA",
+                    "name": "discountprice-cERurq2B",
                     "properties": [
                       {
                         "name": "pc_discount_price",
@@ -4983,6 +5296,7 @@
             "name": "pc_discount_price",
             "description": "@description\nPC 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4991,6 +5305,7 @@
             "name": "mobile_discount_price",
             "description": "@description\n모바일 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -4999,6 +5314,7 @@
             "name": "app_discount_price",
             "description": "@description\n앱 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5027,6 +5343,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -5036,6 +5353,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n시스템에서 부여한 상품의 번호. 상품 번호는 쇼핑몰 내에서 중복되지 않는다.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5079,6 +5397,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -5088,6 +5407,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5103,7 +5423,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "icons-kcHsjnFc",
+                    "name": "icons-DBYuxmew",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -5141,7 +5461,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "image_list-vFQ3J78w",
+                              "name": "image_list-b6HBYXvt",
                               "properties": [
                                 {
                                   "name": "code",
@@ -5179,6 +5499,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5187,6 +5508,7 @@
             "name": "use_show_date",
             "description": "@description\n표시기간 사용 여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5195,6 +5517,7 @@
             "name": "show_start_date",
             "description": "@description\n표시기간 시작 일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5203,6 +5526,7 @@
             "name": "show_end_date",
             "description": "@description\n표시기간 종료 일자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5211,6 +5535,7 @@
             "name": "image_list",
             "description": "@description\n상품 아이콘 리스트",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5239,6 +5564,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -5248,6 +5574,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5263,7 +5590,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "options-XXpxDRnB",
+                    "name": "options-SMmaL6Tf",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -5308,7 +5635,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "options-FaS6DznA",
+                              "name": "options-S66AKmdk",
                               "properties": [
                                 {
                                   "name": "option_code",
@@ -5332,7 +5659,7 @@
                                     "element": {
                                       "type": "object",
                                       "schema": {
-                                        "name": "option_value-Y2DF3pa3",
+                                        "name": "option_value-0PH99yGS",
                                         "properties": [
                                           {
                                             "name": "option_image_file",
@@ -5422,7 +5749,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "additional_options-gCGRk0DG",
+                              "name": "additional_options-OUIIAUfd",
                               "properties": [
                                 {
                                   "name": "additional_option_name",
@@ -5463,7 +5790,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "attached_file_option-5mRCthhP",
+                            "name": "attached_file_option-u2aRMYcQ",
                             "properties": [
                               {
                                 "name": "option_name",
@@ -5507,6 +5834,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5515,6 +5843,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
             "required": true,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5523,6 +5852,7 @@
             "name": "has_option",
             "description": "@description\n옵션 사용여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5531,6 +5861,7 @@
             "name": "option_type",
             "description": "@description\n옵션 구성방식\n\n옵션을 사용할 경우, 옵션의 유형 표시\n\n● 조합형 : 옵션명을 기준으로 옵션값을 조합할 수 있음\n● 상품 연동형 : 옵션표시방식은 조합형과 유사하지만 필수옵션과 선택옵션을 선택할 수 있음. 옵션의 조합을 제한 없이 생성할 수 있음.\n● 독립 선택형 : 독립적인 조건 여러개를 각각 선택할 수 있는 옵션으로 옵션 값이 조합되지 않고 각각의 품목으로 생성됨.\n\nT : 조합형\nE : 연동형\nF : 독립형",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5539,6 +5870,7 @@
             "name": "option_list_type",
             "description": "@description\n옵션 표시방식\n\n조합형 옵션을 사용할 경우, 조합형 옵션의 유형 표시\n\n* 조합 일체선택형 : 하나의 셀렉스박스(버튼 이나 라디오버튼)에 모든 옵션이 조합되어 표시됨\n* 조합 분리선택형 : 옵션을 각각의 셀렉스박스(버튼 이나 라디오버튼)로 선택할 수 있으며 옵션명을 기준으로 옵션값을 조합할 수 있음\n\n독립형이나 상품 연동형 옵션을 사용하고 있을 경우 S(분리형)로 입력됨.\n\nC : 일체형\nS : 분리형",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5547,6 +5879,7 @@
             "name": "options",
             "description": "@description\n옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5555,6 +5888,7 @@
             "name": "select_one_by_option",
             "description": "@description\n옵션별로 한 개씩 선택 (독립형 옵션)\n\n독립형 옵션을 사용할 경우, 하나의 옵션을 여러개 중복하여 선택할 수 없고 한개씩만 선택 가능함.\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5563,6 +5897,7 @@
             "name": "use_additional_option",
             "description": "@description\n추가입력 옵션 사용여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5571,6 +5906,7 @@
             "name": "additional_options",
             "description": "@description\n추가입력 옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5579,6 +5915,7 @@
             "name": "use_attached_file_option",
             "description": "@description\n파일 첨부 옵션 사용여부\n\nT : 사용함\nF : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5587,6 +5924,7 @@
             "name": "attached_file_option",
             "description": "@description\n파일 첨부 옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5615,6 +5953,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -5624,6 +5963,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n시스템에서 부여한 상품의 번호. 상품 번호는 쇼핑몰 내에서 중복되지 않는다.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5632,6 +5972,7 @@
                 "name": "inventories",
                 "description": "@description\n재고 리소스\n\n품목의 재고 리소스\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -5649,7 +5990,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "variants-F6BDQAnS",
+                      "name": "variants-Ym6zaM2K",
                       "properties": [
                         {
                           "name": "shop_no",
@@ -5673,7 +6014,7 @@
                             "element": {
                               "type": "object",
                               "schema": {
-                                "name": "options-iENRrZLx",
+                                "name": "options-ltbYGTzv",
                                 "properties": [
                                   {
                                     "name": "name",
@@ -5762,6 +6103,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -5771,6 +6113,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5779,6 +6122,7 @@
                 "name": "variant_code",
                 "description": "@description\n품목코드\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -5787,6 +6131,7 @@
                 "name": "inventories",
                 "description": "@description\n재고 리소스\n\n\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
                 "required": false,
+                "embed": true,
                 "type": {
                   "type": "any"
                 }
@@ -5802,7 +6147,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "variant-hvMhR39j",
+                    "name": "variant-ETG6j8S3",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -5826,7 +6171,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "options-bGluJ9SY",
+                              "name": "options-L2xRfEIZ",
                               "properties": [
                                 {
                                   "name": "name",
@@ -5906,6 +6251,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5914,6 +6260,7 @@
             "name": "variant_code",
             "description": "@description\n품목코드\n\n시스템이 품목에 부여한 코드. 해당 쇼핑몰 내에서 품목 코드는 중복되지 않음.\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5922,6 +6269,7 @@
             "name": "options",
             "description": "@description\n옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5930,6 +6278,7 @@
             "name": "display",
             "description": "@description\n진열상태\n\n해당 품목을 진열할지 여부. 품목을 진열할 경우 상품 상세 또는 상품 목록에서 해당 품목을 선택할 수 있다. 품목이 진열되어있지 않을 경우 해당 품목이 표시되지 않으며 해당 품목을 구매할 수 없다.\n\nT : 진열함\nF : 진열안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5938,6 +6287,7 @@
             "name": "selling",
             "description": "@description\n판매상태\n\n해당 품목을 판매할지 여부. 진열은 되어있으나 판매는 하지 않을 경우 해당 품목은 \"품절\"로 표시되며 해당 품목을 구매할 수 없다. 품목이 \"판매함\" 상태여도 \"진열안함\"으로 되어있다면 해당 품목을 구매할 수 없다.\n\nT : 판매함\nF : 판매안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5946,6 +6296,7 @@
             "name": "additional_amount",
             "description": "@description\n추가금액\n\n해당 품목을 구매할 경우, 상품의 판매가에 더하여 지불해야하는 추가 가격.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5954,6 +6305,7 @@
             "name": "quantity",
             "description": "@description\n수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5962,6 +6314,7 @@
             "name": "safety_inventory",
             "description": "@description\n안전재고수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5970,6 +6323,7 @@
             "name": "image",
             "description": "@description\n품목 이미지",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -5978,6 +6332,7 @@
             "name": "inventories",
             "description": "@description\n재고 리소스\n\n품목의 재고 리소스\n조회시 Embed 파라메터를 사용하여 조회할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6006,6 +6361,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -6015,6 +6371,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -6023,6 +6380,7 @@
                 "name": "variant_code",
                 "description": "@description\n품목코드\n\n판매 수량을 검색할 품목 코드\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -6038,7 +6396,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "inventory-FMdwD9kd",
+                    "name": "inventory-9JXBi7kH",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -6092,6 +6450,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6100,6 +6459,7 @@
             "name": "variant_code",
             "description": "@description\n품목코드\n\n시스템이 품목에 부여한 코드. 해당 쇼핑몰 내에서 품목 코드는 중복되지 않는다.\n\n@constraints\n형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6108,6 +6468,7 @@
             "name": "quantity",
             "description": "@description\n수량\n\n해당 품목에 판매가 가능한 재고 수량. 재고 수량은 주문 또는 결제시 차감되며, 품절 표시를 위하여 체크된다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6116,6 +6477,7 @@
             "name": "safety_inventory",
             "description": "@description\n안전재고수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6124,6 +6486,7 @@
             "name": "origin_code",
             "description": "@description\n출고지 코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6152,6 +6515,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -6161,6 +6525,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -6169,6 +6534,7 @@
                 "name": "mobile",
                 "description": "@description\n모바일 설정값 조회 여부\n\nT : 사용함\nF : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -6184,7 +6550,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "productsdetail-GohcOoBT",
+                    "name": "productsdetail-T2EUoOBN",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -6222,7 +6588,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "additional_images-aJ6taII1",
+                              "name": "additional_images-KB6msrjz",
                               "properties": [
                                 {
                                   "name": "big",
@@ -6314,7 +6680,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "points_amount-2UgDfE8b",
+                              "name": "points_amount-RLWSz3Cy",
                               "properties": [
                                 {
                                   "name": "payment_method",
@@ -6425,7 +6791,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "expiration_date-8WMF0jLy",
+                            "name": "expiration_date-xT6Suk9X",
                             "properties": [
                               {
                                 "name": "start_date",
@@ -6514,7 +6880,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "promotion_period-ntTDe9jF",
+                            "name": "promotion_period-eIwidjSL",
                             "properties": [
                               {
                                 "name": "start_date",
@@ -6594,7 +6960,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "additional_information-7gb9q4tP",
+                              "name": "additional_information-6hAbKh0h",
                               "properties": [
                                 {
                                   "name": "key",
@@ -6659,6 +7025,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6667,6 +7034,7 @@
             "name": "product_no",
             "description": "@description\n상품번호\n\n상품의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품 번호는 중복되지 않음.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6675,6 +7043,7 @@
             "name": "detail_image",
             "description": "@description\n상세이미지\n\n상품 상세 화면에 표시되는 상품 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6683,6 +7052,7 @@
             "name": "small_image",
             "description": "@description\n축소이미지\n\n상품 상세 화면 하단에 표시되는 상품 목록 이미지.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6691,6 +7061,7 @@
             "name": "additional_images",
             "description": "@description\n추가이미지\n\n상품 상세 화면 하단에 표시되는 상품의 추가 이미지. 축소 이미지와 비슷한 위치에 표시되며 PC 쇼핑몰에서는 마우스 오버시, 모바일 쇼핑몰에서는 이미지 스와이프(Swipe)시 추가 이미지를 확인할 수 있다.\n\n@constraints\n배열 최대사이즈: [20]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6699,6 +7070,7 @@
             "name": "product_name",
             "description": "@description\n상품명\n\n상품의 이름. 상품명은 상품을 구분하는 가장 기초적인 정보이며 검색 정보가 된다. HTML을 사용하여 입력이 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6707,6 +7079,7 @@
             "name": "manufacturer_name",
             "description": "@description\n제조사\n\n제조사의 이름. 제조사명은 쇼핑몰 관리자 화면에서 제조사를 구분할 수 있는 기본적인 정보이다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6715,6 +7088,7 @@
             "name": "origin_place_value",
             "description": "@description\n원산지",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6723,6 +7097,7 @@
             "name": "retail_price",
             "description": "@description\n상품 소비자가\n\n시중에 판매되는 소비자 가격. 쇼핑몰의 가격을 강조하기 위한 비교 목적으로 사용함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6731,6 +7106,7 @@
             "name": "price",
             "description": "@description\n판매가\n\n상품의 판매 가격. 쿠폰 및 혜택을 적용하기 전의 가격.\n상품 등록시엔 모든 멀티 쇼핑몰에 동일한 가격으로 등록하며, 멀티쇼핑몰별로 다른 가격을 입력하고자 할 경우 상품 수정을 통해 가격을 다르게 입력할 수 있다.\n※ 판매가 = [ 공급가 + (공급가 * 마진율) + 추가금액 ]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6739,6 +7115,7 @@
             "name": "interest_free_period",
             "description": "@description\n무이자할부 기간\n\n무이자할부가 설정되었을 때 적용 가능한 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6747,6 +7124,7 @@
             "name": "eng_product_name",
             "description": "@description\n영문 상품명\n\n상품의 영문 이름. 해외 배송 등에 사용 가능함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6755,6 +7133,7 @@
             "name": "custom_product_code",
             "description": "@description\n자체상품 코드\n\n사용자가 상품에 부여 가능한 코드. 재고 관리등의 이유로 자체적으로 상품을 관리 하고 있는 경우 사용함.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6763,6 +7142,7 @@
             "name": "points_amount",
             "description": "@description\n적립금\n\n상품 주문시 받을 수 있는 적립금 금액. 설정에 따라 적립금을 결제수단에 상관 없이 공통적으로 받도록 설정하거나 결제수단별로 받도록 설정할 수 있다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6771,6 +7151,7 @@
             "name": "brand_name",
             "description": "@description\n브랜드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6779,6 +7160,7 @@
             "name": "model_name",
             "description": "@description\n모델명\n\n상품의 모델명.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6787,6 +7169,7 @@
             "name": "price_excluding_tax",
             "description": "@description\n상품 판매가\n\n세금을 제외한 상품의 판매가\ntax_calculation이 A(자동계산)일 경우 null로 반환됨.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6795,6 +7178,7 @@
             "name": "tax",
             "description": "@description\n세액",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6803,6 +7187,7 @@
             "name": "product_code",
             "description": "@description\n상품코드\n\n시스템이 상품에 부여한 코드. 해당 쇼핑몰 내에서 상품코드는 중복되지 않음.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6811,6 +7196,7 @@
             "name": "simple_description",
             "description": "@description\n상품 간략 설명\n\n상품에 대한 간략한 정보. 상품 진열 화면에서 노출 가능한 설명. HTML을 사용하여 입력이 가능하다.\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정']에서 노출되도록 설정 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6819,6 +7205,7 @@
             "name": "summary_description",
             "description": "@description\n상품요약설명\n\n상품에 대한 요약 정보. 상품 진열 화면에서 노출 가능한 설명. HTML을 사용하여 입력이 가능하다.\n[쇼핑몰 설정 > 상품 설정 > '상품 보기 설정 > 상품 정보 표시 설정']에서 노출되도록 설정 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6827,6 +7214,7 @@
             "name": "supplier_name",
             "description": "@description\n공급사명\n\n공급사의 이름. 공급사명은 쇼핑몰 관리자 화면에서 공급사를 구분할 수 있는 기본적인 정보이다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6835,6 +7223,7 @@
             "name": "made_date",
             "description": "@description\n제조일자\n\n상품을 제조한 제조일자.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6843,6 +7232,7 @@
             "name": "review_count",
             "description": "@description\n사용후기 갯수\n\n상품을 선택하고 사용후기에 글이 등록된 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6851,6 +7241,7 @@
             "name": "expiration_date",
             "description": "@description\n유효기간\n\n상품을 정상적으로 사용할 수 있는 기간. 상품권이나 티켓 같은 무형 상품, 식품이나 화장품 같은 유형 상품의 유효기간을 표시.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6859,6 +7250,7 @@
             "name": "coupon_discounted_price",
             "description": "@description\n쿠폰적용가\n\n상품에 쿠폰이 설정되었을 때 해당 쿠폰을 적용한 금액",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6867,6 +7259,7 @@
             "name": "trend_name",
             "description": "@description\n트렌드 명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6875,6 +7268,7 @@
             "name": "shipping_scope",
             "description": "@description\n배송정보\n\n국내에만 배송이 가능한 상품인지 해외에도 배송이 가능한 상품인지 표시. [쇼핑몰 설정 > 배송 설정 > '배송 정책 설정 > 배송비 설정 > 개별배송비 설정'] 에서 상품별 개별배송료 설정이 사용안함인 경우 설정 불가.\nshipping_calculation이 A(자동계산)일 경우 null로 반환.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6883,6 +7277,7 @@
             "name": "shipping_fee_type",
             "description": "@description\n배송비 타입\n\nshipping_calculation이 A(자동계산)일 경우 null로 반환.\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6891,6 +7286,7 @@
             "name": "shipping_rates",
             "description": "@description\n구간별 배송비\n\n개별배송비를 사용할 경우 상품의 개별 배송비.\n\nshipping_rates_min : 배송비 구간 시작 기준\nshipping_rates_max : 배송비 구간 종료 기준\nshipping_fee : 배송비\n\nshipping_calculation이 A(자동계산)일 경우 null로 반환.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6899,6 +7295,7 @@
             "name": "shipping_fee",
             "description": "@description\n배송비",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6907,6 +7304,7 @@
             "name": "discount_price",
             "description": "@description\n할인판매가\n\n상품에 할인이 설정되었을 때 할인을 적용한 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6915,6 +7313,7 @@
             "name": "optimum_discount_price",
             "description": "@description\n최적할인가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6923,6 +7322,7 @@
             "name": "shipping_method",
             "description": "@description\n배송방법\n\n배송 수단 및 방법\nshipping_calculation이 A(자동계산)일 경우 null로 반환.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6931,6 +7331,7 @@
             "name": "promotion_period",
             "description": "@description\n할인 기간\n\n상품에 할인이 설정되었을 때 해당 할인이 적용되는 기간",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6939,6 +7340,7 @@
             "name": "colors",
             "description": "@description\n상품색상",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6947,6 +7349,7 @@
             "name": "translated_additional_description",
             "description": "@description\n상품 추가설명 번역정보",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6955,6 +7358,7 @@
             "name": "stock_quantity",
             "description": "@description\n재고수량",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6963,6 +7367,7 @@
             "name": "question_count",
             "description": "@description\n상품문의(수)\n\n상품을 선택하고 상품문의에 글이 등록된 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6971,6 +7376,7 @@
             "name": "relation_count",
             "description": "@description\n관련상품(수)\n\n상품 등록/수정 시 관련상품으로 등록된 상품 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6979,6 +7385,7 @@
             "name": "product_material",
             "description": "@description\n상품소재",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6987,6 +7394,7 @@
             "name": "product_article_count",
             "description": "@description\n상품자유게시판(수)\n\n상품을 선택하고 상품자유게시판에 글이 등록된 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -6995,6 +7403,7 @@
             "name": "additional_information",
             "description": "@description\n추가항목\n\n상품 등록/수정 시 추가적으로 입력한 항목",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7003,6 +7412,7 @@
             "name": "payment_methods",
             "description": "@description\n결제수단",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7011,6 +7421,7 @@
             "name": "add_products",
             "description": "@description\n추가구성상품\n\n상품 등록/수정 시 추가구성상품으로 등록된 상품 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7041,6 +7452,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7050,6 +7462,7 @@
                 "name": "category_depth",
                 "description": "@description\n분류 Depth\n\n조회하고자 하는 상품분류의 차수 검색\n\n@constraints\n최소: [1]~최대: [4]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7058,6 +7471,7 @@
                 "name": "category_no",
                 "description": "@description\n분류 번호\n\n조회하고자 하는 상품분류의 번호",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7066,6 +7480,7 @@
                 "name": "parent_category_no",
                 "description": "@description\n부모 분류 번호\n\n조회하고자 하는 상품분류의 부모 상품분류 번호 검색\n\n대분류만 검색하고자 할 경우 parent_category_no =1 로 검색한다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7074,6 +7489,7 @@
                 "name": "category_name",
                 "description": "@description\n분류명\n\n검색어를 분류명에 포함하고 있는 상품분류 검색(대소문자 구분 없음)",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7082,6 +7498,7 @@
                 "name": "offset",
                 "description": "@description\n조회결과 시작위치\n\n조회결과 시작위치\n\n\n@constraints\n최대값: [8000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7091,6 +7508,7 @@
                 "name": "limit",
                 "description": "@description\n조회결과 최대건수\n\n조회하고자 하는 최대 건수를 지정할 수 있음.\n예) 10 입력시 10건만 표시함.\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7109,7 +7527,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "categories-xIIzJ2B0",
+                      "name": "categories-QwE4iwpt",
                       "properties": [
                         {
                           "name": "shop_no",
@@ -7152,7 +7570,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "full_category_name-YmDmTxMN",
+                              "name": "full_category_name-kakmIexo",
                               "properties": [
                                 {
                                   "name": "1",
@@ -7192,7 +7610,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "full_category_no-H8CnIkfW",
+                              "name": "full_category_no-MXEFbZ87",
                               "properties": [
                                 {
                                   "name": "1",
@@ -7283,6 +7701,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7292,6 +7711,7 @@
                 "name": "category_depth",
                 "description": "@description\n분류 Depth\n\n조회하고자 하는 상품분류의 차수 검색\n\n@constraints\n최소: [1]~최대: [4]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7300,6 +7720,7 @@
                 "name": "category_no",
                 "description": "@description\n분류 번호\n\n조회하고자 하는 상품분류의 번호",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7308,6 +7729,7 @@
                 "name": "parent_category_no",
                 "description": "@description\n부모 분류 번호\n\n조회하고자 하는 상품분류의 부모 상품분류 번호 검색\n\n대분류만 검색하고자 할 경우 parent_category_no =1 로 검색한다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7316,6 +7738,7 @@
                 "name": "category_name",
                 "description": "@description\n분류명\n\n검색어를 분류명에 포함하고 있는 상품분류 검색(대소문자 구분 없음)",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7353,6 +7776,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7362,6 +7786,7 @@
                 "name": "category_no",
                 "description": "@description\n분류 번호\n\n조회하고자 하는 상품분류의 번호",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7377,7 +7802,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "category-P33wBhi2",
+                    "name": "category-mbNmvYpu",
                     "properties": [
                       {
                         "name": "shop_no",
@@ -7420,7 +7845,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "full_category_no-jFIBl6Io",
+                            "name": "full_category_no-ZBUhMAt0",
                             "properties": [
                               {
                                 "name": "1",
@@ -7460,7 +7885,7 @@
                         "type": {
                           "type": "object",
                           "schema": {
-                            "name": "full_category_name-a9j620X3",
+                            "name": "full_category_name-j8DrLr7l",
                             "properties": [
                               {
                                 "name": "1",
@@ -7535,6 +7960,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7543,6 +7969,7 @@
             "name": "category_no",
             "description": "@description\n분류 번호\n\n상품분류의 고유한 일련 번호. 해당 쇼핑몰 내에서 상품분류 번호는 중복되지 않음.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7551,6 +7978,7 @@
             "name": "category_depth",
             "description": "@description\n분류 Depth\n\n해당 상품분류가 하위 몇 차 상품분류에 있는 카테고리인지 표시함. 1~4차까지 상품분류가 존재한다.\n\n@constraints\n최소: [1]~최대: [4]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7559,6 +7987,7 @@
             "name": "parent_category_no",
             "description": "@description\n부모 분류 번호\n\n해당 상품분류가 2차(중분류), 3차(소분류), 4차(세분류)일 경우 상위에 있는 상품분류의 번호를 표시함.\n\nparent_category_no = 1일 경우 해당 분류는 대분류를 의미한다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7567,6 +7996,7 @@
             "name": "category_name",
             "description": "@description\n분류명\n\n해당 상품분류의 이름을 나타낸다.\n\n@constraints\n최대글자수 : [50자]",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7575,6 +8005,7 @@
             "name": "full_category_name",
             "description": "@description\n분류 전체 이름\n\n해당 상품분류가 속해있는 상위 상품분류의 이름을 모두 표시.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7583,6 +8014,7 @@
             "name": "full_category_no",
             "description": "@description\n분류 전체 번호\n\n해당 상품분류가 속해있는 상위 상품분류의 번호를 모두 표시.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7591,6 +8023,7 @@
             "name": "root_category_no",
             "description": "@description\n최상위 분류 번호\n\n해당 상품분류가 속해있는 최상위 상품분류의 분류 번호 표시.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7599,6 +8032,7 @@
             "name": "use_display",
             "description": "@description\n표시상태\n\n해당 상품분류의 표시 여부. 표시안함 일 경우 해당 상품분류에 접근할 수 없다.\n\n해당 설정은 멀티쇼핑몰별로 설정할 수 없으며 모든 쇼핑몰에 적용된다.\n\nT : 표시함\nF : 표시안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7607,6 +8041,7 @@
             "name": "display_order",
             "description": "@description\n진열 순서\n\n상품분류를 쇼핑몰 운영자가 배치한 순서.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7615,6 +8050,7 @@
             "name": "hash_tags",
             "description": "@description\n쇼핑 큐레이션 해시태그\n\n해당 상품분류의 해시태그 목록\n\n※ 해당 기능은 쇼핑 큐레이션 서비스를 사용하는 경우에만 사용 가능하다.",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7645,6 +8081,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호\n\n\n@constraints\n최소값: [1]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -7654,10 +8091,11 @@
                 "name": "variants",
                 "description": "@description\n품목\n\n장바구니에 추가할 품목의 개수와 품목 코드\n연동형 옵션을 장바구니에 담을 경우 options에서 option_code와 value_no를 사용하여 담을 수 있음",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "variants-child-attr-30e631a4",
+                    "name": "variants-child-attr-19bbcfba",
                     "properties": [
                       {
                         "name": "quantity",
@@ -7684,7 +8122,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "options-child-attr-3ccc3a8e",
+                              "name": "options-child-attr-69b3f84a",
                               "properties": [
                                 {
                                   "name": "option_code",
@@ -7716,7 +8154,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "additional_option_values-child-attr-39f8df04",
+                              "name": "additional_option_values-child-attr-13514ec1",
                               "properties": [
                                 {
                                   "name": "key",
@@ -7763,6 +8201,7 @@
                 "name": "addtional_products",
                 "description": "@description\n추가구성상품의 품목",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7771,6 +8210,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n상품의 고유한 일련 번호\n해당 쇼핑몰 내에서 상품 번호는 중복되지 않음",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7779,6 +8219,7 @@
                 "name": "basket_type",
                 "description": "@description\n장바구니 타입\n\n무이자할부 가능한 상품일 경우 무이자 타입으로 설정 가능\n\nA0000 : 일반\nA0001 : 무이자",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7787,6 +8228,7 @@
                 "name": "duplicated_item_check",
                 "description": "@description\n장바구니 중복체크\n\n장바구니에 추가할 품목에 대하여 중복을 허용할지 여부\n중복을 허용하면 품목의 개수가 추가됨\n중복을 허용하지 않으면 해당 품목은 장바구니에 추가되지 않음\n\nT : 품목 중복체크\nF : 품목 중복체크 안함",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7795,6 +8237,7 @@
                 "name": "prepaid_shipping_fee",
                 "description": "@description\n배송비 선결제 설정\n\nP : 선불\nC : 착불",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -7810,7 +8253,7 @@
                 "type": {
                   "type": "object",
                   "schema": {
-                    "name": "carts-RJNvEtDz",
+                    "name": "carts-ddKcwGxh",
                     "properties": [
                       {
                         "name": "duplicated_item",
@@ -7827,7 +8270,7 @@
                           "element": {
                             "type": "object",
                             "schema": {
-                              "name": "variants-brivWg9Z",
+                              "name": "variants-8KRtlBZg",
                               "properties": [
                                 {
                                   "name": "quantity",
@@ -7851,7 +8294,7 @@
                                     "element": {
                                       "type": "object",
                                       "schema": {
-                                        "name": "options-M9Nccz77",
+                                        "name": "options-1VhSqjDw",
                                         "properties": [
                                           {
                                             "name": "option_code",
@@ -7880,7 +8323,7 @@
                                     "element": {
                                       "type": "object",
                                       "schema": {
-                                        "name": "additional_option_values-SSbu5tYb",
+                                        "name": "additional_option_values-2Sbm9Onw",
                                         "properties": [
                                           {
                                             "name": "key",
@@ -7958,6 +8401,7 @@
             "name": "duplicated_item",
             "description": "@description\n장바구니 내의 아이템 코드 중복 여부\n\nT : 품목이 중복됨\nF : 품목이 중복되지 않음",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7966,6 +8410,7 @@
             "name": "variants",
             "description": "@description\n품목",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7974,6 +8419,7 @@
             "name": "product_no",
             "description": "@description\n상품번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7982,6 +8428,7 @@
             "name": "basket_type",
             "description": "@description\n장바구니 타입\n\nA0000 : 일반\nA0001 : 무이자",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -7990,6 +8437,7 @@
             "name": "prepaid_shipping_fee",
             "description": "@description\n배송비 선결제 설정\n\nP : 선불\nC : 착불",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -8018,6 +8466,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -8027,6 +8476,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\n시스템에서 부여한 상품의 번호. 상품 번호는 쇼핑몰 내에서 중복되지 않는다.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }

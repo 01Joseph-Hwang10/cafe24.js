@@ -8,21 +8,54 @@ import {
   getOrElse,
   getOrEmpty,
   Schema,
+  TypescriptJSDocWriter,
 } from "internal";
 import { map } from "fp-ts/lib/Array";
 import { camel, pascal } from "case";
 
 export function generateEndpointsModule(spec: APISpec) {
+  const jsdoc = new TypescriptJSDocWriter();
   const interfaceGenerator = new TypescriptInterfaceGenerator();
   const generateInterfaceFromSchema = (schema: Schema) =>
     interfaceGenerator.generateFromSchema(pascal(schema.name), schema);
+  const generateFieldTypes = (schema: Schema) => {
+    const name = `${pascal(schema.name)}Fields`;
+    const fieldLiterals = schema.fields
+      .map(({ name }) => name)
+      .map(camel)
+      .map(name => `"${name}"`);
+    if (fieldLiterals.length === 0) {
+      return `type ${name} = string;`;
+    } else {
+      return `type ${name} = ${fieldLiterals.join(" | ")};`;
+    }
+  };
+  const generateEmbedTypes = (schema: Schema) => {
+    const name = `${pascal(schema.name)}Embeds`;
+    const embedLiterals = schema.embeds.map(
+      ({ name, description }) =>
+        getOrEmpty(description && jsdoc.write(description) + "\n") +
+        `| "${camel(name)}"\n`,
+    );
+    if (embedLiterals.length === 0) {
+      return `type ${name} = string;`;
+    } else {
+      return `type ${name} = \n ${embedLiterals.join("\n")};\n`;
+    }
+  };
 
   const endpointMethodWriter = new TypescriptEndpointMethodWriter();
   const objectWriter = new TypescriptObjectWriter();
 
   const scopes: Map<string, EvaluatableScope> = new Map();
-  const requests: string[] = [];
-  const responses: string[] = [];
+  const request = {
+    interfaces: [] as string[],
+    fieldTypes: [] as string[],
+    embedTypes: [] as string[],
+  };
+  const response = {
+    interfaces: [] as string[],
+  };
 
   for (const ns in spec) {
     for (const s in spec[ns]) {
@@ -31,28 +64,41 @@ export function generateEndpointsModule(spec: APISpec) {
         scope.endpoints,
         map(endpoint => {
           if (endpoint.request) {
-            requests.push(generateInterfaceFromSchema(endpoint.request));
+            request.interfaces.push(
+              generateInterfaceFromSchema(endpoint.request),
+            );
+            request.fieldTypes.push(generateFieldTypes(endpoint.request));
+            request.embedTypes.push(generateEmbedTypes(endpoint.request));
           }
           if (endpoint.response) {
-            responses.push(generateInterfaceFromSchema(endpoint.response));
+            response.interfaces.push(
+              generateInterfaceFromSchema(endpoint.response),
+            );
           }
-          const requestName = getOrElse(
-            endpoint.request?.name && pascal(endpoint.request.name),
-            "any",
-          );
-          const responseName = getOrElse(
-            endpoint.response?.name && pascal(endpoint.response.name),
-            "any",
-          );
+
+          const requestName =
+            endpoint.request?.name && pascal(endpoint.request.name);
+          const responseName =
+            endpoint.response?.name && pascal(endpoint.response.name);
 
           return {
             type: "literal",
             content: endpointMethodWriter.write({
-              name: camel(endpoint.name),
               method: endpoint.method,
               path: endpoint.path,
-              request: requestName,
-              response: responseName,
+              names: {
+                method: camel(endpoint.name),
+                request: getOrElse(requestName, "any"),
+                response: getOrElse(responseName, "any"),
+                fields: getOrElse(
+                  endpoint.request && `${pascal(endpoint.request.name)}Fields`,
+                  "string",
+                ),
+                embeds: getOrElse(
+                  endpoint.request && `${pascal(endpoint.request.name)}Embeds`,
+                  "string",
+                ),
+              },
               description:
                 getOrEmpty(
                   endpoint.description &&
@@ -107,9 +153,13 @@ export function generateEndpointsModule(spec: APISpec) {
       })),
     }) +
     ");\n\n" +
-    requests.join("\n\n") +
+    request.interfaces.join("\n\n") +
     "\n\n" +
-    responses.join("\n\n") +
+    request.fieldTypes.join("\n\n") +
+    "\n\n" +
+    request.embedTypes.join("\n\n") +
+    "\n\n" +
+    response.interfaces.join("\n\n") +
     "\n\n"
   );
 }

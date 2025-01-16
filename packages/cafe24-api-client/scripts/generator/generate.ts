@@ -11,7 +11,7 @@
  *
  * Options:
  *   --debug             Enable debug mode.
- *   --no-cache          Disable caching of the API spec.
+ *   --no-cache          Don't use cached API spec files.
  */
 
 import "zx/globals";
@@ -75,7 +75,7 @@ const targets: Target[] = [
 
 async function generate() {
   debug && console.log("Debug mode enabled.");
-  cache && console.log("Caching enabled.");
+  cache && console.log("Using cached API spec files.");
 
   for (const target of targets) {
     console.log(`Generating API client for target: ${target.name}`);

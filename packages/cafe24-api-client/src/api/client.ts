@@ -144,9 +144,11 @@ export class Client {
   public createParams(
     data: Record<string, any>,
     fields?: string[],
+    embeds?: string[],
   ): Record<string, any> {
     const params = {
-      fields: fields?.join(","),
+      fields: objectToSnakeCase(fields)?.join(","),
+      embed: objectToSnakeCase(embeds)?.join(","),
       ...data,
     };
     return pipe(
@@ -253,7 +255,11 @@ export class Client {
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
-    const params = formatter(payload, options?.fields as string[] | undefined);
+    const params = formatter(
+      payload,
+      options?.fields as string[] | undefined,
+      options?.embed as string[] | undefined,
+    );
 
     return this.fetch(`${url}?${qs.stringify(params, { encode: false })}`, {
       method,
@@ -303,12 +309,20 @@ function isMutation(method: HTTPMethod): method is HTTPMutationMethod {
   return ["POST", "PUT", "PATCH"].includes(method);
 }
 
-export interface RequestOptions {
+export interface RequestOptions<
+  Field extends string = string,
+  Embed extends string = string,
+> {
   /**
    * @description
    * List of fields to include in the response.
    */
-  fields?: string[];
+  fields?: Field[];
+  /**
+   * @description
+   * List of embed fields to include in the response.
+   */
+  embed?: Embed[];
   /**
    * @description
    * Additional headers to be included in the request.
@@ -330,4 +344,8 @@ export interface RequestOptions {
   format?: Formatter;
 }
 
-type Formatter = (data: Record<string, any>, fields?: string[]) => any;
+type Formatter = (
+  data: Record<string, any>,
+  fields?: string[],
+  embeds?: string[],
+) => any;

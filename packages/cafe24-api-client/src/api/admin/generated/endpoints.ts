@@ -30,7 +30,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfActionLogs(
       request: RetrieveAListOfActionLogsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfActionLogsRequestFields,
+        RetrieveAListOfActionLogsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfActionLogsResponse> {
       return self.createRequest(
         "GET",
@@ -51,7 +54,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnActionLog(
       request: RetrieveAnActionLogRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnActionLogRequestFields,
+        RetrieveAnActionLogRequestEmbeds
+      >,
     ): Promise<RetrieveAnActionLogResponse> {
       return self.createRequest(
         "GET",
@@ -79,7 +85,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheListOfAvailableVariablesForAutomatedMessages(
       request: RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestFields,
+        RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestEmbeds
+      >,
     ): Promise<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse> {
       return self.createRequest(
         "GET",
@@ -107,7 +116,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheAutomatedMessageSettings(
       request: RetrieveTheAutomatedMessageSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheAutomatedMessageSettingsRequestFields,
+        RetrieveTheAutomatedMessageSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveTheAutomatedMessageSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -127,7 +139,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAutomatedMessage(
       request: UpdateAnAutomatedMessageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnAutomatedMessageRequestFields,
+        UpdateAnAutomatedMessageRequestEmbeds
+      >,
     ): Promise<UpdateAnAutomatedMessageResponse> {
       return self.createRequest(
         "PUT",
@@ -156,7 +171,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponSettings(
       request: RetrieveCouponSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCouponSettingsRequestFields,
+        RetrieveCouponSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveCouponSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -177,7 +195,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCouponSettings(
       request: UpdateCouponSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateCouponSettingsRequestFields,
+        UpdateCouponSettingsRequestEmbeds
+      >,
     ): Promise<UpdateCouponSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -205,11 +226,41 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCurrencySettings(
       request: RetrieveCurrencySettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCurrencySettingsRequestFields,
+        RetrieveCurrencySettingsRequestEmbeds
+      >,
     ): Promise<RetrieveCurrencySettingsResponse> {
       return self.createRequest(
         "GET",
         "/api/v2/admin/currency",
+        request,
+        options,
+      );
+    },
+  },
+  /**
+   *
+   *
+   * @see https://developers.cafe24.com/docs/api/admin/#customers-setting
+   */
+  customerssetting: {
+    /**
+     * Scopes:
+     * - mall.read_store
+     *
+     * @see https://developers.cafe24.com/docs/api/admin/#retrieve-member-related-settings
+     */
+    retrieveMemberRelatedSettings(
+      request: RetrieveMemberRelatedSettingsRequest,
+      options?: base.RequestOptions<
+        RetrieveMemberRelatedSettingsRequestFields,
+        RetrieveMemberRelatedSettingsRequestEmbeds
+      >,
+    ): Promise<RetrieveMemberRelatedSettingsResponse> {
+      return self.createRequest(
+        "GET",
+        "/api/v2/admin/customers/setting",
         request,
         options,
       );
@@ -234,7 +285,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADashboard(
       request: RetrieveADashboardRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveADashboardRequestFields,
+        RetrieveADashboardRequestEmbeds
+      >,
     ): Promise<RetrieveADashboardResponse> {
       return self.createRequest(
         "GET",
@@ -263,7 +317,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayContractDetails(
       request: RetrieveAListOfPaymentGatewayContractDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfPaymentGatewayContractDetailsRequestFields,
+        RetrieveAListOfPaymentGatewayContractDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfPaymentGatewayContractDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -291,7 +348,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTransactionInformationOfAStore(
       request: RetrieveTheTransactionInformationOfAStoreRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheTransactionInformationOfAStoreRequestFields,
+        RetrieveTheTransactionInformationOfAStoreRequestEmbeds
+      >,
     ): Promise<RetrieveTheTransactionInformationOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -319,7 +379,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductImageSizeSettings(
       request: RetrieveProductImageSizeSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveProductImageSizeSettingsRequestFields,
+        RetrieveProductImageSizeSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveProductImageSizeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -339,7 +402,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductImageSizeSettings(
       request: UpdateProductImageSizeSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductImageSizeSettingsRequestFields,
+        UpdateProductImageSizeSettingsRequestEmbeds
+      >,
     ): Promise<UpdateProductImageSizeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -367,7 +433,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAKakaoChannelSenderProfileKey(
       request: RetrieveAKakaoChannelSenderProfileKeyRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAKakaoChannelSenderProfileKeyRequestFields,
+        RetrieveAKakaoChannelSenderProfileKeyRequestEmbeds
+      >,
     ): Promise<RetrieveAKakaoChannelSenderProfileKeyResponse> {
       return self.createRequest(
         "GET",
@@ -395,7 +464,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheKakaoInfoTalkSettings(
       request: RetrieveTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheKakaoInfoTalkSettingsRequestFields,
+        RetrieveTheKakaoInfoTalkSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -415,7 +487,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheKakaoInfoTalkSettings(
       request: UpdateTheKakaoInfoTalkSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateTheKakaoInfoTalkSettingsRequestFields,
+        UpdateTheKakaoInfoTalkSettingsRequestEmbeds
+      >,
     ): Promise<UpdateTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -444,7 +519,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSettingsForKakaopayOrders(
       request: RetrieveSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSettingsForKakaopayOrdersRequestFields,
+        RetrieveSettingsForKakaopayOrdersRequestEmbeds
+      >,
     ): Promise<RetrieveSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -465,7 +543,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSettingsForKakaopayOrders(
       request: UpdateSettingsForKakaopayOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateSettingsForKakaopayOrdersRequestFields,
+        UpdateSettingsForKakaopayOrdersRequestEmbeds
+      >,
     ): Promise<UpdateSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -496,7 +577,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMenus(
       request: RetrieveMenusRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveMenusRequestFields,
+        RetrieveMenusRequestEmbeds
+      >,
     ): Promise<RetrieveMenusResponse> {
       return self.createRequest("GET", "/api/v2/admin/menus", request, options);
     },
@@ -520,7 +604,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMobileSettings(
       request: RetrieveMobileSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveMobileSettingsRequestFields,
+        RetrieveMobileSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveMobileSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -548,7 +635,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveNaverPaySettings(
       request: RetrieveNaverPaySettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveNaverPaySettingsRequestFields,
+        RetrieveNaverPaySettingsRequestEmbeds
+      >,
     ): Promise<RetrieveNaverPaySettingsResponse> {
       return self.createRequest(
         "GET",
@@ -568,7 +658,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createNaverPaySettings(
       request: CreateNaverPaySettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateNaverPaySettingsRequestFields,
+        CreateNaverPaySettingsRequestEmbeds
+      >,
     ): Promise<CreateNaverPaySettingsResponse> {
       return self.createRequest(
         "POST",
@@ -588,7 +681,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverPaySettings(
       request: UpdateNaverPaySettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateNaverPaySettingsRequestFields,
+        UpdateNaverPaySettingsRequestEmbeds
+      >,
     ): Promise<UpdateNaverPaySettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -616,7 +712,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderSettings(
       request: RetrieveOrderSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveOrderSettingsRequestFields,
+        RetrieveOrderSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveOrderSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -636,7 +735,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderSettings(
       request: UpdateOrderSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateOrderSettingsRequestFields,
+        UpdateOrderSettingsRequestEmbeds
+      >,
     ): Promise<UpdateOrderSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -660,7 +762,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderStatusDisplayed(
       request: RetrieveOrderStatusDisplayedRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveOrderStatusDisplayedRequestFields,
+        RetrieveOrderStatusDisplayedRequestEmbeds
+      >,
     ): Promise<RetrieveOrderStatusDisplayedResponse> {
       return self.createRequest(
         "GET",
@@ -677,7 +782,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderStatusDisplayed(
       request: UpdateOrderStatusDisplayedRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateOrderStatusDisplayedRequestFields,
+        UpdateOrderStatusDisplayedRequestEmbeds
+      >,
     ): Promise<UpdateOrderStatusDisplayedResponse> {
       return self.createRequest(
         "PUT",
@@ -701,7 +809,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveEscrowSettings(
       request: RetrieveEscrowSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveEscrowSettingsRequestFields,
+        RetrieveEscrowSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveEscrowSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -718,7 +829,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateEscrowSettings(
       request: UpdateEscrowSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateEscrowSettingsRequestFields,
+        UpdateEscrowSettingsRequestEmbeds
+      >,
     ): Promise<UpdateEscrowSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -748,7 +862,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGateway(
       request: CreateAPaymentGatewayRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAPaymentGatewayRequestFields,
+        CreateAPaymentGatewayRequestEmbeds
+      >,
     ): Promise<CreateAPaymentGatewayResponse> {
       return self.createRequest(
         "POST",
@@ -770,7 +887,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentGateway(
       request: UpdateAPaymentGatewayRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAPaymentGatewayRequestFields,
+        UpdateAPaymentGatewayRequestEmbeds
+      >,
     ): Promise<UpdateAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -791,7 +911,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentGateway(
       request: DeleteAPaymentGatewayRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAPaymentGatewayRequestFields,
+        DeleteAPaymentGatewayRequestEmbeds
+      >,
     ): Promise<DeleteAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -823,7 +946,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentGatewayMethods(
       request: RetrieveAListOfPaymentGatewayMethodsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfPaymentGatewayMethodsRequestFields,
+        RetrieveAListOfPaymentGatewayMethodsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfPaymentGatewayMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -843,7 +969,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAPaymentGatewayMethod(
       request: CreateAPaymentGatewayMethodRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAPaymentGatewayMethodRequestFields,
+        CreateAPaymentGatewayMethodRequestEmbeds
+      >,
     ): Promise<CreateAPaymentGatewayMethodResponse> {
       return self.createRequest(
         "POST",
@@ -864,7 +993,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAPaymentMethodOfAPaymentGateway(
       request: UpdateAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAPaymentMethodOfAPaymentGatewayRequestFields,
+        UpdateAPaymentMethodOfAPaymentGatewayRequestEmbeds
+      >,
     ): Promise<UpdateAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "PUT",
@@ -884,7 +1016,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAPaymentMethodOfAPaymentGateway(
       request: DeleteAPaymentMethodOfAPaymentGatewayRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAPaymentMethodOfAPaymentGatewayRequestFields,
+        DeleteAPaymentMethodOfAPaymentGatewayRequestEmbeds
+      >,
     ): Promise<DeleteAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
         "DELETE",
@@ -914,7 +1049,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPaymentMethods(
       request: RetrieveAListOfPaymentMethodsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfPaymentMethodsRequestFields,
+        RetrieveAListOfPaymentMethodsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -944,7 +1082,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProvidersByPaymentMethod(
       request: RetrieveAListOfProvidersByPaymentMethodRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProvidersByPaymentMethodRequestFields,
+        RetrieveAListOfProvidersByPaymentMethodRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProvidersByPaymentMethodResponse> {
       return self.createRequest(
         "GET",
@@ -964,7 +1105,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheDisplayStatusOfAPaymentMethod(
       request: UpdateTheDisplayStatusOfAPaymentMethodRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateTheDisplayStatusOfAPaymentMethodRequestFields,
+        UpdateTheDisplayStatusOfAPaymentMethodRequestEmbeds
+      >,
     ): Promise<UpdateTheDisplayStatusOfAPaymentMethodResponse> {
       return self.createRequest(
         "PUT",
@@ -992,7 +1136,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePointsSettings(
       request: RetrievePointsSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrievePointsSettingsRequestFields,
+        RetrievePointsSettingsRequestEmbeds
+      >,
     ): Promise<RetrievePointsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1012,7 +1159,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePointsSettings(
       request: UpdatePointsSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdatePointsSettingsRequestFields,
+        UpdatePointsSettingsRequestEmbeds
+      >,
     ): Promise<UpdatePointsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1040,7 +1190,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveProductSettings(
       request: RetrieveProductSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveProductSettingsRequestFields,
+        RetrieveProductSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveProductSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1068,7 +1221,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRedirects(
       request: RetrieveAListOfRedirectsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfRedirectsRequestFields,
+        RetrieveAListOfRedirectsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfRedirectsResponse> {
       return self.createRequest(
         "GET",
@@ -1089,7 +1245,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARedirect(
       request: CreateARedirectRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateARedirectRequestFields,
+        CreateARedirectRequestEmbeds
+      >,
     ): Promise<CreateARedirectResponse> {
       return self.createRequest(
         "POST",
@@ -1109,7 +1268,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateARedirect(
       request: UpdateARedirectRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateARedirectRequestFields,
+        UpdateARedirectRequestEmbeds
+      >,
     ): Promise<UpdateARedirectResponse> {
       return self.createRequest(
         "PUT",
@@ -1129,7 +1291,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARedirect(
       request: DeleteARedirectRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteARedirectRequestFields,
+        DeleteARedirectRequestEmbeds
+      >,
     ): Promise<DeleteARedirectResponse> {
       return self.createRequest(
         "DELETE",
@@ -1158,7 +1323,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettings(
       request: RetrieveSeoSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSeoSettingsRequestFields,
+        RetrieveSeoSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1179,7 +1347,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreSeoSettings(
       request: UpdateStoreSeoSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateStoreSeoSettingsRequestFields,
+        UpdateStoreSeoSettingsRequestEmbeds
+      >,
     ): Promise<UpdateStoreSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1208,7 +1379,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForShippingManager(
       request: RetrieveActivationInformationForShippingManagerRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveActivationInformationForShippingManagerRequestFields,
+        RetrieveActivationInformationForShippingManagerRequestEmbeds
+      >,
     ): Promise<RetrieveActivationInformationForShippingManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1238,7 +1412,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShops(
       request: RetrieveAListOfShopsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfShopsRequestFields,
+        RetrieveAListOfShopsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfShopsResponse> {
       return self.createRequest("GET", "/api/v2/admin/shops", request, options);
     },
@@ -1254,7 +1431,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShop(
       request: RetrieveAShopRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAShopRequestFields,
+        RetrieveAShopRequestEmbeds
+      >,
     ): Promise<RetrieveAShopResponse> {
       return self.createRequest(
         "GET",
@@ -1284,7 +1464,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSmsSettings(
       request: RetrieveSmsSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSmsSettingsRequestFields,
+        RetrieveSmsSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveSmsSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -1301,7 +1484,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSmsSettings(
       request: UpdateSmsSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateSmsSettingsRequestFields,
+        UpdateSmsSettingsRequestEmbeds
+      >,
     ): Promise<UpdateSmsSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1330,7 +1516,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncDetails(
       request: AppleLoginSyncDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        AppleLoginSyncDetailsRequestFields,
+        AppleLoginSyncDetailsRequestEmbeds
+      >,
     ): Promise<AppleLoginSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1350,7 +1539,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     appleLoginSyncSettings(
       request: AppleLoginSyncSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        AppleLoginSyncSettingsRequestFields,
+        AppleLoginSyncSettingsRequestEmbeds
+      >,
     ): Promise<AppleLoginSyncSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1379,7 +1571,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncDetails(
       request: KakaoSyncDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        KakaoSyncDetailsRequestFields,
+        KakaoSyncDetailsRequestEmbeds
+      >,
     ): Promise<KakaoSyncDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1399,7 +1594,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     kakaoSyncUpdates(
       request: KakaoSyncUpdatesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        KakaoSyncUpdatesRequestFields,
+        KakaoSyncUpdatesRequestEmbeds
+      >,
     ): Promise<KakaoSyncUpdatesResponse> {
       return self.createRequest(
         "PUT",
@@ -1427,7 +1625,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     naverLoginDetails(
       request: NaverLoginDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        NaverLoginDetailsRequestFields,
+        NaverLoginDetailsRequestEmbeds
+      >,
     ): Promise<NaverLoginDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1447,7 +1648,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateNaverLoginSettings(
       request: UpdateNaverLoginSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateNaverLoginSettingsRequestFields,
+        UpdateNaverLoginSettingsRequestEmbeds
+      >,
     ): Promise<UpdateNaverLoginSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -1477,7 +1681,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveStoreDetails(
       request: RetrieveStoreDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveStoreDetailsRequestFields,
+        RetrieveStoreDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveStoreDetailsResponse> {
       return self.createRequest("GET", "/api/v2/admin/store", request, options);
     },
@@ -1503,7 +1710,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreBankAccounts(
       request: RetrieveAListOfStoreBankAccountsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfStoreBankAccountsRequestFields,
+        RetrieveAListOfStoreBankAccountsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfStoreBankAccountsResponse> {
       return self.createRequest(
         "GET",
@@ -1535,7 +1745,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSubscriptionProducts(
       request: RetrieveAListOfSubscriptionProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfSubscriptionProductsRequestFields,
+        RetrieveAListOfSubscriptionProductsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfSubscriptionProductsResponse> {
       return self.createRequest(
         "GET",
@@ -1555,7 +1768,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscriptionPaymentRule(
       request: CreateASubscriptionPaymentRuleRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateASubscriptionPaymentRuleRequestFields,
+        CreateASubscriptionPaymentRuleRequestEmbeds
+      >,
     ): Promise<CreateASubscriptionPaymentRuleResponse> {
       return self.createRequest(
         "POST",
@@ -1575,7 +1791,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSubscriptionProducts(
       request: UpdateSubscriptionProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateSubscriptionProductsRequestFields,
+        UpdateSubscriptionProductsRequestEmbeds
+      >,
     ): Promise<UpdateSubscriptionProductsResponse> {
       return self.createRequest(
         "PUT",
@@ -1595,7 +1814,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSubscriptionProducts(
       request: DeleteSubscriptionProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteSubscriptionProductsRequestFields,
+        DeleteSubscriptionProductsRequestEmbeds
+      >,
     ): Promise<DeleteSubscriptionProductsResponse> {
       return self.createRequest(
         "DELETE",
@@ -1623,7 +1845,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveActivationInformationForTaxManager(
       request: RetrieveActivationInformationForTaxManagerRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveActivationInformationForTaxManagerRequestFields,
+        RetrieveActivationInformationForTaxManagerRequestEmbeds
+      >,
     ): Promise<RetrieveActivationInformationForTaxManagerResponse> {
       return self.createRequest(
         "GET",
@@ -1654,7 +1879,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminUsers(
       request: RetrieveAListOfAdminUsersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfAdminUsersRequestFields,
+        RetrieveAListOfAdminUsersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfAdminUsersResponse> {
       return self.createRequest("GET", "/api/v2/admin/users", request, options);
     },
@@ -1670,7 +1898,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAdminUserDetails(
       request: RetrieveAdminUserDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAdminUserDetailsRequestFields,
+        RetrieveAdminUserDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveAdminUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -1704,7 +1935,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBundles(
       request: RetrieveAListOfBundlesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfBundlesRequestFields,
+        RetrieveAListOfBundlesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfBundlesResponse> {
       return self.createRequest(
         "GET",
@@ -1725,7 +1959,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveABundle(
       request: RetrieveABundleRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveABundleRequestFields,
+        RetrieveABundleRequestEmbeds
+      >,
     ): Promise<RetrieveABundleResponse> {
       return self.createRequest(
         "GET",
@@ -1746,7 +1983,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABundle(
       request: CreateABundleRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateABundleRequestFields,
+        CreateABundleRequestEmbeds
+      >,
     ): Promise<CreateABundleResponse> {
       return self.createRequest(
         "POST",
@@ -1767,7 +2007,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABundle(
       request: UpdateABundleRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateABundleRequestFields,
+        UpdateABundleRequestEmbeds
+      >,
     ): Promise<UpdateABundleResponse> {
       return self.createRequest(
         "PUT",
@@ -1787,7 +2030,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABundle(
       request: DeleteABundleRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteABundleRequestFields,
+        DeleteABundleRequestEmbeds
+      >,
     ): Promise<DeleteABundleResponse> {
       return self.createRequest(
         "DELETE",
@@ -1819,7 +2065,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsByCategoryRequestFields,
+        RetrieveAListOfProductsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1839,7 +2088,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsByCategoryRequestFields,
+        RetrieveACountOfProductsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1860,7 +2112,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     addProductsToACategory(
       request: AddProductsToACategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        AddProductsToACategoryRequestFields,
+        AddProductsToACategoryRequestEmbeds
+      >,
     ): Promise<AddProductsToACategoryResponse> {
       return self.createRequest(
         "POST",
@@ -1881,7 +2136,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductInProductCategory(
       request: UpdateAProductInProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductInProductCategoryRequestFields,
+        UpdateAProductInProductCategoryRequestEmbeds
+      >,
     ): Promise<UpdateAProductInProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -1902,7 +2160,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductByCategory(
       request: DeleteAProductByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductByCategoryRequestFields,
+        DeleteAProductByCategoryRequestEmbeds
+      >,
     ): Promise<DeleteAProductByCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -1934,7 +2195,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsInMainCategoryRequestFields,
+        RetrieveAListOfProductsInMainCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1954,7 +2218,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInMainCategory(
       request: RetrieveACountOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsInMainCategoryRequestFields,
+        RetrieveACountOfProductsInMainCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -1975,7 +2242,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     setMainCategoryProducts(
       request: SetMainCategoryProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        SetMainCategoryProductsRequestFields,
+        SetMainCategoryProductsRequestEmbeds
+      >,
     ): Promise<SetMainCategoryProductsResponse> {
       return self.createRequest(
         "POST",
@@ -1996,7 +2266,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateFixedSortingOfProductsInMainCategory(
       request: UpdateFixedSortingOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateFixedSortingOfProductsInMainCategoryRequestFields,
+        UpdateFixedSortingOfProductsInMainCategoryRequestEmbeds
+      >,
     ): Promise<UpdateFixedSortingOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -2017,7 +2290,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductInMainCategory(
       request: DeleteAProductInMainCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductInMainCategoryRequestFields,
+        DeleteAProductInMainCategoryRequestEmbeds
+      >,
     ): Promise<DeleteAProductInMainCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -2052,7 +2328,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsRequestFields,
+        RetrieveAListOfProductsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2072,7 +2351,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsRequestFields,
+        RetrieveACountOfProductsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -2093,7 +2375,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductResourceRequestFields,
+        RetrieveAProductResourceRequestEmbeds
+      >,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -2114,7 +2399,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProduct(
       request: CreateAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAProductRequestFields,
+        CreateAProductRequestEmbeds
+      >,
     ): Promise<CreateAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2135,7 +2423,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProduct(
       request: UpdateAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductRequestFields,
+        UpdateAProductRequestEmbeds
+      >,
     ): Promise<UpdateAProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2156,7 +2447,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProduct(
       request: DeleteAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductRequestFields,
+        DeleteAProductRequestEmbeds
+      >,
     ): Promise<DeleteAProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2187,7 +2481,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAdditionalProductImage(
       request: CreateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnAdditionalProductImageRequestFields,
+        CreateAnAdditionalProductImageRequestEmbeds
+      >,
     ): Promise<CreateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "POST",
@@ -2208,7 +2505,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAdditionalProductImage(
       request: UpdateAnAdditionalProductImageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnAdditionalProductImageRequestFields,
+        UpdateAnAdditionalProductImageRequestEmbeds
+      >,
     ): Promise<UpdateAnAdditionalProductImageResponse> {
       return self.createRequest(
         "PUT",
@@ -2225,7 +2525,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAdditionalProductImage(
       request: DeleteAnAdditionalProductImageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnAdditionalProductImageRequestFields,
+        DeleteAnAdditionalProductImageRequestEmbeds
+      >,
     ): Promise<DeleteAnAdditionalProductImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2256,7 +2559,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductApprovalStatus(
       request: RetrieveAProductApprovalStatusRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductApprovalStatusRequestFields,
+        RetrieveAProductApprovalStatusRequestEmbeds
+      >,
     ): Promise<RetrieveAProductApprovalStatusResponse> {
       return self.createRequest(
         "GET",
@@ -2277,7 +2583,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductApprovalRequest(
       request: CreateAProductApprovalRequestRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAProductApprovalRequestRequestFields,
+        CreateAProductApprovalRequestRequestEmbeds
+      >,
     ): Promise<CreateAProductApprovalRequestResponse> {
       return self.createRequest(
         "POST",
@@ -2298,7 +2607,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductApprovalStatus(
       request: UpdateAProductApprovalStatusRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductApprovalStatusRequestFields,
+        UpdateAProductApprovalStatusRequestEmbeds
+      >,
     ): Promise<UpdateAProductApprovalStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -2322,7 +2634,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedPropertiesByProduct(
       request: RetrieveUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveUserDefinedPropertiesByProductRequestFields,
+        RetrieveUserDefinedPropertiesByProductRequestEmbeds
+      >,
     ): Promise<RetrieveUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "GET",
@@ -2339,7 +2654,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedPropertiesByProduct(
       request: UpdateUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateUserDefinedPropertiesByProductRequestFields,
+        UpdateUserDefinedPropertiesByProductRequestEmbeds
+      >,
     ): Promise<UpdateUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2356,7 +2674,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedPropertiesByProduct(
       request: DeleteUserDefinedPropertiesByProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteUserDefinedPropertiesByProductRequestFields,
+        DeleteUserDefinedPropertiesByProductRequestEmbeds
+      >,
     ): Promise<DeleteUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2373,7 +2694,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveUserDefinedProperties(
       request: RetrieveUserDefinedPropertiesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveUserDefinedPropertiesRequestFields,
+        RetrieveUserDefinedPropertiesRequestEmbeds
+      >,
     ): Promise<RetrieveUserDefinedPropertiesResponse> {
       return self.createRequest(
         "GET",
@@ -2390,7 +2714,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createUserDefinedProperties(
       request: CreateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateUserDefinedPropertiesRequestFields,
+        CreateUserDefinedPropertiesRequestEmbeds
+      >,
     ): Promise<CreateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "POST",
@@ -2407,7 +2734,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateUserDefinedProperties(
       request: UpdateUserDefinedPropertiesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateUserDefinedPropertiesRequestFields,
+        UpdateUserDefinedPropertiesRequestEmbeds
+      >,
     ): Promise<UpdateUserDefinedPropertiesResponse> {
       return self.createRequest(
         "PUT",
@@ -2424,7 +2754,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteUserDefinedProperties(
       request: DeleteUserDefinedPropertiesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteUserDefinedPropertiesRequestFields,
+        DeleteUserDefinedPropertiesRequestEmbeds
+      >,
     ): Promise<DeleteUserDefinedPropertiesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2456,7 +2789,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductDecorationImagesRequestFields,
+        RetrieveAListOfProductDecorationImagesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2477,7 +2813,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     setDecorationImagesForAProduct(
       request: SetDecorationImagesForAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        SetDecorationImagesForAProductRequestFields,
+        SetDecorationImagesForAProductRequestEmbeds
+      >,
     ): Promise<SetDecorationImagesForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2498,7 +2837,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductDecorationImages(
       request: UpdateProductDecorationImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductDecorationImagesRequestFields,
+        UpdateProductDecorationImagesRequestEmbeds
+      >,
     ): Promise<UpdateProductDecorationImagesResponse> {
       return self.createRequest(
         "PUT",
@@ -2518,7 +2860,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductDecorationImage(
       request: RemoveAProductDecorationImageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RemoveAProductDecorationImageRequestFields,
+        RemoveAProductDecorationImageRequestEmbeds
+      >,
     ): Promise<RemoveAProductDecorationImageResponse> {
       return self.createRequest(
         "DELETE",
@@ -2538,7 +2883,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDecorationImages(
       request: RetrieveAListOfDecorationImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfDecorationImagesRequestFields,
+        RetrieveAListOfDecorationImagesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -2570,7 +2918,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductDiscountedPriceRequestFields,
+        RetrieveAProductDiscountedPriceRequestEmbeds
+      >,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -2602,7 +2953,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductViewsRequestFields,
+        RetrieveACountOfProductViewsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -2630,7 +2984,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductIconsRequestFields,
+        RetrieveAListOfProductIconsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2651,7 +3008,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     setIconsForAProduct(
       request: SetIconsForAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        SetIconsForAProductRequestFields,
+        SetIconsForAProductRequestEmbeds
+      >,
     ): Promise<SetIconsForAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2672,7 +3032,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductIcons(
       request: UpdateProductIconsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductIconsRequestFields,
+        UpdateProductIconsRequestEmbeds
+      >,
     ): Promise<UpdateProductIconsResponse> {
       return self.createRequest(
         "PUT",
@@ -2693,7 +3056,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAProductIcon(
       request: RemoveAProductIconRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RemoveAProductIconRequestFields,
+        RemoveAProductIconRequestEmbeds
+      >,
     ): Promise<RemoveAProductIconResponse> {
       return self.createRequest(
         "DELETE",
@@ -2714,7 +3080,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIcons(
       request: RetrieveAListOfIconsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfIconsRequestFields,
+        RetrieveAListOfIconsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfIconsResponse> {
       return self.createRequest(
         "GET",
@@ -2748,7 +3117,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadProductImages(
       request: UploadProductImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UploadProductImagesRequestFields,
+        UploadProductImagesRequestEmbeds
+      >,
     ): Promise<UploadProductImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2769,7 +3141,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteProductImages(
       request: DeleteProductImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteProductImagesRequestFields,
+        DeleteProductImagesRequestEmbeds
+      >,
     ): Promise<DeleteProductImagesResponse> {
       return self.createRequest(
         "DELETE",
@@ -2791,7 +3166,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadImages(
       request: UploadImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UploadImagesRequestFields,
+        UploadImagesRequestEmbeds
+      >,
     ): Promise<UploadImagesResponse> {
       return self.createRequest(
         "POST",
@@ -2823,7 +3201,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductMemos(
       request: RetrieveAListOfProductMemosRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductMemosRequestFields,
+        RetrieveAListOfProductMemosRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductMemosResponse> {
       return self.createRequest(
         "GET",
@@ -2845,7 +3226,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductMemo(
       request: RetrieveAProductMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductMemoRequestFields,
+        RetrieveAProductMemoRequestEmbeds
+      >,
     ): Promise<RetrieveAProductMemoResponse> {
       return self.createRequest(
         "GET",
@@ -2866,7 +3250,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductMemo(
       request: CreateAProductMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAProductMemoRequestFields,
+        CreateAProductMemoRequestEmbeds
+      >,
     ): Promise<CreateAProductMemoResponse> {
       return self.createRequest(
         "POST",
@@ -2888,7 +3275,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductMemo(
       request: UpdateAProductMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductMemoRequestFields,
+        UpdateAProductMemoRequestEmbeds
+      >,
     ): Promise<UpdateAProductMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -2909,7 +3299,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductMemo(
       request: DeleteAProductMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductMemoRequestFields,
+        DeleteAProductMemoRequestEmbeds
+      >,
     ): Promise<DeleteAProductMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -2943,7 +3336,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductOptionsRequestFields,
+        RetrieveAListOfProductOptionsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -2964,7 +3360,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductOptions(
       request: CreateProductOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateProductOptionsRequestFields,
+        CreateProductOptionsRequestEmbeds
+      >,
     ): Promise<CreateProductOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -2987,7 +3386,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductOptions(
       request: UpdateProductOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductOptionsRequestFields,
+        UpdateProductOptionsRequestEmbeds
+      >,
     ): Promise<UpdateProductOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -3008,7 +3410,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductOption(
       request: DeleteAProductOptionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductOptionRequestFields,
+        DeleteAProductOptionRequestEmbeds
+      >,
     ): Promise<DeleteAProductOptionResponse> {
       return self.createRequest(
         "DELETE",
@@ -3040,7 +3445,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductSSeoSettings(
       request: RetrieveAProductSSeoSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductSSeoSettingsRequestFields,
+        RetrieveAProductSSeoSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveAProductSSeoSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -3061,7 +3469,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductSeoSettings(
       request: UpdateProductSeoSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductSeoSettingsRequestFields,
+        UpdateProductSeoSettingsRequestEmbeds
+      >,
     ): Promise<UpdateProductSeoSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -3093,7 +3504,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfAProductSProductTags(
       request: RetrieveACountOfAProductSProductTagsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfAProductSProductTagsRequestFields,
+        RetrieveACountOfAProductSProductTagsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3114,7 +3528,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAProductSProductTags(
       request: RetrieveAListOfAProductSProductTagsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfAProductSProductTagsRequestFields,
+        RetrieveAListOfAProductSProductTagsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfAProductSProductTagsResponse> {
       return self.createRequest(
         "GET",
@@ -3134,7 +3551,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createProductTags(
       request: CreateProductTagsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateProductTagsRequestFields,
+        CreateProductTagsRequestEmbeds
+      >,
     ): Promise<CreateProductTagsResponse> {
       return self.createRequest(
         "POST",
@@ -3154,7 +3574,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductTag(
       request: DeleteAProductTagRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductTagRequestFields,
+        DeleteAProductTagRequestEmbeds
+      >,
     ): Promise<DeleteAProductTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -3187,7 +3610,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductVariantsRequestFields,
+        RetrieveAListOfProductVariantsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -3208,7 +3634,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductVariantRequestFields,
+        RetrieveAProductVariantRequestEmbeds
+      >,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3229,7 +3658,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariant(
       request: UpdateAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductVariantRequestFields,
+        UpdateAProductVariantRequestEmbeds
+      >,
     ): Promise<UpdateAProductVariantResponse> {
       return self.createRequest(
         "PUT",
@@ -3250,7 +3682,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleProductVariants(
       request: UpdateMultipleProductVariantsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateMultipleProductVariantsRequestFields,
+        UpdateMultipleProductVariantsRequestEmbeds
+      >,
     ): Promise<UpdateMultipleProductVariantsResponse> {
       return self.createRequest(
         "PUT",
@@ -3270,7 +3705,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductVariant(
       request: DeleteAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductVariantRequestFields,
+        DeleteAProductVariantRequestEmbeds
+      >,
     ): Promise<DeleteAProductVariantResponse> {
       return self.createRequest(
         "DELETE",
@@ -3300,7 +3738,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveInventoryDetailsOfAProductVariantRequestFields,
+        RetrieveInventoryDetailsOfAProductVariantRequestEmbeds
+      >,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -3321,7 +3762,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductVariantInventory(
       request: UpdateAProductVariantInventoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductVariantInventoryRequestFields,
+        UpdateAProductVariantInventoryRequestEmbeds
+      >,
     ): Promise<UpdateAProductVariantInventoryResponse> {
       return self.createRequest(
         "PUT",
@@ -3353,7 +3797,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderCancellation(
       request: RetrieveAnOrderCancellationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnOrderCancellationRequestFields,
+        RetrieveAnOrderCancellationRequestEmbeds
+      >,
     ): Promise<RetrieveAnOrderCancellationResponse> {
       return self.createRequest(
         "GET",
@@ -3375,7 +3822,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderCancellations(
       request: CreateMultipleOrderCancellationsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateMultipleOrderCancellationsRequestFields,
+        CreateMultipleOrderCancellationsRequestEmbeds
+      >,
     ): Promise<CreateMultipleOrderCancellationsResponse> {
       return self.createRequest(
         "POST",
@@ -3398,7 +3848,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetailsInBulk(
       request: ChangeCancellationDetailsInBulkRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ChangeCancellationDetailsInBulkRequestFields,
+        ChangeCancellationDetailsInBulkRequestEmbeds
+      >,
     ): Promise<ChangeCancellationDetailsInBulkResponse> {
       return self.createRequest(
         "PUT",
@@ -3429,7 +3882,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACancellationRequestForMultipleItems(
       request: CreateACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACancellationRequestForMultipleItemsRequestFields,
+        CreateACancellationRequestForMultipleItemsRequestEmbeds
+      >,
     ): Promise<CreateACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -3451,7 +3907,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectACancellationRequestForMultipleItems(
       request: RejectACancellationRequestForMultipleItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RejectACancellationRequestForMultipleItemsRequestFields,
+        RejectACancellationRequestForMultipleItemsRequestEmbeds
+      >,
     ): Promise<RejectACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3482,7 +3941,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCashReceipts(
       request: RetrieveAListOfCashReceiptsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCashReceiptsRequestFields,
+        RetrieveAListOfCashReceiptsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCashReceiptsResponse> {
       return self.createRequest(
         "GET",
@@ -3503,7 +3965,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACashReceipt(
       request: CreateACashReceiptRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACashReceiptRequestFields,
+        CreateACashReceiptRequestEmbeds
+      >,
     ): Promise<CreateACashReceiptResponse> {
       return self.createRequest(
         "POST",
@@ -3524,7 +3989,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceipt(
       request: UpdateACashReceiptRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACashReceiptRequestFields,
+        UpdateACashReceiptRequestEmbeds
+      >,
     ): Promise<UpdateACashReceiptResponse> {
       return self.createRequest(
         "PUT",
@@ -3552,7 +4020,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACashReceiptCancellation(
       request: UpdateACashReceiptCancellationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACashReceiptCancellationRequestFields,
+        UpdateACashReceiptCancellationRequestEmbeds
+      >,
     ): Promise<UpdateACashReceiptCancellationResponse> {
       return self.createRequest(
         "PUT",
@@ -3581,7 +4052,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACollectionRequest(
       request: UpdateACollectionRequestRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACollectionRequestRequestFields,
+        UpdateACollectionRequestRequestEmbeds
+      >,
     ): Promise<UpdateACollectionRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -3608,7 +4082,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     orderControl(
       request: OrderControlRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        OrderControlRequestFields,
+        OrderControlRequestEmbeds
+      >,
     ): Promise<OrderControlResponse> {
       return self.createRequest(
         "PUT",
@@ -3638,7 +4115,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADraftOrder(
       request: CreateADraftOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateADraftOrderRequestFields,
+        CreateADraftOrderRequestEmbeds
+      >,
     ): Promise<CreateADraftOrderResponse> {
       return self.createRequest(
         "POST",
@@ -3668,7 +4148,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnExchange(
       request: RetrieveAnExchangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnExchangeRequestFields,
+        RetrieveAnExchangeRequestEmbeds
+      >,
     ): Promise<RetrieveAnExchangeResponse> {
       return self.createRequest(
         "GET",
@@ -3688,7 +4171,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleExchanges(
       request: CreateMultipleExchangesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateMultipleExchangesRequestFields,
+        CreateMultipleExchangesRequestEmbeds
+      >,
     ): Promise<CreateMultipleExchangesResponse> {
       return self.createRequest(
         "POST",
@@ -3710,7 +4196,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderExchanges(
       request: UpdateMultipleOrderExchangesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateMultipleOrderExchangesRequestFields,
+        UpdateMultipleOrderExchangesRequestEmbeds
+      >,
     ): Promise<UpdateMultipleOrderExchangesResponse> {
       return self.createRequest(
         "PUT",
@@ -3740,7 +4229,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     bulkExchangeRequestApi(
       request: BulkExchangeRequestApiRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        BulkExchangeRequestApiRequestFields,
+        BulkExchangeRequestApiRequestEmbeds
+      >,
     ): Promise<BulkExchangeRequestApiResponse> {
       return self.createRequest(
         "POST",
@@ -3762,7 +4254,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequestForMultipleItems(
       request: RejectAnExchangeRequestForMultipleItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RejectAnExchangeRequestForMultipleItemsRequestFields,
+        RejectAnExchangeRequestForMultipleItemsRequestEmbeds
+      >,
     ): Promise<RejectAnExchangeRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -3790,7 +4285,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrdersViaFulfillment(
       request: CreateShippingInformationForMultipleOrdersViaFulfillmentRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateShippingInformationForMultipleOrdersViaFulfillmentRequestFields,
+        CreateShippingInformationForMultipleOrdersViaFulfillmentRequestEmbeds
+      >,
     ): Promise<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse> {
       return self.createRequest(
         "POST",
@@ -3818,7 +4316,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveOrderLabels(
       request: RetrieveOrderLabelsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveOrderLabelsRequestFields,
+        RetrieveOrderLabelsRequestEmbeds
+      >,
     ): Promise<RetrieveOrderLabelsResponse> {
       return self.createRequest(
         "GET",
@@ -3838,7 +4339,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderLabels(
       request: CreateMultipleOrderLabelsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateMultipleOrderLabelsRequestFields,
+        CreateMultipleOrderLabelsRequestEmbeds
+      >,
     ): Promise<CreateMultipleOrderLabelsResponse> {
       return self.createRequest(
         "POST",
@@ -3874,7 +4378,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrders(
       request: RetrieveAListOfOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfOrdersRequestFields,
+        RetrieveAListOfOrdersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3896,7 +4403,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrder(
       request: RetrieveAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnOrderRequestFields,
+        RetrieveAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -3916,7 +4426,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfOrders(
       request: RetrieveACountOfOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfOrdersRequestFields,
+        RetrieveACountOfOrdersRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfOrdersResponse> {
       return self.createRequest(
         "GET",
@@ -3938,7 +4451,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStatusForMultipleOrders(
       request: UpdateStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateStatusForMultipleOrdersRequestFields,
+        UpdateStatusForMultipleOrdersRequestEmbeds
+      >,
     ): Promise<UpdateStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -3960,7 +4476,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderStatus(
       request: UpdateAnOrderStatusRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderStatusRequestFields,
+        UpdateAnOrderStatusRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -3991,7 +4510,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     removeAutoCalculationSettingOfAnOrder(
       request: RemoveAutoCalculationSettingOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RemoveAutoCalculationSettingOfAnOrderRequestFields,
+        RemoveAutoCalculationSettingOfAnOrderRequestEmbeds
+      >,
     ): Promise<RemoveAutoCalculationSettingOfAnOrderResponse> {
       return self.createRequest(
         "DELETE",
@@ -4022,7 +4544,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerDetailsOfAnOrder(
       request: RetrieveCustomerDetailsOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCustomerDetailsOfAnOrderRequestFields,
+        RetrieveCustomerDetailsOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveCustomerDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4043,7 +4568,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateCustomerInformationOfAnOrder(
       request: UpdateCustomerInformationOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateCustomerInformationOfAnOrderRequestFields,
+        UpdateCustomerInformationOfAnOrderRequestEmbeds
+      >,
     ): Promise<UpdateCustomerInformationOfAnOrderResponse> {
       return self.createRequest(
         "PUT",
@@ -4076,7 +4604,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerHistoryOfAnOrder(
       request: RetrieveAListOfCustomerHistoryOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerHistoryOfAnOrderRequestFields,
+        RetrieveAListOfCustomerHistoryOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4109,7 +4640,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellation(
       request: CreateAnOrderCancellationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderCancellationRequestFields,
+        CreateAnOrderCancellationRequestEmbeds
+      >,
     ): Promise<CreateAnOrderCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4131,7 +4665,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeCancellationDetails(
       request: ChangeCancellationDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ChangeCancellationDetailsRequestFields,
+        ChangeCancellationDetailsRequestEmbeds
+      >,
     ): Promise<ChangeCancellationDetailsResponse> {
       return self.createRequest(
         "PUT",
@@ -4161,7 +4698,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderExchange(
       request: CreateAnOrderExchangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderExchangeRequestFields,
+        CreateAnOrderExchangeRequestEmbeds
+      >,
     ): Promise<CreateAnOrderExchangeResponse> {
       return self.createRequest(
         "POST",
@@ -4183,7 +4723,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderExchange(
       request: UpdateAnOrderExchangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderExchangeRequestFields,
+        UpdateAnOrderExchangeRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderExchangeResponse> {
       return self.createRequest(
         "PUT",
@@ -4212,7 +4755,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAnExchangeRequest(
       request: RejectAnExchangeRequestRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RejectAnExchangeRequestRequestFields,
+        RejectAnExchangeRequestRequestEmbeds
+      >,
     ): Promise<RejectAnExchangeRequestResponse> {
       return self.createRequest(
         "PUT",
@@ -4246,7 +4792,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderItems(
       request: RetrieveAListOfOrderItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfOrderItemsRequestFields,
+        RetrieveAListOfOrderItemsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfOrderItemsResponse> {
       return self.createRequest(
         "GET",
@@ -4266,7 +4815,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderItem(
       request: CreateAnOrderItemRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderItemRequestFields,
+        CreateAnOrderItemRequestEmbeds
+      >,
     ): Promise<CreateAnOrderItemResponse> {
       return self.createRequest(
         "POST",
@@ -4287,7 +4839,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderItem(
       request: UpdateAnOrderItemRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderItemRequestFields,
+        UpdateAnOrderItemRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderItemResponse> {
       return self.createRequest(
         "PUT",
@@ -4315,7 +4870,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnOrderLabel(
       request: RetrieveAnOrderLabelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnOrderLabelRequestFields,
+        RetrieveAnOrderLabelRequestEmbeds
+      >,
     ): Promise<RetrieveAnOrderLabelResponse> {
       return self.createRequest(
         "GET",
@@ -4335,7 +4893,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderLabel(
       request: CreateAnOrderLabelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderLabelRequestFields,
+        CreateAnOrderLabelRequestEmbeds
+      >,
     ): Promise<CreateAnOrderLabelResponse> {
       return self.createRequest(
         "POST",
@@ -4355,7 +4916,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderLabel(
       request: UpdateAnOrderLabelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderLabelRequestFields,
+        UpdateAnOrderLabelRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderLabelResponse> {
       return self.createRequest(
         "PUT",
@@ -4375,7 +4939,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderLabel(
       request: DeleteAnOrderLabelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnOrderLabelRequestFields,
+        DeleteAnOrderLabelRequestEmbeds
+      >,
     ): Promise<DeleteAnOrderLabelResponse> {
       return self.createRequest(
         "DELETE",
@@ -4403,7 +4970,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createOrderItemOptions(
       request: CreateOrderItemOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateOrderItemOptionsRequestFields,
+        CreateOrderItemOptionsRequestEmbeds
+      >,
     ): Promise<CreateOrderItemOptionsResponse> {
       return self.createRequest(
         "POST",
@@ -4423,7 +4993,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     editOrderItemOptions(
       request: EditOrderItemOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        EditOrderItemOptionsRequestFields,
+        EditOrderItemOptionsRequestEmbeds
+      >,
     ): Promise<EditOrderItemOptionsResponse> {
       return self.createRequest(
         "PUT",
@@ -4454,7 +5027,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderMemos(
       request: RetrieveAListOfOrderMemosRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfOrderMemosRequestFields,
+        RetrieveAListOfOrderMemosRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfOrderMemosResponse> {
       return self.createRequest(
         "GET",
@@ -4475,7 +5051,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderMemo(
       request: CreateAnOrderMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderMemoRequestFields,
+        CreateAnOrderMemoRequestEmbeds
+      >,
     ): Promise<CreateAnOrderMemoResponse> {
       return self.createRequest(
         "POST",
@@ -4496,7 +5075,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderMemo(
       request: UpdateAnOrderMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderMemoRequestFields,
+        UpdateAnOrderMemoRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -4516,7 +5098,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderMemo(
       request: DeleteAnOrderMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnOrderMemoRequestFields,
+        DeleteAnOrderMemoRequestEmbeds
+      >,
     ): Promise<DeleteAnOrderMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -4536,7 +5121,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAdminMemosForAnOrder(
       request: RetrieveAListOfAdminMemosForAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfAdminMemosForAnOrderRequestFields,
+        RetrieveAListOfAdminMemosForAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfAdminMemosForAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4567,7 +5155,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderPaymentStatus(
       request: UpdateAnOrderPaymentStatusRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderPaymentStatusRequestFields,
+        UpdateAnOrderPaymentStatusRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderPaymentStatusResponse> {
       return self.createRequest(
         "PUT",
@@ -4598,7 +5189,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentHistoryOfAnOrder(
       request: RetrievePaymentHistoryOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrievePaymentHistoryOfAnOrderRequestFields,
+        RetrievePaymentHistoryOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrievePaymentHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4619,7 +5213,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePaymentDetailsOfAnOrder(
       request: RetrievePaymentDetailsOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrievePaymentDetailsOfAnOrderRequestFields,
+        RetrievePaymentDetailsOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrievePaymentDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4652,7 +5249,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientsOfAnOrder(
       request: RetrieveAListOfRecipientsOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfRecipientsOfAnOrderRequestFields,
+        RetrieveAListOfRecipientsOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfRecipientsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4674,7 +5274,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateOrderRecipients(
       request: UpdateOrderRecipientsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateOrderRecipientsRequestFields,
+        UpdateOrderRecipientsRequestEmbeds
+      >,
     ): Promise<UpdateOrderRecipientsResponse> {
       return self.createRequest(
         "PUT",
@@ -4695,7 +5298,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     changeShippingInformation(
       request: ChangeShippingInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ChangeShippingInformationRequestFields,
+        ChangeShippingInformationRequestEmbeds
+      >,
     ): Promise<ChangeShippingInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -4727,7 +5333,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipientHistoryOfAnOrder(
       request: RetrieveAListOfRecipientHistoryOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfRecipientHistoryOfAnOrderRequestFields,
+        RetrieveAListOfRecipientHistoryOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfRecipientHistoryOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4757,7 +5366,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderRefund(
       request: UpdateAnOrderRefundRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderRefundRequestFields,
+        UpdateAnOrderRefundRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderRefundResponse> {
       return self.createRequest(
         "PUT",
@@ -4790,7 +5402,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderReturn(
       request: CreateAnOrderReturnRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderReturnRequestFields,
+        CreateAnOrderReturnRequestEmbeds
+      >,
     ): Promise<CreateAnOrderReturnResponse> {
       return self.createRequest(
         "POST",
@@ -4813,7 +5428,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderReturn(
       request: UpdateAnOrderReturnRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderReturnRequestFields,
+        UpdateAnOrderReturnRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -4847,7 +5465,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingInformationOfAnOrder(
       request: RetrieveAListOfShippingInformationOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfShippingInformationOfAnOrderRequestFields,
+        RetrieveAListOfShippingInformationOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfShippingInformationOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4867,7 +5488,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingInformation(
       request: CreateAnOrderShippingInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderShippingInformationRequestFields,
+        CreateAnOrderShippingInformationRequestEmbeds
+      >,
     ): Promise<CreateAnOrderShippingInformationResponse> {
       return self.createRequest(
         "POST",
@@ -4889,7 +5513,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnOrderShipping(
       request: UpdateAnOrderShippingRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnOrderShippingRequestFields,
+        UpdateAnOrderShippingRequestEmbeds
+      >,
     ): Promise<UpdateAnOrderShippingResponse> {
       return self.createRequest(
         "PUT",
@@ -4910,7 +5537,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnOrderShipping(
       request: DeleteAnOrderShippingRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnOrderShippingRequestFields,
+        DeleteAnOrderShippingRequestEmbeds
+      >,
     ): Promise<DeleteAnOrderShippingResponse> {
       return self.createRequest(
         "DELETE",
@@ -4941,7 +5571,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingFeeCancellationDetailsOfAnOrder(
       request: RetrieveShippingFeeCancellationDetailsOfAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveShippingFeeCancellationDetailsOfAnOrderRequestFields,
+        RetrieveShippingFeeCancellationDetailsOfAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -4963,7 +5596,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderShippingFeeCancellation(
       request: CreateAnOrderShippingFeeCancellationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderShippingFeeCancellationRequestFields,
+        CreateAnOrderShippingFeeCancellationRequestEmbeds
+      >,
     ): Promise<CreateAnOrderShippingFeeCancellationResponse> {
       return self.createRequest(
         "POST",
@@ -4995,7 +5631,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnOrderCancellationOnStockShortage(
       request: CreateAnOrderCancellationOnStockShortageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnOrderCancellationOnStockShortageRequestFields,
+        CreateAnOrderCancellationOnStockShortageRequestEmbeds
+      >,
     ): Promise<CreateAnOrderCancellationOnStockShortageResponse> {
       return self.createRequest(
         "POST",
@@ -5026,7 +5665,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrderBenefitsAppliedToAnOrder(
       request: RetrieveAListOfOrderBenefitsAppliedToAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestFields,
+        RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5054,7 +5696,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     calculateTotalDue(
       request: CalculateTotalDueRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CalculateTotalDueRequestFields,
+        CalculateTotalDueRequestEmbeds
+      >,
     ): Promise<CalculateTotalDueResponse> {
       return self.createRequest(
         "POST",
@@ -5086,7 +5731,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCouponsAppliedToAnOrder(
       request: RetrieveAListOfCouponsAppliedToAnOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCouponsAppliedToAnOrderRequestFields,
+        RetrieveAListOfCouponsAppliedToAnOrderRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCouponsAppliedToAnOrderResponse> {
       return self.createRequest(
         "GET",
@@ -5118,7 +5766,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrafficSourceGroups(
       request: RetrieveAListOfTrafficSourceGroupsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfTrafficSourceGroupsRequestFields,
+        RetrieveAListOfTrafficSourceGroupsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfTrafficSourceGroupsResponse> {
       return self.createRequest(
         "GET",
@@ -5139,7 +5790,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createATrafficSourceGroup(
       request: CreateATrafficSourceGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateATrafficSourceGroupRequestFields,
+        CreateATrafficSourceGroupRequestEmbeds
+      >,
     ): Promise<CreateATrafficSourceGroupResponse> {
       return self.createRequest(
         "POST",
@@ -5161,7 +5815,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateATrafficSourceGroup(
       request: UpdateATrafficSourceGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateATrafficSourceGroupRequestFields,
+        UpdateATrafficSourceGroupRequestEmbeds
+      >,
     ): Promise<UpdateATrafficSourceGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -5182,7 +5839,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteATrafficSourceGroup(
       request: DeleteATrafficSourceGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteATrafficSourceGroupRequestFields,
+        DeleteATrafficSourceGroupRequestEmbeds
+      >,
     ): Promise<DeleteATrafficSourceGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -5215,7 +5875,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfGroupTrafficSources(
       request: RetrieveAListOfGroupTrafficSourcesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfGroupTrafficSourcesRequestFields,
+        RetrieveAListOfGroupTrafficSourcesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfGroupTrafficSourcesResponse> {
       return self.createRequest(
         "GET",
@@ -5235,7 +5898,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAGroupTrafficSource(
       request: CreateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAGroupTrafficSourceRequestFields,
+        CreateAGroupTrafficSourceRequestEmbeds
+      >,
     ): Promise<CreateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "POST",
@@ -5255,7 +5921,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAGroupTrafficSource(
       request: UpdateAGroupTrafficSourceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAGroupTrafficSourceRequestFields,
+        UpdateAGroupTrafficSourceRequestEmbeds
+      >,
     ): Promise<UpdateAGroupTrafficSourceResponse> {
       return self.createRequest(
         "PUT",
@@ -5275,7 +5944,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAGroupTrafficSource(
       request: DeleteAGroupTrafficSourceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAGroupTrafficSourceRequestFields,
+        DeleteAGroupTrafficSourceRequestEmbeds
+      >,
     ): Promise<DeleteAGroupTrafficSourceResponse> {
       return self.createRequest(
         "DELETE",
@@ -5308,7 +5980,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPaymentAmount(
       request: RetrieveAPaymentAmountRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAPaymentAmountRequestFields,
+        RetrieveAPaymentAmountRequestEmbeds
+      >,
     ): Promise<RetrieveAPaymentAmountResponse> {
       return self.createRequest(
         "GET",
@@ -5340,7 +6015,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSalesChannels(
       request: RetrieveAListOfSalesChannelsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfSalesChannelsRequestFields,
+        RetrieveAListOfSalesChannelsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfSalesChannelsResponse> {
       return self.createRequest(
         "GET",
@@ -5360,7 +6038,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASalesChannel(
       request: CreateASalesChannelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateASalesChannelRequestFields,
+        CreateASalesChannelRequestEmbeds
+      >,
     ): Promise<CreateASalesChannelResponse> {
       return self.createRequest(
         "POST",
@@ -5381,7 +6062,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASalesChannel(
       request: UpdateASalesChannelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASalesChannelRequestFields,
+        UpdateASalesChannelRequestEmbeds
+      >,
     ): Promise<UpdateASalesChannelResponse> {
       return self.createRequest(
         "PUT",
@@ -5401,7 +6085,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASalesChannel(
       request: DeleteASalesChannelRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteASalesChannelRequestFields,
+        DeleteASalesChannelRequestEmbeds
+      >,
     ): Promise<DeleteASalesChannelResponse> {
       return self.createRequest(
         "DELETE",
@@ -5430,7 +6117,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updatePaymentStatusForMultipleOrders(
       request: UpdatePaymentStatusForMultipleOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdatePaymentStatusForMultipleOrdersRequestFields,
+        UpdatePaymentStatusForMultipleOrdersRequestEmbeds
+      >,
     ): Promise<UpdatePaymentStatusForMultipleOrdersResponse> {
       return self.createRequest(
         "PUT",
@@ -5460,7 +6150,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRefunds(
       request: RetrieveAListOfRefundsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfRefundsRequestFields,
+        RetrieveAListOfRefundsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfRefundsResponse> {
       return self.createRequest(
         "GET",
@@ -5481,7 +6174,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveARefund(
       request: RetrieveARefundRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveARefundRequestFields,
+        RetrieveARefundRequestEmbeds
+      >,
     ): Promise<RetrieveARefundResponse> {
       return self.createRequest(
         "GET",
@@ -5508,7 +6204,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePreOrderItem(
       request: RetrievePreOrderItemRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrievePreOrderItemRequestFields,
+        RetrievePreOrderItemRequestEmbeds
+      >,
     ): Promise<RetrievePreOrderItemResponse> {
       return self.createRequest(
         "GET",
@@ -5539,7 +6238,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReturn(
       request: RetrieveAReturnRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAReturnRequestFields,
+        RetrieveAReturnRequestEmbeds
+      >,
     ): Promise<RetrieveAReturnResponse> {
       return self.createRequest(
         "GET",
@@ -5561,7 +6263,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createMultipleOrderReturns(
       request: CreateMultipleOrderReturnsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateMultipleOrderReturnsRequestFields,
+        CreateMultipleOrderReturnsRequestEmbeds
+      >,
     ): Promise<CreateMultipleOrderReturnsResponse> {
       return self.createRequest(
         "POST",
@@ -5584,7 +6289,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReturn(
       request: UpdateAReturnRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAReturnRequestFields,
+        UpdateAReturnRequestEmbeds
+      >,
     ): Promise<UpdateAReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -5614,7 +6322,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReturnRequestForMultipleItems(
       request: CreateAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAReturnRequestForMultipleItemsRequestFields,
+        CreateAReturnRequestForMultipleItemsRequestEmbeds
+      >,
     ): Promise<CreateAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "POST",
@@ -5636,7 +6347,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     rejectAReturnRequestForMultipleItems(
       request: RejectAReturnRequestForMultipleItemsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RejectAReturnRequestForMultipleItemsRequestFields,
+        RejectAReturnRequestForMultipleItemsRequestEmbeds
+      >,
     ): Promise<RejectAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
         "PUT",
@@ -5665,7 +6379,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createShippingInformationForMultipleOrders(
       request: CreateShippingInformationForMultipleOrdersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateShippingInformationForMultipleOrdersRequestFields,
+        CreateShippingInformationForMultipleOrdersRequestEmbeds
+      >,
     ): Promise<CreateShippingInformationForMultipleOrdersResponse> {
       return self.createRequest(
         "POST",
@@ -5686,7 +6403,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateMultipleOrderShippings(
       request: UpdateMultipleOrderShippingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateMultipleOrderShippingsRequestFields,
+        UpdateMultipleOrderShippingsRequestEmbeds
+      >,
     ): Promise<UpdateMultipleOrderShippingsResponse> {
       return self.createRequest(
         "PUT",
@@ -5714,7 +6434,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASubscription(
       request: RetrieveASubscriptionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASubscriptionRequestFields,
+        RetrieveASubscriptionRequestEmbeds
+      >,
     ): Promise<RetrieveASubscriptionResponse> {
       return self.createRequest(
         "GET",
@@ -5734,7 +6457,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASubscription(
       request: CreateASubscriptionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateASubscriptionRequestFields,
+        CreateASubscriptionRequestEmbeds
+      >,
     ): Promise<CreateASubscriptionResponse> {
       return self.createRequest(
         "POST",
@@ -5755,7 +6481,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASubscription(
       request: UpdateASubscriptionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASubscriptionRequestFields,
+        UpdateASubscriptionRequestEmbeds
+      >,
     ): Promise<UpdateASubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5783,7 +6512,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductVariantsInSubscription(
       request: UpdateProductVariantsInSubscriptionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductVariantsInSubscriptionRequestFields,
+        UpdateProductVariantsInSubscriptionRequestEmbeds
+      >,
     ): Promise<UpdateProductVariantsInSubscriptionResponse> {
       return self.createRequest(
         "PUT",
@@ -5815,7 +6547,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerTiers(
       request: RetrieveAListOfCustomerTiersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerTiersRequestFields,
+        RetrieveAListOfCustomerTiersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5835,7 +6570,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerTiers(
       request: RetrieveACountOfCustomerTiersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomerTiersRequestFields,
+        RetrieveACountOfCustomerTiersRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomerTiersResponse> {
       return self.createRequest(
         "GET",
@@ -5856,7 +6594,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerTier(
       request: RetrieveACustomerTierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerTierRequestFields,
+        RetrieveACustomerTierRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerTierResponse> {
       return self.createRequest(
         "GET",
@@ -5888,7 +6629,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerSCustomerTier(
       request: UpdateACustomerSCustomerTierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACustomerSCustomerTierRequestFields,
+        UpdateACustomerSCustomerTierRequestEmbeds
+      >,
     ): Promise<UpdateACustomerSCustomerTierResponse> {
       return self.createRequest(
         "POST",
@@ -5912,7 +6656,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierSettings(
       request: RetrieveCustomerTierSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCustomerTierSettingsRequestFields,
+        RetrieveCustomerTierSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveCustomerTierSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -5944,7 +6691,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomers(
       request: RetrieveAListOfCustomersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomersRequestFields,
+        RetrieveAListOfCustomersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomersResponse> {
       return self.createRequest(
         "GET",
@@ -5964,7 +6714,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAccount(
       request: DeleteAnAccountRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnAccountRequestFields,
+        DeleteAnAccountRequestEmbeds
+      >,
     ): Promise<DeleteAnAccountResponse> {
       return self.createRequest(
         "DELETE",
@@ -5988,7 +6741,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCustomerTierAutoUpdateDetails(
       request: RetrieveCustomerTierAutoUpdateDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCustomerTierAutoUpdateDetailsRequestFields,
+        RetrieveCustomerTierAutoUpdateDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveCustomerTierAutoUpdateDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -6019,7 +6775,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerMemos(
       request: RetrieveACountOfCustomerMemosRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomerMemosRequestFields,
+        RetrieveACountOfCustomerMemosRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6040,7 +6799,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerMemos(
       request: RetrieveAListOfCustomerMemosRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerMemosRequestFields,
+        RetrieveAListOfCustomerMemosRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerMemosResponse> {
       return self.createRequest(
         "GET",
@@ -6061,7 +6823,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerMemo(
       request: RetrieveACustomerMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerMemoRequestFields,
+        RetrieveACustomerMemoRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerMemoResponse> {
       return self.createRequest(
         "GET",
@@ -6081,7 +6846,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerMemo(
       request: CreateACustomerMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACustomerMemoRequestFields,
+        CreateACustomerMemoRequestEmbeds
+      >,
     ): Promise<CreateACustomerMemoResponse> {
       return self.createRequest(
         "POST",
@@ -6101,7 +6869,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerMemo(
       request: UpdateACustomerMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACustomerMemoRequestFields,
+        UpdateACustomerMemoRequestEmbeds
+      >,
     ): Promise<UpdateACustomerMemoResponse> {
       return self.createRequest(
         "PUT",
@@ -6121,7 +6892,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerMemo(
       request: DeleteACustomerMemoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteACustomerMemoRequestFields,
+        DeleteACustomerMemoRequestEmbeds
+      >,
     ): Promise<DeleteACustomerMemoResponse> {
       return self.createRequest(
         "DELETE",
@@ -6152,7 +6926,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSListOfPaymentMethods(
       request: RetrieveACustomerSListOfPaymentMethodsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerSListOfPaymentMethodsRequestFields,
+        RetrieveACustomerSListOfPaymentMethodsRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerSListOfPaymentMethodsResponse> {
       return self.createRequest(
         "GET",
@@ -6172,7 +6949,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformation(
       request: DeleteCustomerSPaymentInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteCustomerSPaymentInformationRequestFields,
+        DeleteCustomerSPaymentInformationRequestEmbeds
+      >,
     ): Promise<DeleteCustomerSPaymentInformationResponse> {
       return self.createRequest(
         "DELETE",
@@ -6189,7 +6969,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCustomerSPaymentInformationByPaymentMethodId(
       request: DeleteCustomerSPaymentInformationByPaymentMethodIdRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteCustomerSPaymentInformationByPaymentMethodIdRequestFields,
+        DeleteCustomerSPaymentInformationByPaymentMethodIdRequestEmbeds
+      >,
     ): Promise<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse> {
       return self.createRequest(
         "DELETE",
@@ -6213,7 +6996,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAppInstallationInformation(
       request: RetrieveAppInstallationInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAppInstallationInformationRequestFields,
+        RetrieveAppInstallationInformationRequestEmbeds
+      >,
     ): Promise<RetrieveAppInstallationInformationResponse> {
       return self.createRequest(
         "GET",
@@ -6242,7 +7028,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerSSocialAccount(
       request: RetrieveACustomerSSocialAccountRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerSSocialAccountRequestFields,
+        RetrieveACustomerSSocialAccountRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerSSocialAccountResponse> {
       return self.createRequest(
         "GET",
@@ -6275,7 +7064,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBoards(
       request: RetrieveAListOfBoardsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfBoardsRequestFields,
+        RetrieveAListOfBoardsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfBoardsResponse> {
       return self.createRequest(
         "GET",
@@ -6307,7 +7099,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfPostsForABoard(
       request: RetrieveAListOfPostsForABoardRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfPostsForABoardRequestFields,
+        RetrieveAListOfPostsForABoardRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfPostsForABoardResponse> {
       return self.createRequest(
         "GET",
@@ -6328,7 +7123,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABoardPost(
       request: CreateABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateABoardPostRequestFields,
+        CreateABoardPostRequestEmbeds
+      >,
     ): Promise<CreateABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6350,7 +7148,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABoardPost(
       request: UpdateABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateABoardPostRequestFields,
+        UpdateABoardPostRequestEmbeds
+      >,
     ): Promise<UpdateABoardPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6371,7 +7172,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABoardPost(
       request: DeleteABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteABoardPostRequestFields,
+        DeleteABoardPostRequestEmbeds
+      >,
     ): Promise<DeleteABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6403,7 +7207,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCommentsForABoardPost(
       request: RetrieveAListOfCommentsForABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCommentsForABoardPostRequestFields,
+        RetrieveAListOfCommentsForABoardPostRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCommentsForABoardPostResponse> {
       return self.createRequest(
         "GET",
@@ -6424,7 +7231,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACommentForABoardPost(
       request: CreateACommentForABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACommentForABoardPostRequestFields,
+        CreateACommentForABoardPostRequestEmbeds
+      >,
     ): Promise<CreateACommentForABoardPostResponse> {
       return self.createRequest(
         "POST",
@@ -6444,7 +7254,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACommentForABoardPost(
       request: DeleteACommentForABoardPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteACommentForABoardPostRequestFields,
+        DeleteACommentForABoardPostRequestEmbeds
+      >,
     ): Promise<DeleteACommentForABoardPostResponse> {
       return self.createRequest(
         "DELETE",
@@ -6468,7 +7281,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCommentsInBulk(
       request: RetrieveCommentsInBulkRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCommentsInBulkRequestFields,
+        RetrieveCommentsInBulkRequestEmbeds
+      >,
     ): Promise<RetrieveCommentsInBulkResponse> {
       return self.createRequest(
         "GET",
@@ -6492,7 +7308,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsForBoard(
       request: RetrieveSeoSettingsForBoardRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSeoSettingsForBoardRequestFields,
+        RetrieveSeoSettingsForBoardRequestEmbeds
+      >,
     ): Promise<RetrieveSeoSettingsForBoardResponse> {
       return self.createRequest(
         "GET",
@@ -6509,7 +7328,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateSeoSettingsForBoard(
       request: UpdateSeoSettingsForBoardRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateSeoSettingsForBoardRequestFields,
+        UpdateSeoSettingsForBoardRequestEmbeds
+      >,
     ): Promise<UpdateSeoSettingsForBoardResponse> {
       return self.createRequest(
         "PUT",
@@ -6539,7 +7361,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheTotalCountForMonthlyReviewsAndRatings(
       request: RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestFields,
+        RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestEmbeds
+      >,
     ): Promise<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse> {
       return self.createRequest(
         "GET",
@@ -6570,7 +7395,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnUrgentInquiryPost(
       request: RetrieveAnUrgentInquiryPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnUrgentInquiryPostRequestFields,
+        RetrieveAnUrgentInquiryPostRequestEmbeds
+      >,
     ): Promise<RetrieveAnUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6601,7 +7429,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAReplyForUrgentInquiryPost(
       request: RetrieveAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAReplyForUrgentInquiryPostRequestFields,
+        RetrieveAReplyForUrgentInquiryPostRequestEmbeds
+      >,
     ): Promise<RetrieveAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "GET",
@@ -6621,7 +7452,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAReplyForUrgentInquiryPost(
       request: CreateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAReplyForUrgentInquiryPostRequestFields,
+        CreateAReplyForUrgentInquiryPostRequestEmbeds
+      >,
     ): Promise<CreateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "POST",
@@ -6641,7 +7475,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReplyForUrgentInquiryPost(
       request: UpdateAReplyForUrgentInquiryPostRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAReplyForUrgentInquiryPostRequestFields,
+        UpdateAReplyForUrgentInquiryPostRequestEmbeds
+      >,
     ): Promise<UpdateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
         "PUT",
@@ -6670,7 +7507,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDesginIcons(
       request: RetrieveAListOfDesginIconsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfDesginIconsRequestFields,
+        RetrieveAListOfDesginIconsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfDesginIconsResponse> {
       return self.createRequest("GET", "/api/v2/admin/icons", request, options);
     },
@@ -6698,7 +7538,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemes(
       request: RetrieveAListOfThemesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfThemesRequestFields,
+        RetrieveAListOfThemesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6718,7 +7561,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfThemes(
       request: RetrieveACountOfThemesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfThemesRequestFields,
+        RetrieveACountOfThemesRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfThemesResponse> {
       return self.createRequest(
         "GET",
@@ -6739,7 +7585,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveATheme(
       request: RetrieveAThemeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAThemeRequestFields,
+        RetrieveAThemeRequestEmbeds
+      >,
     ): Promise<RetrieveAThemeResponse> {
       return self.createRequest(
         "GET",
@@ -6770,7 +7619,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemePage(
       request: RetrieveAThemePageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAThemePageRequestFields,
+        RetrieveAThemePageRequestEmbeds
+      >,
     ): Promise<RetrieveAThemePageResponse> {
       return self.createRequest(
         "GET",
@@ -6791,7 +7643,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAThemePage(
       request: CreateAThemePageRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAThemePageRequestFields,
+        CreateAThemePageRequestEmbeds
+      >,
     ): Promise<CreateAThemePageResponse> {
       return self.createRequest(
         "POST",
@@ -6822,7 +7677,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerBenefits(
       request: RetrieveAListOfCustomerBenefitsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerBenefitsRequestFields,
+        RetrieveAListOfCustomerBenefitsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6843,7 +7701,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerBenefits(
       request: RetrieveACountOfCustomerBenefitsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomerBenefitsRequestFields,
+        RetrieveACountOfCustomerBenefitsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomerBenefitsResponse> {
       return self.createRequest(
         "GET",
@@ -6864,7 +7725,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerBenefit(
       request: RetrieveACustomerBenefitRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerBenefitRequestFields,
+        RetrieveACustomerBenefitRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerBenefitResponse> {
       return self.createRequest(
         "GET",
@@ -6885,7 +7749,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACustomerBenefit(
       request: CreateACustomerBenefitRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACustomerBenefitRequestFields,
+        CreateACustomerBenefitRequestEmbeds
+      >,
     ): Promise<CreateACustomerBenefitResponse> {
       return self.createRequest(
         "POST",
@@ -6906,7 +7773,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerBenefit(
       request: UpdateACustomerBenefitRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACustomerBenefitRequestFields,
+        UpdateACustomerBenefitRequestEmbeds
+      >,
     ): Promise<UpdateACustomerBenefitResponse> {
       return self.createRequest(
         "PUT",
@@ -6926,7 +7796,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerBenefit(
       request: DeleteACustomerBenefitRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteACustomerBenefitRequestFields,
+        DeleteACustomerBenefitRequestEmbeds
+      >,
     ): Promise<DeleteACustomerBenefitResponse> {
       return self.createRequest(
         "DELETE",
@@ -6948,26 +7821,6 @@ export const Endpoints = (self: base.Client) => ({
   coupons: {
     /**
      * @description
-     * 쇼핑몰에 생성된 쿠폰의 수를 조회합니다.
-     *
-     * Scopes:
-     * - mall.read_promotion
-     *
-     * @see https://developers.cafe24.com/docs/api/admin/#retrieve-a-count-of-coupons
-     */
-    retrieveACountOfCoupons(
-      request: RetrieveACountOfCouponsRequest,
-      options?: base.RequestOptions,
-    ): Promise<RetrieveACountOfCouponsResponse> {
-      return self.createRequest(
-        "GET",
-        "/api/v2/admin/coupons/count",
-        request,
-        options,
-      );
-    },
-    /**
-     * @description
      * 쇼핑몰에 생성된 쿠폰을 목록으로 조회합니다.
      * 쿠폰번호, 혜택 구분, 적용 범위등을 확인할 수 있습니다.
      *
@@ -6978,11 +7831,37 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCoupons(
       request: RetrieveAListOfCouponsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCouponsRequestFields,
+        RetrieveAListOfCouponsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCouponsResponse> {
       return self.createRequest(
         "GET",
         "/api/v2/admin/coupons",
+        request,
+        options,
+      );
+    },
+    /**
+     * @description
+     * 쇼핑몰에 생성된 쿠폰의 수를 조회합니다.
+     *
+     * Scopes:
+     * - mall.read_promotion
+     *
+     * @see https://developers.cafe24.com/docs/api/admin/#retrieve-a-count-of-coupons
+     */
+    retrieveACountOfCoupons(
+      request: RetrieveACountOfCouponsRequest,
+      options?: base.RequestOptions<
+        RetrieveACountOfCouponsRequestFields,
+        RetrieveACountOfCouponsRequestEmbeds
+      >,
+    ): Promise<RetrieveACountOfCouponsResponse> {
+      return self.createRequest(
+        "GET",
+        "/api/v2/admin/coupons/count",
         request,
         options,
       );
@@ -6999,11 +7878,34 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACoupon(
       request: CreateACouponRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACouponRequestFields,
+        CreateACouponRequestEmbeds
+      >,
     ): Promise<CreateACouponResponse> {
       return self.createRequest(
         "POST",
         "/api/v2/admin/coupons",
+        request,
+        options,
+      );
+    },
+    /**
+     * Scopes:
+     * - mall.write_promotion
+     *
+     * @see https://developers.cafe24.com/docs/api/admin/#coupon-management
+     */
+    couponManagement(
+      request: CouponManagementRequest,
+      options?: base.RequestOptions<
+        CouponManagementRequestFields,
+        CouponManagementRequestEmbeds
+      >,
+    ): Promise<CouponManagementResponse> {
+      return self.createRequest(
+        "PUT",
+        "/api/v2/admin/coupons/{coupon_no}",
         request,
         options,
       );
@@ -7033,7 +7935,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfIssuedCoupons(
       request: RetrieveAListOfIssuedCouponsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfIssuedCouponsRequestFields,
+        RetrieveAListOfIssuedCouponsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfIssuedCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7054,7 +7959,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createCouponIssuanceHistory(
       request: CreateCouponIssuanceHistoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateCouponIssuanceHistoryRequestFields,
+        CreateCouponIssuanceHistoryRequestEmbeds
+      >,
     ): Promise<CreateCouponIssuanceHistoryResponse> {
       return self.createRequest(
         "POST",
@@ -7086,7 +7994,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerCoupons(
       request: RetrieveAListOfCustomerCouponsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerCouponsRequestFields,
+        RetrieveAListOfCustomerCouponsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7106,7 +8017,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerCoupons(
       request: RetrieveACountOfCustomerCouponsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomerCouponsRequestFields,
+        RetrieveACountOfCustomerCouponsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomerCouponsResponse> {
       return self.createRequest(
         "GET",
@@ -7126,7 +8040,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteACustomerCoupon(
       request: DeleteACustomerCouponRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteACustomerCouponRequestFields,
+        DeleteACustomerCouponRequestEmbeds
+      >,
     ): Promise<DeleteACustomerCouponResponse> {
       return self.createRequest(
         "DELETE",
@@ -7150,7 +8067,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDiscountCodes(
       request: RetrieveAListOfDiscountCodesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfDiscountCodesRequestFields,
+        RetrieveAListOfDiscountCodesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfDiscountCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7167,7 +8087,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveADiscountCode(
       request: RetrieveADiscountCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveADiscountCodeRequestFields,
+        RetrieveADiscountCodeRequestEmbeds
+      >,
     ): Promise<RetrieveADiscountCodeResponse> {
       return self.createRequest(
         "GET",
@@ -7184,7 +8107,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADiscountCode(
       request: CreateADiscountCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateADiscountCodeRequestFields,
+        CreateADiscountCodeRequestEmbeds
+      >,
     ): Promise<CreateADiscountCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7201,7 +8127,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateADiscountCode(
       request: UpdateADiscountCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateADiscountCodeRequestFields,
+        UpdateADiscountCodeRequestEmbeds
+      >,
     ): Promise<UpdateADiscountCodeResponse> {
       return self.createRequest(
         "PUT",
@@ -7218,7 +8147,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteADiscountCode(
       request: DeleteADiscountCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteADiscountCodeRequestFields,
+        DeleteADiscountCodeRequestEmbeds
+      >,
     ): Promise<DeleteADiscountCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7242,7 +8174,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveCouponCodes(
       request: RetrieveCouponCodesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveCouponCodesRequestFields,
+        RetrieveCouponCodesRequestEmbeds
+      >,
     ): Promise<RetrieveCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7259,7 +8194,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     generateCouponCode(
       request: GenerateCouponCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        GenerateCouponCodeRequestFields,
+        GenerateCouponCodeRequestEmbeds
+      >,
     ): Promise<GenerateCouponCodeResponse> {
       return self.createRequest(
         "POST",
@@ -7276,7 +8214,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteCouponCode(
       request: DeleteCouponCodeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteCouponCodeRequestFields,
+        DeleteCouponCodeRequestEmbeds
+      >,
     ): Promise<DeleteCouponCodeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7300,7 +8241,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACodeOfCouponCodes(
       request: RetrieveACodeOfCouponCodesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACodeOfCouponCodesRequestFields,
+        RetrieveACodeOfCouponCodesRequestEmbeds
+      >,
     ): Promise<RetrieveACodeOfCouponCodesResponse> {
       return self.createRequest(
         "GET",
@@ -7317,7 +8261,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     registerACodeOfCouponCodes(
       request: RegisterACodeOfCouponCodesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RegisterACodeOfCouponCodesRequestFields,
+        RegisterACodeOfCouponCodesRequestEmbeds
+      >,
     ): Promise<RegisterACodeOfCouponCodesResponse> {
       return self.createRequest(
         "POST",
@@ -7349,7 +8296,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAppInformation(
       request: RetrieveAnAppInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnAppInformationRequestFields,
+        RetrieveAnAppInformationRequestEmbeds
+      >,
     ): Promise<RetrieveAnAppInformationResponse> {
       return self.createRequest("GET", "/api/v2/admin/apps", request, options);
     },
@@ -7366,7 +8316,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAnAppInformation(
       request: UpdateAnAppInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAnAppInformationRequestFields,
+        UpdateAnAppInformationRequestEmbeds
+      >,
     ): Promise<UpdateAnAppInformationResponse> {
       return self.createRequest("PUT", "/api/v2/admin/apps", request, options);
     },
@@ -7391,7 +8344,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retreiveACafe24StoreOrder(
       request: RetreiveACafe24StoreOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetreiveACafe24StoreOrderRequestFields,
+        RetreiveACafe24StoreOrderRequestEmbeds
+      >,
     ): Promise<RetreiveACafe24StoreOrderResponse> {
       return self.createRequest(
         "GET",
@@ -7413,7 +8369,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACafe24StoreOrder(
       request: CreateACafe24StoreOrderRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateACafe24StoreOrderRequestFields,
+        CreateACafe24StoreOrderRequestEmbeds
+      >,
     ): Promise<CreateACafe24StoreOrderResponse> {
       return self.createRequest(
         "POST",
@@ -7442,7 +8401,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCafe24StorePayments(
       request: RetrieveAListOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCafe24StorePaymentsRequestFields,
+        RetrieveAListOfCafe24StorePaymentsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7462,7 +8424,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCafe24StorePayments(
       request: RetrieveACountOfCafe24StorePaymentsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCafe24StorePaymentsRequestFields,
+        RetrieveACountOfCafe24StorePaymentsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCafe24StorePaymentsResponse> {
       return self.createRequest(
         "GET",
@@ -7486,7 +8451,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDatabridgeWebhookLogs(
       request: RetrieveAListOfDatabridgeWebhookLogsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfDatabridgeWebhookLogsRequestFields,
+        RetrieveAListOfDatabridgeWebhookLogsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfDatabridgeWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7516,7 +8484,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfRecipes(
       request: RetrieveAListOfRecipesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfRecipesRequestFields,
+        RetrieveAListOfRecipesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfRecipesResponse> {
       return self.createRequest(
         "GET",
@@ -7537,7 +8508,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARecipe(
       request: CreateARecipeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateARecipeRequestFields,
+        CreateARecipeRequestEmbeds
+      >,
     ): Promise<CreateARecipeResponse> {
       return self.createRequest(
         "POST",
@@ -7557,7 +8531,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARecipe(
       request: DeleteARecipeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteARecipeRequestFields,
+        DeleteARecipeRequestEmbeds
+      >,
     ): Promise<DeleteARecipeResponse> {
       return self.createRequest(
         "DELETE",
@@ -7587,7 +8564,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfScriptTags(
       request: RetrieveAListOfScriptTagsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfScriptTagsRequestFields,
+        RetrieveAListOfScriptTagsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7607,7 +8587,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfScriptTags(
       request: RetrieveACountOfScriptTagsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfScriptTagsRequestFields,
+        RetrieveACountOfScriptTagsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfScriptTagsResponse> {
       return self.createRequest(
         "GET",
@@ -7628,7 +8611,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAScriptTag(
       request: RetrieveAScriptTagRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAScriptTagRequestFields,
+        RetrieveAScriptTagRequestEmbeds
+      >,
     ): Promise<RetrieveAScriptTagResponse> {
       return self.createRequest(
         "GET",
@@ -7648,7 +8634,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAScriptTag(
       request: CreateAScriptTagRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAScriptTagRequestFields,
+        CreateAScriptTagRequestEmbeds
+      >,
     ): Promise<CreateAScriptTagResponse> {
       return self.createRequest(
         "POST",
@@ -7669,7 +8658,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAScriptTag(
       request: UpdateAScriptTagRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAScriptTagRequestFields,
+        UpdateAScriptTagRequestEmbeds
+      >,
     ): Promise<UpdateAScriptTagResponse> {
       return self.createRequest(
         "PUT",
@@ -7690,7 +8682,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAScriptTag(
       request: DeleteAScriptTagRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAScriptTagRequestFields,
+        DeleteAScriptTagRequestEmbeds
+      >,
     ): Promise<DeleteAScriptTagResponse> {
       return self.createRequest(
         "DELETE",
@@ -7718,7 +8713,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfWebhookLogs(
       request: RetrieveAListOfWebhookLogsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfWebhookLogsRequestFields,
+        RetrieveAListOfWebhookLogsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfWebhookLogsResponse> {
       return self.createRequest(
         "GET",
@@ -7746,7 +8744,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveWebhookSettings(
       request: RetrieveWebhookSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveWebhookSettingsRequestFields,
+        RetrieveWebhookSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveWebhookSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -7763,7 +8764,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     editWebhookSettings(
       request: EditWebhookSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        EditWebhookSettingsRequestFields,
+        EditWebhookSettingsRequestEmbeds
+      >,
     ): Promise<EditWebhookSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -7794,7 +8798,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfAutoLayouts(
       request: RetrieveAListOfAutoLayoutsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfAutoLayoutsRequestFields,
+        RetrieveAListOfAutoLayoutsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfAutoLayoutsResponse> {
       return self.createRequest(
         "GET",
@@ -7814,7 +8821,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAutoLayoutForSelectedProductCategory(
       request: CreateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAutoLayoutForSelectedProductCategoryRequestFields,
+        CreateAutoLayoutForSelectedProductCategoryRequestEmbeds
+      >,
     ): Promise<CreateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7835,7 +8845,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAutoLayoutForSelectedProductCategory(
       request: UpdateAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAutoLayoutForSelectedProductCategoryRequestFields,
+        UpdateAutoLayoutForSelectedProductCategoryRequestEmbeds
+      >,
     ): Promise<UpdateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7855,7 +8868,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAutoLayoutForSelectedProductCategory(
       request: DeleteAutoLayoutForSelectedProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAutoLayoutForSelectedProductCategoryRequestFields,
+        DeleteAutoLayoutForSelectedProductCategoryRequestEmbeds
+      >,
     ): Promise<DeleteAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -7888,7 +8904,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductCategoriesRequestFields,
+        RetrieveAListOfProductCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7908,7 +8927,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductCategoriesRequestFields,
+        RetrieveACountOfProductCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -7929,7 +8951,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductCategoryRequestFields,
+        RetrieveAProductCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -7950,7 +8975,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProductCategory(
       request: CreateAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAProductCategoryRequestFields,
+        CreateAProductCategoryRequestEmbeds
+      >,
     ): Promise<CreateAProductCategoryResponse> {
       return self.createRequest(
         "POST",
@@ -7971,7 +8999,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategory(
       request: UpdateAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductCategoryRequestFields,
+        UpdateAProductCategoryRequestEmbeds
+      >,
     ): Promise<UpdateAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -7991,7 +9022,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProductCategory(
       request: DeleteAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAProductCategoryRequestFields,
+        DeleteAProductCategoryRequestEmbeds
+      >,
     ): Promise<DeleteAProductCategoryResponse> {
       return self.createRequest(
         "DELETE",
@@ -8022,7 +9056,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDecorationImageSettingsByCategory(
       request: RetrieveDecorationImageSettingsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveDecorationImageSettingsByCategoryRequestFields,
+        RetrieveDecorationImageSettingsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveDecorationImageSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8043,7 +9080,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateDecorationImagesOfAProductCategory(
       request: UpdateDecorationImagesOfAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateDecorationImagesOfAProductCategoryRequestFields,
+        UpdateDecorationImagesOfAProductCategoryRequestEmbeds
+      >,
     ): Promise<UpdateDecorationImagesOfAProductCategoryResponse> {
       return self.createRequest(
         "PUT",
@@ -8076,7 +9116,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSeoSettingsByCategory(
       request: RetrieveSeoSettingsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSeoSettingsByCategoryRequestFields,
+        RetrieveSeoSettingsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveSeoSettingsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -8097,7 +9140,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProductCategorySeo(
       request: UpdateAProductCategorySeoRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAProductCategorySeoRequestFields,
+        UpdateAProductCategorySeoRequestEmbeds
+      >,
     ): Promise<UpdateAProductCategorySeoResponse> {
       return self.createRequest(
         "PUT",
@@ -8126,7 +9172,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMainCategories(
       request: RetrieveAListOfMainCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfMainCategoriesRequestFields,
+        RetrieveAListOfMainCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfMainCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/admin/mains", request, options);
     },
@@ -8152,7 +9201,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfBrands(
       request: RetrieveAListOfBrandsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfBrandsRequestFields,
+        RetrieveAListOfBrandsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8172,7 +9224,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfBrands(
       request: RetrieveACountOfBrandsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfBrandsRequestFields,
+        RetrieveACountOfBrandsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfBrandsResponse> {
       return self.createRequest(
         "GET",
@@ -8193,7 +9248,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABrand(
       request: CreateABrandRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateABrandRequestFields,
+        CreateABrandRequestEmbeds
+      >,
     ): Promise<CreateABrandResponse> {
       return self.createRequest(
         "POST",
@@ -8214,7 +9272,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABrand(
       request: UpdateABrandRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateABrandRequestFields,
+        UpdateABrandRequestEmbeds
+      >,
     ): Promise<UpdateABrandResponse> {
       return self.createRequest(
         "PUT",
@@ -8234,7 +9295,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABrand(
       request: DeleteABrandRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteABrandRequestFields,
+        DeleteABrandRequestEmbeds
+      >,
     ): Promise<DeleteABrandResponse> {
       return self.createRequest(
         "DELETE",
@@ -8264,7 +9328,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomCategories(
       request: RetrieveAListOfCustomCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomCategoriesRequestFields,
+        RetrieveAListOfCustomCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8284,7 +9351,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomCategories(
       request: RetrieveACountOfCustomCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomCategoriesRequestFields,
+        RetrieveACountOfCustomCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -8317,7 +9387,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfManufacturers(
       request: RetrieveAListOfManufacturersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfManufacturersRequestFields,
+        RetrieveAListOfManufacturersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8338,7 +9411,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAManufacturer(
       request: RetrieveAManufacturerRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAManufacturerRequestFields,
+        RetrieveAManufacturerRequestEmbeds
+      >,
     ): Promise<RetrieveAManufacturerResponse> {
       return self.createRequest(
         "GET",
@@ -8358,7 +9434,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfManufacturers(
       request: RetrieveACountOfManufacturersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfManufacturersRequestFields,
+        RetrieveACountOfManufacturersRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfManufacturersResponse> {
       return self.createRequest(
         "GET",
@@ -8378,7 +9457,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAManufacturer(
       request: CreateAManufacturerRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAManufacturerRequestFields,
+        CreateAManufacturerRequestEmbeds
+      >,
     ): Promise<CreateAManufacturerResponse> {
       return self.createRequest(
         "POST",
@@ -8399,7 +9481,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAManufacturer(
       request: UpdateAManufacturerRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAManufacturerRequestFields,
+        UpdateAManufacturerRequestEmbeds
+      >,
     ): Promise<UpdateAManufacturerResponse> {
       return self.createRequest(
         "PUT",
@@ -8430,7 +9515,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfOrigins(
       request: RetrieveAListOfOriginsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfOriginsRequestFields,
+        RetrieveAListOfOriginsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -8460,7 +9548,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfTrends(
       request: RetrieveAListOfTrendsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfTrendsRequestFields,
+        RetrieveAListOfTrendsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8480,7 +9571,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfTrends(
       request: RetrieveACountOfTrendsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfTrendsRequestFields,
+        RetrieveACountOfTrendsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfTrendsResponse> {
       return self.createRequest(
         "GET",
@@ -8510,7 +9604,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierSShippingSettings(
       request: RetrieveASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASupplierSShippingSettingsRequestFields,
+        RetrieveASupplierSShippingSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8531,7 +9628,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierSShippingSettings(
       request: UpdateASupplierSShippingSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASupplierSShippingSettingsRequestFields,
+        UpdateASupplierSShippingSettingsRequestEmbeds
+      >,
     ): Promise<UpdateASupplierSShippingSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8564,7 +9664,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSuppliers(
       request: RetrieveAListOfSuppliersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfSuppliersRequestFields,
+        RetrieveAListOfSuppliersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8584,7 +9687,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSuppliers(
       request: RetrieveACountOfSuppliersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfSuppliersRequestFields,
+        RetrieveACountOfSuppliersRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfSuppliersResponse> {
       return self.createRequest(
         "GET",
@@ -8605,7 +9711,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplier(
       request: RetrieveASupplierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASupplierRequestFields,
+        RetrieveASupplierRequestEmbeds
+      >,
     ): Promise<RetrieveASupplierResponse> {
       return self.createRequest(
         "GET",
@@ -8625,7 +9734,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplier(
       request: CreateASupplierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateASupplierRequestFields,
+        CreateASupplierRequestEmbeds
+      >,
     ): Promise<CreateASupplierResponse> {
       return self.createRequest(
         "POST",
@@ -8646,7 +9758,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplier(
       request: UpdateASupplierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASupplierRequestFields,
+        UpdateASupplierRequestEmbeds
+      >,
     ): Promise<UpdateASupplierResponse> {
       return self.createRequest(
         "PUT",
@@ -8666,7 +9781,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplier(
       request: DeleteASupplierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteASupplierRequestFields,
+        DeleteASupplierRequestEmbeds
+      >,
     ): Promise<DeleteASupplierResponse> {
       return self.createRequest(
         "DELETE",
@@ -8698,7 +9816,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSupplierUsers(
       request: RetrieveAListOfSupplierUsersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfSupplierUsersRequestFields,
+        RetrieveAListOfSupplierUsersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8718,7 +9839,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfSupplierUsers(
       request: RetrieveACountOfSupplierUsersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfSupplierUsersRequestFields,
+        RetrieveACountOfSupplierUsersRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfSupplierUsersResponse> {
       return self.createRequest(
         "GET",
@@ -8739,7 +9863,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveSupplierUserDetails(
       request: RetrieveSupplierUserDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveSupplierUserDetailsRequestFields,
+        RetrieveSupplierUserDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveSupplierUserDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -8759,7 +9886,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createASupplierUser(
       request: CreateASupplierUserRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateASupplierUserRequestFields,
+        CreateASupplierUserRequestEmbeds
+      >,
     ): Promise<CreateASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8780,7 +9910,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUser(
       request: UpdateASupplierUserRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASupplierUserRequestFields,
+        UpdateASupplierUserRequestEmbeds
+      >,
     ): Promise<UpdateASupplierUserResponse> {
       return self.createRequest(
         "PUT",
@@ -8800,7 +9933,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteASupplierUser(
       request: DeleteASupplierUserRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteASupplierUserRequestFields,
+        DeleteASupplierUserRequestEmbeds
+      >,
     ): Promise<DeleteASupplierUserResponse> {
       return self.createRequest(
         "DELETE",
@@ -8831,7 +9967,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSListOfRegionalShippingFees(
       request: RetrieveASupplierUserSListOfRegionalShippingFeesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASupplierUserSListOfRegionalShippingFeesRequestFields,
+        RetrieveASupplierUserSListOfRegionalShippingFeesRequestEmbeds
+      >,
     ): Promise<RetrieveASupplierUserSListOfRegionalShippingFeesResponse> {
       return self.createRequest(
         "GET",
@@ -8852,7 +9991,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createRegionalShippingFeeForASupplierUser(
       request: CreateRegionalShippingFeeForASupplierUserRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateRegionalShippingFeeForASupplierUserRequestFields,
+        CreateRegionalShippingFeeForASupplierUserRequestEmbeds
+      >,
     ): Promise<CreateRegionalShippingFeeForASupplierUserResponse> {
       return self.createRequest(
         "POST",
@@ -8872,7 +10014,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteSupplierUserSRegionalShippingFeeSettings(
       request: DeleteSupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteSupplierUserSRegionalShippingFeeSettingsRequestFields,
+        DeleteSupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+      >,
     ): Promise<DeleteSupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "DELETE",
@@ -8903,7 +10048,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASupplierUserSRegionalShippingFeeSettings(
       request: RetrieveASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASupplierUserSRegionalShippingFeeSettingsRequestFields,
+        RetrieveASupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -8924,7 +10072,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateASupplierUserSRegionalShippingFeeSettings(
       request: UpdateASupplierUserSRegionalShippingFeeSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateASupplierUserSRegionalShippingFeeSettingsRequestFields,
+        UpdateASupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+      >,
     ): Promise<UpdateASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -8955,7 +10106,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingCarriers(
       request: RetrieveAListOfShippingCarriersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfShippingCarriersRequestFields,
+        RetrieveAListOfShippingCarriersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfShippingCarriersResponse> {
       return self.createRequest(
         "GET",
@@ -8976,7 +10130,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingCarrier(
       request: RetrieveAShippingCarrierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAShippingCarrierRequestFields,
+        RetrieveAShippingCarrierRequestEmbeds
+      >,
     ): Promise<RetrieveAShippingCarrierResponse> {
       return self.createRequest(
         "GET",
@@ -8997,7 +10154,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingCarrier(
       request: CreateAShippingCarrierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAShippingCarrierRequestFields,
+        CreateAShippingCarrierRequestEmbeds
+      >,
     ): Promise<CreateAShippingCarrierResponse> {
       return self.createRequest(
         "POST",
@@ -9018,7 +10178,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingCarrier(
       request: UpdateAShippingCarrierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAShippingCarrierRequestFields,
+        UpdateAShippingCarrierRequestEmbeds
+      >,
     ): Promise<UpdateAShippingCarrierResponse> {
       return self.createRequest(
         "PUT",
@@ -9038,11 +10201,41 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingCarrier(
       request: DeleteAShippingCarrierRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAShippingCarrierRequestFields,
+        DeleteAShippingCarrierRequestEmbeds
+      >,
     ): Promise<DeleteAShippingCarrierResponse> {
       return self.createRequest(
         "DELETE",
         "/api/v2/admin/carriers/{carrier_id}",
+        request,
+        options,
+      );
+    },
+  },
+  /**
+   *
+   *
+   * @see https://developers.cafe24.com/docs/api/admin/#regionalsurcharges
+   */
+  regionalsurcharges: {
+    /**
+     * Scopes:
+     * - mall.read_shipping
+     *
+     * @see https://developers.cafe24.com/docs/api/admin/#retrieve-shipping-zone-rates-settings
+     */
+    retrieveShippingZoneRatesSettings(
+      request: RetrieveShippingZoneRatesSettingsRequest,
+      options?: base.RequestOptions<
+        RetrieveShippingZoneRatesSettingsRequestFields,
+        RetrieveShippingZoneRatesSettingsRequestEmbeds
+      >,
+    ): Promise<RetrieveShippingZoneRatesSettingsResponse> {
+      return self.createRequest(
+        "GET",
+        "/api/v2/admin/regionalsurcharges",
         request,
         options,
       );
@@ -9068,7 +10261,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveShippingReturnSettings(
       request: RetrieveShippingReturnSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveShippingReturnSettingsRequestFields,
+        RetrieveShippingReturnSettingsRequestEmbeds
+      >,
     ): Promise<RetrieveShippingReturnSettingsResponse> {
       return self.createRequest(
         "GET",
@@ -9089,7 +10285,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateStoreShippingReturnSettings(
       request: UpdateStoreShippingReturnSettingsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateStoreShippingReturnSettingsRequestFields,
+        UpdateStoreShippingReturnSettingsRequestEmbeds
+      >,
     ): Promise<UpdateStoreShippingReturnSettingsResponse> {
       return self.createRequest(
         "PUT",
@@ -9118,7 +10317,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfShippingOrigins(
       request: RetrieveAListOfShippingOriginsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfShippingOriginsRequestFields,
+        RetrieveAListOfShippingOriginsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfShippingOriginsResponse> {
       return self.createRequest(
         "GET",
@@ -9139,7 +10341,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShippingOrigin(
       request: RetrieveAShippingOriginRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAShippingOriginRequestFields,
+        RetrieveAShippingOriginRequestEmbeds
+      >,
     ): Promise<RetrieveAShippingOriginResponse> {
       return self.createRequest(
         "GET",
@@ -9159,7 +10364,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShippingOrigin(
       request: CreateAShippingOriginRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAShippingOriginRequestFields,
+        CreateAShippingOriginRequestEmbeds
+      >,
     ): Promise<CreateAShippingOriginResponse> {
       return self.createRequest(
         "POST",
@@ -9180,7 +10388,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAShippingOrigin(
       request: UpdateAShippingOriginRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAShippingOriginRequestFields,
+        UpdateAShippingOriginRequestEmbeds
+      >,
     ): Promise<UpdateAShippingOriginResponse> {
       return self.createRequest(
         "PUT",
@@ -9201,7 +10412,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAShippingOrigin(
       request: DeleteAShippingOriginRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAShippingOriginRequestFields,
+        DeleteAShippingOriginRequestEmbeds
+      >,
     ): Promise<DeleteAShippingOriginResponse> {
       return self.createRequest(
         "DELETE",
@@ -9231,7 +10445,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfDailySales(
       request: RetrieveAListOfDailySalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfDailySalesRequestFields,
+        RetrieveAListOfDailySalesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfDailySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9261,7 +10478,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfMonthlySales(
       request: RetrieveAListOfMonthlySalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfMonthlySalesRequestFields,
+        RetrieveAListOfMonthlySalesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfMonthlySalesResponse> {
       return self.createRequest(
         "GET",
@@ -9290,7 +10510,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlySalesStatisticsOfAStore(
       request: RetrieveHourlySalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveHourlySalesStatisticsOfAStoreRequestFields,
+        RetrieveHourlySalesStatisticsOfAStoreRequestEmbeds
+      >,
     ): Promise<RetrieveHourlySalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9320,7 +10543,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveHourlyProductSalesStatisticsOfAStore(
       request: RetrieveHourlyProductSalesStatisticsOfAStoreRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveHourlyProductSalesStatisticsOfAStoreRequestFields,
+        RetrieveHourlyProductSalesStatisticsOfAStoreRequestEmbeds
+      >,
     ): Promise<RetrieveHourlyProductSalesStatisticsOfAStoreResponse> {
       return self.createRequest(
         "GET",
@@ -9349,7 +10575,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveASalesReport(
       request: RetrieveASalesReportRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveASalesReportRequestFields,
+        RetrieveASalesReportRequestEmbeds
+      >,
     ): Promise<RetrieveASalesReportResponse> {
       return self.createRequest(
         "GET",
@@ -9380,7 +10609,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShoppingCart(
       request: RetrieveAShoppingCartRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAShoppingCartRequestFields,
+        RetrieveAShoppingCartRequestEmbeds
+      >,
     ): Promise<RetrieveAShoppingCartResponse> {
       return self.createRequest("GET", "/api/v2/admin/carts", request, options);
     },
@@ -9405,7 +10637,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsInCustomerWishlist(
       request: RetrieveACountOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsInCustomerWishlistRequestFields,
+        RetrieveACountOfProductsInCustomerWishlistRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9425,7 +10660,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInCustomerWishlist(
       request: RetrieveAListOfProductsInCustomerWishlistRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsInCustomerWishlistRequestFields,
+        RetrieveAListOfProductsInCustomerWishlistRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9456,7 +10694,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCartsContainingAProductRequestFields,
+        RetrieveACountOfCartsContainingAProductRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9477,7 +10718,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCartsContainingAProduct(
       request: RetrieveAListOfCartsContainingAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCartsContainingAProductRequestFields,
+        RetrieveAListOfCartsContainingAProductRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -9507,7 +10751,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomerInformation(
       request: RetrieveAListOfCustomerInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomerInformationRequestFields,
+        RetrieveAListOfCustomerInformationRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9527,7 +10774,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomerInformation(
       request: RetrieveACountOfCustomerInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomerInformationRequestFields,
+        RetrieveACountOfCustomerInformationRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9548,7 +10798,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACustomerInformation(
       request: RetrieveACustomerInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACustomerInformationRequestFields,
+        RetrieveACustomerInformationRequestEmbeds
+      >,
     ): Promise<RetrieveACustomerInformationResponse> {
       return self.createRequest(
         "GET",
@@ -9569,7 +10822,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateACustomerInformation(
       request: UpdateACustomerInformationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateACustomerInformationRequestFields,
+        UpdateACustomerInformationRequestEmbeds
+      >,
     ): Promise<UpdateACustomerInformationResponse> {
       return self.createRequest(
         "PUT",
@@ -9599,7 +10855,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCustomersWithAProductInWishlist(
       request: RetrieveAListOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCustomersWithAProductInWishlistRequestFields,
+        RetrieveAListOfCustomersWithAProductInWishlistRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9619,7 +10878,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCustomersWithAProductInWishlist(
       request: RetrieveACountOfCustomersWithAProductInWishlistRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCustomersWithAProductInWishlistRequestFields,
+        RetrieveACountOfCustomersWithAProductInWishlistRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
         "GET",
@@ -9649,7 +10911,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfCreditsByDateRange(
       request: RetrieveAListOfCreditsByDateRangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfCreditsByDateRangeRequestFields,
+        RetrieveAListOfCreditsByDateRangeRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfCreditsByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9680,7 +10945,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACreditReportByDateRange(
       request: RetrieveACreditReportByDateRangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACreditReportByDateRangeRequestFields,
+        RetrieveACreditReportByDateRangeRequestEmbeds
+      >,
     ): Promise<RetrieveACreditReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9712,7 +10980,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePoints(
       request: RetrievePointsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrievePointsRequestFields,
+        RetrievePointsRequestEmbeds
+      >,
     ): Promise<RetrievePointsResponse> {
       return self.createRequest(
         "GET",
@@ -9732,7 +11003,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     issueAndDeductPoints(
       request: IssueAndDeductPointsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        IssueAndDeductPointsRequestFields,
+        IssueAndDeductPointsRequestEmbeds
+      >,
     ): Promise<IssueAndDeductPointsResponse> {
       return self.createRequest(
         "POST",
@@ -9763,7 +11037,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAnAutomaticPointsExpiration(
       request: RetrieveAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAnAutomaticPointsExpirationRequestFields,
+        RetrieveAnAutomaticPointsExpirationRequestEmbeds
+      >,
     ): Promise<RetrieveAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "GET",
@@ -9784,7 +11061,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAnAutomaticPointsExpiration(
       request: CreateAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAnAutomaticPointsExpirationRequestFields,
+        CreateAnAutomaticPointsExpirationRequestEmbeds
+      >,
     ): Promise<CreateAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "POST",
@@ -9804,7 +11084,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAnAutomaticPointsExpiration(
       request: DeleteAnAutomaticPointsExpirationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteAnAutomaticPointsExpirationRequestFields,
+        DeleteAnAutomaticPointsExpirationRequestEmbeds
+      >,
     ): Promise<DeleteAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
         "DELETE",
@@ -9835,7 +11118,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAPointsReportByDateRange(
       request: RetrieveAPointsReportByDateRangeRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAPointsReportByDateRangeRequestFields,
+        RetrieveAPointsReportByDateRangeRequestEmbeds
+      >,
     ): Promise<RetrieveAPointsReportByDateRangeResponse> {
       return self.createRequest(
         "GET",
@@ -9867,7 +11153,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendAnInvitationToActivateAccount(
       request: SendAnInvitationToActivateAccountRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        SendAnInvitationToActivateAccountRequestFields,
+        SendAnInvitationToActivateAccountRequestEmbeds
+      >,
     ): Promise<SendAnInvitationToActivateAccountResponse> {
       return self.createRequest(
         "POST",
@@ -9896,7 +11185,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupList(
       request: RetrieveDistributionGroupListRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveDistributionGroupListRequestFields,
+        RetrieveDistributionGroupListRequestEmbeds
+      >,
     ): Promise<RetrieveDistributionGroupListResponse> {
       return self.createRequest(
         "GET",
@@ -9916,7 +11208,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveDistributionGroupDetails(
       request: RetrieveDistributionGroupDetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveDistributionGroupDetailsRequestFields,
+        RetrieveDistributionGroupDetailsRequestEmbeds
+      >,
     ): Promise<RetrieveDistributionGroupDetailsResponse> {
       return self.createRequest(
         "GET",
@@ -9936,7 +11231,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createADistributionGroup(
       request: CreateADistributionGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateADistributionGroupRequestFields,
+        CreateADistributionGroupRequestEmbeds
+      >,
     ): Promise<CreateADistributionGroupResponse> {
       return self.createRequest(
         "POST",
@@ -9956,7 +11254,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     editDistributionGroup(
       request: EditDistributionGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        EditDistributionGroupRequestFields,
+        EditDistributionGroupRequestEmbeds
+      >,
     ): Promise<EditDistributionGroupResponse> {
       return self.createRequest(
         "PUT",
@@ -9976,7 +11277,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteDistributionGroup(
       request: DeleteDistributionGroupRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DeleteDistributionGroupRequestFields,
+        DeleteDistributionGroupRequestEmbeds
+      >,
     ): Promise<DeleteDistributionGroupResponse> {
       return self.createRequest(
         "DELETE",
@@ -10008,7 +11312,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendASms(
       request: SendASmsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        SendASmsRequestFields,
+        SendASmsRequestEmbeds
+      >,
     ): Promise<SendASmsResponse> {
       return self.createRequest("POST", "/api/v2/admin/sms", request, options);
     },
@@ -10027,7 +11334,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheSmsBalance(
       request: RetrieveTheSmsBalanceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheSmsBalanceRequestFields,
+        RetrieveTheSmsBalanceRequestEmbeds
+      >,
     ): Promise<RetrieveTheSmsBalanceResponse> {
       return self.createRequest(
         "GET",
@@ -10059,7 +11369,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfSmsSenders(
       request: RetrieveAListOfSmsSendersRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfSmsSendersRequestFields,
+        RetrieveAListOfSmsSendersRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfSmsSendersResponse> {
       return self.createRequest(
         "GET",
@@ -10088,7 +11401,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategoryTranslations(
       request: RetrieveAListOfProductCategoryTranslationsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductCategoryTranslationsRequestFields,
+        RetrieveAListOfProductCategoryTranslationsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductCategoryTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10109,7 +11425,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductCategoryTranslation(
       request: UpdateProductCategoryTranslationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductCategoryTranslationRequestFields,
+        UpdateProductCategoryTranslationRequestEmbeds
+      >,
     ): Promise<UpdateProductCategoryTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10137,7 +11456,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductTranslations(
       request: RetrieveAListOfProductTranslationsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductTranslationsRequestFields,
+        RetrieveAListOfProductTranslationsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10158,7 +11480,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateProductTranslation(
       request: UpdateProductTranslationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateProductTranslationRequestFields,
+        UpdateProductTranslationRequestEmbeds
+      >,
     ): Promise<UpdateProductTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10186,7 +11511,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfStoreTranslations(
       request: RetrieveAListOfStoreTranslationsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfStoreTranslationsRequestFields,
+        RetrieveAListOfStoreTranslationsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfStoreTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10207,7 +11535,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateTheTranslationsOfAStore(
       request: UpdateTheTranslationsOfAStoreRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateTheTranslationsOfAStoreRequestFields,
+        UpdateTheTranslationsOfAStoreRequestEmbeds
+      >,
     ): Promise<UpdateTheTranslationsOfAStoreResponse> {
       return self.createRequest(
         "PUT",
@@ -10235,7 +11566,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfThemeTranslations(
       request: RetrieveAListOfThemeTranslationsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfThemeTranslationsRequestFields,
+        RetrieveAListOfThemeTranslationsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfThemeTranslationsResponse> {
       return self.createRequest(
         "GET",
@@ -10255,7 +11589,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAThemeTranslation(
       request: RetrieveAThemeTranslationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAThemeTranslationRequestFields,
+        RetrieveAThemeTranslationRequestEmbeds
+      >,
     ): Promise<RetrieveAThemeTranslationResponse> {
       return self.createRequest(
         "GET",
@@ -10276,7 +11613,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAThemeTranslation(
       request: UpdateAThemeTranslationRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        UpdateAThemeTranslationRequestFields,
+        UpdateAThemeTranslationRequestEmbeds
+      >,
     ): Promise<UpdateAThemeTranslationResponse> {
       return self.createRequest(
         "PUT",
@@ -10304,7 +11644,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfDailyvisits(
       request: RetrieveACountOfDailyvisitsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfDailyvisitsRequestFields,
+        RetrieveACountOfDailyvisitsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfDailyvisitsResponse> {
       return self.createRequest(
         "GET",
@@ -10709,17 +12052,18 @@ interface UpdateCouponSettingsRequest {
   backgroundImageType?: any;
 }
 
-interface RetrieveCurrencySettingsRequest {
+interface RetrieveCurrencySettingsRequest {}
+
+interface RetrieveMemberRelatedSettingsRequest {
   /**
    * @description
-   * 상점 읽기권한 (mall.read_store)
+   * 멀티쇼핑몰 번호
+   *
+   *
+   * @constraints
+   * 최소값: [1]
    */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
+  shopNo?: any;
 }
 
 interface RetrieveADashboardRequest {
@@ -12075,31 +13419,9 @@ interface UpdateStoreSeoSettingsRequest {
   mobileFooterTag?: any;
 }
 
-interface RetrieveActivationInformationForShippingManagerRequest {
-  /**
-   * @description
-   * 상점 읽기권한 (mall.read_store)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveActivationInformationForShippingManagerRequest {}
 
-interface RetrieveAListOfShopsRequest {
-  /**
-   * @description
-   * 상점 읽기권한 (mall.read_store)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfShopsRequest {}
 
 interface RetrieveAShopRequest {
   /**
@@ -12803,18 +14125,7 @@ interface DeleteSubscriptionProductsRequest {
   subscriptionNo: any;
 }
 
-interface RetrieveActivationInformationForTaxManagerRequest {
-  /**
-   * @description
-   * 상점 읽기권한 (mall.read_store)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveActivationInformationForTaxManagerRequest {}
 
 interface RetrieveAListOfAdminUsersRequest {
   /**
@@ -12860,26 +14171,6 @@ interface RetrieveAdminUserDetailsRequest {
 }
 
 interface RetrieveAListOfBundlesRequest {
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
   /**
    * @description
    * 멀티쇼핑몰 번호
@@ -13091,46 +14382,6 @@ interface RetrieveABundleRequest {
    * 조회하고자 하는 상품의 번호
    */
   productNo: any;
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 메모 리소스
-   */
-  memos?: any;
-  /**
-   * @description
-   * 상품 조회수 리소스
-   */
-  hits?: any;
-  /**
-   * @description
-   * 상품 Seo 리소스
-   */
-  seo?: any;
-  /**
-   * @description
-   * 상품 태그 리소스
-   */
-  tags?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
 }
 
 interface CreateABundleRequest {
@@ -14818,49 +16069,6 @@ interface DeleteAProductInMainCategoryRequest {
 interface RetrieveAListOfProductsRequest {
   /**
    * @description
-   * 상품 할인판매가 리소스
-   */
-  channeldiscountprices?: any;
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 상품 옵션 리소스
-   */
-  options?: any;
-  /**
-   * @description
-   * 품목 리소스
-   *
-   * 상품당 품목정보를 100개까지 조회할 수 있음.
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  variants?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
-  /**
-   * @description
-   * 상품 조회수 리소스
-   */
-  hits?: any;
-  /**
-   * @description
    * 멀티쇼핑몰 번호
    *
    * 멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.
@@ -15728,79 +16936,6 @@ interface RetrieveAProductResourceRequest {
    * 조회하고자 하는 상품의 번호
    */
   productNo: any;
-  /**
-   * @description
-   * 품목 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  variants?: any;
-  /**
-   * @description
-   * 메모 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  memos?: any;
-  /**
-   * @description
-   * 상품 조회수 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  hits?: any;
-  /**
-   * @description
-   * 상품 Seo 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  seo?: any;
-  /**
-   * @description
-   * 상품 태그 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  tags?: any;
-  /**
-   * @description
-   * 상품 옵션 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  options?: any;
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
-  /**
-   * @description
-   * 사용자 정의 속성
-   */
-  customProperties?: any;
 }
 
 interface CreateAProductRequest {
@@ -19200,16 +20335,6 @@ interface RetrieveAListOfProductVariantsRequest {
    * 시스템에서 부여한 상품의 번호. 상품 번호는 쇼핑몰 내에서 중복되지 않는다.
    */
   productNo: any;
-  /**
-   * @description
-   * 재고 리소스
-   *
-   * 품목의 재고 리소스
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   */
-  inventories?: any;
 }
 
 interface RetrieveAProductVariantRequest {
@@ -19236,14 +20361,6 @@ interface RetrieveAProductVariantRequest {
    * 형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]
    */
   variantCode: any;
-  /**
-   * @description
-   * 재고 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  inventories?: any;
 }
 
 interface UpdateAProductVariantRequest {
@@ -19597,18 +20714,7 @@ interface UpdateAProductVariantInventoryRequest {
   originCode?: any;
 }
 
-interface RetrieveUserDefinedPropertiesRequest {
-  /**
-   * @description
-   * 상품 읽기권한 (mall.read_product)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveUserDefinedPropertiesRequest {}
 
 interface CreateUserDefinedPropertiesRequest {
   /**
@@ -19648,31 +20754,9 @@ interface DeleteUserDefinedPropertiesRequest {
   propertyNo: any;
 }
 
-interface RetrieveAListOfDecorationImagesRequest {
-  /**
-   * @description
-   * 상품 읽기권한 (mall.read_product)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfDecorationImagesRequest {}
 
-interface RetrieveAListOfIconsRequest {
-  /**
-   * @description
-   * 상품 읽기권한 (mall.read_product)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfIconsRequest {}
 
 interface UploadImagesRequest {
   /**
@@ -21284,42 +22368,6 @@ interface CreateMultipleOrderLabelsRequest {
 interface RetrieveAListOfOrdersRequest {
   /**
    * @description
-   * 품주 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  items?: any;
-  /**
-   * @description
-   * 수령자정보 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  receivers?: any;
-  /**
-   * @description
-   * 주문자정보 리소스
-   */
-  buyer?: any;
-  /**
-   * @description
-   * 반품상세 리소스
-   */
-  return?: any;
-  /**
-   * @description
-   * 취소상세 리소스
-   */
-  cancellation?: any;
-  /**
-   * @description
-   * 교환상세 리소스
-   */
-  exchange?: any;
-  /**
-   * @description
    * 멀티 배송지 여부
    *
    * T : 멀티 배송지 주문
@@ -21728,53 +22776,6 @@ interface RetrieveAnOrderRequest {
    * 주문번호
    */
   orderId: any;
-  /**
-   * @description
-   * 품주 리소스
-   */
-  items?: any;
-  /**
-   * @description
-   * 수령자정보 리소스
-   */
-  receivers?: any;
-  /**
-   * @description
-   * 주문자정보 리소스
-   */
-  buyer?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 쿠폰 리소스
-   *
-   * Youtube shopping 이용 시에는 미제공
-   */
-  coupons?: any;
-  /**
-   * @description
-   * 반품상세 리소스
-   */
-  return?: any;
-  /**
-   * @description
-   * 취소상세 리소스
-   */
-  cancellation?: any;
-  /**
-   * @description
-   * 교환상세 리소스
-   */
-  exchange?: any;
-  /**
-   * @description
-   * 환불상세 리소스
-   */
-  refunds?: any;
 }
 
 interface RetrieveACountOfOrdersRequest {
@@ -25525,18 +26526,7 @@ interface RetrieveAListOfCouponsAppliedToAnOrderRequest {
   offset?: any;
 }
 
-interface RetrieveAListOfTrafficSourceGroupsRequest {
-  /**
-   * @description
-   * 주문 읽기권한 (mall.read_order)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfTrafficSourceGroupsRequest {}
 
 interface CreateATrafficSourceGroupRequest {
   /**
@@ -26024,11 +27014,6 @@ interface RetrieveARefundRequest {
    * 환불번호
    */
   refundCode: any;
-  /**
-   * @description
-   * 품주 리소스
-   */
-  items?: any;
 }
 
 interface RetrievePreOrderItemRequest {
@@ -30375,248 +31360,6 @@ interface DeleteACustomerBenefitRequest {
   benefitNo: any;
 }
 
-interface RetrieveACountOfCouponsRequest {
-  /**
-   * @description
-   * 멀티쇼핑몰 번호
-   *
-   * 멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.
-   *
-   */
-  shopNo?: any;
-  /**
-   * @description
-   * 쿠폰번호
-   */
-  couponNo?: any;
-  /**
-   * @description
-   * 쿠폰유형
-   *
-   * 조회할 쿠폰의 유형
-   *
-   * O : 온라인 쿠폰
-   * S : 오프라인 시리얼 쿠폰
-   */
-  couponType?: any;
-  /**
-   * @description
-   * 쿠폰명
-   */
-  couponName?: any;
-  /**
-   * @description
-   * 혜택 구분
-   *
-   * 쿠폰으로 받는 혜택의 종류 구분
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   *
-   * A : 할인금액
-   * B : 할인율
-   * C : 적립금액
-   * D : 적립율
-   * E : 기본배송비 할인(전액할인)
-   * I : 기본배송비 할인(할인율)
-   * H : 기본배송비 할인(할인금액)
-   * J : 전체배송비 할인(전액할인)
-   * F : 즉시적립
-   * G : 예치금
-   */
-  benefitType?: any;
-  /**
-   * @description
-   * 발급 구분
-   *
-   * 쿠폰의 발급형태 유형
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   *
-   * M : 대상자 지정 발급
-   * A : 조건부 자동 발급
-   * D : 고객 다운로드 발급
-   * R : 정기 자동 발급
-   */
-  issueType?: any;
-  /**
-   * @description
-   * 발급 하위 유형
-   *
-   * 쿠폰 발급의 세부 하위 유형
-   *
-   * M : 회원 대상
-   * C : 실시간 접속자 대상
-   * J : 회원 가입
-   * D : 배송 완료 시
-   * A : 기념일(생일)
-   * I : 모듈(프로그램) 설치
-   * P : 상품 후기 작성
-   * O : 주문 완료 시
-   * Q : 구매 수량 충족 시
-   * F : 첫 구매 고객
-   * N : 일정기간 미구매 회원 대상
-   * U : 회원등급 상향시
-   */
-  issueSubType?: any;
-  /**
-   * @description
-   * 발급된 쿠폰 여부
-   *
-   * 쿠폰이 기존에 발급된 이력이 있는지 여부
-   *
-   * T : 발급이력이 있는 쿠폰
-   * F : 발급이력이 없는 쿠폰
-   */
-  issuedFlag?: any;
-  /**
-   * @description
-   * 검색 시작일
-   *
-   * 쿠폰 생성일 기준 검색의 검색 시작일
-   * 검색 종료일과 같이 사용해야함.
-   *
-   * @constraints
-   * 날짜
-   */
-  createdStartDate?: any;
-  /**
-   * @description
-   * 검색 종료일
-   *
-   * 쿠폰 생성일 기준 검색의 검색 종료일
-   * 검색 시작일과 같이 사용해야함.
-   *
-   * @constraints
-   * 날짜
-   */
-  createdEndDate?: any;
-  /**
-   * @description
-   * 쿠폰삭제 여부
-   *
-   * 쿠폰이 삭제되었는지 여부.
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   *
-   * T : 삭제된 쿠폰
-   * F : 삭제되지 않은 쿠폰
-   *
-   */
-  deleted?: any;
-  /**
-   * @description
-   * 쿠폰 발급 일시정지 시작시간
-   *
-   * 쿠폰 발급이 일시정지 되기 시작한 시간.
-   *
-   * @constraints
-   * 날짜
-   */
-  pauseBeginDate?: any;
-  /**
-   * @description
-   * 쿠폰 발급 일시정지 종료시간
-   *
-   * 쿠폰 발급의 일시정지가 종료된 시간.
-   *
-   * @constraints
-   * 날짜
-   */
-  pauseEndDate?: any;
-  /**
-   * @description
-   * 주문경로
-   *
-   * 발급한 쿠폰의 사용 가능한 주문 경로
-   *
-   * W : PC
-   * M : 모바일
-   * P : 플러스앱
-   */
-  issueOrderPath?: any;
-  /**
-   * @description
-   * 발급단위
-   *
-   * P : 상품 쿠폰
-   * O : 주문서 쿠폰
-   */
-  issueOrderType?: any;
-  /**
-   * @description
-   * 자동 발행 예약 사용 여부
-   *
-   * T : 사용
-   * F : 사용하지 않음
-   */
-  issueReserved?: any;
-  /**
-   * @description
-   * 사용기간 유형
-   *
-   * 쿠폰 사용기간의 유형
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   *
-   * F : 일반 기간
-   * R : 쿠폰 발급일 기준
-   * M : 당월 말까지 사용
-   */
-  availablePeriodType?: any;
-  /**
-   * @description
-   * 해당 날짜에 발급 가능한 쿠폰 검색
-   *
-   * 해당하는 날짜에 발급 가능한 쿠폰 검색
-   *
-   * available_period_type이 F일 때만 유효
-   *
-   * @constraints
-   * 날짜
-   */
-  availableDatetime?: any;
-  /**
-   * @description
-   * 사용 범위 유형
-   *
-   * 발급한 쿠폰의 사용 가능한 주문 경로
-   *
-   * W : 웹 쇼핑몰 전용
-   * M : 모바일 쇼핑몰 전용
-   * P : 플러스앱 전용
-   */
-  availableSite?: any;
-  /**
-   * @description
-   * 적용 범위
-   *
-   * 쿠폰의 적용 가능한 범위가 상품인지 주문서단위 쿠폰인지 여부
-   *
-   * P : 상품 쿠폰
-   * O : 주문서 쿠폰
-   */
-  availableScope?: any;
-  /**
-   * @description
-   * 사용가능 구매 금액 유형
-   *
-   * 쿠폰이 사용 가능한 금액 기준이 주문 금액 기준인지 상품 금액 기준인지 제한이 없는지 여부
-   *
-   * U : 제한 없음
-   * O : 주문 금액 기준
-   * P : 상품 금액 기준
-   */
-  availablePriceType?: any;
-  /**
-   * @description
-   * 사용가능 구매 금액 상세 유형
-   *
-   * U : 모든 상품의 주문 금액
-   * I : 쿠폰 적용 상품의 주문 금액
-   */
-  availableOrderPriceType?: any;
-}
-
 interface RetrieveAListOfCouponsRequest {
   /**
    * @description
@@ -30882,6 +31625,248 @@ interface RetrieveAListOfCouponsRequest {
   offset?: any;
 }
 
+interface RetrieveACountOfCouponsRequest {
+  /**
+   * @description
+   * 멀티쇼핑몰 번호
+   *
+   * 멀티쇼핑몰 구분을 위해 사용하는 멀티쇼핑몰 번호.
+   *
+   */
+  shopNo?: any;
+  /**
+   * @description
+   * 쿠폰번호
+   */
+  couponNo?: any;
+  /**
+   * @description
+   * 쿠폰유형
+   *
+   * 조회할 쿠폰의 유형
+   *
+   * O : 온라인 쿠폰
+   * S : 오프라인 시리얼 쿠폰
+   */
+  couponType?: any;
+  /**
+   * @description
+   * 쿠폰명
+   */
+  couponName?: any;
+  /**
+   * @description
+   * 혜택 구분
+   *
+   * 쿠폰으로 받는 혜택의 종류 구분
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   *
+   * A : 할인금액
+   * B : 할인율
+   * C : 적립금액
+   * D : 적립율
+   * E : 기본배송비 할인(전액할인)
+   * I : 기본배송비 할인(할인율)
+   * H : 기본배송비 할인(할인금액)
+   * J : 전체배송비 할인(전액할인)
+   * F : 즉시적립
+   * G : 예치금
+   */
+  benefitType?: any;
+  /**
+   * @description
+   * 발급 구분
+   *
+   * 쿠폰의 발급형태 유형
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   *
+   * M : 대상자 지정 발급
+   * A : 조건부 자동 발급
+   * D : 고객 다운로드 발급
+   * R : 정기 자동 발급
+   */
+  issueType?: any;
+  /**
+   * @description
+   * 발급 하위 유형
+   *
+   * 쿠폰 발급의 세부 하위 유형
+   *
+   * M : 회원 대상
+   * C : 실시간 접속자 대상
+   * J : 회원 가입
+   * D : 배송 완료 시
+   * A : 기념일(생일)
+   * I : 모듈(프로그램) 설치
+   * P : 상품 후기 작성
+   * O : 주문 완료 시
+   * Q : 구매 수량 충족 시
+   * F : 첫 구매 고객
+   * N : 일정기간 미구매 회원 대상
+   * U : 회원등급 상향시
+   */
+  issueSubType?: any;
+  /**
+   * @description
+   * 발급된 쿠폰 여부
+   *
+   * 쿠폰이 기존에 발급된 이력이 있는지 여부
+   *
+   * T : 발급이력이 있는 쿠폰
+   * F : 발급이력이 없는 쿠폰
+   */
+  issuedFlag?: any;
+  /**
+   * @description
+   * 검색 시작일
+   *
+   * 쿠폰 생성일 기준 검색의 검색 시작일
+   * 검색 종료일과 같이 사용해야함.
+   *
+   * @constraints
+   * 날짜
+   */
+  createdStartDate?: any;
+  /**
+   * @description
+   * 검색 종료일
+   *
+   * 쿠폰 생성일 기준 검색의 검색 종료일
+   * 검색 시작일과 같이 사용해야함.
+   *
+   * @constraints
+   * 날짜
+   */
+  createdEndDate?: any;
+  /**
+   * @description
+   * 쿠폰삭제 여부
+   *
+   * 쿠폰이 삭제되었는지 여부.
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   *
+   * T : 삭제된 쿠폰
+   * F : 삭제되지 않은 쿠폰
+   *
+   */
+  deleted?: any;
+  /**
+   * @description
+   * 쿠폰 발급 일시정지 시작시간
+   *
+   * 쿠폰 발급이 일시정지 되기 시작한 시간.
+   *
+   * @constraints
+   * 날짜
+   */
+  pauseBeginDate?: any;
+  /**
+   * @description
+   * 쿠폰 발급 일시정지 종료시간
+   *
+   * 쿠폰 발급의 일시정지가 종료된 시간.
+   *
+   * @constraints
+   * 날짜
+   */
+  pauseEndDate?: any;
+  /**
+   * @description
+   * 주문경로
+   *
+   * 발급한 쿠폰의 사용 가능한 주문 경로
+   *
+   * W : PC
+   * M : 모바일
+   * P : 플러스앱
+   */
+  issueOrderPath?: any;
+  /**
+   * @description
+   * 발급단위
+   *
+   * P : 상품 쿠폰
+   * O : 주문서 쿠폰
+   */
+  issueOrderType?: any;
+  /**
+   * @description
+   * 자동 발행 예약 사용 여부
+   *
+   * T : 사용
+   * F : 사용하지 않음
+   */
+  issueReserved?: any;
+  /**
+   * @description
+   * 사용기간 유형
+   *
+   * 쿠폰 사용기간의 유형
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   *
+   * F : 일반 기간
+   * R : 쿠폰 발급일 기준
+   * M : 당월 말까지 사용
+   */
+  availablePeriodType?: any;
+  /**
+   * @description
+   * 해당 날짜에 발급 가능한 쿠폰 검색
+   *
+   * 해당하는 날짜에 발급 가능한 쿠폰 검색
+   *
+   * available_period_type이 F일 때만 유효
+   *
+   * @constraints
+   * 날짜
+   */
+  availableDatetime?: any;
+  /**
+   * @description
+   * 사용 범위 유형
+   *
+   * 발급한 쿠폰의 사용 가능한 주문 경로
+   *
+   * W : 웹 쇼핑몰 전용
+   * M : 모바일 쇼핑몰 전용
+   * P : 플러스앱 전용
+   */
+  availableSite?: any;
+  /**
+   * @description
+   * 적용 범위
+   *
+   * 쿠폰의 적용 가능한 범위가 상품인지 주문서단위 쿠폰인지 여부
+   *
+   * P : 상품 쿠폰
+   * O : 주문서 쿠폰
+   */
+  availableScope?: any;
+  /**
+   * @description
+   * 사용가능 구매 금액 유형
+   *
+   * 쿠폰이 사용 가능한 금액 기준이 주문 금액 기준인지 상품 금액 기준인지 제한이 없는지 여부
+   *
+   * U : 제한 없음
+   * O : 주문 금액 기준
+   * P : 상품 금액 기준
+   */
+  availablePriceType?: any;
+  /**
+   * @description
+   * 사용가능 구매 금액 상세 유형
+   *
+   * U : 모든 상품의 주문 금액
+   * I : 쿠폰 적용 상품의 주문 금액
+   */
+  availableOrderPriceType?: any;
+}
+
 interface CreateACouponRequest {
   /**
    * @description
@@ -31063,6 +32048,58 @@ interface CreateACouponRequest {
      */
     benefitPercentageMaxPrice: any;
   };
+}
+
+interface CouponManagementRequest {
+  /**
+   * @description
+   * 멀티쇼핑몰 번호
+   *
+   *
+   * @constraints
+   * 최소값: [1]
+   */
+  shopNo?: any;
+  /**
+   * @description
+   * 쿠폰번호
+   */
+  couponNo: any;
+  /**
+   * @description
+   * 쿠폰 상태 변경
+   *
+   * 쿠폰을 삭제하는 경우, null로 전송
+   *
+   * 발급 중지: pause
+   * 발급 재개: restart
+   */
+  status?: any;
+  /**
+   * @description
+   * 쿠폰삭제 여부
+   *
+   * D : 삭제
+   */
+  deleted?: any;
+  /**
+   * @description
+   * 즉시 발급 중지
+   *
+   * I 입력 시 status 항목을 pause 로 전송 필요
+   *
+   * I : 즉시 발급 중지
+   */
+  immediateIssuePause?: any;
+  /**
+   * @description
+   * 즉시 발급 재개
+   *
+   * I 입력 시 status 항목을 restart 로 전송 필요
+   *
+   * I : 즉시 발급 재개
+   */
+  immediateIssueRestart?: any;
 }
 
 interface RetrieveAListOfIssuedCouponsRequest {
@@ -32188,18 +33225,7 @@ interface RegisterACodeOfCouponCodesRequest {
   serialCodeList: any;
 }
 
-interface RetrieveAnAppInformationRequest {
-  /**
-   * @description
-   * 앱 읽기권한 (mall.read_application)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAnAppInformationRequest {}
 
 interface UpdateAnAppInformationRequest {
   /**
@@ -32414,18 +33440,7 @@ interface RetrieveAListOfDatabridgeWebhookLogsRequest {
   limit?: any;
 }
 
-interface RetrieveAListOfRecipesRequest {
-  /**
-   * @description
-   * 앱 읽기권한 (mall.read_application)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfRecipesRequest {}
 
 interface CreateARecipeRequest {
   /**
@@ -32890,18 +33905,7 @@ interface RetrieveAListOfWebhookLogsRequest {
   limit?: any;
 }
 
-interface RetrieveWebhookSettingsRequest {
-  /**
-   * @description
-   * 앱 읽기권한 (mall.read_application)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveWebhookSettingsRequest {}
 
 interface EditWebhookSettingsRequest {
   /**
@@ -34174,18 +35178,7 @@ interface UpdateAProductCategorySeoRequest {
   metaKeywords?: any;
 }
 
-interface RetrieveAListOfMainCategoriesRequest {
-  /**
-   * @description
-   * 상품분류 읽기권한 (mall.read_category)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfMainCategoriesRequest {}
 
 interface RetrieveAListOfBrandsRequest {
   /**
@@ -37096,6 +38089,18 @@ interface DeleteAShippingCarrierRequest {
   deleteDefaultCarrier?: any;
 }
 
+interface RetrieveShippingZoneRatesSettingsRequest {
+  /**
+   * @description
+   * 멀티쇼핑몰 번호
+   *
+   *
+   * @constraints
+   * 최소값: [1]
+   */
+  shopNo?: any;
+}
+
 interface RetrieveShippingReturnSettingsRequest {
   /**
    * @description
@@ -39740,18 +40745,7 @@ interface SendASmsRequest {
   title?: any;
 }
 
-interface RetrieveTheSmsBalanceRequest {
-  /**
-   * @description
-   * 알림 읽기권한 (mall.read_notification)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveTheSmsBalanceRequest {}
 
 interface RetrieveAListOfSmsSendersRequest {
   /**
@@ -40171,18 +41165,7 @@ interface UpdateTheTranslationsOfAStoreRequest {
   };
 }
 
-interface RetrieveAListOfThemeTranslationsRequest {
-  /**
-   * @description
-   * 번역 읽기권한 (mall.read_translation)
-   */
-  scope?: any;
-  /**
-   * @description
-   * 40
-   */
-  호출건수제한?: any;
-}
+interface RetrieveAListOfThemeTranslationsRequest {}
 
 interface RetrieveAThemeTranslationRequest {
   /**
@@ -40248,6 +41231,4823 @@ interface RetrieveACountOfDailyvisitsRequest {
    */
   endDate: any;
 }
+
+type RetrieveAListOfActionLogsRequestFields =
+  | "managerType"
+  | "managerId"
+  | "mode"
+  | "type"
+  | "content"
+  | "startDate"
+  | "endDate"
+  | "offset"
+  | "limit";
+
+type RetrieveAnActionLogRequestFields = "processNo";
+
+type RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestFields =
+  "shopNo";
+
+type RetrieveTheAutomatedMessageSettingsRequestFields = "shopNo";
+
+type UpdateAnAutomatedMessageRequestFields =
+  | "shopNo"
+  | "sendMethod"
+  | "sendMethodPush";
+
+type RetrieveCouponSettingsRequestFields = "shopNo";
+
+type UpdateCouponSettingsRequestFields =
+  | "shopNo"
+  | "useCoupon"
+  | "availableIssueType"
+  | "allowUsingCouponsWithPoints"
+  | "allowUsingCouponsWithDiscounts"
+  | "allowUsingProductAndOrderCoupons"
+  | "recoverCouponSetting"
+  | "maxCouponCount"
+  | "useAdditionalCoupon"
+  | "additionalCouponNo"
+  | "expirationNoticeDateSetting"
+  | "showCouponToNonMembers"
+  | "showGroupCouponToNonMembers"
+  | "showIssuedCoupon"
+  | "sortingType"
+  | "downloadImageType"
+  | "backgroundImageType";
+
+type RetrieveCurrencySettingsRequestFields = string;
+
+type RetrieveMemberRelatedSettingsRequestFields = "shopNo";
+
+type RetrieveADashboardRequestFields = "shopNo";
+
+type RetrieveAListOfPaymentGatewayContractDetailsRequestFields =
+  | "paymentGatewayName"
+  | "partnerId";
+
+type RetrieveTheTransactionInformationOfAStoreRequestFields =
+  | "shopNo"
+  | "paymentMethod";
+
+type RetrieveProductImageSizeSettingsRequestFields = "shopNo";
+
+type UpdateProductImageSizeSettingsRequestFields =
+  | "shopNo"
+  | "productImageSize";
+
+type RetrieveAKakaoChannelSenderProfileKeyRequestFields = "shopNo";
+
+type RetrieveTheKakaoInfoTalkSettingsRequestFields = "shopNo";
+
+type UpdateTheKakaoInfoTalkSettingsRequestFields =
+  | "shopNo"
+  | "useKakaoalimtalk";
+
+type RetrieveSettingsForKakaopayOrdersRequestFields = "shopNo";
+
+type UpdateSettingsForKakaopayOrdersRequestFields =
+  | "shopNo"
+  | "shopKey"
+  | "pixelCode"
+  | "useKakaopay"
+  | "productDetailButtonSize"
+  | "basketButtonSize"
+  | "useDarkMode"
+  | "buttonAuthorizationKey"
+  | "thirdpartyAgree"
+  | "thirdpartyAgreeDate";
+
+type RetrieveMenusRequestFields =
+  | "shopNo"
+  | "mode"
+  | "menuNo"
+  | "containsAppUrl";
+
+type RetrieveMobileSettingsRequestFields = "shopNo";
+
+type RetrieveNaverPaySettingsRequestFields = "shopNo";
+
+type CreateNaverPaySettingsRequestFields =
+  | "shopNo"
+  | "authenticationKey"
+  | "naverpayVersion"
+  | "shopId"
+  | "isButtonShow"
+  | "isUsedOrder"
+  | "isUsedReview"
+  | "isShowReview"
+  | "isOrderPage"
+  | "certiKey"
+  | "imageKey"
+  | "naverButtonPcProduct"
+  | "naverButtonPcBasket"
+  | "naverButtonMobileProduct"
+  | "naverButtonMobileBasket";
+
+type UpdateNaverPaySettingsRequestFields = "shopNo" | "authenticationKey";
+
+type RetrieveOrderSettingsRequestFields = "shopNo";
+
+type UpdateOrderSettingsRequestFields =
+  | "shopNo"
+  | "refundBenefitSetting"
+  | "useProductPrepareStatus"
+  | "usePurchaseConfirmationButton"
+  | "purchaseConfirmationButtonSetDate"
+  | "usePurchaseConfirmationAutoCheck"
+  | "purchaseConfirmationAutoCheckDay"
+  | "purchaseConfirmationAutoCheckSetDate";
+
+type RetrieveOrderStatusDisplayedRequestFields = "shopNo";
+
+type UpdateOrderStatusDisplayedRequestFields =
+  | "shopNo"
+  | "statusNameId"
+  | "customName"
+  | "reservationCustomName";
+
+type RetrieveEscrowSettingsRequestFields = "shopNo";
+
+type UpdateEscrowSettingsRequestFields =
+  | "shopNo"
+  | "useEscrow"
+  | "useEscrowAccountTransfer"
+  | "useEscrowVirtualAccount"
+  | "pgShippingRegistration"
+  | "useDirectPay";
+
+type CreateAPaymentGatewayRequestFields =
+  | "shopNo"
+  | "partnerId"
+  | "additionalInformation"
+  | "membershipFeeType"
+  | "serviceLimitType";
+
+type UpdateAPaymentGatewayRequestFields =
+  | "shopNo"
+  | "clientId"
+  | "partnerId"
+  | "additionalInformation"
+  | "membershipFeeType"
+  | "serviceLimitType";
+
+type DeleteAPaymentGatewayRequestFields = "shopNo" | "clientId";
+
+type RetrieveAListOfPaymentGatewayMethodsRequestFields = "clientId";
+
+type CreateAPaymentGatewayMethodRequestFields =
+  | "clientId"
+  | "paymentMethodCode"
+  | "paymentMethod"
+  | "paymentMethodName"
+  | "paymentMethodUrl"
+  | "availableShopNo";
+
+type UpdateAPaymentMethodOfAPaymentGatewayRequestFields =
+  | "clientId"
+  | "paymentMethodCode"
+  | "paymentMethod"
+  | "paymentMethodName"
+  | "paymentMethodUrl"
+  | "availableShopNo";
+
+type DeleteAPaymentMethodOfAPaymentGatewayRequestFields =
+  | "clientId"
+  | "paymentMethodCode";
+
+type RetrieveAListOfPaymentMethodsRequestFields = "shopNo";
+
+type RetrieveAListOfProvidersByPaymentMethodRequestFields =
+  | "shopNo"
+  | "code"
+  | "name"
+  | "display";
+
+type UpdateTheDisplayStatusOfAPaymentMethodRequestFields =
+  | "shopNo"
+  | "code"
+  | "name"
+  | "display";
+
+type RetrievePointsSettingsRequestFields = "shopNo";
+
+type UpdatePointsSettingsRequestFields =
+  | "shopNo"
+  | "pointIssuanceStandard"
+  | "paymentPeriod"
+  | "name"
+  | "format"
+  | "roundUnit"
+  | "roundType"
+  | "displayType"
+  | "unusablePointsChangeType";
+
+type RetrieveProductSettingsRequestFields = "shopNo";
+
+type RetrieveAListOfRedirectsRequestFields =
+  | "shopNo"
+  | "id"
+  | "path"
+  | "target";
+
+type CreateARedirectRequestFields = "shopNo" | "path" | "target";
+
+type UpdateARedirectRequestFields = "shopNo" | "id" | "path" | "target";
+
+type DeleteARedirectRequestFields = "shopNo" | "id";
+
+type RetrieveSeoSettingsRequestFields = "shopNo";
+
+type UpdateStoreSeoSettingsRequestFields =
+  | "shopNo"
+  | "commonPageTitle"
+  | "commonPageMetaDescription"
+  | "favicon"
+  | "useGoogleSearchConsole"
+  | "googleSearchConsole"
+  | "useNaverSearchAdvisor"
+  | "naverSearchAdvisor"
+  | "snsShareImage"
+  | "useTwitterCard"
+  | "robotsText"
+  | "mobileRobotsText"
+  | "useMissingPageRedirect"
+  | "missingPageRedirectUrl"
+  | "mobileUseMissingPageRedirect"
+  | "mobileMissingPageRedirectUrl"
+  | "useSitemapAutoUpdate"
+  | "useRss"
+  | "displayGroup"
+  | "headerTag"
+  | "footerTag"
+  | "mobileHeaderTag"
+  | "mobileFooterTag";
+
+type RetrieveActivationInformationForShippingManagerRequestFields = string;
+
+type RetrieveAListOfShopsRequestFields = string;
+
+type RetrieveAShopRequestFields = "shopNo";
+
+type RetrieveSmsSettingsRequestFields = "shopNo";
+
+type UpdateSmsSettingsRequestFields =
+  | "shopNo"
+  | "useSms"
+  | "excludeUnsubscriber"
+  | "defaultSender"
+  | "unsubscribePhone"
+  | "sendMethod"
+  | "sendMethodAutomatic";
+
+type AppleLoginSyncDetailsRequestFields = "shopNo";
+
+type AppleLoginSyncSettingsRequestFields =
+  | "shopNo"
+  | "useAppleLogin"
+  | "clientId"
+  | "teamId"
+  | "keyId"
+  | "authKeyFileName"
+  | "authKeyFileContents"
+  | "useCertification";
+
+type KakaoSyncDetailsRequestFields = "shopNo";
+
+type KakaoSyncUpdatesRequestFields =
+  | "shopNo"
+  | "restApiKey"
+  | "javascriptKey"
+  | "autoLogin"
+  | "useSignupResultPage";
+
+type NaverLoginDetailsRequestFields = "shopNo";
+
+type UpdateNaverLoginSettingsRequestFields =
+  | "shopNo"
+  | "useNaverlogin"
+  | "clientId"
+  | "clientSecret";
+
+type RetrieveStoreDetailsRequestFields = "shopNo";
+
+type RetrieveAListOfStoreBankAccountsRequestFields = "shopNo";
+
+type RetrieveAListOfSubscriptionProductsRequestFields =
+  | "shopNo"
+  | "subscriptionNo";
+
+type CreateASubscriptionPaymentRuleRequestFields =
+  | "shopNo"
+  | "subscriptionShipmentsName"
+  | "productBindingType"
+  | "oneTimePurchase"
+  | "productList"
+  | "categoryList"
+  | "useDiscount"
+  | "discountValueUnit"
+  | "discountValues"
+  | "relatedPurchaseQuantity"
+  | "subscriptionShipmentsCycleType"
+  | "subscriptionShipmentsCycle"
+  | "subscriptionShipmentsCountType"
+  | "subscriptionShipmentsCount"
+  | "useOrderPriceCondition"
+  | "orderPriceGreaterThan"
+  | "includeRegionalShippingRate"
+  | "shipmentsStartDate"
+  | "changeOption";
+
+type UpdateSubscriptionProductsRequestFields =
+  | "shopNo"
+  | "subscriptionNo"
+  | "subscriptionShipmentsName"
+  | "productBindingType"
+  | "oneTimePurchase"
+  | "productList"
+  | "categoryList"
+  | "useDiscount"
+  | "discountValueUnit"
+  | "discountValues"
+  | "relatedPurchaseQuantity"
+  | "subscriptionShipmentsCycleType"
+  | "subscriptionShipmentsCycle"
+  | "subscriptionShipmentsCountType"
+  | "subscriptionShipmentsCount"
+  | "useOrderPriceCondition"
+  | "orderPriceGreaterThan"
+  | "includeRegionalShippingRate"
+  | "shipmentsStartDate"
+  | "changeOption";
+
+type DeleteSubscriptionProductsRequestFields = "shopNo" | "subscriptionNo";
+
+type RetrieveActivationInformationForTaxManagerRequestFields = string;
+
+type RetrieveAListOfAdminUsersRequestFields =
+  | "searchType"
+  | "keyword"
+  | "adminType";
+
+type RetrieveAdminUserDetailsRequestFields = "shopNo" | "userId";
+
+type RetrieveAListOfBundlesRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productCode"
+  | "productTag"
+  | "customProductCode"
+  | "productName"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "priceMin"
+  | "priceMax"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate"
+  | "category"
+  | "categoryUnapplied"
+  | "includeSubCategory"
+  | "productWeight"
+  | "additionalInformationKey"
+  | "additionalInformationValue"
+  | "sort"
+  | "order"
+  | "offset"
+  | "limit";
+
+type RetrieveABundleRequestFields = "shopNo" | "productNo";
+
+type CreateABundleRequestFields =
+  | "shopNo"
+  | "productName"
+  | "bundleProductComponents"
+  | "bundleProductSales"
+  | "display"
+  | "addCategoryNo"
+  | "customProductCode"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "useNaverpay"
+  | "naverpayType"
+  | "productWeight"
+  | "description"
+  | "mobileDescription"
+  | "summaryDescription"
+  | "simpleDescription"
+  | "productTag"
+  | "paymentInfo"
+  | "shippingInfo"
+  | "exchangeInfo"
+  | "serviceInfo"
+  | "icon"
+  | "hscode"
+  | "shippingScope"
+  | "shippingMethod"
+  | "shippingFeeByProduct"
+  | "shippingArea"
+  | "shippingPeriod"
+  | "shippingFeeType"
+  | "shippingRates"
+  | "prepaidShippingFee"
+  | "clearanceCategoryCode"
+  | "detailImage"
+  | "listImage"
+  | "tinyImage"
+  | "smallImage"
+  | "imageUploadType"
+  | "additionalInformation"
+  | "priceContent"
+  | "buyLimitByProduct"
+  | "buyLimitType"
+  | "buyGroupList"
+  | "buyMemberIdList"
+  | "repurchaseRestriction"
+  | "singlePurchaseRestriction"
+  | "pointsByProduct"
+  | "pointsSettingByPayment"
+  | "pointsAmount"
+  | "exceptMemberPoints"
+  | "main"
+  | "relationalProduct"
+  | "productMaterial"
+  | "englishProductMaterial"
+  | "clothFabric"
+  | "additionalImage"
+  | "adultCertification"
+  | "exposureLimitType"
+  | "exposureGroupList";
+
+type UpdateABundleRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "productName"
+  | "bundleProductComponents"
+  | "bundleProductSales"
+  | "display"
+  | "productCondition"
+  | "productUsedMonth"
+  | "addCategoryNo"
+  | "deleteCategoryNo"
+  | "customProductCode"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "useNaverpay"
+  | "naverpayType"
+  | "productWeight"
+  | "description"
+  | "mobileDescription"
+  | "summaryDescription"
+  | "simpleDescription"
+  | "productTag"
+  | "paymentInfo"
+  | "shippingInfo"
+  | "exchangeInfo"
+  | "serviceInfo"
+  | "icon"
+  | "useIconExposureTerm"
+  | "iconExposureBeginDatetime"
+  | "iconExposureEndDatetime"
+  | "hscode"
+  | "shippingScope"
+  | "prepaidShippingFee"
+  | "shippingMethod"
+  | "shippingFeeByProduct"
+  | "shippingArea"
+  | "shippingPeriod"
+  | "shippingFeeType"
+  | "shippingRates"
+  | "clearanceCategoryCode"
+  | "detailImage"
+  | "listImage"
+  | "tinyImage"
+  | "smallImage"
+  | "imageUploadType"
+  | "additionalInformation"
+  | "priceContent"
+  | "buyLimitByProduct"
+  | "buyLimitType"
+  | "buyGroupList"
+  | "buyMemberIdList"
+  | "repurchaseRestriction"
+  | "singlePurchaseRestriction"
+  | "pointsByProduct"
+  | "pointsSettingByPayment"
+  | "pointsAmount"
+  | "exceptMemberPoints"
+  | "main"
+  | "relationalProduct"
+  | "productMaterial"
+  | "englishProductMaterial"
+  | "clothFabric"
+  | "additionalImage"
+  | "adultCertification"
+  | "exposureLimitType"
+  | "exposureGroupList";
+
+type DeleteABundleRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductsByCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "displayGroup"
+  | "limit";
+
+type RetrieveACountOfProductsByCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "displayGroup";
+
+type AddProductsToACategoryRequestFields =
+  | "categoryNo"
+  | "displayGroup"
+  | "productNo";
+
+type UpdateAProductInProductCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "displayGroup"
+  | "productNo"
+  | "sequence"
+  | "autoSort"
+  | "fixedSort";
+
+type DeleteAProductByCategoryRequestFields =
+  | "categoryNo"
+  | "productNo"
+  | "displayGroup";
+
+type RetrieveAListOfProductsInMainCategoryRequestFields =
+  | "shopNo"
+  | "displayGroup";
+
+type RetrieveACountOfProductsInMainCategoryRequestFields =
+  | "shopNo"
+  | "displayGroup";
+
+type SetMainCategoryProductsRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "displayGroup"
+  | "productNo";
+
+type UpdateFixedSortingOfProductsInMainCategoryRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "displayGroup"
+  | "productNo"
+  | "fixProductNo";
+
+type DeleteAProductInMainCategoryRequestFields =
+  | "shopNo"
+  | "displayGroup"
+  | "productNo";
+
+type RetrieveAListOfProductsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productName"
+  | "productCode"
+  | "brandCode"
+  | "manufacturerCode"
+  | "supplierCode"
+  | "trendCode"
+  | "productTag"
+  | "customProductCode"
+  | "customVariantCode"
+  | "priceMin"
+  | "priceMax"
+  | "retailPriceMin"
+  | "retailPriceMax"
+  | "supplyPriceMin"
+  | "supplyPriceMax"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate"
+  | "category"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "productCondition"
+  | "originPlaceValue"
+  | "stockQuantityMax"
+  | "stockQuantityMin"
+  | "stockSafetyMax"
+  | "stockSafetyMin"
+  | "productWeight"
+  | "classificationCode"
+  | "useInventory"
+  | "categoryUnapplied"
+  | "includeSubCategory"
+  | "additionalInformationKey"
+  | "additionalInformationValue"
+  | "approveStatus"
+  | "sinceProductNo"
+  | "productBundle"
+  | "optionType"
+  | "marketSync"
+  | "sort"
+  | "order"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfProductsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productName"
+  | "productCode"
+  | "brandCode"
+  | "manufacturerCode"
+  | "supplierCode"
+  | "trendCode"
+  | "productTag"
+  | "customProductCode"
+  | "customVariantCode"
+  | "priceMin"
+  | "priceMax"
+  | "retailPriceMin"
+  | "retailPriceMax"
+  | "supplyPriceMin"
+  | "supplyPriceMax"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate"
+  | "category"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "productCondition"
+  | "originPlaceValue"
+  | "stockQuantityMax"
+  | "stockQuantityMin"
+  | "stockSafetyMax"
+  | "stockSafetyMin"
+  | "productWeight"
+  | "classificationCode"
+  | "useInventory"
+  | "categoryUnapplied"
+  | "includeSubCategory"
+  | "additionalInformationKey"
+  | "additionalInformationValue"
+  | "approveStatus"
+  | "sinceProductNo"
+  | "productBundle"
+  | "optionType"
+  | "marketSync";
+
+type RetrieveAProductResourceRequestFields = "shopNo" | "productNo";
+
+type CreateAProductRequestFields =
+  | "display"
+  | "selling"
+  | "productCondition"
+  | "productUsedMonth"
+  | "addCategoryNo"
+  | "customProductCode"
+  | "productName"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "priceExcludingTax"
+  | "price"
+  | "retailPrice"
+  | "supplyPrice"
+  | "hasOption"
+  | "soldoutMessage"
+  | "options"
+  | "useNaverpay"
+  | "naverpayType"
+  | "manufacturerCode"
+  | "trendCode"
+  | "brandCode"
+  | "supplierCode"
+  | "productWeight"
+  | "madeDate"
+  | "releaseDate"
+  | "expirationDate"
+  | "description"
+  | "mobileDescription"
+  | "summaryDescription"
+  | "simpleDescription"
+  | "translatedDescription"
+  | "productTag"
+  | "paymentInfo"
+  | "shippingInfo"
+  | "exchangeInfo"
+  | "serviceInfo"
+  | "icon"
+  | "hscode"
+  | "countryHscode"
+  | "shippingScope"
+  | "shippingMethod"
+  | "shippingFeeByProduct"
+  | "shippingArea"
+  | "shippingPeriod"
+  | "shippingFeeType"
+  | "shippingRates"
+  | "prepaidShippingFee"
+  | "clearanceCategoryCode"
+  | "productShippingType"
+  | "detailImage"
+  | "listImage"
+  | "tinyImage"
+  | "smallImage"
+  | "imageUploadType"
+  | "additionalInformation"
+  | "priceContent"
+  | "buyLimitByProduct"
+  | "buyLimitType"
+  | "buyGroupList"
+  | "buyMemberIdList"
+  | "repurchaseRestriction"
+  | "singlePurchaseRestriction"
+  | "buyUnitType"
+  | "buyUnit"
+  | "orderQuantityLimitType"
+  | "minimumQuantity"
+  | "maximumQuantity"
+  | "pointsByProduct"
+  | "pointsSettingByPayment"
+  | "pointsAmount"
+  | "exceptMemberPoints"
+  | "productVolume"
+  | "originClassification"
+  | "originPlaceNo"
+  | "originPlaceValue"
+  | "madeInCode"
+  | "main"
+  | "relationalProduct"
+  | "productMaterial"
+  | "translateProductMaterial"
+  | "englishProductMaterial"
+  | "clothFabric"
+  | "classificationCode"
+  | "additionalPrice"
+  | "marginRate"
+  | "taxType"
+  | "taxRate"
+  | "additionalImage"
+  | "adultCertification"
+  | "exposureLimitType"
+  | "exposureGroupList"
+  | "useKakaopay";
+
+type UpdateAProductRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productCondition"
+  | "productUsedMonth"
+  | "addCategoryNo"
+  | "deleteCategoryNo"
+  | "customProductCode"
+  | "productName"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "priceExcludingTax"
+  | "price"
+  | "retailPrice"
+  | "supplyPrice"
+  | "soldoutMessage"
+  | "useNaverpay"
+  | "naverpayType"
+  | "manufacturerCode"
+  | "trendCode"
+  | "brandCode"
+  | "supplierCode"
+  | "productWeight"
+  | "madeDate"
+  | "releaseDate"
+  | "expirationDate"
+  | "description"
+  | "mobileDescription"
+  | "translatedDescription"
+  | "translatedAdditionalDescription"
+  | "summaryDescription"
+  | "simpleDescription"
+  | "productTag"
+  | "paymentInfo"
+  | "shippingInfo"
+  | "exchangeInfo"
+  | "serviceInfo"
+  | "icon"
+  | "useIconExposureTerm"
+  | "iconExposureBeginDatetime"
+  | "iconExposureEndDatetime"
+  | "hscode"
+  | "countryHscode"
+  | "shippingScope"
+  | "shippingMethod"
+  | "shippingFeeByProduct"
+  | "shippingArea"
+  | "shippingPeriod"
+  | "shippingFeeType"
+  | "shippingRates"
+  | "prepaidShippingFee"
+  | "clearanceCategoryCode"
+  | "productShippingType"
+  | "detailImage"
+  | "listImage"
+  | "tinyImage"
+  | "smallImage"
+  | "imageUploadType"
+  | "additionalInformation"
+  | "priceContent"
+  | "buyLimitByProduct"
+  | "buyLimitType"
+  | "buyGroupList"
+  | "buyMemberIdList"
+  | "repurchaseRestriction"
+  | "singlePurchaseRestriction"
+  | "buyUnitType"
+  | "buyUnit"
+  | "orderQuantityLimitType"
+  | "minimumQuantity"
+  | "maximumQuantity"
+  | "pointsByProduct"
+  | "pointsSettingByPayment"
+  | "pointsAmount"
+  | "exceptMemberPoints"
+  | "productVolume"
+  | "originClassification"
+  | "originPlaceNo"
+  | "originPlaceValue"
+  | "madeInCode"
+  | "main"
+  | "relationalProduct"
+  | "productMaterial"
+  | "translateProductMaterial"
+  | "englishProductMaterial"
+  | "clothFabric"
+  | "classificationCode"
+  | "additionalPrice"
+  | "marginRate"
+  | "taxType"
+  | "taxRate"
+  | "additionalImage"
+  | "adultCertification"
+  | "exposureLimitType"
+  | "exposureGroupList"
+  | "useKakaopay";
+
+type DeleteAProductRequestFields = "shopNo" | "productNo";
+
+type CreateAnAdditionalProductImageRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "additionalImage";
+
+type UpdateAnAdditionalProductImageRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "additionalImage";
+
+type DeleteAnAdditionalProductImageRequestFields = "shopNo" | "productNo";
+
+type RetrieveAProductApprovalStatusRequestFields = "shopNo" | "productNo";
+
+type CreateAProductApprovalRequestRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "userId";
+
+type UpdateAProductApprovalStatusRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "userId"
+  | "status";
+
+type RetrieveUserDefinedPropertiesByProductRequestFields =
+  | "shopNo"
+  | "productNo";
+
+type UpdateUserDefinedPropertiesByProductRequestFields =
+  | "productNo"
+  | "propertyNo"
+  | "shopNo"
+  | "propertyValue";
+
+type DeleteUserDefinedPropertiesByProductRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "propertyNo";
+
+type RetrieveAListOfProductDecorationImagesRequestFields =
+  | "shopNo"
+  | "productNo";
+
+type SetDecorationImagesForAProductRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "useShowDate"
+  | "showStartDate"
+  | "showEndDate"
+  | "imageList";
+
+type UpdateProductDecorationImagesRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "useShowDate"
+  | "showStartDate"
+  | "showEndDate"
+  | "imageList";
+
+type RemoveAProductDecorationImageRequestFields =
+  | "shopNo"
+  | "code"
+  | "productNo";
+
+type RetrieveAProductDiscountedPriceRequestFields = "shopNo" | "productNo";
+
+type RetrieveACountOfProductViewsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductIconsRequestFields = "shopNo" | "productNo";
+
+type SetIconsForAProductRequestFields = "shopNo" | "productNo" | "imageList";
+
+type UpdateProductIconsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "useShowDate"
+  | "showStartDate"
+  | "showEndDate"
+  | "imageList";
+
+type RemoveAProductIconRequestFields = "shopNo" | "productNo" | "code";
+
+type UploadProductImagesRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "detailImage"
+  | "listImage"
+  | "tinyImage"
+  | "smallImage"
+  | "imageUploadType";
+
+type DeleteProductImagesRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductMemosRequestFields =
+  | "productNo"
+  | "offset"
+  | "limit";
+
+type RetrieveAProductMemoRequestFields = "productNo" | "memoNo";
+
+type CreateAProductMemoRequestFields = "productNo" | "authorId" | "memo";
+
+type UpdateAProductMemoRequestFields =
+  | "productNo"
+  | "memoNo"
+  | "authorId"
+  | "memo";
+
+type DeleteAProductMemoRequestFields = "productNo" | "memoNo";
+
+type RetrieveAListOfProductOptionsRequestFields = "shopNo" | "productNo";
+
+type CreateProductOptionsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "hasOption"
+  | "optionType"
+  | "optionListType"
+  | "options"
+  | "selectOneByOption"
+  | "optionPresetCode"
+  | "optionPresetName"
+  | "useAdditionalOption"
+  | "additionalOptions"
+  | "useAttachedFileOption"
+  | "attachedFileOption";
+
+type UpdateProductOptionsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "optionListType"
+  | "optionPresetCode"
+  | "options"
+  | "originalOptions"
+  | "selectOneByOption"
+  | "optionPresetName"
+  | "useAdditionalOption"
+  | "additionalOptions"
+  | "useAttachedFileOption"
+  | "attachedFileOption";
+
+type DeleteAProductOptionRequestFields = "productNo";
+
+type RetrieveAProductSSeoSettingsRequestFields = "shopNo" | "productNo";
+
+type UpdateProductSeoSettingsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "metaTitle"
+  | "metaAuthor"
+  | "metaDescription"
+  | "metaKeywords"
+  | "metaAlt"
+  | "searchEngineExposure";
+
+type RetrieveACountOfAProductSProductTagsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfAProductSProductTagsRequestFields = "shopNo" | "productNo";
+
+type CreateProductTagsRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "productNo"
+  | "tags";
+
+type DeleteAProductTagRequestFields = "shopNo" | "productNo" | "tag";
+
+type RetrieveAListOfProductVariantsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAProductVariantRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode";
+
+type UpdateAProductVariantRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode"
+  | "customVariantCode"
+  | "display"
+  | "selling"
+  | "additionalAmount"
+  | "quantity"
+  | "useInventory"
+  | "importantInventory"
+  | "inventoryControlType"
+  | "displaySoldout"
+  | "safetyInventory";
+
+type UpdateMultipleProductVariantsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode"
+  | "customVariantCode"
+  | "display"
+  | "selling"
+  | "additionalAmount"
+  | "quantity"
+  | "useInventory"
+  | "importantInventory"
+  | "inventoryControlType"
+  | "displaySoldout"
+  | "safetyInventory";
+
+type DeleteAProductVariantRequestFields = "productNo" | "variantCode";
+
+type RetrieveInventoryDetailsOfAProductVariantRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode";
+
+type UpdateAProductVariantInventoryRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode"
+  | "useInventory"
+  | "importantInventory"
+  | "inventoryControlType"
+  | "displaySoldout"
+  | "quantity"
+  | "safetyInventory"
+  | "originCode";
+
+type RetrieveUserDefinedPropertiesRequestFields = string;
+
+type CreateUserDefinedPropertiesRequestFields = "customProperties";
+
+type UpdateUserDefinedPropertiesRequestFields = "propertyNo" | "propertyName";
+
+type DeleteUserDefinedPropertiesRequestFields = "propertyNo";
+
+type RetrieveAListOfDecorationImagesRequestFields = string;
+
+type RetrieveAListOfIconsRequestFields = string;
+
+type UploadImagesRequestFields = "image";
+
+type RetrieveAnOrderCancellationRequestFields = "shopNo" | "claimCode";
+
+type CreateMultipleOrderCancellationsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "status"
+  | "recoverInventory"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "addMemoToo"
+  | "reason"
+  | "claimReasonType"
+  | "naverpayCancelReasonType"
+  | "kakaopayCancelReasonType"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items";
+
+type ChangeCancellationDetailsInBulkRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "recoverInventory"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason";
+
+type CreateACancellationRequestForMultipleItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "reasonType"
+  | "reason"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items";
+
+type RejectACancellationRequestForMultipleItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "undone"
+  | "reasonType"
+  | "reason"
+  | "displayRejectReason"
+  | "rejectReason";
+
+type RetrieveAListOfCashReceiptsRequestFields =
+  | "startDate"
+  | "endDate"
+  | "orderId"
+  | "approvalNo"
+  | "name"
+  | "memberId"
+  | "status"
+  | "limit"
+  | "offset";
+
+type CreateACashReceiptRequestFields =
+  | "orderId"
+  | "type"
+  | "companyRegistrationNo"
+  | "cellphone";
+
+type UpdateACashReceiptRequestFields =
+  | "cashreceiptNo"
+  | "orderId"
+  | "type"
+  | "companyRegistrationNo"
+  | "cellphone";
+
+type UpdateACashReceiptCancellationRequestFields =
+  | "cashreceiptNo"
+  | "orderId"
+  | "type";
+
+type UpdateACollectionRequestRequestFields =
+  | "shopNo"
+  | "requestNo"
+  | "collectTrackingNo";
+
+type OrderControlRequestFields = "paymentsControl" | "directUrl";
+
+type CreateADraftOrderRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "orderFromMobile"
+  | "paymentMethod"
+  | "orderPlaceId"
+  | "countryCode"
+  | "paymentGatewayName"
+  | "receiverName"
+  | "receiverNameEn"
+  | "receiverNameFurigana"
+  | "receiverPhone"
+  | "receiverCellphone"
+  | "receiverZipcode"
+  | "receiverAddress1"
+  | "receiverAddress2"
+  | "receiverCity"
+  | "receiverState"
+  | "shippingMessage"
+  | "buyerName"
+  | "buyerEmail"
+  | "buyerPhone"
+  | "buyerCellphone"
+  | "buyerZipcode"
+  | "buyerAddress1"
+  | "buyerAddress2"
+  | "noShippingRequired"
+  | "buyerIp"
+  | "transactionId"
+  | "bankCode"
+  | "bankAccountNo"
+  | "bankAccountOwnerName"
+  | "shippingType"
+  | "sendOrderMessage"
+  | "sendPaymentGuideMessage"
+  | "sendOrderEmail"
+  | "clearanceInformationType"
+  | "clearanceInformation"
+  | "selfPaymentCancel"
+  | "selfPaymentCancelUrl"
+  | "items";
+
+type RetrieveAnExchangeRequestFields = "shopNo" | "claimCode";
+
+type CreateMultipleExchangesRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "status"
+  | "recoverInventory"
+  | "addMemoToo"
+  | "items"
+  | "sameProduct";
+
+type UpdateMultipleOrderExchangesRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "status"
+  | "pickupCompleted"
+  | "recoverInventory"
+  | "exchangedAfterCollected"
+  | "items"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason"
+  | "returnInvoiceNo"
+  | "carrierId"
+  | "returnInvoiceSuccess"
+  | "returnInvoiceFailReason";
+
+type BulkExchangeRequestApiRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "reasonType"
+  | "reason"
+  | "requestPickup"
+  | "pickup"
+  | "trackingNo"
+  | "shippingCompanyName"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items"
+  | "exchangeItems";
+
+type RejectAnExchangeRequestForMultipleItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "undone"
+  | "reasonType"
+  | "reason"
+  | "displayRejectReason"
+  | "rejectReason";
+
+type CreateShippingInformationForMultipleOrdersViaFulfillmentRequestFields =
+  | "shopNo"
+  | "trackingNo"
+  | "shippingCompanyCode"
+  | "status"
+  | "orderId"
+  | "shippingCode"
+  | "orderItemCode"
+  | "carrierId"
+  | "postExpressFlag";
+
+type RetrieveOrderLabelsRequestFields = "limit" | "offset";
+
+type CreateMultipleOrderLabelsRequestFields =
+  | "shopNo"
+  | "name"
+  | "orderItemCode";
+
+type RetrieveAListOfOrdersRequestFields =
+  | "multipleAddresses"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "orderId"
+  | "orderStatus"
+  | "paymentStatus"
+  | "memberType"
+  | "groupNo"
+  | "buyerName"
+  | "receiverName"
+  | "nameFurigana"
+  | "receiverAddress"
+  | "memberId"
+  | "memberEmail"
+  | "productNo"
+  | "productCode"
+  | "dateType"
+  | "supplierId"
+  | "orderPlaceId"
+  | "buyerCellphone"
+  | "buyerPhone"
+  | "buyerEmail"
+  | "inflowPath"
+  | "subscription"
+  | "marketOrderNo"
+  | "marketCancelRequest"
+  | "paymentMethod"
+  | "paymentGatewayName"
+  | "marketSellerId"
+  | "discountMethod"
+  | "discountCode"
+  | "carrierId"
+  | "wishedCarrierId"
+  | "labels"
+  | "refundStatus"
+  | "limit"
+  | "offset";
+
+type RetrieveAnOrderRequestFields = "shopNo" | "orderId";
+
+type RetrieveACountOfOrdersRequestFields =
+  | "multipleAddresses"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "orderId"
+  | "orderStatus"
+  | "paymentStatus"
+  | "memberType"
+  | "groupNo"
+  | "buyerName"
+  | "receiverName"
+  | "nameFurigana"
+  | "receiverAddress"
+  | "memberId"
+  | "memberEmail"
+  | "productNo"
+  | "productCode"
+  | "dateType"
+  | "supplierId"
+  | "orderPlaceId"
+  | "buyerCellphone"
+  | "buyerPhone"
+  | "buyerEmail"
+  | "inflowPath"
+  | "subscription"
+  | "marketOrderNo"
+  | "marketCancelRequest"
+  | "paymentMethod"
+  | "paymentGatewayName"
+  | "marketSellerId"
+  | "discountMethod"
+  | "discountCode"
+  | "carrierId"
+  | "wishedCarrierId"
+  | "labels"
+  | "refundStatus";
+
+type UpdateStatusForMultipleOrdersRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "processStatus"
+  | "orderItemCode"
+  | "purchaseConfirmation"
+  | "collectPoints"
+  | "showShippingAddress";
+
+type UpdateAnOrderStatusRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "processStatus"
+  | "orderItemCode"
+  | "purchaseConfirmation"
+  | "collectPoints"
+  | "showShippingAddress";
+
+type RemoveAutoCalculationSettingOfAnOrderRequestFields = "shopNo" | "orderId";
+
+type RetrieveCustomerDetailsOfAnOrderRequestFields = "shopNo" | "orderId";
+
+type UpdateCustomerInformationOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "name"
+  | "email"
+  | "phone"
+  | "cellphone"
+  | "customerNotification";
+
+type RetrieveAListOfCustomerHistoryOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId";
+
+type CreateAnOrderCancellationRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "paymentGatewayCancel"
+  | "status"
+  | "recoverInventory"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "addMemoToo"
+  | "reason"
+  | "claimReasonType"
+  | "naverpayCancelReasonType"
+  | "kakaopayCancelReasonType"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items";
+
+type ChangeCancellationDetailsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "recoverInventory"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason";
+
+type CreateAnOrderExchangeRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "status"
+  | "recoverInventory"
+  | "addMemoToo"
+  | "items"
+  | "sameProduct";
+
+type UpdateAnOrderExchangeRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "status"
+  | "pickupCompleted"
+  | "returnInvoiceNo"
+  | "returnShippingCompanyName"
+  | "recoverInventory"
+  | "exchangedAfterCollected"
+  | "items"
+  | "requestPickup"
+  | "pickup"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason"
+  | "carrierId"
+  | "returnInvoiceSuccess"
+  | "returnInvoiceFailReason";
+
+type RejectAnExchangeRequestRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "undone"
+  | "reasonType"
+  | "reason"
+  | "displayRejectReason"
+  | "rejectReason";
+
+type RetrieveAListOfOrderItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "supplierId";
+
+type CreateAnOrderItemRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "wasProductBundle"
+  | "originalBundleItemNo"
+  | "variantCode";
+
+type UpdateAnOrderItemRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "claimType"
+  | "claimStatus"
+  | "claimReasonType"
+  | "claimReason"
+  | "claimQuantity"
+  | "multiInvoice";
+
+type RetrieveAnOrderLabelRequestFields = "shopNo" | "orderId" | "orderItemCode";
+
+type CreateAnOrderLabelRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "names";
+
+type UpdateAnOrderLabelRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "names";
+
+type DeleteAnOrderLabelRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "name";
+
+type CreateOrderItemOptionsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "productBundle"
+  | "additionalOptions"
+  | "bundleAdditionalOptions";
+
+type EditOrderItemOptionsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "additionalOptions";
+
+type RetrieveAListOfOrderMemosRequestFields = "shopNo" | "orderId";
+
+type CreateAnOrderMemoRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "content"
+  | "useCustomerInquiry"
+  | "topicType"
+  | "status"
+  | "attachType"
+  | "starredMemo"
+  | "fixed"
+  | "productList";
+
+type UpdateAnOrderMemoRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "memoNo"
+  | "content"
+  | "useCustomerInquiry"
+  | "topicType"
+  | "status"
+  | "attachType"
+  | "starredMemo"
+  | "fixed"
+  | "productList";
+
+type DeleteAnOrderMemoRequestFields = "shopNo" | "orderId" | "memoNo";
+
+type UpdateAnOrderPaymentStatusRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "changePaymentAmount"
+  | "changePaymentMethod"
+  | "paymentMethod"
+  | "billingName"
+  | "bankAccountId"
+  | "adminAdditionalAmount"
+  | "commission"
+  | "changePaymentAmountReason";
+
+type RetrievePaymentHistoryOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "startDate"
+  | "endDate"
+  | "dateType";
+
+type RetrievePaymentDetailsOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "paymentNo";
+
+type RetrieveAListOfRecipientsOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "shippingCode";
+
+type UpdateOrderRecipientsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "name"
+  | "phone"
+  | "cellphone"
+  | "shippingMessage"
+  | "nameFurigana"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "addressState"
+  | "addressCity"
+  | "nameEn"
+  | "cityEn"
+  | "stateEn"
+  | "streetEn"
+  | "countryCode"
+  | "clearanceInformationType"
+  | "clearanceInformation"
+  | "shippingCode"
+  | "changeDefaultShippingAddress"
+  | "virtualPhoneNo"
+  | "wishedDeliveryDate"
+  | "useFastDeliveryDate"
+  | "wishedDeliveryTime"
+  | "useFastDeliveryTime";
+
+type ChangeShippingInformationRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "shippingCode"
+  | "name"
+  | "phone"
+  | "cellphone"
+  | "shippingMessage"
+  | "nameFurigana"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "addressState"
+  | "addressCity"
+  | "nameEn"
+  | "cityEn"
+  | "stateEn"
+  | "streetEn"
+  | "countryCode"
+  | "clearanceInformationType"
+  | "clearanceInformation"
+  | "changeDefaultShippingAddress"
+  | "virtualPhoneNo"
+  | "wishedDeliveryDate"
+  | "useFastDeliveryDate"
+  | "wishedDeliveryTime"
+  | "useFastDeliveryTime"
+  | "receiverDirectInputCheck";
+
+type RetrieveAListOfRecipientHistoryOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId";
+
+type UpdateAnOrderRefundRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "refundCode"
+  | "status"
+  | "reason"
+  | "sendSms"
+  | "sendMail"
+  | "paymentGatewayCancel";
+
+type CreateAnOrderReturnRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "paymentGatewayCancel"
+  | "status"
+  | "pickupCompleted"
+  | "recoverInventory"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "addMemoToo"
+  | "reason"
+  | "claimReasonType"
+  | "naverpayReturnReasonType"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items"
+  | "requestPickup"
+  | "pickup"
+  | "returnInvoiceNo"
+  | "returnShippingCompanyName";
+
+type UpdateAnOrderReturnRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "status"
+  | "carrierId"
+  | "returnInvoiceNo"
+  | "returnShippingCompanyName"
+  | "returnInvoiceSuccess"
+  | "returnInvoiceFailReason"
+  | "refundMethodCode"
+  | "refundBankAccountHolder"
+  | "pickupCompleted"
+  | "items"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "recoverInventory"
+  | "requestPickup"
+  | "pickup"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo";
+
+type RetrieveAListOfShippingInformationOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId";
+
+type CreateAnOrderShippingInformationRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "trackingNo"
+  | "shippingCompanyCode"
+  | "orderItemCode"
+  | "status"
+  | "shippingCode"
+  | "carrierId";
+
+type UpdateAnOrderShippingRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "shippingCode"
+  | "status"
+  | "statusAdditionalInfo"
+  | "trackingNo"
+  | "shippingCompanyCode";
+
+type DeleteAnOrderShippingRequestFields = "shopNo" | "orderId" | "shippingCode";
+
+type RetrieveShippingFeeCancellationDetailsOfAnOrderRequestFields =
+  | "shopNo"
+  | "orderId";
+
+type CreateAnOrderShippingFeeCancellationRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "reason"
+  | "claimReasonType"
+  | "recoverCoupon"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "paymentGatewayCancel";
+
+type CreateAnOrderCancellationOnStockShortageRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "paymentGatewayCancel"
+  | "keepAutoCalculation"
+  | "collectGift"
+  | "status"
+  | "recoverInventory"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "addMemoToo"
+  | "reason"
+  | "claimReasonType"
+  | "naverpayCancelReasonType"
+  | "kakaopayCancelReasonType"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items";
+
+type RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "limit"
+  | "offset";
+
+type CalculateTotalDueRequestFields =
+  | "shopNo"
+  | "mobile"
+  | "memberId"
+  | "shippingType"
+  | "paymentMethod"
+  | "countryCode"
+  | "carrierId"
+  | "zipcode"
+  | "addressFull"
+  | "addressState"
+  | "items";
+
+type RetrieveAListOfCouponsAppliedToAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "limit"
+  | "offset";
+
+type RetrieveAListOfTrafficSourceGroupsRequestFields = string;
+
+type CreateATrafficSourceGroupRequestFields =
+  | "inflowGroupId"
+  | "inflowGroupName";
+
+type UpdateATrafficSourceGroupRequestFields =
+  | "inflowGroupId"
+  | "inflowGroupName";
+
+type DeleteATrafficSourceGroupRequestFields = "inflowGroupId";
+
+type RetrieveAListOfGroupTrafficSourcesRequestFields = "groupId";
+
+type CreateAGroupTrafficSourceRequestFields =
+  | "groupId"
+  | "inflowId"
+  | "inflowName"
+  | "inflowIcon";
+
+type UpdateAGroupTrafficSourceRequestFields =
+  | "groupId"
+  | "inflowId"
+  | "inflowName"
+  | "inflowIcon";
+
+type DeleteAGroupTrafficSourceRequestFields = "groupId" | "inflowId";
+
+type RetrieveAListOfAdminMemosForAnOrderRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "limit"
+  | "offset";
+
+type RetrieveAPaymentAmountRequestFields = "shopNo" | "orderItemCode";
+
+type RetrieveAListOfSalesChannelsRequestFields = "limit" | "offset";
+
+type CreateASalesChannelRequestFields =
+  | "salesChannelId"
+  | "salesChannelName"
+  | "salesChannelIcon";
+
+type UpdateASalesChannelRequestFields =
+  | "salesChannelId"
+  | "salesChannelName"
+  | "salesChannelIcon";
+
+type DeleteASalesChannelRequestFields = "salesChannelId";
+
+type UpdatePaymentStatusForMultipleOrdersRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "status"
+  | "autoPaid"
+  | "recoverInventory"
+  | "cancelRequest";
+
+type RetrieveAListOfRefundsRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "dateType"
+  | "memberEmail"
+  | "buyerEmail"
+  | "orderId"
+  | "memberId"
+  | "refundStatus"
+  | "limit"
+  | "offset";
+
+type RetrieveARefundRequestFields = "shopNo" | "refundCode";
+
+type RetrievePreOrderItemRequestFields =
+  | "shopNo"
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "orderId"
+  | "orderItemCode"
+  | "buyerName"
+  | "memberId"
+  | "memberEmail"
+  | "buyerEmail"
+  | "buyerCellphone"
+  | "productNo"
+  | "orderStatus"
+  | "paymentStatus"
+  | "receiverName"
+  | "receiverCellphone"
+  | "supplierId"
+  | "supplierName"
+  | "sort"
+  | "order"
+  | "offset"
+  | "limit";
+
+type RetrieveAReturnRequestFields = "shopNo" | "claimCode";
+
+type CreateMultipleOrderReturnsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "status"
+  | "pickupCompleted"
+  | "recoverInventory"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "addMemoToo"
+  | "reason"
+  | "claimReasonType"
+  | "naverpayReturnReasonType"
+  | "refundMethodCode"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items"
+  | "requestPickup"
+  | "pickup"
+  | "returnInvoiceNo"
+  | "returnShippingCompanyName";
+
+type UpdateAReturnRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "claimCode"
+  | "status"
+  | "pickupCompleted"
+  | "carrierId"
+  | "refundMethodCode"
+  | "refundBankAccountHolder"
+  | "returnInvoiceNo"
+  | "returnShippingCompanyName"
+  | "returnInvoiceSuccess"
+  | "returnInvoiceFailReason"
+  | "items"
+  | "recoverCoupon"
+  | "recoverCouponNo"
+  | "recoverInventory"
+  | "requestPickup"
+  | "pickup"
+  | "undone"
+  | "addMemoToo"
+  | "undoneReasonType"
+  | "undoneReason"
+  | "exposeOrderDetail"
+  | "exposedUndoneReason"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo";
+
+type CreateAReturnRequestForMultipleItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "reasonType"
+  | "reason"
+  | "requestPickup"
+  | "pickup"
+  | "trackingNo"
+  | "shippingCompanyName"
+  | "refundBankCode"
+  | "refundBankName"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "items";
+
+type RejectAReturnRequestForMultipleItemsRequestFields =
+  | "shopNo"
+  | "orderId"
+  | "orderItemCode"
+  | "undone"
+  | "reasonType"
+  | "reason"
+  | "displayRejectReason"
+  | "rejectReason";
+
+type CreateShippingInformationForMultipleOrdersRequestFields =
+  | "shopNo"
+  | "trackingNo"
+  | "shippingCompanyCode"
+  | "status"
+  | "orderId"
+  | "shippingCode"
+  | "orderItemCode"
+  | "carrierId";
+
+type UpdateMultipleOrderShippingsRequestFields =
+  | "shopNo"
+  | "shippingCode"
+  | "orderId"
+  | "status"
+  | "statusAdditionalInfo"
+  | "trackingNo"
+  | "shippingCompanyCode";
+
+type RetrieveASubscriptionRequestFields =
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "subscriptionId"
+  | "memberId"
+  | "buyerName"
+  | "buyerPhone"
+  | "buyerCellphone"
+  | "productNo"
+  | "productName"
+  | "productCode"
+  | "variantCode"
+  | "subscriptionShipmentsCycle"
+  | "subscriptionState"
+  | "limit"
+  | "offset";
+
+type CreateASubscriptionRequestFields =
+  | "memberId"
+  | "buyerName"
+  | "buyerZipcode"
+  | "buyerAddress1"
+  | "buyerAddress2"
+  | "buyerPhone"
+  | "buyerCellphone"
+  | "buyerEmail"
+  | "receiverName"
+  | "receiverZipcode"
+  | "receiverAddress1"
+  | "receiverAddress2"
+  | "receiverPhone"
+  | "receiverCellphone"
+  | "shippingMessage"
+  | "deliveryType"
+  | "expectedDeliveryDate"
+  | "subscriptionShipmentsCycle"
+  | "wishedDelivery"
+  | "wishedDeliveryStartHour"
+  | "wishedDeliveryEndHour"
+  | "wishedDeliveryHourAsap"
+  | "storePickup"
+  | "useVirtualPhoneNo"
+  | "maxDeliveryLimit"
+  | "items";
+
+type UpdateASubscriptionRequestFields =
+  | "subscriptionId"
+  | "receiverName"
+  | "receiverZipcode"
+  | "receiverAddress1"
+  | "receiverAddress2"
+  | "receiverPhone"
+  | "receiverCellphone"
+  | "shippingMessage"
+  | "subscriptionState";
+
+type UpdateProductVariantsInSubscriptionRequestFields =
+  | "subscriptionId"
+  | "subscriptionItemId"
+  | "subscriptionState"
+  | "quantity"
+  | "expectedDeliveryDate"
+  | "subscriptionShipmentsCycle"
+  | "changedVariantCode"
+  | "maxDeliveryLimit";
+
+type RetrieveAListOfCustomerTiersRequestFields =
+  | "shopNo"
+  | "groupNo"
+  | "groupName";
+
+type RetrieveACountOfCustomerTiersRequestFields =
+  | "shopNo"
+  | "groupNo"
+  | "groupName";
+
+type RetrieveACustomerTierRequestFields = "shopNo" | "groupNo";
+
+type UpdateACustomerSCustomerTierRequestFields =
+  | "shopNo"
+  | "groupNo"
+  | "memberId"
+  | "fixedGroup";
+
+type RetrieveCustomerTierSettingsRequestFields = "shopNo";
+
+type RetrieveAListOfCustomersRequestFields =
+  | "shopNo"
+  | "cellphone"
+  | "memberId";
+
+type DeleteAnAccountRequestFields = "shopNo" | "memberId" | "isPointCheck";
+
+type RetrieveCustomerTierAutoUpdateDetailsRequestFields = "shopNo" | "memberId";
+
+type RetrieveACountOfCustomerMemosRequestFields = "shopNo" | "memberId";
+
+type RetrieveAListOfCustomerMemosRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "startDate"
+  | "endDate"
+  | "importantFlag"
+  | "memo"
+  | "offset"
+  | "limit";
+
+type RetrieveACustomerMemoRequestFields = "shopNo" | "memoNo" | "memberId";
+
+type CreateACustomerMemoRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "authorId"
+  | "memo"
+  | "importantFlag";
+
+type UpdateACustomerMemoRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "memoNo"
+  | "memberId"
+  | "authorId"
+  | "memo"
+  | "importantFlag";
+
+type DeleteACustomerMemoRequestFields = "shopNo" | "memoNo" | "memberId";
+
+type RetrieveACustomerSListOfPaymentMethodsRequestFields =
+  | "shopNo"
+  | "memberId";
+
+type DeleteCustomerSPaymentInformationRequestFields = "shopNo" | "memberId";
+
+type DeleteCustomerSPaymentInformationByPaymentMethodIdRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "paymentMethodId";
+
+type RetrieveAppInstallationInformationRequestFields = "shopNo" | "memberId";
+
+type RetrieveACustomerSSocialAccountRequestFields = "shopNo" | "memberId";
+
+type RetrieveAListOfBoardsRequestFields = "shopNo";
+
+type RetrieveAListOfPostsForABoardRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "boardCategoryNo"
+  | "startDate"
+  | "endDate"
+  | "inputChannel"
+  | "search"
+  | "keyword"
+  | "replyStatus"
+  | "comment"
+  | "attachedFile"
+  | "articleType"
+  | "productNo"
+  | "hasProduct"
+  | "isNotice"
+  | "isDisplay"
+  | "supplierId"
+  | "offset"
+  | "limit";
+
+type CreateABoardPostRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "writer"
+  | "title"
+  | "content"
+  | "clientIp"
+  | "replyArticleNo"
+  | "createdDate"
+  | "writerEmail"
+  | "memberId"
+  | "notice"
+  | "fixed"
+  | "deleted"
+  | "reply"
+  | "rating"
+  | "salesChannel"
+  | "secret"
+  | "password"
+  | "replyMail"
+  | "boardCategoryNo"
+  | "nickName"
+  | "inputChannel"
+  | "replyUserId"
+  | "replyStatus"
+  | "productNo"
+  | "categoryNo"
+  | "orderId"
+  | "naverpayReviewId"
+  | "attachFileUrls";
+
+type UpdateABoardPostRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "articleNo"
+  | "title"
+  | "content"
+  | "rating"
+  | "salesChannel"
+  | "boardCategoryNo"
+  | "display"
+  | "notice"
+  | "fixed"
+  | "displayTimeStartHour"
+  | "displayTimeEndHour"
+  | "attachFileUrl1"
+  | "attachFileUrl2"
+  | "attachFileUrl3"
+  | "attachFileUrl4"
+  | "attachFileUrl5";
+
+type DeleteABoardPostRequestFields = "shopNo" | "boardNo" | "articleNo";
+
+type RetrieveAListOfCommentsForABoardPostRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "articleNo"
+  | "commentNo"
+  | "offset"
+  | "limit";
+
+type CreateACommentForABoardPostRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "articleNo"
+  | "content"
+  | "writer"
+  | "password"
+  | "memberId"
+  | "rating"
+  | "secret"
+  | "parentCommentNo"
+  | "inputChannel"
+  | "createdDate"
+  | "attachFileUrls";
+
+type DeleteACommentForABoardPostRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "articleNo"
+  | "commentNo";
+
+type RetrieveCommentsInBulkRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "sinceCommentNo"
+  | "limit";
+
+type RetrieveSeoSettingsForBoardRequestFields = "shopNo" | "boardNo";
+
+type UpdateSeoSettingsForBoardRequestFields =
+  | "shopNo"
+  | "boardNo"
+  | "metaTitle"
+  | "metaAuthor"
+  | "metaDescription"
+  | "metaKeywords";
+
+type RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestFields =
+  | "shopNo"
+  | "startMonth"
+  | "endMonth";
+
+type RetrieveAnUrgentInquiryPostRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "offset"
+  | "limit";
+
+type RetrieveAReplyForUrgentInquiryPostRequestFields = "shopNo" | "articleNo";
+
+type CreateAReplyForUrgentInquiryPostRequestFields =
+  | "shopNo"
+  | "articleNo"
+  | "content"
+  | "status"
+  | "userId"
+  | "attachFileUrls";
+
+type UpdateAReplyForUrgentInquiryPostRequestFields =
+  | "shopNo"
+  | "articleNo"
+  | "content"
+  | "status"
+  | "userId"
+  | "attachFileUrls";
+
+type RetrieveAListOfDesginIconsRequestFields = "shopNo" | "type";
+
+type RetrieveAListOfThemesRequestFields = "type";
+
+type RetrieveACountOfThemesRequestFields = "type";
+
+type RetrieveAThemeRequestFields = "skinNo";
+
+type RetrieveAThemePageRequestFields = "skinNo" | "path";
+
+type CreateAThemePageRequestFields =
+  | "skinNo"
+  | "path"
+  | "source"
+  | "displayLocation";
+
+type RetrieveAListOfCustomerBenefitsRequestFields =
+  | "shopNo"
+  | "useBenefit"
+  | "benefitName"
+  | "benefitType"
+  | "periodType"
+  | "benefitStartDate"
+  | "benefitEndDate"
+  | "platformTypes"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfCustomerBenefitsRequestFields =
+  | "shopNo"
+  | "useBenefit"
+  | "benefitName"
+  | "benefitType"
+  | "periodType"
+  | "benefitStartDate"
+  | "benefitEndDate"
+  | "platformTypes";
+
+type RetrieveACustomerBenefitRequestFields = "shopNo" | "benefitNo";
+
+type CreateACustomerBenefitRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "shopNo"
+  | "useBenefit"
+  | "benefitName"
+  | "benefitDivision"
+  | "benefitType"
+  | "useBenefitPeriod"
+  | "benefitStartDate"
+  | "benefitEndDate"
+  | "platformTypes"
+  | "useGroupBinding"
+  | "customerGroupList"
+  | "productBindingType"
+  | "useExceptCategory"
+  | "availableCoupon"
+  | "periodSale"
+  | "gift"
+  | "newProductSale"
+  | "shippingFeeSale"
+  | "giftProductBundle"
+  | "iconUrl";
+
+type UpdateACustomerBenefitRequestFields =
+  | "shopNo"
+  | "benefitNo"
+  | "useBenefit"
+  | "benefitName"
+  | "useBenefitPeriod"
+  | "benefitStartDate"
+  | "benefitEndDate"
+  | "platformTypes"
+  | "useGroupBinding"
+  | "customerGroupList"
+  | "productBindingType"
+  | "useExceptCategory"
+  | "availableCoupon"
+  | "periodSale"
+  | "gift"
+  | "giftProductBundle"
+  | "newProductSale"
+  | "shippingFeeSale"
+  | "iconUrl";
+
+type DeleteACustomerBenefitRequestFields = "shopNo" | "benefitNo";
+
+type RetrieveAListOfCouponsRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "couponType"
+  | "couponName"
+  | "benefitType"
+  | "issueType"
+  | "issueSubType"
+  | "issuedFlag"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "deleted"
+  | "pauseBeginDate"
+  | "pauseEndDate"
+  | "issueOrderPath"
+  | "issueOrderType"
+  | "issueReserved"
+  | "availablePeriodType"
+  | "availableDatetime"
+  | "availableSite"
+  | "availableScope"
+  | "availablePriceType"
+  | "availableOrderPriceType"
+  | "limit"
+  | "offset";
+
+type RetrieveACountOfCouponsRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "couponType"
+  | "couponName"
+  | "benefitType"
+  | "issueType"
+  | "issueSubType"
+  | "issuedFlag"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "deleted"
+  | "pauseBeginDate"
+  | "pauseEndDate"
+  | "issueOrderPath"
+  | "issueOrderType"
+  | "issueReserved"
+  | "availablePeriodType"
+  | "availableDatetime"
+  | "availableSite"
+  | "availableScope"
+  | "availablePriceType"
+  | "availableOrderPriceType";
+
+type CreateACouponRequestFields =
+  | "shopNo"
+  | "couponName"
+  | "benefitType"
+  | "issueType"
+  | "availablePeriodType"
+  | "availableBeginDatetime"
+  | "availableEndDatetime"
+  | "availableDayFromIssued"
+  | "availableSite"
+  | "availableScope"
+  | "availableProduct"
+  | "availableProductList"
+  | "availableCategory"
+  | "availableCategoryList"
+  | "availableAmountType"
+  | "availableCouponCountByOrder"
+  | "availablePriceType"
+  | "availableOrderPriceType"
+  | "availableMinPrice"
+  | "discountAmount"
+  | "discountRate";
+
+type CouponManagementRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "status"
+  | "deleted"
+  | "immediateIssuePause"
+  | "immediateIssueRestart";
+
+type RetrieveAListOfIssuedCouponsRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "memberId"
+  | "groupNo"
+  | "issuedDate"
+  | "issuedStartDate"
+  | "issuedEndDate"
+  | "usedCoupon"
+  | "sinceIssueNo"
+  | "limit"
+  | "offset";
+
+type CreateCouponIssuanceHistoryRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "couponNo"
+  | "issuedMemberScope"
+  | "groupNo"
+  | "memberId"
+  | "sendSmsForIssue"
+  | "allowDuplication"
+  | "singleIssuePerOnce"
+  | "issueCountPerOnce"
+  | "issuedPlaceType"
+  | "issuedByActionType"
+  | "issuedByEventType"
+  | "requestAdminId";
+
+type RetrieveAListOfCustomerCouponsRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfCustomerCouponsRequestFields = "shopNo" | "memberId";
+
+type DeleteACustomerCouponRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "couponNo"
+  | "issueNo";
+
+type RetrieveAListOfDiscountCodesRequestFields =
+  | "shopNo"
+  | "discountCodeName"
+  | "discountCode"
+  | "searchDateType"
+  | "startDate"
+  | "endDate"
+  | "offset"
+  | "limit"
+  | "sort"
+  | "order";
+
+type RetrieveADiscountCodeRequestFields = "shopNo" | "discountCodeNo";
+
+type CreateADiscountCodeRequestFields =
+  | "shopNo"
+  | "discountCode"
+  | "discountCodeName"
+  | "discountValue"
+  | "discountTruncationUnit"
+  | "discountMaxPrice"
+  | "availableStartDate"
+  | "availableEndDate"
+  | "availableProductType"
+  | "availableProduct"
+  | "availableCategory"
+  | "availableMinPrice"
+  | "availableIssueCount"
+  | "availableUser"
+  | "maxUsagePerUser";
+
+type UpdateADiscountCodeRequestFields =
+  | "shopNo"
+  | "discountCodeNo"
+  | "discountCode"
+  | "discountCodeName"
+  | "discountValue"
+  | "discountTruncationUnit"
+  | "discountMaxPrice"
+  | "availableStartDate"
+  | "availableEndDate"
+  | "availableProductType"
+  | "availableProduct"
+  | "availableCategory"
+  | "availableMinPrice"
+  | "availableIssueCount"
+  | "availableUser"
+  | "maxUsagePerUser";
+
+type DeleteADiscountCodeRequestFields = "discountCodeNo";
+
+type RetrieveCouponCodesRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "couponName"
+  | "benefitType"
+  | "issuedFlag"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "deleted"
+  | "issueOrderPath"
+  | "issueOrderType"
+  | "issueReserved"
+  | "availablePeriodType"
+  | "availableDatetime"
+  | "availableSite"
+  | "availableScope"
+  | "availablePriceType"
+  | "availableOrderPriceType"
+  | "limit"
+  | "offset";
+
+type GenerateCouponCodeRequestFields =
+  | "shopNo"
+  | "couponName"
+  | "benefitType"
+  | "availablePeriodType"
+  | "availableBeginDatetime"
+  | "availableEndDatetime"
+  | "availableDayFromIssued"
+  | "availableSite"
+  | "availableScope"
+  | "availableProduct"
+  | "availableProductList"
+  | "availableCategory"
+  | "availableCategoryList"
+  | "availableAmountType"
+  | "availableCouponCountByOrder"
+  | "availablePriceType"
+  | "availableOrderPriceType"
+  | "availableMinPrice"
+  | "discountAmount"
+  | "discountRate"
+  | "serialGenerateMethod"
+  | "serialCodeType"
+  | "serialGenerateAuto";
+
+type DeleteCouponCodeRequestFields = "couponNo";
+
+type RetrieveACodeOfCouponCodesRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "offset"
+  | "limit";
+
+type RegisterACodeOfCouponCodesRequestFields =
+  | "shopNo"
+  | "couponNo"
+  | "serialCodeList";
+
+type RetrieveAnAppInformationRequestFields = string;
+
+type UpdateAnAppInformationRequestFields = "version" | "extensionType";
+
+type RetreiveACafe24StoreOrderRequestFields = "orderId";
+
+type CreateACafe24StoreOrderRequestFields =
+  | "orderName"
+  | "orderAmount"
+  | "returnUrl"
+  | "automaticPayment";
+
+type RetrieveAListOfCafe24StorePaymentsRequestFields =
+  | "orderId"
+  | "startDate"
+  | "endDate"
+  | "currency"
+  | "limit"
+  | "offset";
+
+type RetrieveACountOfCafe24StorePaymentsRequestFields =
+  | "orderId"
+  | "startDate"
+  | "endDate"
+  | "currency";
+
+type RetrieveAListOfDatabridgeWebhookLogsRequestFields =
+  | "requestedStartDate"
+  | "requestedEndDate"
+  | "success"
+  | "sinceLogId"
+  | "limit";
+
+type RetrieveAListOfRecipesRequestFields = string;
+
+type CreateARecipeRequestFields = "recipeCode" | "triggerSettings";
+
+type DeleteARecipeRequestFields = "recipeCode";
+
+type RetrieveAListOfScriptTagsRequestFields =
+  | "shopNo"
+  | "scriptNo"
+  | "src"
+  | "displayLocation"
+  | "excludePath"
+  | "skinNo"
+  | "integrity"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate";
+
+type RetrieveACountOfScriptTagsRequestFields =
+  | "shopNo"
+  | "scriptNo"
+  | "src"
+  | "displayLocation"
+  | "skinNo"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate";
+
+type RetrieveAScriptTagRequestFields = "shopNo" | "scriptNo";
+
+type CreateAScriptTagRequestFields =
+  | "shopNo"
+  | "src"
+  | "displayLocation"
+  | "excludePath"
+  | "skinNo"
+  | "integrity";
+
+type UpdateAScriptTagRequestFields =
+  | "shopNo"
+  | "scriptNo"
+  | "src"
+  | "displayLocation"
+  | "excludePath"
+  | "skinNo"
+  | "integrity";
+
+type DeleteAScriptTagRequestFields = "scriptNo";
+
+type RetrieveAListOfWebhookLogsRequestFields =
+  | "eventNo"
+  | "requestedStartDate"
+  | "requestedEndDate"
+  | "success"
+  | "logType"
+  | "sinceLogId"
+  | "limit";
+
+type RetrieveWebhookSettingsRequestFields = string;
+
+type EditWebhookSettingsRequestFields = "receptionStatus";
+
+type RetrieveAListOfAutoLayoutsRequestFields = "shopNo" | "displayNo";
+
+type CreateAutoLayoutForSelectedProductCategoryRequestFields =
+  | "shopNo"
+  | "useMain"
+  | "categoryNo"
+  | "displayGroup"
+  | "displayCount"
+  | "useReservation"
+  | "startDate"
+  | "useHashtag"
+  | "hashTags"
+  | "displaySort"
+  | "timetable"
+  | "period"
+  | "exceptCategoriesScope"
+  | "exceptCategories";
+
+type UpdateAutoLayoutForSelectedProductCategoryRequestFields =
+  | "shopNo"
+  | "displayNo"
+  | "displayCount"
+  | "useReservation"
+  | "startDate"
+  | "useHashtag"
+  | "hashTags"
+  | "displaySort"
+  | "timetable"
+  | "period"
+  | "exceptCategoriesScope"
+  | "exceptCategories";
+
+type DeleteAutoLayoutForSelectedProductCategoryRequestFields =
+  | "shopNo"
+  | "displayNo";
+
+type RetrieveAListOfProductCategoriesRequestFields =
+  | "shopNo"
+  | "categoryDepth"
+  | "categoryNo"
+  | "parentCategoryNo"
+  | "categoryName"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfProductCategoriesRequestFields =
+  | "shopNo"
+  | "categoryDepth"
+  | "categoryNo"
+  | "parentCategoryNo"
+  | "categoryName";
+
+type RetrieveAProductCategoryRequestFields = "shopNo" | "categoryNo";
+
+type CreateAProductCategoryRequestFields =
+  | "shopNo"
+  | "parentCategoryNo"
+  | "categoryName"
+  | "shopNo"
+  | "displayType"
+  | "useMain"
+  | "useDisplay"
+  | "soldoutProductDisplay"
+  | "subCategoryProductDisplay"
+  | "hashtagProductDisplay"
+  | "hashTags"
+  | "productDisplayScope"
+  | "productDisplayType"
+  | "productDisplayKey"
+  | "productDisplaySort"
+  | "productDisplayPeriod"
+  | "normalProductDisplayType"
+  | "normalProductDisplayKey"
+  | "normalProductDisplaySort"
+  | "normalProductDisplayPeriod"
+  | "recommendProductDisplayType"
+  | "recommendProductDisplayKey"
+  | "recommendProductDisplaySort"
+  | "recommendProductDisplayPeriod"
+  | "newProductDisplayType"
+  | "newProductDisplayKey"
+  | "newProductDisplaySort"
+  | "newProductDisplayPeriod";
+
+type UpdateAProductCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "categoryName"
+  | "shopNo"
+  | "displayType"
+  | "useMain"
+  | "useDisplay"
+  | "soldoutProductDisplay"
+  | "subCategoryProductDisplay"
+  | "hashtagProductDisplay"
+  | "hashTags"
+  | "productDisplayScope"
+  | "productDisplayType"
+  | "productDisplayKey"
+  | "productDisplaySort"
+  | "productDisplayPeriod"
+  | "normalProductDisplayType"
+  | "normalProductDisplayKey"
+  | "normalProductDisplaySort"
+  | "normalProductDisplayPeriod"
+  | "recommendProductDisplayType"
+  | "recommendProductDisplayKey"
+  | "recommendProductDisplaySort"
+  | "recommendProductDisplayPeriod"
+  | "newProductDisplayType"
+  | "newProductDisplayKey"
+  | "newProductDisplaySort"
+  | "newProductDisplayPeriod";
+
+type DeleteAProductCategoryRequestFields = "categoryNo";
+
+type RetrieveDecorationImageSettingsByCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo";
+
+type UpdateDecorationImagesOfAProductCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "useMenuImagePc"
+  | "menuImagePc"
+  | "menuOverImagePc"
+  | "useTopImagePc"
+  | "topImagesPc"
+  | "useTitleImagePc"
+  | "titleImagePc"
+  | "useMenuImageMobile"
+  | "menuImageMobile"
+  | "useTopImageMobile"
+  | "topImagesMobile"
+  | "useTitleImageMobile"
+  | "titleImageMobile";
+
+type RetrieveSeoSettingsByCategoryRequestFields = "shopNo" | "categoryNo";
+
+type UpdateAProductCategorySeoRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "categoryNo"
+  | "searchEngineExposure"
+  | "metaTitle"
+  | "metaAuthor"
+  | "metaDescription"
+  | "metaKeywords";
+
+type RetrieveAListOfMainCategoriesRequestFields = string;
+
+type RetrieveAListOfBrandsRequestFields =
+  | "shopNo"
+  | "brandCode"
+  | "brandName"
+  | "useBrand"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfBrandsRequestFields =
+  | "shopNo"
+  | "brandCode"
+  | "brandName"
+  | "useBrand";
+
+type CreateABrandRequestFields =
+  | "shopNo"
+  | "brandName"
+  | "useBrand"
+  | "searchKeyword";
+
+type UpdateABrandRequestFields =
+  | "shopNo"
+  | "shopNo"
+  | "brandCode"
+  | "brandName"
+  | "useBrand"
+  | "searchKeyword";
+
+type DeleteABrandRequestFields = "brandCode";
+
+type RetrieveAListOfCustomCategoriesRequestFields =
+  | "shopNo"
+  | "classificationCode"
+  | "classificationName"
+  | "useClassification"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfCustomCategoriesRequestFields =
+  | "shopNo"
+  | "classificationCode"
+  | "classificationName"
+  | "useClassification";
+
+type RetrieveAListOfManufacturersRequestFields =
+  | "shopNo"
+  | "manufacturerCode"
+  | "manufacturerName"
+  | "useManufacturer"
+  | "offset"
+  | "limit";
+
+type RetrieveAManufacturerRequestFields = "shopNo" | "manufacturerCode";
+
+type RetrieveACountOfManufacturersRequestFields =
+  | "shopNo"
+  | "manufacturerCode"
+  | "manufacturerName"
+  | "useManufacturer";
+
+type CreateAManufacturerRequestFields =
+  | "shopNo"
+  | "manufacturerName"
+  | "presidentName"
+  | "email"
+  | "phone"
+  | "homepage"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "countryCode"
+  | "useManufacturer";
+
+type UpdateAManufacturerRequestFields =
+  | "shopNo"
+  | "manufacturerCode"
+  | "manufacturerName"
+  | "presidentName"
+  | "email"
+  | "phone"
+  | "homepage"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "countryCode"
+  | "useManufacturer";
+
+type RetrieveAListOfOriginsRequestFields =
+  | "originPlaceNo"
+  | "originPlaceName"
+  | "foreign"
+  | "offset"
+  | "limit";
+
+type RetrieveAListOfTrendsRequestFields =
+  | "shopNo"
+  | "trendCode"
+  | "trendName"
+  | "useTrend"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfTrendsRequestFields =
+  | "shopNo"
+  | "trendCode"
+  | "trendName"
+  | "useTrend";
+
+type RetrieveASupplierSShippingSettingsRequestFields = "shopNo" | "supplierId";
+
+type UpdateASupplierSShippingSettingsRequestFields =
+  | "shopNo"
+  | "supplierId"
+  | "shippingMethod"
+  | "shippingEtc"
+  | "shippingType"
+  | "shippingPlace"
+  | "shippingStartDate"
+  | "shippingEndDate"
+  | "shippingFeeType"
+  | "freeShippingPrice"
+  | "shippingFee"
+  | "shippingFeeByQuantity"
+  | "shippingRates"
+  | "prepaidShippingFee"
+  | "shippingFeeByProduct"
+  | "productWeight"
+  | "hscode"
+  | "countryHscode";
+
+type RetrieveAListOfSuppliersRequestFields =
+  | "shopNo"
+  | "supplierCode"
+  | "supplierName"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfSuppliersRequestFields =
+  | "shopNo"
+  | "supplierCode"
+  | "supplierName";
+
+type RetrieveASupplierRequestFields = "shopNo" | "supplierCode";
+
+type CreateASupplierRequestFields =
+  | "shopNo"
+  | "supplierName"
+  | "managerInformation"
+  | "useSupplier"
+  | "tradingType"
+  | "supplierType"
+  | "status"
+  | "businessItem"
+  | "paymentType"
+  | "paymentPeriod"
+  | "paymentMethod"
+  | "paymentStartDay"
+  | "paymentEndDay"
+  | "paymentStartDate"
+  | "paymentEndDate"
+  | "commission"
+  | "phone"
+  | "fax"
+  | "countryCode"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "marketCountryCode"
+  | "marketZipcode"
+  | "marketAddress1"
+  | "marketAddress2"
+  | "exchangeCountryCode"
+  | "exchangeZipcode"
+  | "exchangeAddress1"
+  | "exchangeAddress2"
+  | "homepageUrl"
+  | "mallUrl"
+  | "accountStartDate"
+  | "accountStopDate"
+  | "memo"
+  | "companyRegistrationNo"
+  | "companyName"
+  | "presidentName"
+  | "companyCondition"
+  | "companyLine"
+  | "companyIntroduction";
+
+type UpdateASupplierRequestFields =
+  | "shopNo"
+  | "supplierCode"
+  | "supplierName"
+  | "useSupplier"
+  | "tradingType"
+  | "supplierType"
+  | "status"
+  | "paymentType"
+  | "paymentPeriod"
+  | "commission"
+  | "managerInformation"
+  | "businessItem"
+  | "paymentMethod"
+  | "paymentStartDay"
+  | "paymentEndDay"
+  | "paymentStartDate"
+  | "paymentEndDate"
+  | "phone"
+  | "fax"
+  | "countryCode"
+  | "zipcode"
+  | "address1"
+  | "address2"
+  | "marketCountryCode"
+  | "marketZipcode"
+  | "marketAddress1"
+  | "marketAddress2"
+  | "exchangeCountryCode"
+  | "exchangeZipcode"
+  | "exchangeAddress1"
+  | "exchangeAddress2"
+  | "homepageUrl"
+  | "mallUrl"
+  | "accountStartDate"
+  | "accountStopDate"
+  | "memo"
+  | "companyRegistrationNo"
+  | "companyName"
+  | "presidentName"
+  | "companyCondition"
+  | "companyLine"
+  | "companyIntroduction";
+
+type DeleteASupplierRequestFields = "supplierCode";
+
+type RetrieveAListOfSupplierUsersRequestFields =
+  | "shopNo"
+  | "userId"
+  | "supplierCode"
+  | "supplierName";
+
+type RetrieveACountOfSupplierUsersRequestFields =
+  | "shopNo"
+  | "userId"
+  | "supplierCode"
+  | "supplierName";
+
+type RetrieveSupplierUserDetailsRequestFields = "shopNo" | "userId";
+
+type CreateASupplierUserRequestFields =
+  | "userId"
+  | "supplierCode"
+  | "userName"
+  | "nickName"
+  | "password"
+  | "useNickNameIcon"
+  | "useWriterNameIcon"
+  | "email"
+  | "phone"
+  | "permissionShopNo"
+  | "permissionCategorySelect"
+  | "permittedCategoryList"
+  | "permissionProductModify"
+  | "permissionProductDisplay"
+  | "permissionProductSelling"
+  | "permissionProductDelete"
+  | "permissionOrderMenu"
+  | "permissionAmountInquiry";
+
+type UpdateASupplierUserRequestFields =
+  | "userId"
+  | "userName"
+  | "nickName"
+  | "password"
+  | "useNickNameIcon"
+  | "useWriterNameIcon"
+  | "email"
+  | "phone"
+  | "permissionShopNo"
+  | "permissionCategorySelect"
+  | "permittedCategoryList"
+  | "permissionProductModify"
+  | "permissionProductDisplay"
+  | "permissionProductSelling"
+  | "permissionProductDelete"
+  | "permissionOrderMenu"
+  | "permissionAmountInquiry";
+
+type DeleteASupplierUserRequestFields = "userId";
+
+type RetrieveASupplierUserSListOfRegionalShippingFeesRequestFields =
+  | "shopNo"
+  | "supplierId"
+  | "offset"
+  | "limit";
+
+type CreateRegionalShippingFeeForASupplierUserRequestFields =
+  | "shopNo"
+  | "supplierId"
+  | "countryCode"
+  | "regionName"
+  | "useRegionalSurcharge"
+  | "surchargeRegionName"
+  | "startZipcode"
+  | "endZipcode"
+  | "regionalSurchargeAmount";
+
+type DeleteSupplierUserSRegionalShippingFeeSettingsRequestFields =
+  | "shopNo"
+  | "supplierId"
+  | "regionalSurchargeNo";
+
+type RetrieveASupplierUserSRegionalShippingFeeSettingsRequestFields =
+  | "shopNo"
+  | "supplierId";
+
+type UpdateASupplierUserSRegionalShippingFeeSettingsRequestFields =
+  | "shopNo"
+  | "supplierId"
+  | "useRegionalSurcharge"
+  | "regionSettingType"
+  | "jejuSurchargeAmount"
+  | "remoteAreaSurchargeAmount";
+
+type RetrieveAListOfShippingCarriersRequestFields = "shopNo";
+
+type RetrieveAShippingCarrierRequestFields = "shopNo" | "carrierId";
+
+type CreateAShippingCarrierRequestFields =
+  | "shopNo"
+  | "shippingCarrierCode"
+  | "contact"
+  | "email"
+  | "shippingCarrier"
+  | "trackShipmentUrl"
+  | "secondaryContact"
+  | "defaultShippingFee"
+  | "homepageUrl"
+  | "shippingFeeSetting"
+  | "shippingFeeSettingDetail";
+
+type UpdateAShippingCarrierRequestFields =
+  | "shopNo"
+  | "carrierId"
+  | "defaultShippingCarrier";
+
+type DeleteAShippingCarrierRequestFields =
+  | "shopNo"
+  | "carrierId"
+  | "deleteDefaultCarrier";
+
+type RetrieveShippingZoneRatesSettingsRequestFields = "shopNo";
+
+type RetrieveShippingReturnSettingsRequestFields = "shopNo";
+
+type UpdateStoreShippingReturnSettingsRequestFields =
+  | "shopNo"
+  | "shippingMethod"
+  | "shippingEtc"
+  | "shippingPeriod"
+  | "shippingFeeType"
+  | "shippingFee"
+  | "freeShippingPrice"
+  | "shippingFeeByQuantity"
+  | "shippingRates"
+  | "shippingFeeCriteria"
+  | "prepaidShippingFee"
+  | "productWeight"
+  | "overseaShippingCountry"
+  | "overseaShippingCountryList"
+  | "countryShippingFee"
+  | "countryShippingFeeList"
+  | "internationalShippingInsurance"
+  | "returnAddress"
+  | "packageVolume";
+
+type RetrieveAListOfShippingOriginsRequestFields = "offset" | "limit";
+
+type RetrieveAShippingOriginRequestFields = "originCode";
+
+type CreateAShippingOriginRequestFields =
+  | "originName"
+  | "address1"
+  | "address2"
+  | "countryCode"
+  | "default"
+  | "zipcode"
+  | "contact"
+  | "secondaryContact";
+
+type UpdateAShippingOriginRequestFields =
+  | "originCode"
+  | "originName"
+  | "countryCode"
+  | "default"
+  | "contact"
+  | "secondaryContact"
+  | "zipcode"
+  | "address1"
+  | "address2";
+
+type DeleteAShippingOriginRequestFields = "originCode";
+
+type RetrieveAListOfDailySalesRequestFields =
+  | "startDate"
+  | "endDate"
+  | "paymentGatewayName"
+  | "partnerId"
+  | "paymentMethod";
+
+type RetrieveAListOfMonthlySalesRequestFields =
+  | "startMonth"
+  | "endMonth"
+  | "paymentGatewayName"
+  | "partnerId"
+  | "paymentMethod";
+
+type RetrieveHourlySalesStatisticsOfAStoreRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "collectionHour"
+  | "limit"
+  | "offset";
+
+type RetrieveHourlyProductSalesStatisticsOfAStoreRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "collectionHour"
+  | "limit"
+  | "offset";
+
+type RetrieveASalesReportRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantsCode"
+  | "categoryNo"
+  | "mobile"
+  | "deliveryType"
+  | "groupNo"
+  | "supplierId"
+  | "startDate"
+  | "endDate";
+
+type RetrieveAShoppingCartRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfProductsInCustomerWishlistRequestFields =
+  | "memberId"
+  | "shopNo";
+
+type RetrieveAListOfProductsInCustomerWishlistRequestFields =
+  | "memberId"
+  | "shopNo";
+
+type RetrieveACountOfCartsContainingAProductRequestFields =
+  | "shopNo"
+  | "productNo";
+
+type RetrieveAListOfCartsContainingAProductRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "limit"
+  | "offset";
+
+type RetrieveAListOfCustomerInformationRequestFields =
+  | "shopNo"
+  | "searchType"
+  | "createdStartDate"
+  | "memberId"
+  | "newsMail"
+  | "sms"
+  | "thirdpartyAgree"
+  | "groupNo"
+  | "searchField"
+  | "keyword"
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "memberType"
+  | "memberClass"
+  | "residence"
+  | "gender"
+  | "memberAuthority"
+  | "joinPath"
+  | "useMobileApp"
+  | "fixedGroup"
+  | "limit"
+  | "offset";
+
+type RetrieveACountOfCustomerInformationRequestFields =
+  | "shopNo"
+  | "searchType"
+  | "createdStartDate"
+  | "memberId"
+  | "newsMail"
+  | "sms"
+  | "thirdpartyAgree"
+  | "groupNo"
+  | "searchField"
+  | "keyword"
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "memberType"
+  | "memberClass"
+  | "residence"
+  | "gender"
+  | "memberAuthority"
+  | "joinPath"
+  | "useMobileApp"
+  | "fixedGroup";
+
+type RetrieveACustomerInformationRequestFields = "shopNo" | "memberId";
+
+type UpdateACustomerInformationRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "cellphone"
+  | "email"
+  | "sms"
+  | "newsMail"
+  | "thirdpartyAgree"
+  | "birthday"
+  | "solarCalendar"
+  | "address1"
+  | "address2"
+  | "zipcode"
+  | "gender"
+  | "countryCode"
+  | "additionalInformation"
+  | "city"
+  | "state"
+  | "refundBankCode"
+  | "refundBankAccountNo"
+  | "refundBankAccountHolder"
+  | "fixedGroup";
+
+type RetrieveAListOfCustomersWithAProductInWishlistRequestFields =
+  | "productNo"
+  | "shopNo";
+
+type RetrieveACountOfCustomersWithAProductInWishlistRequestFields =
+  | "productNo"
+  | "shopNo";
+
+type RetrieveAListOfCreditsByDateRangeRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "type"
+  | "case"
+  | "adminId"
+  | "orderId"
+  | "searchField"
+  | "keyword"
+  | "limit"
+  | "offset";
+
+type RetrieveACreditReportByDateRangeRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "type"
+  | "case"
+  | "adminId"
+  | "searchField"
+  | "keyword";
+
+type RetrievePointsRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "email"
+  | "orderId"
+  | "groupNo"
+  | "startDate"
+  | "endDate"
+  | "case"
+  | "pointsCategory"
+  | "offset"
+  | "limit";
+
+type IssueAndDeductPointsRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "orderId"
+  | "amount"
+  | "type"
+  | "reason";
+
+type RetrieveAnAutomaticPointsExpirationRequestFields = "shopNo";
+
+type CreateAnAutomaticPointsExpirationRequestFields =
+  | "shopNo"
+  | "expirationDate"
+  | "intervalMonth"
+  | "targetPeriodMonth"
+  | "groupNo"
+  | "standardPoint"
+  | "sendEmail"
+  | "sendSms"
+  | "notificationTimeDay";
+
+type DeleteAnAutomaticPointsExpirationRequestFields = "shopNo";
+
+type RetrieveAPointsReportByDateRangeRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "email"
+  | "groupNo"
+  | "startDate"
+  | "endDate";
+
+type SendAnInvitationToActivateAccountRequestFields =
+  | "shopNo"
+  | "memberId"
+  | "invitationType";
+
+type RetrieveDistributionGroupListRequestFields = "shopNo" | "limit" | "offset";
+
+type RetrieveDistributionGroupDetailsRequestFields = "shopNo" | "groupNo";
+
+type CreateADistributionGroupRequestFields =
+  | "shopNo"
+  | "groupName"
+  | "groupDescription"
+  | "newsMail"
+  | "sms"
+  | "memberGroupNo"
+  | "memberClass"
+  | "memberType"
+  | "joinPath"
+  | "inflowPath"
+  | "inflowPathDetail"
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "solarCalendar"
+  | "ageMin"
+  | "ageMax"
+  | "gender"
+  | "availablePointsMin"
+  | "availablePointsMax"
+  | "useMobileApp"
+  | "plusappMemberJoin";
+
+type EditDistributionGroupRequestFields =
+  | "shopNo"
+  | "groupNo"
+  | "groupName"
+  | "groupDescription"
+  | "newsMail"
+  | "sms"
+  | "memberGroupNo"
+  | "memberClass"
+  | "memberType"
+  | "joinPath"
+  | "inflowPath"
+  | "inflowPathDetail"
+  | "dateType"
+  | "startDate"
+  | "endDate"
+  | "solarCalendar"
+  | "ageMin"
+  | "ageMax"
+  | "gender"
+  | "availablePointsMin"
+  | "availablePointsMax"
+  | "useMobileApp"
+  | "plusappMemberJoin";
+
+type DeleteDistributionGroupRequestFields = "shopNo" | "groupNo";
+
+type SendASmsRequestFields =
+  | "shopNo"
+  | "senderNo"
+  | "content"
+  | "recipients"
+  | "memberId"
+  | "groupNo"
+  | "excludeUnsubscriber"
+  | "type"
+  | "title";
+
+type RetrieveTheSmsBalanceRequestFields = string;
+
+type RetrieveAListOfSmsSendersRequestFields = "offset" | "limit";
+
+type RetrieveAListOfProductCategoryTranslationsRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "languageCode"
+  | "offset"
+  | "limit";
+
+type UpdateProductCategoryTranslationRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "translations";
+
+type RetrieveAListOfProductTranslationsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "productName"
+  | "languageCode"
+  | "offset"
+  | "limit";
+
+type UpdateProductTranslationRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "translations";
+
+type RetrieveAListOfStoreTranslationsRequestFields = "shopNo" | "languageCode";
+
+type UpdateTheTranslationsOfAStoreRequestFields = "shopNo" | "translations";
+
+type RetrieveAListOfThemeTranslationsRequestFields = string;
+
+type RetrieveAThemeTranslationRequestFields = "skinNo" | "languageCode";
+
+type UpdateAThemeTranslationRequestFields = "skinNo" | "skinTranslation";
+
+type RetrieveACountOfDailyvisitsRequestFields =
+  | "shopNo"
+  | "startDate"
+  | "endDate";
+
+type RetrieveAListOfActionLogsRequestEmbeds = string;
+
+type RetrieveAnActionLogRequestEmbeds = string;
+
+type RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestEmbeds =
+  string;
+
+type RetrieveTheAutomatedMessageSettingsRequestEmbeds = string;
+
+type UpdateAnAutomatedMessageRequestEmbeds = string;
+
+type RetrieveCouponSettingsRequestEmbeds = string;
+
+type UpdateCouponSettingsRequestEmbeds = string;
+
+type RetrieveCurrencySettingsRequestEmbeds = string;
+
+type RetrieveMemberRelatedSettingsRequestEmbeds = string;
+
+type RetrieveADashboardRequestEmbeds = string;
+
+type RetrieveAListOfPaymentGatewayContractDetailsRequestEmbeds = string;
+
+type RetrieveTheTransactionInformationOfAStoreRequestEmbeds = string;
+
+type RetrieveProductImageSizeSettingsRequestEmbeds = string;
+
+type UpdateProductImageSizeSettingsRequestEmbeds = string;
+
+type RetrieveAKakaoChannelSenderProfileKeyRequestEmbeds = string;
+
+type RetrieveTheKakaoInfoTalkSettingsRequestEmbeds = string;
+
+type UpdateTheKakaoInfoTalkSettingsRequestEmbeds = string;
+
+type RetrieveSettingsForKakaopayOrdersRequestEmbeds = string;
+
+type UpdateSettingsForKakaopayOrdersRequestEmbeds = string;
+
+type RetrieveMenusRequestEmbeds = string;
+
+type RetrieveMobileSettingsRequestEmbeds = string;
+
+type RetrieveNaverPaySettingsRequestEmbeds = string;
+
+type CreateNaverPaySettingsRequestEmbeds = string;
+
+type UpdateNaverPaySettingsRequestEmbeds = string;
+
+type RetrieveOrderSettingsRequestEmbeds = string;
+
+type UpdateOrderSettingsRequestEmbeds = string;
+
+type RetrieveOrderStatusDisplayedRequestEmbeds = string;
+
+type UpdateOrderStatusDisplayedRequestEmbeds = string;
+
+type RetrieveEscrowSettingsRequestEmbeds = string;
+
+type UpdateEscrowSettingsRequestEmbeds = string;
+
+type CreateAPaymentGatewayRequestEmbeds = string;
+
+type UpdateAPaymentGatewayRequestEmbeds = string;
+
+type DeleteAPaymentGatewayRequestEmbeds = string;
+
+type RetrieveAListOfPaymentGatewayMethodsRequestEmbeds = string;
+
+type CreateAPaymentGatewayMethodRequestEmbeds = string;
+
+type UpdateAPaymentMethodOfAPaymentGatewayRequestEmbeds = string;
+
+type DeleteAPaymentMethodOfAPaymentGatewayRequestEmbeds = string;
+
+type RetrieveAListOfPaymentMethodsRequestEmbeds = string;
+
+type RetrieveAListOfProvidersByPaymentMethodRequestEmbeds = string;
+
+type UpdateTheDisplayStatusOfAPaymentMethodRequestEmbeds = string;
+
+type RetrievePointsSettingsRequestEmbeds = string;
+
+type UpdatePointsSettingsRequestEmbeds = string;
+
+type RetrieveProductSettingsRequestEmbeds = string;
+
+type RetrieveAListOfRedirectsRequestEmbeds = string;
+
+type CreateARedirectRequestEmbeds = string;
+
+type UpdateARedirectRequestEmbeds = string;
+
+type DeleteARedirectRequestEmbeds = string;
+
+type RetrieveSeoSettingsRequestEmbeds = string;
+
+type UpdateStoreSeoSettingsRequestEmbeds = string;
+
+type RetrieveActivationInformationForShippingManagerRequestEmbeds = string;
+
+type RetrieveAListOfShopsRequestEmbeds = string;
+
+type RetrieveAShopRequestEmbeds = string;
+
+type RetrieveSmsSettingsRequestEmbeds = string;
+
+type UpdateSmsSettingsRequestEmbeds = string;
+
+type AppleLoginSyncDetailsRequestEmbeds = string;
+
+type AppleLoginSyncSettingsRequestEmbeds = string;
+
+type KakaoSyncDetailsRequestEmbeds = string;
+
+type KakaoSyncUpdatesRequestEmbeds = string;
+
+type NaverLoginDetailsRequestEmbeds = string;
+
+type UpdateNaverLoginSettingsRequestEmbeds = string;
+
+type RetrieveStoreDetailsRequestEmbeds = string;
+
+type RetrieveAListOfStoreBankAccountsRequestEmbeds = string;
+
+type RetrieveAListOfSubscriptionProductsRequestEmbeds = string;
+
+type CreateASubscriptionPaymentRuleRequestEmbeds = string;
+
+type UpdateSubscriptionProductsRequestEmbeds = string;
+
+type DeleteSubscriptionProductsRequestEmbeds = string;
+
+type RetrieveActivationInformationForTaxManagerRequestEmbeds = string;
+
+type RetrieveAListOfAdminUsersRequestEmbeds = string;
+
+type RetrieveAdminUserDetailsRequestEmbeds = string;
+
+type RetrieveAListOfBundlesRequestEmbeds =
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages";
+
+type RetrieveABundleRequestEmbeds =
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 메모 리소스
+   */
+  | "memos"
+
+  /**
+   * @description
+   * 상품 조회수 리소스
+   */
+  | "hits"
+
+  /**
+   * @description
+   * 상품 Seo 리소스
+   */
+  | "seo"
+
+  /**
+   * @description
+   * 상품 태그 리소스
+   */
+  | "tags"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages";
+
+type CreateABundleRequestEmbeds = string;
+
+type UpdateABundleRequestEmbeds = string;
+
+type DeleteABundleRequestEmbeds = string;
+
+type RetrieveAListOfProductsByCategoryRequestEmbeds = string;
+
+type RetrieveACountOfProductsByCategoryRequestEmbeds = string;
+
+type AddProductsToACategoryRequestEmbeds = string;
+
+type UpdateAProductInProductCategoryRequestEmbeds = string;
+
+type DeleteAProductByCategoryRequestEmbeds = string;
+
+type RetrieveAListOfProductsInMainCategoryRequestEmbeds = string;
+
+type RetrieveACountOfProductsInMainCategoryRequestEmbeds = string;
+
+type SetMainCategoryProductsRequestEmbeds = string;
+
+type UpdateFixedSortingOfProductsInMainCategoryRequestEmbeds = string;
+
+type DeleteAProductInMainCategoryRequestEmbeds = string;
+
+type RetrieveAListOfProductsRequestEmbeds =
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+
+  | "channeldiscountprices"
+
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 상품 옵션 리소스
+   */
+  | "options"
+
+  /**
+   * @description
+   * 품목 리소스
+   *
+   * 상품당 품목정보를 100개까지 조회할 수 있음.
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "variants"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages"
+
+  /**
+   * @description
+   * 상품 조회수 리소스
+   */
+  | "hits";
+
+type RetrieveACountOfProductsRequestEmbeds = string;
+
+type RetrieveAProductResourceRequestEmbeds =
+  /**
+   * @description
+   * 품목 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+
+  | "variants"
+
+  /**
+   * @description
+   * 메모 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "memos"
+
+  /**
+   * @description
+   * 상품 조회수 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "hits"
+
+  /**
+   * @description
+   * 상품 Seo 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "seo"
+
+  /**
+   * @description
+   * 상품 태그 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "tags"
+
+  /**
+   * @description
+   * 상품 옵션 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "options"
+
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages"
+
+  /**
+   * @description
+   * 사용자 정의 속성
+   */
+  | "customProperties";
+
+type CreateAProductRequestEmbeds = string;
+
+type UpdateAProductRequestEmbeds = string;
+
+type DeleteAProductRequestEmbeds = string;
+
+type CreateAnAdditionalProductImageRequestEmbeds = string;
+
+type UpdateAnAdditionalProductImageRequestEmbeds = string;
+
+type DeleteAnAdditionalProductImageRequestEmbeds = string;
+
+type RetrieveAProductApprovalStatusRequestEmbeds = string;
+
+type CreateAProductApprovalRequestRequestEmbeds = string;
+
+type UpdateAProductApprovalStatusRequestEmbeds = string;
+
+type RetrieveUserDefinedPropertiesByProductRequestEmbeds = string;
+
+type UpdateUserDefinedPropertiesByProductRequestEmbeds = string;
+
+type DeleteUserDefinedPropertiesByProductRequestEmbeds = string;
+
+type RetrieveAListOfProductDecorationImagesRequestEmbeds = string;
+
+type SetDecorationImagesForAProductRequestEmbeds = string;
+
+type UpdateProductDecorationImagesRequestEmbeds = string;
+
+type RemoveAProductDecorationImageRequestEmbeds = string;
+
+type RetrieveAProductDiscountedPriceRequestEmbeds = string;
+
+type RetrieveACountOfProductViewsRequestEmbeds = string;
+
+type RetrieveAListOfProductIconsRequestEmbeds = string;
+
+type SetIconsForAProductRequestEmbeds = string;
+
+type UpdateProductIconsRequestEmbeds = string;
+
+type RemoveAProductIconRequestEmbeds = string;
+
+type UploadProductImagesRequestEmbeds = string;
+
+type DeleteProductImagesRequestEmbeds = string;
+
+type RetrieveAListOfProductMemosRequestEmbeds = string;
+
+type RetrieveAProductMemoRequestEmbeds = string;
+
+type CreateAProductMemoRequestEmbeds = string;
+
+type UpdateAProductMemoRequestEmbeds = string;
+
+type DeleteAProductMemoRequestEmbeds = string;
+
+type RetrieveAListOfProductOptionsRequestEmbeds = string;
+
+type CreateProductOptionsRequestEmbeds = string;
+
+type UpdateProductOptionsRequestEmbeds = string;
+
+type DeleteAProductOptionRequestEmbeds = string;
+
+type RetrieveAProductSSeoSettingsRequestEmbeds = string;
+
+type UpdateProductSeoSettingsRequestEmbeds = string;
+
+type RetrieveACountOfAProductSProductTagsRequestEmbeds = string;
+
+type RetrieveAListOfAProductSProductTagsRequestEmbeds = string;
+
+type CreateProductTagsRequestEmbeds = string;
+
+type DeleteAProductTagRequestEmbeds = string;
+
+type RetrieveAListOfProductVariantsRequestEmbeds =
+  /**
+   * @description
+   * 재고 리소스
+   *
+   * 품목의 재고 리소스
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   */
+
+  "inventories";
+
+type RetrieveAProductVariantRequestEmbeds =
+  /**
+   * @description
+   * 재고 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+
+  "inventories";
+
+type UpdateAProductVariantRequestEmbeds = string;
+
+type UpdateMultipleProductVariantsRequestEmbeds = string;
+
+type DeleteAProductVariantRequestEmbeds = string;
+
+type RetrieveInventoryDetailsOfAProductVariantRequestEmbeds = string;
+
+type UpdateAProductVariantInventoryRequestEmbeds = string;
+
+type RetrieveUserDefinedPropertiesRequestEmbeds = string;
+
+type CreateUserDefinedPropertiesRequestEmbeds = string;
+
+type UpdateUserDefinedPropertiesRequestEmbeds = string;
+
+type DeleteUserDefinedPropertiesRequestEmbeds = string;
+
+type RetrieveAListOfDecorationImagesRequestEmbeds = string;
+
+type RetrieveAListOfIconsRequestEmbeds = string;
+
+type UploadImagesRequestEmbeds = string;
+
+type RetrieveAnOrderCancellationRequestEmbeds = string;
+
+type CreateMultipleOrderCancellationsRequestEmbeds = string;
+
+type ChangeCancellationDetailsInBulkRequestEmbeds = string;
+
+type CreateACancellationRequestForMultipleItemsRequestEmbeds = string;
+
+type RejectACancellationRequestForMultipleItemsRequestEmbeds = string;
+
+type RetrieveAListOfCashReceiptsRequestEmbeds = string;
+
+type CreateACashReceiptRequestEmbeds = string;
+
+type UpdateACashReceiptRequestEmbeds = string;
+
+type UpdateACashReceiptCancellationRequestEmbeds = string;
+
+type UpdateACollectionRequestRequestEmbeds = string;
+
+type OrderControlRequestEmbeds = string;
+
+type CreateADraftOrderRequestEmbeds = string;
+
+type RetrieveAnExchangeRequestEmbeds = string;
+
+type CreateMultipleExchangesRequestEmbeds = string;
+
+type UpdateMultipleOrderExchangesRequestEmbeds = string;
+
+type BulkExchangeRequestApiRequestEmbeds = string;
+
+type RejectAnExchangeRequestForMultipleItemsRequestEmbeds = string;
+
+type CreateShippingInformationForMultipleOrdersViaFulfillmentRequestEmbeds =
+  string;
+
+type RetrieveOrderLabelsRequestEmbeds = string;
+
+type CreateMultipleOrderLabelsRequestEmbeds = string;
+
+type RetrieveAListOfOrdersRequestEmbeds =
+  /**
+   * @description
+   * 품주 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+
+  | "items"
+
+  /**
+   * @description
+   * 수령자정보 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "receivers"
+
+  /**
+   * @description
+   * 주문자정보 리소스
+   */
+  | "buyer"
+
+  /**
+   * @description
+   * 반품상세 리소스
+   */
+  | "return"
+
+  /**
+   * @description
+   * 취소상세 리소스
+   */
+  | "cancellation"
+
+  /**
+   * @description
+   * 교환상세 리소스
+   */
+  | "exchange";
+
+type RetrieveAnOrderRequestEmbeds =
+  /**
+   * @description
+   * 품주 리소스
+   */
+
+  | "items"
+
+  /**
+   * @description
+   * 수령자정보 리소스
+   */
+  | "receivers"
+
+  /**
+   * @description
+   * 주문자정보 리소스
+   */
+  | "buyer"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 쿠폰 리소스
+   *
+   * Youtube shopping 이용 시에는 미제공
+   */
+  | "coupons"
+
+  /**
+   * @description
+   * 반품상세 리소스
+   */
+  | "return"
+
+  /**
+   * @description
+   * 취소상세 리소스
+   */
+  | "cancellation"
+
+  /**
+   * @description
+   * 교환상세 리소스
+   */
+  | "exchange"
+
+  /**
+   * @description
+   * 환불상세 리소스
+   */
+  | "refunds";
+
+type RetrieveACountOfOrdersRequestEmbeds = string;
+
+type UpdateStatusForMultipleOrdersRequestEmbeds = string;
+
+type UpdateAnOrderStatusRequestEmbeds = string;
+
+type RemoveAutoCalculationSettingOfAnOrderRequestEmbeds = string;
+
+type RetrieveCustomerDetailsOfAnOrderRequestEmbeds = string;
+
+type UpdateCustomerInformationOfAnOrderRequestEmbeds = string;
+
+type RetrieveAListOfCustomerHistoryOfAnOrderRequestEmbeds = string;
+
+type CreateAnOrderCancellationRequestEmbeds = string;
+
+type ChangeCancellationDetailsRequestEmbeds = string;
+
+type CreateAnOrderExchangeRequestEmbeds = string;
+
+type UpdateAnOrderExchangeRequestEmbeds = string;
+
+type RejectAnExchangeRequestRequestEmbeds = string;
+
+type RetrieveAListOfOrderItemsRequestEmbeds = string;
+
+type CreateAnOrderItemRequestEmbeds = string;
+
+type UpdateAnOrderItemRequestEmbeds = string;
+
+type RetrieveAnOrderLabelRequestEmbeds = string;
+
+type CreateAnOrderLabelRequestEmbeds = string;
+
+type UpdateAnOrderLabelRequestEmbeds = string;
+
+type DeleteAnOrderLabelRequestEmbeds = string;
+
+type CreateOrderItemOptionsRequestEmbeds = string;
+
+type EditOrderItemOptionsRequestEmbeds = string;
+
+type RetrieveAListOfOrderMemosRequestEmbeds = string;
+
+type CreateAnOrderMemoRequestEmbeds = string;
+
+type UpdateAnOrderMemoRequestEmbeds = string;
+
+type DeleteAnOrderMemoRequestEmbeds = string;
+
+type UpdateAnOrderPaymentStatusRequestEmbeds = string;
+
+type RetrievePaymentHistoryOfAnOrderRequestEmbeds = string;
+
+type RetrievePaymentDetailsOfAnOrderRequestEmbeds = string;
+
+type RetrieveAListOfRecipientsOfAnOrderRequestEmbeds = string;
+
+type UpdateOrderRecipientsRequestEmbeds = string;
+
+type ChangeShippingInformationRequestEmbeds = string;
+
+type RetrieveAListOfRecipientHistoryOfAnOrderRequestEmbeds = string;
+
+type UpdateAnOrderRefundRequestEmbeds = string;
+
+type CreateAnOrderReturnRequestEmbeds = string;
+
+type UpdateAnOrderReturnRequestEmbeds = string;
+
+type RetrieveAListOfShippingInformationOfAnOrderRequestEmbeds = string;
+
+type CreateAnOrderShippingInformationRequestEmbeds = string;
+
+type UpdateAnOrderShippingRequestEmbeds = string;
+
+type DeleteAnOrderShippingRequestEmbeds = string;
+
+type RetrieveShippingFeeCancellationDetailsOfAnOrderRequestEmbeds = string;
+
+type CreateAnOrderShippingFeeCancellationRequestEmbeds = string;
+
+type CreateAnOrderCancellationOnStockShortageRequestEmbeds = string;
+
+type RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestEmbeds = string;
+
+type CalculateTotalDueRequestEmbeds = string;
+
+type RetrieveAListOfCouponsAppliedToAnOrderRequestEmbeds = string;
+
+type RetrieveAListOfTrafficSourceGroupsRequestEmbeds = string;
+
+type CreateATrafficSourceGroupRequestEmbeds = string;
+
+type UpdateATrafficSourceGroupRequestEmbeds = string;
+
+type DeleteATrafficSourceGroupRequestEmbeds = string;
+
+type RetrieveAListOfGroupTrafficSourcesRequestEmbeds = string;
+
+type CreateAGroupTrafficSourceRequestEmbeds = string;
+
+type UpdateAGroupTrafficSourceRequestEmbeds = string;
+
+type DeleteAGroupTrafficSourceRequestEmbeds = string;
+
+type RetrieveAListOfAdminMemosForAnOrderRequestEmbeds = string;
+
+type RetrieveAPaymentAmountRequestEmbeds = string;
+
+type RetrieveAListOfSalesChannelsRequestEmbeds = string;
+
+type CreateASalesChannelRequestEmbeds = string;
+
+type UpdateASalesChannelRequestEmbeds = string;
+
+type DeleteASalesChannelRequestEmbeds = string;
+
+type UpdatePaymentStatusForMultipleOrdersRequestEmbeds = string;
+
+type RetrieveAListOfRefundsRequestEmbeds = string;
+
+type RetrieveARefundRequestEmbeds =
+  /**
+   * @description
+   * 품주 리소스
+   */
+
+  "items";
+
+type RetrievePreOrderItemRequestEmbeds = string;
+
+type RetrieveAReturnRequestEmbeds = string;
+
+type CreateMultipleOrderReturnsRequestEmbeds = string;
+
+type UpdateAReturnRequestEmbeds = string;
+
+type CreateAReturnRequestForMultipleItemsRequestEmbeds = string;
+
+type RejectAReturnRequestForMultipleItemsRequestEmbeds = string;
+
+type CreateShippingInformationForMultipleOrdersRequestEmbeds = string;
+
+type UpdateMultipleOrderShippingsRequestEmbeds = string;
+
+type RetrieveASubscriptionRequestEmbeds = string;
+
+type CreateASubscriptionRequestEmbeds = string;
+
+type UpdateASubscriptionRequestEmbeds = string;
+
+type UpdateProductVariantsInSubscriptionRequestEmbeds = string;
+
+type RetrieveAListOfCustomerTiersRequestEmbeds = string;
+
+type RetrieveACountOfCustomerTiersRequestEmbeds = string;
+
+type RetrieveACustomerTierRequestEmbeds = string;
+
+type UpdateACustomerSCustomerTierRequestEmbeds = string;
+
+type RetrieveCustomerTierSettingsRequestEmbeds = string;
+
+type RetrieveAListOfCustomersRequestEmbeds = string;
+
+type DeleteAnAccountRequestEmbeds = string;
+
+type RetrieveCustomerTierAutoUpdateDetailsRequestEmbeds = string;
+
+type RetrieveACountOfCustomerMemosRequestEmbeds = string;
+
+type RetrieveAListOfCustomerMemosRequestEmbeds = string;
+
+type RetrieveACustomerMemoRequestEmbeds = string;
+
+type CreateACustomerMemoRequestEmbeds = string;
+
+type UpdateACustomerMemoRequestEmbeds = string;
+
+type DeleteACustomerMemoRequestEmbeds = string;
+
+type RetrieveACustomerSListOfPaymentMethodsRequestEmbeds = string;
+
+type DeleteCustomerSPaymentInformationRequestEmbeds = string;
+
+type DeleteCustomerSPaymentInformationByPaymentMethodIdRequestEmbeds = string;
+
+type RetrieveAppInstallationInformationRequestEmbeds = string;
+
+type RetrieveACustomerSSocialAccountRequestEmbeds = string;
+
+type RetrieveAListOfBoardsRequestEmbeds = string;
+
+type RetrieveAListOfPostsForABoardRequestEmbeds = string;
+
+type CreateABoardPostRequestEmbeds = string;
+
+type UpdateABoardPostRequestEmbeds = string;
+
+type DeleteABoardPostRequestEmbeds = string;
+
+type RetrieveAListOfCommentsForABoardPostRequestEmbeds = string;
+
+type CreateACommentForABoardPostRequestEmbeds = string;
+
+type DeleteACommentForABoardPostRequestEmbeds = string;
+
+type RetrieveCommentsInBulkRequestEmbeds = string;
+
+type RetrieveSeoSettingsForBoardRequestEmbeds = string;
+
+type UpdateSeoSettingsForBoardRequestEmbeds = string;
+
+type RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestEmbeds = string;
+
+type RetrieveAnUrgentInquiryPostRequestEmbeds = string;
+
+type RetrieveAReplyForUrgentInquiryPostRequestEmbeds = string;
+
+type CreateAReplyForUrgentInquiryPostRequestEmbeds = string;
+
+type UpdateAReplyForUrgentInquiryPostRequestEmbeds = string;
+
+type RetrieveAListOfDesginIconsRequestEmbeds = string;
+
+type RetrieveAListOfThemesRequestEmbeds = string;
+
+type RetrieveACountOfThemesRequestEmbeds = string;
+
+type RetrieveAThemeRequestEmbeds = string;
+
+type RetrieveAThemePageRequestEmbeds = string;
+
+type CreateAThemePageRequestEmbeds = string;
+
+type RetrieveAListOfCustomerBenefitsRequestEmbeds = string;
+
+type RetrieveACountOfCustomerBenefitsRequestEmbeds = string;
+
+type RetrieveACustomerBenefitRequestEmbeds = string;
+
+type CreateACustomerBenefitRequestEmbeds = string;
+
+type UpdateACustomerBenefitRequestEmbeds = string;
+
+type DeleteACustomerBenefitRequestEmbeds = string;
+
+type RetrieveAListOfCouponsRequestEmbeds = string;
+
+type RetrieveACountOfCouponsRequestEmbeds = string;
+
+type CreateACouponRequestEmbeds = string;
+
+type CouponManagementRequestEmbeds = string;
+
+type RetrieveAListOfIssuedCouponsRequestEmbeds = string;
+
+type CreateCouponIssuanceHistoryRequestEmbeds = string;
+
+type RetrieveAListOfCustomerCouponsRequestEmbeds = string;
+
+type RetrieveACountOfCustomerCouponsRequestEmbeds = string;
+
+type DeleteACustomerCouponRequestEmbeds = string;
+
+type RetrieveAListOfDiscountCodesRequestEmbeds = string;
+
+type RetrieveADiscountCodeRequestEmbeds = string;
+
+type CreateADiscountCodeRequestEmbeds = string;
+
+type UpdateADiscountCodeRequestEmbeds = string;
+
+type DeleteADiscountCodeRequestEmbeds = string;
+
+type RetrieveCouponCodesRequestEmbeds = string;
+
+type GenerateCouponCodeRequestEmbeds = string;
+
+type DeleteCouponCodeRequestEmbeds = string;
+
+type RetrieveACodeOfCouponCodesRequestEmbeds = string;
+
+type RegisterACodeOfCouponCodesRequestEmbeds = string;
+
+type RetrieveAnAppInformationRequestEmbeds = string;
+
+type UpdateAnAppInformationRequestEmbeds = string;
+
+type RetreiveACafe24StoreOrderRequestEmbeds = string;
+
+type CreateACafe24StoreOrderRequestEmbeds = string;
+
+type RetrieveAListOfCafe24StorePaymentsRequestEmbeds = string;
+
+type RetrieveACountOfCafe24StorePaymentsRequestEmbeds = string;
+
+type RetrieveAListOfDatabridgeWebhookLogsRequestEmbeds = string;
+
+type RetrieveAListOfRecipesRequestEmbeds = string;
+
+type CreateARecipeRequestEmbeds = string;
+
+type DeleteARecipeRequestEmbeds = string;
+
+type RetrieveAListOfScriptTagsRequestEmbeds = string;
+
+type RetrieveACountOfScriptTagsRequestEmbeds = string;
+
+type RetrieveAScriptTagRequestEmbeds = string;
+
+type CreateAScriptTagRequestEmbeds = string;
+
+type UpdateAScriptTagRequestEmbeds = string;
+
+type DeleteAScriptTagRequestEmbeds = string;
+
+type RetrieveAListOfWebhookLogsRequestEmbeds = string;
+
+type RetrieveWebhookSettingsRequestEmbeds = string;
+
+type EditWebhookSettingsRequestEmbeds = string;
+
+type RetrieveAListOfAutoLayoutsRequestEmbeds = string;
+
+type CreateAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+
+type UpdateAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+
+type DeleteAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+
+type RetrieveAListOfProductCategoriesRequestEmbeds = string;
+
+type RetrieveACountOfProductCategoriesRequestEmbeds = string;
+
+type RetrieveAProductCategoryRequestEmbeds = string;
+
+type CreateAProductCategoryRequestEmbeds = string;
+
+type UpdateAProductCategoryRequestEmbeds = string;
+
+type DeleteAProductCategoryRequestEmbeds = string;
+
+type RetrieveDecorationImageSettingsByCategoryRequestEmbeds = string;
+
+type UpdateDecorationImagesOfAProductCategoryRequestEmbeds = string;
+
+type RetrieveSeoSettingsByCategoryRequestEmbeds = string;
+
+type UpdateAProductCategorySeoRequestEmbeds = string;
+
+type RetrieveAListOfMainCategoriesRequestEmbeds = string;
+
+type RetrieveAListOfBrandsRequestEmbeds = string;
+
+type RetrieveACountOfBrandsRequestEmbeds = string;
+
+type CreateABrandRequestEmbeds = string;
+
+type UpdateABrandRequestEmbeds = string;
+
+type DeleteABrandRequestEmbeds = string;
+
+type RetrieveAListOfCustomCategoriesRequestEmbeds = string;
+
+type RetrieveACountOfCustomCategoriesRequestEmbeds = string;
+
+type RetrieveAListOfManufacturersRequestEmbeds = string;
+
+type RetrieveAManufacturerRequestEmbeds = string;
+
+type RetrieveACountOfManufacturersRequestEmbeds = string;
+
+type CreateAManufacturerRequestEmbeds = string;
+
+type UpdateAManufacturerRequestEmbeds = string;
+
+type RetrieveAListOfOriginsRequestEmbeds = string;
+
+type RetrieveAListOfTrendsRequestEmbeds = string;
+
+type RetrieveACountOfTrendsRequestEmbeds = string;
+
+type RetrieveASupplierSShippingSettingsRequestEmbeds = string;
+
+type UpdateASupplierSShippingSettingsRequestEmbeds = string;
+
+type RetrieveAListOfSuppliersRequestEmbeds = string;
+
+type RetrieveACountOfSuppliersRequestEmbeds = string;
+
+type RetrieveASupplierRequestEmbeds = string;
+
+type CreateASupplierRequestEmbeds = string;
+
+type UpdateASupplierRequestEmbeds = string;
+
+type DeleteASupplierRequestEmbeds = string;
+
+type RetrieveAListOfSupplierUsersRequestEmbeds = string;
+
+type RetrieveACountOfSupplierUsersRequestEmbeds = string;
+
+type RetrieveSupplierUserDetailsRequestEmbeds = string;
+
+type CreateASupplierUserRequestEmbeds = string;
+
+type UpdateASupplierUserRequestEmbeds = string;
+
+type DeleteASupplierUserRequestEmbeds = string;
+
+type RetrieveASupplierUserSListOfRegionalShippingFeesRequestEmbeds = string;
+
+type CreateRegionalShippingFeeForASupplierUserRequestEmbeds = string;
+
+type DeleteSupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+
+type RetrieveASupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+
+type UpdateASupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+
+type RetrieveAListOfShippingCarriersRequestEmbeds = string;
+
+type RetrieveAShippingCarrierRequestEmbeds = string;
+
+type CreateAShippingCarrierRequestEmbeds = string;
+
+type UpdateAShippingCarrierRequestEmbeds = string;
+
+type DeleteAShippingCarrierRequestEmbeds = string;
+
+type RetrieveShippingZoneRatesSettingsRequestEmbeds = string;
+
+type RetrieveShippingReturnSettingsRequestEmbeds = string;
+
+type UpdateStoreShippingReturnSettingsRequestEmbeds = string;
+
+type RetrieveAListOfShippingOriginsRequestEmbeds = string;
+
+type RetrieveAShippingOriginRequestEmbeds = string;
+
+type CreateAShippingOriginRequestEmbeds = string;
+
+type UpdateAShippingOriginRequestEmbeds = string;
+
+type DeleteAShippingOriginRequestEmbeds = string;
+
+type RetrieveAListOfDailySalesRequestEmbeds = string;
+
+type RetrieveAListOfMonthlySalesRequestEmbeds = string;
+
+type RetrieveHourlySalesStatisticsOfAStoreRequestEmbeds = string;
+
+type RetrieveHourlyProductSalesStatisticsOfAStoreRequestEmbeds = string;
+
+type RetrieveASalesReportRequestEmbeds = string;
+
+type RetrieveAShoppingCartRequestEmbeds = string;
+
+type RetrieveACountOfProductsInCustomerWishlistRequestEmbeds = string;
+
+type RetrieveAListOfProductsInCustomerWishlistRequestEmbeds = string;
+
+type RetrieveACountOfCartsContainingAProductRequestEmbeds = string;
+
+type RetrieveAListOfCartsContainingAProductRequestEmbeds = string;
+
+type RetrieveAListOfCustomerInformationRequestEmbeds = string;
+
+type RetrieveACountOfCustomerInformationRequestEmbeds = string;
+
+type RetrieveACustomerInformationRequestEmbeds = string;
+
+type UpdateACustomerInformationRequestEmbeds = string;
+
+type RetrieveAListOfCustomersWithAProductInWishlistRequestEmbeds = string;
+
+type RetrieveACountOfCustomersWithAProductInWishlistRequestEmbeds = string;
+
+type RetrieveAListOfCreditsByDateRangeRequestEmbeds = string;
+
+type RetrieveACreditReportByDateRangeRequestEmbeds = string;
+
+type RetrievePointsRequestEmbeds = string;
+
+type IssueAndDeductPointsRequestEmbeds = string;
+
+type RetrieveAnAutomaticPointsExpirationRequestEmbeds = string;
+
+type CreateAnAutomaticPointsExpirationRequestEmbeds = string;
+
+type DeleteAnAutomaticPointsExpirationRequestEmbeds = string;
+
+type RetrieveAPointsReportByDateRangeRequestEmbeds = string;
+
+type SendAnInvitationToActivateAccountRequestEmbeds = string;
+
+type RetrieveDistributionGroupListRequestEmbeds = string;
+
+type RetrieveDistributionGroupDetailsRequestEmbeds = string;
+
+type CreateADistributionGroupRequestEmbeds = string;
+
+type EditDistributionGroupRequestEmbeds = string;
+
+type DeleteDistributionGroupRequestEmbeds = string;
+
+type SendASmsRequestEmbeds = string;
+
+type RetrieveTheSmsBalanceRequestEmbeds = string;
+
+type RetrieveAListOfSmsSendersRequestEmbeds = string;
+
+type RetrieveAListOfProductCategoryTranslationsRequestEmbeds = string;
+
+type UpdateProductCategoryTranslationRequestEmbeds = string;
+
+type RetrieveAListOfProductTranslationsRequestEmbeds = string;
+
+type UpdateProductTranslationRequestEmbeds = string;
+
+type RetrieveAListOfStoreTranslationsRequestEmbeds = string;
+
+type UpdateTheTranslationsOfAStoreRequestEmbeds = string;
+
+type RetrieveAListOfThemeTranslationsRequestEmbeds = string;
+
+type RetrieveAThemeTranslationRequestEmbeds = string;
+
+type UpdateAThemeTranslationRequestEmbeds = string;
+
+type RetrieveACountOfDailyvisitsRequestEmbeds = string;
 
 /**
  * @example
@@ -40625,6 +46425,58 @@ interface RetrieveCurrencySettingsResponse {
     shopCurrencyCode: string;
     shopCurrencySymbol: string;
     shopCurrencyFormat: string;
+  };
+}
+
+/**
+ * @example
+ * ```json
+ * {
+ *     "customer": {
+ *         "shop_no": 1,
+ *         "simple_member_join": "T",
+ *         "member_authentication": "T",
+ *         "minimum_age_restriction": "T",
+ *         "adult_age_restriction": "F",
+ *         "adult_purchase_restriction": "F",
+ *         "adult_image_restriction": "F",
+ *         "gender_restriction": "B",
+ *         "member_rejoin_restriction": "T",
+ *         "member_rejoin_restriction_day": 30,
+ *         "password_authentication": "T",
+ *         "member_join_confirmation": "T",
+ *         "email_duplication": "T",
+ *         "password_recovery": "T",
+ *         "link_social_account": "T",
+ *         "save_member_id": "T",
+ *         "unregistration_admin_approval": "T",
+ *         "unregistration_reason": "T",
+ *         "display_group": "T"
+ *     }
+ * }
+ * ```
+ */
+interface RetrieveMemberRelatedSettingsResponse {
+  customer: {
+    shopNo: number;
+    simpleMemberJoin: Cafe24Enum;
+    memberAuthentication: Cafe24Enum;
+    minimumAgeRestriction: Cafe24Enum;
+    adultAgeRestriction: Cafe24Enum;
+    adultPurchaseRestriction: Cafe24Enum;
+    adultImageRestriction: Cafe24Enum;
+    genderRestriction: Cafe24Enum;
+    memberRejoinRestriction: Cafe24Enum;
+    memberRejoinRestrictionDay: number;
+    passwordAuthentication: Cafe24Enum;
+    memberJoinConfirmation: Cafe24Enum;
+    emailDuplication: Cafe24Enum;
+    passwordRecovery: Cafe24Enum;
+    linkSocialAccount: Cafe24Enum;
+    saveMemberId: Cafe24Enum;
+    unregistrationAdminApproval: Cafe24Enum;
+    unregistrationReason: Cafe24Enum;
+    displayGroup: Cafe24Enum;
   };
 }
 
@@ -41273,7 +47125,9 @@ interface UpdateNaverPaySettingsResponse {
  *         "purchase_confirmation_auto_check_set_date": null,
  *         "use_additional_fields": "F",
  *         "customer_pays_return_shipping": "F",
- *         "refund_bank_account_required": "F"
+ *         "refund_bank_account_required": "F",
+ *         "exchange_shipping_fee": "0.00",
+ *         "return_shipping_fee": "0.00"
  *     }
  * }
  * ```
@@ -41305,6 +47159,8 @@ interface RetrieveOrderSettingsResponse {
     useAdditionalFields: Cafe24Enum;
     customerPaysReturnShipping: Cafe24Enum;
     refundBankAccountRequired: Cafe24Enum;
+    exchangeShippingFee: string;
+    returnShippingFee: string;
   };
 }
 
@@ -58723,18 +64579,6 @@ interface DeleteACustomerBenefitResponse {
  * @example
  * ```json
  * {
- *     "count": 24
- * }
- * ```
- */
-interface RetrieveACountOfCouponsResponse {
-  count: number;
-}
-
-/**
- * @example
- * ```json
- * {
  *     "coupons": [
  *         {
  *             "shop_no": 1,
@@ -58981,6 +64825,18 @@ interface RetrieveAListOfCouponsResponse {
  * @example
  * ```json
  * {
+ *     "count": 24
+ * }
+ * ```
+ */
+interface RetrieveACountOfCouponsResponse {
+  count: number;
+}
+
+/**
+ * @example
+ * ```json
+ * {
  *     "coupon": {
  *         "shop_no": 1,
  *         "coupon_no": "9000000000000000018",
@@ -59045,6 +64901,32 @@ interface CreateACouponResponse {
       benefitPrice: string;
     };
     discountRate: any;
+  };
+}
+
+/**
+ * @example
+ * ```json
+ * {
+ *     "coupon": {
+ *         "shop_no": 1,
+ *         "coupon_no": 6079609780100000003,
+ *         "status": "pause",
+ *         "deleted": null,
+ *         "immediate_issue_pause": "I",
+ *         "immediate_issue_restart": null
+ *     }
+ * }
+ * ```
+ */
+interface CouponManagementResponse {
+  coupon: {
+    shopNo: number;
+    couponNo: number;
+    status: string;
+    deleted: any;
+    immediateIssuePause: Cafe24Enum;
+    immediateIssueRestart: any;
   };
 }
 
@@ -63732,6 +69614,59 @@ interface DeleteAShippingCarrierResponse {
   carrier: {
     shopNo: number;
     carrierId: number;
+  };
+}
+
+/**
+ * @example
+ * ```json
+ * {
+ *     "regionalsurcharge": {
+ *         "shop_no": 1,
+ *         "use_regional_surcharge": "T",
+ *         "region_setting_type": "Z",
+ *         "regional_surcharge_list": [
+ *             {
+ *                 "regional_surcharge_no": 1,
+ *                 "region_name": "Gyeonggi-do",
+ *                 "surcharge_region_name": null,
+ *                 "country_code": null,
+ *                 "start_zipcode": "11750",
+ *                 "end_zipcode": "11750",
+ *                 "regional_surcharge_amount": "2200.00"
+ *             },
+ *             {
+ *                 "regional_surcharge_no": 2,
+ *                 "region_name": "Seoul",
+ *                 "surcharge_region_name": null,
+ *                 "country_code": null,
+ *                 "start_zipcode": "05200",
+ *                 "end_zipcode": "05200",
+ *                 "regional_surcharge_amount": "1000.00"
+ *             }
+ *         ],
+ *         "jeju_surcharge_amount": null,
+ *         "remote_area_surcharge_amount": null
+ *     }
+ * }
+ * ```
+ */
+interface RetrieveShippingZoneRatesSettingsResponse {
+  regionalsurcharge: {
+    shopNo: number;
+    useRegionalSurcharge: Cafe24Enum;
+    regionSettingType: Cafe24Enum;
+    regionalSurchargeList: Array<{
+      regionalSurchargeNo: number;
+      regionName: string;
+      surchargeRegionName: any;
+      countryCode: any;
+      startZipcode: string;
+      endZipcode: string;
+      regionalSurchargeAmount: string;
+    }>;
+    jejuSurchargeAmount: any;
+    remoteAreaSurchargeAmount: any;
   };
 }
 

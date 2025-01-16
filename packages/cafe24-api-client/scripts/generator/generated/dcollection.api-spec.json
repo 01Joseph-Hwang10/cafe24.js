@@ -19,6 +19,7 @@
                 "name": "dcollection_store_category",
                 "description": "@description\nD.Collection 상점 표준 카테고리\n\n검색 가능한 값 : 카테고리 번호\ndcollection_store_category ",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -27,6 +28,7 @@
                 "name": "shop_name",
                 "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -35,6 +37,7 @@
                 "name": "store_id",
                 "description": "@description\n상점 아이디",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -43,6 +46,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -51,6 +55,7 @@
                 "name": "shop_currency_code",
                 "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -59,6 +64,7 @@
                 "name": "shop_language",
                 "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -67,6 +73,7 @@
                 "name": "shop_grade",
                 "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -75,6 +82,7 @@
                 "name": "shop_popular_age",
                 "description": "@description\n상점 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -83,6 +91,7 @@
                 "name": "shop_sex",
                 "description": "@description\n인기 성별\n\nF : 여성\nM : 남성",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -91,6 +100,7 @@
                 "name": "shop_region",
                 "description": "@description\n인기 지역\n\n서울\n경기\n인천\n강원\n충북\n세종\n충남\n대전\n경북\n대구\n울산\n부산\n경남\n전북\n전남\n광주\n제주",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -99,6 +109,7 @@
                 "name": "shop_tags",
                 "description": "@description\n상점 태그\n\n검색 가능한 값 : 상점 태그 코드\ndcollection_store_taglist \n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [10]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -107,6 +118,7 @@
                 "name": "use_cafe24pay",
                 "description": "@description\n상점의 카페24페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -115,6 +127,7 @@
                 "name": "use_naverpay",
                 "description": "@description\n상점의 네이버페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -123,6 +136,7 @@
                 "name": "use_EMS",
                 "description": "@description\n상점의 우체국EMS 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -131,6 +145,7 @@
                 "name": "social_logins",
                 "description": "@description\nSNS 로그인 연동 채널\n\nfacebook : 페이스북\nkakao : 카카오\nnaver : 네이버\nline : 라인\ngoogle : 구글\napple : 애플",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -139,6 +154,7 @@
                 "name": "shipping_fee_type",
                 "description": "@description\n상점의 기본 배송비 유형\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과\nE : 자동 책정 배송비(EMS) 사용\nF : 착불",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -147,6 +163,7 @@
                 "name": "benefits",
                 "description": "@description\n상점에서 제공하는 고객 혜택 유형\n\nDP : 기간 할인\nDR : 재구매 할인\nDQ : 대량구매 할인\nDM : 회원 할인\nDN : 신규 상품 할인\nDV : 배송비 할인\nPG : 사은품\nPB : 1+N 이벤트",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -155,6 +172,7 @@
                 "name": "global_payment_type",
                 "description": "@description\n상점에서 지원하는 해외 결제 서비스\n\nAX : 엑시즈\nEX : 엑심베이\nPP : 페이팔\nCG : 위챗페이\nEY : ECPAY\nPW : 페이먼트월",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -163,6 +181,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상점 생성일 검색 시작 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -171,6 +190,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상점 생성일 검색 종료 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -179,6 +199,7 @@
                 "name": "limit",
                 "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -188,6 +209,7 @@
                 "name": "offset",
                 "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -197,6 +219,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 순서 값\n\ncreated_date : 상점 생성일\nshop_name : 상점명",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -205,6 +228,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -222,7 +246,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "shops-laFrsZX6",
+                      "name": "shops-oXRc38Y9",
                       "properties": [
                         {
                           "name": "dcollection_store_category",
@@ -230,7 +254,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "dcollection_store_category-umAS0X0e",
+                              "name": "dcollection_store_category-Hs2Pty7K",
                               "properties": [
                                 {
                                   "name": "depth1",
@@ -410,6 +434,7 @@
             "name": "dcollection_store_category",
             "description": "@description\nD.Collection 상점 표준 카테고리",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -418,6 +443,7 @@
             "name": "store_id",
             "description": "@description\n상점 아이디",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -426,6 +452,7 @@
             "name": "shop_name",
             "description": "@description\n상점명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -434,6 +461,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -442,6 +470,7 @@
             "name": "shop_url",
             "description": "@description\n상점 대표 도메인",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -450,6 +479,7 @@
             "name": "shop_currency_code",
             "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -458,6 +488,7 @@
             "name": "shop_language",
             "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -466,6 +497,7 @@
             "name": "shop_grade",
             "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -474,6 +506,7 @@
             "name": "shop_popular_age",
             "description": "@description\n상점 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -482,6 +515,7 @@
             "name": "shop_sex",
             "description": "@description\n인기 성별\n\nF : 여성\nM : 남성",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -490,6 +524,7 @@
             "name": "shop_region",
             "description": "@description\n인기 지역\n\n서울\n경기\n인천\n강원\n충북\n세종\n충남\n대전\n경북\n대구\n울산\n부산\n경남\n전북\n전남\n광주\n제주",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -498,6 +533,7 @@
             "name": "shop_tags",
             "description": "@description\n상점 태그 코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -506,6 +542,7 @@
             "name": "social_logins",
             "description": "@description\nSNS 로그인 연동 채널\n\nfacebook : 페이스북\nkakao : 카카오\nnaver : 네이버\nline : 라인\ngoogle : 구글\napple : 애플",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -514,6 +551,7 @@
             "name": "use_cafe24pay",
             "description": "@description\n상점의 카페24페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -522,6 +560,7 @@
             "name": "use_naverpay",
             "description": "@description\n상점의 네이버페이 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -530,6 +569,7 @@
             "name": "use_EMS",
             "description": "@description\n상점의 우체국EMS 사용여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -538,6 +578,7 @@
             "name": "shipping_fee_type",
             "description": "@description\n상점의 기본 배송비 유형\n\nT : 배송비 무료\nR : 고정배송비 사용\nM : 구매 금액에 따른 부과\nD : 구매 금액별 차등 배송료 사용\nW : 상품 무게별 차등 배송료 사용\nC : 상품 수량별 차등 배송료 사용\nN : 상품 수량에 비례하여 배송료 부과\nE : 자동 책정 배송비(EMS) 사용\nF : 착불",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -546,6 +587,7 @@
             "name": "benefits",
             "description": "@description\n상점에서 제공하는 고객 혜택 유형\n\nDP : 기간 할인\nDR : 재구매 할인\nDQ : 대량구매 할인\nDM : 회원 할인\nDN : 신규 상품 할인\nDV : 배송비 할인\nPG : 사은품\nPB : 1+N 이벤트",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -554,6 +596,7 @@
             "name": "global_payment_type",
             "description": "@description\n상점에서 지원하는 해외 결제 서비스\n\nAX : 엑시즈\nEX : 엑심베이\nPP : 페이팔\nCG : 위챗페이\nEY : ECPAY\nPW : 페이먼트월",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -562,6 +605,7 @@
             "name": "created_date",
             "description": "@description\n상점 생성일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -570,6 +614,7 @@
             "name": "updated_date",
             "description": "@description\n상점 업데이트일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -598,6 +643,7 @@
                 "name": "dcollection_product_category",
                 "description": "@description\nD.Collection 상품 표준 카테고리\n\nMetaport 상품 표준 카테고리\n검색 가능한 값 : 중분류 또는 소분류 카테고리 번호\ndcollection_product_category \n중분류가 같은 소분류 카테고리에 한하여 소분류 카테고리는 (콤마)로 최대 10개까지 검색\n중분류 상품 카테고리와 소분류 상품 카테고리를 동시 요청 시 소분류 상품 카테고리만 검색",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -606,6 +652,7 @@
                 "name": "product_ukey",
                 "description": "@description\n상품의 고유키\n\n특정 상점의 상품을 구분하는 고유한 값\n검색 가능한 값\n구문 : \"${mall_id}_${shop_no}_${product_no}\"\n예시 : cafe24_1_1356\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -614,6 +661,7 @@
                 "name": "shop_name",
                 "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -622,6 +670,7 @@
                 "name": "store_id",
                 "description": "@description\n상점 아이디\n\nproduct_ukey와 동시 사용 불가",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -630,6 +679,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -638,6 +688,7 @@
                 "name": "shop_grade",
                 "description": "@description\n상점 인기도\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만\n\n@constraints\n배열 최대사이즈: [4]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -646,6 +697,7 @@
                 "name": "shop_language",
                 "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -654,6 +706,7 @@
                 "name": "shop_currency_code",
                 "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -662,6 +715,7 @@
                 "name": "product_name",
                 "description": "@description\n상품명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -670,6 +724,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -678,6 +733,7 @@
                 "name": "product_status_type",
                 "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -686,6 +742,7 @@
                 "name": "price_min",
                 "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -694,6 +751,7 @@
                 "name": "price_max",
                 "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -702,6 +760,7 @@
                 "name": "is_pc_discount",
                 "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -710,6 +769,7 @@
                 "name": "is_mobile_discount",
                 "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -718,6 +778,7 @@
                 "name": "pc_discount_price_min",
                 "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -726,6 +787,7 @@
                 "name": "pc_discount_price_max",
                 "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -734,6 +796,7 @@
                 "name": "mobile_discount_price_min",
                 "description": "@description\n모바일 할인 판매가 검색 최소 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -742,6 +805,7 @@
                 "name": "mobile_discount_price_max",
                 "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -750,6 +814,7 @@
                 "name": "pc_discount_rate_min",
                 "description": "@description\nPC 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -758,6 +823,7 @@
                 "name": "pc_discount_rate_max",
                 "description": "@description\nPC 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -766,6 +832,7 @@
                 "name": "mobile_discount_rate_min",
                 "description": "@description\n모바일 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -774,6 +841,7 @@
                 "name": "mobile_discount_rate_max",
                 "description": "@description\n모바일 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -782,6 +850,7 @@
                 "name": "is_free_shipping",
                 "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -790,6 +859,7 @@
                 "name": "is_international_shipping",
                 "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -798,6 +868,7 @@
                 "name": "international_shipping_country",
                 "description": "@description\n상품이 배송될 수 있는 해외 국가",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -806,6 +877,7 @@
                 "name": "is_free_gift",
                 "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -814,6 +886,7 @@
                 "name": "is_coupon_discount",
                 "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -822,6 +895,7 @@
                 "name": "review_count_min",
                 "description": "@description\n상품 리뷰 수 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -830,6 +904,7 @@
                 "name": "review_count_max",
                 "description": "@description\n상품 리뷰 수 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -838,6 +913,7 @@
                 "name": "review_score_min",
                 "description": "@description\n상품 리뷰 평점 최소 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -846,6 +922,7 @@
                 "name": "review_score_max",
                 "description": "@description\n상품 리뷰 평점 최대 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -854,6 +931,7 @@
                 "name": "brand_name",
                 "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -862,6 +940,7 @@
                 "name": "product_standard_tags",
                 "description": "@description\nD.Collection에서 제공하는 상품 표준 태그\n\n상품 표준 태그 API를 조회하여 지원되는 태그 키와 값 확인 가능\nproduct_standard_tags 하위요소\nstandard_tag_key 태그 키\nstandard_tag_values 태그 값\n하나의 태그 키에 대한 태그 값은 ,(콤마)로 최대 10개까지 검색 가능\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -870,6 +949,7 @@
                 "name": "product_popular_age",
                 "description": "@description\n상품 인기 연령대\n\n검색 가능한 값\n- teenager : 10대\n- twenties : 20대\n- thirties : 30대\n- forties : 40대\n- etc : 기타\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -878,6 +958,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상품 생성일 검색 시작 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -886,6 +967,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상품 생성일 검색 종료 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -894,6 +976,7 @@
                 "name": "updated_start_date",
                 "description": "@description\n상품 업데이트일 검색 시작 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -902,6 +985,7 @@
                 "name": "updated_end_date",
                 "description": "@description\n상품 업데이트일 검색 종료 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -910,6 +994,7 @@
                 "name": "limit",
                 "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -919,6 +1004,7 @@
                 "name": "offset",
                 "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -928,6 +1014,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 순서 값\n\nmobile_discount_price : 모바일 할인 판매가\npc_discount_price : PC 할인 판매가\nmobile_discount_rate : 모바일 할인율\npc_discount_rate : PC 할인율\nprice : 상품 판매가\ncreated_date : 상품 생성일\nproduct_name : 상품명\nreview_count : 상품 리뷰 수\nreview_score : 상품 리뷰 평점\nhits_count : 페이지뷰수\npopularity_score : 인기지수",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -936,6 +1023,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -953,7 +1041,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "products-nNm6xZYi",
+                      "name": "products-EWMaxzaP",
                       "properties": [
                         {
                           "name": "dcollection_product_category",
@@ -961,7 +1049,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "dcollection_product_category-XPOpIACy",
+                              "name": "dcollection_product_category-VHSmmOmz",
                               "properties": [
                                 {
                                   "name": "depth1",
@@ -1184,7 +1272,7 @@
                             "element": {
                               "type": "object",
                               "schema": {
-                                "name": "product_standard_tags-RYNXvDn0",
+                                "name": "product_standard_tags-Ot7azifY",
                                 "properties": [
                                   {
                                     "name": "standard_tags_key",
@@ -1307,6 +1395,7 @@
                 "name": "dcollection_product_category",
                 "description": "@description\nD.Collection 상품 표준 카테고리\n\n검색 가능한 값 : 중분류 또는 소분류 카테고리 번호\ndcollection_product_category \n중분류가 같은 소분류 카테고리에 한하여 소분류 카테고리는 (콤마)로 최대 10개까지 검색\n중분류 상품 카테고리와 소분류 상품 카테고리를 동시 요청 시 소분류 상품 카테고리만 검색",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1315,6 +1404,7 @@
                 "name": "product_ukey",
                 "description": "@description\n상품의 고유키\n\n특정 상점의 상품을 구분하는 고유한 값\n검색 가능한 값\n구문 : \"${mall_id}_${shop_no}_${product_no}\"\n예시 : cafe24_1_1356\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1323,6 +1413,7 @@
                 "name": "shop_name",
                 "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1331,6 +1422,7 @@
                 "name": "store_id",
                 "description": "@description\n상점 아이디\n\nproduct_ukey와 동시 사용 불가",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1339,6 +1431,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1347,6 +1440,7 @@
                 "name": "shop_grade",
                 "description": "@description\n상점 인기도\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만\n\n@constraints\n배열 최대사이즈: [4]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1355,6 +1449,7 @@
                 "name": "shop_language",
                 "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1363,6 +1458,7 @@
                 "name": "shop_currency_code",
                 "description": "@description\n결제 화폐\n\n검색 가능한 값 : ISO_4217 통화 코드\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1371,6 +1467,7 @@
                 "name": "product_name",
                 "description": "@description\n상품명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1379,6 +1476,7 @@
                 "name": "product_no",
                 "description": "@description\n상품번호\n\nproduct_ukey와 동시 사용 불가\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1387,6 +1485,7 @@
                 "name": "product_status_type",
                 "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1395,6 +1494,7 @@
                 "name": "price_min",
                 "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1403,6 +1503,7 @@
                 "name": "price_max",
                 "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1411,6 +1512,7 @@
                 "name": "is_pc_discount",
                 "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1419,6 +1521,7 @@
                 "name": "is_mobile_discount",
                 "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1427,6 +1530,7 @@
                 "name": "pc_discount_price_min",
                 "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1435,6 +1539,7 @@
                 "name": "pc_discount_price_max",
                 "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1443,6 +1548,7 @@
                 "name": "mobile_discount_price_min",
                 "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1451,6 +1557,7 @@
                 "name": "mobile_discount_price_max",
                 "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1459,6 +1566,7 @@
                 "name": "pc_discount_rate_min",
                 "description": "@description\nPC 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1467,6 +1575,7 @@
                 "name": "pc_discount_rate_max",
                 "description": "@description\nPC 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1475,6 +1584,7 @@
                 "name": "mobile_discount_rate_min",
                 "description": "@description\n모바일 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1483,6 +1593,7 @@
                 "name": "mobile_discount_rate_max",
                 "description": "@description\n모바일 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1491,6 +1602,7 @@
                 "name": "is_free_shipping",
                 "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1499,6 +1611,7 @@
                 "name": "is_international_shipping",
                 "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1507,6 +1620,7 @@
                 "name": "international_shipping_country",
                 "description": "@description\n상품이 배송될 수 있는 해외 국가",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1515,6 +1629,7 @@
                 "name": "is_free_gift",
                 "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1523,6 +1638,7 @@
                 "name": "is_coupon_discount",
                 "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1531,6 +1647,7 @@
                 "name": "review_count_min",
                 "description": "@description\n상품 리뷰 수 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1539,6 +1656,7 @@
                 "name": "review_count_max",
                 "description": "@description\n상품 리뷰 수 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1547,6 +1665,7 @@
                 "name": "review_score_min",
                 "description": "@description\n상품 리뷰 평점 최소 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1555,6 +1674,7 @@
                 "name": "review_score_max",
                 "description": "@description\n상품 리뷰 평점 최대 값\n\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1563,6 +1683,7 @@
                 "name": "brand_name",
                 "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1571,6 +1692,7 @@
                 "name": "product_standard_tags",
                 "description": "@description\nD.Collection에서 제공하는 상품 표준 태그\n\n상품 표준 태그 API를 조회하여 지원되는 태그 키와 값 확인 가능\nproduct_standard_tags 하위요소\nstandard_tag_key 태그 키\nstandard_tag_values 태그 값\n하나의 태그 키에 대한 태그 값은 ,(콤마)로 최대 10개까지 검색 가능\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1579,6 +1701,7 @@
                 "name": "product_popular_age",
                 "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1587,6 +1710,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상품 생성일 검색 시작 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1595,6 +1719,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상품 생성일 검색 종료 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1603,6 +1728,7 @@
                 "name": "updated_start_date",
                 "description": "@description\n상품 업데이트일 검색 시작 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1611,6 +1737,7 @@
                 "name": "updated_end_date",
                 "description": "@description\n상품 업데이트일 검색 종료 값\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -1640,6 +1767,7 @@
             "name": "dcollection_product_category",
             "description": "@description\nD.Collection 상품 표준 카테고리",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1648,6 +1776,7 @@
             "name": "product_ukey",
             "description": "@description\n상품의 고유키",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1656,6 +1785,7 @@
             "name": "shop_name",
             "description": "@description\n상점명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1664,6 +1794,7 @@
             "name": "store_id",
             "description": "@description\n상점 아이디",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1672,6 +1803,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1680,6 +1812,7 @@
             "name": "shop_grade",
             "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1688,6 +1821,7 @@
             "name": "shop_language",
             "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1696,6 +1830,7 @@
             "name": "shop_currency_code",
             "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1704,6 +1839,7 @@
             "name": "product_name",
             "description": "@description\n상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1712,6 +1848,7 @@
             "name": "product_no",
             "description": "@description\n상품번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1720,6 +1857,7 @@
             "name": "product_code",
             "description": "@description\n상품코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1728,6 +1866,7 @@
             "name": "product_url",
             "description": "@description\n상품 페이지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1736,6 +1875,7 @@
             "name": "product_status_type",
             "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1744,6 +1884,7 @@
             "name": "price",
             "description": "@description\n상품 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1752,6 +1893,7 @@
             "name": "pc_discount_price",
             "description": "@description\nPC 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1760,6 +1902,7 @@
             "name": "mobile_discount_price",
             "description": "@description\n모바일 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1768,6 +1911,7 @@
             "name": "is_pc_discount",
             "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1776,6 +1920,7 @@
             "name": "is_mobile_discount",
             "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1784,6 +1929,7 @@
             "name": "pc_discount_rate",
             "description": "@description\nPC 할인율",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1792,6 +1938,7 @@
             "name": "mobile_discount_rate",
             "description": "@description\n모바일 할인율",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1800,6 +1947,7 @@
             "name": "is_free_shipping",
             "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1808,6 +1956,7 @@
             "name": "is_international_shipping",
             "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1816,6 +1965,7 @@
             "name": "international_shipping_country",
             "description": "@description\n상품이 배송될 수 있는 해외 국가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1824,6 +1974,7 @@
             "name": "is_free_gift",
             "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1832,6 +1983,7 @@
             "name": "is_coupon_discount",
             "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1840,6 +1992,7 @@
             "name": "product_options",
             "description": "@description\n상품 옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1848,6 +2001,7 @@
             "name": "brand_name",
             "description": "@description\n브랜드 이름",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1856,6 +2010,7 @@
             "name": "product_standard_tags",
             "description": "@description\nD.Collection에서 제공하는 상품 표준 태그",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1864,6 +2019,7 @@
             "name": "product_popular_age",
             "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1872,6 +2028,7 @@
             "name": "detail_image",
             "description": "@description\n상세 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1880,6 +2037,7 @@
             "name": "list_image",
             "description": "@description\n목록 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1888,6 +2046,7 @@
             "name": "tiny_image",
             "description": "@description\n작은 목록 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1896,6 +2055,7 @@
             "name": "small_image",
             "description": "@description\n축소 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1904,6 +2064,7 @@
             "name": "review_count",
             "description": "@description\n상품 리뷰 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1912,6 +2073,7 @@
             "name": "review_score",
             "description": "@description\n상품 리뷰 평점",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1920,6 +2082,7 @@
             "name": "hits_count",
             "description": "@description\n페이지뷰수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1928,6 +2091,7 @@
             "name": "expiration_date",
             "description": "@description\n상품 유효기간\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1936,6 +2100,7 @@
             "name": "created_date",
             "description": "@description\n상품 생성일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1944,6 +2109,7 @@
             "name": "updated_date",
             "description": "@description\n상품 업데이트일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -1970,6 +2136,7 @@
                 "name": "limit",
                 "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1979,6 +2146,7 @@
                 "name": "offset",
                 "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -1997,7 +2165,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "standardtags-JtmsTH1D",
+                      "name": "standardtags-I3j2GlD9",
                       "properties": [
                         {
                           "name": "standard_tag_key",
@@ -2034,6 +2202,7 @@
             "name": "standard_tag_key",
             "description": "@description\n표준 태그 키",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2042,6 +2211,7 @@
             "name": "standard_tag_values",
             "description": "@description\n표준 태그 값",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2068,6 +2238,7 @@
                 "name": "store_id",
                 "description": "@description\n상점 아이디\n\n,(콤마)로 여러 건을 검색할 수 있다.",
                 "required": true,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2076,6 +2247,7 @@
                 "name": "shop_name",
                 "description": "@description\n상점명\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2084,6 +2256,7 @@
                 "name": "shop_no",
                 "description": "@description\n멀티쇼핑몰 번호\n\n,(콤마)로 여러 건을 검색할 수 있다.\n\n@constraints\n배열 최대사이즈: [3]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2092,6 +2265,7 @@
                 "name": "product_name",
                 "description": "@description\n상품명",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2100,6 +2274,7 @@
                 "name": "product_status_type",
                 "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2108,6 +2283,7 @@
                 "name": "price_min",
                 "description": "@description\n상품 판매가 검색 최소 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2116,6 +2292,7 @@
                 "name": "price_max",
                 "description": "@description\n상품 판매가 검색 최대 값\n\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2124,6 +2301,7 @@
                 "name": "is_pc_discount",
                 "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2132,6 +2310,7 @@
                 "name": "is_mobile_discount",
                 "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2140,6 +2319,7 @@
                 "name": "pc_discount_price_min",
                 "description": "@description\nPC 할인 판매가 검색 최소 값\n\nPC 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2148,6 +2328,7 @@
                 "name": "pc_discount_price_max",
                 "description": "@description\nPC 할인 판매가 검색 최대 값\n\nPC 할인 판매가가 해당 범위 이하인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2156,6 +2337,7 @@
                 "name": "mobile_discount_price_min",
                 "description": "@description\n모바일 할인 판매가 검색 최소 값\n\n모바일 할인 판매가가 해당 범위 이상인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2164,6 +2346,7 @@
                 "name": "mobile_discount_price_max",
                 "description": "@description\n모바일 할인 판매가 검색 최대 값\n\n모바일 할인 판매가가 해당 범위 이하인 상품 검색\n소수점 2째 자리까지 입력",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2172,6 +2355,7 @@
                 "name": "pc_discount_rate_min",
                 "description": "@description\nPC 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2180,6 +2364,7 @@
                 "name": "pc_discount_rate_max",
                 "description": "@description\nPC 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2188,6 +2373,7 @@
                 "name": "mobile_discount_rate_min",
                 "description": "@description\n모바일 할인율 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2196,6 +2382,7 @@
                 "name": "mobile_discount_rate_max",
                 "description": "@description\n모바일 할인율 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2204,6 +2391,7 @@
                 "name": "is_free_shipping",
                 "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2212,6 +2400,7 @@
                 "name": "is_international_shipping",
                 "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2220,6 +2409,7 @@
                 "name": "international_shipping_country",
                 "description": "@description\n상품이 배송될 수 있는 해외 국가\n\n검색 가능한 값 : ISO 3166-1 국가 코드(2자리)",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2228,6 +2418,7 @@
                 "name": "is_free_gift",
                 "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2236,6 +2427,7 @@
                 "name": "is_coupon_discount",
                 "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2244,6 +2436,7 @@
                 "name": "review_count_min",
                 "description": "@description\n상품 리뷰 수 최소 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2252,6 +2445,7 @@
                 "name": "review_count_max",
                 "description": "@description\n상품 리뷰 수 최대 값",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2260,6 +2454,7 @@
                 "name": "review_score_min",
                 "description": "@description\n상품 리뷰 평점 최소 값\n\n허용 범위 : 0.00 ~ 5.00\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이상인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2268,6 +2463,7 @@
                 "name": "review_score_max",
                 "description": "@description\n상품 리뷰 평점 최대 값\n\n허용 범위 : 0.00 ~ 5.00\n소수점 2째 자리까지 입력\n리뷰 평점이 해당 범위 이하인 상품 검색\n\n@constraints\n최소: [0]~최대: [5]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2276,6 +2472,7 @@
                 "name": "brand_name",
                 "description": "@description\n브랜드 이름\n\n브랜드 이름과 일치하는 상품 검색",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2284,6 +2481,7 @@
                 "name": "product_popular_age",
                 "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2292,6 +2490,7 @@
                 "name": "created_start_date",
                 "description": "@description\n상품 생성일 검색 시작 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2300,6 +2499,7 @@
                 "name": "created_end_date",
                 "description": "@description\n상품 생성일 검색 종료 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2308,6 +2508,7 @@
                 "name": "updated_start_date",
                 "description": "@description\n상품 업데이트일 검색 시작 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2316,6 +2517,7 @@
                 "name": "updated_end_date",
                 "description": "@description\n상품 업데이트일 검색 종료 값\n\n형식 : yyyy-mm-dd\n\n@constraints\n날짜",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 }
@@ -2324,6 +2526,7 @@
                 "name": "limit",
                 "description": "@description\n조회 결과 최대 건수\n\n\n@constraints\n최소: [1]~최대: [100]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2333,6 +2536,7 @@
                 "name": "offset",
                 "description": "@description\n조회 결과 시작 위치\n\n\n@constraints\n최소: [0]~최대: [5000]",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2342,6 +2546,7 @@
                 "name": "sort",
                 "description": "@description\n정렬 순서 값\n\nmobile_discount_price : 모바일 할인 판매가\npc_discount_price : PC 할인 판매가\nmobile_discount_rate : 모바일 할인율\npc_discount_rate : PC 할인율\nprice : 상품 판매가\ncreated_date : 상품 생성일\nproduct_name : 상품명\nreview_count : 상품 리뷰 수\nreview_score : 상품 리뷰 평점\nhits_count : 페이지뷰수\npopularity_score : 인기지수\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2351,6 +2556,7 @@
                 "name": "order",
                 "description": "@description\n정렬 순서\n\nasc : 오름차순\ndesc : 내림차순\n",
                 "required": false,
+                "embed": false,
                 "type": {
                   "type": "any"
                 },
@@ -2369,7 +2575,7 @@
                   "element": {
                     "type": "object",
                     "schema": {
-                      "name": "store_products-DFTPLJb8",
+                      "name": "store_products-iMVNdnEL",
                       "properties": [
                         {
                           "name": "dcollection_product_category",
@@ -2377,7 +2583,7 @@
                           "type": {
                             "type": "object",
                             "schema": {
-                              "name": "dcollection_product_category-4J15wao4",
+                              "name": "dcollection_product_category-8ViXDOjA",
                               "properties": [
                                 {
                                   "name": "depth1",
@@ -2687,6 +2893,7 @@
             "name": "dcollection_product_category",
             "description": "@description\nD.Collection 상품 표준 카테고리",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2695,6 +2902,7 @@
             "name": "product_ukey",
             "description": "@description\n상품의 고유키",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2703,6 +2911,7 @@
             "name": "shop_name",
             "description": "@description\n상점명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2711,6 +2920,7 @@
             "name": "store_id",
             "description": "@description\n상점 아이디",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2719,6 +2929,7 @@
             "name": "shop_no",
             "description": "@description\n멀티쇼핑몰 번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2727,6 +2938,7 @@
             "name": "shop_grade",
             "description": "@description\n상점 인기도\n\nblack : 인기지수 90 이상\npurple : 인기지수 80 이상\ngreen : 인기지수 70 이상\norange : 인기지수 70 미만",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2735,6 +2947,7 @@
             "name": "shop_language",
             "description": "@description\n상점 언어\n\nko_KR : 한국어\nen_US : 영어\nzh_CN : 중국어(간체)\nzh_TW : 중국어(번체)\nja_JP : 일본어\nvi_VN : 베트남어",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2743,6 +2956,7 @@
             "name": "shop_currency_code",
             "description": "@description\n결제 화폐\n\nKRW : ￦ 원\nUSD : $ 달러\nJPY : ¥ 엔\nPHP : ₱ 페소",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2751,6 +2965,7 @@
             "name": "product_name",
             "description": "@description\n상품명",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2759,6 +2974,7 @@
             "name": "product_no",
             "description": "@description\n상품번호",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2767,6 +2983,7 @@
             "name": "product_code",
             "description": "@description\n상품코드",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2775,6 +2992,7 @@
             "name": "product_url",
             "description": "@description\n상품 페이지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2783,6 +3001,7 @@
             "name": "product_status_type",
             "description": "@description\n상품 상태\n\nN : 신상품\nB : 반품 상품\nR : 재고 상품\nU : 중고 상품\nE : 전시 상품\nF : 리퍼 상품\nS : 스크래치 상품",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2791,6 +3010,7 @@
             "name": "price",
             "description": "@description\n상품 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2799,6 +3019,7 @@
             "name": "pc_discount_price",
             "description": "@description\nPC 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2807,6 +3028,7 @@
             "name": "mobile_discount_price",
             "description": "@description\n모바일 할인 판매가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2815,6 +3037,7 @@
             "name": "is_pc_discount",
             "description": "@description\nPC 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2823,6 +3046,7 @@
             "name": "is_mobile_discount",
             "description": "@description\n모바일 할인 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2831,6 +3055,7 @@
             "name": "pc_discount_rate",
             "description": "@description\nPC 할인율",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2839,6 +3064,7 @@
             "name": "mobile_discount_rate",
             "description": "@description\n모바일 할인율",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2847,6 +3073,7 @@
             "name": "is_free_shipping",
             "description": "@description\n무료 배송 상품 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2855,6 +3082,7 @@
             "name": "is_international_shipping",
             "description": "@description\n해외 배송 가능 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2863,6 +3091,7 @@
             "name": "international_shipping_country",
             "description": "@description\n상품이 배송될 수 있는 해외 국가",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2871,6 +3100,7 @@
             "name": "is_free_gift",
             "description": "@description\n사은품 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2879,6 +3109,7 @@
             "name": "is_coupon_discount",
             "description": "@description\n할인 쿠폰 제공 여부\n\ntrue : 사용함\nfalse : 사용안함",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2887,6 +3118,7 @@
             "name": "product_options",
             "description": "@description\n상품 옵션",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2895,6 +3127,7 @@
             "name": "brand_name",
             "description": "@description\n브랜드 이름",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2903,6 +3136,7 @@
             "name": "product_standard_tags",
             "description": "@description\nD.Collection에서 제공하는 상품 표준 태그",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2911,6 +3145,7 @@
             "name": "product_popular_age",
             "description": "@description\n상품 인기 연령대\n\nteenager : 10대\ntwenties : 20대\nthirties : 30대\nforties : 40대\netc : 기타",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2919,6 +3154,7 @@
             "name": "detail_image",
             "description": "@description\n상세 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2927,6 +3163,7 @@
             "name": "list_image",
             "description": "@description\n목록 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2935,6 +3172,7 @@
             "name": "tiny_image",
             "description": "@description\n작은 목록 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2943,6 +3181,7 @@
             "name": "small_image",
             "description": "@description\n축소 이미지 URL",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2951,6 +3190,7 @@
             "name": "review_count",
             "description": "@description\n상품 리뷰 수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2959,6 +3199,7 @@
             "name": "review_score",
             "description": "@description\n상품 리뷰 평점",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2967,6 +3208,7 @@
             "name": "hits_count",
             "description": "@description\n페이지뷰수",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2975,6 +3217,7 @@
             "name": "expiration_date",
             "description": "@description\n상품 유효기간\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2983,6 +3226,7 @@
             "name": "created_date",
             "description": "@description\n상품 생성일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }
@@ -2991,6 +3235,7 @@
             "name": "updated_date",
             "description": "@description\n상품 업데이트일\n\n@constraints\n날짜",
             "required": false,
+            "embed": false,
             "type": {
               "type": "any"
             }

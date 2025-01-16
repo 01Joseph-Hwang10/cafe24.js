@@ -24,7 +24,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllAdeffectAddetails(
       request: ListAllAdeffectAddetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllAdeffectAddetailsRequestFields,
+        ListAllAdeffectAddetailsRequestEmbeds
+      >,
     ): Promise<ListAllAdeffectAddetailsResponse> {
       return self.createRequest("GET", "/adeffect/addetails", request, options);
     },
@@ -46,7 +49,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllCartsAction(
       request: ListAllCartsActionRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllCartsActionRequestFields,
+        ListAllCartsActionRequestEmbeds
+      >,
     ): Promise<ListAllCartsActionResponse> {
       return self.createRequest("GET", "/carts/action", request, options);
     },
@@ -68,7 +74,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllMembersSales(
       request: ListAllMembersSalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllMembersSalesRequestFields,
+        ListAllMembersSalesRequestEmbeds
+      >,
     ): Promise<ListAllMembersSalesResponse> {
       return self.createRequest("GET", "/members/sales", request, options);
     },
@@ -90,7 +99,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllPagesView(
       request: ListAllPagesViewRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllPagesViewRequestFields,
+        ListAllPagesViewRequestEmbeds
+      >,
     ): Promise<ListAllPagesViewResponse> {
       return self.createRequest("GET", "/pages/view", request, options);
     },
@@ -109,7 +121,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsCategorydetails(
       request: ListAllProductsCategorydetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllProductsCategorydetailsRequestFields,
+        ListAllProductsCategorydetailsRequestEmbeds
+      >,
     ): Promise<ListAllProductsCategorydetailsResponse> {
       return self.createRequest(
         "GET",
@@ -142,7 +157,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllProductsSales(
       request: ListAllProductsSalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllProductsSalesRequestFields,
+        ListAllProductsSalesRequestEmbeds
+      >,
     ): Promise<ListAllProductsSalesResponse> {
       return self.createRequest("GET", "/products/sales", request, options);
     },
@@ -167,7 +185,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     dataProductHitsAnalysisApi(
       request: DataProductHitsAnalysisApiRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        DataProductHitsAnalysisApiRequestFields,
+        DataProductHitsAnalysisApiRequestEmbeds
+      >,
     ): Promise<DataProductHitsAnalysisApiResponse> {
       return self.createRequest("GET", "/products/view", request, options);
     },
@@ -186,7 +207,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesOrderdetails(
       request: ListAllSalesOrderdetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllSalesOrderdetailsRequestFields,
+        ListAllSalesOrderdetailsRequestEmbeds
+      >,
     ): Promise<ListAllSalesOrderdetailsResponse> {
       return self.createRequest("GET", "/sales/orderdetails", request, options);
     },
@@ -211,7 +235,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPaymethods(
       request: ListAllSalesPaymethodsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllSalesPaymethodsRequestFields,
+        ListAllSalesPaymethodsRequestEmbeds
+      >,
     ): Promise<ListAllSalesPaymethodsResponse> {
       return self.createRequest("GET", "/sales/paymethods", request, options);
     },
@@ -241,7 +268,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesPervisitors(
       request: ListAllSalesPervisitorsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllSalesPervisitorsRequestFields,
+        ListAllSalesPervisitorsRequestEmbeds
+      >,
     ): Promise<ListAllSalesPervisitorsResponse> {
       return self.createRequest("GET", "/sales/pervisitors", request, options);
     },
@@ -269,7 +299,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllSalesTimes(
       request: ListAllSalesTimesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllSalesTimesRequestFields,
+        ListAllSalesTimesRequestEmbeds
+      >,
     ): Promise<ListAllSalesTimesResponse> {
       return self.createRequest("GET", "/sales/times", request, options);
     },
@@ -293,7 +326,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsDailyactive(
       request: ListAllVisitorsDailyactiveRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitorsDailyactiveRequestFields,
+        ListAllVisitorsDailyactiveRequestEmbeds
+      >,
     ): Promise<ListAllVisitorsDailyactiveResponse> {
       return self.createRequest(
         "GET",
@@ -320,7 +356,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsPageview(
       request: ListAllVisitorsPageviewRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitorsPageviewRequestFields,
+        ListAllVisitorsPageviewRequestEmbeds
+      >,
     ): Promise<ListAllVisitorsPageviewResponse> {
       return self.createRequest("GET", "/visitors/pageview", request, options);
     },
@@ -344,7 +383,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsUnique(
       request: ListAllVisitorsUniqueRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitorsUniqueRequestFields,
+        ListAllVisitorsUniqueRequestEmbeds
+      >,
     ): Promise<ListAllVisitorsUniqueResponse> {
       return self.createRequest("GET", "/visitors/unique", request, options);
     },
@@ -378,7 +420,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitorsView(
       request: ListAllVisitorsViewRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitorsViewRequestFields,
+        ListAllVisitorsViewRequestEmbeds
+      >,
     ): Promise<ListAllVisitorsViewResponse> {
       return self.createRequest("GET", "/visitors/view", request, options);
     },
@@ -397,7 +442,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdkeywordsales(
       request: ListAllVisitpathsAdkeywordsalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsAdkeywordsalesRequestFields,
+        ListAllVisitpathsAdkeywordsalesRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsAdkeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -436,7 +484,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAds(
       request: ListAllVisitpathsAdsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsAdsRequestFields,
+        ListAllVisitpathsAdsRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsAdsResponse> {
       return self.createRequest("GET", "/visitpaths/ads", request, options);
     },
@@ -461,7 +512,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsAdsales(
       request: ListAllVisitpathsAdsalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsAdsalesRequestFields,
+        ListAllVisitpathsAdsalesRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsAdsalesResponse> {
       return self.createRequest("GET", "/visitpaths/adsales", request, options);
     },
@@ -491,7 +545,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomains(
       request: ListAllVisitpathsDomainsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsDomainsRequestFields,
+        ListAllVisitpathsDomainsRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsDomainsResponse> {
       return self.createRequest("GET", "/visitpaths/domains", request, options);
     },
@@ -519,7 +576,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsDomainsales(
       request: ListAllVisitpathsDomainsalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsDomainsalesRequestFields,
+        ListAllVisitpathsDomainsalesRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsDomainsalesResponse> {
       return self.createRequest(
         "GET",
@@ -543,7 +603,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeyworddetails(
       request: ListAllVisitpathsKeyworddetailsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsKeyworddetailsRequestFields,
+        ListAllVisitpathsKeyworddetailsRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsKeyworddetailsResponse> {
       return self.createRequest(
         "GET",
@@ -570,7 +633,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywords(
       request: ListAllVisitpathsKeywordsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsKeywordsRequestFields,
+        ListAllVisitpathsKeywordsRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsKeywordsResponse> {
       return self.createRequest(
         "GET",
@@ -597,7 +663,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsKeywordsales(
       request: ListAllVisitpathsKeywordsalesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsKeywordsalesRequestFields,
+        ListAllVisitpathsKeywordsalesRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsKeywordsalesResponse> {
       return self.createRequest(
         "GET",
@@ -625,7 +694,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     listAllVisitpathsUrls(
       request: ListAllVisitpathsUrlsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        ListAllVisitpathsUrlsRequestFields,
+        ListAllVisitpathsUrlsRequestEmbeds
+      >,
     ): Promise<ListAllVisitpathsUrlsResponse> {
       return self.createRequest("GET", "/visitpaths/urls", request, options);
     },
@@ -2437,6 +2509,315 @@ interface ListAllVisitpathsUrlsRequest {
    */
   order?: any;
 }
+
+type ListAllAdeffectAddetailsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllCartsActionRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllMembersSalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit";
+
+type ListAllPagesViewRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllProductsCategorydetailsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllProductsSalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type DataProductHitsAnalysisApiRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllSalesOrderdetailsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "orderId"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllSalesPaymethodsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllSalesPervisitorsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit";
+
+type ListAllSalesTimesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitorsDailyactiveRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitorsPageviewRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "formatType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitorsUniqueRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitorsViewRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "formatType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsAdkeywordsalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsAdsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsAdsalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsDomainsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsDomainsalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsKeyworddetailsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsKeywordsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsKeywordsalesRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllVisitpathsUrlsRequestFields =
+  | "mallId"
+  | "shopNo"
+  | "startDate"
+  | "endDate"
+  | "deviceType"
+  | "limit"
+  | "offset"
+  | "sort"
+  | "order";
+
+type ListAllAdeffectAddetailsRequestEmbeds = string;
+
+type ListAllCartsActionRequestEmbeds = string;
+
+type ListAllMembersSalesRequestEmbeds = string;
+
+type ListAllPagesViewRequestEmbeds = string;
+
+type ListAllProductsCategorydetailsRequestEmbeds = string;
+
+type ListAllProductsSalesRequestEmbeds = string;
+
+type DataProductHitsAnalysisApiRequestEmbeds = string;
+
+type ListAllSalesOrderdetailsRequestEmbeds = string;
+
+type ListAllSalesPaymethodsRequestEmbeds = string;
+
+type ListAllSalesPervisitorsRequestEmbeds = string;
+
+type ListAllSalesTimesRequestEmbeds = string;
+
+type ListAllVisitorsDailyactiveRequestEmbeds = string;
+
+type ListAllVisitorsPageviewRequestEmbeds = string;
+
+type ListAllVisitorsUniqueRequestEmbeds = string;
+
+type ListAllVisitorsViewRequestEmbeds = string;
+
+type ListAllVisitpathsAdkeywordsalesRequestEmbeds = string;
+
+type ListAllVisitpathsAdsRequestEmbeds = string;
+
+type ListAllVisitpathsAdsalesRequestEmbeds = string;
+
+type ListAllVisitpathsDomainsRequestEmbeds = string;
+
+type ListAllVisitpathsDomainsalesRequestEmbeds = string;
+
+type ListAllVisitpathsKeyworddetailsRequestEmbeds = string;
+
+type ListAllVisitpathsKeywordsRequestEmbeds = string;
+
+type ListAllVisitpathsKeywordsalesRequestEmbeds = string;
+
+type ListAllVisitpathsUrlsRequestEmbeds = string;
 
 /**
  * @example

@@ -32,7 +32,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsByCategoryRequestFields,
+        RetrieveAListOfProductsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -52,7 +55,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsByCategoryRequestFields,
+        RetrieveACountOfProductsByCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -84,7 +90,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsInMainCategoryRequestFields,
+        RetrieveAListOfProductsInMainCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -119,7 +128,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductsRequestFields,
+        RetrieveAListOfProductsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/v2/products", request, options);
     },
@@ -134,7 +146,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductsRequestFields,
+        RetrieveACountOfProductsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
         "GET",
@@ -155,7 +170,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductResourceRequestFields,
+        RetrieveAProductResourceRequestEmbeds
+      >,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
         "GET",
@@ -186,7 +204,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductDecorationImagesRequestFields,
+        RetrieveAListOfProductDecorationImagesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
         "GET",
@@ -218,7 +239,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductDiscountedPriceRequestFields,
+        RetrieveAProductDiscountedPriceRequestEmbeds
+      >,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
         "GET",
@@ -250,7 +274,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductViewsRequestFields,
+        RetrieveACountOfProductViewsRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
         "GET",
@@ -278,7 +305,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductIconsRequestFields,
+        RetrieveAListOfProductIconsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
         "GET",
@@ -312,7 +342,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductOptionsRequestFields,
+        RetrieveAListOfProductOptionsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
         "GET",
@@ -345,7 +378,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductVariantsRequestFields,
+        RetrieveAListOfProductVariantsRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
         "GET",
@@ -366,7 +402,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductVariantRequestFields,
+        RetrieveAProductVariantRequestEmbeds
+      >,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -396,7 +435,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveInventoryDetailsOfAProductVariantRequestFields,
+        RetrieveInventoryDetailsOfAProductVariantRequestEmbeds
+      >,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
         "GET",
@@ -425,7 +467,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveTheDetailsOfAProduct(
       request: RetrieveTheDetailsOfAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveTheDetailsOfAProductRequestFields,
+        RetrieveTheDetailsOfAProductRequestEmbeds
+      >,
     ): Promise<RetrieveTheDetailsOfAProductResponse> {
       return self.createRequest(
         "GET",
@@ -458,7 +503,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAListOfProductCategoriesRequestFields,
+        RetrieveAListOfProductCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/categories", request, options);
     },
@@ -473,7 +521,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfProductCategoriesRequestFields,
+        RetrieveACountOfProductCategoriesRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
         "GET",
@@ -494,7 +545,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveAProductCategoryRequestFields,
+        RetrieveAProductCategoryRequestEmbeds
+      >,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
         "GET",
@@ -524,7 +578,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAShoppingCart(
       request: CreateAShoppingCartRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        CreateAShoppingCartRequestFields,
+        CreateAShoppingCartRequestEmbeds
+      >,
     ): Promise<CreateAShoppingCartResponse> {
       return self.createRequest("POST", "/api/v2/carts", request, options);
     },
@@ -550,7 +607,10 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
-      options?: base.RequestOptions,
+      options?: base.RequestOptions<
+        RetrieveACountOfCartsContainingAProductRequestFields,
+        RetrieveACountOfCartsContainingAProductRequestEmbeds
+      >,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
         "GET",
@@ -681,49 +741,6 @@ interface RetrieveAListOfProductsInMainCategoryRequest {
 }
 
 interface RetrieveAListOfProductsRequest {
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  channeldiscountprices?: any;
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 상품 옵션 리소스
-   */
-  options?: any;
-  /**
-   * @description
-   * 품목 리소스
-   *
-   * 상품당 품목정보를 100개까지 조회할 수 있음.
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  variants?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
-  /**
-   * @description
-   * 상품 조회수 리소스
-   */
-  hits?: any;
   /**
    * @description
    * 멀티쇼핑몰 번호
@@ -1593,79 +1610,6 @@ interface RetrieveAProductResourceRequest {
    * 조회하고자 하는 상품의 번호
    */
   productNo: any;
-  /**
-   * @description
-   * 품목 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  variants?: any;
-  /**
-   * @description
-   * 메모 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  memos?: any;
-  /**
-   * @description
-   * 상품 조회수 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  hits?: any;
-  /**
-   * @description
-   * 상품 Seo 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  seo?: any;
-  /**
-   * @description
-   * 상품 태그 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  tags?: any;
-  /**
-   * @description
-   * 상품 옵션 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  options?: any;
-  /**
-   * @description
-   * 상품 할인판매가 리소스
-   */
-  discountprice?: any;
-  /**
-   * @description
-   * 꾸미기 이미지 리소스
-   */
-  decorationimages?: any;
-  /**
-   * @description
-   * 혜택 리소스
-   */
-  benefits?: any;
-  /**
-   * @description
-   * 추가 이미지 리소스
-   */
-  additionalimages?: any;
-  /**
-   * @description
-   * 사용자 정의 속성
-   */
-  customProperties?: any;
 }
 
 interface RetrieveAListOfProductDecorationImagesRequest {
@@ -1764,16 +1708,6 @@ interface RetrieveAListOfProductVariantsRequest {
    * 시스템에서 부여한 상품의 번호. 상품 번호는 쇼핑몰 내에서 중복되지 않는다.
    */
   productNo: any;
-  /**
-   * @description
-   * 재고 리소스
-   *
-   * 품목의 재고 리소스
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   *
-   * ,(콤마)로 여러 건을 검색할 수 있다.
-   */
-  inventories?: any;
 }
 
 interface RetrieveAProductVariantRequest {
@@ -1800,14 +1734,6 @@ interface RetrieveAProductVariantRequest {
    * 형식 : [A-Z0-9],글자수 최소: [12자]~최대: [12자]
    */
   variantCode: any;
-  /**
-   * @description
-   * 재고 리소스
-   *
-   *
-   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
-   */
-  inventories?: any;
 }
 
 interface RetrieveInventoryDetailsOfAProductVariantRequest {
@@ -2120,6 +2046,383 @@ interface RetrieveACountOfCartsContainingAProductRequest {
    */
   productNo: any;
 }
+
+type RetrieveAListOfProductsByCategoryRequestFields =
+  | "mobile"
+  | "shopNo"
+  | "categoryNo"
+  | "displayGroup"
+  | "limit"
+  | "offset";
+
+type RetrieveACountOfProductsByCategoryRequestFields =
+  | "shopNo"
+  | "categoryNo"
+  | "displayGroup";
+
+type RetrieveAListOfProductsInMainCategoryRequestFields =
+  | "mobile"
+  | "shopNo"
+  | "displayGroup"
+  | "limit"
+  | "offset";
+
+type RetrieveAListOfProductsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productName"
+  | "productCode"
+  | "brandCode"
+  | "manufacturerCode"
+  | "supplierCode"
+  | "trendCode"
+  | "productTag"
+  | "customProductCode"
+  | "customVariantCode"
+  | "priceMin"
+  | "priceMax"
+  | "retailPriceMin"
+  | "retailPriceMax"
+  | "supplyPriceMin"
+  | "supplyPriceMax"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate"
+  | "category"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "productCondition"
+  | "originPlaceValue"
+  | "stockQuantityMax"
+  | "stockQuantityMin"
+  | "stockSafetyMax"
+  | "stockSafetyMin"
+  | "productWeight"
+  | "classificationCode"
+  | "useInventory"
+  | "categoryUnapplied"
+  | "includeSubCategory"
+  | "additionalInformationKey"
+  | "additionalInformationValue"
+  | "approveStatus"
+  | "sinceProductNo"
+  | "productBundle"
+  | "optionType"
+  | "marketSync"
+  | "sort"
+  | "order"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfProductsRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "display"
+  | "selling"
+  | "productName"
+  | "productCode"
+  | "brandCode"
+  | "manufacturerCode"
+  | "supplierCode"
+  | "trendCode"
+  | "productTag"
+  | "customProductCode"
+  | "customVariantCode"
+  | "priceMin"
+  | "priceMax"
+  | "retailPriceMin"
+  | "retailPriceMax"
+  | "supplyPriceMin"
+  | "supplyPriceMax"
+  | "createdStartDate"
+  | "createdEndDate"
+  | "updatedStartDate"
+  | "updatedEndDate"
+  | "category"
+  | "engProductName"
+  | "supplyProductName"
+  | "internalProductName"
+  | "modelName"
+  | "productCondition"
+  | "originPlaceValue"
+  | "stockQuantityMax"
+  | "stockQuantityMin"
+  | "stockSafetyMax"
+  | "stockSafetyMin"
+  | "productWeight"
+  | "classificationCode"
+  | "useInventory"
+  | "categoryUnapplied"
+  | "includeSubCategory"
+  | "additionalInformationKey"
+  | "additionalInformationValue"
+  | "approveStatus"
+  | "sinceProductNo"
+  | "productBundle"
+  | "optionType"
+  | "marketSync";
+
+type RetrieveAProductResourceRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductDecorationImagesRequestFields =
+  | "shopNo"
+  | "productNo";
+
+type RetrieveAProductDiscountedPriceRequestFields = "shopNo" | "productNo";
+
+type RetrieveACountOfProductViewsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductIconsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductOptionsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAListOfProductVariantsRequestFields = "shopNo" | "productNo";
+
+type RetrieveAProductVariantRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode";
+
+type RetrieveInventoryDetailsOfAProductVariantRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "variantCode";
+
+type RetrieveTheDetailsOfAProductRequestFields =
+  | "shopNo"
+  | "productNo"
+  | "mobile";
+
+type RetrieveAListOfProductCategoriesRequestFields =
+  | "shopNo"
+  | "categoryDepth"
+  | "categoryNo"
+  | "parentCategoryNo"
+  | "categoryName"
+  | "offset"
+  | "limit";
+
+type RetrieveACountOfProductCategoriesRequestFields =
+  | "shopNo"
+  | "categoryDepth"
+  | "categoryNo"
+  | "parentCategoryNo"
+  | "categoryName";
+
+type RetrieveAProductCategoryRequestFields = "shopNo" | "categoryNo";
+
+type CreateAShoppingCartRequestFields =
+  | "shopNo"
+  | "variants"
+  | "addtionalProducts"
+  | "productNo"
+  | "basketType"
+  | "duplicatedItemCheck"
+  | "prepaidShippingFee";
+
+type RetrieveACountOfCartsContainingAProductRequestFields =
+  | "shopNo"
+  | "productNo";
+
+type RetrieveAListOfProductsByCategoryRequestEmbeds = string;
+
+type RetrieveACountOfProductsByCategoryRequestEmbeds = string;
+
+type RetrieveAListOfProductsInMainCategoryRequestEmbeds = string;
+
+type RetrieveAListOfProductsRequestEmbeds =
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+
+  | "channeldiscountprices"
+
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 상품 옵션 리소스
+   */
+  | "options"
+
+  /**
+   * @description
+   * 품목 리소스
+   *
+   * 상품당 품목정보를 100개까지 조회할 수 있음.
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "variants"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages"
+
+  /**
+   * @description
+   * 상품 조회수 리소스
+   */
+  | "hits";
+
+type RetrieveACountOfProductsRequestEmbeds = string;
+
+type RetrieveAProductResourceRequestEmbeds =
+  /**
+   * @description
+   * 품목 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+
+  | "variants"
+
+  /**
+   * @description
+   * 메모 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "memos"
+
+  /**
+   * @description
+   * 상품 조회수 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "hits"
+
+  /**
+   * @description
+   * 상품 Seo 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "seo"
+
+  /**
+   * @description
+   * 상품 태그 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "tags"
+
+  /**
+   * @description
+   * 상품 옵션 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+  | "options"
+
+  /**
+   * @description
+   * 상품 할인판매가 리소스
+   */
+  | "discountprice"
+
+  /**
+   * @description
+   * 꾸미기 이미지 리소스
+   */
+  | "decorationimages"
+
+  /**
+   * @description
+   * 혜택 리소스
+   */
+  | "benefits"
+
+  /**
+   * @description
+   * 추가 이미지 리소스
+   */
+  | "additionalimages"
+
+  /**
+   * @description
+   * 사용자 정의 속성
+   */
+  | "customProperties";
+
+type RetrieveAListOfProductDecorationImagesRequestEmbeds = string;
+
+type RetrieveAProductDiscountedPriceRequestEmbeds = string;
+
+type RetrieveACountOfProductViewsRequestEmbeds = string;
+
+type RetrieveAListOfProductIconsRequestEmbeds = string;
+
+type RetrieveAListOfProductOptionsRequestEmbeds = string;
+
+type RetrieveAListOfProductVariantsRequestEmbeds =
+  /**
+   * @description
+   * 재고 리소스
+   *
+   * 품목의 재고 리소스
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   *
+   * ,(콤마)로 여러 건을 검색할 수 있다.
+   */
+
+  "inventories";
+
+type RetrieveAProductVariantRequestEmbeds =
+  /**
+   * @description
+   * 재고 리소스
+   *
+   *
+   * 조회시 Embed 파라메터를 사용하여 조회할 수 있다.
+   */
+
+  "inventories";
+
+type RetrieveInventoryDetailsOfAProductVariantRequestEmbeds = string;
+
+type RetrieveTheDetailsOfAProductRequestEmbeds = string;
+
+type RetrieveAListOfProductCategoriesRequestEmbeds = string;
+
+type RetrieveACountOfProductCategoriesRequestEmbeds = string;
+
+type RetrieveAProductCategoryRequestEmbeds = string;
+
+type CreateAShoppingCartRequestEmbeds = string;
+
+type RetrieveACountOfCartsContainingAProductRequestEmbeds = string;
 
 /**
  * @example

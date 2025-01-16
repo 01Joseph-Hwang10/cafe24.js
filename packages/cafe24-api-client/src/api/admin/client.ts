@@ -49,6 +49,9 @@ export interface ClientOptions extends base.ClientOptions {
   accessToken?: string;
 }
 
-export interface RequestOptions extends base.RequestOptions {
+export interface RequestOptions<
+  Field extends string = string,
+  Embed extends string = string,
+> extends base.RequestOptions<Field, Embed> {
   accessToken?: string;
 }

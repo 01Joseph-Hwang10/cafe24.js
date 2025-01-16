@@ -6,21 +6,39 @@ export class TypescriptEndpointMethodWriter {
   protected readonly jsdoc = new TypescriptJSDocWriter();
 
   write(opts: {
-    name: string;
     method: string;
     path: string;
-    request: string;
-    response: string;
     description?: string;
+    names: {
+      method: string;
+      request: string;
+      response: string;
+      fields: string;
+      embeds: string;
+    };
   }) {
-    const { name, method, path, request, response, description } = opts;
+    const {
+      method: httpMethod,
+      path,
+      description,
+      names: {
+        method: methodName,
+        request: requestTypeName,
+        response: responseTypeName,
+        fields: fieldsTypeName,
+        embeds: embedsTypeName,
+      },
+    } = opts;
     return (
       getOrEmpty(description && this.jsdoc.write(description)) +
-      `${name}(\n` +
-      `  request: ${request},\n` +
-      `  options?: base.RequestOptions,\n` +
-      `): Promise<${response}> {\n` +
-      `  return self.createRequest("${method}", "${path}", request, options);\n` +
+      `${methodName}(\n` +
+      `  request: ${requestTypeName},\n` +
+      `  options?: base.RequestOptions<\n` +
+      `    ${fieldsTypeName},\n` +
+      `    ${embedsTypeName},\n` +
+      `  >,\n` +
+      `): Promise<${responseTypeName}> {\n` +
+      `  return self.createRequest("${httpMethod}", "${path}", request, options);\n` +
       `},\n`
     );
   }
