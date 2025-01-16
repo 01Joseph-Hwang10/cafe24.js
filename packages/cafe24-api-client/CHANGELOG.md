@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.0...cafe24-api-client-v1.5.1) (2025-01-16)
+
+
+### Bug Fixes
+
+* typed fields ([2d45ad5](https://github.com/01Joseph-Hwang10/cafe24.js/commit/2d45ad52d60ee39344e96c4b509ea29e91ac8fd1))
+
 ## [1.5.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.4.1...cafe24-api-client-v1.5.0) (2025-01-16)
 
 
