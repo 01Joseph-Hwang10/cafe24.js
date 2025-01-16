@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.2...cafe24-api-client-v1.5.3) (2025-01-16)
+
+
+### Bug Fixes
+
+* auth request formatting issue ([3b36e2d](https://github.com/01Joseph-Hwang10/cafe24.js/commit/3b36e2de7c4d22c1564facba67f28597afc1eb4f))
+* cafe24api error ([a632cba](https://github.com/01Joseph-Hwang10/cafe24.js/commit/a632cba7d3cc1d6279b7459d1d8211246635d715))
+
 ## [1.5.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.1...cafe24-api-client-v1.5.2) (2025-01-16)
 
 
