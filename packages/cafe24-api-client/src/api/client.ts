@@ -11,7 +11,7 @@ import {
 } from "../utils";
 import { map } from "fp-ts/lib/Array";
 import { Cafe24APIError } from "../error";
-import { snake } from "case";
+import { camel } from "case";
 
 /**
  * @description
@@ -194,7 +194,7 @@ export class Client {
       path.split("/"),
       map(
         segment =>
-          (segment.startsWith("{") && payload[snake(segment.slice(1, -1))]) ||
+          (segment.startsWith("{") && payload[camel(segment.slice(1, -1))]) ||
           segment,
       ),
       segments => segments.join("/"),
