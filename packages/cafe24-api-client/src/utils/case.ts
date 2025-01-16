@@ -4,12 +4,13 @@ export class ObjectCaseConverter {
   constructor(protected readonly convertCase: CaseConverter) {}
 
   convert<T = any>(obj: T): T {
-    if (typeof obj !== "object") {
-      return obj;
-    }
-
     if (Array.isArray(obj)) {
       return obj.map(item => this.convert(item)) as any;
+    }
+
+    const isObject = typeof obj === "object" && obj !== null;
+    if (!isObject) {
+      return obj;
     }
 
     const newObj: any = {};
