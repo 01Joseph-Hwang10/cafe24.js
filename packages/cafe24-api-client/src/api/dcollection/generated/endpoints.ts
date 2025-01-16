@@ -25,8 +25,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfStores(
       request: RetrieveAListOfStoresRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfStoresRequestFields,
-        RetrieveAListOfStoresRequestEmbeds
+        RetrieveAListOfStoresFields,
+        RetrieveAListOfStoresEmbeds
       >,
     ): Promise<RetrieveAListOfStoresResponse> {
       return self.createRequest("GET", "/api/shops", request, options);
@@ -47,8 +47,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsRequestFields,
-        RetrieveAListOfProductsRequestEmbeds
+        RetrieveAListOfProductsFields,
+        RetrieveAListOfProductsEmbeds
       >,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/products", request, options);
@@ -62,8 +62,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheNumberOfProductItems(
       request: RetrieveTheNumberOfProductItemsRequest,
       options?: base.RequestOptions<
-        RetrieveTheNumberOfProductItemsRequestFields,
-        RetrieveTheNumberOfProductItemsRequestEmbeds
+        RetrieveTheNumberOfProductItemsFields,
+        RetrieveTheNumberOfProductItemsEmbeds
       >,
     ): Promise<RetrieveTheNumberOfProductItemsResponse> {
       return self.createRequest("GET", "/api/products/count", request, options);
@@ -84,8 +84,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductTagProperties(
       request: RetrieveAListOfProductTagPropertiesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductTagPropertiesRequestFields,
-        RetrieveAListOfProductTagPropertiesRequestEmbeds
+        RetrieveAListOfProductTagPropertiesFields,
+        RetrieveAListOfProductTagPropertiesEmbeds
       >,
     ): Promise<RetrieveAListOfProductTagPropertiesResponse> {
       return self.createRequest(
@@ -111,8 +111,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsWithMallId(
       request: RetrieveAListOfProductsWithMallIdRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsWithMallIdRequestFields,
-        RetrieveAListOfProductsWithMallIdRequestEmbeds
+        RetrieveAListOfProductsWithMallIdFields,
+        RetrieveAListOfProductsWithMallIdEmbeds
       >,
     ): Promise<RetrieveAListOfProductsWithMallIdResponse> {
       return self.createRequest("GET", "/api/storeproducts", request, options);
@@ -1440,167 +1440,15 @@ interface RetrieveAListOfProductsWithMallIdRequest {
   order?: any;
 }
 
-type RetrieveAListOfStoresRequestFields =
-  | "dcollectionStoreCategory"
-  | "shopName"
-  | "storeId"
-  | "shopNo"
-  | "shopCurrencyCode"
-  | "shopLanguage"
-  | "shopGrade"
-  | "shopPopularAge"
-  | "shopSex"
-  | "shopRegion"
-  | "shopTags"
-  | "useCafe24pay"
-  | "useNaverpay"
-  | "useEMS"
-  | "socialLogins"
-  | "shippingFeeType"
-  | "benefits"
-  | "globalPaymentType"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "limit"
-  | "offset"
-  | "sort"
-  | "order";
+type RetrieveAListOfStoresEmbeds = string;
 
-type RetrieveAListOfProductsRequestFields =
-  | "dcollectionProductCategory"
-  | "productUkey"
-  | "shopName"
-  | "storeId"
-  | "shopNo"
-  | "shopGrade"
-  | "shopLanguage"
-  | "shopCurrencyCode"
-  | "productName"
-  | "productNo"
-  | "productStatusType"
-  | "priceMin"
-  | "priceMax"
-  | "isPcDiscount"
-  | "isMobileDiscount"
-  | "pcDiscountPriceMin"
-  | "pcDiscountPriceMax"
-  | "mobileDiscountPriceMin"
-  | "mobileDiscountPriceMax"
-  | "pcDiscountRateMin"
-  | "pcDiscountRateMax"
-  | "mobileDiscountRateMin"
-  | "mobileDiscountRateMax"
-  | "isFreeShipping"
-  | "isInternationalShipping"
-  | "internationalShippingCountry"
-  | "isFreeGift"
-  | "isCouponDiscount"
-  | "reviewCountMin"
-  | "reviewCountMax"
-  | "reviewScoreMin"
-  | "reviewScoreMax"
-  | "brandName"
-  | "productStandardTags"
-  | "productPopularAge"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "limit"
-  | "offset"
-  | "sort"
-  | "order";
+type RetrieveAListOfProductsEmbeds = string;
 
-type RetrieveTheNumberOfProductItemsRequestFields =
-  | "dcollectionProductCategory"
-  | "productUkey"
-  | "shopName"
-  | "storeId"
-  | "shopNo"
-  | "shopGrade"
-  | "shopLanguage"
-  | "shopCurrencyCode"
-  | "productName"
-  | "productNo"
-  | "productStatusType"
-  | "priceMin"
-  | "priceMax"
-  | "isPcDiscount"
-  | "isMobileDiscount"
-  | "pcDiscountPriceMin"
-  | "pcDiscountPriceMax"
-  | "mobileDiscountPriceMin"
-  | "mobileDiscountPriceMax"
-  | "pcDiscountRateMin"
-  | "pcDiscountRateMax"
-  | "mobileDiscountRateMin"
-  | "mobileDiscountRateMax"
-  | "isFreeShipping"
-  | "isInternationalShipping"
-  | "internationalShippingCountry"
-  | "isFreeGift"
-  | "isCouponDiscount"
-  | "reviewCountMin"
-  | "reviewCountMax"
-  | "reviewScoreMin"
-  | "reviewScoreMax"
-  | "brandName"
-  | "productStandardTags"
-  | "productPopularAge"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate";
+type RetrieveTheNumberOfProductItemsEmbeds = string;
 
-type RetrieveAListOfProductTagPropertiesRequestFields = "limit" | "offset";
+type RetrieveAListOfProductTagPropertiesEmbeds = string;
 
-type RetrieveAListOfProductsWithMallIdRequestFields =
-  | "storeId"
-  | "shopName"
-  | "shopNo"
-  | "productName"
-  | "productStatusType"
-  | "priceMin"
-  | "priceMax"
-  | "isPcDiscount"
-  | "isMobileDiscount"
-  | "pcDiscountPriceMin"
-  | "pcDiscountPriceMax"
-  | "mobileDiscountPriceMin"
-  | "mobileDiscountPriceMax"
-  | "pcDiscountRateMin"
-  | "pcDiscountRateMax"
-  | "mobileDiscountRateMin"
-  | "mobileDiscountRateMax"
-  | "isFreeShipping"
-  | "isInternationalShipping"
-  | "internationalShippingCountry"
-  | "isFreeGift"
-  | "isCouponDiscount"
-  | "reviewCountMin"
-  | "reviewCountMax"
-  | "reviewScoreMin"
-  | "reviewScoreMax"
-  | "brandName"
-  | "productPopularAge"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "limit"
-  | "offset"
-  | "sort"
-  | "order";
-
-type RetrieveAListOfStoresRequestEmbeds = string;
-
-type RetrieveAListOfProductsRequestEmbeds = string;
-
-type RetrieveTheNumberOfProductItemsRequestEmbeds = string;
-
-type RetrieveAListOfProductTagPropertiesRequestEmbeds = string;
-
-type RetrieveAListOfProductsWithMallIdRequestEmbeds = string;
+type RetrieveAListOfProductsWithMallIdEmbeds = string;
 
 /**
  * @example
@@ -2058,3 +1906,17 @@ interface RetrieveAListOfProductsWithMallIdResponse {
     updatedDate: Cafe24Datetime;
   }>;
 }
+
+type RetrieveAListOfStoresFields =
+  keyof RetrieveAListOfStoresResponse["shops"][number];
+
+type RetrieveAListOfProductsFields =
+  keyof RetrieveAListOfProductsResponse["products"][number];
+
+type RetrieveTheNumberOfProductItemsFields = string;
+
+type RetrieveAListOfProductTagPropertiesFields =
+  keyof RetrieveAListOfProductTagPropertiesResponse["standardtags"][number];
+
+type RetrieveAListOfProductsWithMallIdFields =
+  keyof RetrieveAListOfProductsWithMallIdResponse["store_products"][number];

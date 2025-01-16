@@ -9,6 +9,8 @@ import {
   getOrEmpty,
   Schema,
   TypescriptJSDocWriter,
+  ObjectType,
+  ArrayType,
 } from "internal";
 import { map } from "fp-ts/lib/Array";
 import { camel, pascal } from "case";
@@ -16,44 +18,16 @@ import { camel, pascal } from "case";
 export function generateEndpointsModule(spec: APISpec) {
   const jsdoc = new TypescriptJSDocWriter();
   const interfaceGenerator = new TypescriptInterfaceGenerator();
-  const generateInterfaceFromSchema = (schema: Schema) =>
-    interfaceGenerator.generateFromSchema(pascal(schema.name), schema);
-  const generateFieldTypes = (schema: Schema) => {
-    const name = `${pascal(schema.name)}Fields`;
-    const fieldLiterals = schema.fields
-      .map(({ name }) => name)
-      .map(camel)
-      .map(name => `"${name}"`);
-    if (fieldLiterals.length === 0) {
-      return `type ${name} = string;`;
-    } else {
-      return `type ${name} = ${fieldLiterals.join(" | ")};`;
-    }
-  };
-  const generateEmbedTypes = (schema: Schema) => {
-    const name = `${pascal(schema.name)}Embeds`;
-    const embedLiterals = schema.embeds.map(
-      ({ name, description }) =>
-        getOrEmpty(description && jsdoc.write(description) + "\n") +
-        `| "${camel(name)}"\n`,
-    );
-    if (embedLiterals.length === 0) {
-      return `type ${name} = string;`;
-    } else {
-      return `type ${name} = \n ${embedLiterals.join("\n")};\n`;
-    }
-  };
-
   const endpointMethodWriter = new TypescriptEndpointMethodWriter();
   const objectWriter = new TypescriptObjectWriter();
 
   const scopes: Map<string, EvaluatableScope> = new Map();
   const request = {
     interfaces: [] as string[],
-    fieldTypes: [] as string[],
     embedTypes: [] as string[],
   };
   const response = {
+    fieldTypes: [] as string[],
     interfaces: [] as string[],
   };
 
@@ -67,12 +41,22 @@ export function generateEndpointsModule(spec: APISpec) {
             request.interfaces.push(
               generateInterfaceFromSchema(endpoint.request),
             );
-            request.fieldTypes.push(generateFieldTypes(endpoint.request));
-            request.embedTypes.push(generateEmbedTypes(endpoint.request));
+            request.embedTypes.push(
+              generateEmbedTypes(
+                `${pascal(endpoint.name)}Embeds`,
+                endpoint.request,
+              ),
+            );
           }
           if (endpoint.response) {
             response.interfaces.push(
               generateInterfaceFromSchema(endpoint.response),
+            );
+            response.fieldTypes.push(
+              inferFieldTypes(
+                `${pascal(endpoint.name)}Fields`,
+                endpoint.response,
+              ),
             );
           }
 
@@ -90,14 +74,8 @@ export function generateEndpointsModule(spec: APISpec) {
                 method: camel(endpoint.name),
                 request: getOrElse(requestName, "any"),
                 response: getOrElse(responseName, "any"),
-                fields: getOrElse(
-                  endpoint.request && `${pascal(endpoint.request.name)}Fields`,
-                  "string",
-                ),
-                embeds: getOrElse(
-                  endpoint.request && `${pascal(endpoint.request.name)}Embeds`,
-                  "string",
-                ),
+                fields: `${pascal(endpoint.name)}Fields`,
+                embeds: `${pascal(endpoint.name)}Embeds`,
               },
               description:
                 getOrEmpty(
@@ -155,13 +133,45 @@ export function generateEndpointsModule(spec: APISpec) {
     ");\n\n" +
     request.interfaces.join("\n\n") +
     "\n\n" +
-    request.fieldTypes.join("\n\n") +
-    "\n\n" +
     request.embedTypes.join("\n\n") +
     "\n\n" +
     response.interfaces.join("\n\n") +
+    "\n\n" +
+    response.fieldTypes.join("\n\n") +
     "\n\n"
   );
+
+  function generateInterfaceFromSchema(schema: Schema) {
+    return interfaceGenerator.generateFromSchema(pascal(schema.name), schema);
+  }
+
+  function generateEmbedTypes(name: string, schema: Schema) {
+    if (schema.embeds.length === 0) {
+      return `type ${name} = string;`;
+    } else {
+      const embedLiterals = schema.embeds.map(
+        ({ name, description }) =>
+          getOrEmpty(description && jsdoc.write(description) + "\n") +
+          `| "${camel(name)}"\n`,
+      );
+      return `type ${name} = \n ${embedLiterals.join("\n")};\n`;
+    }
+  }
+
+  function inferFieldTypes(name: string, schema: Schema) {
+    const responseName = pascal(schema.name);
+    const firstProperty = schema.properties.at(0);
+    if (firstProperty?.type instanceof ObjectType) {
+      return `type ${name} = keyof ${responseName}['${firstProperty.name}']`;
+    } else if (
+      firstProperty?.type instanceof ArrayType &&
+      firstProperty.type.element instanceof ObjectType
+    ) {
+      return `type ${name} = keyof ${responseName}['${firstProperty.name}'][number]`;
+    } else {
+      return `type ${name} = string;`;
+    }
+  }
 }
 
 interface EvaluatableScope {

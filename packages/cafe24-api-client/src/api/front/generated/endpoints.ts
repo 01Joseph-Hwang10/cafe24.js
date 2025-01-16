@@ -33,8 +33,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsByCategoryRequestFields,
-        RetrieveAListOfProductsByCategoryRequestEmbeds
+        RetrieveAListOfProductsByCategoryFields,
+        RetrieveAListOfProductsByCategoryEmbeds
       >,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
@@ -56,8 +56,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsByCategoryRequestFields,
-        RetrieveACountOfProductsByCategoryRequestEmbeds
+        RetrieveACountOfProductsByCategoryFields,
+        RetrieveACountOfProductsByCategoryEmbeds
       >,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
@@ -91,8 +91,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsInMainCategoryRequestFields,
-        RetrieveAListOfProductsInMainCategoryRequestEmbeds
+        RetrieveAListOfProductsInMainCategoryFields,
+        RetrieveAListOfProductsInMainCategoryEmbeds
       >,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
@@ -129,8 +129,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsRequestFields,
-        RetrieveAListOfProductsRequestEmbeds
+        RetrieveAListOfProductsFields,
+        RetrieveAListOfProductsEmbeds
       >,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest("GET", "/api/v2/products", request, options);
@@ -147,8 +147,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsRequestFields,
-        RetrieveACountOfProductsRequestEmbeds
+        RetrieveACountOfProductsFields,
+        RetrieveACountOfProductsEmbeds
       >,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
@@ -171,8 +171,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
       options?: base.RequestOptions<
-        RetrieveAProductResourceRequestFields,
-        RetrieveAProductResourceRequestEmbeds
+        RetrieveAProductResourceFields,
+        RetrieveAProductResourceEmbeds
       >,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
@@ -205,8 +205,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductDecorationImagesRequestFields,
-        RetrieveAListOfProductDecorationImagesRequestEmbeds
+        RetrieveAListOfProductDecorationImagesFields,
+        RetrieveAListOfProductDecorationImagesEmbeds
       >,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
@@ -240,8 +240,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
       options?: base.RequestOptions<
-        RetrieveAProductDiscountedPriceRequestFields,
-        RetrieveAProductDiscountedPriceRequestEmbeds
+        RetrieveAProductDiscountedPriceFields,
+        RetrieveAProductDiscountedPriceEmbeds
       >,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
@@ -275,8 +275,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductViewsRequestFields,
-        RetrieveACountOfProductViewsRequestEmbeds
+        RetrieveACountOfProductViewsFields,
+        RetrieveACountOfProductViewsEmbeds
       >,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
@@ -306,8 +306,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductIconsRequestFields,
-        RetrieveAListOfProductIconsRequestEmbeds
+        RetrieveAListOfProductIconsFields,
+        RetrieveAListOfProductIconsEmbeds
       >,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
@@ -343,8 +343,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductOptionsRequestFields,
-        RetrieveAListOfProductOptionsRequestEmbeds
+        RetrieveAListOfProductOptionsFields,
+        RetrieveAListOfProductOptionsEmbeds
       >,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
@@ -379,8 +379,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductVariantsRequestFields,
-        RetrieveAListOfProductVariantsRequestEmbeds
+        RetrieveAListOfProductVariantsFields,
+        RetrieveAListOfProductVariantsEmbeds
       >,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
@@ -403,8 +403,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
       options?: base.RequestOptions<
-        RetrieveAProductVariantRequestFields,
-        RetrieveAProductVariantRequestEmbeds
+        RetrieveAProductVariantFields,
+        RetrieveAProductVariantEmbeds
       >,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
@@ -436,8 +436,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
       options?: base.RequestOptions<
-        RetrieveInventoryDetailsOfAProductVariantRequestFields,
-        RetrieveInventoryDetailsOfAProductVariantRequestEmbeds
+        RetrieveInventoryDetailsOfAProductVariantFields,
+        RetrieveInventoryDetailsOfAProductVariantEmbeds
       >,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
@@ -468,8 +468,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheDetailsOfAProduct(
       request: RetrieveTheDetailsOfAProductRequest,
       options?: base.RequestOptions<
-        RetrieveTheDetailsOfAProductRequestFields,
-        RetrieveTheDetailsOfAProductRequestEmbeds
+        RetrieveTheDetailsOfAProductFields,
+        RetrieveTheDetailsOfAProductEmbeds
       >,
     ): Promise<RetrieveTheDetailsOfAProductResponse> {
       return self.createRequest(
@@ -504,8 +504,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductCategoriesRequestFields,
-        RetrieveAListOfProductCategoriesRequestEmbeds
+        RetrieveAListOfProductCategoriesFields,
+        RetrieveAListOfProductCategoriesEmbeds
       >,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/categories", request, options);
@@ -522,8 +522,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductCategoriesRequestFields,
-        RetrieveACountOfProductCategoriesRequestEmbeds
+        RetrieveACountOfProductCategoriesFields,
+        RetrieveACountOfProductCategoriesEmbeds
       >,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
@@ -546,8 +546,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAProductCategoryRequestFields,
-        RetrieveAProductCategoryRequestEmbeds
+        RetrieveAProductCategoryFields,
+        RetrieveAProductCategoryEmbeds
       >,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
@@ -579,8 +579,8 @@ export const Endpoints = (self: base.Client) => ({
     createAShoppingCart(
       request: CreateAShoppingCartRequest,
       options?: base.RequestOptions<
-        CreateAShoppingCartRequestFields,
-        CreateAShoppingCartRequestEmbeds
+        CreateAShoppingCartFields,
+        CreateAShoppingCartEmbeds
       >,
     ): Promise<CreateAShoppingCartResponse> {
       return self.createRequest("POST", "/api/v2/carts", request, options);
@@ -608,8 +608,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCartsContainingAProductRequestFields,
-        RetrieveACountOfCartsContainingAProductRequestEmbeds
+        RetrieveACountOfCartsContainingAProductFields,
+        RetrieveACountOfCartsContainingAProductEmbeds
       >,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
@@ -2047,195 +2047,13 @@ interface RetrieveACountOfCartsContainingAProductRequest {
   productNo: any;
 }
 
-type RetrieveAListOfProductsByCategoryRequestFields =
-  | "mobile"
-  | "shopNo"
-  | "categoryNo"
-  | "displayGroup"
-  | "limit"
-  | "offset";
+type RetrieveAListOfProductsByCategoryEmbeds = string;
 
-type RetrieveACountOfProductsByCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "displayGroup";
+type RetrieveACountOfProductsByCategoryEmbeds = string;
 
-type RetrieveAListOfProductsInMainCategoryRequestFields =
-  | "mobile"
-  | "shopNo"
-  | "displayGroup"
-  | "limit"
-  | "offset";
+type RetrieveAListOfProductsInMainCategoryEmbeds = string;
 
-type RetrieveAListOfProductsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productName"
-  | "productCode"
-  | "brandCode"
-  | "manufacturerCode"
-  | "supplierCode"
-  | "trendCode"
-  | "productTag"
-  | "customProductCode"
-  | "customVariantCode"
-  | "priceMin"
-  | "priceMax"
-  | "retailPriceMin"
-  | "retailPriceMax"
-  | "supplyPriceMin"
-  | "supplyPriceMax"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "category"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "productCondition"
-  | "originPlaceValue"
-  | "stockQuantityMax"
-  | "stockQuantityMin"
-  | "stockSafetyMax"
-  | "stockSafetyMin"
-  | "productWeight"
-  | "classificationCode"
-  | "useInventory"
-  | "categoryUnapplied"
-  | "includeSubCategory"
-  | "additionalInformationKey"
-  | "additionalInformationValue"
-  | "approveStatus"
-  | "sinceProductNo"
-  | "productBundle"
-  | "optionType"
-  | "marketSync"
-  | "sort"
-  | "order"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfProductsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productName"
-  | "productCode"
-  | "brandCode"
-  | "manufacturerCode"
-  | "supplierCode"
-  | "trendCode"
-  | "productTag"
-  | "customProductCode"
-  | "customVariantCode"
-  | "priceMin"
-  | "priceMax"
-  | "retailPriceMin"
-  | "retailPriceMax"
-  | "supplyPriceMin"
-  | "supplyPriceMax"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "category"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "productCondition"
-  | "originPlaceValue"
-  | "stockQuantityMax"
-  | "stockQuantityMin"
-  | "stockSafetyMax"
-  | "stockSafetyMin"
-  | "productWeight"
-  | "classificationCode"
-  | "useInventory"
-  | "categoryUnapplied"
-  | "includeSubCategory"
-  | "additionalInformationKey"
-  | "additionalInformationValue"
-  | "approveStatus"
-  | "sinceProductNo"
-  | "productBundle"
-  | "optionType"
-  | "marketSync";
-
-type RetrieveAProductResourceRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductDecorationImagesRequestFields =
-  | "shopNo"
-  | "productNo";
-
-type RetrieveAProductDiscountedPriceRequestFields = "shopNo" | "productNo";
-
-type RetrieveACountOfProductViewsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductIconsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductOptionsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductVariantsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAProductVariantRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode";
-
-type RetrieveInventoryDetailsOfAProductVariantRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode";
-
-type RetrieveTheDetailsOfAProductRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "mobile";
-
-type RetrieveAListOfProductCategoriesRequestFields =
-  | "shopNo"
-  | "categoryDepth"
-  | "categoryNo"
-  | "parentCategoryNo"
-  | "categoryName"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfProductCategoriesRequestFields =
-  | "shopNo"
-  | "categoryDepth"
-  | "categoryNo"
-  | "parentCategoryNo"
-  | "categoryName";
-
-type RetrieveAProductCategoryRequestFields = "shopNo" | "categoryNo";
-
-type CreateAShoppingCartRequestFields =
-  | "shopNo"
-  | "variants"
-  | "addtionalProducts"
-  | "productNo"
-  | "basketType"
-  | "duplicatedItemCheck"
-  | "prepaidShippingFee";
-
-type RetrieveACountOfCartsContainingAProductRequestFields =
-  | "shopNo"
-  | "productNo";
-
-type RetrieveAListOfProductsByCategoryRequestEmbeds = string;
-
-type RetrieveACountOfProductsByCategoryRequestEmbeds = string;
-
-type RetrieveAListOfProductsInMainCategoryRequestEmbeds = string;
-
-type RetrieveAListOfProductsRequestEmbeds =
+type RetrieveAListOfProductsEmbeds =
   /**
    * @description
    * 상품 할인판매가 리소스
@@ -2288,9 +2106,9 @@ type RetrieveAListOfProductsRequestEmbeds =
    */
   | "hits";
 
-type RetrieveACountOfProductsRequestEmbeds = string;
+type RetrieveACountOfProductsEmbeds = string;
 
-type RetrieveAProductResourceRequestEmbeds =
+type RetrieveAProductResourceEmbeds =
   /**
    * @description
    * 품목 리소스
@@ -2376,17 +2194,17 @@ type RetrieveAProductResourceRequestEmbeds =
    */
   | "customProperties";
 
-type RetrieveAListOfProductDecorationImagesRequestEmbeds = string;
+type RetrieveAListOfProductDecorationImagesEmbeds = string;
 
-type RetrieveAProductDiscountedPriceRequestEmbeds = string;
+type RetrieveAProductDiscountedPriceEmbeds = string;
 
-type RetrieveACountOfProductViewsRequestEmbeds = string;
+type RetrieveACountOfProductViewsEmbeds = string;
 
-type RetrieveAListOfProductIconsRequestEmbeds = string;
+type RetrieveAListOfProductIconsEmbeds = string;
 
-type RetrieveAListOfProductOptionsRequestEmbeds = string;
+type RetrieveAListOfProductOptionsEmbeds = string;
 
-type RetrieveAListOfProductVariantsRequestEmbeds =
+type RetrieveAListOfProductVariantsEmbeds =
   /**
    * @description
    * 재고 리소스
@@ -2399,7 +2217,7 @@ type RetrieveAListOfProductVariantsRequestEmbeds =
 
   "inventories";
 
-type RetrieveAProductVariantRequestEmbeds =
+type RetrieveAProductVariantEmbeds =
   /**
    * @description
    * 재고 리소스
@@ -2410,19 +2228,19 @@ type RetrieveAProductVariantRequestEmbeds =
 
   "inventories";
 
-type RetrieveInventoryDetailsOfAProductVariantRequestEmbeds = string;
+type RetrieveInventoryDetailsOfAProductVariantEmbeds = string;
 
-type RetrieveTheDetailsOfAProductRequestEmbeds = string;
+type RetrieveTheDetailsOfAProductEmbeds = string;
 
-type RetrieveAListOfProductCategoriesRequestEmbeds = string;
+type RetrieveAListOfProductCategoriesEmbeds = string;
 
-type RetrieveACountOfProductCategoriesRequestEmbeds = string;
+type RetrieveACountOfProductCategoriesEmbeds = string;
 
-type RetrieveAProductCategoryRequestEmbeds = string;
+type RetrieveAProductCategoryEmbeds = string;
 
-type CreateAShoppingCartRequestEmbeds = string;
+type CreateAShoppingCartEmbeds = string;
 
-type RetrieveACountOfCartsContainingAProductRequestEmbeds = string;
+type RetrieveACountOfCartsContainingAProductEmbeds = string;
 
 /**
  * @example
@@ -4203,3 +4021,57 @@ interface CreateAShoppingCartResponse {
 interface RetrieveACountOfCartsContainingAProductResponse {
   count: number;
 }
+
+type RetrieveAListOfProductsByCategoryFields =
+  keyof RetrieveAListOfProductsByCategoryResponse["products"][number];
+
+type RetrieveACountOfProductsByCategoryFields = string;
+
+type RetrieveAListOfProductsInMainCategoryFields =
+  keyof RetrieveAListOfProductsInMainCategoryResponse["products"][number];
+
+type RetrieveAListOfProductsFields =
+  keyof RetrieveAListOfProductsResponse["products"][number];
+
+type RetrieveACountOfProductsFields = string;
+
+type RetrieveAProductResourceFields =
+  keyof RetrieveAProductResourceResponse["product"];
+
+type RetrieveAListOfProductDecorationImagesFields =
+  keyof RetrieveAListOfProductDecorationImagesResponse["decorationimage"];
+
+type RetrieveAProductDiscountedPriceFields =
+  keyof RetrieveAProductDiscountedPriceResponse["discountprice"];
+
+type RetrieveACountOfProductViewsFields = string;
+
+type RetrieveAListOfProductIconsFields =
+  keyof RetrieveAListOfProductIconsResponse["icons"];
+
+type RetrieveAListOfProductOptionsFields =
+  keyof RetrieveAListOfProductOptionsResponse["options"];
+
+type RetrieveAListOfProductVariantsFields =
+  keyof RetrieveAListOfProductVariantsResponse["variants"][number];
+
+type RetrieveAProductVariantFields =
+  keyof RetrieveAProductVariantResponse["variant"];
+
+type RetrieveInventoryDetailsOfAProductVariantFields =
+  keyof RetrieveInventoryDetailsOfAProductVariantResponse["inventory"];
+
+type RetrieveTheDetailsOfAProductFields =
+  keyof RetrieveTheDetailsOfAProductResponse["productsdetail"];
+
+type RetrieveAListOfProductCategoriesFields =
+  keyof RetrieveAListOfProductCategoriesResponse["categories"][number];
+
+type RetrieveACountOfProductCategoriesFields = string;
+
+type RetrieveAProductCategoryFields =
+  keyof RetrieveAProductCategoryResponse["category"];
+
+type CreateAShoppingCartFields = keyof CreateAShoppingCartResponse["carts"];
+
+type RetrieveACountOfCartsContainingAProductFields = string;

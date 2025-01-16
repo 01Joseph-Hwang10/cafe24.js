@@ -3,7 +3,12 @@ import fetch from "cross-fetch";
 import urljoin from "url-join";
 import { pipe } from "fp-ts/lib/function";
 import { TaskQueue, TaskQueueOptions } from "../task-queue";
-import { valfilter, objectToCamelCase, objectToSnakeCase } from "../utils";
+import {
+  valfilter,
+  objectToCamelCase,
+  objectToSnakeCase,
+  unique,
+} from "../utils";
 import { map } from "fp-ts/lib/Array";
 import { Cafe24APIError } from "../error";
 
@@ -257,8 +262,8 @@ export class Client {
     const headers = this.createHeaders(options?.headers);
     const params = formatter(
       payload,
-      options?.fields as string[] | undefined,
-      options?.embed as string[] | undefined,
+      options?.fields && unique(options.fields),
+      options?.embed && unique(options.embed),
     );
 
     return this.fetch(`${url}?${qs.stringify(params, { encode: false })}`, {
@@ -278,7 +283,7 @@ export class Client {
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
-    const body = formatter(payload, options?.fields as string[] | undefined);
+    const body = formatter(payload, options?.fields && unique(options.fields));
 
     return this.fetch(url, {
       method,

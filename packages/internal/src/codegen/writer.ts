@@ -1,6 +1,6 @@
 import { map } from "fp-ts/lib/Array";
 import { pipe } from "fp-ts/lib/function";
-import { getOrEmpty, indent } from "../utils";
+import { getOrElse, getOrEmpty, indent } from "../utils";
 
 export class TypescriptEndpointMethodWriter {
   protected readonly jsdoc = new TypescriptJSDocWriter();
@@ -13,8 +13,8 @@ export class TypescriptEndpointMethodWriter {
       method: string;
       request: string;
       response: string;
-      fields: string;
-      embeds: string;
+      fields?: string;
+      embeds?: string;
     };
   }) {
     const {
@@ -34,8 +34,8 @@ export class TypescriptEndpointMethodWriter {
       `${methodName}(\n` +
       `  request: ${requestTypeName},\n` +
       `  options?: base.RequestOptions<\n` +
-      `    ${fieldsTypeName},\n` +
-      `    ${embedsTypeName},\n` +
+      `    ${getOrElse(fieldsTypeName, "string")},\n` +
+      `    ${getOrElse(embedsTypeName, "string")},\n` +
       `  >,\n` +
       `): Promise<${responseTypeName}> {\n` +
       `  return self.createRequest("${httpMethod}", "${path}", request, options);\n` +

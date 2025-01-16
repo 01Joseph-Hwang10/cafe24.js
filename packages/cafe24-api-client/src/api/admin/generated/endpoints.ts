@@ -31,8 +31,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfActionLogs(
       request: RetrieveAListOfActionLogsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfActionLogsRequestFields,
-        RetrieveAListOfActionLogsRequestEmbeds
+        RetrieveAListOfActionLogsFields,
+        RetrieveAListOfActionLogsEmbeds
       >,
     ): Promise<RetrieveAListOfActionLogsResponse> {
       return self.createRequest(
@@ -55,8 +55,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnActionLog(
       request: RetrieveAnActionLogRequest,
       options?: base.RequestOptions<
-        RetrieveAnActionLogRequestFields,
-        RetrieveAnActionLogRequestEmbeds
+        RetrieveAnActionLogFields,
+        RetrieveAnActionLogEmbeds
       >,
     ): Promise<RetrieveAnActionLogResponse> {
       return self.createRequest(
@@ -86,8 +86,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheListOfAvailableVariablesForAutomatedMessages(
       request: RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequest,
       options?: base.RequestOptions<
-        RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestFields,
-        RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestEmbeds
+        RetrieveTheListOfAvailableVariablesForAutomatedMessagesFields,
+        RetrieveTheListOfAvailableVariablesForAutomatedMessagesEmbeds
       >,
     ): Promise<RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse> {
       return self.createRequest(
@@ -117,8 +117,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheAutomatedMessageSettings(
       request: RetrieveTheAutomatedMessageSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveTheAutomatedMessageSettingsRequestFields,
-        RetrieveTheAutomatedMessageSettingsRequestEmbeds
+        RetrieveTheAutomatedMessageSettingsFields,
+        RetrieveTheAutomatedMessageSettingsEmbeds
       >,
     ): Promise<RetrieveTheAutomatedMessageSettingsResponse> {
       return self.createRequest(
@@ -140,8 +140,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnAutomatedMessage(
       request: UpdateAnAutomatedMessageRequest,
       options?: base.RequestOptions<
-        UpdateAnAutomatedMessageRequestFields,
-        UpdateAnAutomatedMessageRequestEmbeds
+        UpdateAnAutomatedMessageFields,
+        UpdateAnAutomatedMessageEmbeds
       >,
     ): Promise<UpdateAnAutomatedMessageResponse> {
       return self.createRequest(
@@ -172,8 +172,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCouponSettings(
       request: RetrieveCouponSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveCouponSettingsRequestFields,
-        RetrieveCouponSettingsRequestEmbeds
+        RetrieveCouponSettingsFields,
+        RetrieveCouponSettingsEmbeds
       >,
     ): Promise<RetrieveCouponSettingsResponse> {
       return self.createRequest(
@@ -196,8 +196,8 @@ export const Endpoints = (self: base.Client) => ({
     updateCouponSettings(
       request: UpdateCouponSettingsRequest,
       options?: base.RequestOptions<
-        UpdateCouponSettingsRequestFields,
-        UpdateCouponSettingsRequestEmbeds
+        UpdateCouponSettingsFields,
+        UpdateCouponSettingsEmbeds
       >,
     ): Promise<UpdateCouponSettingsResponse> {
       return self.createRequest(
@@ -227,8 +227,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCurrencySettings(
       request: RetrieveCurrencySettingsRequest,
       options?: base.RequestOptions<
-        RetrieveCurrencySettingsRequestFields,
-        RetrieveCurrencySettingsRequestEmbeds
+        RetrieveCurrencySettingsFields,
+        RetrieveCurrencySettingsEmbeds
       >,
     ): Promise<RetrieveCurrencySettingsResponse> {
       return self.createRequest(
@@ -254,8 +254,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveMemberRelatedSettings(
       request: RetrieveMemberRelatedSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveMemberRelatedSettingsRequestFields,
-        RetrieveMemberRelatedSettingsRequestEmbeds
+        RetrieveMemberRelatedSettingsFields,
+        RetrieveMemberRelatedSettingsEmbeds
       >,
     ): Promise<RetrieveMemberRelatedSettingsResponse> {
       return self.createRequest(
@@ -286,8 +286,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveADashboard(
       request: RetrieveADashboardRequest,
       options?: base.RequestOptions<
-        RetrieveADashboardRequestFields,
-        RetrieveADashboardRequestEmbeds
+        RetrieveADashboardFields,
+        RetrieveADashboardEmbeds
       >,
     ): Promise<RetrieveADashboardResponse> {
       return self.createRequest(
@@ -318,8 +318,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfPaymentGatewayContractDetails(
       request: RetrieveAListOfPaymentGatewayContractDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfPaymentGatewayContractDetailsRequestFields,
-        RetrieveAListOfPaymentGatewayContractDetailsRequestEmbeds
+        RetrieveAListOfPaymentGatewayContractDetailsFields,
+        RetrieveAListOfPaymentGatewayContractDetailsEmbeds
       >,
     ): Promise<RetrieveAListOfPaymentGatewayContractDetailsResponse> {
       return self.createRequest(
@@ -349,8 +349,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheTransactionInformationOfAStore(
       request: RetrieveTheTransactionInformationOfAStoreRequest,
       options?: base.RequestOptions<
-        RetrieveTheTransactionInformationOfAStoreRequestFields,
-        RetrieveTheTransactionInformationOfAStoreRequestEmbeds
+        RetrieveTheTransactionInformationOfAStoreFields,
+        RetrieveTheTransactionInformationOfAStoreEmbeds
       >,
     ): Promise<RetrieveTheTransactionInformationOfAStoreResponse> {
       return self.createRequest(
@@ -380,8 +380,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveProductImageSizeSettings(
       request: RetrieveProductImageSizeSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveProductImageSizeSettingsRequestFields,
-        RetrieveProductImageSizeSettingsRequestEmbeds
+        RetrieveProductImageSizeSettingsFields,
+        RetrieveProductImageSizeSettingsEmbeds
       >,
     ): Promise<RetrieveProductImageSizeSettingsResponse> {
       return self.createRequest(
@@ -403,8 +403,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductImageSizeSettings(
       request: UpdateProductImageSizeSettingsRequest,
       options?: base.RequestOptions<
-        UpdateProductImageSizeSettingsRequestFields,
-        UpdateProductImageSizeSettingsRequestEmbeds
+        UpdateProductImageSizeSettingsFields,
+        UpdateProductImageSizeSettingsEmbeds
       >,
     ): Promise<UpdateProductImageSizeSettingsResponse> {
       return self.createRequest(
@@ -434,8 +434,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAKakaoChannelSenderProfileKey(
       request: RetrieveAKakaoChannelSenderProfileKeyRequest,
       options?: base.RequestOptions<
-        RetrieveAKakaoChannelSenderProfileKeyRequestFields,
-        RetrieveAKakaoChannelSenderProfileKeyRequestEmbeds
+        RetrieveAKakaoChannelSenderProfileKeyFields,
+        RetrieveAKakaoChannelSenderProfileKeyEmbeds
       >,
     ): Promise<RetrieveAKakaoChannelSenderProfileKeyResponse> {
       return self.createRequest(
@@ -465,8 +465,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheKakaoInfoTalkSettings(
       request: RetrieveTheKakaoInfoTalkSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveTheKakaoInfoTalkSettingsRequestFields,
-        RetrieveTheKakaoInfoTalkSettingsRequestEmbeds
+        RetrieveTheKakaoInfoTalkSettingsFields,
+        RetrieveTheKakaoInfoTalkSettingsEmbeds
       >,
     ): Promise<RetrieveTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
@@ -488,8 +488,8 @@ export const Endpoints = (self: base.Client) => ({
     updateTheKakaoInfoTalkSettings(
       request: UpdateTheKakaoInfoTalkSettingsRequest,
       options?: base.RequestOptions<
-        UpdateTheKakaoInfoTalkSettingsRequestFields,
-        UpdateTheKakaoInfoTalkSettingsRequestEmbeds
+        UpdateTheKakaoInfoTalkSettingsFields,
+        UpdateTheKakaoInfoTalkSettingsEmbeds
       >,
     ): Promise<UpdateTheKakaoInfoTalkSettingsResponse> {
       return self.createRequest(
@@ -520,8 +520,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSettingsForKakaopayOrders(
       request: RetrieveSettingsForKakaopayOrdersRequest,
       options?: base.RequestOptions<
-        RetrieveSettingsForKakaopayOrdersRequestFields,
-        RetrieveSettingsForKakaopayOrdersRequestEmbeds
+        RetrieveSettingsForKakaopayOrdersFields,
+        RetrieveSettingsForKakaopayOrdersEmbeds
       >,
     ): Promise<RetrieveSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
@@ -544,8 +544,8 @@ export const Endpoints = (self: base.Client) => ({
     updateSettingsForKakaopayOrders(
       request: UpdateSettingsForKakaopayOrdersRequest,
       options?: base.RequestOptions<
-        UpdateSettingsForKakaopayOrdersRequestFields,
-        UpdateSettingsForKakaopayOrdersRequestEmbeds
+        UpdateSettingsForKakaopayOrdersFields,
+        UpdateSettingsForKakaopayOrdersEmbeds
       >,
     ): Promise<UpdateSettingsForKakaopayOrdersResponse> {
       return self.createRequest(
@@ -577,10 +577,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveMenus(
       request: RetrieveMenusRequest,
-      options?: base.RequestOptions<
-        RetrieveMenusRequestFields,
-        RetrieveMenusRequestEmbeds
-      >,
+      options?: base.RequestOptions<RetrieveMenusFields, RetrieveMenusEmbeds>,
     ): Promise<RetrieveMenusResponse> {
       return self.createRequest("GET", "/api/v2/admin/menus", request, options);
     },
@@ -605,8 +602,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveMobileSettings(
       request: RetrieveMobileSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveMobileSettingsRequestFields,
-        RetrieveMobileSettingsRequestEmbeds
+        RetrieveMobileSettingsFields,
+        RetrieveMobileSettingsEmbeds
       >,
     ): Promise<RetrieveMobileSettingsResponse> {
       return self.createRequest(
@@ -636,8 +633,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveNaverPaySettings(
       request: RetrieveNaverPaySettingsRequest,
       options?: base.RequestOptions<
-        RetrieveNaverPaySettingsRequestFields,
-        RetrieveNaverPaySettingsRequestEmbeds
+        RetrieveNaverPaySettingsFields,
+        RetrieveNaverPaySettingsEmbeds
       >,
     ): Promise<RetrieveNaverPaySettingsResponse> {
       return self.createRequest(
@@ -659,8 +656,8 @@ export const Endpoints = (self: base.Client) => ({
     createNaverPaySettings(
       request: CreateNaverPaySettingsRequest,
       options?: base.RequestOptions<
-        CreateNaverPaySettingsRequestFields,
-        CreateNaverPaySettingsRequestEmbeds
+        CreateNaverPaySettingsFields,
+        CreateNaverPaySettingsEmbeds
       >,
     ): Promise<CreateNaverPaySettingsResponse> {
       return self.createRequest(
@@ -682,8 +679,8 @@ export const Endpoints = (self: base.Client) => ({
     updateNaverPaySettings(
       request: UpdateNaverPaySettingsRequest,
       options?: base.RequestOptions<
-        UpdateNaverPaySettingsRequestFields,
-        UpdateNaverPaySettingsRequestEmbeds
+        UpdateNaverPaySettingsFields,
+        UpdateNaverPaySettingsEmbeds
       >,
     ): Promise<UpdateNaverPaySettingsResponse> {
       return self.createRequest(
@@ -713,8 +710,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveOrderSettings(
       request: RetrieveOrderSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveOrderSettingsRequestFields,
-        RetrieveOrderSettingsRequestEmbeds
+        RetrieveOrderSettingsFields,
+        RetrieveOrderSettingsEmbeds
       >,
     ): Promise<RetrieveOrderSettingsResponse> {
       return self.createRequest(
@@ -736,8 +733,8 @@ export const Endpoints = (self: base.Client) => ({
     updateOrderSettings(
       request: UpdateOrderSettingsRequest,
       options?: base.RequestOptions<
-        UpdateOrderSettingsRequestFields,
-        UpdateOrderSettingsRequestEmbeds
+        UpdateOrderSettingsFields,
+        UpdateOrderSettingsEmbeds
       >,
     ): Promise<UpdateOrderSettingsResponse> {
       return self.createRequest(
@@ -763,8 +760,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveOrderStatusDisplayed(
       request: RetrieveOrderStatusDisplayedRequest,
       options?: base.RequestOptions<
-        RetrieveOrderStatusDisplayedRequestFields,
-        RetrieveOrderStatusDisplayedRequestEmbeds
+        RetrieveOrderStatusDisplayedFields,
+        RetrieveOrderStatusDisplayedEmbeds
       >,
     ): Promise<RetrieveOrderStatusDisplayedResponse> {
       return self.createRequest(
@@ -783,8 +780,8 @@ export const Endpoints = (self: base.Client) => ({
     updateOrderStatusDisplayed(
       request: UpdateOrderStatusDisplayedRequest,
       options?: base.RequestOptions<
-        UpdateOrderStatusDisplayedRequestFields,
-        UpdateOrderStatusDisplayedRequestEmbeds
+        UpdateOrderStatusDisplayedFields,
+        UpdateOrderStatusDisplayedEmbeds
       >,
     ): Promise<UpdateOrderStatusDisplayedResponse> {
       return self.createRequest(
@@ -810,8 +807,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveEscrowSettings(
       request: RetrieveEscrowSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveEscrowSettingsRequestFields,
-        RetrieveEscrowSettingsRequestEmbeds
+        RetrieveEscrowSettingsFields,
+        RetrieveEscrowSettingsEmbeds
       >,
     ): Promise<RetrieveEscrowSettingsResponse> {
       return self.createRequest(
@@ -830,8 +827,8 @@ export const Endpoints = (self: base.Client) => ({
     updateEscrowSettings(
       request: UpdateEscrowSettingsRequest,
       options?: base.RequestOptions<
-        UpdateEscrowSettingsRequestFields,
-        UpdateEscrowSettingsRequestEmbeds
+        UpdateEscrowSettingsFields,
+        UpdateEscrowSettingsEmbeds
       >,
     ): Promise<UpdateEscrowSettingsResponse> {
       return self.createRequest(
@@ -863,8 +860,8 @@ export const Endpoints = (self: base.Client) => ({
     createAPaymentGateway(
       request: CreateAPaymentGatewayRequest,
       options?: base.RequestOptions<
-        CreateAPaymentGatewayRequestFields,
-        CreateAPaymentGatewayRequestEmbeds
+        CreateAPaymentGatewayFields,
+        CreateAPaymentGatewayEmbeds
       >,
     ): Promise<CreateAPaymentGatewayResponse> {
       return self.createRequest(
@@ -888,8 +885,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAPaymentGateway(
       request: UpdateAPaymentGatewayRequest,
       options?: base.RequestOptions<
-        UpdateAPaymentGatewayRequestFields,
-        UpdateAPaymentGatewayRequestEmbeds
+        UpdateAPaymentGatewayFields,
+        UpdateAPaymentGatewayEmbeds
       >,
     ): Promise<UpdateAPaymentGatewayResponse> {
       return self.createRequest(
@@ -912,8 +909,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAPaymentGateway(
       request: DeleteAPaymentGatewayRequest,
       options?: base.RequestOptions<
-        DeleteAPaymentGatewayRequestFields,
-        DeleteAPaymentGatewayRequestEmbeds
+        DeleteAPaymentGatewayFields,
+        DeleteAPaymentGatewayEmbeds
       >,
     ): Promise<DeleteAPaymentGatewayResponse> {
       return self.createRequest(
@@ -947,8 +944,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfPaymentGatewayMethods(
       request: RetrieveAListOfPaymentGatewayMethodsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfPaymentGatewayMethodsRequestFields,
-        RetrieveAListOfPaymentGatewayMethodsRequestEmbeds
+        RetrieveAListOfPaymentGatewayMethodsFields,
+        RetrieveAListOfPaymentGatewayMethodsEmbeds
       >,
     ): Promise<RetrieveAListOfPaymentGatewayMethodsResponse> {
       return self.createRequest(
@@ -970,8 +967,8 @@ export const Endpoints = (self: base.Client) => ({
     createAPaymentGatewayMethod(
       request: CreateAPaymentGatewayMethodRequest,
       options?: base.RequestOptions<
-        CreateAPaymentGatewayMethodRequestFields,
-        CreateAPaymentGatewayMethodRequestEmbeds
+        CreateAPaymentGatewayMethodFields,
+        CreateAPaymentGatewayMethodEmbeds
       >,
     ): Promise<CreateAPaymentGatewayMethodResponse> {
       return self.createRequest(
@@ -994,8 +991,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAPaymentMethodOfAPaymentGateway(
       request: UpdateAPaymentMethodOfAPaymentGatewayRequest,
       options?: base.RequestOptions<
-        UpdateAPaymentMethodOfAPaymentGatewayRequestFields,
-        UpdateAPaymentMethodOfAPaymentGatewayRequestEmbeds
+        UpdateAPaymentMethodOfAPaymentGatewayFields,
+        UpdateAPaymentMethodOfAPaymentGatewayEmbeds
       >,
     ): Promise<UpdateAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
@@ -1017,8 +1014,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAPaymentMethodOfAPaymentGateway(
       request: DeleteAPaymentMethodOfAPaymentGatewayRequest,
       options?: base.RequestOptions<
-        DeleteAPaymentMethodOfAPaymentGatewayRequestFields,
-        DeleteAPaymentMethodOfAPaymentGatewayRequestEmbeds
+        DeleteAPaymentMethodOfAPaymentGatewayFields,
+        DeleteAPaymentMethodOfAPaymentGatewayEmbeds
       >,
     ): Promise<DeleteAPaymentMethodOfAPaymentGatewayResponse> {
       return self.createRequest(
@@ -1050,8 +1047,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfPaymentMethods(
       request: RetrieveAListOfPaymentMethodsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfPaymentMethodsRequestFields,
-        RetrieveAListOfPaymentMethodsRequestEmbeds
+        RetrieveAListOfPaymentMethodsFields,
+        RetrieveAListOfPaymentMethodsEmbeds
       >,
     ): Promise<RetrieveAListOfPaymentMethodsResponse> {
       return self.createRequest(
@@ -1083,8 +1080,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProvidersByPaymentMethod(
       request: RetrieveAListOfProvidersByPaymentMethodRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProvidersByPaymentMethodRequestFields,
-        RetrieveAListOfProvidersByPaymentMethodRequestEmbeds
+        RetrieveAListOfProvidersByPaymentMethodFields,
+        RetrieveAListOfProvidersByPaymentMethodEmbeds
       >,
     ): Promise<RetrieveAListOfProvidersByPaymentMethodResponse> {
       return self.createRequest(
@@ -1106,8 +1103,8 @@ export const Endpoints = (self: base.Client) => ({
     updateTheDisplayStatusOfAPaymentMethod(
       request: UpdateTheDisplayStatusOfAPaymentMethodRequest,
       options?: base.RequestOptions<
-        UpdateTheDisplayStatusOfAPaymentMethodRequestFields,
-        UpdateTheDisplayStatusOfAPaymentMethodRequestEmbeds
+        UpdateTheDisplayStatusOfAPaymentMethodFields,
+        UpdateTheDisplayStatusOfAPaymentMethodEmbeds
       >,
     ): Promise<UpdateTheDisplayStatusOfAPaymentMethodResponse> {
       return self.createRequest(
@@ -1137,8 +1134,8 @@ export const Endpoints = (self: base.Client) => ({
     retrievePointsSettings(
       request: RetrievePointsSettingsRequest,
       options?: base.RequestOptions<
-        RetrievePointsSettingsRequestFields,
-        RetrievePointsSettingsRequestEmbeds
+        RetrievePointsSettingsFields,
+        RetrievePointsSettingsEmbeds
       >,
     ): Promise<RetrievePointsSettingsResponse> {
       return self.createRequest(
@@ -1160,8 +1157,8 @@ export const Endpoints = (self: base.Client) => ({
     updatePointsSettings(
       request: UpdatePointsSettingsRequest,
       options?: base.RequestOptions<
-        UpdatePointsSettingsRequestFields,
-        UpdatePointsSettingsRequestEmbeds
+        UpdatePointsSettingsFields,
+        UpdatePointsSettingsEmbeds
       >,
     ): Promise<UpdatePointsSettingsResponse> {
       return self.createRequest(
@@ -1191,8 +1188,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveProductSettings(
       request: RetrieveProductSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveProductSettingsRequestFields,
-        RetrieveProductSettingsRequestEmbeds
+        RetrieveProductSettingsFields,
+        RetrieveProductSettingsEmbeds
       >,
     ): Promise<RetrieveProductSettingsResponse> {
       return self.createRequest(
@@ -1222,8 +1219,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfRedirects(
       request: RetrieveAListOfRedirectsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfRedirectsRequestFields,
-        RetrieveAListOfRedirectsRequestEmbeds
+        RetrieveAListOfRedirectsFields,
+        RetrieveAListOfRedirectsEmbeds
       >,
     ): Promise<RetrieveAListOfRedirectsResponse> {
       return self.createRequest(
@@ -1246,8 +1243,8 @@ export const Endpoints = (self: base.Client) => ({
     createARedirect(
       request: CreateARedirectRequest,
       options?: base.RequestOptions<
-        CreateARedirectRequestFields,
-        CreateARedirectRequestEmbeds
+        CreateARedirectFields,
+        CreateARedirectEmbeds
       >,
     ): Promise<CreateARedirectResponse> {
       return self.createRequest(
@@ -1269,8 +1266,8 @@ export const Endpoints = (self: base.Client) => ({
     updateARedirect(
       request: UpdateARedirectRequest,
       options?: base.RequestOptions<
-        UpdateARedirectRequestFields,
-        UpdateARedirectRequestEmbeds
+        UpdateARedirectFields,
+        UpdateARedirectEmbeds
       >,
     ): Promise<UpdateARedirectResponse> {
       return self.createRequest(
@@ -1292,8 +1289,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteARedirect(
       request: DeleteARedirectRequest,
       options?: base.RequestOptions<
-        DeleteARedirectRequestFields,
-        DeleteARedirectRequestEmbeds
+        DeleteARedirectFields,
+        DeleteARedirectEmbeds
       >,
     ): Promise<DeleteARedirectResponse> {
       return self.createRequest(
@@ -1324,8 +1321,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSeoSettings(
       request: RetrieveSeoSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveSeoSettingsRequestFields,
-        RetrieveSeoSettingsRequestEmbeds
+        RetrieveSeoSettingsFields,
+        RetrieveSeoSettingsEmbeds
       >,
     ): Promise<RetrieveSeoSettingsResponse> {
       return self.createRequest(
@@ -1348,8 +1345,8 @@ export const Endpoints = (self: base.Client) => ({
     updateStoreSeoSettings(
       request: UpdateStoreSeoSettingsRequest,
       options?: base.RequestOptions<
-        UpdateStoreSeoSettingsRequestFields,
-        UpdateStoreSeoSettingsRequestEmbeds
+        UpdateStoreSeoSettingsFields,
+        UpdateStoreSeoSettingsEmbeds
       >,
     ): Promise<UpdateStoreSeoSettingsResponse> {
       return self.createRequest(
@@ -1380,8 +1377,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveActivationInformationForShippingManager(
       request: RetrieveActivationInformationForShippingManagerRequest,
       options?: base.RequestOptions<
-        RetrieveActivationInformationForShippingManagerRequestFields,
-        RetrieveActivationInformationForShippingManagerRequestEmbeds
+        RetrieveActivationInformationForShippingManagerFields,
+        RetrieveActivationInformationForShippingManagerEmbeds
       >,
     ): Promise<RetrieveActivationInformationForShippingManagerResponse> {
       return self.createRequest(
@@ -1413,8 +1410,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfShops(
       request: RetrieveAListOfShopsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfShopsRequestFields,
-        RetrieveAListOfShopsRequestEmbeds
+        RetrieveAListOfShopsFields,
+        RetrieveAListOfShopsEmbeds
       >,
     ): Promise<RetrieveAListOfShopsResponse> {
       return self.createRequest("GET", "/api/v2/admin/shops", request, options);
@@ -1431,10 +1428,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveAShop(
       request: RetrieveAShopRequest,
-      options?: base.RequestOptions<
-        RetrieveAShopRequestFields,
-        RetrieveAShopRequestEmbeds
-      >,
+      options?: base.RequestOptions<RetrieveAShopFields, RetrieveAShopEmbeds>,
     ): Promise<RetrieveAShopResponse> {
       return self.createRequest(
         "GET",
@@ -1465,8 +1459,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSmsSettings(
       request: RetrieveSmsSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveSmsSettingsRequestFields,
-        RetrieveSmsSettingsRequestEmbeds
+        RetrieveSmsSettingsFields,
+        RetrieveSmsSettingsEmbeds
       >,
     ): Promise<RetrieveSmsSettingsResponse> {
       return self.createRequest(
@@ -1485,8 +1479,8 @@ export const Endpoints = (self: base.Client) => ({
     updateSmsSettings(
       request: UpdateSmsSettingsRequest,
       options?: base.RequestOptions<
-        UpdateSmsSettingsRequestFields,
-        UpdateSmsSettingsRequestEmbeds
+        UpdateSmsSettingsFields,
+        UpdateSmsSettingsEmbeds
       >,
     ): Promise<UpdateSmsSettingsResponse> {
       return self.createRequest(
@@ -1517,8 +1511,8 @@ export const Endpoints = (self: base.Client) => ({
     appleLoginSyncDetails(
       request: AppleLoginSyncDetailsRequest,
       options?: base.RequestOptions<
-        AppleLoginSyncDetailsRequestFields,
-        AppleLoginSyncDetailsRequestEmbeds
+        AppleLoginSyncDetailsFields,
+        AppleLoginSyncDetailsEmbeds
       >,
     ): Promise<AppleLoginSyncDetailsResponse> {
       return self.createRequest(
@@ -1540,8 +1534,8 @@ export const Endpoints = (self: base.Client) => ({
     appleLoginSyncSettings(
       request: AppleLoginSyncSettingsRequest,
       options?: base.RequestOptions<
-        AppleLoginSyncSettingsRequestFields,
-        AppleLoginSyncSettingsRequestEmbeds
+        AppleLoginSyncSettingsFields,
+        AppleLoginSyncSettingsEmbeds
       >,
     ): Promise<AppleLoginSyncSettingsResponse> {
       return self.createRequest(
@@ -1572,8 +1566,8 @@ export const Endpoints = (self: base.Client) => ({
     kakaoSyncDetails(
       request: KakaoSyncDetailsRequest,
       options?: base.RequestOptions<
-        KakaoSyncDetailsRequestFields,
-        KakaoSyncDetailsRequestEmbeds
+        KakaoSyncDetailsFields,
+        KakaoSyncDetailsEmbeds
       >,
     ): Promise<KakaoSyncDetailsResponse> {
       return self.createRequest(
@@ -1595,8 +1589,8 @@ export const Endpoints = (self: base.Client) => ({
     kakaoSyncUpdates(
       request: KakaoSyncUpdatesRequest,
       options?: base.RequestOptions<
-        KakaoSyncUpdatesRequestFields,
-        KakaoSyncUpdatesRequestEmbeds
+        KakaoSyncUpdatesFields,
+        KakaoSyncUpdatesEmbeds
       >,
     ): Promise<KakaoSyncUpdatesResponse> {
       return self.createRequest(
@@ -1626,8 +1620,8 @@ export const Endpoints = (self: base.Client) => ({
     naverLoginDetails(
       request: NaverLoginDetailsRequest,
       options?: base.RequestOptions<
-        NaverLoginDetailsRequestFields,
-        NaverLoginDetailsRequestEmbeds
+        NaverLoginDetailsFields,
+        NaverLoginDetailsEmbeds
       >,
     ): Promise<NaverLoginDetailsResponse> {
       return self.createRequest(
@@ -1649,8 +1643,8 @@ export const Endpoints = (self: base.Client) => ({
     updateNaverLoginSettings(
       request: UpdateNaverLoginSettingsRequest,
       options?: base.RequestOptions<
-        UpdateNaverLoginSettingsRequestFields,
-        UpdateNaverLoginSettingsRequestEmbeds
+        UpdateNaverLoginSettingsFields,
+        UpdateNaverLoginSettingsEmbeds
       >,
     ): Promise<UpdateNaverLoginSettingsResponse> {
       return self.createRequest(
@@ -1682,8 +1676,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveStoreDetails(
       request: RetrieveStoreDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveStoreDetailsRequestFields,
-        RetrieveStoreDetailsRequestEmbeds
+        RetrieveStoreDetailsFields,
+        RetrieveStoreDetailsEmbeds
       >,
     ): Promise<RetrieveStoreDetailsResponse> {
       return self.createRequest("GET", "/api/v2/admin/store", request, options);
@@ -1711,8 +1705,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfStoreBankAccounts(
       request: RetrieveAListOfStoreBankAccountsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfStoreBankAccountsRequestFields,
-        RetrieveAListOfStoreBankAccountsRequestEmbeds
+        RetrieveAListOfStoreBankAccountsFields,
+        RetrieveAListOfStoreBankAccountsEmbeds
       >,
     ): Promise<RetrieveAListOfStoreBankAccountsResponse> {
       return self.createRequest(
@@ -1746,8 +1740,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfSubscriptionProducts(
       request: RetrieveAListOfSubscriptionProductsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfSubscriptionProductsRequestFields,
-        RetrieveAListOfSubscriptionProductsRequestEmbeds
+        RetrieveAListOfSubscriptionProductsFields,
+        RetrieveAListOfSubscriptionProductsEmbeds
       >,
     ): Promise<RetrieveAListOfSubscriptionProductsResponse> {
       return self.createRequest(
@@ -1769,8 +1763,8 @@ export const Endpoints = (self: base.Client) => ({
     createASubscriptionPaymentRule(
       request: CreateASubscriptionPaymentRuleRequest,
       options?: base.RequestOptions<
-        CreateASubscriptionPaymentRuleRequestFields,
-        CreateASubscriptionPaymentRuleRequestEmbeds
+        CreateASubscriptionPaymentRuleFields,
+        CreateASubscriptionPaymentRuleEmbeds
       >,
     ): Promise<CreateASubscriptionPaymentRuleResponse> {
       return self.createRequest(
@@ -1792,8 +1786,8 @@ export const Endpoints = (self: base.Client) => ({
     updateSubscriptionProducts(
       request: UpdateSubscriptionProductsRequest,
       options?: base.RequestOptions<
-        UpdateSubscriptionProductsRequestFields,
-        UpdateSubscriptionProductsRequestEmbeds
+        UpdateSubscriptionProductsFields,
+        UpdateSubscriptionProductsEmbeds
       >,
     ): Promise<UpdateSubscriptionProductsResponse> {
       return self.createRequest(
@@ -1815,8 +1809,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteSubscriptionProducts(
       request: DeleteSubscriptionProductsRequest,
       options?: base.RequestOptions<
-        DeleteSubscriptionProductsRequestFields,
-        DeleteSubscriptionProductsRequestEmbeds
+        DeleteSubscriptionProductsFields,
+        DeleteSubscriptionProductsEmbeds
       >,
     ): Promise<DeleteSubscriptionProductsResponse> {
       return self.createRequest(
@@ -1846,8 +1840,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveActivationInformationForTaxManager(
       request: RetrieveActivationInformationForTaxManagerRequest,
       options?: base.RequestOptions<
-        RetrieveActivationInformationForTaxManagerRequestFields,
-        RetrieveActivationInformationForTaxManagerRequestEmbeds
+        RetrieveActivationInformationForTaxManagerFields,
+        RetrieveActivationInformationForTaxManagerEmbeds
       >,
     ): Promise<RetrieveActivationInformationForTaxManagerResponse> {
       return self.createRequest(
@@ -1880,8 +1874,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfAdminUsers(
       request: RetrieveAListOfAdminUsersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfAdminUsersRequestFields,
-        RetrieveAListOfAdminUsersRequestEmbeds
+        RetrieveAListOfAdminUsersFields,
+        RetrieveAListOfAdminUsersEmbeds
       >,
     ): Promise<RetrieveAListOfAdminUsersResponse> {
       return self.createRequest("GET", "/api/v2/admin/users", request, options);
@@ -1899,8 +1893,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAdminUserDetails(
       request: RetrieveAdminUserDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveAdminUserDetailsRequestFields,
-        RetrieveAdminUserDetailsRequestEmbeds
+        RetrieveAdminUserDetailsFields,
+        RetrieveAdminUserDetailsEmbeds
       >,
     ): Promise<RetrieveAdminUserDetailsResponse> {
       return self.createRequest(
@@ -1936,8 +1930,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfBundles(
       request: RetrieveAListOfBundlesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfBundlesRequestFields,
-        RetrieveAListOfBundlesRequestEmbeds
+        RetrieveAListOfBundlesFields,
+        RetrieveAListOfBundlesEmbeds
       >,
     ): Promise<RetrieveAListOfBundlesResponse> {
       return self.createRequest(
@@ -1960,8 +1954,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveABundle(
       request: RetrieveABundleRequest,
       options?: base.RequestOptions<
-        RetrieveABundleRequestFields,
-        RetrieveABundleRequestEmbeds
+        RetrieveABundleFields,
+        RetrieveABundleEmbeds
       >,
     ): Promise<RetrieveABundleResponse> {
       return self.createRequest(
@@ -1983,10 +1977,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABundle(
       request: CreateABundleRequest,
-      options?: base.RequestOptions<
-        CreateABundleRequestFields,
-        CreateABundleRequestEmbeds
-      >,
+      options?: base.RequestOptions<CreateABundleFields, CreateABundleEmbeds>,
     ): Promise<CreateABundleResponse> {
       return self.createRequest(
         "POST",
@@ -2007,10 +1998,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABundle(
       request: UpdateABundleRequest,
-      options?: base.RequestOptions<
-        UpdateABundleRequestFields,
-        UpdateABundleRequestEmbeds
-      >,
+      options?: base.RequestOptions<UpdateABundleFields, UpdateABundleEmbeds>,
     ): Promise<UpdateABundleResponse> {
       return self.createRequest(
         "PUT",
@@ -2030,10 +2018,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABundle(
       request: DeleteABundleRequest,
-      options?: base.RequestOptions<
-        DeleteABundleRequestFields,
-        DeleteABundleRequestEmbeds
-      >,
+      options?: base.RequestOptions<DeleteABundleFields, DeleteABundleEmbeds>,
     ): Promise<DeleteABundleResponse> {
       return self.createRequest(
         "DELETE",
@@ -2066,8 +2051,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsByCategory(
       request: RetrieveAListOfProductsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsByCategoryRequestFields,
-        RetrieveAListOfProductsByCategoryRequestEmbeds
+        RetrieveAListOfProductsByCategoryFields,
+        RetrieveAListOfProductsByCategoryEmbeds
       >,
     ): Promise<RetrieveAListOfProductsByCategoryResponse> {
       return self.createRequest(
@@ -2089,8 +2074,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductsByCategory(
       request: RetrieveACountOfProductsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsByCategoryRequestFields,
-        RetrieveACountOfProductsByCategoryRequestEmbeds
+        RetrieveACountOfProductsByCategoryFields,
+        RetrieveACountOfProductsByCategoryEmbeds
       >,
     ): Promise<RetrieveACountOfProductsByCategoryResponse> {
       return self.createRequest(
@@ -2113,8 +2098,8 @@ export const Endpoints = (self: base.Client) => ({
     addProductsToACategory(
       request: AddProductsToACategoryRequest,
       options?: base.RequestOptions<
-        AddProductsToACategoryRequestFields,
-        AddProductsToACategoryRequestEmbeds
+        AddProductsToACategoryFields,
+        AddProductsToACategoryEmbeds
       >,
     ): Promise<AddProductsToACategoryResponse> {
       return self.createRequest(
@@ -2137,8 +2122,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductInProductCategory(
       request: UpdateAProductInProductCategoryRequest,
       options?: base.RequestOptions<
-        UpdateAProductInProductCategoryRequestFields,
-        UpdateAProductInProductCategoryRequestEmbeds
+        UpdateAProductInProductCategoryFields,
+        UpdateAProductInProductCategoryEmbeds
       >,
     ): Promise<UpdateAProductInProductCategoryResponse> {
       return self.createRequest(
@@ -2161,8 +2146,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductByCategory(
       request: DeleteAProductByCategoryRequest,
       options?: base.RequestOptions<
-        DeleteAProductByCategoryRequestFields,
-        DeleteAProductByCategoryRequestEmbeds
+        DeleteAProductByCategoryFields,
+        DeleteAProductByCategoryEmbeds
       >,
     ): Promise<DeleteAProductByCategoryResponse> {
       return self.createRequest(
@@ -2196,8 +2181,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsInMainCategory(
       request: RetrieveAListOfProductsInMainCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsInMainCategoryRequestFields,
-        RetrieveAListOfProductsInMainCategoryRequestEmbeds
+        RetrieveAListOfProductsInMainCategoryFields,
+        RetrieveAListOfProductsInMainCategoryEmbeds
       >,
     ): Promise<RetrieveAListOfProductsInMainCategoryResponse> {
       return self.createRequest(
@@ -2219,8 +2204,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductsInMainCategory(
       request: RetrieveACountOfProductsInMainCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsInMainCategoryRequestFields,
-        RetrieveACountOfProductsInMainCategoryRequestEmbeds
+        RetrieveACountOfProductsInMainCategoryFields,
+        RetrieveACountOfProductsInMainCategoryEmbeds
       >,
     ): Promise<RetrieveACountOfProductsInMainCategoryResponse> {
       return self.createRequest(
@@ -2243,8 +2228,8 @@ export const Endpoints = (self: base.Client) => ({
     setMainCategoryProducts(
       request: SetMainCategoryProductsRequest,
       options?: base.RequestOptions<
-        SetMainCategoryProductsRequestFields,
-        SetMainCategoryProductsRequestEmbeds
+        SetMainCategoryProductsFields,
+        SetMainCategoryProductsEmbeds
       >,
     ): Promise<SetMainCategoryProductsResponse> {
       return self.createRequest(
@@ -2267,8 +2252,8 @@ export const Endpoints = (self: base.Client) => ({
     updateFixedSortingOfProductsInMainCategory(
       request: UpdateFixedSortingOfProductsInMainCategoryRequest,
       options?: base.RequestOptions<
-        UpdateFixedSortingOfProductsInMainCategoryRequestFields,
-        UpdateFixedSortingOfProductsInMainCategoryRequestEmbeds
+        UpdateFixedSortingOfProductsInMainCategoryFields,
+        UpdateFixedSortingOfProductsInMainCategoryEmbeds
       >,
     ): Promise<UpdateFixedSortingOfProductsInMainCategoryResponse> {
       return self.createRequest(
@@ -2291,8 +2276,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductInMainCategory(
       request: DeleteAProductInMainCategoryRequest,
       options?: base.RequestOptions<
-        DeleteAProductInMainCategoryRequestFields,
-        DeleteAProductInMainCategoryRequestEmbeds
+        DeleteAProductInMainCategoryFields,
+        DeleteAProductInMainCategoryEmbeds
       >,
     ): Promise<DeleteAProductInMainCategoryResponse> {
       return self.createRequest(
@@ -2329,8 +2314,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProducts(
       request: RetrieveAListOfProductsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsRequestFields,
-        RetrieveAListOfProductsRequestEmbeds
+        RetrieveAListOfProductsFields,
+        RetrieveAListOfProductsEmbeds
       >,
     ): Promise<RetrieveAListOfProductsResponse> {
       return self.createRequest(
@@ -2352,8 +2337,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProducts(
       request: RetrieveACountOfProductsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsRequestFields,
-        RetrieveACountOfProductsRequestEmbeds
+        RetrieveACountOfProductsFields,
+        RetrieveACountOfProductsEmbeds
       >,
     ): Promise<RetrieveACountOfProductsResponse> {
       return self.createRequest(
@@ -2376,8 +2361,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductResource(
       request: RetrieveAProductResourceRequest,
       options?: base.RequestOptions<
-        RetrieveAProductResourceRequestFields,
-        RetrieveAProductResourceRequestEmbeds
+        RetrieveAProductResourceFields,
+        RetrieveAProductResourceEmbeds
       >,
     ): Promise<RetrieveAProductResourceResponse> {
       return self.createRequest(
@@ -2399,10 +2384,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createAProduct(
       request: CreateAProductRequest,
-      options?: base.RequestOptions<
-        CreateAProductRequestFields,
-        CreateAProductRequestEmbeds
-      >,
+      options?: base.RequestOptions<CreateAProductFields, CreateAProductEmbeds>,
     ): Promise<CreateAProductResponse> {
       return self.createRequest(
         "POST",
@@ -2423,10 +2405,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAProduct(
       request: UpdateAProductRequest,
-      options?: base.RequestOptions<
-        UpdateAProductRequestFields,
-        UpdateAProductRequestEmbeds
-      >,
+      options?: base.RequestOptions<UpdateAProductFields, UpdateAProductEmbeds>,
     ): Promise<UpdateAProductResponse> {
       return self.createRequest(
         "PUT",
@@ -2447,10 +2426,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteAProduct(
       request: DeleteAProductRequest,
-      options?: base.RequestOptions<
-        DeleteAProductRequestFields,
-        DeleteAProductRequestEmbeds
-      >,
+      options?: base.RequestOptions<DeleteAProductFields, DeleteAProductEmbeds>,
     ): Promise<DeleteAProductResponse> {
       return self.createRequest(
         "DELETE",
@@ -2482,8 +2458,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnAdditionalProductImage(
       request: CreateAnAdditionalProductImageRequest,
       options?: base.RequestOptions<
-        CreateAnAdditionalProductImageRequestFields,
-        CreateAnAdditionalProductImageRequestEmbeds
+        CreateAnAdditionalProductImageFields,
+        CreateAnAdditionalProductImageEmbeds
       >,
     ): Promise<CreateAnAdditionalProductImageResponse> {
       return self.createRequest(
@@ -2506,8 +2482,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnAdditionalProductImage(
       request: UpdateAnAdditionalProductImageRequest,
       options?: base.RequestOptions<
-        UpdateAnAdditionalProductImageRequestFields,
-        UpdateAnAdditionalProductImageRequestEmbeds
+        UpdateAnAdditionalProductImageFields,
+        UpdateAnAdditionalProductImageEmbeds
       >,
     ): Promise<UpdateAnAdditionalProductImageResponse> {
       return self.createRequest(
@@ -2526,8 +2502,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnAdditionalProductImage(
       request: DeleteAnAdditionalProductImageRequest,
       options?: base.RequestOptions<
-        DeleteAnAdditionalProductImageRequestFields,
-        DeleteAnAdditionalProductImageRequestEmbeds
+        DeleteAnAdditionalProductImageFields,
+        DeleteAnAdditionalProductImageEmbeds
       >,
     ): Promise<DeleteAnAdditionalProductImageResponse> {
       return self.createRequest(
@@ -2560,8 +2536,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductApprovalStatus(
       request: RetrieveAProductApprovalStatusRequest,
       options?: base.RequestOptions<
-        RetrieveAProductApprovalStatusRequestFields,
-        RetrieveAProductApprovalStatusRequestEmbeds
+        RetrieveAProductApprovalStatusFields,
+        RetrieveAProductApprovalStatusEmbeds
       >,
     ): Promise<RetrieveAProductApprovalStatusResponse> {
       return self.createRequest(
@@ -2584,8 +2560,8 @@ export const Endpoints = (self: base.Client) => ({
     createAProductApprovalRequest(
       request: CreateAProductApprovalRequestRequest,
       options?: base.RequestOptions<
-        CreateAProductApprovalRequestRequestFields,
-        CreateAProductApprovalRequestRequestEmbeds
+        CreateAProductApprovalRequestFields,
+        CreateAProductApprovalRequestEmbeds
       >,
     ): Promise<CreateAProductApprovalRequestResponse> {
       return self.createRequest(
@@ -2608,8 +2584,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductApprovalStatus(
       request: UpdateAProductApprovalStatusRequest,
       options?: base.RequestOptions<
-        UpdateAProductApprovalStatusRequestFields,
-        UpdateAProductApprovalStatusRequestEmbeds
+        UpdateAProductApprovalStatusFields,
+        UpdateAProductApprovalStatusEmbeds
       >,
     ): Promise<UpdateAProductApprovalStatusResponse> {
       return self.createRequest(
@@ -2635,8 +2611,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveUserDefinedPropertiesByProduct(
       request: RetrieveUserDefinedPropertiesByProductRequest,
       options?: base.RequestOptions<
-        RetrieveUserDefinedPropertiesByProductRequestFields,
-        RetrieveUserDefinedPropertiesByProductRequestEmbeds
+        RetrieveUserDefinedPropertiesByProductFields,
+        RetrieveUserDefinedPropertiesByProductEmbeds
       >,
     ): Promise<RetrieveUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
@@ -2655,8 +2631,8 @@ export const Endpoints = (self: base.Client) => ({
     updateUserDefinedPropertiesByProduct(
       request: UpdateUserDefinedPropertiesByProductRequest,
       options?: base.RequestOptions<
-        UpdateUserDefinedPropertiesByProductRequestFields,
-        UpdateUserDefinedPropertiesByProductRequestEmbeds
+        UpdateUserDefinedPropertiesByProductFields,
+        UpdateUserDefinedPropertiesByProductEmbeds
       >,
     ): Promise<UpdateUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
@@ -2675,8 +2651,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteUserDefinedPropertiesByProduct(
       request: DeleteUserDefinedPropertiesByProductRequest,
       options?: base.RequestOptions<
-        DeleteUserDefinedPropertiesByProductRequestFields,
-        DeleteUserDefinedPropertiesByProductRequestEmbeds
+        DeleteUserDefinedPropertiesByProductFields,
+        DeleteUserDefinedPropertiesByProductEmbeds
       >,
     ): Promise<DeleteUserDefinedPropertiesByProductResponse> {
       return self.createRequest(
@@ -2695,8 +2671,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveUserDefinedProperties(
       request: RetrieveUserDefinedPropertiesRequest,
       options?: base.RequestOptions<
-        RetrieveUserDefinedPropertiesRequestFields,
-        RetrieveUserDefinedPropertiesRequestEmbeds
+        RetrieveUserDefinedPropertiesFields,
+        RetrieveUserDefinedPropertiesEmbeds
       >,
     ): Promise<RetrieveUserDefinedPropertiesResponse> {
       return self.createRequest(
@@ -2715,8 +2691,8 @@ export const Endpoints = (self: base.Client) => ({
     createUserDefinedProperties(
       request: CreateUserDefinedPropertiesRequest,
       options?: base.RequestOptions<
-        CreateUserDefinedPropertiesRequestFields,
-        CreateUserDefinedPropertiesRequestEmbeds
+        CreateUserDefinedPropertiesFields,
+        CreateUserDefinedPropertiesEmbeds
       >,
     ): Promise<CreateUserDefinedPropertiesResponse> {
       return self.createRequest(
@@ -2735,8 +2711,8 @@ export const Endpoints = (self: base.Client) => ({
     updateUserDefinedProperties(
       request: UpdateUserDefinedPropertiesRequest,
       options?: base.RequestOptions<
-        UpdateUserDefinedPropertiesRequestFields,
-        UpdateUserDefinedPropertiesRequestEmbeds
+        UpdateUserDefinedPropertiesFields,
+        UpdateUserDefinedPropertiesEmbeds
       >,
     ): Promise<UpdateUserDefinedPropertiesResponse> {
       return self.createRequest(
@@ -2755,8 +2731,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteUserDefinedProperties(
       request: DeleteUserDefinedPropertiesRequest,
       options?: base.RequestOptions<
-        DeleteUserDefinedPropertiesRequestFields,
-        DeleteUserDefinedPropertiesRequestEmbeds
+        DeleteUserDefinedPropertiesFields,
+        DeleteUserDefinedPropertiesEmbeds
       >,
     ): Promise<DeleteUserDefinedPropertiesResponse> {
       return self.createRequest(
@@ -2790,8 +2766,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductDecorationImages(
       request: RetrieveAListOfProductDecorationImagesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductDecorationImagesRequestFields,
-        RetrieveAListOfProductDecorationImagesRequestEmbeds
+        RetrieveAListOfProductDecorationImagesFields,
+        RetrieveAListOfProductDecorationImagesEmbeds
       >,
     ): Promise<RetrieveAListOfProductDecorationImagesResponse> {
       return self.createRequest(
@@ -2814,8 +2790,8 @@ export const Endpoints = (self: base.Client) => ({
     setDecorationImagesForAProduct(
       request: SetDecorationImagesForAProductRequest,
       options?: base.RequestOptions<
-        SetDecorationImagesForAProductRequestFields,
-        SetDecorationImagesForAProductRequestEmbeds
+        SetDecorationImagesForAProductFields,
+        SetDecorationImagesForAProductEmbeds
       >,
     ): Promise<SetDecorationImagesForAProductResponse> {
       return self.createRequest(
@@ -2838,8 +2814,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductDecorationImages(
       request: UpdateProductDecorationImagesRequest,
       options?: base.RequestOptions<
-        UpdateProductDecorationImagesRequestFields,
-        UpdateProductDecorationImagesRequestEmbeds
+        UpdateProductDecorationImagesFields,
+        UpdateProductDecorationImagesEmbeds
       >,
     ): Promise<UpdateProductDecorationImagesResponse> {
       return self.createRequest(
@@ -2861,8 +2837,8 @@ export const Endpoints = (self: base.Client) => ({
     removeAProductDecorationImage(
       request: RemoveAProductDecorationImageRequest,
       options?: base.RequestOptions<
-        RemoveAProductDecorationImageRequestFields,
-        RemoveAProductDecorationImageRequestEmbeds
+        RemoveAProductDecorationImageFields,
+        RemoveAProductDecorationImageEmbeds
       >,
     ): Promise<RemoveAProductDecorationImageResponse> {
       return self.createRequest(
@@ -2884,8 +2860,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfDecorationImages(
       request: RetrieveAListOfDecorationImagesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfDecorationImagesRequestFields,
-        RetrieveAListOfDecorationImagesRequestEmbeds
+        RetrieveAListOfDecorationImagesFields,
+        RetrieveAListOfDecorationImagesEmbeds
       >,
     ): Promise<RetrieveAListOfDecorationImagesResponse> {
       return self.createRequest(
@@ -2919,8 +2895,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductDiscountedPrice(
       request: RetrieveAProductDiscountedPriceRequest,
       options?: base.RequestOptions<
-        RetrieveAProductDiscountedPriceRequestFields,
-        RetrieveAProductDiscountedPriceRequestEmbeds
+        RetrieveAProductDiscountedPriceFields,
+        RetrieveAProductDiscountedPriceEmbeds
       >,
     ): Promise<RetrieveAProductDiscountedPriceResponse> {
       return self.createRequest(
@@ -2954,8 +2930,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductViews(
       request: RetrieveACountOfProductViewsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductViewsRequestFields,
-        RetrieveACountOfProductViewsRequestEmbeds
+        RetrieveACountOfProductViewsFields,
+        RetrieveACountOfProductViewsEmbeds
       >,
     ): Promise<RetrieveACountOfProductViewsResponse> {
       return self.createRequest(
@@ -2985,8 +2961,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductIcons(
       request: RetrieveAListOfProductIconsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductIconsRequestFields,
-        RetrieveAListOfProductIconsRequestEmbeds
+        RetrieveAListOfProductIconsFields,
+        RetrieveAListOfProductIconsEmbeds
       >,
     ): Promise<RetrieveAListOfProductIconsResponse> {
       return self.createRequest(
@@ -3009,8 +2985,8 @@ export const Endpoints = (self: base.Client) => ({
     setIconsForAProduct(
       request: SetIconsForAProductRequest,
       options?: base.RequestOptions<
-        SetIconsForAProductRequestFields,
-        SetIconsForAProductRequestEmbeds
+        SetIconsForAProductFields,
+        SetIconsForAProductEmbeds
       >,
     ): Promise<SetIconsForAProductResponse> {
       return self.createRequest(
@@ -3033,8 +3009,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductIcons(
       request: UpdateProductIconsRequest,
       options?: base.RequestOptions<
-        UpdateProductIconsRequestFields,
-        UpdateProductIconsRequestEmbeds
+        UpdateProductIconsFields,
+        UpdateProductIconsEmbeds
       >,
     ): Promise<UpdateProductIconsResponse> {
       return self.createRequest(
@@ -3057,8 +3033,8 @@ export const Endpoints = (self: base.Client) => ({
     removeAProductIcon(
       request: RemoveAProductIconRequest,
       options?: base.RequestOptions<
-        RemoveAProductIconRequestFields,
-        RemoveAProductIconRequestEmbeds
+        RemoveAProductIconFields,
+        RemoveAProductIconEmbeds
       >,
     ): Promise<RemoveAProductIconResponse> {
       return self.createRequest(
@@ -3081,8 +3057,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfIcons(
       request: RetrieveAListOfIconsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfIconsRequestFields,
-        RetrieveAListOfIconsRequestEmbeds
+        RetrieveAListOfIconsFields,
+        RetrieveAListOfIconsEmbeds
       >,
     ): Promise<RetrieveAListOfIconsResponse> {
       return self.createRequest(
@@ -3118,8 +3094,8 @@ export const Endpoints = (self: base.Client) => ({
     uploadProductImages(
       request: UploadProductImagesRequest,
       options?: base.RequestOptions<
-        UploadProductImagesRequestFields,
-        UploadProductImagesRequestEmbeds
+        UploadProductImagesFields,
+        UploadProductImagesEmbeds
       >,
     ): Promise<UploadProductImagesResponse> {
       return self.createRequest(
@@ -3142,8 +3118,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteProductImages(
       request: DeleteProductImagesRequest,
       options?: base.RequestOptions<
-        DeleteProductImagesRequestFields,
-        DeleteProductImagesRequestEmbeds
+        DeleteProductImagesFields,
+        DeleteProductImagesEmbeds
       >,
     ): Promise<DeleteProductImagesResponse> {
       return self.createRequest(
@@ -3166,10 +3142,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     uploadImages(
       request: UploadImagesRequest,
-      options?: base.RequestOptions<
-        UploadImagesRequestFields,
-        UploadImagesRequestEmbeds
-      >,
+      options?: base.RequestOptions<UploadImagesFields, UploadImagesEmbeds>,
     ): Promise<UploadImagesResponse> {
       return self.createRequest(
         "POST",
@@ -3202,8 +3175,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductMemos(
       request: RetrieveAListOfProductMemosRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductMemosRequestFields,
-        RetrieveAListOfProductMemosRequestEmbeds
+        RetrieveAListOfProductMemosFields,
+        RetrieveAListOfProductMemosEmbeds
       >,
     ): Promise<RetrieveAListOfProductMemosResponse> {
       return self.createRequest(
@@ -3227,8 +3200,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductMemo(
       request: RetrieveAProductMemoRequest,
       options?: base.RequestOptions<
-        RetrieveAProductMemoRequestFields,
-        RetrieveAProductMemoRequestEmbeds
+        RetrieveAProductMemoFields,
+        RetrieveAProductMemoEmbeds
       >,
     ): Promise<RetrieveAProductMemoResponse> {
       return self.createRequest(
@@ -3251,8 +3224,8 @@ export const Endpoints = (self: base.Client) => ({
     createAProductMemo(
       request: CreateAProductMemoRequest,
       options?: base.RequestOptions<
-        CreateAProductMemoRequestFields,
-        CreateAProductMemoRequestEmbeds
+        CreateAProductMemoFields,
+        CreateAProductMemoEmbeds
       >,
     ): Promise<CreateAProductMemoResponse> {
       return self.createRequest(
@@ -3276,8 +3249,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductMemo(
       request: UpdateAProductMemoRequest,
       options?: base.RequestOptions<
-        UpdateAProductMemoRequestFields,
-        UpdateAProductMemoRequestEmbeds
+        UpdateAProductMemoFields,
+        UpdateAProductMemoEmbeds
       >,
     ): Promise<UpdateAProductMemoResponse> {
       return self.createRequest(
@@ -3300,8 +3273,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductMemo(
       request: DeleteAProductMemoRequest,
       options?: base.RequestOptions<
-        DeleteAProductMemoRequestFields,
-        DeleteAProductMemoRequestEmbeds
+        DeleteAProductMemoFields,
+        DeleteAProductMemoEmbeds
       >,
     ): Promise<DeleteAProductMemoResponse> {
       return self.createRequest(
@@ -3337,8 +3310,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductOptions(
       request: RetrieveAListOfProductOptionsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductOptionsRequestFields,
-        RetrieveAListOfProductOptionsRequestEmbeds
+        RetrieveAListOfProductOptionsFields,
+        RetrieveAListOfProductOptionsEmbeds
       >,
     ): Promise<RetrieveAListOfProductOptionsResponse> {
       return self.createRequest(
@@ -3361,8 +3334,8 @@ export const Endpoints = (self: base.Client) => ({
     createProductOptions(
       request: CreateProductOptionsRequest,
       options?: base.RequestOptions<
-        CreateProductOptionsRequestFields,
-        CreateProductOptionsRequestEmbeds
+        CreateProductOptionsFields,
+        CreateProductOptionsEmbeds
       >,
     ): Promise<CreateProductOptionsResponse> {
       return self.createRequest(
@@ -3387,8 +3360,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductOptions(
       request: UpdateProductOptionsRequest,
       options?: base.RequestOptions<
-        UpdateProductOptionsRequestFields,
-        UpdateProductOptionsRequestEmbeds
+        UpdateProductOptionsFields,
+        UpdateProductOptionsEmbeds
       >,
     ): Promise<UpdateProductOptionsResponse> {
       return self.createRequest(
@@ -3411,8 +3384,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductOption(
       request: DeleteAProductOptionRequest,
       options?: base.RequestOptions<
-        DeleteAProductOptionRequestFields,
-        DeleteAProductOptionRequestEmbeds
+        DeleteAProductOptionFields,
+        DeleteAProductOptionEmbeds
       >,
     ): Promise<DeleteAProductOptionResponse> {
       return self.createRequest(
@@ -3446,8 +3419,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductSSeoSettings(
       request: RetrieveAProductSSeoSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveAProductSSeoSettingsRequestFields,
-        RetrieveAProductSSeoSettingsRequestEmbeds
+        RetrieveAProductSSeoSettingsFields,
+        RetrieveAProductSSeoSettingsEmbeds
       >,
     ): Promise<RetrieveAProductSSeoSettingsResponse> {
       return self.createRequest(
@@ -3470,8 +3443,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductSeoSettings(
       request: UpdateProductSeoSettingsRequest,
       options?: base.RequestOptions<
-        UpdateProductSeoSettingsRequestFields,
-        UpdateProductSeoSettingsRequestEmbeds
+        UpdateProductSeoSettingsFields,
+        UpdateProductSeoSettingsEmbeds
       >,
     ): Promise<UpdateProductSeoSettingsResponse> {
       return self.createRequest(
@@ -3505,8 +3478,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfAProductSProductTags(
       request: RetrieveACountOfAProductSProductTagsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfAProductSProductTagsRequestFields,
-        RetrieveACountOfAProductSProductTagsRequestEmbeds
+        RetrieveACountOfAProductSProductTagsFields,
+        RetrieveACountOfAProductSProductTagsEmbeds
       >,
     ): Promise<RetrieveACountOfAProductSProductTagsResponse> {
       return self.createRequest(
@@ -3529,8 +3502,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfAProductSProductTags(
       request: RetrieveAListOfAProductSProductTagsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfAProductSProductTagsRequestFields,
-        RetrieveAListOfAProductSProductTagsRequestEmbeds
+        RetrieveAListOfAProductSProductTagsFields,
+        RetrieveAListOfAProductSProductTagsEmbeds
       >,
     ): Promise<RetrieveAListOfAProductSProductTagsResponse> {
       return self.createRequest(
@@ -3552,8 +3525,8 @@ export const Endpoints = (self: base.Client) => ({
     createProductTags(
       request: CreateProductTagsRequest,
       options?: base.RequestOptions<
-        CreateProductTagsRequestFields,
-        CreateProductTagsRequestEmbeds
+        CreateProductTagsFields,
+        CreateProductTagsEmbeds
       >,
     ): Promise<CreateProductTagsResponse> {
       return self.createRequest(
@@ -3575,8 +3548,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductTag(
       request: DeleteAProductTagRequest,
       options?: base.RequestOptions<
-        DeleteAProductTagRequestFields,
-        DeleteAProductTagRequestEmbeds
+        DeleteAProductTagFields,
+        DeleteAProductTagEmbeds
       >,
     ): Promise<DeleteAProductTagResponse> {
       return self.createRequest(
@@ -3611,8 +3584,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductVariants(
       request: RetrieveAListOfProductVariantsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductVariantsRequestFields,
-        RetrieveAListOfProductVariantsRequestEmbeds
+        RetrieveAListOfProductVariantsFields,
+        RetrieveAListOfProductVariantsEmbeds
       >,
     ): Promise<RetrieveAListOfProductVariantsResponse> {
       return self.createRequest(
@@ -3635,8 +3608,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductVariant(
       request: RetrieveAProductVariantRequest,
       options?: base.RequestOptions<
-        RetrieveAProductVariantRequestFields,
-        RetrieveAProductVariantRequestEmbeds
+        RetrieveAProductVariantFields,
+        RetrieveAProductVariantEmbeds
       >,
     ): Promise<RetrieveAProductVariantResponse> {
       return self.createRequest(
@@ -3659,8 +3632,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductVariant(
       request: UpdateAProductVariantRequest,
       options?: base.RequestOptions<
-        UpdateAProductVariantRequestFields,
-        UpdateAProductVariantRequestEmbeds
+        UpdateAProductVariantFields,
+        UpdateAProductVariantEmbeds
       >,
     ): Promise<UpdateAProductVariantResponse> {
       return self.createRequest(
@@ -3683,8 +3656,8 @@ export const Endpoints = (self: base.Client) => ({
     updateMultipleProductVariants(
       request: UpdateMultipleProductVariantsRequest,
       options?: base.RequestOptions<
-        UpdateMultipleProductVariantsRequestFields,
-        UpdateMultipleProductVariantsRequestEmbeds
+        UpdateMultipleProductVariantsFields,
+        UpdateMultipleProductVariantsEmbeds
       >,
     ): Promise<UpdateMultipleProductVariantsResponse> {
       return self.createRequest(
@@ -3706,8 +3679,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductVariant(
       request: DeleteAProductVariantRequest,
       options?: base.RequestOptions<
-        DeleteAProductVariantRequestFields,
-        DeleteAProductVariantRequestEmbeds
+        DeleteAProductVariantFields,
+        DeleteAProductVariantEmbeds
       >,
     ): Promise<DeleteAProductVariantResponse> {
       return self.createRequest(
@@ -3739,8 +3712,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveInventoryDetailsOfAProductVariant(
       request: RetrieveInventoryDetailsOfAProductVariantRequest,
       options?: base.RequestOptions<
-        RetrieveInventoryDetailsOfAProductVariantRequestFields,
-        RetrieveInventoryDetailsOfAProductVariantRequestEmbeds
+        RetrieveInventoryDetailsOfAProductVariantFields,
+        RetrieveInventoryDetailsOfAProductVariantEmbeds
       >,
     ): Promise<RetrieveInventoryDetailsOfAProductVariantResponse> {
       return self.createRequest(
@@ -3763,8 +3736,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductVariantInventory(
       request: UpdateAProductVariantInventoryRequest,
       options?: base.RequestOptions<
-        UpdateAProductVariantInventoryRequestFields,
-        UpdateAProductVariantInventoryRequestEmbeds
+        UpdateAProductVariantInventoryFields,
+        UpdateAProductVariantInventoryEmbeds
       >,
     ): Promise<UpdateAProductVariantInventoryResponse> {
       return self.createRequest(
@@ -3798,8 +3771,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnOrderCancellation(
       request: RetrieveAnOrderCancellationRequest,
       options?: base.RequestOptions<
-        RetrieveAnOrderCancellationRequestFields,
-        RetrieveAnOrderCancellationRequestEmbeds
+        RetrieveAnOrderCancellationFields,
+        RetrieveAnOrderCancellationEmbeds
       >,
     ): Promise<RetrieveAnOrderCancellationResponse> {
       return self.createRequest(
@@ -3823,8 +3796,8 @@ export const Endpoints = (self: base.Client) => ({
     createMultipleOrderCancellations(
       request: CreateMultipleOrderCancellationsRequest,
       options?: base.RequestOptions<
-        CreateMultipleOrderCancellationsRequestFields,
-        CreateMultipleOrderCancellationsRequestEmbeds
+        CreateMultipleOrderCancellationsFields,
+        CreateMultipleOrderCancellationsEmbeds
       >,
     ): Promise<CreateMultipleOrderCancellationsResponse> {
       return self.createRequest(
@@ -3849,8 +3822,8 @@ export const Endpoints = (self: base.Client) => ({
     changeCancellationDetailsInBulk(
       request: ChangeCancellationDetailsInBulkRequest,
       options?: base.RequestOptions<
-        ChangeCancellationDetailsInBulkRequestFields,
-        ChangeCancellationDetailsInBulkRequestEmbeds
+        ChangeCancellationDetailsInBulkFields,
+        ChangeCancellationDetailsInBulkEmbeds
       >,
     ): Promise<ChangeCancellationDetailsInBulkResponse> {
       return self.createRequest(
@@ -3883,8 +3856,8 @@ export const Endpoints = (self: base.Client) => ({
     createACancellationRequestForMultipleItems(
       request: CreateACancellationRequestForMultipleItemsRequest,
       options?: base.RequestOptions<
-        CreateACancellationRequestForMultipleItemsRequestFields,
-        CreateACancellationRequestForMultipleItemsRequestEmbeds
+        CreateACancellationRequestForMultipleItemsFields,
+        CreateACancellationRequestForMultipleItemsEmbeds
       >,
     ): Promise<CreateACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
@@ -3908,8 +3881,8 @@ export const Endpoints = (self: base.Client) => ({
     rejectACancellationRequestForMultipleItems(
       request: RejectACancellationRequestForMultipleItemsRequest,
       options?: base.RequestOptions<
-        RejectACancellationRequestForMultipleItemsRequestFields,
-        RejectACancellationRequestForMultipleItemsRequestEmbeds
+        RejectACancellationRequestForMultipleItemsFields,
+        RejectACancellationRequestForMultipleItemsEmbeds
       >,
     ): Promise<RejectACancellationRequestForMultipleItemsResponse> {
       return self.createRequest(
@@ -3942,8 +3915,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCashReceipts(
       request: RetrieveAListOfCashReceiptsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCashReceiptsRequestFields,
-        RetrieveAListOfCashReceiptsRequestEmbeds
+        RetrieveAListOfCashReceiptsFields,
+        RetrieveAListOfCashReceiptsEmbeds
       >,
     ): Promise<RetrieveAListOfCashReceiptsResponse> {
       return self.createRequest(
@@ -3966,8 +3939,8 @@ export const Endpoints = (self: base.Client) => ({
     createACashReceipt(
       request: CreateACashReceiptRequest,
       options?: base.RequestOptions<
-        CreateACashReceiptRequestFields,
-        CreateACashReceiptRequestEmbeds
+        CreateACashReceiptFields,
+        CreateACashReceiptEmbeds
       >,
     ): Promise<CreateACashReceiptResponse> {
       return self.createRequest(
@@ -3990,8 +3963,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACashReceipt(
       request: UpdateACashReceiptRequest,
       options?: base.RequestOptions<
-        UpdateACashReceiptRequestFields,
-        UpdateACashReceiptRequestEmbeds
+        UpdateACashReceiptFields,
+        UpdateACashReceiptEmbeds
       >,
     ): Promise<UpdateACashReceiptResponse> {
       return self.createRequest(
@@ -4021,8 +3994,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACashReceiptCancellation(
       request: UpdateACashReceiptCancellationRequest,
       options?: base.RequestOptions<
-        UpdateACashReceiptCancellationRequestFields,
-        UpdateACashReceiptCancellationRequestEmbeds
+        UpdateACashReceiptCancellationFields,
+        UpdateACashReceiptCancellationEmbeds
       >,
     ): Promise<UpdateACashReceiptCancellationResponse> {
       return self.createRequest(
@@ -4053,8 +4026,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACollectionRequest(
       request: UpdateACollectionRequestRequest,
       options?: base.RequestOptions<
-        UpdateACollectionRequestRequestFields,
-        UpdateACollectionRequestRequestEmbeds
+        UpdateACollectionRequestFields,
+        UpdateACollectionRequestEmbeds
       >,
     ): Promise<UpdateACollectionRequestResponse> {
       return self.createRequest(
@@ -4082,10 +4055,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     orderControl(
       request: OrderControlRequest,
-      options?: base.RequestOptions<
-        OrderControlRequestFields,
-        OrderControlRequestEmbeds
-      >,
+      options?: base.RequestOptions<OrderControlFields, OrderControlEmbeds>,
     ): Promise<OrderControlResponse> {
       return self.createRequest(
         "PUT",
@@ -4116,8 +4086,8 @@ export const Endpoints = (self: base.Client) => ({
     createADraftOrder(
       request: CreateADraftOrderRequest,
       options?: base.RequestOptions<
-        CreateADraftOrderRequestFields,
-        CreateADraftOrderRequestEmbeds
+        CreateADraftOrderFields,
+        CreateADraftOrderEmbeds
       >,
     ): Promise<CreateADraftOrderResponse> {
       return self.createRequest(
@@ -4149,8 +4119,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnExchange(
       request: RetrieveAnExchangeRequest,
       options?: base.RequestOptions<
-        RetrieveAnExchangeRequestFields,
-        RetrieveAnExchangeRequestEmbeds
+        RetrieveAnExchangeFields,
+        RetrieveAnExchangeEmbeds
       >,
     ): Promise<RetrieveAnExchangeResponse> {
       return self.createRequest(
@@ -4172,8 +4142,8 @@ export const Endpoints = (self: base.Client) => ({
     createMultipleExchanges(
       request: CreateMultipleExchangesRequest,
       options?: base.RequestOptions<
-        CreateMultipleExchangesRequestFields,
-        CreateMultipleExchangesRequestEmbeds
+        CreateMultipleExchangesFields,
+        CreateMultipleExchangesEmbeds
       >,
     ): Promise<CreateMultipleExchangesResponse> {
       return self.createRequest(
@@ -4197,8 +4167,8 @@ export const Endpoints = (self: base.Client) => ({
     updateMultipleOrderExchanges(
       request: UpdateMultipleOrderExchangesRequest,
       options?: base.RequestOptions<
-        UpdateMultipleOrderExchangesRequestFields,
-        UpdateMultipleOrderExchangesRequestEmbeds
+        UpdateMultipleOrderExchangesFields,
+        UpdateMultipleOrderExchangesEmbeds
       >,
     ): Promise<UpdateMultipleOrderExchangesResponse> {
       return self.createRequest(
@@ -4230,8 +4200,8 @@ export const Endpoints = (self: base.Client) => ({
     bulkExchangeRequestApi(
       request: BulkExchangeRequestApiRequest,
       options?: base.RequestOptions<
-        BulkExchangeRequestApiRequestFields,
-        BulkExchangeRequestApiRequestEmbeds
+        BulkExchangeRequestApiFields,
+        BulkExchangeRequestApiEmbeds
       >,
     ): Promise<BulkExchangeRequestApiResponse> {
       return self.createRequest(
@@ -4255,8 +4225,8 @@ export const Endpoints = (self: base.Client) => ({
     rejectAnExchangeRequestForMultipleItems(
       request: RejectAnExchangeRequestForMultipleItemsRequest,
       options?: base.RequestOptions<
-        RejectAnExchangeRequestForMultipleItemsRequestFields,
-        RejectAnExchangeRequestForMultipleItemsRequestEmbeds
+        RejectAnExchangeRequestForMultipleItemsFields,
+        RejectAnExchangeRequestForMultipleItemsEmbeds
       >,
     ): Promise<RejectAnExchangeRequestForMultipleItemsResponse> {
       return self.createRequest(
@@ -4286,8 +4256,8 @@ export const Endpoints = (self: base.Client) => ({
     createShippingInformationForMultipleOrdersViaFulfillment(
       request: CreateShippingInformationForMultipleOrdersViaFulfillmentRequest,
       options?: base.RequestOptions<
-        CreateShippingInformationForMultipleOrdersViaFulfillmentRequestFields,
-        CreateShippingInformationForMultipleOrdersViaFulfillmentRequestEmbeds
+        CreateShippingInformationForMultipleOrdersViaFulfillmentFields,
+        CreateShippingInformationForMultipleOrdersViaFulfillmentEmbeds
       >,
     ): Promise<CreateShippingInformationForMultipleOrdersViaFulfillmentResponse> {
       return self.createRequest(
@@ -4317,8 +4287,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveOrderLabels(
       request: RetrieveOrderLabelsRequest,
       options?: base.RequestOptions<
-        RetrieveOrderLabelsRequestFields,
-        RetrieveOrderLabelsRequestEmbeds
+        RetrieveOrderLabelsFields,
+        RetrieveOrderLabelsEmbeds
       >,
     ): Promise<RetrieveOrderLabelsResponse> {
       return self.createRequest(
@@ -4340,8 +4310,8 @@ export const Endpoints = (self: base.Client) => ({
     createMultipleOrderLabels(
       request: CreateMultipleOrderLabelsRequest,
       options?: base.RequestOptions<
-        CreateMultipleOrderLabelsRequestFields,
-        CreateMultipleOrderLabelsRequestEmbeds
+        CreateMultipleOrderLabelsFields,
+        CreateMultipleOrderLabelsEmbeds
       >,
     ): Promise<CreateMultipleOrderLabelsResponse> {
       return self.createRequest(
@@ -4379,8 +4349,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfOrders(
       request: RetrieveAListOfOrdersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfOrdersRequestFields,
-        RetrieveAListOfOrdersRequestEmbeds
+        RetrieveAListOfOrdersFields,
+        RetrieveAListOfOrdersEmbeds
       >,
     ): Promise<RetrieveAListOfOrdersResponse> {
       return self.createRequest(
@@ -4404,8 +4374,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnOrder(
       request: RetrieveAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAnOrderRequestFields,
-        RetrieveAnOrderRequestEmbeds
+        RetrieveAnOrderFields,
+        RetrieveAnOrderEmbeds
       >,
     ): Promise<RetrieveAnOrderResponse> {
       return self.createRequest(
@@ -4427,8 +4397,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfOrders(
       request: RetrieveACountOfOrdersRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfOrdersRequestFields,
-        RetrieveACountOfOrdersRequestEmbeds
+        RetrieveACountOfOrdersFields,
+        RetrieveACountOfOrdersEmbeds
       >,
     ): Promise<RetrieveACountOfOrdersResponse> {
       return self.createRequest(
@@ -4452,8 +4422,8 @@ export const Endpoints = (self: base.Client) => ({
     updateStatusForMultipleOrders(
       request: UpdateStatusForMultipleOrdersRequest,
       options?: base.RequestOptions<
-        UpdateStatusForMultipleOrdersRequestFields,
-        UpdateStatusForMultipleOrdersRequestEmbeds
+        UpdateStatusForMultipleOrdersFields,
+        UpdateStatusForMultipleOrdersEmbeds
       >,
     ): Promise<UpdateStatusForMultipleOrdersResponse> {
       return self.createRequest(
@@ -4477,8 +4447,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderStatus(
       request: UpdateAnOrderStatusRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderStatusRequestFields,
-        UpdateAnOrderStatusRequestEmbeds
+        UpdateAnOrderStatusFields,
+        UpdateAnOrderStatusEmbeds
       >,
     ): Promise<UpdateAnOrderStatusResponse> {
       return self.createRequest(
@@ -4511,8 +4481,8 @@ export const Endpoints = (self: base.Client) => ({
     removeAutoCalculationSettingOfAnOrder(
       request: RemoveAutoCalculationSettingOfAnOrderRequest,
       options?: base.RequestOptions<
-        RemoveAutoCalculationSettingOfAnOrderRequestFields,
-        RemoveAutoCalculationSettingOfAnOrderRequestEmbeds
+        RemoveAutoCalculationSettingOfAnOrderFields,
+        RemoveAutoCalculationSettingOfAnOrderEmbeds
       >,
     ): Promise<RemoveAutoCalculationSettingOfAnOrderResponse> {
       return self.createRequest(
@@ -4545,8 +4515,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCustomerDetailsOfAnOrder(
       request: RetrieveCustomerDetailsOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveCustomerDetailsOfAnOrderRequestFields,
-        RetrieveCustomerDetailsOfAnOrderRequestEmbeds
+        RetrieveCustomerDetailsOfAnOrderFields,
+        RetrieveCustomerDetailsOfAnOrderEmbeds
       >,
     ): Promise<RetrieveCustomerDetailsOfAnOrderResponse> {
       return self.createRequest(
@@ -4569,8 +4539,8 @@ export const Endpoints = (self: base.Client) => ({
     updateCustomerInformationOfAnOrder(
       request: UpdateCustomerInformationOfAnOrderRequest,
       options?: base.RequestOptions<
-        UpdateCustomerInformationOfAnOrderRequestFields,
-        UpdateCustomerInformationOfAnOrderRequestEmbeds
+        UpdateCustomerInformationOfAnOrderFields,
+        UpdateCustomerInformationOfAnOrderEmbeds
       >,
     ): Promise<UpdateCustomerInformationOfAnOrderResponse> {
       return self.createRequest(
@@ -4605,8 +4575,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerHistoryOfAnOrder(
       request: RetrieveAListOfCustomerHistoryOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerHistoryOfAnOrderRequestFields,
-        RetrieveAListOfCustomerHistoryOfAnOrderRequestEmbeds
+        RetrieveAListOfCustomerHistoryOfAnOrderFields,
+        RetrieveAListOfCustomerHistoryOfAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerHistoryOfAnOrderResponse> {
       return self.createRequest(
@@ -4641,8 +4611,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderCancellation(
       request: CreateAnOrderCancellationRequest,
       options?: base.RequestOptions<
-        CreateAnOrderCancellationRequestFields,
-        CreateAnOrderCancellationRequestEmbeds
+        CreateAnOrderCancellationFields,
+        CreateAnOrderCancellationEmbeds
       >,
     ): Promise<CreateAnOrderCancellationResponse> {
       return self.createRequest(
@@ -4666,8 +4636,8 @@ export const Endpoints = (self: base.Client) => ({
     changeCancellationDetails(
       request: ChangeCancellationDetailsRequest,
       options?: base.RequestOptions<
-        ChangeCancellationDetailsRequestFields,
-        ChangeCancellationDetailsRequestEmbeds
+        ChangeCancellationDetailsFields,
+        ChangeCancellationDetailsEmbeds
       >,
     ): Promise<ChangeCancellationDetailsResponse> {
       return self.createRequest(
@@ -4699,8 +4669,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderExchange(
       request: CreateAnOrderExchangeRequest,
       options?: base.RequestOptions<
-        CreateAnOrderExchangeRequestFields,
-        CreateAnOrderExchangeRequestEmbeds
+        CreateAnOrderExchangeFields,
+        CreateAnOrderExchangeEmbeds
       >,
     ): Promise<CreateAnOrderExchangeResponse> {
       return self.createRequest(
@@ -4724,8 +4694,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderExchange(
       request: UpdateAnOrderExchangeRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderExchangeRequestFields,
-        UpdateAnOrderExchangeRequestEmbeds
+        UpdateAnOrderExchangeFields,
+        UpdateAnOrderExchangeEmbeds
       >,
     ): Promise<UpdateAnOrderExchangeResponse> {
       return self.createRequest(
@@ -4756,8 +4726,8 @@ export const Endpoints = (self: base.Client) => ({
     rejectAnExchangeRequest(
       request: RejectAnExchangeRequestRequest,
       options?: base.RequestOptions<
-        RejectAnExchangeRequestRequestFields,
-        RejectAnExchangeRequestRequestEmbeds
+        RejectAnExchangeRequestFields,
+        RejectAnExchangeRequestEmbeds
       >,
     ): Promise<RejectAnExchangeRequestResponse> {
       return self.createRequest(
@@ -4793,8 +4763,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfOrderItems(
       request: RetrieveAListOfOrderItemsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfOrderItemsRequestFields,
-        RetrieveAListOfOrderItemsRequestEmbeds
+        RetrieveAListOfOrderItemsFields,
+        RetrieveAListOfOrderItemsEmbeds
       >,
     ): Promise<RetrieveAListOfOrderItemsResponse> {
       return self.createRequest(
@@ -4816,8 +4786,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderItem(
       request: CreateAnOrderItemRequest,
       options?: base.RequestOptions<
-        CreateAnOrderItemRequestFields,
-        CreateAnOrderItemRequestEmbeds
+        CreateAnOrderItemFields,
+        CreateAnOrderItemEmbeds
       >,
     ): Promise<CreateAnOrderItemResponse> {
       return self.createRequest(
@@ -4840,8 +4810,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderItem(
       request: UpdateAnOrderItemRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderItemRequestFields,
-        UpdateAnOrderItemRequestEmbeds
+        UpdateAnOrderItemFields,
+        UpdateAnOrderItemEmbeds
       >,
     ): Promise<UpdateAnOrderItemResponse> {
       return self.createRequest(
@@ -4871,8 +4841,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnOrderLabel(
       request: RetrieveAnOrderLabelRequest,
       options?: base.RequestOptions<
-        RetrieveAnOrderLabelRequestFields,
-        RetrieveAnOrderLabelRequestEmbeds
+        RetrieveAnOrderLabelFields,
+        RetrieveAnOrderLabelEmbeds
       >,
     ): Promise<RetrieveAnOrderLabelResponse> {
       return self.createRequest(
@@ -4894,8 +4864,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderLabel(
       request: CreateAnOrderLabelRequest,
       options?: base.RequestOptions<
-        CreateAnOrderLabelRequestFields,
-        CreateAnOrderLabelRequestEmbeds
+        CreateAnOrderLabelFields,
+        CreateAnOrderLabelEmbeds
       >,
     ): Promise<CreateAnOrderLabelResponse> {
       return self.createRequest(
@@ -4917,8 +4887,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderLabel(
       request: UpdateAnOrderLabelRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderLabelRequestFields,
-        UpdateAnOrderLabelRequestEmbeds
+        UpdateAnOrderLabelFields,
+        UpdateAnOrderLabelEmbeds
       >,
     ): Promise<UpdateAnOrderLabelResponse> {
       return self.createRequest(
@@ -4940,8 +4910,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnOrderLabel(
       request: DeleteAnOrderLabelRequest,
       options?: base.RequestOptions<
-        DeleteAnOrderLabelRequestFields,
-        DeleteAnOrderLabelRequestEmbeds
+        DeleteAnOrderLabelFields,
+        DeleteAnOrderLabelEmbeds
       >,
     ): Promise<DeleteAnOrderLabelResponse> {
       return self.createRequest(
@@ -4971,8 +4941,8 @@ export const Endpoints = (self: base.Client) => ({
     createOrderItemOptions(
       request: CreateOrderItemOptionsRequest,
       options?: base.RequestOptions<
-        CreateOrderItemOptionsRequestFields,
-        CreateOrderItemOptionsRequestEmbeds
+        CreateOrderItemOptionsFields,
+        CreateOrderItemOptionsEmbeds
       >,
     ): Promise<CreateOrderItemOptionsResponse> {
       return self.createRequest(
@@ -4994,8 +4964,8 @@ export const Endpoints = (self: base.Client) => ({
     editOrderItemOptions(
       request: EditOrderItemOptionsRequest,
       options?: base.RequestOptions<
-        EditOrderItemOptionsRequestFields,
-        EditOrderItemOptionsRequestEmbeds
+        EditOrderItemOptionsFields,
+        EditOrderItemOptionsEmbeds
       >,
     ): Promise<EditOrderItemOptionsResponse> {
       return self.createRequest(
@@ -5028,8 +4998,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfOrderMemos(
       request: RetrieveAListOfOrderMemosRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfOrderMemosRequestFields,
-        RetrieveAListOfOrderMemosRequestEmbeds
+        RetrieveAListOfOrderMemosFields,
+        RetrieveAListOfOrderMemosEmbeds
       >,
     ): Promise<RetrieveAListOfOrderMemosResponse> {
       return self.createRequest(
@@ -5052,8 +5022,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderMemo(
       request: CreateAnOrderMemoRequest,
       options?: base.RequestOptions<
-        CreateAnOrderMemoRequestFields,
-        CreateAnOrderMemoRequestEmbeds
+        CreateAnOrderMemoFields,
+        CreateAnOrderMemoEmbeds
       >,
     ): Promise<CreateAnOrderMemoResponse> {
       return self.createRequest(
@@ -5076,8 +5046,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderMemo(
       request: UpdateAnOrderMemoRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderMemoRequestFields,
-        UpdateAnOrderMemoRequestEmbeds
+        UpdateAnOrderMemoFields,
+        UpdateAnOrderMemoEmbeds
       >,
     ): Promise<UpdateAnOrderMemoResponse> {
       return self.createRequest(
@@ -5099,8 +5069,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnOrderMemo(
       request: DeleteAnOrderMemoRequest,
       options?: base.RequestOptions<
-        DeleteAnOrderMemoRequestFields,
-        DeleteAnOrderMemoRequestEmbeds
+        DeleteAnOrderMemoFields,
+        DeleteAnOrderMemoEmbeds
       >,
     ): Promise<DeleteAnOrderMemoResponse> {
       return self.createRequest(
@@ -5122,8 +5092,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfAdminMemosForAnOrder(
       request: RetrieveAListOfAdminMemosForAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfAdminMemosForAnOrderRequestFields,
-        RetrieveAListOfAdminMemosForAnOrderRequestEmbeds
+        RetrieveAListOfAdminMemosForAnOrderFields,
+        RetrieveAListOfAdminMemosForAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfAdminMemosForAnOrderResponse> {
       return self.createRequest(
@@ -5156,8 +5126,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderPaymentStatus(
       request: UpdateAnOrderPaymentStatusRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderPaymentStatusRequestFields,
-        UpdateAnOrderPaymentStatusRequestEmbeds
+        UpdateAnOrderPaymentStatusFields,
+        UpdateAnOrderPaymentStatusEmbeds
       >,
     ): Promise<UpdateAnOrderPaymentStatusResponse> {
       return self.createRequest(
@@ -5190,8 +5160,8 @@ export const Endpoints = (self: base.Client) => ({
     retrievePaymentHistoryOfAnOrder(
       request: RetrievePaymentHistoryOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrievePaymentHistoryOfAnOrderRequestFields,
-        RetrievePaymentHistoryOfAnOrderRequestEmbeds
+        RetrievePaymentHistoryOfAnOrderFields,
+        RetrievePaymentHistoryOfAnOrderEmbeds
       >,
     ): Promise<RetrievePaymentHistoryOfAnOrderResponse> {
       return self.createRequest(
@@ -5214,8 +5184,8 @@ export const Endpoints = (self: base.Client) => ({
     retrievePaymentDetailsOfAnOrder(
       request: RetrievePaymentDetailsOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrievePaymentDetailsOfAnOrderRequestFields,
-        RetrievePaymentDetailsOfAnOrderRequestEmbeds
+        RetrievePaymentDetailsOfAnOrderFields,
+        RetrievePaymentDetailsOfAnOrderEmbeds
       >,
     ): Promise<RetrievePaymentDetailsOfAnOrderResponse> {
       return self.createRequest(
@@ -5250,8 +5220,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfRecipientsOfAnOrder(
       request: RetrieveAListOfRecipientsOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfRecipientsOfAnOrderRequestFields,
-        RetrieveAListOfRecipientsOfAnOrderRequestEmbeds
+        RetrieveAListOfRecipientsOfAnOrderFields,
+        RetrieveAListOfRecipientsOfAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfRecipientsOfAnOrderResponse> {
       return self.createRequest(
@@ -5275,8 +5245,8 @@ export const Endpoints = (self: base.Client) => ({
     updateOrderRecipients(
       request: UpdateOrderRecipientsRequest,
       options?: base.RequestOptions<
-        UpdateOrderRecipientsRequestFields,
-        UpdateOrderRecipientsRequestEmbeds
+        UpdateOrderRecipientsFields,
+        UpdateOrderRecipientsEmbeds
       >,
     ): Promise<UpdateOrderRecipientsResponse> {
       return self.createRequest(
@@ -5299,8 +5269,8 @@ export const Endpoints = (self: base.Client) => ({
     changeShippingInformation(
       request: ChangeShippingInformationRequest,
       options?: base.RequestOptions<
-        ChangeShippingInformationRequestFields,
-        ChangeShippingInformationRequestEmbeds
+        ChangeShippingInformationFields,
+        ChangeShippingInformationEmbeds
       >,
     ): Promise<ChangeShippingInformationResponse> {
       return self.createRequest(
@@ -5334,8 +5304,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfRecipientHistoryOfAnOrder(
       request: RetrieveAListOfRecipientHistoryOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfRecipientHistoryOfAnOrderRequestFields,
-        RetrieveAListOfRecipientHistoryOfAnOrderRequestEmbeds
+        RetrieveAListOfRecipientHistoryOfAnOrderFields,
+        RetrieveAListOfRecipientHistoryOfAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfRecipientHistoryOfAnOrderResponse> {
       return self.createRequest(
@@ -5367,8 +5337,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderRefund(
       request: UpdateAnOrderRefundRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderRefundRequestFields,
-        UpdateAnOrderRefundRequestEmbeds
+        UpdateAnOrderRefundFields,
+        UpdateAnOrderRefundEmbeds
       >,
     ): Promise<UpdateAnOrderRefundResponse> {
       return self.createRequest(
@@ -5403,8 +5373,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderReturn(
       request: CreateAnOrderReturnRequest,
       options?: base.RequestOptions<
-        CreateAnOrderReturnRequestFields,
-        CreateAnOrderReturnRequestEmbeds
+        CreateAnOrderReturnFields,
+        CreateAnOrderReturnEmbeds
       >,
     ): Promise<CreateAnOrderReturnResponse> {
       return self.createRequest(
@@ -5429,8 +5399,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderReturn(
       request: UpdateAnOrderReturnRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderReturnRequestFields,
-        UpdateAnOrderReturnRequestEmbeds
+        UpdateAnOrderReturnFields,
+        UpdateAnOrderReturnEmbeds
       >,
     ): Promise<UpdateAnOrderReturnResponse> {
       return self.createRequest(
@@ -5466,8 +5436,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfShippingInformationOfAnOrder(
       request: RetrieveAListOfShippingInformationOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfShippingInformationOfAnOrderRequestFields,
-        RetrieveAListOfShippingInformationOfAnOrderRequestEmbeds
+        RetrieveAListOfShippingInformationOfAnOrderFields,
+        RetrieveAListOfShippingInformationOfAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfShippingInformationOfAnOrderResponse> {
       return self.createRequest(
@@ -5489,8 +5459,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderShippingInformation(
       request: CreateAnOrderShippingInformationRequest,
       options?: base.RequestOptions<
-        CreateAnOrderShippingInformationRequestFields,
-        CreateAnOrderShippingInformationRequestEmbeds
+        CreateAnOrderShippingInformationFields,
+        CreateAnOrderShippingInformationEmbeds
       >,
     ): Promise<CreateAnOrderShippingInformationResponse> {
       return self.createRequest(
@@ -5514,8 +5484,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnOrderShipping(
       request: UpdateAnOrderShippingRequest,
       options?: base.RequestOptions<
-        UpdateAnOrderShippingRequestFields,
-        UpdateAnOrderShippingRequestEmbeds
+        UpdateAnOrderShippingFields,
+        UpdateAnOrderShippingEmbeds
       >,
     ): Promise<UpdateAnOrderShippingResponse> {
       return self.createRequest(
@@ -5538,8 +5508,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnOrderShipping(
       request: DeleteAnOrderShippingRequest,
       options?: base.RequestOptions<
-        DeleteAnOrderShippingRequestFields,
-        DeleteAnOrderShippingRequestEmbeds
+        DeleteAnOrderShippingFields,
+        DeleteAnOrderShippingEmbeds
       >,
     ): Promise<DeleteAnOrderShippingResponse> {
       return self.createRequest(
@@ -5572,8 +5542,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveShippingFeeCancellationDetailsOfAnOrder(
       request: RetrieveShippingFeeCancellationDetailsOfAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveShippingFeeCancellationDetailsOfAnOrderRequestFields,
-        RetrieveShippingFeeCancellationDetailsOfAnOrderRequestEmbeds
+        RetrieveShippingFeeCancellationDetailsOfAnOrderFields,
+        RetrieveShippingFeeCancellationDetailsOfAnOrderEmbeds
       >,
     ): Promise<RetrieveShippingFeeCancellationDetailsOfAnOrderResponse> {
       return self.createRequest(
@@ -5597,8 +5567,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderShippingFeeCancellation(
       request: CreateAnOrderShippingFeeCancellationRequest,
       options?: base.RequestOptions<
-        CreateAnOrderShippingFeeCancellationRequestFields,
-        CreateAnOrderShippingFeeCancellationRequestEmbeds
+        CreateAnOrderShippingFeeCancellationFields,
+        CreateAnOrderShippingFeeCancellationEmbeds
       >,
     ): Promise<CreateAnOrderShippingFeeCancellationResponse> {
       return self.createRequest(
@@ -5632,8 +5602,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnOrderCancellationOnStockShortage(
       request: CreateAnOrderCancellationOnStockShortageRequest,
       options?: base.RequestOptions<
-        CreateAnOrderCancellationOnStockShortageRequestFields,
-        CreateAnOrderCancellationOnStockShortageRequestEmbeds
+        CreateAnOrderCancellationOnStockShortageFields,
+        CreateAnOrderCancellationOnStockShortageEmbeds
       >,
     ): Promise<CreateAnOrderCancellationOnStockShortageResponse> {
       return self.createRequest(
@@ -5666,8 +5636,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfOrderBenefitsAppliedToAnOrder(
       request: RetrieveAListOfOrderBenefitsAppliedToAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestFields,
-        RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestEmbeds
+        RetrieveAListOfOrderBenefitsAppliedToAnOrderFields,
+        RetrieveAListOfOrderBenefitsAppliedToAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse> {
       return self.createRequest(
@@ -5697,8 +5667,8 @@ export const Endpoints = (self: base.Client) => ({
     calculateTotalDue(
       request: CalculateTotalDueRequest,
       options?: base.RequestOptions<
-        CalculateTotalDueRequestFields,
-        CalculateTotalDueRequestEmbeds
+        CalculateTotalDueFields,
+        CalculateTotalDueEmbeds
       >,
     ): Promise<CalculateTotalDueResponse> {
       return self.createRequest(
@@ -5732,8 +5702,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCouponsAppliedToAnOrder(
       request: RetrieveAListOfCouponsAppliedToAnOrderRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCouponsAppliedToAnOrderRequestFields,
-        RetrieveAListOfCouponsAppliedToAnOrderRequestEmbeds
+        RetrieveAListOfCouponsAppliedToAnOrderFields,
+        RetrieveAListOfCouponsAppliedToAnOrderEmbeds
       >,
     ): Promise<RetrieveAListOfCouponsAppliedToAnOrderResponse> {
       return self.createRequest(
@@ -5767,8 +5737,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfTrafficSourceGroups(
       request: RetrieveAListOfTrafficSourceGroupsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfTrafficSourceGroupsRequestFields,
-        RetrieveAListOfTrafficSourceGroupsRequestEmbeds
+        RetrieveAListOfTrafficSourceGroupsFields,
+        RetrieveAListOfTrafficSourceGroupsEmbeds
       >,
     ): Promise<RetrieveAListOfTrafficSourceGroupsResponse> {
       return self.createRequest(
@@ -5791,8 +5761,8 @@ export const Endpoints = (self: base.Client) => ({
     createATrafficSourceGroup(
       request: CreateATrafficSourceGroupRequest,
       options?: base.RequestOptions<
-        CreateATrafficSourceGroupRequestFields,
-        CreateATrafficSourceGroupRequestEmbeds
+        CreateATrafficSourceGroupFields,
+        CreateATrafficSourceGroupEmbeds
       >,
     ): Promise<CreateATrafficSourceGroupResponse> {
       return self.createRequest(
@@ -5816,8 +5786,8 @@ export const Endpoints = (self: base.Client) => ({
     updateATrafficSourceGroup(
       request: UpdateATrafficSourceGroupRequest,
       options?: base.RequestOptions<
-        UpdateATrafficSourceGroupRequestFields,
-        UpdateATrafficSourceGroupRequestEmbeds
+        UpdateATrafficSourceGroupFields,
+        UpdateATrafficSourceGroupEmbeds
       >,
     ): Promise<UpdateATrafficSourceGroupResponse> {
       return self.createRequest(
@@ -5840,8 +5810,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteATrafficSourceGroup(
       request: DeleteATrafficSourceGroupRequest,
       options?: base.RequestOptions<
-        DeleteATrafficSourceGroupRequestFields,
-        DeleteATrafficSourceGroupRequestEmbeds
+        DeleteATrafficSourceGroupFields,
+        DeleteATrafficSourceGroupEmbeds
       >,
     ): Promise<DeleteATrafficSourceGroupResponse> {
       return self.createRequest(
@@ -5876,8 +5846,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfGroupTrafficSources(
       request: RetrieveAListOfGroupTrafficSourcesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfGroupTrafficSourcesRequestFields,
-        RetrieveAListOfGroupTrafficSourcesRequestEmbeds
+        RetrieveAListOfGroupTrafficSourcesFields,
+        RetrieveAListOfGroupTrafficSourcesEmbeds
       >,
     ): Promise<RetrieveAListOfGroupTrafficSourcesResponse> {
       return self.createRequest(
@@ -5899,8 +5869,8 @@ export const Endpoints = (self: base.Client) => ({
     createAGroupTrafficSource(
       request: CreateAGroupTrafficSourceRequest,
       options?: base.RequestOptions<
-        CreateAGroupTrafficSourceRequestFields,
-        CreateAGroupTrafficSourceRequestEmbeds
+        CreateAGroupTrafficSourceFields,
+        CreateAGroupTrafficSourceEmbeds
       >,
     ): Promise<CreateAGroupTrafficSourceResponse> {
       return self.createRequest(
@@ -5922,8 +5892,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAGroupTrafficSource(
       request: UpdateAGroupTrafficSourceRequest,
       options?: base.RequestOptions<
-        UpdateAGroupTrafficSourceRequestFields,
-        UpdateAGroupTrafficSourceRequestEmbeds
+        UpdateAGroupTrafficSourceFields,
+        UpdateAGroupTrafficSourceEmbeds
       >,
     ): Promise<UpdateAGroupTrafficSourceResponse> {
       return self.createRequest(
@@ -5945,8 +5915,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAGroupTrafficSource(
       request: DeleteAGroupTrafficSourceRequest,
       options?: base.RequestOptions<
-        DeleteAGroupTrafficSourceRequestFields,
-        DeleteAGroupTrafficSourceRequestEmbeds
+        DeleteAGroupTrafficSourceFields,
+        DeleteAGroupTrafficSourceEmbeds
       >,
     ): Promise<DeleteAGroupTrafficSourceResponse> {
       return self.createRequest(
@@ -5981,8 +5951,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAPaymentAmount(
       request: RetrieveAPaymentAmountRequest,
       options?: base.RequestOptions<
-        RetrieveAPaymentAmountRequestFields,
-        RetrieveAPaymentAmountRequestEmbeds
+        RetrieveAPaymentAmountFields,
+        RetrieveAPaymentAmountEmbeds
       >,
     ): Promise<RetrieveAPaymentAmountResponse> {
       return self.createRequest(
@@ -6016,8 +5986,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfSalesChannels(
       request: RetrieveAListOfSalesChannelsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfSalesChannelsRequestFields,
-        RetrieveAListOfSalesChannelsRequestEmbeds
+        RetrieveAListOfSalesChannelsFields,
+        RetrieveAListOfSalesChannelsEmbeds
       >,
     ): Promise<RetrieveAListOfSalesChannelsResponse> {
       return self.createRequest(
@@ -6039,8 +6009,8 @@ export const Endpoints = (self: base.Client) => ({
     createASalesChannel(
       request: CreateASalesChannelRequest,
       options?: base.RequestOptions<
-        CreateASalesChannelRequestFields,
-        CreateASalesChannelRequestEmbeds
+        CreateASalesChannelFields,
+        CreateASalesChannelEmbeds
       >,
     ): Promise<CreateASalesChannelResponse> {
       return self.createRequest(
@@ -6063,8 +6033,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASalesChannel(
       request: UpdateASalesChannelRequest,
       options?: base.RequestOptions<
-        UpdateASalesChannelRequestFields,
-        UpdateASalesChannelRequestEmbeds
+        UpdateASalesChannelFields,
+        UpdateASalesChannelEmbeds
       >,
     ): Promise<UpdateASalesChannelResponse> {
       return self.createRequest(
@@ -6086,8 +6056,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteASalesChannel(
       request: DeleteASalesChannelRequest,
       options?: base.RequestOptions<
-        DeleteASalesChannelRequestFields,
-        DeleteASalesChannelRequestEmbeds
+        DeleteASalesChannelFields,
+        DeleteASalesChannelEmbeds
       >,
     ): Promise<DeleteASalesChannelResponse> {
       return self.createRequest(
@@ -6118,8 +6088,8 @@ export const Endpoints = (self: base.Client) => ({
     updatePaymentStatusForMultipleOrders(
       request: UpdatePaymentStatusForMultipleOrdersRequest,
       options?: base.RequestOptions<
-        UpdatePaymentStatusForMultipleOrdersRequestFields,
-        UpdatePaymentStatusForMultipleOrdersRequestEmbeds
+        UpdatePaymentStatusForMultipleOrdersFields,
+        UpdatePaymentStatusForMultipleOrdersEmbeds
       >,
     ): Promise<UpdatePaymentStatusForMultipleOrdersResponse> {
       return self.createRequest(
@@ -6151,8 +6121,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfRefunds(
       request: RetrieveAListOfRefundsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfRefundsRequestFields,
-        RetrieveAListOfRefundsRequestEmbeds
+        RetrieveAListOfRefundsFields,
+        RetrieveAListOfRefundsEmbeds
       >,
     ): Promise<RetrieveAListOfRefundsResponse> {
       return self.createRequest(
@@ -6175,8 +6145,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveARefund(
       request: RetrieveARefundRequest,
       options?: base.RequestOptions<
-        RetrieveARefundRequestFields,
-        RetrieveARefundRequestEmbeds
+        RetrieveARefundFields,
+        RetrieveARefundEmbeds
       >,
     ): Promise<RetrieveARefundResponse> {
       return self.createRequest(
@@ -6205,8 +6175,8 @@ export const Endpoints = (self: base.Client) => ({
     retrievePreOrderItem(
       request: RetrievePreOrderItemRequest,
       options?: base.RequestOptions<
-        RetrievePreOrderItemRequestFields,
-        RetrievePreOrderItemRequestEmbeds
+        RetrievePreOrderItemFields,
+        RetrievePreOrderItemEmbeds
       >,
     ): Promise<RetrievePreOrderItemResponse> {
       return self.createRequest(
@@ -6239,8 +6209,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAReturn(
       request: RetrieveAReturnRequest,
       options?: base.RequestOptions<
-        RetrieveAReturnRequestFields,
-        RetrieveAReturnRequestEmbeds
+        RetrieveAReturnFields,
+        RetrieveAReturnEmbeds
       >,
     ): Promise<RetrieveAReturnResponse> {
       return self.createRequest(
@@ -6264,8 +6234,8 @@ export const Endpoints = (self: base.Client) => ({
     createMultipleOrderReturns(
       request: CreateMultipleOrderReturnsRequest,
       options?: base.RequestOptions<
-        CreateMultipleOrderReturnsRequestFields,
-        CreateMultipleOrderReturnsRequestEmbeds
+        CreateMultipleOrderReturnsFields,
+        CreateMultipleOrderReturnsEmbeds
       >,
     ): Promise<CreateMultipleOrderReturnsResponse> {
       return self.createRequest(
@@ -6289,10 +6259,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateAReturn(
       request: UpdateAReturnRequest,
-      options?: base.RequestOptions<
-        UpdateAReturnRequestFields,
-        UpdateAReturnRequestEmbeds
-      >,
+      options?: base.RequestOptions<UpdateAReturnFields, UpdateAReturnEmbeds>,
     ): Promise<UpdateAReturnResponse> {
       return self.createRequest(
         "PUT",
@@ -6323,8 +6290,8 @@ export const Endpoints = (self: base.Client) => ({
     createAReturnRequestForMultipleItems(
       request: CreateAReturnRequestForMultipleItemsRequest,
       options?: base.RequestOptions<
-        CreateAReturnRequestForMultipleItemsRequestFields,
-        CreateAReturnRequestForMultipleItemsRequestEmbeds
+        CreateAReturnRequestForMultipleItemsFields,
+        CreateAReturnRequestForMultipleItemsEmbeds
       >,
     ): Promise<CreateAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
@@ -6348,8 +6315,8 @@ export const Endpoints = (self: base.Client) => ({
     rejectAReturnRequestForMultipleItems(
       request: RejectAReturnRequestForMultipleItemsRequest,
       options?: base.RequestOptions<
-        RejectAReturnRequestForMultipleItemsRequestFields,
-        RejectAReturnRequestForMultipleItemsRequestEmbeds
+        RejectAReturnRequestForMultipleItemsFields,
+        RejectAReturnRequestForMultipleItemsEmbeds
       >,
     ): Promise<RejectAReturnRequestForMultipleItemsResponse> {
       return self.createRequest(
@@ -6380,8 +6347,8 @@ export const Endpoints = (self: base.Client) => ({
     createShippingInformationForMultipleOrders(
       request: CreateShippingInformationForMultipleOrdersRequest,
       options?: base.RequestOptions<
-        CreateShippingInformationForMultipleOrdersRequestFields,
-        CreateShippingInformationForMultipleOrdersRequestEmbeds
+        CreateShippingInformationForMultipleOrdersFields,
+        CreateShippingInformationForMultipleOrdersEmbeds
       >,
     ): Promise<CreateShippingInformationForMultipleOrdersResponse> {
       return self.createRequest(
@@ -6404,8 +6371,8 @@ export const Endpoints = (self: base.Client) => ({
     updateMultipleOrderShippings(
       request: UpdateMultipleOrderShippingsRequest,
       options?: base.RequestOptions<
-        UpdateMultipleOrderShippingsRequestFields,
-        UpdateMultipleOrderShippingsRequestEmbeds
+        UpdateMultipleOrderShippingsFields,
+        UpdateMultipleOrderShippingsEmbeds
       >,
     ): Promise<UpdateMultipleOrderShippingsResponse> {
       return self.createRequest(
@@ -6435,8 +6402,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASubscription(
       request: RetrieveASubscriptionRequest,
       options?: base.RequestOptions<
-        RetrieveASubscriptionRequestFields,
-        RetrieveASubscriptionRequestEmbeds
+        RetrieveASubscriptionFields,
+        RetrieveASubscriptionEmbeds
       >,
     ): Promise<RetrieveASubscriptionResponse> {
       return self.createRequest(
@@ -6458,8 +6425,8 @@ export const Endpoints = (self: base.Client) => ({
     createASubscription(
       request: CreateASubscriptionRequest,
       options?: base.RequestOptions<
-        CreateASubscriptionRequestFields,
-        CreateASubscriptionRequestEmbeds
+        CreateASubscriptionFields,
+        CreateASubscriptionEmbeds
       >,
     ): Promise<CreateASubscriptionResponse> {
       return self.createRequest(
@@ -6482,8 +6449,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASubscription(
       request: UpdateASubscriptionRequest,
       options?: base.RequestOptions<
-        UpdateASubscriptionRequestFields,
-        UpdateASubscriptionRequestEmbeds
+        UpdateASubscriptionFields,
+        UpdateASubscriptionEmbeds
       >,
     ): Promise<UpdateASubscriptionResponse> {
       return self.createRequest(
@@ -6513,8 +6480,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductVariantsInSubscription(
       request: UpdateProductVariantsInSubscriptionRequest,
       options?: base.RequestOptions<
-        UpdateProductVariantsInSubscriptionRequestFields,
-        UpdateProductVariantsInSubscriptionRequestEmbeds
+        UpdateProductVariantsInSubscriptionFields,
+        UpdateProductVariantsInSubscriptionEmbeds
       >,
     ): Promise<UpdateProductVariantsInSubscriptionResponse> {
       return self.createRequest(
@@ -6548,8 +6515,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerTiers(
       request: RetrieveAListOfCustomerTiersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerTiersRequestFields,
-        RetrieveAListOfCustomerTiersRequestEmbeds
+        RetrieveAListOfCustomerTiersFields,
+        RetrieveAListOfCustomerTiersEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerTiersResponse> {
       return self.createRequest(
@@ -6571,8 +6538,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomerTiers(
       request: RetrieveACountOfCustomerTiersRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomerTiersRequestFields,
-        RetrieveACountOfCustomerTiersRequestEmbeds
+        RetrieveACountOfCustomerTiersFields,
+        RetrieveACountOfCustomerTiersEmbeds
       >,
     ): Promise<RetrieveACountOfCustomerTiersResponse> {
       return self.createRequest(
@@ -6595,8 +6562,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerTier(
       request: RetrieveACustomerTierRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerTierRequestFields,
-        RetrieveACustomerTierRequestEmbeds
+        RetrieveACustomerTierFields,
+        RetrieveACustomerTierEmbeds
       >,
     ): Promise<RetrieveACustomerTierResponse> {
       return self.createRequest(
@@ -6630,8 +6597,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACustomerSCustomerTier(
       request: UpdateACustomerSCustomerTierRequest,
       options?: base.RequestOptions<
-        UpdateACustomerSCustomerTierRequestFields,
-        UpdateACustomerSCustomerTierRequestEmbeds
+        UpdateACustomerSCustomerTierFields,
+        UpdateACustomerSCustomerTierEmbeds
       >,
     ): Promise<UpdateACustomerSCustomerTierResponse> {
       return self.createRequest(
@@ -6657,8 +6624,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCustomerTierSettings(
       request: RetrieveCustomerTierSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveCustomerTierSettingsRequestFields,
-        RetrieveCustomerTierSettingsRequestEmbeds
+        RetrieveCustomerTierSettingsFields,
+        RetrieveCustomerTierSettingsEmbeds
       >,
     ): Promise<RetrieveCustomerTierSettingsResponse> {
       return self.createRequest(
@@ -6692,8 +6659,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomers(
       request: RetrieveAListOfCustomersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomersRequestFields,
-        RetrieveAListOfCustomersRequestEmbeds
+        RetrieveAListOfCustomersFields,
+        RetrieveAListOfCustomersEmbeds
       >,
     ): Promise<RetrieveAListOfCustomersResponse> {
       return self.createRequest(
@@ -6715,8 +6682,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnAccount(
       request: DeleteAnAccountRequest,
       options?: base.RequestOptions<
-        DeleteAnAccountRequestFields,
-        DeleteAnAccountRequestEmbeds
+        DeleteAnAccountFields,
+        DeleteAnAccountEmbeds
       >,
     ): Promise<DeleteAnAccountResponse> {
       return self.createRequest(
@@ -6742,8 +6709,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCustomerTierAutoUpdateDetails(
       request: RetrieveCustomerTierAutoUpdateDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveCustomerTierAutoUpdateDetailsRequestFields,
-        RetrieveCustomerTierAutoUpdateDetailsRequestEmbeds
+        RetrieveCustomerTierAutoUpdateDetailsFields,
+        RetrieveCustomerTierAutoUpdateDetailsEmbeds
       >,
     ): Promise<RetrieveCustomerTierAutoUpdateDetailsResponse> {
       return self.createRequest(
@@ -6776,8 +6743,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomerMemos(
       request: RetrieveACountOfCustomerMemosRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomerMemosRequestFields,
-        RetrieveACountOfCustomerMemosRequestEmbeds
+        RetrieveACountOfCustomerMemosFields,
+        RetrieveACountOfCustomerMemosEmbeds
       >,
     ): Promise<RetrieveACountOfCustomerMemosResponse> {
       return self.createRequest(
@@ -6800,8 +6767,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerMemos(
       request: RetrieveAListOfCustomerMemosRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerMemosRequestFields,
-        RetrieveAListOfCustomerMemosRequestEmbeds
+        RetrieveAListOfCustomerMemosFields,
+        RetrieveAListOfCustomerMemosEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerMemosResponse> {
       return self.createRequest(
@@ -6824,8 +6791,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerMemo(
       request: RetrieveACustomerMemoRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerMemoRequestFields,
-        RetrieveACustomerMemoRequestEmbeds
+        RetrieveACustomerMemoFields,
+        RetrieveACustomerMemoEmbeds
       >,
     ): Promise<RetrieveACustomerMemoResponse> {
       return self.createRequest(
@@ -6847,8 +6814,8 @@ export const Endpoints = (self: base.Client) => ({
     createACustomerMemo(
       request: CreateACustomerMemoRequest,
       options?: base.RequestOptions<
-        CreateACustomerMemoRequestFields,
-        CreateACustomerMemoRequestEmbeds
+        CreateACustomerMemoFields,
+        CreateACustomerMemoEmbeds
       >,
     ): Promise<CreateACustomerMemoResponse> {
       return self.createRequest(
@@ -6870,8 +6837,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACustomerMemo(
       request: UpdateACustomerMemoRequest,
       options?: base.RequestOptions<
-        UpdateACustomerMemoRequestFields,
-        UpdateACustomerMemoRequestEmbeds
+        UpdateACustomerMemoFields,
+        UpdateACustomerMemoEmbeds
       >,
     ): Promise<UpdateACustomerMemoResponse> {
       return self.createRequest(
@@ -6893,8 +6860,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteACustomerMemo(
       request: DeleteACustomerMemoRequest,
       options?: base.RequestOptions<
-        DeleteACustomerMemoRequestFields,
-        DeleteACustomerMemoRequestEmbeds
+        DeleteACustomerMemoFields,
+        DeleteACustomerMemoEmbeds
       >,
     ): Promise<DeleteACustomerMemoResponse> {
       return self.createRequest(
@@ -6927,8 +6894,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerSListOfPaymentMethods(
       request: RetrieveACustomerSListOfPaymentMethodsRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerSListOfPaymentMethodsRequestFields,
-        RetrieveACustomerSListOfPaymentMethodsRequestEmbeds
+        RetrieveACustomerSListOfPaymentMethodsFields,
+        RetrieveACustomerSListOfPaymentMethodsEmbeds
       >,
     ): Promise<RetrieveACustomerSListOfPaymentMethodsResponse> {
       return self.createRequest(
@@ -6950,8 +6917,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteCustomerSPaymentInformation(
       request: DeleteCustomerSPaymentInformationRequest,
       options?: base.RequestOptions<
-        DeleteCustomerSPaymentInformationRequestFields,
-        DeleteCustomerSPaymentInformationRequestEmbeds
+        DeleteCustomerSPaymentInformationFields,
+        DeleteCustomerSPaymentInformationEmbeds
       >,
     ): Promise<DeleteCustomerSPaymentInformationResponse> {
       return self.createRequest(
@@ -6970,8 +6937,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteCustomerSPaymentInformationByPaymentMethodId(
       request: DeleteCustomerSPaymentInformationByPaymentMethodIdRequest,
       options?: base.RequestOptions<
-        DeleteCustomerSPaymentInformationByPaymentMethodIdRequestFields,
-        DeleteCustomerSPaymentInformationByPaymentMethodIdRequestEmbeds
+        DeleteCustomerSPaymentInformationByPaymentMethodIdFields,
+        DeleteCustomerSPaymentInformationByPaymentMethodIdEmbeds
       >,
     ): Promise<DeleteCustomerSPaymentInformationByPaymentMethodIdResponse> {
       return self.createRequest(
@@ -6997,8 +6964,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAppInstallationInformation(
       request: RetrieveAppInstallationInformationRequest,
       options?: base.RequestOptions<
-        RetrieveAppInstallationInformationRequestFields,
-        RetrieveAppInstallationInformationRequestEmbeds
+        RetrieveAppInstallationInformationFields,
+        RetrieveAppInstallationInformationEmbeds
       >,
     ): Promise<RetrieveAppInstallationInformationResponse> {
       return self.createRequest(
@@ -7029,8 +6996,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerSSocialAccount(
       request: RetrieveACustomerSSocialAccountRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerSSocialAccountRequestFields,
-        RetrieveACustomerSSocialAccountRequestEmbeds
+        RetrieveACustomerSSocialAccountFields,
+        RetrieveACustomerSSocialAccountEmbeds
       >,
     ): Promise<RetrieveACustomerSSocialAccountResponse> {
       return self.createRequest(
@@ -7065,8 +7032,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfBoards(
       request: RetrieveAListOfBoardsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfBoardsRequestFields,
-        RetrieveAListOfBoardsRequestEmbeds
+        RetrieveAListOfBoardsFields,
+        RetrieveAListOfBoardsEmbeds
       >,
     ): Promise<RetrieveAListOfBoardsResponse> {
       return self.createRequest(
@@ -7100,8 +7067,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfPostsForABoard(
       request: RetrieveAListOfPostsForABoardRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfPostsForABoardRequestFields,
-        RetrieveAListOfPostsForABoardRequestEmbeds
+        RetrieveAListOfPostsForABoardFields,
+        RetrieveAListOfPostsForABoardEmbeds
       >,
     ): Promise<RetrieveAListOfPostsForABoardResponse> {
       return self.createRequest(
@@ -7124,8 +7091,8 @@ export const Endpoints = (self: base.Client) => ({
     createABoardPost(
       request: CreateABoardPostRequest,
       options?: base.RequestOptions<
-        CreateABoardPostRequestFields,
-        CreateABoardPostRequestEmbeds
+        CreateABoardPostFields,
+        CreateABoardPostEmbeds
       >,
     ): Promise<CreateABoardPostResponse> {
       return self.createRequest(
@@ -7149,8 +7116,8 @@ export const Endpoints = (self: base.Client) => ({
     updateABoardPost(
       request: UpdateABoardPostRequest,
       options?: base.RequestOptions<
-        UpdateABoardPostRequestFields,
-        UpdateABoardPostRequestEmbeds
+        UpdateABoardPostFields,
+        UpdateABoardPostEmbeds
       >,
     ): Promise<UpdateABoardPostResponse> {
       return self.createRequest(
@@ -7173,8 +7140,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteABoardPost(
       request: DeleteABoardPostRequest,
       options?: base.RequestOptions<
-        DeleteABoardPostRequestFields,
-        DeleteABoardPostRequestEmbeds
+        DeleteABoardPostFields,
+        DeleteABoardPostEmbeds
       >,
     ): Promise<DeleteABoardPostResponse> {
       return self.createRequest(
@@ -7208,8 +7175,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCommentsForABoardPost(
       request: RetrieveAListOfCommentsForABoardPostRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCommentsForABoardPostRequestFields,
-        RetrieveAListOfCommentsForABoardPostRequestEmbeds
+        RetrieveAListOfCommentsForABoardPostFields,
+        RetrieveAListOfCommentsForABoardPostEmbeds
       >,
     ): Promise<RetrieveAListOfCommentsForABoardPostResponse> {
       return self.createRequest(
@@ -7232,8 +7199,8 @@ export const Endpoints = (self: base.Client) => ({
     createACommentForABoardPost(
       request: CreateACommentForABoardPostRequest,
       options?: base.RequestOptions<
-        CreateACommentForABoardPostRequestFields,
-        CreateACommentForABoardPostRequestEmbeds
+        CreateACommentForABoardPostFields,
+        CreateACommentForABoardPostEmbeds
       >,
     ): Promise<CreateACommentForABoardPostResponse> {
       return self.createRequest(
@@ -7255,8 +7222,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteACommentForABoardPost(
       request: DeleteACommentForABoardPostRequest,
       options?: base.RequestOptions<
-        DeleteACommentForABoardPostRequestFields,
-        DeleteACommentForABoardPostRequestEmbeds
+        DeleteACommentForABoardPostFields,
+        DeleteACommentForABoardPostEmbeds
       >,
     ): Promise<DeleteACommentForABoardPostResponse> {
       return self.createRequest(
@@ -7282,8 +7249,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCommentsInBulk(
       request: RetrieveCommentsInBulkRequest,
       options?: base.RequestOptions<
-        RetrieveCommentsInBulkRequestFields,
-        RetrieveCommentsInBulkRequestEmbeds
+        RetrieveCommentsInBulkFields,
+        RetrieveCommentsInBulkEmbeds
       >,
     ): Promise<RetrieveCommentsInBulkResponse> {
       return self.createRequest(
@@ -7309,8 +7276,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSeoSettingsForBoard(
       request: RetrieveSeoSettingsForBoardRequest,
       options?: base.RequestOptions<
-        RetrieveSeoSettingsForBoardRequestFields,
-        RetrieveSeoSettingsForBoardRequestEmbeds
+        RetrieveSeoSettingsForBoardFields,
+        RetrieveSeoSettingsForBoardEmbeds
       >,
     ): Promise<RetrieveSeoSettingsForBoardResponse> {
       return self.createRequest(
@@ -7329,8 +7296,8 @@ export const Endpoints = (self: base.Client) => ({
     updateSeoSettingsForBoard(
       request: UpdateSeoSettingsForBoardRequest,
       options?: base.RequestOptions<
-        UpdateSeoSettingsForBoardRequestFields,
-        UpdateSeoSettingsForBoardRequestEmbeds
+        UpdateSeoSettingsForBoardFields,
+        UpdateSeoSettingsForBoardEmbeds
       >,
     ): Promise<UpdateSeoSettingsForBoardResponse> {
       return self.createRequest(
@@ -7362,8 +7329,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheTotalCountForMonthlyReviewsAndRatings(
       request: RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequest,
       options?: base.RequestOptions<
-        RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestFields,
-        RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestEmbeds
+        RetrieveTheTotalCountForMonthlyReviewsAndRatingsFields,
+        RetrieveTheTotalCountForMonthlyReviewsAndRatingsEmbeds
       >,
     ): Promise<RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse> {
       return self.createRequest(
@@ -7396,8 +7363,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnUrgentInquiryPost(
       request: RetrieveAnUrgentInquiryPostRequest,
       options?: base.RequestOptions<
-        RetrieveAnUrgentInquiryPostRequestFields,
-        RetrieveAnUrgentInquiryPostRequestEmbeds
+        RetrieveAnUrgentInquiryPostFields,
+        RetrieveAnUrgentInquiryPostEmbeds
       >,
     ): Promise<RetrieveAnUrgentInquiryPostResponse> {
       return self.createRequest(
@@ -7430,8 +7397,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAReplyForUrgentInquiryPost(
       request: RetrieveAReplyForUrgentInquiryPostRequest,
       options?: base.RequestOptions<
-        RetrieveAReplyForUrgentInquiryPostRequestFields,
-        RetrieveAReplyForUrgentInquiryPostRequestEmbeds
+        RetrieveAReplyForUrgentInquiryPostFields,
+        RetrieveAReplyForUrgentInquiryPostEmbeds
       >,
     ): Promise<RetrieveAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
@@ -7453,8 +7420,8 @@ export const Endpoints = (self: base.Client) => ({
     createAReplyForUrgentInquiryPost(
       request: CreateAReplyForUrgentInquiryPostRequest,
       options?: base.RequestOptions<
-        CreateAReplyForUrgentInquiryPostRequestFields,
-        CreateAReplyForUrgentInquiryPostRequestEmbeds
+        CreateAReplyForUrgentInquiryPostFields,
+        CreateAReplyForUrgentInquiryPostEmbeds
       >,
     ): Promise<CreateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
@@ -7476,8 +7443,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAReplyForUrgentInquiryPost(
       request: UpdateAReplyForUrgentInquiryPostRequest,
       options?: base.RequestOptions<
-        UpdateAReplyForUrgentInquiryPostRequestFields,
-        UpdateAReplyForUrgentInquiryPostRequestEmbeds
+        UpdateAReplyForUrgentInquiryPostFields,
+        UpdateAReplyForUrgentInquiryPostEmbeds
       >,
     ): Promise<UpdateAReplyForUrgentInquiryPostResponse> {
       return self.createRequest(
@@ -7508,8 +7475,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfDesginIcons(
       request: RetrieveAListOfDesginIconsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfDesginIconsRequestFields,
-        RetrieveAListOfDesginIconsRequestEmbeds
+        RetrieveAListOfDesginIconsFields,
+        RetrieveAListOfDesginIconsEmbeds
       >,
     ): Promise<RetrieveAListOfDesginIconsResponse> {
       return self.createRequest("GET", "/api/v2/admin/icons", request, options);
@@ -7539,8 +7506,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfThemes(
       request: RetrieveAListOfThemesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfThemesRequestFields,
-        RetrieveAListOfThemesRequestEmbeds
+        RetrieveAListOfThemesFields,
+        RetrieveAListOfThemesEmbeds
       >,
     ): Promise<RetrieveAListOfThemesResponse> {
       return self.createRequest(
@@ -7562,8 +7529,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfThemes(
       request: RetrieveACountOfThemesRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfThemesRequestFields,
-        RetrieveACountOfThemesRequestEmbeds
+        RetrieveACountOfThemesFields,
+        RetrieveACountOfThemesEmbeds
       >,
     ): Promise<RetrieveACountOfThemesResponse> {
       return self.createRequest(
@@ -7585,10 +7552,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrieveATheme(
       request: RetrieveAThemeRequest,
-      options?: base.RequestOptions<
-        RetrieveAThemeRequestFields,
-        RetrieveAThemeRequestEmbeds
-      >,
+      options?: base.RequestOptions<RetrieveAThemeFields, RetrieveAThemeEmbeds>,
     ): Promise<RetrieveAThemeResponse> {
       return self.createRequest(
         "GET",
@@ -7620,8 +7584,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAThemePage(
       request: RetrieveAThemePageRequest,
       options?: base.RequestOptions<
-        RetrieveAThemePageRequestFields,
-        RetrieveAThemePageRequestEmbeds
+        RetrieveAThemePageFields,
+        RetrieveAThemePageEmbeds
       >,
     ): Promise<RetrieveAThemePageResponse> {
       return self.createRequest(
@@ -7644,8 +7608,8 @@ export const Endpoints = (self: base.Client) => ({
     createAThemePage(
       request: CreateAThemePageRequest,
       options?: base.RequestOptions<
-        CreateAThemePageRequestFields,
-        CreateAThemePageRequestEmbeds
+        CreateAThemePageFields,
+        CreateAThemePageEmbeds
       >,
     ): Promise<CreateAThemePageResponse> {
       return self.createRequest(
@@ -7678,8 +7642,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerBenefits(
       request: RetrieveAListOfCustomerBenefitsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerBenefitsRequestFields,
-        RetrieveAListOfCustomerBenefitsRequestEmbeds
+        RetrieveAListOfCustomerBenefitsFields,
+        RetrieveAListOfCustomerBenefitsEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerBenefitsResponse> {
       return self.createRequest(
@@ -7702,8 +7666,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomerBenefits(
       request: RetrieveACountOfCustomerBenefitsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomerBenefitsRequestFields,
-        RetrieveACountOfCustomerBenefitsRequestEmbeds
+        RetrieveACountOfCustomerBenefitsFields,
+        RetrieveACountOfCustomerBenefitsEmbeds
       >,
     ): Promise<RetrieveACountOfCustomerBenefitsResponse> {
       return self.createRequest(
@@ -7726,8 +7690,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerBenefit(
       request: RetrieveACustomerBenefitRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerBenefitRequestFields,
-        RetrieveACustomerBenefitRequestEmbeds
+        RetrieveACustomerBenefitFields,
+        RetrieveACustomerBenefitEmbeds
       >,
     ): Promise<RetrieveACustomerBenefitResponse> {
       return self.createRequest(
@@ -7750,8 +7714,8 @@ export const Endpoints = (self: base.Client) => ({
     createACustomerBenefit(
       request: CreateACustomerBenefitRequest,
       options?: base.RequestOptions<
-        CreateACustomerBenefitRequestFields,
-        CreateACustomerBenefitRequestEmbeds
+        CreateACustomerBenefitFields,
+        CreateACustomerBenefitEmbeds
       >,
     ): Promise<CreateACustomerBenefitResponse> {
       return self.createRequest(
@@ -7774,8 +7738,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACustomerBenefit(
       request: UpdateACustomerBenefitRequest,
       options?: base.RequestOptions<
-        UpdateACustomerBenefitRequestFields,
-        UpdateACustomerBenefitRequestEmbeds
+        UpdateACustomerBenefitFields,
+        UpdateACustomerBenefitEmbeds
       >,
     ): Promise<UpdateACustomerBenefitResponse> {
       return self.createRequest(
@@ -7797,8 +7761,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteACustomerBenefit(
       request: DeleteACustomerBenefitRequest,
       options?: base.RequestOptions<
-        DeleteACustomerBenefitRequestFields,
-        DeleteACustomerBenefitRequestEmbeds
+        DeleteACustomerBenefitFields,
+        DeleteACustomerBenefitEmbeds
       >,
     ): Promise<DeleteACustomerBenefitResponse> {
       return self.createRequest(
@@ -7832,8 +7796,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCoupons(
       request: RetrieveAListOfCouponsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCouponsRequestFields,
-        RetrieveAListOfCouponsRequestEmbeds
+        RetrieveAListOfCouponsFields,
+        RetrieveAListOfCouponsEmbeds
       >,
     ): Promise<RetrieveAListOfCouponsResponse> {
       return self.createRequest(
@@ -7855,8 +7819,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCoupons(
       request: RetrieveACountOfCouponsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCouponsRequestFields,
-        RetrieveACountOfCouponsRequestEmbeds
+        RetrieveACountOfCouponsFields,
+        RetrieveACountOfCouponsEmbeds
       >,
     ): Promise<RetrieveACountOfCouponsResponse> {
       return self.createRequest(
@@ -7878,10 +7842,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createACoupon(
       request: CreateACouponRequest,
-      options?: base.RequestOptions<
-        CreateACouponRequestFields,
-        CreateACouponRequestEmbeds
-      >,
+      options?: base.RequestOptions<CreateACouponFields, CreateACouponEmbeds>,
     ): Promise<CreateACouponResponse> {
       return self.createRequest(
         "POST",
@@ -7899,8 +7860,8 @@ export const Endpoints = (self: base.Client) => ({
     couponManagement(
       request: CouponManagementRequest,
       options?: base.RequestOptions<
-        CouponManagementRequestFields,
-        CouponManagementRequestEmbeds
+        CouponManagementFields,
+        CouponManagementEmbeds
       >,
     ): Promise<CouponManagementResponse> {
       return self.createRequest(
@@ -7936,8 +7897,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfIssuedCoupons(
       request: RetrieveAListOfIssuedCouponsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfIssuedCouponsRequestFields,
-        RetrieveAListOfIssuedCouponsRequestEmbeds
+        RetrieveAListOfIssuedCouponsFields,
+        RetrieveAListOfIssuedCouponsEmbeds
       >,
     ): Promise<RetrieveAListOfIssuedCouponsResponse> {
       return self.createRequest(
@@ -7960,8 +7921,8 @@ export const Endpoints = (self: base.Client) => ({
     createCouponIssuanceHistory(
       request: CreateCouponIssuanceHistoryRequest,
       options?: base.RequestOptions<
-        CreateCouponIssuanceHistoryRequestFields,
-        CreateCouponIssuanceHistoryRequestEmbeds
+        CreateCouponIssuanceHistoryFields,
+        CreateCouponIssuanceHistoryEmbeds
       >,
     ): Promise<CreateCouponIssuanceHistoryResponse> {
       return self.createRequest(
@@ -7995,8 +7956,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerCoupons(
       request: RetrieveAListOfCustomerCouponsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerCouponsRequestFields,
-        RetrieveAListOfCustomerCouponsRequestEmbeds
+        RetrieveAListOfCustomerCouponsFields,
+        RetrieveAListOfCustomerCouponsEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerCouponsResponse> {
       return self.createRequest(
@@ -8018,8 +7979,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomerCoupons(
       request: RetrieveACountOfCustomerCouponsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomerCouponsRequestFields,
-        RetrieveACountOfCustomerCouponsRequestEmbeds
+        RetrieveACountOfCustomerCouponsFields,
+        RetrieveACountOfCustomerCouponsEmbeds
       >,
     ): Promise<RetrieveACountOfCustomerCouponsResponse> {
       return self.createRequest(
@@ -8041,8 +8002,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteACustomerCoupon(
       request: DeleteACustomerCouponRequest,
       options?: base.RequestOptions<
-        DeleteACustomerCouponRequestFields,
-        DeleteACustomerCouponRequestEmbeds
+        DeleteACustomerCouponFields,
+        DeleteACustomerCouponEmbeds
       >,
     ): Promise<DeleteACustomerCouponResponse> {
       return self.createRequest(
@@ -8068,8 +8029,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfDiscountCodes(
       request: RetrieveAListOfDiscountCodesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfDiscountCodesRequestFields,
-        RetrieveAListOfDiscountCodesRequestEmbeds
+        RetrieveAListOfDiscountCodesFields,
+        RetrieveAListOfDiscountCodesEmbeds
       >,
     ): Promise<RetrieveAListOfDiscountCodesResponse> {
       return self.createRequest(
@@ -8088,8 +8049,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveADiscountCode(
       request: RetrieveADiscountCodeRequest,
       options?: base.RequestOptions<
-        RetrieveADiscountCodeRequestFields,
-        RetrieveADiscountCodeRequestEmbeds
+        RetrieveADiscountCodeFields,
+        RetrieveADiscountCodeEmbeds
       >,
     ): Promise<RetrieveADiscountCodeResponse> {
       return self.createRequest(
@@ -8108,8 +8069,8 @@ export const Endpoints = (self: base.Client) => ({
     createADiscountCode(
       request: CreateADiscountCodeRequest,
       options?: base.RequestOptions<
-        CreateADiscountCodeRequestFields,
-        CreateADiscountCodeRequestEmbeds
+        CreateADiscountCodeFields,
+        CreateADiscountCodeEmbeds
       >,
     ): Promise<CreateADiscountCodeResponse> {
       return self.createRequest(
@@ -8128,8 +8089,8 @@ export const Endpoints = (self: base.Client) => ({
     updateADiscountCode(
       request: UpdateADiscountCodeRequest,
       options?: base.RequestOptions<
-        UpdateADiscountCodeRequestFields,
-        UpdateADiscountCodeRequestEmbeds
+        UpdateADiscountCodeFields,
+        UpdateADiscountCodeEmbeds
       >,
     ): Promise<UpdateADiscountCodeResponse> {
       return self.createRequest(
@@ -8148,8 +8109,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteADiscountCode(
       request: DeleteADiscountCodeRequest,
       options?: base.RequestOptions<
-        DeleteADiscountCodeRequestFields,
-        DeleteADiscountCodeRequestEmbeds
+        DeleteADiscountCodeFields,
+        DeleteADiscountCodeEmbeds
       >,
     ): Promise<DeleteADiscountCodeResponse> {
       return self.createRequest(
@@ -8175,8 +8136,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveCouponCodes(
       request: RetrieveCouponCodesRequest,
       options?: base.RequestOptions<
-        RetrieveCouponCodesRequestFields,
-        RetrieveCouponCodesRequestEmbeds
+        RetrieveCouponCodesFields,
+        RetrieveCouponCodesEmbeds
       >,
     ): Promise<RetrieveCouponCodesResponse> {
       return self.createRequest(
@@ -8195,8 +8156,8 @@ export const Endpoints = (self: base.Client) => ({
     generateCouponCode(
       request: GenerateCouponCodeRequest,
       options?: base.RequestOptions<
-        GenerateCouponCodeRequestFields,
-        GenerateCouponCodeRequestEmbeds
+        GenerateCouponCodeFields,
+        GenerateCouponCodeEmbeds
       >,
     ): Promise<GenerateCouponCodeResponse> {
       return self.createRequest(
@@ -8215,8 +8176,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteCouponCode(
       request: DeleteCouponCodeRequest,
       options?: base.RequestOptions<
-        DeleteCouponCodeRequestFields,
-        DeleteCouponCodeRequestEmbeds
+        DeleteCouponCodeFields,
+        DeleteCouponCodeEmbeds
       >,
     ): Promise<DeleteCouponCodeResponse> {
       return self.createRequest(
@@ -8242,8 +8203,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACodeOfCouponCodes(
       request: RetrieveACodeOfCouponCodesRequest,
       options?: base.RequestOptions<
-        RetrieveACodeOfCouponCodesRequestFields,
-        RetrieveACodeOfCouponCodesRequestEmbeds
+        RetrieveACodeOfCouponCodesFields,
+        RetrieveACodeOfCouponCodesEmbeds
       >,
     ): Promise<RetrieveACodeOfCouponCodesResponse> {
       return self.createRequest(
@@ -8262,8 +8223,8 @@ export const Endpoints = (self: base.Client) => ({
     registerACodeOfCouponCodes(
       request: RegisterACodeOfCouponCodesRequest,
       options?: base.RequestOptions<
-        RegisterACodeOfCouponCodesRequestFields,
-        RegisterACodeOfCouponCodesRequestEmbeds
+        RegisterACodeOfCouponCodesFields,
+        RegisterACodeOfCouponCodesEmbeds
       >,
     ): Promise<RegisterACodeOfCouponCodesResponse> {
       return self.createRequest(
@@ -8297,8 +8258,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnAppInformation(
       request: RetrieveAnAppInformationRequest,
       options?: base.RequestOptions<
-        RetrieveAnAppInformationRequestFields,
-        RetrieveAnAppInformationRequestEmbeds
+        RetrieveAnAppInformationFields,
+        RetrieveAnAppInformationEmbeds
       >,
     ): Promise<RetrieveAnAppInformationResponse> {
       return self.createRequest("GET", "/api/v2/admin/apps", request, options);
@@ -8317,8 +8278,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAnAppInformation(
       request: UpdateAnAppInformationRequest,
       options?: base.RequestOptions<
-        UpdateAnAppInformationRequestFields,
-        UpdateAnAppInformationRequestEmbeds
+        UpdateAnAppInformationFields,
+        UpdateAnAppInformationEmbeds
       >,
     ): Promise<UpdateAnAppInformationResponse> {
       return self.createRequest("PUT", "/api/v2/admin/apps", request, options);
@@ -8345,8 +8306,8 @@ export const Endpoints = (self: base.Client) => ({
     retreiveACafe24StoreOrder(
       request: RetreiveACafe24StoreOrderRequest,
       options?: base.RequestOptions<
-        RetreiveACafe24StoreOrderRequestFields,
-        RetreiveACafe24StoreOrderRequestEmbeds
+        RetreiveACafe24StoreOrderFields,
+        RetreiveACafe24StoreOrderEmbeds
       >,
     ): Promise<RetreiveACafe24StoreOrderResponse> {
       return self.createRequest(
@@ -8370,8 +8331,8 @@ export const Endpoints = (self: base.Client) => ({
     createACafe24StoreOrder(
       request: CreateACafe24StoreOrderRequest,
       options?: base.RequestOptions<
-        CreateACafe24StoreOrderRequestFields,
-        CreateACafe24StoreOrderRequestEmbeds
+        CreateACafe24StoreOrderFields,
+        CreateACafe24StoreOrderEmbeds
       >,
     ): Promise<CreateACafe24StoreOrderResponse> {
       return self.createRequest(
@@ -8402,8 +8363,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCafe24StorePayments(
       request: RetrieveAListOfCafe24StorePaymentsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCafe24StorePaymentsRequestFields,
-        RetrieveAListOfCafe24StorePaymentsRequestEmbeds
+        RetrieveAListOfCafe24StorePaymentsFields,
+        RetrieveAListOfCafe24StorePaymentsEmbeds
       >,
     ): Promise<RetrieveAListOfCafe24StorePaymentsResponse> {
       return self.createRequest(
@@ -8425,8 +8386,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCafe24StorePayments(
       request: RetrieveACountOfCafe24StorePaymentsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCafe24StorePaymentsRequestFields,
-        RetrieveACountOfCafe24StorePaymentsRequestEmbeds
+        RetrieveACountOfCafe24StorePaymentsFields,
+        RetrieveACountOfCafe24StorePaymentsEmbeds
       >,
     ): Promise<RetrieveACountOfCafe24StorePaymentsResponse> {
       return self.createRequest(
@@ -8452,8 +8413,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfDatabridgeWebhookLogs(
       request: RetrieveAListOfDatabridgeWebhookLogsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfDatabridgeWebhookLogsRequestFields,
-        RetrieveAListOfDatabridgeWebhookLogsRequestEmbeds
+        RetrieveAListOfDatabridgeWebhookLogsFields,
+        RetrieveAListOfDatabridgeWebhookLogsEmbeds
       >,
     ): Promise<RetrieveAListOfDatabridgeWebhookLogsResponse> {
       return self.createRequest(
@@ -8485,8 +8446,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfRecipes(
       request: RetrieveAListOfRecipesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfRecipesRequestFields,
-        RetrieveAListOfRecipesRequestEmbeds
+        RetrieveAListOfRecipesFields,
+        RetrieveAListOfRecipesEmbeds
       >,
     ): Promise<RetrieveAListOfRecipesResponse> {
       return self.createRequest(
@@ -8508,10 +8469,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createARecipe(
       request: CreateARecipeRequest,
-      options?: base.RequestOptions<
-        CreateARecipeRequestFields,
-        CreateARecipeRequestEmbeds
-      >,
+      options?: base.RequestOptions<CreateARecipeFields, CreateARecipeEmbeds>,
     ): Promise<CreateARecipeResponse> {
       return self.createRequest(
         "POST",
@@ -8531,10 +8489,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteARecipe(
       request: DeleteARecipeRequest,
-      options?: base.RequestOptions<
-        DeleteARecipeRequestFields,
-        DeleteARecipeRequestEmbeds
-      >,
+      options?: base.RequestOptions<DeleteARecipeFields, DeleteARecipeEmbeds>,
     ): Promise<DeleteARecipeResponse> {
       return self.createRequest(
         "DELETE",
@@ -8565,8 +8520,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfScriptTags(
       request: RetrieveAListOfScriptTagsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfScriptTagsRequestFields,
-        RetrieveAListOfScriptTagsRequestEmbeds
+        RetrieveAListOfScriptTagsFields,
+        RetrieveAListOfScriptTagsEmbeds
       >,
     ): Promise<RetrieveAListOfScriptTagsResponse> {
       return self.createRequest(
@@ -8588,8 +8543,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfScriptTags(
       request: RetrieveACountOfScriptTagsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfScriptTagsRequestFields,
-        RetrieveACountOfScriptTagsRequestEmbeds
+        RetrieveACountOfScriptTagsFields,
+        RetrieveACountOfScriptTagsEmbeds
       >,
     ): Promise<RetrieveACountOfScriptTagsResponse> {
       return self.createRequest(
@@ -8612,8 +8567,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAScriptTag(
       request: RetrieveAScriptTagRequest,
       options?: base.RequestOptions<
-        RetrieveAScriptTagRequestFields,
-        RetrieveAScriptTagRequestEmbeds
+        RetrieveAScriptTagFields,
+        RetrieveAScriptTagEmbeds
       >,
     ): Promise<RetrieveAScriptTagResponse> {
       return self.createRequest(
@@ -8635,8 +8590,8 @@ export const Endpoints = (self: base.Client) => ({
     createAScriptTag(
       request: CreateAScriptTagRequest,
       options?: base.RequestOptions<
-        CreateAScriptTagRequestFields,
-        CreateAScriptTagRequestEmbeds
+        CreateAScriptTagFields,
+        CreateAScriptTagEmbeds
       >,
     ): Promise<CreateAScriptTagResponse> {
       return self.createRequest(
@@ -8659,8 +8614,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAScriptTag(
       request: UpdateAScriptTagRequest,
       options?: base.RequestOptions<
-        UpdateAScriptTagRequestFields,
-        UpdateAScriptTagRequestEmbeds
+        UpdateAScriptTagFields,
+        UpdateAScriptTagEmbeds
       >,
     ): Promise<UpdateAScriptTagResponse> {
       return self.createRequest(
@@ -8683,8 +8638,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAScriptTag(
       request: DeleteAScriptTagRequest,
       options?: base.RequestOptions<
-        DeleteAScriptTagRequestFields,
-        DeleteAScriptTagRequestEmbeds
+        DeleteAScriptTagFields,
+        DeleteAScriptTagEmbeds
       >,
     ): Promise<DeleteAScriptTagResponse> {
       return self.createRequest(
@@ -8714,8 +8669,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfWebhookLogs(
       request: RetrieveAListOfWebhookLogsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfWebhookLogsRequestFields,
-        RetrieveAListOfWebhookLogsRequestEmbeds
+        RetrieveAListOfWebhookLogsFields,
+        RetrieveAListOfWebhookLogsEmbeds
       >,
     ): Promise<RetrieveAListOfWebhookLogsResponse> {
       return self.createRequest(
@@ -8745,8 +8700,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveWebhookSettings(
       request: RetrieveWebhookSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveWebhookSettingsRequestFields,
-        RetrieveWebhookSettingsRequestEmbeds
+        RetrieveWebhookSettingsFields,
+        RetrieveWebhookSettingsEmbeds
       >,
     ): Promise<RetrieveWebhookSettingsResponse> {
       return self.createRequest(
@@ -8765,8 +8720,8 @@ export const Endpoints = (self: base.Client) => ({
     editWebhookSettings(
       request: EditWebhookSettingsRequest,
       options?: base.RequestOptions<
-        EditWebhookSettingsRequestFields,
-        EditWebhookSettingsRequestEmbeds
+        EditWebhookSettingsFields,
+        EditWebhookSettingsEmbeds
       >,
     ): Promise<EditWebhookSettingsResponse> {
       return self.createRequest(
@@ -8799,8 +8754,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfAutoLayouts(
       request: RetrieveAListOfAutoLayoutsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfAutoLayoutsRequestFields,
-        RetrieveAListOfAutoLayoutsRequestEmbeds
+        RetrieveAListOfAutoLayoutsFields,
+        RetrieveAListOfAutoLayoutsEmbeds
       >,
     ): Promise<RetrieveAListOfAutoLayoutsResponse> {
       return self.createRequest(
@@ -8822,8 +8777,8 @@ export const Endpoints = (self: base.Client) => ({
     createAutoLayoutForSelectedProductCategory(
       request: CreateAutoLayoutForSelectedProductCategoryRequest,
       options?: base.RequestOptions<
-        CreateAutoLayoutForSelectedProductCategoryRequestFields,
-        CreateAutoLayoutForSelectedProductCategoryRequestEmbeds
+        CreateAutoLayoutForSelectedProductCategoryFields,
+        CreateAutoLayoutForSelectedProductCategoryEmbeds
       >,
     ): Promise<CreateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
@@ -8846,8 +8801,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAutoLayoutForSelectedProductCategory(
       request: UpdateAutoLayoutForSelectedProductCategoryRequest,
       options?: base.RequestOptions<
-        UpdateAutoLayoutForSelectedProductCategoryRequestFields,
-        UpdateAutoLayoutForSelectedProductCategoryRequestEmbeds
+        UpdateAutoLayoutForSelectedProductCategoryFields,
+        UpdateAutoLayoutForSelectedProductCategoryEmbeds
       >,
     ): Promise<UpdateAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
@@ -8869,8 +8824,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAutoLayoutForSelectedProductCategory(
       request: DeleteAutoLayoutForSelectedProductCategoryRequest,
       options?: base.RequestOptions<
-        DeleteAutoLayoutForSelectedProductCategoryRequestFields,
-        DeleteAutoLayoutForSelectedProductCategoryRequestEmbeds
+        DeleteAutoLayoutForSelectedProductCategoryFields,
+        DeleteAutoLayoutForSelectedProductCategoryEmbeds
       >,
     ): Promise<DeleteAutoLayoutForSelectedProductCategoryResponse> {
       return self.createRequest(
@@ -8905,8 +8860,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductCategories(
       request: RetrieveAListOfProductCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductCategoriesRequestFields,
-        RetrieveAListOfProductCategoriesRequestEmbeds
+        RetrieveAListOfProductCategoriesFields,
+        RetrieveAListOfProductCategoriesEmbeds
       >,
     ): Promise<RetrieveAListOfProductCategoriesResponse> {
       return self.createRequest(
@@ -8928,8 +8883,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductCategories(
       request: RetrieveACountOfProductCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductCategoriesRequestFields,
-        RetrieveACountOfProductCategoriesRequestEmbeds
+        RetrieveACountOfProductCategoriesFields,
+        RetrieveACountOfProductCategoriesEmbeds
       >,
     ): Promise<RetrieveACountOfProductCategoriesResponse> {
       return self.createRequest(
@@ -8952,8 +8907,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAProductCategory(
       request: RetrieveAProductCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveAProductCategoryRequestFields,
-        RetrieveAProductCategoryRequestEmbeds
+        RetrieveAProductCategoryFields,
+        RetrieveAProductCategoryEmbeds
       >,
     ): Promise<RetrieveAProductCategoryResponse> {
       return self.createRequest(
@@ -8976,8 +8931,8 @@ export const Endpoints = (self: base.Client) => ({
     createAProductCategory(
       request: CreateAProductCategoryRequest,
       options?: base.RequestOptions<
-        CreateAProductCategoryRequestFields,
-        CreateAProductCategoryRequestEmbeds
+        CreateAProductCategoryFields,
+        CreateAProductCategoryEmbeds
       >,
     ): Promise<CreateAProductCategoryResponse> {
       return self.createRequest(
@@ -9000,8 +8955,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductCategory(
       request: UpdateAProductCategoryRequest,
       options?: base.RequestOptions<
-        UpdateAProductCategoryRequestFields,
-        UpdateAProductCategoryRequestEmbeds
+        UpdateAProductCategoryFields,
+        UpdateAProductCategoryEmbeds
       >,
     ): Promise<UpdateAProductCategoryResponse> {
       return self.createRequest(
@@ -9023,8 +8978,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAProductCategory(
       request: DeleteAProductCategoryRequest,
       options?: base.RequestOptions<
-        DeleteAProductCategoryRequestFields,
-        DeleteAProductCategoryRequestEmbeds
+        DeleteAProductCategoryFields,
+        DeleteAProductCategoryEmbeds
       >,
     ): Promise<DeleteAProductCategoryResponse> {
       return self.createRequest(
@@ -9057,8 +9012,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveDecorationImageSettingsByCategory(
       request: RetrieveDecorationImageSettingsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveDecorationImageSettingsByCategoryRequestFields,
-        RetrieveDecorationImageSettingsByCategoryRequestEmbeds
+        RetrieveDecorationImageSettingsByCategoryFields,
+        RetrieveDecorationImageSettingsByCategoryEmbeds
       >,
     ): Promise<RetrieveDecorationImageSettingsByCategoryResponse> {
       return self.createRequest(
@@ -9081,8 +9036,8 @@ export const Endpoints = (self: base.Client) => ({
     updateDecorationImagesOfAProductCategory(
       request: UpdateDecorationImagesOfAProductCategoryRequest,
       options?: base.RequestOptions<
-        UpdateDecorationImagesOfAProductCategoryRequestFields,
-        UpdateDecorationImagesOfAProductCategoryRequestEmbeds
+        UpdateDecorationImagesOfAProductCategoryFields,
+        UpdateDecorationImagesOfAProductCategoryEmbeds
       >,
     ): Promise<UpdateDecorationImagesOfAProductCategoryResponse> {
       return self.createRequest(
@@ -9117,8 +9072,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSeoSettingsByCategory(
       request: RetrieveSeoSettingsByCategoryRequest,
       options?: base.RequestOptions<
-        RetrieveSeoSettingsByCategoryRequestFields,
-        RetrieveSeoSettingsByCategoryRequestEmbeds
+        RetrieveSeoSettingsByCategoryFields,
+        RetrieveSeoSettingsByCategoryEmbeds
       >,
     ): Promise<RetrieveSeoSettingsByCategoryResponse> {
       return self.createRequest(
@@ -9141,8 +9096,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAProductCategorySeo(
       request: UpdateAProductCategorySeoRequest,
       options?: base.RequestOptions<
-        UpdateAProductCategorySeoRequestFields,
-        UpdateAProductCategorySeoRequestEmbeds
+        UpdateAProductCategorySeoFields,
+        UpdateAProductCategorySeoEmbeds
       >,
     ): Promise<UpdateAProductCategorySeoResponse> {
       return self.createRequest(
@@ -9173,8 +9128,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfMainCategories(
       request: RetrieveAListOfMainCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfMainCategoriesRequestFields,
-        RetrieveAListOfMainCategoriesRequestEmbeds
+        RetrieveAListOfMainCategoriesFields,
+        RetrieveAListOfMainCategoriesEmbeds
       >,
     ): Promise<RetrieveAListOfMainCategoriesResponse> {
       return self.createRequest("GET", "/api/v2/admin/mains", request, options);
@@ -9202,8 +9157,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfBrands(
       request: RetrieveAListOfBrandsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfBrandsRequestFields,
-        RetrieveAListOfBrandsRequestEmbeds
+        RetrieveAListOfBrandsFields,
+        RetrieveAListOfBrandsEmbeds
       >,
     ): Promise<RetrieveAListOfBrandsResponse> {
       return self.createRequest(
@@ -9225,8 +9180,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfBrands(
       request: RetrieveACountOfBrandsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfBrandsRequestFields,
-        RetrieveACountOfBrandsRequestEmbeds
+        RetrieveACountOfBrandsFields,
+        RetrieveACountOfBrandsEmbeds
       >,
     ): Promise<RetrieveACountOfBrandsResponse> {
       return self.createRequest(
@@ -9248,10 +9203,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     createABrand(
       request: CreateABrandRequest,
-      options?: base.RequestOptions<
-        CreateABrandRequestFields,
-        CreateABrandRequestEmbeds
-      >,
+      options?: base.RequestOptions<CreateABrandFields, CreateABrandEmbeds>,
     ): Promise<CreateABrandResponse> {
       return self.createRequest(
         "POST",
@@ -9272,10 +9224,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     updateABrand(
       request: UpdateABrandRequest,
-      options?: base.RequestOptions<
-        UpdateABrandRequestFields,
-        UpdateABrandRequestEmbeds
-      >,
+      options?: base.RequestOptions<UpdateABrandFields, UpdateABrandEmbeds>,
     ): Promise<UpdateABrandResponse> {
       return self.createRequest(
         "PUT",
@@ -9295,10 +9244,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     deleteABrand(
       request: DeleteABrandRequest,
-      options?: base.RequestOptions<
-        DeleteABrandRequestFields,
-        DeleteABrandRequestEmbeds
-      >,
+      options?: base.RequestOptions<DeleteABrandFields, DeleteABrandEmbeds>,
     ): Promise<DeleteABrandResponse> {
       return self.createRequest(
         "DELETE",
@@ -9329,8 +9275,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomCategories(
       request: RetrieveAListOfCustomCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomCategoriesRequestFields,
-        RetrieveAListOfCustomCategoriesRequestEmbeds
+        RetrieveAListOfCustomCategoriesFields,
+        RetrieveAListOfCustomCategoriesEmbeds
       >,
     ): Promise<RetrieveAListOfCustomCategoriesResponse> {
       return self.createRequest(
@@ -9352,8 +9298,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomCategories(
       request: RetrieveACountOfCustomCategoriesRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomCategoriesRequestFields,
-        RetrieveACountOfCustomCategoriesRequestEmbeds
+        RetrieveACountOfCustomCategoriesFields,
+        RetrieveACountOfCustomCategoriesEmbeds
       >,
     ): Promise<RetrieveACountOfCustomCategoriesResponse> {
       return self.createRequest(
@@ -9388,8 +9334,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfManufacturers(
       request: RetrieveAListOfManufacturersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfManufacturersRequestFields,
-        RetrieveAListOfManufacturersRequestEmbeds
+        RetrieveAListOfManufacturersFields,
+        RetrieveAListOfManufacturersEmbeds
       >,
     ): Promise<RetrieveAListOfManufacturersResponse> {
       return self.createRequest(
@@ -9412,8 +9358,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAManufacturer(
       request: RetrieveAManufacturerRequest,
       options?: base.RequestOptions<
-        RetrieveAManufacturerRequestFields,
-        RetrieveAManufacturerRequestEmbeds
+        RetrieveAManufacturerFields,
+        RetrieveAManufacturerEmbeds
       >,
     ): Promise<RetrieveAManufacturerResponse> {
       return self.createRequest(
@@ -9435,8 +9381,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfManufacturers(
       request: RetrieveACountOfManufacturersRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfManufacturersRequestFields,
-        RetrieveACountOfManufacturersRequestEmbeds
+        RetrieveACountOfManufacturersFields,
+        RetrieveACountOfManufacturersEmbeds
       >,
     ): Promise<RetrieveACountOfManufacturersResponse> {
       return self.createRequest(
@@ -9458,8 +9404,8 @@ export const Endpoints = (self: base.Client) => ({
     createAManufacturer(
       request: CreateAManufacturerRequest,
       options?: base.RequestOptions<
-        CreateAManufacturerRequestFields,
-        CreateAManufacturerRequestEmbeds
+        CreateAManufacturerFields,
+        CreateAManufacturerEmbeds
       >,
     ): Promise<CreateAManufacturerResponse> {
       return self.createRequest(
@@ -9482,8 +9428,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAManufacturer(
       request: UpdateAManufacturerRequest,
       options?: base.RequestOptions<
-        UpdateAManufacturerRequestFields,
-        UpdateAManufacturerRequestEmbeds
+        UpdateAManufacturerFields,
+        UpdateAManufacturerEmbeds
       >,
     ): Promise<UpdateAManufacturerResponse> {
       return self.createRequest(
@@ -9516,8 +9462,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfOrigins(
       request: RetrieveAListOfOriginsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfOriginsRequestFields,
-        RetrieveAListOfOriginsRequestEmbeds
+        RetrieveAListOfOriginsFields,
+        RetrieveAListOfOriginsEmbeds
       >,
     ): Promise<RetrieveAListOfOriginsResponse> {
       return self.createRequest(
@@ -9549,8 +9495,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfTrends(
       request: RetrieveAListOfTrendsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfTrendsRequestFields,
-        RetrieveAListOfTrendsRequestEmbeds
+        RetrieveAListOfTrendsFields,
+        RetrieveAListOfTrendsEmbeds
       >,
     ): Promise<RetrieveAListOfTrendsResponse> {
       return self.createRequest(
@@ -9572,8 +9518,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfTrends(
       request: RetrieveACountOfTrendsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfTrendsRequestFields,
-        RetrieveACountOfTrendsRequestEmbeds
+        RetrieveACountOfTrendsFields,
+        RetrieveACountOfTrendsEmbeds
       >,
     ): Promise<RetrieveACountOfTrendsResponse> {
       return self.createRequest(
@@ -9605,8 +9551,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASupplierSShippingSettings(
       request: RetrieveASupplierSShippingSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveASupplierSShippingSettingsRequestFields,
-        RetrieveASupplierSShippingSettingsRequestEmbeds
+        RetrieveASupplierSShippingSettingsFields,
+        RetrieveASupplierSShippingSettingsEmbeds
       >,
     ): Promise<RetrieveASupplierSShippingSettingsResponse> {
       return self.createRequest(
@@ -9629,8 +9575,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASupplierSShippingSettings(
       request: UpdateASupplierSShippingSettingsRequest,
       options?: base.RequestOptions<
-        UpdateASupplierSShippingSettingsRequestFields,
-        UpdateASupplierSShippingSettingsRequestEmbeds
+        UpdateASupplierSShippingSettingsFields,
+        UpdateASupplierSShippingSettingsEmbeds
       >,
     ): Promise<UpdateASupplierSShippingSettingsResponse> {
       return self.createRequest(
@@ -9665,8 +9611,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfSuppliers(
       request: RetrieveAListOfSuppliersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfSuppliersRequestFields,
-        RetrieveAListOfSuppliersRequestEmbeds
+        RetrieveAListOfSuppliersFields,
+        RetrieveAListOfSuppliersEmbeds
       >,
     ): Promise<RetrieveAListOfSuppliersResponse> {
       return self.createRequest(
@@ -9688,8 +9634,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfSuppliers(
       request: RetrieveACountOfSuppliersRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfSuppliersRequestFields,
-        RetrieveACountOfSuppliersRequestEmbeds
+        RetrieveACountOfSuppliersFields,
+        RetrieveACountOfSuppliersEmbeds
       >,
     ): Promise<RetrieveACountOfSuppliersResponse> {
       return self.createRequest(
@@ -9712,8 +9658,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASupplier(
       request: RetrieveASupplierRequest,
       options?: base.RequestOptions<
-        RetrieveASupplierRequestFields,
-        RetrieveASupplierRequestEmbeds
+        RetrieveASupplierFields,
+        RetrieveASupplierEmbeds
       >,
     ): Promise<RetrieveASupplierResponse> {
       return self.createRequest(
@@ -9735,8 +9681,8 @@ export const Endpoints = (self: base.Client) => ({
     createASupplier(
       request: CreateASupplierRequest,
       options?: base.RequestOptions<
-        CreateASupplierRequestFields,
-        CreateASupplierRequestEmbeds
+        CreateASupplierFields,
+        CreateASupplierEmbeds
       >,
     ): Promise<CreateASupplierResponse> {
       return self.createRequest(
@@ -9759,8 +9705,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASupplier(
       request: UpdateASupplierRequest,
       options?: base.RequestOptions<
-        UpdateASupplierRequestFields,
-        UpdateASupplierRequestEmbeds
+        UpdateASupplierFields,
+        UpdateASupplierEmbeds
       >,
     ): Promise<UpdateASupplierResponse> {
       return self.createRequest(
@@ -9782,8 +9728,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteASupplier(
       request: DeleteASupplierRequest,
       options?: base.RequestOptions<
-        DeleteASupplierRequestFields,
-        DeleteASupplierRequestEmbeds
+        DeleteASupplierFields,
+        DeleteASupplierEmbeds
       >,
     ): Promise<DeleteASupplierResponse> {
       return self.createRequest(
@@ -9817,8 +9763,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfSupplierUsers(
       request: RetrieveAListOfSupplierUsersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfSupplierUsersRequestFields,
-        RetrieveAListOfSupplierUsersRequestEmbeds
+        RetrieveAListOfSupplierUsersFields,
+        RetrieveAListOfSupplierUsersEmbeds
       >,
     ): Promise<RetrieveAListOfSupplierUsersResponse> {
       return self.createRequest(
@@ -9840,8 +9786,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfSupplierUsers(
       request: RetrieveACountOfSupplierUsersRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfSupplierUsersRequestFields,
-        RetrieveACountOfSupplierUsersRequestEmbeds
+        RetrieveACountOfSupplierUsersFields,
+        RetrieveACountOfSupplierUsersEmbeds
       >,
     ): Promise<RetrieveACountOfSupplierUsersResponse> {
       return self.createRequest(
@@ -9864,8 +9810,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveSupplierUserDetails(
       request: RetrieveSupplierUserDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveSupplierUserDetailsRequestFields,
-        RetrieveSupplierUserDetailsRequestEmbeds
+        RetrieveSupplierUserDetailsFields,
+        RetrieveSupplierUserDetailsEmbeds
       >,
     ): Promise<RetrieveSupplierUserDetailsResponse> {
       return self.createRequest(
@@ -9887,8 +9833,8 @@ export const Endpoints = (self: base.Client) => ({
     createASupplierUser(
       request: CreateASupplierUserRequest,
       options?: base.RequestOptions<
-        CreateASupplierUserRequestFields,
-        CreateASupplierUserRequestEmbeds
+        CreateASupplierUserFields,
+        CreateASupplierUserEmbeds
       >,
     ): Promise<CreateASupplierUserResponse> {
       return self.createRequest(
@@ -9911,8 +9857,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASupplierUser(
       request: UpdateASupplierUserRequest,
       options?: base.RequestOptions<
-        UpdateASupplierUserRequestFields,
-        UpdateASupplierUserRequestEmbeds
+        UpdateASupplierUserFields,
+        UpdateASupplierUserEmbeds
       >,
     ): Promise<UpdateASupplierUserResponse> {
       return self.createRequest(
@@ -9934,8 +9880,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteASupplierUser(
       request: DeleteASupplierUserRequest,
       options?: base.RequestOptions<
-        DeleteASupplierUserRequestFields,
-        DeleteASupplierUserRequestEmbeds
+        DeleteASupplierUserFields,
+        DeleteASupplierUserEmbeds
       >,
     ): Promise<DeleteASupplierUserResponse> {
       return self.createRequest(
@@ -9968,8 +9914,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASupplierUserSListOfRegionalShippingFees(
       request: RetrieveASupplierUserSListOfRegionalShippingFeesRequest,
       options?: base.RequestOptions<
-        RetrieveASupplierUserSListOfRegionalShippingFeesRequestFields,
-        RetrieveASupplierUserSListOfRegionalShippingFeesRequestEmbeds
+        RetrieveASupplierUserSListOfRegionalShippingFeesFields,
+        RetrieveASupplierUserSListOfRegionalShippingFeesEmbeds
       >,
     ): Promise<RetrieveASupplierUserSListOfRegionalShippingFeesResponse> {
       return self.createRequest(
@@ -9992,8 +9938,8 @@ export const Endpoints = (self: base.Client) => ({
     createRegionalShippingFeeForASupplierUser(
       request: CreateRegionalShippingFeeForASupplierUserRequest,
       options?: base.RequestOptions<
-        CreateRegionalShippingFeeForASupplierUserRequestFields,
-        CreateRegionalShippingFeeForASupplierUserRequestEmbeds
+        CreateRegionalShippingFeeForASupplierUserFields,
+        CreateRegionalShippingFeeForASupplierUserEmbeds
       >,
     ): Promise<CreateRegionalShippingFeeForASupplierUserResponse> {
       return self.createRequest(
@@ -10015,8 +9961,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteSupplierUserSRegionalShippingFeeSettings(
       request: DeleteSupplierUserSRegionalShippingFeeSettingsRequest,
       options?: base.RequestOptions<
-        DeleteSupplierUserSRegionalShippingFeeSettingsRequestFields,
-        DeleteSupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+        DeleteSupplierUserSRegionalShippingFeeSettingsFields,
+        DeleteSupplierUserSRegionalShippingFeeSettingsEmbeds
       >,
     ): Promise<DeleteSupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
@@ -10049,8 +9995,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASupplierUserSRegionalShippingFeeSettings(
       request: RetrieveASupplierUserSRegionalShippingFeeSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveASupplierUserSRegionalShippingFeeSettingsRequestFields,
-        RetrieveASupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+        RetrieveASupplierUserSRegionalShippingFeeSettingsFields,
+        RetrieveASupplierUserSRegionalShippingFeeSettingsEmbeds
       >,
     ): Promise<RetrieveASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
@@ -10073,8 +10019,8 @@ export const Endpoints = (self: base.Client) => ({
     updateASupplierUserSRegionalShippingFeeSettings(
       request: UpdateASupplierUserSRegionalShippingFeeSettingsRequest,
       options?: base.RequestOptions<
-        UpdateASupplierUserSRegionalShippingFeeSettingsRequestFields,
-        UpdateASupplierUserSRegionalShippingFeeSettingsRequestEmbeds
+        UpdateASupplierUserSRegionalShippingFeeSettingsFields,
+        UpdateASupplierUserSRegionalShippingFeeSettingsEmbeds
       >,
     ): Promise<UpdateASupplierUserSRegionalShippingFeeSettingsResponse> {
       return self.createRequest(
@@ -10107,8 +10053,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfShippingCarriers(
       request: RetrieveAListOfShippingCarriersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfShippingCarriersRequestFields,
-        RetrieveAListOfShippingCarriersRequestEmbeds
+        RetrieveAListOfShippingCarriersFields,
+        RetrieveAListOfShippingCarriersEmbeds
       >,
     ): Promise<RetrieveAListOfShippingCarriersResponse> {
       return self.createRequest(
@@ -10131,8 +10077,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAShippingCarrier(
       request: RetrieveAShippingCarrierRequest,
       options?: base.RequestOptions<
-        RetrieveAShippingCarrierRequestFields,
-        RetrieveAShippingCarrierRequestEmbeds
+        RetrieveAShippingCarrierFields,
+        RetrieveAShippingCarrierEmbeds
       >,
     ): Promise<RetrieveAShippingCarrierResponse> {
       return self.createRequest(
@@ -10155,8 +10101,8 @@ export const Endpoints = (self: base.Client) => ({
     createAShippingCarrier(
       request: CreateAShippingCarrierRequest,
       options?: base.RequestOptions<
-        CreateAShippingCarrierRequestFields,
-        CreateAShippingCarrierRequestEmbeds
+        CreateAShippingCarrierFields,
+        CreateAShippingCarrierEmbeds
       >,
     ): Promise<CreateAShippingCarrierResponse> {
       return self.createRequest(
@@ -10179,8 +10125,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAShippingCarrier(
       request: UpdateAShippingCarrierRequest,
       options?: base.RequestOptions<
-        UpdateAShippingCarrierRequestFields,
-        UpdateAShippingCarrierRequestEmbeds
+        UpdateAShippingCarrierFields,
+        UpdateAShippingCarrierEmbeds
       >,
     ): Promise<UpdateAShippingCarrierResponse> {
       return self.createRequest(
@@ -10202,8 +10148,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAShippingCarrier(
       request: DeleteAShippingCarrierRequest,
       options?: base.RequestOptions<
-        DeleteAShippingCarrierRequestFields,
-        DeleteAShippingCarrierRequestEmbeds
+        DeleteAShippingCarrierFields,
+        DeleteAShippingCarrierEmbeds
       >,
     ): Promise<DeleteAShippingCarrierResponse> {
       return self.createRequest(
@@ -10229,8 +10175,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveShippingZoneRatesSettings(
       request: RetrieveShippingZoneRatesSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveShippingZoneRatesSettingsRequestFields,
-        RetrieveShippingZoneRatesSettingsRequestEmbeds
+        RetrieveShippingZoneRatesSettingsFields,
+        RetrieveShippingZoneRatesSettingsEmbeds
       >,
     ): Promise<RetrieveShippingZoneRatesSettingsResponse> {
       return self.createRequest(
@@ -10262,8 +10208,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveShippingReturnSettings(
       request: RetrieveShippingReturnSettingsRequest,
       options?: base.RequestOptions<
-        RetrieveShippingReturnSettingsRequestFields,
-        RetrieveShippingReturnSettingsRequestEmbeds
+        RetrieveShippingReturnSettingsFields,
+        RetrieveShippingReturnSettingsEmbeds
       >,
     ): Promise<RetrieveShippingReturnSettingsResponse> {
       return self.createRequest(
@@ -10286,8 +10232,8 @@ export const Endpoints = (self: base.Client) => ({
     updateStoreShippingReturnSettings(
       request: UpdateStoreShippingReturnSettingsRequest,
       options?: base.RequestOptions<
-        UpdateStoreShippingReturnSettingsRequestFields,
-        UpdateStoreShippingReturnSettingsRequestEmbeds
+        UpdateStoreShippingReturnSettingsFields,
+        UpdateStoreShippingReturnSettingsEmbeds
       >,
     ): Promise<UpdateStoreShippingReturnSettingsResponse> {
       return self.createRequest(
@@ -10318,8 +10264,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfShippingOrigins(
       request: RetrieveAListOfShippingOriginsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfShippingOriginsRequestFields,
-        RetrieveAListOfShippingOriginsRequestEmbeds
+        RetrieveAListOfShippingOriginsFields,
+        RetrieveAListOfShippingOriginsEmbeds
       >,
     ): Promise<RetrieveAListOfShippingOriginsResponse> {
       return self.createRequest(
@@ -10342,8 +10288,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAShippingOrigin(
       request: RetrieveAShippingOriginRequest,
       options?: base.RequestOptions<
-        RetrieveAShippingOriginRequestFields,
-        RetrieveAShippingOriginRequestEmbeds
+        RetrieveAShippingOriginFields,
+        RetrieveAShippingOriginEmbeds
       >,
     ): Promise<RetrieveAShippingOriginResponse> {
       return self.createRequest(
@@ -10365,8 +10311,8 @@ export const Endpoints = (self: base.Client) => ({
     createAShippingOrigin(
       request: CreateAShippingOriginRequest,
       options?: base.RequestOptions<
-        CreateAShippingOriginRequestFields,
-        CreateAShippingOriginRequestEmbeds
+        CreateAShippingOriginFields,
+        CreateAShippingOriginEmbeds
       >,
     ): Promise<CreateAShippingOriginResponse> {
       return self.createRequest(
@@ -10389,8 +10335,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAShippingOrigin(
       request: UpdateAShippingOriginRequest,
       options?: base.RequestOptions<
-        UpdateAShippingOriginRequestFields,
-        UpdateAShippingOriginRequestEmbeds
+        UpdateAShippingOriginFields,
+        UpdateAShippingOriginEmbeds
       >,
     ): Promise<UpdateAShippingOriginResponse> {
       return self.createRequest(
@@ -10413,8 +10359,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAShippingOrigin(
       request: DeleteAShippingOriginRequest,
       options?: base.RequestOptions<
-        DeleteAShippingOriginRequestFields,
-        DeleteAShippingOriginRequestEmbeds
+        DeleteAShippingOriginFields,
+        DeleteAShippingOriginEmbeds
       >,
     ): Promise<DeleteAShippingOriginResponse> {
       return self.createRequest(
@@ -10446,8 +10392,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfDailySales(
       request: RetrieveAListOfDailySalesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfDailySalesRequestFields,
-        RetrieveAListOfDailySalesRequestEmbeds
+        RetrieveAListOfDailySalesFields,
+        RetrieveAListOfDailySalesEmbeds
       >,
     ): Promise<RetrieveAListOfDailySalesResponse> {
       return self.createRequest(
@@ -10479,8 +10425,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfMonthlySales(
       request: RetrieveAListOfMonthlySalesRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfMonthlySalesRequestFields,
-        RetrieveAListOfMonthlySalesRequestEmbeds
+        RetrieveAListOfMonthlySalesFields,
+        RetrieveAListOfMonthlySalesEmbeds
       >,
     ): Promise<RetrieveAListOfMonthlySalesResponse> {
       return self.createRequest(
@@ -10511,8 +10457,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveHourlySalesStatisticsOfAStore(
       request: RetrieveHourlySalesStatisticsOfAStoreRequest,
       options?: base.RequestOptions<
-        RetrieveHourlySalesStatisticsOfAStoreRequestFields,
-        RetrieveHourlySalesStatisticsOfAStoreRequestEmbeds
+        RetrieveHourlySalesStatisticsOfAStoreFields,
+        RetrieveHourlySalesStatisticsOfAStoreEmbeds
       >,
     ): Promise<RetrieveHourlySalesStatisticsOfAStoreResponse> {
       return self.createRequest(
@@ -10544,8 +10490,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveHourlyProductSalesStatisticsOfAStore(
       request: RetrieveHourlyProductSalesStatisticsOfAStoreRequest,
       options?: base.RequestOptions<
-        RetrieveHourlyProductSalesStatisticsOfAStoreRequestFields,
-        RetrieveHourlyProductSalesStatisticsOfAStoreRequestEmbeds
+        RetrieveHourlyProductSalesStatisticsOfAStoreFields,
+        RetrieveHourlyProductSalesStatisticsOfAStoreEmbeds
       >,
     ): Promise<RetrieveHourlyProductSalesStatisticsOfAStoreResponse> {
       return self.createRequest(
@@ -10576,8 +10522,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveASalesReport(
       request: RetrieveASalesReportRequest,
       options?: base.RequestOptions<
-        RetrieveASalesReportRequestFields,
-        RetrieveASalesReportRequestEmbeds
+        RetrieveASalesReportFields,
+        RetrieveASalesReportEmbeds
       >,
     ): Promise<RetrieveASalesReportResponse> {
       return self.createRequest(
@@ -10610,8 +10556,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAShoppingCart(
       request: RetrieveAShoppingCartRequest,
       options?: base.RequestOptions<
-        RetrieveAShoppingCartRequestFields,
-        RetrieveAShoppingCartRequestEmbeds
+        RetrieveAShoppingCartFields,
+        RetrieveAShoppingCartEmbeds
       >,
     ): Promise<RetrieveAShoppingCartResponse> {
       return self.createRequest("GET", "/api/v2/admin/carts", request, options);
@@ -10638,8 +10584,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfProductsInCustomerWishlist(
       request: RetrieveACountOfProductsInCustomerWishlistRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfProductsInCustomerWishlistRequestFields,
-        RetrieveACountOfProductsInCustomerWishlistRequestEmbeds
+        RetrieveACountOfProductsInCustomerWishlistFields,
+        RetrieveACountOfProductsInCustomerWishlistEmbeds
       >,
     ): Promise<RetrieveACountOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
@@ -10661,8 +10607,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductsInCustomerWishlist(
       request: RetrieveAListOfProductsInCustomerWishlistRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductsInCustomerWishlistRequestFields,
-        RetrieveAListOfProductsInCustomerWishlistRequestEmbeds
+        RetrieveAListOfProductsInCustomerWishlistFields,
+        RetrieveAListOfProductsInCustomerWishlistEmbeds
       >,
     ): Promise<RetrieveAListOfProductsInCustomerWishlistResponse> {
       return self.createRequest(
@@ -10695,8 +10641,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCartsContainingAProduct(
       request: RetrieveACountOfCartsContainingAProductRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCartsContainingAProductRequestFields,
-        RetrieveACountOfCartsContainingAProductRequestEmbeds
+        RetrieveACountOfCartsContainingAProductFields,
+        RetrieveACountOfCartsContainingAProductEmbeds
       >,
     ): Promise<RetrieveACountOfCartsContainingAProductResponse> {
       return self.createRequest(
@@ -10719,8 +10665,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCartsContainingAProduct(
       request: RetrieveAListOfCartsContainingAProductRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCartsContainingAProductRequestFields,
-        RetrieveAListOfCartsContainingAProductRequestEmbeds
+        RetrieveAListOfCartsContainingAProductFields,
+        RetrieveAListOfCartsContainingAProductEmbeds
       >,
     ): Promise<RetrieveAListOfCartsContainingAProductResponse> {
       return self.createRequest(
@@ -10752,8 +10698,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomerInformation(
       request: RetrieveAListOfCustomerInformationRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomerInformationRequestFields,
-        RetrieveAListOfCustomerInformationRequestEmbeds
+        RetrieveAListOfCustomerInformationFields,
+        RetrieveAListOfCustomerInformationEmbeds
       >,
     ): Promise<RetrieveAListOfCustomerInformationResponse> {
       return self.createRequest(
@@ -10775,8 +10721,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomerInformation(
       request: RetrieveACountOfCustomerInformationRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomerInformationRequestFields,
-        RetrieveACountOfCustomerInformationRequestEmbeds
+        RetrieveACountOfCustomerInformationFields,
+        RetrieveACountOfCustomerInformationEmbeds
       >,
     ): Promise<RetrieveACountOfCustomerInformationResponse> {
       return self.createRequest(
@@ -10799,8 +10745,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACustomerInformation(
       request: RetrieveACustomerInformationRequest,
       options?: base.RequestOptions<
-        RetrieveACustomerInformationRequestFields,
-        RetrieveACustomerInformationRequestEmbeds
+        RetrieveACustomerInformationFields,
+        RetrieveACustomerInformationEmbeds
       >,
     ): Promise<RetrieveACustomerInformationResponse> {
       return self.createRequest(
@@ -10823,8 +10769,8 @@ export const Endpoints = (self: base.Client) => ({
     updateACustomerInformation(
       request: UpdateACustomerInformationRequest,
       options?: base.RequestOptions<
-        UpdateACustomerInformationRequestFields,
-        UpdateACustomerInformationRequestEmbeds
+        UpdateACustomerInformationFields,
+        UpdateACustomerInformationEmbeds
       >,
     ): Promise<UpdateACustomerInformationResponse> {
       return self.createRequest(
@@ -10856,8 +10802,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCustomersWithAProductInWishlist(
       request: RetrieveAListOfCustomersWithAProductInWishlistRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCustomersWithAProductInWishlistRequestFields,
-        RetrieveAListOfCustomersWithAProductInWishlistRequestEmbeds
+        RetrieveAListOfCustomersWithAProductInWishlistFields,
+        RetrieveAListOfCustomersWithAProductInWishlistEmbeds
       >,
     ): Promise<RetrieveAListOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
@@ -10879,8 +10825,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfCustomersWithAProductInWishlist(
       request: RetrieveACountOfCustomersWithAProductInWishlistRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfCustomersWithAProductInWishlistRequestFields,
-        RetrieveACountOfCustomersWithAProductInWishlistRequestEmbeds
+        RetrieveACountOfCustomersWithAProductInWishlistFields,
+        RetrieveACountOfCustomersWithAProductInWishlistEmbeds
       >,
     ): Promise<RetrieveACountOfCustomersWithAProductInWishlistResponse> {
       return self.createRequest(
@@ -10912,8 +10858,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfCreditsByDateRange(
       request: RetrieveAListOfCreditsByDateRangeRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfCreditsByDateRangeRequestFields,
-        RetrieveAListOfCreditsByDateRangeRequestEmbeds
+        RetrieveAListOfCreditsByDateRangeFields,
+        RetrieveAListOfCreditsByDateRangeEmbeds
       >,
     ): Promise<RetrieveAListOfCreditsByDateRangeResponse> {
       return self.createRequest(
@@ -10946,8 +10892,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACreditReportByDateRange(
       request: RetrieveACreditReportByDateRangeRequest,
       options?: base.RequestOptions<
-        RetrieveACreditReportByDateRangeRequestFields,
-        RetrieveACreditReportByDateRangeRequestEmbeds
+        RetrieveACreditReportByDateRangeFields,
+        RetrieveACreditReportByDateRangeEmbeds
       >,
     ): Promise<RetrieveACreditReportByDateRangeResponse> {
       return self.createRequest(
@@ -10980,10 +10926,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     retrievePoints(
       request: RetrievePointsRequest,
-      options?: base.RequestOptions<
-        RetrievePointsRequestFields,
-        RetrievePointsRequestEmbeds
-      >,
+      options?: base.RequestOptions<RetrievePointsFields, RetrievePointsEmbeds>,
     ): Promise<RetrievePointsResponse> {
       return self.createRequest(
         "GET",
@@ -11004,8 +10947,8 @@ export const Endpoints = (self: base.Client) => ({
     issueAndDeductPoints(
       request: IssueAndDeductPointsRequest,
       options?: base.RequestOptions<
-        IssueAndDeductPointsRequestFields,
-        IssueAndDeductPointsRequestEmbeds
+        IssueAndDeductPointsFields,
+        IssueAndDeductPointsEmbeds
       >,
     ): Promise<IssueAndDeductPointsResponse> {
       return self.createRequest(
@@ -11038,8 +10981,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAnAutomaticPointsExpiration(
       request: RetrieveAnAutomaticPointsExpirationRequest,
       options?: base.RequestOptions<
-        RetrieveAnAutomaticPointsExpirationRequestFields,
-        RetrieveAnAutomaticPointsExpirationRequestEmbeds
+        RetrieveAnAutomaticPointsExpirationFields,
+        RetrieveAnAutomaticPointsExpirationEmbeds
       >,
     ): Promise<RetrieveAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
@@ -11062,8 +11005,8 @@ export const Endpoints = (self: base.Client) => ({
     createAnAutomaticPointsExpiration(
       request: CreateAnAutomaticPointsExpirationRequest,
       options?: base.RequestOptions<
-        CreateAnAutomaticPointsExpirationRequestFields,
-        CreateAnAutomaticPointsExpirationRequestEmbeds
+        CreateAnAutomaticPointsExpirationFields,
+        CreateAnAutomaticPointsExpirationEmbeds
       >,
     ): Promise<CreateAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
@@ -11085,8 +11028,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteAnAutomaticPointsExpiration(
       request: DeleteAnAutomaticPointsExpirationRequest,
       options?: base.RequestOptions<
-        DeleteAnAutomaticPointsExpirationRequestFields,
-        DeleteAnAutomaticPointsExpirationRequestEmbeds
+        DeleteAnAutomaticPointsExpirationFields,
+        DeleteAnAutomaticPointsExpirationEmbeds
       >,
     ): Promise<DeleteAnAutomaticPointsExpirationResponse> {
       return self.createRequest(
@@ -11119,8 +11062,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAPointsReportByDateRange(
       request: RetrieveAPointsReportByDateRangeRequest,
       options?: base.RequestOptions<
-        RetrieveAPointsReportByDateRangeRequestFields,
-        RetrieveAPointsReportByDateRangeRequestEmbeds
+        RetrieveAPointsReportByDateRangeFields,
+        RetrieveAPointsReportByDateRangeEmbeds
       >,
     ): Promise<RetrieveAPointsReportByDateRangeResponse> {
       return self.createRequest(
@@ -11154,8 +11097,8 @@ export const Endpoints = (self: base.Client) => ({
     sendAnInvitationToActivateAccount(
       request: SendAnInvitationToActivateAccountRequest,
       options?: base.RequestOptions<
-        SendAnInvitationToActivateAccountRequestFields,
-        SendAnInvitationToActivateAccountRequestEmbeds
+        SendAnInvitationToActivateAccountFields,
+        SendAnInvitationToActivateAccountEmbeds
       >,
     ): Promise<SendAnInvitationToActivateAccountResponse> {
       return self.createRequest(
@@ -11186,8 +11129,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveDistributionGroupList(
       request: RetrieveDistributionGroupListRequest,
       options?: base.RequestOptions<
-        RetrieveDistributionGroupListRequestFields,
-        RetrieveDistributionGroupListRequestEmbeds
+        RetrieveDistributionGroupListFields,
+        RetrieveDistributionGroupListEmbeds
       >,
     ): Promise<RetrieveDistributionGroupListResponse> {
       return self.createRequest(
@@ -11209,8 +11152,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveDistributionGroupDetails(
       request: RetrieveDistributionGroupDetailsRequest,
       options?: base.RequestOptions<
-        RetrieveDistributionGroupDetailsRequestFields,
-        RetrieveDistributionGroupDetailsRequestEmbeds
+        RetrieveDistributionGroupDetailsFields,
+        RetrieveDistributionGroupDetailsEmbeds
       >,
     ): Promise<RetrieveDistributionGroupDetailsResponse> {
       return self.createRequest(
@@ -11232,8 +11175,8 @@ export const Endpoints = (self: base.Client) => ({
     createADistributionGroup(
       request: CreateADistributionGroupRequest,
       options?: base.RequestOptions<
-        CreateADistributionGroupRequestFields,
-        CreateADistributionGroupRequestEmbeds
+        CreateADistributionGroupFields,
+        CreateADistributionGroupEmbeds
       >,
     ): Promise<CreateADistributionGroupResponse> {
       return self.createRequest(
@@ -11255,8 +11198,8 @@ export const Endpoints = (self: base.Client) => ({
     editDistributionGroup(
       request: EditDistributionGroupRequest,
       options?: base.RequestOptions<
-        EditDistributionGroupRequestFields,
-        EditDistributionGroupRequestEmbeds
+        EditDistributionGroupFields,
+        EditDistributionGroupEmbeds
       >,
     ): Promise<EditDistributionGroupResponse> {
       return self.createRequest(
@@ -11278,8 +11221,8 @@ export const Endpoints = (self: base.Client) => ({
     deleteDistributionGroup(
       request: DeleteDistributionGroupRequest,
       options?: base.RequestOptions<
-        DeleteDistributionGroupRequestFields,
-        DeleteDistributionGroupRequestEmbeds
+        DeleteDistributionGroupFields,
+        DeleteDistributionGroupEmbeds
       >,
     ): Promise<DeleteDistributionGroupResponse> {
       return self.createRequest(
@@ -11312,10 +11255,7 @@ export const Endpoints = (self: base.Client) => ({
      */
     sendASms(
       request: SendASmsRequest,
-      options?: base.RequestOptions<
-        SendASmsRequestFields,
-        SendASmsRequestEmbeds
-      >,
+      options?: base.RequestOptions<SendASmsFields, SendASmsEmbeds>,
     ): Promise<SendASmsResponse> {
       return self.createRequest("POST", "/api/v2/admin/sms", request, options);
     },
@@ -11335,8 +11275,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveTheSmsBalance(
       request: RetrieveTheSmsBalanceRequest,
       options?: base.RequestOptions<
-        RetrieveTheSmsBalanceRequestFields,
-        RetrieveTheSmsBalanceRequestEmbeds
+        RetrieveTheSmsBalanceFields,
+        RetrieveTheSmsBalanceEmbeds
       >,
     ): Promise<RetrieveTheSmsBalanceResponse> {
       return self.createRequest(
@@ -11370,8 +11310,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfSmsSenders(
       request: RetrieveAListOfSmsSendersRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfSmsSendersRequestFields,
-        RetrieveAListOfSmsSendersRequestEmbeds
+        RetrieveAListOfSmsSendersFields,
+        RetrieveAListOfSmsSendersEmbeds
       >,
     ): Promise<RetrieveAListOfSmsSendersResponse> {
       return self.createRequest(
@@ -11402,8 +11342,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductCategoryTranslations(
       request: RetrieveAListOfProductCategoryTranslationsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductCategoryTranslationsRequestFields,
-        RetrieveAListOfProductCategoryTranslationsRequestEmbeds
+        RetrieveAListOfProductCategoryTranslationsFields,
+        RetrieveAListOfProductCategoryTranslationsEmbeds
       >,
     ): Promise<RetrieveAListOfProductCategoryTranslationsResponse> {
       return self.createRequest(
@@ -11426,8 +11366,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductCategoryTranslation(
       request: UpdateProductCategoryTranslationRequest,
       options?: base.RequestOptions<
-        UpdateProductCategoryTranslationRequestFields,
-        UpdateProductCategoryTranslationRequestEmbeds
+        UpdateProductCategoryTranslationFields,
+        UpdateProductCategoryTranslationEmbeds
       >,
     ): Promise<UpdateProductCategoryTranslationResponse> {
       return self.createRequest(
@@ -11457,8 +11397,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfProductTranslations(
       request: RetrieveAListOfProductTranslationsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfProductTranslationsRequestFields,
-        RetrieveAListOfProductTranslationsRequestEmbeds
+        RetrieveAListOfProductTranslationsFields,
+        RetrieveAListOfProductTranslationsEmbeds
       >,
     ): Promise<RetrieveAListOfProductTranslationsResponse> {
       return self.createRequest(
@@ -11481,8 +11421,8 @@ export const Endpoints = (self: base.Client) => ({
     updateProductTranslation(
       request: UpdateProductTranslationRequest,
       options?: base.RequestOptions<
-        UpdateProductTranslationRequestFields,
-        UpdateProductTranslationRequestEmbeds
+        UpdateProductTranslationFields,
+        UpdateProductTranslationEmbeds
       >,
     ): Promise<UpdateProductTranslationResponse> {
       return self.createRequest(
@@ -11512,8 +11452,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfStoreTranslations(
       request: RetrieveAListOfStoreTranslationsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfStoreTranslationsRequestFields,
-        RetrieveAListOfStoreTranslationsRequestEmbeds
+        RetrieveAListOfStoreTranslationsFields,
+        RetrieveAListOfStoreTranslationsEmbeds
       >,
     ): Promise<RetrieveAListOfStoreTranslationsResponse> {
       return self.createRequest(
@@ -11536,8 +11476,8 @@ export const Endpoints = (self: base.Client) => ({
     updateTheTranslationsOfAStore(
       request: UpdateTheTranslationsOfAStoreRequest,
       options?: base.RequestOptions<
-        UpdateTheTranslationsOfAStoreRequestFields,
-        UpdateTheTranslationsOfAStoreRequestEmbeds
+        UpdateTheTranslationsOfAStoreFields,
+        UpdateTheTranslationsOfAStoreEmbeds
       >,
     ): Promise<UpdateTheTranslationsOfAStoreResponse> {
       return self.createRequest(
@@ -11567,8 +11507,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAListOfThemeTranslations(
       request: RetrieveAListOfThemeTranslationsRequest,
       options?: base.RequestOptions<
-        RetrieveAListOfThemeTranslationsRequestFields,
-        RetrieveAListOfThemeTranslationsRequestEmbeds
+        RetrieveAListOfThemeTranslationsFields,
+        RetrieveAListOfThemeTranslationsEmbeds
       >,
     ): Promise<RetrieveAListOfThemeTranslationsResponse> {
       return self.createRequest(
@@ -11590,8 +11530,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveAThemeTranslation(
       request: RetrieveAThemeTranslationRequest,
       options?: base.RequestOptions<
-        RetrieveAThemeTranslationRequestFields,
-        RetrieveAThemeTranslationRequestEmbeds
+        RetrieveAThemeTranslationFields,
+        RetrieveAThemeTranslationEmbeds
       >,
     ): Promise<RetrieveAThemeTranslationResponse> {
       return self.createRequest(
@@ -11614,8 +11554,8 @@ export const Endpoints = (self: base.Client) => ({
     updateAThemeTranslation(
       request: UpdateAThemeTranslationRequest,
       options?: base.RequestOptions<
-        UpdateAThemeTranslationRequestFields,
-        UpdateAThemeTranslationRequestEmbeds
+        UpdateAThemeTranslationFields,
+        UpdateAThemeTranslationEmbeds
       >,
     ): Promise<UpdateAThemeTranslationResponse> {
       return self.createRequest(
@@ -11645,8 +11585,8 @@ export const Endpoints = (self: base.Client) => ({
     retrieveACountOfDailyvisits(
       request: RetrieveACountOfDailyvisitsRequest,
       options?: base.RequestOptions<
-        RetrieveACountOfDailyvisitsRequestFields,
-        RetrieveACountOfDailyvisitsRequestEmbeds
+        RetrieveACountOfDailyvisitsFields,
+        RetrieveACountOfDailyvisitsEmbeds
       >,
     ): Promise<RetrieveACountOfDailyvisitsResponse> {
       return self.createRequest(
@@ -41232,3778 +41172,145 @@ interface RetrieveACountOfDailyvisitsRequest {
   endDate: any;
 }
 
-type RetrieveAListOfActionLogsRequestFields =
-  | "managerType"
-  | "managerId"
-  | "mode"
-  | "type"
-  | "content"
-  | "startDate"
-  | "endDate"
-  | "offset"
-  | "limit";
-
-type RetrieveAnActionLogRequestFields = "processNo";
-
-type RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestFields =
-  "shopNo";
-
-type RetrieveTheAutomatedMessageSettingsRequestFields = "shopNo";
-
-type UpdateAnAutomatedMessageRequestFields =
-  | "shopNo"
-  | "sendMethod"
-  | "sendMethodPush";
-
-type RetrieveCouponSettingsRequestFields = "shopNo";
-
-type UpdateCouponSettingsRequestFields =
-  | "shopNo"
-  | "useCoupon"
-  | "availableIssueType"
-  | "allowUsingCouponsWithPoints"
-  | "allowUsingCouponsWithDiscounts"
-  | "allowUsingProductAndOrderCoupons"
-  | "recoverCouponSetting"
-  | "maxCouponCount"
-  | "useAdditionalCoupon"
-  | "additionalCouponNo"
-  | "expirationNoticeDateSetting"
-  | "showCouponToNonMembers"
-  | "showGroupCouponToNonMembers"
-  | "showIssuedCoupon"
-  | "sortingType"
-  | "downloadImageType"
-  | "backgroundImageType";
-
-type RetrieveCurrencySettingsRequestFields = string;
-
-type RetrieveMemberRelatedSettingsRequestFields = "shopNo";
-
-type RetrieveADashboardRequestFields = "shopNo";
-
-type RetrieveAListOfPaymentGatewayContractDetailsRequestFields =
-  | "paymentGatewayName"
-  | "partnerId";
-
-type RetrieveTheTransactionInformationOfAStoreRequestFields =
-  | "shopNo"
-  | "paymentMethod";
-
-type RetrieveProductImageSizeSettingsRequestFields = "shopNo";
-
-type UpdateProductImageSizeSettingsRequestFields =
-  | "shopNo"
-  | "productImageSize";
-
-type RetrieveAKakaoChannelSenderProfileKeyRequestFields = "shopNo";
-
-type RetrieveTheKakaoInfoTalkSettingsRequestFields = "shopNo";
-
-type UpdateTheKakaoInfoTalkSettingsRequestFields =
-  | "shopNo"
-  | "useKakaoalimtalk";
-
-type RetrieveSettingsForKakaopayOrdersRequestFields = "shopNo";
-
-type UpdateSettingsForKakaopayOrdersRequestFields =
-  | "shopNo"
-  | "shopKey"
-  | "pixelCode"
-  | "useKakaopay"
-  | "productDetailButtonSize"
-  | "basketButtonSize"
-  | "useDarkMode"
-  | "buttonAuthorizationKey"
-  | "thirdpartyAgree"
-  | "thirdpartyAgreeDate";
-
-type RetrieveMenusRequestFields =
-  | "shopNo"
-  | "mode"
-  | "menuNo"
-  | "containsAppUrl";
-
-type RetrieveMobileSettingsRequestFields = "shopNo";
-
-type RetrieveNaverPaySettingsRequestFields = "shopNo";
-
-type CreateNaverPaySettingsRequestFields =
-  | "shopNo"
-  | "authenticationKey"
-  | "naverpayVersion"
-  | "shopId"
-  | "isButtonShow"
-  | "isUsedOrder"
-  | "isUsedReview"
-  | "isShowReview"
-  | "isOrderPage"
-  | "certiKey"
-  | "imageKey"
-  | "naverButtonPcProduct"
-  | "naverButtonPcBasket"
-  | "naverButtonMobileProduct"
-  | "naverButtonMobileBasket";
-
-type UpdateNaverPaySettingsRequestFields = "shopNo" | "authenticationKey";
-
-type RetrieveOrderSettingsRequestFields = "shopNo";
-
-type UpdateOrderSettingsRequestFields =
-  | "shopNo"
-  | "refundBenefitSetting"
-  | "useProductPrepareStatus"
-  | "usePurchaseConfirmationButton"
-  | "purchaseConfirmationButtonSetDate"
-  | "usePurchaseConfirmationAutoCheck"
-  | "purchaseConfirmationAutoCheckDay"
-  | "purchaseConfirmationAutoCheckSetDate";
-
-type RetrieveOrderStatusDisplayedRequestFields = "shopNo";
-
-type UpdateOrderStatusDisplayedRequestFields =
-  | "shopNo"
-  | "statusNameId"
-  | "customName"
-  | "reservationCustomName";
-
-type RetrieveEscrowSettingsRequestFields = "shopNo";
-
-type UpdateEscrowSettingsRequestFields =
-  | "shopNo"
-  | "useEscrow"
-  | "useEscrowAccountTransfer"
-  | "useEscrowVirtualAccount"
-  | "pgShippingRegistration"
-  | "useDirectPay";
-
-type CreateAPaymentGatewayRequestFields =
-  | "shopNo"
-  | "partnerId"
-  | "additionalInformation"
-  | "membershipFeeType"
-  | "serviceLimitType";
-
-type UpdateAPaymentGatewayRequestFields =
-  | "shopNo"
-  | "clientId"
-  | "partnerId"
-  | "additionalInformation"
-  | "membershipFeeType"
-  | "serviceLimitType";
-
-type DeleteAPaymentGatewayRequestFields = "shopNo" | "clientId";
-
-type RetrieveAListOfPaymentGatewayMethodsRequestFields = "clientId";
-
-type CreateAPaymentGatewayMethodRequestFields =
-  | "clientId"
-  | "paymentMethodCode"
-  | "paymentMethod"
-  | "paymentMethodName"
-  | "paymentMethodUrl"
-  | "availableShopNo";
-
-type UpdateAPaymentMethodOfAPaymentGatewayRequestFields =
-  | "clientId"
-  | "paymentMethodCode"
-  | "paymentMethod"
-  | "paymentMethodName"
-  | "paymentMethodUrl"
-  | "availableShopNo";
-
-type DeleteAPaymentMethodOfAPaymentGatewayRequestFields =
-  | "clientId"
-  | "paymentMethodCode";
-
-type RetrieveAListOfPaymentMethodsRequestFields = "shopNo";
-
-type RetrieveAListOfProvidersByPaymentMethodRequestFields =
-  | "shopNo"
-  | "code"
-  | "name"
-  | "display";
-
-type UpdateTheDisplayStatusOfAPaymentMethodRequestFields =
-  | "shopNo"
-  | "code"
-  | "name"
-  | "display";
-
-type RetrievePointsSettingsRequestFields = "shopNo";
-
-type UpdatePointsSettingsRequestFields =
-  | "shopNo"
-  | "pointIssuanceStandard"
-  | "paymentPeriod"
-  | "name"
-  | "format"
-  | "roundUnit"
-  | "roundType"
-  | "displayType"
-  | "unusablePointsChangeType";
-
-type RetrieveProductSettingsRequestFields = "shopNo";
-
-type RetrieveAListOfRedirectsRequestFields =
-  | "shopNo"
-  | "id"
-  | "path"
-  | "target";
-
-type CreateARedirectRequestFields = "shopNo" | "path" | "target";
-
-type UpdateARedirectRequestFields = "shopNo" | "id" | "path" | "target";
-
-type DeleteARedirectRequestFields = "shopNo" | "id";
-
-type RetrieveSeoSettingsRequestFields = "shopNo";
-
-type UpdateStoreSeoSettingsRequestFields =
-  | "shopNo"
-  | "commonPageTitle"
-  | "commonPageMetaDescription"
-  | "favicon"
-  | "useGoogleSearchConsole"
-  | "googleSearchConsole"
-  | "useNaverSearchAdvisor"
-  | "naverSearchAdvisor"
-  | "snsShareImage"
-  | "useTwitterCard"
-  | "robotsText"
-  | "mobileRobotsText"
-  | "useMissingPageRedirect"
-  | "missingPageRedirectUrl"
-  | "mobileUseMissingPageRedirect"
-  | "mobileMissingPageRedirectUrl"
-  | "useSitemapAutoUpdate"
-  | "useRss"
-  | "displayGroup"
-  | "headerTag"
-  | "footerTag"
-  | "mobileHeaderTag"
-  | "mobileFooterTag";
-
-type RetrieveActivationInformationForShippingManagerRequestFields = string;
-
-type RetrieveAListOfShopsRequestFields = string;
-
-type RetrieveAShopRequestFields = "shopNo";
-
-type RetrieveSmsSettingsRequestFields = "shopNo";
-
-type UpdateSmsSettingsRequestFields =
-  | "shopNo"
-  | "useSms"
-  | "excludeUnsubscriber"
-  | "defaultSender"
-  | "unsubscribePhone"
-  | "sendMethod"
-  | "sendMethodAutomatic";
-
-type AppleLoginSyncDetailsRequestFields = "shopNo";
-
-type AppleLoginSyncSettingsRequestFields =
-  | "shopNo"
-  | "useAppleLogin"
-  | "clientId"
-  | "teamId"
-  | "keyId"
-  | "authKeyFileName"
-  | "authKeyFileContents"
-  | "useCertification";
-
-type KakaoSyncDetailsRequestFields = "shopNo";
-
-type KakaoSyncUpdatesRequestFields =
-  | "shopNo"
-  | "restApiKey"
-  | "javascriptKey"
-  | "autoLogin"
-  | "useSignupResultPage";
-
-type NaverLoginDetailsRequestFields = "shopNo";
-
-type UpdateNaverLoginSettingsRequestFields =
-  | "shopNo"
-  | "useNaverlogin"
-  | "clientId"
-  | "clientSecret";
-
-type RetrieveStoreDetailsRequestFields = "shopNo";
-
-type RetrieveAListOfStoreBankAccountsRequestFields = "shopNo";
-
-type RetrieveAListOfSubscriptionProductsRequestFields =
-  | "shopNo"
-  | "subscriptionNo";
-
-type CreateASubscriptionPaymentRuleRequestFields =
-  | "shopNo"
-  | "subscriptionShipmentsName"
-  | "productBindingType"
-  | "oneTimePurchase"
-  | "productList"
-  | "categoryList"
-  | "useDiscount"
-  | "discountValueUnit"
-  | "discountValues"
-  | "relatedPurchaseQuantity"
-  | "subscriptionShipmentsCycleType"
-  | "subscriptionShipmentsCycle"
-  | "subscriptionShipmentsCountType"
-  | "subscriptionShipmentsCount"
-  | "useOrderPriceCondition"
-  | "orderPriceGreaterThan"
-  | "includeRegionalShippingRate"
-  | "shipmentsStartDate"
-  | "changeOption";
-
-type UpdateSubscriptionProductsRequestFields =
-  | "shopNo"
-  | "subscriptionNo"
-  | "subscriptionShipmentsName"
-  | "productBindingType"
-  | "oneTimePurchase"
-  | "productList"
-  | "categoryList"
-  | "useDiscount"
-  | "discountValueUnit"
-  | "discountValues"
-  | "relatedPurchaseQuantity"
-  | "subscriptionShipmentsCycleType"
-  | "subscriptionShipmentsCycle"
-  | "subscriptionShipmentsCountType"
-  | "subscriptionShipmentsCount"
-  | "useOrderPriceCondition"
-  | "orderPriceGreaterThan"
-  | "includeRegionalShippingRate"
-  | "shipmentsStartDate"
-  | "changeOption";
-
-type DeleteSubscriptionProductsRequestFields = "shopNo" | "subscriptionNo";
-
-type RetrieveActivationInformationForTaxManagerRequestFields = string;
-
-type RetrieveAListOfAdminUsersRequestFields =
-  | "searchType"
-  | "keyword"
-  | "adminType";
-
-type RetrieveAdminUserDetailsRequestFields = "shopNo" | "userId";
-
-type RetrieveAListOfBundlesRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productCode"
-  | "productTag"
-  | "customProductCode"
-  | "productName"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "priceMin"
-  | "priceMax"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "category"
-  | "categoryUnapplied"
-  | "includeSubCategory"
-  | "productWeight"
-  | "additionalInformationKey"
-  | "additionalInformationValue"
-  | "sort"
-  | "order"
-  | "offset"
-  | "limit";
-
-type RetrieveABundleRequestFields = "shopNo" | "productNo";
-
-type CreateABundleRequestFields =
-  | "shopNo"
-  | "productName"
-  | "bundleProductComponents"
-  | "bundleProductSales"
-  | "display"
-  | "addCategoryNo"
-  | "customProductCode"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "useNaverpay"
-  | "naverpayType"
-  | "productWeight"
-  | "description"
-  | "mobileDescription"
-  | "summaryDescription"
-  | "simpleDescription"
-  | "productTag"
-  | "paymentInfo"
-  | "shippingInfo"
-  | "exchangeInfo"
-  | "serviceInfo"
-  | "icon"
-  | "hscode"
-  | "shippingScope"
-  | "shippingMethod"
-  | "shippingFeeByProduct"
-  | "shippingArea"
-  | "shippingPeriod"
-  | "shippingFeeType"
-  | "shippingRates"
-  | "prepaidShippingFee"
-  | "clearanceCategoryCode"
-  | "detailImage"
-  | "listImage"
-  | "tinyImage"
-  | "smallImage"
-  | "imageUploadType"
-  | "additionalInformation"
-  | "priceContent"
-  | "buyLimitByProduct"
-  | "buyLimitType"
-  | "buyGroupList"
-  | "buyMemberIdList"
-  | "repurchaseRestriction"
-  | "singlePurchaseRestriction"
-  | "pointsByProduct"
-  | "pointsSettingByPayment"
-  | "pointsAmount"
-  | "exceptMemberPoints"
-  | "main"
-  | "relationalProduct"
-  | "productMaterial"
-  | "englishProductMaterial"
-  | "clothFabric"
-  | "additionalImage"
-  | "adultCertification"
-  | "exposureLimitType"
-  | "exposureGroupList";
-
-type UpdateABundleRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "productName"
-  | "bundleProductComponents"
-  | "bundleProductSales"
-  | "display"
-  | "productCondition"
-  | "productUsedMonth"
-  | "addCategoryNo"
-  | "deleteCategoryNo"
-  | "customProductCode"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "useNaverpay"
-  | "naverpayType"
-  | "productWeight"
-  | "description"
-  | "mobileDescription"
-  | "summaryDescription"
-  | "simpleDescription"
-  | "productTag"
-  | "paymentInfo"
-  | "shippingInfo"
-  | "exchangeInfo"
-  | "serviceInfo"
-  | "icon"
-  | "useIconExposureTerm"
-  | "iconExposureBeginDatetime"
-  | "iconExposureEndDatetime"
-  | "hscode"
-  | "shippingScope"
-  | "prepaidShippingFee"
-  | "shippingMethod"
-  | "shippingFeeByProduct"
-  | "shippingArea"
-  | "shippingPeriod"
-  | "shippingFeeType"
-  | "shippingRates"
-  | "clearanceCategoryCode"
-  | "detailImage"
-  | "listImage"
-  | "tinyImage"
-  | "smallImage"
-  | "imageUploadType"
-  | "additionalInformation"
-  | "priceContent"
-  | "buyLimitByProduct"
-  | "buyLimitType"
-  | "buyGroupList"
-  | "buyMemberIdList"
-  | "repurchaseRestriction"
-  | "singlePurchaseRestriction"
-  | "pointsByProduct"
-  | "pointsSettingByPayment"
-  | "pointsAmount"
-  | "exceptMemberPoints"
-  | "main"
-  | "relationalProduct"
-  | "productMaterial"
-  | "englishProductMaterial"
-  | "clothFabric"
-  | "additionalImage"
-  | "adultCertification"
-  | "exposureLimitType"
-  | "exposureGroupList";
-
-type DeleteABundleRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductsByCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "displayGroup"
-  | "limit";
-
-type RetrieveACountOfProductsByCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "displayGroup";
-
-type AddProductsToACategoryRequestFields =
-  | "categoryNo"
-  | "displayGroup"
-  | "productNo";
-
-type UpdateAProductInProductCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "displayGroup"
-  | "productNo"
-  | "sequence"
-  | "autoSort"
-  | "fixedSort";
-
-type DeleteAProductByCategoryRequestFields =
-  | "categoryNo"
-  | "productNo"
-  | "displayGroup";
-
-type RetrieveAListOfProductsInMainCategoryRequestFields =
-  | "shopNo"
-  | "displayGroup";
-
-type RetrieveACountOfProductsInMainCategoryRequestFields =
-  | "shopNo"
-  | "displayGroup";
-
-type SetMainCategoryProductsRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "displayGroup"
-  | "productNo";
-
-type UpdateFixedSortingOfProductsInMainCategoryRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "displayGroup"
-  | "productNo"
-  | "fixProductNo";
-
-type DeleteAProductInMainCategoryRequestFields =
-  | "shopNo"
-  | "displayGroup"
-  | "productNo";
-
-type RetrieveAListOfProductsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productName"
-  | "productCode"
-  | "brandCode"
-  | "manufacturerCode"
-  | "supplierCode"
-  | "trendCode"
-  | "productTag"
-  | "customProductCode"
-  | "customVariantCode"
-  | "priceMin"
-  | "priceMax"
-  | "retailPriceMin"
-  | "retailPriceMax"
-  | "supplyPriceMin"
-  | "supplyPriceMax"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "category"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "productCondition"
-  | "originPlaceValue"
-  | "stockQuantityMax"
-  | "stockQuantityMin"
-  | "stockSafetyMax"
-  | "stockSafetyMin"
-  | "productWeight"
-  | "classificationCode"
-  | "useInventory"
-  | "categoryUnapplied"
-  | "includeSubCategory"
-  | "additionalInformationKey"
-  | "additionalInformationValue"
-  | "approveStatus"
-  | "sinceProductNo"
-  | "productBundle"
-  | "optionType"
-  | "marketSync"
-  | "sort"
-  | "order"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfProductsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productName"
-  | "productCode"
-  | "brandCode"
-  | "manufacturerCode"
-  | "supplierCode"
-  | "trendCode"
-  | "productTag"
-  | "customProductCode"
-  | "customVariantCode"
-  | "priceMin"
-  | "priceMax"
-  | "retailPriceMin"
-  | "retailPriceMax"
-  | "supplyPriceMin"
-  | "supplyPriceMax"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate"
-  | "category"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "productCondition"
-  | "originPlaceValue"
-  | "stockQuantityMax"
-  | "stockQuantityMin"
-  | "stockSafetyMax"
-  | "stockSafetyMin"
-  | "productWeight"
-  | "classificationCode"
-  | "useInventory"
-  | "categoryUnapplied"
-  | "includeSubCategory"
-  | "additionalInformationKey"
-  | "additionalInformationValue"
-  | "approveStatus"
-  | "sinceProductNo"
-  | "productBundle"
-  | "optionType"
-  | "marketSync";
-
-type RetrieveAProductResourceRequestFields = "shopNo" | "productNo";
-
-type CreateAProductRequestFields =
-  | "display"
-  | "selling"
-  | "productCondition"
-  | "productUsedMonth"
-  | "addCategoryNo"
-  | "customProductCode"
-  | "productName"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "priceExcludingTax"
-  | "price"
-  | "retailPrice"
-  | "supplyPrice"
-  | "hasOption"
-  | "soldoutMessage"
-  | "options"
-  | "useNaverpay"
-  | "naverpayType"
-  | "manufacturerCode"
-  | "trendCode"
-  | "brandCode"
-  | "supplierCode"
-  | "productWeight"
-  | "madeDate"
-  | "releaseDate"
-  | "expirationDate"
-  | "description"
-  | "mobileDescription"
-  | "summaryDescription"
-  | "simpleDescription"
-  | "translatedDescription"
-  | "productTag"
-  | "paymentInfo"
-  | "shippingInfo"
-  | "exchangeInfo"
-  | "serviceInfo"
-  | "icon"
-  | "hscode"
-  | "countryHscode"
-  | "shippingScope"
-  | "shippingMethod"
-  | "shippingFeeByProduct"
-  | "shippingArea"
-  | "shippingPeriod"
-  | "shippingFeeType"
-  | "shippingRates"
-  | "prepaidShippingFee"
-  | "clearanceCategoryCode"
-  | "productShippingType"
-  | "detailImage"
-  | "listImage"
-  | "tinyImage"
-  | "smallImage"
-  | "imageUploadType"
-  | "additionalInformation"
-  | "priceContent"
-  | "buyLimitByProduct"
-  | "buyLimitType"
-  | "buyGroupList"
-  | "buyMemberIdList"
-  | "repurchaseRestriction"
-  | "singlePurchaseRestriction"
-  | "buyUnitType"
-  | "buyUnit"
-  | "orderQuantityLimitType"
-  | "minimumQuantity"
-  | "maximumQuantity"
-  | "pointsByProduct"
-  | "pointsSettingByPayment"
-  | "pointsAmount"
-  | "exceptMemberPoints"
-  | "productVolume"
-  | "originClassification"
-  | "originPlaceNo"
-  | "originPlaceValue"
-  | "madeInCode"
-  | "main"
-  | "relationalProduct"
-  | "productMaterial"
-  | "translateProductMaterial"
-  | "englishProductMaterial"
-  | "clothFabric"
-  | "classificationCode"
-  | "additionalPrice"
-  | "marginRate"
-  | "taxType"
-  | "taxRate"
-  | "additionalImage"
-  | "adultCertification"
-  | "exposureLimitType"
-  | "exposureGroupList"
-  | "useKakaopay";
-
-type UpdateAProductRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "display"
-  | "selling"
-  | "productCondition"
-  | "productUsedMonth"
-  | "addCategoryNo"
-  | "deleteCategoryNo"
-  | "customProductCode"
-  | "productName"
-  | "engProductName"
-  | "supplyProductName"
-  | "internalProductName"
-  | "modelName"
-  | "priceExcludingTax"
-  | "price"
-  | "retailPrice"
-  | "supplyPrice"
-  | "soldoutMessage"
-  | "useNaverpay"
-  | "naverpayType"
-  | "manufacturerCode"
-  | "trendCode"
-  | "brandCode"
-  | "supplierCode"
-  | "productWeight"
-  | "madeDate"
-  | "releaseDate"
-  | "expirationDate"
-  | "description"
-  | "mobileDescription"
-  | "translatedDescription"
-  | "translatedAdditionalDescription"
-  | "summaryDescription"
-  | "simpleDescription"
-  | "productTag"
-  | "paymentInfo"
-  | "shippingInfo"
-  | "exchangeInfo"
-  | "serviceInfo"
-  | "icon"
-  | "useIconExposureTerm"
-  | "iconExposureBeginDatetime"
-  | "iconExposureEndDatetime"
-  | "hscode"
-  | "countryHscode"
-  | "shippingScope"
-  | "shippingMethod"
-  | "shippingFeeByProduct"
-  | "shippingArea"
-  | "shippingPeriod"
-  | "shippingFeeType"
-  | "shippingRates"
-  | "prepaidShippingFee"
-  | "clearanceCategoryCode"
-  | "productShippingType"
-  | "detailImage"
-  | "listImage"
-  | "tinyImage"
-  | "smallImage"
-  | "imageUploadType"
-  | "additionalInformation"
-  | "priceContent"
-  | "buyLimitByProduct"
-  | "buyLimitType"
-  | "buyGroupList"
-  | "buyMemberIdList"
-  | "repurchaseRestriction"
-  | "singlePurchaseRestriction"
-  | "buyUnitType"
-  | "buyUnit"
-  | "orderQuantityLimitType"
-  | "minimumQuantity"
-  | "maximumQuantity"
-  | "pointsByProduct"
-  | "pointsSettingByPayment"
-  | "pointsAmount"
-  | "exceptMemberPoints"
-  | "productVolume"
-  | "originClassification"
-  | "originPlaceNo"
-  | "originPlaceValue"
-  | "madeInCode"
-  | "main"
-  | "relationalProduct"
-  | "productMaterial"
-  | "translateProductMaterial"
-  | "englishProductMaterial"
-  | "clothFabric"
-  | "classificationCode"
-  | "additionalPrice"
-  | "marginRate"
-  | "taxType"
-  | "taxRate"
-  | "additionalImage"
-  | "adultCertification"
-  | "exposureLimitType"
-  | "exposureGroupList"
-  | "useKakaopay";
-
-type DeleteAProductRequestFields = "shopNo" | "productNo";
-
-type CreateAnAdditionalProductImageRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "additionalImage";
-
-type UpdateAnAdditionalProductImageRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "additionalImage";
-
-type DeleteAnAdditionalProductImageRequestFields = "shopNo" | "productNo";
-
-type RetrieveAProductApprovalStatusRequestFields = "shopNo" | "productNo";
-
-type CreateAProductApprovalRequestRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "userId";
-
-type UpdateAProductApprovalStatusRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "userId"
-  | "status";
-
-type RetrieveUserDefinedPropertiesByProductRequestFields =
-  | "shopNo"
-  | "productNo";
-
-type UpdateUserDefinedPropertiesByProductRequestFields =
-  | "productNo"
-  | "propertyNo"
-  | "shopNo"
-  | "propertyValue";
-
-type DeleteUserDefinedPropertiesByProductRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "propertyNo";
-
-type RetrieveAListOfProductDecorationImagesRequestFields =
-  | "shopNo"
-  | "productNo";
-
-type SetDecorationImagesForAProductRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "useShowDate"
-  | "showStartDate"
-  | "showEndDate"
-  | "imageList";
-
-type UpdateProductDecorationImagesRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "useShowDate"
-  | "showStartDate"
-  | "showEndDate"
-  | "imageList";
-
-type RemoveAProductDecorationImageRequestFields =
-  | "shopNo"
-  | "code"
-  | "productNo";
-
-type RetrieveAProductDiscountedPriceRequestFields = "shopNo" | "productNo";
-
-type RetrieveACountOfProductViewsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductIconsRequestFields = "shopNo" | "productNo";
-
-type SetIconsForAProductRequestFields = "shopNo" | "productNo" | "imageList";
-
-type UpdateProductIconsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "useShowDate"
-  | "showStartDate"
-  | "showEndDate"
-  | "imageList";
-
-type RemoveAProductIconRequestFields = "shopNo" | "productNo" | "code";
-
-type UploadProductImagesRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "detailImage"
-  | "listImage"
-  | "tinyImage"
-  | "smallImage"
-  | "imageUploadType";
-
-type DeleteProductImagesRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfProductMemosRequestFields =
-  | "productNo"
-  | "offset"
-  | "limit";
-
-type RetrieveAProductMemoRequestFields = "productNo" | "memoNo";
-
-type CreateAProductMemoRequestFields = "productNo" | "authorId" | "memo";
-
-type UpdateAProductMemoRequestFields =
-  | "productNo"
-  | "memoNo"
-  | "authorId"
-  | "memo";
-
-type DeleteAProductMemoRequestFields = "productNo" | "memoNo";
-
-type RetrieveAListOfProductOptionsRequestFields = "shopNo" | "productNo";
-
-type CreateProductOptionsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "hasOption"
-  | "optionType"
-  | "optionListType"
-  | "options"
-  | "selectOneByOption"
-  | "optionPresetCode"
-  | "optionPresetName"
-  | "useAdditionalOption"
-  | "additionalOptions"
-  | "useAttachedFileOption"
-  | "attachedFileOption";
-
-type UpdateProductOptionsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "optionListType"
-  | "optionPresetCode"
-  | "options"
-  | "originalOptions"
-  | "selectOneByOption"
-  | "optionPresetName"
-  | "useAdditionalOption"
-  | "additionalOptions"
-  | "useAttachedFileOption"
-  | "attachedFileOption";
-
-type DeleteAProductOptionRequestFields = "productNo";
-
-type RetrieveAProductSSeoSettingsRequestFields = "shopNo" | "productNo";
-
-type UpdateProductSeoSettingsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "metaTitle"
-  | "metaAuthor"
-  | "metaDescription"
-  | "metaKeywords"
-  | "metaAlt"
-  | "searchEngineExposure";
-
-type RetrieveACountOfAProductSProductTagsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAListOfAProductSProductTagsRequestFields = "shopNo" | "productNo";
-
-type CreateProductTagsRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "productNo"
-  | "tags";
-
-type DeleteAProductTagRequestFields = "shopNo" | "productNo" | "tag";
-
-type RetrieveAListOfProductVariantsRequestFields = "shopNo" | "productNo";
-
-type RetrieveAProductVariantRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode";
-
-type UpdateAProductVariantRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode"
-  | "customVariantCode"
-  | "display"
-  | "selling"
-  | "additionalAmount"
-  | "quantity"
-  | "useInventory"
-  | "importantInventory"
-  | "inventoryControlType"
-  | "displaySoldout"
-  | "safetyInventory";
-
-type UpdateMultipleProductVariantsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode"
-  | "customVariantCode"
-  | "display"
-  | "selling"
-  | "additionalAmount"
-  | "quantity"
-  | "useInventory"
-  | "importantInventory"
-  | "inventoryControlType"
-  | "displaySoldout"
-  | "safetyInventory";
-
-type DeleteAProductVariantRequestFields = "productNo" | "variantCode";
-
-type RetrieveInventoryDetailsOfAProductVariantRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode";
-
-type UpdateAProductVariantInventoryRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantCode"
-  | "useInventory"
-  | "importantInventory"
-  | "inventoryControlType"
-  | "displaySoldout"
-  | "quantity"
-  | "safetyInventory"
-  | "originCode";
-
-type RetrieveUserDefinedPropertiesRequestFields = string;
-
-type CreateUserDefinedPropertiesRequestFields = "customProperties";
-
-type UpdateUserDefinedPropertiesRequestFields = "propertyNo" | "propertyName";
-
-type DeleteUserDefinedPropertiesRequestFields = "propertyNo";
-
-type RetrieveAListOfDecorationImagesRequestFields = string;
-
-type RetrieveAListOfIconsRequestFields = string;
-
-type UploadImagesRequestFields = "image";
-
-type RetrieveAnOrderCancellationRequestFields = "shopNo" | "claimCode";
-
-type CreateMultipleOrderCancellationsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "status"
-  | "recoverInventory"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "addMemoToo"
-  | "reason"
-  | "claimReasonType"
-  | "naverpayCancelReasonType"
-  | "kakaopayCancelReasonType"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items";
-
-type ChangeCancellationDetailsInBulkRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "recoverInventory"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason";
-
-type CreateACancellationRequestForMultipleItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "reasonType"
-  | "reason"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items";
-
-type RejectACancellationRequestForMultipleItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "undone"
-  | "reasonType"
-  | "reason"
-  | "displayRejectReason"
-  | "rejectReason";
-
-type RetrieveAListOfCashReceiptsRequestFields =
-  | "startDate"
-  | "endDate"
-  | "orderId"
-  | "approvalNo"
-  | "name"
-  | "memberId"
-  | "status"
-  | "limit"
-  | "offset";
-
-type CreateACashReceiptRequestFields =
-  | "orderId"
-  | "type"
-  | "companyRegistrationNo"
-  | "cellphone";
-
-type UpdateACashReceiptRequestFields =
-  | "cashreceiptNo"
-  | "orderId"
-  | "type"
-  | "companyRegistrationNo"
-  | "cellphone";
-
-type UpdateACashReceiptCancellationRequestFields =
-  | "cashreceiptNo"
-  | "orderId"
-  | "type";
-
-type UpdateACollectionRequestRequestFields =
-  | "shopNo"
-  | "requestNo"
-  | "collectTrackingNo";
-
-type OrderControlRequestFields = "paymentsControl" | "directUrl";
-
-type CreateADraftOrderRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "orderFromMobile"
-  | "paymentMethod"
-  | "orderPlaceId"
-  | "countryCode"
-  | "paymentGatewayName"
-  | "receiverName"
-  | "receiverNameEn"
-  | "receiverNameFurigana"
-  | "receiverPhone"
-  | "receiverCellphone"
-  | "receiverZipcode"
-  | "receiverAddress1"
-  | "receiverAddress2"
-  | "receiverCity"
-  | "receiverState"
-  | "shippingMessage"
-  | "buyerName"
-  | "buyerEmail"
-  | "buyerPhone"
-  | "buyerCellphone"
-  | "buyerZipcode"
-  | "buyerAddress1"
-  | "buyerAddress2"
-  | "noShippingRequired"
-  | "buyerIp"
-  | "transactionId"
-  | "bankCode"
-  | "bankAccountNo"
-  | "bankAccountOwnerName"
-  | "shippingType"
-  | "sendOrderMessage"
-  | "sendPaymentGuideMessage"
-  | "sendOrderEmail"
-  | "clearanceInformationType"
-  | "clearanceInformation"
-  | "selfPaymentCancel"
-  | "selfPaymentCancelUrl"
-  | "items";
-
-type RetrieveAnExchangeRequestFields = "shopNo" | "claimCode";
-
-type CreateMultipleExchangesRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "status"
-  | "recoverInventory"
-  | "addMemoToo"
-  | "items"
-  | "sameProduct";
-
-type UpdateMultipleOrderExchangesRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "status"
-  | "pickupCompleted"
-  | "recoverInventory"
-  | "exchangedAfterCollected"
-  | "items"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason"
-  | "returnInvoiceNo"
-  | "carrierId"
-  | "returnInvoiceSuccess"
-  | "returnInvoiceFailReason";
-
-type BulkExchangeRequestApiRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "reasonType"
-  | "reason"
-  | "requestPickup"
-  | "pickup"
-  | "trackingNo"
-  | "shippingCompanyName"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items"
-  | "exchangeItems";
-
-type RejectAnExchangeRequestForMultipleItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "undone"
-  | "reasonType"
-  | "reason"
-  | "displayRejectReason"
-  | "rejectReason";
-
-type CreateShippingInformationForMultipleOrdersViaFulfillmentRequestFields =
-  | "shopNo"
-  | "trackingNo"
-  | "shippingCompanyCode"
-  | "status"
-  | "orderId"
-  | "shippingCode"
-  | "orderItemCode"
-  | "carrierId"
-  | "postExpressFlag";
-
-type RetrieveOrderLabelsRequestFields = "limit" | "offset";
-
-type CreateMultipleOrderLabelsRequestFields =
-  | "shopNo"
-  | "name"
-  | "orderItemCode";
-
-type RetrieveAListOfOrdersRequestFields =
-  | "multipleAddresses"
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "orderId"
-  | "orderStatus"
-  | "paymentStatus"
-  | "memberType"
-  | "groupNo"
-  | "buyerName"
-  | "receiverName"
-  | "nameFurigana"
-  | "receiverAddress"
-  | "memberId"
-  | "memberEmail"
-  | "productNo"
-  | "productCode"
-  | "dateType"
-  | "supplierId"
-  | "orderPlaceId"
-  | "buyerCellphone"
-  | "buyerPhone"
-  | "buyerEmail"
-  | "inflowPath"
-  | "subscription"
-  | "marketOrderNo"
-  | "marketCancelRequest"
-  | "paymentMethod"
-  | "paymentGatewayName"
-  | "marketSellerId"
-  | "discountMethod"
-  | "discountCode"
-  | "carrierId"
-  | "wishedCarrierId"
-  | "labels"
-  | "refundStatus"
-  | "limit"
-  | "offset";
-
-type RetrieveAnOrderRequestFields = "shopNo" | "orderId";
-
-type RetrieveACountOfOrdersRequestFields =
-  | "multipleAddresses"
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "orderId"
-  | "orderStatus"
-  | "paymentStatus"
-  | "memberType"
-  | "groupNo"
-  | "buyerName"
-  | "receiverName"
-  | "nameFurigana"
-  | "receiverAddress"
-  | "memberId"
-  | "memberEmail"
-  | "productNo"
-  | "productCode"
-  | "dateType"
-  | "supplierId"
-  | "orderPlaceId"
-  | "buyerCellphone"
-  | "buyerPhone"
-  | "buyerEmail"
-  | "inflowPath"
-  | "subscription"
-  | "marketOrderNo"
-  | "marketCancelRequest"
-  | "paymentMethod"
-  | "paymentGatewayName"
-  | "marketSellerId"
-  | "discountMethod"
-  | "discountCode"
-  | "carrierId"
-  | "wishedCarrierId"
-  | "labels"
-  | "refundStatus";
-
-type UpdateStatusForMultipleOrdersRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "processStatus"
-  | "orderItemCode"
-  | "purchaseConfirmation"
-  | "collectPoints"
-  | "showShippingAddress";
-
-type UpdateAnOrderStatusRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "processStatus"
-  | "orderItemCode"
-  | "purchaseConfirmation"
-  | "collectPoints"
-  | "showShippingAddress";
-
-type RemoveAutoCalculationSettingOfAnOrderRequestFields = "shopNo" | "orderId";
-
-type RetrieveCustomerDetailsOfAnOrderRequestFields = "shopNo" | "orderId";
-
-type UpdateCustomerInformationOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "name"
-  | "email"
-  | "phone"
-  | "cellphone"
-  | "customerNotification";
-
-type RetrieveAListOfCustomerHistoryOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId";
-
-type CreateAnOrderCancellationRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "paymentGatewayCancel"
-  | "status"
-  | "recoverInventory"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "addMemoToo"
-  | "reason"
-  | "claimReasonType"
-  | "naverpayCancelReasonType"
-  | "kakaopayCancelReasonType"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items";
-
-type ChangeCancellationDetailsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "recoverInventory"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason";
-
-type CreateAnOrderExchangeRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "status"
-  | "recoverInventory"
-  | "addMemoToo"
-  | "items"
-  | "sameProduct";
-
-type UpdateAnOrderExchangeRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "status"
-  | "pickupCompleted"
-  | "returnInvoiceNo"
-  | "returnShippingCompanyName"
-  | "recoverInventory"
-  | "exchangedAfterCollected"
-  | "items"
-  | "requestPickup"
-  | "pickup"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason"
-  | "carrierId"
-  | "returnInvoiceSuccess"
-  | "returnInvoiceFailReason";
-
-type RejectAnExchangeRequestRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "undone"
-  | "reasonType"
-  | "reason"
-  | "displayRejectReason"
-  | "rejectReason";
-
-type RetrieveAListOfOrderItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "supplierId";
-
-type CreateAnOrderItemRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "wasProductBundle"
-  | "originalBundleItemNo"
-  | "variantCode";
-
-type UpdateAnOrderItemRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "claimType"
-  | "claimStatus"
-  | "claimReasonType"
-  | "claimReason"
-  | "claimQuantity"
-  | "multiInvoice";
-
-type RetrieveAnOrderLabelRequestFields = "shopNo" | "orderId" | "orderItemCode";
-
-type CreateAnOrderLabelRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "names";
-
-type UpdateAnOrderLabelRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "names";
-
-type DeleteAnOrderLabelRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "name";
-
-type CreateOrderItemOptionsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "productBundle"
-  | "additionalOptions"
-  | "bundleAdditionalOptions";
-
-type EditOrderItemOptionsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "additionalOptions";
-
-type RetrieveAListOfOrderMemosRequestFields = "shopNo" | "orderId";
-
-type CreateAnOrderMemoRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "content"
-  | "useCustomerInquiry"
-  | "topicType"
-  | "status"
-  | "attachType"
-  | "starredMemo"
-  | "fixed"
-  | "productList";
-
-type UpdateAnOrderMemoRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "memoNo"
-  | "content"
-  | "useCustomerInquiry"
-  | "topicType"
-  | "status"
-  | "attachType"
-  | "starredMemo"
-  | "fixed"
-  | "productList";
-
-type DeleteAnOrderMemoRequestFields = "shopNo" | "orderId" | "memoNo";
-
-type UpdateAnOrderPaymentStatusRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "changePaymentAmount"
-  | "changePaymentMethod"
-  | "paymentMethod"
-  | "billingName"
-  | "bankAccountId"
-  | "adminAdditionalAmount"
-  | "commission"
-  | "changePaymentAmountReason";
-
-type RetrievePaymentHistoryOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "startDate"
-  | "endDate"
-  | "dateType";
-
-type RetrievePaymentDetailsOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "paymentNo";
-
-type RetrieveAListOfRecipientsOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "shippingCode";
-
-type UpdateOrderRecipientsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "name"
-  | "phone"
-  | "cellphone"
-  | "shippingMessage"
-  | "nameFurigana"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "addressState"
-  | "addressCity"
-  | "nameEn"
-  | "cityEn"
-  | "stateEn"
-  | "streetEn"
-  | "countryCode"
-  | "clearanceInformationType"
-  | "clearanceInformation"
-  | "shippingCode"
-  | "changeDefaultShippingAddress"
-  | "virtualPhoneNo"
-  | "wishedDeliveryDate"
-  | "useFastDeliveryDate"
-  | "wishedDeliveryTime"
-  | "useFastDeliveryTime";
-
-type ChangeShippingInformationRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "shippingCode"
-  | "name"
-  | "phone"
-  | "cellphone"
-  | "shippingMessage"
-  | "nameFurigana"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "addressState"
-  | "addressCity"
-  | "nameEn"
-  | "cityEn"
-  | "stateEn"
-  | "streetEn"
-  | "countryCode"
-  | "clearanceInformationType"
-  | "clearanceInformation"
-  | "changeDefaultShippingAddress"
-  | "virtualPhoneNo"
-  | "wishedDeliveryDate"
-  | "useFastDeliveryDate"
-  | "wishedDeliveryTime"
-  | "useFastDeliveryTime"
-  | "receiverDirectInputCheck";
-
-type RetrieveAListOfRecipientHistoryOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId";
-
-type UpdateAnOrderRefundRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "refundCode"
-  | "status"
-  | "reason"
-  | "sendSms"
-  | "sendMail"
-  | "paymentGatewayCancel";
-
-type CreateAnOrderReturnRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "paymentGatewayCancel"
-  | "status"
-  | "pickupCompleted"
-  | "recoverInventory"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "addMemoToo"
-  | "reason"
-  | "claimReasonType"
-  | "naverpayReturnReasonType"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items"
-  | "requestPickup"
-  | "pickup"
-  | "returnInvoiceNo"
-  | "returnShippingCompanyName";
-
-type UpdateAnOrderReturnRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "status"
-  | "carrierId"
-  | "returnInvoiceNo"
-  | "returnShippingCompanyName"
-  | "returnInvoiceSuccess"
-  | "returnInvoiceFailReason"
-  | "refundMethodCode"
-  | "refundBankAccountHolder"
-  | "pickupCompleted"
-  | "items"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "recoverInventory"
-  | "requestPickup"
-  | "pickup"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo";
-
-type RetrieveAListOfShippingInformationOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId";
-
-type CreateAnOrderShippingInformationRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "trackingNo"
-  | "shippingCompanyCode"
-  | "orderItemCode"
-  | "status"
-  | "shippingCode"
-  | "carrierId";
-
-type UpdateAnOrderShippingRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "shippingCode"
-  | "status"
-  | "statusAdditionalInfo"
-  | "trackingNo"
-  | "shippingCompanyCode";
-
-type DeleteAnOrderShippingRequestFields = "shopNo" | "orderId" | "shippingCode";
-
-type RetrieveShippingFeeCancellationDetailsOfAnOrderRequestFields =
-  | "shopNo"
-  | "orderId";
-
-type CreateAnOrderShippingFeeCancellationRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "reason"
-  | "claimReasonType"
-  | "recoverCoupon"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "paymentGatewayCancel";
-
-type CreateAnOrderCancellationOnStockShortageRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "paymentGatewayCancel"
-  | "keepAutoCalculation"
-  | "collectGift"
-  | "status"
-  | "recoverInventory"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "addMemoToo"
-  | "reason"
-  | "claimReasonType"
-  | "naverpayCancelReasonType"
-  | "kakaopayCancelReasonType"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items";
-
-type RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "limit"
-  | "offset";
-
-type CalculateTotalDueRequestFields =
-  | "shopNo"
-  | "mobile"
-  | "memberId"
-  | "shippingType"
-  | "paymentMethod"
-  | "countryCode"
-  | "carrierId"
-  | "zipcode"
-  | "addressFull"
-  | "addressState"
-  | "items";
-
-type RetrieveAListOfCouponsAppliedToAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "limit"
-  | "offset";
-
-type RetrieveAListOfTrafficSourceGroupsRequestFields = string;
-
-type CreateATrafficSourceGroupRequestFields =
-  | "inflowGroupId"
-  | "inflowGroupName";
-
-type UpdateATrafficSourceGroupRequestFields =
-  | "inflowGroupId"
-  | "inflowGroupName";
-
-type DeleteATrafficSourceGroupRequestFields = "inflowGroupId";
-
-type RetrieveAListOfGroupTrafficSourcesRequestFields = "groupId";
-
-type CreateAGroupTrafficSourceRequestFields =
-  | "groupId"
-  | "inflowId"
-  | "inflowName"
-  | "inflowIcon";
-
-type UpdateAGroupTrafficSourceRequestFields =
-  | "groupId"
-  | "inflowId"
-  | "inflowName"
-  | "inflowIcon";
-
-type DeleteAGroupTrafficSourceRequestFields = "groupId" | "inflowId";
-
-type RetrieveAListOfAdminMemosForAnOrderRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "limit"
-  | "offset";
-
-type RetrieveAPaymentAmountRequestFields = "shopNo" | "orderItemCode";
-
-type RetrieveAListOfSalesChannelsRequestFields = "limit" | "offset";
-
-type CreateASalesChannelRequestFields =
-  | "salesChannelId"
-  | "salesChannelName"
-  | "salesChannelIcon";
-
-type UpdateASalesChannelRequestFields =
-  | "salesChannelId"
-  | "salesChannelName"
-  | "salesChannelIcon";
-
-type DeleteASalesChannelRequestFields = "salesChannelId";
-
-type UpdatePaymentStatusForMultipleOrdersRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "status"
-  | "autoPaid"
-  | "recoverInventory"
-  | "cancelRequest";
-
-type RetrieveAListOfRefundsRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "dateType"
-  | "memberEmail"
-  | "buyerEmail"
-  | "orderId"
-  | "memberId"
-  | "refundStatus"
-  | "limit"
-  | "offset";
-
-type RetrieveARefundRequestFields = "shopNo" | "refundCode";
-
-type RetrievePreOrderItemRequestFields =
-  | "shopNo"
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "orderId"
-  | "orderItemCode"
-  | "buyerName"
-  | "memberId"
-  | "memberEmail"
-  | "buyerEmail"
-  | "buyerCellphone"
-  | "productNo"
-  | "orderStatus"
-  | "paymentStatus"
-  | "receiverName"
-  | "receiverCellphone"
-  | "supplierId"
-  | "supplierName"
-  | "sort"
-  | "order"
-  | "offset"
-  | "limit";
-
-type RetrieveAReturnRequestFields = "shopNo" | "claimCode";
-
-type CreateMultipleOrderReturnsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "status"
-  | "pickupCompleted"
-  | "recoverInventory"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "addMemoToo"
-  | "reason"
-  | "claimReasonType"
-  | "naverpayReturnReasonType"
-  | "refundMethodCode"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items"
-  | "requestPickup"
-  | "pickup"
-  | "returnInvoiceNo"
-  | "returnShippingCompanyName";
-
-type UpdateAReturnRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "claimCode"
-  | "status"
-  | "pickupCompleted"
-  | "carrierId"
-  | "refundMethodCode"
-  | "refundBankAccountHolder"
-  | "returnInvoiceNo"
-  | "returnShippingCompanyName"
-  | "returnInvoiceSuccess"
-  | "returnInvoiceFailReason"
-  | "items"
-  | "recoverCoupon"
-  | "recoverCouponNo"
-  | "recoverInventory"
-  | "requestPickup"
-  | "pickup"
-  | "undone"
-  | "addMemoToo"
-  | "undoneReasonType"
-  | "undoneReason"
-  | "exposeOrderDetail"
-  | "exposedUndoneReason"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo";
-
-type CreateAReturnRequestForMultipleItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "reasonType"
-  | "reason"
-  | "requestPickup"
-  | "pickup"
-  | "trackingNo"
-  | "shippingCompanyName"
-  | "refundBankCode"
-  | "refundBankName"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "items";
-
-type RejectAReturnRequestForMultipleItemsRequestFields =
-  | "shopNo"
-  | "orderId"
-  | "orderItemCode"
-  | "undone"
-  | "reasonType"
-  | "reason"
-  | "displayRejectReason"
-  | "rejectReason";
-
-type CreateShippingInformationForMultipleOrdersRequestFields =
-  | "shopNo"
-  | "trackingNo"
-  | "shippingCompanyCode"
-  | "status"
-  | "orderId"
-  | "shippingCode"
-  | "orderItemCode"
-  | "carrierId";
-
-type UpdateMultipleOrderShippingsRequestFields =
-  | "shopNo"
-  | "shippingCode"
-  | "orderId"
-  | "status"
-  | "statusAdditionalInfo"
-  | "trackingNo"
-  | "shippingCompanyCode";
-
-type RetrieveASubscriptionRequestFields =
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "subscriptionId"
-  | "memberId"
-  | "buyerName"
-  | "buyerPhone"
-  | "buyerCellphone"
-  | "productNo"
-  | "productName"
-  | "productCode"
-  | "variantCode"
-  | "subscriptionShipmentsCycle"
-  | "subscriptionState"
-  | "limit"
-  | "offset";
-
-type CreateASubscriptionRequestFields =
-  | "memberId"
-  | "buyerName"
-  | "buyerZipcode"
-  | "buyerAddress1"
-  | "buyerAddress2"
-  | "buyerPhone"
-  | "buyerCellphone"
-  | "buyerEmail"
-  | "receiverName"
-  | "receiverZipcode"
-  | "receiverAddress1"
-  | "receiverAddress2"
-  | "receiverPhone"
-  | "receiverCellphone"
-  | "shippingMessage"
-  | "deliveryType"
-  | "expectedDeliveryDate"
-  | "subscriptionShipmentsCycle"
-  | "wishedDelivery"
-  | "wishedDeliveryStartHour"
-  | "wishedDeliveryEndHour"
-  | "wishedDeliveryHourAsap"
-  | "storePickup"
-  | "useVirtualPhoneNo"
-  | "maxDeliveryLimit"
-  | "items";
-
-type UpdateASubscriptionRequestFields =
-  | "subscriptionId"
-  | "receiverName"
-  | "receiverZipcode"
-  | "receiverAddress1"
-  | "receiverAddress2"
-  | "receiverPhone"
-  | "receiverCellphone"
-  | "shippingMessage"
-  | "subscriptionState";
-
-type UpdateProductVariantsInSubscriptionRequestFields =
-  | "subscriptionId"
-  | "subscriptionItemId"
-  | "subscriptionState"
-  | "quantity"
-  | "expectedDeliveryDate"
-  | "subscriptionShipmentsCycle"
-  | "changedVariantCode"
-  | "maxDeliveryLimit";
-
-type RetrieveAListOfCustomerTiersRequestFields =
-  | "shopNo"
-  | "groupNo"
-  | "groupName";
-
-type RetrieveACountOfCustomerTiersRequestFields =
-  | "shopNo"
-  | "groupNo"
-  | "groupName";
-
-type RetrieveACustomerTierRequestFields = "shopNo" | "groupNo";
-
-type UpdateACustomerSCustomerTierRequestFields =
-  | "shopNo"
-  | "groupNo"
-  | "memberId"
-  | "fixedGroup";
-
-type RetrieveCustomerTierSettingsRequestFields = "shopNo";
-
-type RetrieveAListOfCustomersRequestFields =
-  | "shopNo"
-  | "cellphone"
-  | "memberId";
-
-type DeleteAnAccountRequestFields = "shopNo" | "memberId" | "isPointCheck";
-
-type RetrieveCustomerTierAutoUpdateDetailsRequestFields = "shopNo" | "memberId";
-
-type RetrieveACountOfCustomerMemosRequestFields = "shopNo" | "memberId";
-
-type RetrieveAListOfCustomerMemosRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "startDate"
-  | "endDate"
-  | "importantFlag"
-  | "memo"
-  | "offset"
-  | "limit";
-
-type RetrieveACustomerMemoRequestFields = "shopNo" | "memoNo" | "memberId";
-
-type CreateACustomerMemoRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "authorId"
-  | "memo"
-  | "importantFlag";
-
-type UpdateACustomerMemoRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "memoNo"
-  | "memberId"
-  | "authorId"
-  | "memo"
-  | "importantFlag";
-
-type DeleteACustomerMemoRequestFields = "shopNo" | "memoNo" | "memberId";
-
-type RetrieveACustomerSListOfPaymentMethodsRequestFields =
-  | "shopNo"
-  | "memberId";
-
-type DeleteCustomerSPaymentInformationRequestFields = "shopNo" | "memberId";
-
-type DeleteCustomerSPaymentInformationByPaymentMethodIdRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "paymentMethodId";
-
-type RetrieveAppInstallationInformationRequestFields = "shopNo" | "memberId";
-
-type RetrieveACustomerSSocialAccountRequestFields = "shopNo" | "memberId";
-
-type RetrieveAListOfBoardsRequestFields = "shopNo";
-
-type RetrieveAListOfPostsForABoardRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "boardCategoryNo"
-  | "startDate"
-  | "endDate"
-  | "inputChannel"
-  | "search"
-  | "keyword"
-  | "replyStatus"
-  | "comment"
-  | "attachedFile"
-  | "articleType"
-  | "productNo"
-  | "hasProduct"
-  | "isNotice"
-  | "isDisplay"
-  | "supplierId"
-  | "offset"
-  | "limit";
-
-type CreateABoardPostRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "writer"
-  | "title"
-  | "content"
-  | "clientIp"
-  | "replyArticleNo"
-  | "createdDate"
-  | "writerEmail"
-  | "memberId"
-  | "notice"
-  | "fixed"
-  | "deleted"
-  | "reply"
-  | "rating"
-  | "salesChannel"
-  | "secret"
-  | "password"
-  | "replyMail"
-  | "boardCategoryNo"
-  | "nickName"
-  | "inputChannel"
-  | "replyUserId"
-  | "replyStatus"
-  | "productNo"
-  | "categoryNo"
-  | "orderId"
-  | "naverpayReviewId"
-  | "attachFileUrls";
-
-type UpdateABoardPostRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "articleNo"
-  | "title"
-  | "content"
-  | "rating"
-  | "salesChannel"
-  | "boardCategoryNo"
-  | "display"
-  | "notice"
-  | "fixed"
-  | "displayTimeStartHour"
-  | "displayTimeEndHour"
-  | "attachFileUrl1"
-  | "attachFileUrl2"
-  | "attachFileUrl3"
-  | "attachFileUrl4"
-  | "attachFileUrl5";
-
-type DeleteABoardPostRequestFields = "shopNo" | "boardNo" | "articleNo";
-
-type RetrieveAListOfCommentsForABoardPostRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "articleNo"
-  | "commentNo"
-  | "offset"
-  | "limit";
-
-type CreateACommentForABoardPostRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "articleNo"
-  | "content"
-  | "writer"
-  | "password"
-  | "memberId"
-  | "rating"
-  | "secret"
-  | "parentCommentNo"
-  | "inputChannel"
-  | "createdDate"
-  | "attachFileUrls";
-
-type DeleteACommentForABoardPostRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "articleNo"
-  | "commentNo";
-
-type RetrieveCommentsInBulkRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "sinceCommentNo"
-  | "limit";
-
-type RetrieveSeoSettingsForBoardRequestFields = "shopNo" | "boardNo";
-
-type UpdateSeoSettingsForBoardRequestFields =
-  | "shopNo"
-  | "boardNo"
-  | "metaTitle"
-  | "metaAuthor"
-  | "metaDescription"
-  | "metaKeywords";
-
-type RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestFields =
-  | "shopNo"
-  | "startMonth"
-  | "endMonth";
-
-type RetrieveAnUrgentInquiryPostRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "offset"
-  | "limit";
-
-type RetrieveAReplyForUrgentInquiryPostRequestFields = "shopNo" | "articleNo";
-
-type CreateAReplyForUrgentInquiryPostRequestFields =
-  | "shopNo"
-  | "articleNo"
-  | "content"
-  | "status"
-  | "userId"
-  | "attachFileUrls";
-
-type UpdateAReplyForUrgentInquiryPostRequestFields =
-  | "shopNo"
-  | "articleNo"
-  | "content"
-  | "status"
-  | "userId"
-  | "attachFileUrls";
-
-type RetrieveAListOfDesginIconsRequestFields = "shopNo" | "type";
-
-type RetrieveAListOfThemesRequestFields = "type";
-
-type RetrieveACountOfThemesRequestFields = "type";
-
-type RetrieveAThemeRequestFields = "skinNo";
-
-type RetrieveAThemePageRequestFields = "skinNo" | "path";
-
-type CreateAThemePageRequestFields =
-  | "skinNo"
-  | "path"
-  | "source"
-  | "displayLocation";
-
-type RetrieveAListOfCustomerBenefitsRequestFields =
-  | "shopNo"
-  | "useBenefit"
-  | "benefitName"
-  | "benefitType"
-  | "periodType"
-  | "benefitStartDate"
-  | "benefitEndDate"
-  | "platformTypes"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfCustomerBenefitsRequestFields =
-  | "shopNo"
-  | "useBenefit"
-  | "benefitName"
-  | "benefitType"
-  | "periodType"
-  | "benefitStartDate"
-  | "benefitEndDate"
-  | "platformTypes";
-
-type RetrieveACustomerBenefitRequestFields = "shopNo" | "benefitNo";
-
-type CreateACustomerBenefitRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "shopNo"
-  | "useBenefit"
-  | "benefitName"
-  | "benefitDivision"
-  | "benefitType"
-  | "useBenefitPeriod"
-  | "benefitStartDate"
-  | "benefitEndDate"
-  | "platformTypes"
-  | "useGroupBinding"
-  | "customerGroupList"
-  | "productBindingType"
-  | "useExceptCategory"
-  | "availableCoupon"
-  | "periodSale"
-  | "gift"
-  | "newProductSale"
-  | "shippingFeeSale"
-  | "giftProductBundle"
-  | "iconUrl";
-
-type UpdateACustomerBenefitRequestFields =
-  | "shopNo"
-  | "benefitNo"
-  | "useBenefit"
-  | "benefitName"
-  | "useBenefitPeriod"
-  | "benefitStartDate"
-  | "benefitEndDate"
-  | "platformTypes"
-  | "useGroupBinding"
-  | "customerGroupList"
-  | "productBindingType"
-  | "useExceptCategory"
-  | "availableCoupon"
-  | "periodSale"
-  | "gift"
-  | "giftProductBundle"
-  | "newProductSale"
-  | "shippingFeeSale"
-  | "iconUrl";
-
-type DeleteACustomerBenefitRequestFields = "shopNo" | "benefitNo";
-
-type RetrieveAListOfCouponsRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "couponType"
-  | "couponName"
-  | "benefitType"
-  | "issueType"
-  | "issueSubType"
-  | "issuedFlag"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "deleted"
-  | "pauseBeginDate"
-  | "pauseEndDate"
-  | "issueOrderPath"
-  | "issueOrderType"
-  | "issueReserved"
-  | "availablePeriodType"
-  | "availableDatetime"
-  | "availableSite"
-  | "availableScope"
-  | "availablePriceType"
-  | "availableOrderPriceType"
-  | "limit"
-  | "offset";
-
-type RetrieveACountOfCouponsRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "couponType"
-  | "couponName"
-  | "benefitType"
-  | "issueType"
-  | "issueSubType"
-  | "issuedFlag"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "deleted"
-  | "pauseBeginDate"
-  | "pauseEndDate"
-  | "issueOrderPath"
-  | "issueOrderType"
-  | "issueReserved"
-  | "availablePeriodType"
-  | "availableDatetime"
-  | "availableSite"
-  | "availableScope"
-  | "availablePriceType"
-  | "availableOrderPriceType";
-
-type CreateACouponRequestFields =
-  | "shopNo"
-  | "couponName"
-  | "benefitType"
-  | "issueType"
-  | "availablePeriodType"
-  | "availableBeginDatetime"
-  | "availableEndDatetime"
-  | "availableDayFromIssued"
-  | "availableSite"
-  | "availableScope"
-  | "availableProduct"
-  | "availableProductList"
-  | "availableCategory"
-  | "availableCategoryList"
-  | "availableAmountType"
-  | "availableCouponCountByOrder"
-  | "availablePriceType"
-  | "availableOrderPriceType"
-  | "availableMinPrice"
-  | "discountAmount"
-  | "discountRate";
-
-type CouponManagementRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "status"
-  | "deleted"
-  | "immediateIssuePause"
-  | "immediateIssueRestart";
-
-type RetrieveAListOfIssuedCouponsRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "memberId"
-  | "groupNo"
-  | "issuedDate"
-  | "issuedStartDate"
-  | "issuedEndDate"
-  | "usedCoupon"
-  | "sinceIssueNo"
-  | "limit"
-  | "offset";
-
-type CreateCouponIssuanceHistoryRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "couponNo"
-  | "issuedMemberScope"
-  | "groupNo"
-  | "memberId"
-  | "sendSmsForIssue"
-  | "allowDuplication"
-  | "singleIssuePerOnce"
-  | "issueCountPerOnce"
-  | "issuedPlaceType"
-  | "issuedByActionType"
-  | "issuedByEventType"
-  | "requestAdminId";
-
-type RetrieveAListOfCustomerCouponsRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfCustomerCouponsRequestFields = "shopNo" | "memberId";
-
-type DeleteACustomerCouponRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "couponNo"
-  | "issueNo";
-
-type RetrieveAListOfDiscountCodesRequestFields =
-  | "shopNo"
-  | "discountCodeName"
-  | "discountCode"
-  | "searchDateType"
-  | "startDate"
-  | "endDate"
-  | "offset"
-  | "limit"
-  | "sort"
-  | "order";
-
-type RetrieveADiscountCodeRequestFields = "shopNo" | "discountCodeNo";
-
-type CreateADiscountCodeRequestFields =
-  | "shopNo"
-  | "discountCode"
-  | "discountCodeName"
-  | "discountValue"
-  | "discountTruncationUnit"
-  | "discountMaxPrice"
-  | "availableStartDate"
-  | "availableEndDate"
-  | "availableProductType"
-  | "availableProduct"
-  | "availableCategory"
-  | "availableMinPrice"
-  | "availableIssueCount"
-  | "availableUser"
-  | "maxUsagePerUser";
-
-type UpdateADiscountCodeRequestFields =
-  | "shopNo"
-  | "discountCodeNo"
-  | "discountCode"
-  | "discountCodeName"
-  | "discountValue"
-  | "discountTruncationUnit"
-  | "discountMaxPrice"
-  | "availableStartDate"
-  | "availableEndDate"
-  | "availableProductType"
-  | "availableProduct"
-  | "availableCategory"
-  | "availableMinPrice"
-  | "availableIssueCount"
-  | "availableUser"
-  | "maxUsagePerUser";
-
-type DeleteADiscountCodeRequestFields = "discountCodeNo";
-
-type RetrieveCouponCodesRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "couponName"
-  | "benefitType"
-  | "issuedFlag"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "deleted"
-  | "issueOrderPath"
-  | "issueOrderType"
-  | "issueReserved"
-  | "availablePeriodType"
-  | "availableDatetime"
-  | "availableSite"
-  | "availableScope"
-  | "availablePriceType"
-  | "availableOrderPriceType"
-  | "limit"
-  | "offset";
-
-type GenerateCouponCodeRequestFields =
-  | "shopNo"
-  | "couponName"
-  | "benefitType"
-  | "availablePeriodType"
-  | "availableBeginDatetime"
-  | "availableEndDatetime"
-  | "availableDayFromIssued"
-  | "availableSite"
-  | "availableScope"
-  | "availableProduct"
-  | "availableProductList"
-  | "availableCategory"
-  | "availableCategoryList"
-  | "availableAmountType"
-  | "availableCouponCountByOrder"
-  | "availablePriceType"
-  | "availableOrderPriceType"
-  | "availableMinPrice"
-  | "discountAmount"
-  | "discountRate"
-  | "serialGenerateMethod"
-  | "serialCodeType"
-  | "serialGenerateAuto";
-
-type DeleteCouponCodeRequestFields = "couponNo";
-
-type RetrieveACodeOfCouponCodesRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "offset"
-  | "limit";
-
-type RegisterACodeOfCouponCodesRequestFields =
-  | "shopNo"
-  | "couponNo"
-  | "serialCodeList";
-
-type RetrieveAnAppInformationRequestFields = string;
-
-type UpdateAnAppInformationRequestFields = "version" | "extensionType";
-
-type RetreiveACafe24StoreOrderRequestFields = "orderId";
-
-type CreateACafe24StoreOrderRequestFields =
-  | "orderName"
-  | "orderAmount"
-  | "returnUrl"
-  | "automaticPayment";
-
-type RetrieveAListOfCafe24StorePaymentsRequestFields =
-  | "orderId"
-  | "startDate"
-  | "endDate"
-  | "currency"
-  | "limit"
-  | "offset";
-
-type RetrieveACountOfCafe24StorePaymentsRequestFields =
-  | "orderId"
-  | "startDate"
-  | "endDate"
-  | "currency";
-
-type RetrieveAListOfDatabridgeWebhookLogsRequestFields =
-  | "requestedStartDate"
-  | "requestedEndDate"
-  | "success"
-  | "sinceLogId"
-  | "limit";
-
-type RetrieveAListOfRecipesRequestFields = string;
-
-type CreateARecipeRequestFields = "recipeCode" | "triggerSettings";
-
-type DeleteARecipeRequestFields = "recipeCode";
-
-type RetrieveAListOfScriptTagsRequestFields =
-  | "shopNo"
-  | "scriptNo"
-  | "src"
-  | "displayLocation"
-  | "excludePath"
-  | "skinNo"
-  | "integrity"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate";
-
-type RetrieveACountOfScriptTagsRequestFields =
-  | "shopNo"
-  | "scriptNo"
-  | "src"
-  | "displayLocation"
-  | "skinNo"
-  | "createdStartDate"
-  | "createdEndDate"
-  | "updatedStartDate"
-  | "updatedEndDate";
-
-type RetrieveAScriptTagRequestFields = "shopNo" | "scriptNo";
-
-type CreateAScriptTagRequestFields =
-  | "shopNo"
-  | "src"
-  | "displayLocation"
-  | "excludePath"
-  | "skinNo"
-  | "integrity";
-
-type UpdateAScriptTagRequestFields =
-  | "shopNo"
-  | "scriptNo"
-  | "src"
-  | "displayLocation"
-  | "excludePath"
-  | "skinNo"
-  | "integrity";
-
-type DeleteAScriptTagRequestFields = "scriptNo";
-
-type RetrieveAListOfWebhookLogsRequestFields =
-  | "eventNo"
-  | "requestedStartDate"
-  | "requestedEndDate"
-  | "success"
-  | "logType"
-  | "sinceLogId"
-  | "limit";
-
-type RetrieveWebhookSettingsRequestFields = string;
-
-type EditWebhookSettingsRequestFields = "receptionStatus";
-
-type RetrieveAListOfAutoLayoutsRequestFields = "shopNo" | "displayNo";
-
-type CreateAutoLayoutForSelectedProductCategoryRequestFields =
-  | "shopNo"
-  | "useMain"
-  | "categoryNo"
-  | "displayGroup"
-  | "displayCount"
-  | "useReservation"
-  | "startDate"
-  | "useHashtag"
-  | "hashTags"
-  | "displaySort"
-  | "timetable"
-  | "period"
-  | "exceptCategoriesScope"
-  | "exceptCategories";
-
-type UpdateAutoLayoutForSelectedProductCategoryRequestFields =
-  | "shopNo"
-  | "displayNo"
-  | "displayCount"
-  | "useReservation"
-  | "startDate"
-  | "useHashtag"
-  | "hashTags"
-  | "displaySort"
-  | "timetable"
-  | "period"
-  | "exceptCategoriesScope"
-  | "exceptCategories";
-
-type DeleteAutoLayoutForSelectedProductCategoryRequestFields =
-  | "shopNo"
-  | "displayNo";
-
-type RetrieveAListOfProductCategoriesRequestFields =
-  | "shopNo"
-  | "categoryDepth"
-  | "categoryNo"
-  | "parentCategoryNo"
-  | "categoryName"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfProductCategoriesRequestFields =
-  | "shopNo"
-  | "categoryDepth"
-  | "categoryNo"
-  | "parentCategoryNo"
-  | "categoryName";
-
-type RetrieveAProductCategoryRequestFields = "shopNo" | "categoryNo";
-
-type CreateAProductCategoryRequestFields =
-  | "shopNo"
-  | "parentCategoryNo"
-  | "categoryName"
-  | "shopNo"
-  | "displayType"
-  | "useMain"
-  | "useDisplay"
-  | "soldoutProductDisplay"
-  | "subCategoryProductDisplay"
-  | "hashtagProductDisplay"
-  | "hashTags"
-  | "productDisplayScope"
-  | "productDisplayType"
-  | "productDisplayKey"
-  | "productDisplaySort"
-  | "productDisplayPeriod"
-  | "normalProductDisplayType"
-  | "normalProductDisplayKey"
-  | "normalProductDisplaySort"
-  | "normalProductDisplayPeriod"
-  | "recommendProductDisplayType"
-  | "recommendProductDisplayKey"
-  | "recommendProductDisplaySort"
-  | "recommendProductDisplayPeriod"
-  | "newProductDisplayType"
-  | "newProductDisplayKey"
-  | "newProductDisplaySort"
-  | "newProductDisplayPeriod";
-
-type UpdateAProductCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "categoryName"
-  | "shopNo"
-  | "displayType"
-  | "useMain"
-  | "useDisplay"
-  | "soldoutProductDisplay"
-  | "subCategoryProductDisplay"
-  | "hashtagProductDisplay"
-  | "hashTags"
-  | "productDisplayScope"
-  | "productDisplayType"
-  | "productDisplayKey"
-  | "productDisplaySort"
-  | "productDisplayPeriod"
-  | "normalProductDisplayType"
-  | "normalProductDisplayKey"
-  | "normalProductDisplaySort"
-  | "normalProductDisplayPeriod"
-  | "recommendProductDisplayType"
-  | "recommendProductDisplayKey"
-  | "recommendProductDisplaySort"
-  | "recommendProductDisplayPeriod"
-  | "newProductDisplayType"
-  | "newProductDisplayKey"
-  | "newProductDisplaySort"
-  | "newProductDisplayPeriod";
-
-type DeleteAProductCategoryRequestFields = "categoryNo";
-
-type RetrieveDecorationImageSettingsByCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo";
-
-type UpdateDecorationImagesOfAProductCategoryRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "useMenuImagePc"
-  | "menuImagePc"
-  | "menuOverImagePc"
-  | "useTopImagePc"
-  | "topImagesPc"
-  | "useTitleImagePc"
-  | "titleImagePc"
-  | "useMenuImageMobile"
-  | "menuImageMobile"
-  | "useTopImageMobile"
-  | "topImagesMobile"
-  | "useTitleImageMobile"
-  | "titleImageMobile";
-
-type RetrieveSeoSettingsByCategoryRequestFields = "shopNo" | "categoryNo";
-
-type UpdateAProductCategorySeoRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "categoryNo"
-  | "searchEngineExposure"
-  | "metaTitle"
-  | "metaAuthor"
-  | "metaDescription"
-  | "metaKeywords";
-
-type RetrieveAListOfMainCategoriesRequestFields = string;
-
-type RetrieveAListOfBrandsRequestFields =
-  | "shopNo"
-  | "brandCode"
-  | "brandName"
-  | "useBrand"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfBrandsRequestFields =
-  | "shopNo"
-  | "brandCode"
-  | "brandName"
-  | "useBrand";
-
-type CreateABrandRequestFields =
-  | "shopNo"
-  | "brandName"
-  | "useBrand"
-  | "searchKeyword";
-
-type UpdateABrandRequestFields =
-  | "shopNo"
-  | "shopNo"
-  | "brandCode"
-  | "brandName"
-  | "useBrand"
-  | "searchKeyword";
-
-type DeleteABrandRequestFields = "brandCode";
-
-type RetrieveAListOfCustomCategoriesRequestFields =
-  | "shopNo"
-  | "classificationCode"
-  | "classificationName"
-  | "useClassification"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfCustomCategoriesRequestFields =
-  | "shopNo"
-  | "classificationCode"
-  | "classificationName"
-  | "useClassification";
-
-type RetrieveAListOfManufacturersRequestFields =
-  | "shopNo"
-  | "manufacturerCode"
-  | "manufacturerName"
-  | "useManufacturer"
-  | "offset"
-  | "limit";
-
-type RetrieveAManufacturerRequestFields = "shopNo" | "manufacturerCode";
-
-type RetrieveACountOfManufacturersRequestFields =
-  | "shopNo"
-  | "manufacturerCode"
-  | "manufacturerName"
-  | "useManufacturer";
-
-type CreateAManufacturerRequestFields =
-  | "shopNo"
-  | "manufacturerName"
-  | "presidentName"
-  | "email"
-  | "phone"
-  | "homepage"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "countryCode"
-  | "useManufacturer";
-
-type UpdateAManufacturerRequestFields =
-  | "shopNo"
-  | "manufacturerCode"
-  | "manufacturerName"
-  | "presidentName"
-  | "email"
-  | "phone"
-  | "homepage"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "countryCode"
-  | "useManufacturer";
-
-type RetrieveAListOfOriginsRequestFields =
-  | "originPlaceNo"
-  | "originPlaceName"
-  | "foreign"
-  | "offset"
-  | "limit";
-
-type RetrieveAListOfTrendsRequestFields =
-  | "shopNo"
-  | "trendCode"
-  | "trendName"
-  | "useTrend"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfTrendsRequestFields =
-  | "shopNo"
-  | "trendCode"
-  | "trendName"
-  | "useTrend";
-
-type RetrieveASupplierSShippingSettingsRequestFields = "shopNo" | "supplierId";
-
-type UpdateASupplierSShippingSettingsRequestFields =
-  | "shopNo"
-  | "supplierId"
-  | "shippingMethod"
-  | "shippingEtc"
-  | "shippingType"
-  | "shippingPlace"
-  | "shippingStartDate"
-  | "shippingEndDate"
-  | "shippingFeeType"
-  | "freeShippingPrice"
-  | "shippingFee"
-  | "shippingFeeByQuantity"
-  | "shippingRates"
-  | "prepaidShippingFee"
-  | "shippingFeeByProduct"
-  | "productWeight"
-  | "hscode"
-  | "countryHscode";
-
-type RetrieveAListOfSuppliersRequestFields =
-  | "shopNo"
-  | "supplierCode"
-  | "supplierName"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfSuppliersRequestFields =
-  | "shopNo"
-  | "supplierCode"
-  | "supplierName";
-
-type RetrieveASupplierRequestFields = "shopNo" | "supplierCode";
-
-type CreateASupplierRequestFields =
-  | "shopNo"
-  | "supplierName"
-  | "managerInformation"
-  | "useSupplier"
-  | "tradingType"
-  | "supplierType"
-  | "status"
-  | "businessItem"
-  | "paymentType"
-  | "paymentPeriod"
-  | "paymentMethod"
-  | "paymentStartDay"
-  | "paymentEndDay"
-  | "paymentStartDate"
-  | "paymentEndDate"
-  | "commission"
-  | "phone"
-  | "fax"
-  | "countryCode"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "marketCountryCode"
-  | "marketZipcode"
-  | "marketAddress1"
-  | "marketAddress2"
-  | "exchangeCountryCode"
-  | "exchangeZipcode"
-  | "exchangeAddress1"
-  | "exchangeAddress2"
-  | "homepageUrl"
-  | "mallUrl"
-  | "accountStartDate"
-  | "accountStopDate"
-  | "memo"
-  | "companyRegistrationNo"
-  | "companyName"
-  | "presidentName"
-  | "companyCondition"
-  | "companyLine"
-  | "companyIntroduction";
-
-type UpdateASupplierRequestFields =
-  | "shopNo"
-  | "supplierCode"
-  | "supplierName"
-  | "useSupplier"
-  | "tradingType"
-  | "supplierType"
-  | "status"
-  | "paymentType"
-  | "paymentPeriod"
-  | "commission"
-  | "managerInformation"
-  | "businessItem"
-  | "paymentMethod"
-  | "paymentStartDay"
-  | "paymentEndDay"
-  | "paymentStartDate"
-  | "paymentEndDate"
-  | "phone"
-  | "fax"
-  | "countryCode"
-  | "zipcode"
-  | "address1"
-  | "address2"
-  | "marketCountryCode"
-  | "marketZipcode"
-  | "marketAddress1"
-  | "marketAddress2"
-  | "exchangeCountryCode"
-  | "exchangeZipcode"
-  | "exchangeAddress1"
-  | "exchangeAddress2"
-  | "homepageUrl"
-  | "mallUrl"
-  | "accountStartDate"
-  | "accountStopDate"
-  | "memo"
-  | "companyRegistrationNo"
-  | "companyName"
-  | "presidentName"
-  | "companyCondition"
-  | "companyLine"
-  | "companyIntroduction";
-
-type DeleteASupplierRequestFields = "supplierCode";
-
-type RetrieveAListOfSupplierUsersRequestFields =
-  | "shopNo"
-  | "userId"
-  | "supplierCode"
-  | "supplierName";
-
-type RetrieveACountOfSupplierUsersRequestFields =
-  | "shopNo"
-  | "userId"
-  | "supplierCode"
-  | "supplierName";
-
-type RetrieveSupplierUserDetailsRequestFields = "shopNo" | "userId";
-
-type CreateASupplierUserRequestFields =
-  | "userId"
-  | "supplierCode"
-  | "userName"
-  | "nickName"
-  | "password"
-  | "useNickNameIcon"
-  | "useWriterNameIcon"
-  | "email"
-  | "phone"
-  | "permissionShopNo"
-  | "permissionCategorySelect"
-  | "permittedCategoryList"
-  | "permissionProductModify"
-  | "permissionProductDisplay"
-  | "permissionProductSelling"
-  | "permissionProductDelete"
-  | "permissionOrderMenu"
-  | "permissionAmountInquiry";
-
-type UpdateASupplierUserRequestFields =
-  | "userId"
-  | "userName"
-  | "nickName"
-  | "password"
-  | "useNickNameIcon"
-  | "useWriterNameIcon"
-  | "email"
-  | "phone"
-  | "permissionShopNo"
-  | "permissionCategorySelect"
-  | "permittedCategoryList"
-  | "permissionProductModify"
-  | "permissionProductDisplay"
-  | "permissionProductSelling"
-  | "permissionProductDelete"
-  | "permissionOrderMenu"
-  | "permissionAmountInquiry";
-
-type DeleteASupplierUserRequestFields = "userId";
-
-type RetrieveASupplierUserSListOfRegionalShippingFeesRequestFields =
-  | "shopNo"
-  | "supplierId"
-  | "offset"
-  | "limit";
-
-type CreateRegionalShippingFeeForASupplierUserRequestFields =
-  | "shopNo"
-  | "supplierId"
-  | "countryCode"
-  | "regionName"
-  | "useRegionalSurcharge"
-  | "surchargeRegionName"
-  | "startZipcode"
-  | "endZipcode"
-  | "regionalSurchargeAmount";
-
-type DeleteSupplierUserSRegionalShippingFeeSettingsRequestFields =
-  | "shopNo"
-  | "supplierId"
-  | "regionalSurchargeNo";
-
-type RetrieveASupplierUserSRegionalShippingFeeSettingsRequestFields =
-  | "shopNo"
-  | "supplierId";
-
-type UpdateASupplierUserSRegionalShippingFeeSettingsRequestFields =
-  | "shopNo"
-  | "supplierId"
-  | "useRegionalSurcharge"
-  | "regionSettingType"
-  | "jejuSurchargeAmount"
-  | "remoteAreaSurchargeAmount";
-
-type RetrieveAListOfShippingCarriersRequestFields = "shopNo";
-
-type RetrieveAShippingCarrierRequestFields = "shopNo" | "carrierId";
-
-type CreateAShippingCarrierRequestFields =
-  | "shopNo"
-  | "shippingCarrierCode"
-  | "contact"
-  | "email"
-  | "shippingCarrier"
-  | "trackShipmentUrl"
-  | "secondaryContact"
-  | "defaultShippingFee"
-  | "homepageUrl"
-  | "shippingFeeSetting"
-  | "shippingFeeSettingDetail";
-
-type UpdateAShippingCarrierRequestFields =
-  | "shopNo"
-  | "carrierId"
-  | "defaultShippingCarrier";
-
-type DeleteAShippingCarrierRequestFields =
-  | "shopNo"
-  | "carrierId"
-  | "deleteDefaultCarrier";
-
-type RetrieveShippingZoneRatesSettingsRequestFields = "shopNo";
-
-type RetrieveShippingReturnSettingsRequestFields = "shopNo";
-
-type UpdateStoreShippingReturnSettingsRequestFields =
-  | "shopNo"
-  | "shippingMethod"
-  | "shippingEtc"
-  | "shippingPeriod"
-  | "shippingFeeType"
-  | "shippingFee"
-  | "freeShippingPrice"
-  | "shippingFeeByQuantity"
-  | "shippingRates"
-  | "shippingFeeCriteria"
-  | "prepaidShippingFee"
-  | "productWeight"
-  | "overseaShippingCountry"
-  | "overseaShippingCountryList"
-  | "countryShippingFee"
-  | "countryShippingFeeList"
-  | "internationalShippingInsurance"
-  | "returnAddress"
-  | "packageVolume";
-
-type RetrieveAListOfShippingOriginsRequestFields = "offset" | "limit";
-
-type RetrieveAShippingOriginRequestFields = "originCode";
-
-type CreateAShippingOriginRequestFields =
-  | "originName"
-  | "address1"
-  | "address2"
-  | "countryCode"
-  | "default"
-  | "zipcode"
-  | "contact"
-  | "secondaryContact";
-
-type UpdateAShippingOriginRequestFields =
-  | "originCode"
-  | "originName"
-  | "countryCode"
-  | "default"
-  | "contact"
-  | "secondaryContact"
-  | "zipcode"
-  | "address1"
-  | "address2";
-
-type DeleteAShippingOriginRequestFields = "originCode";
-
-type RetrieveAListOfDailySalesRequestFields =
-  | "startDate"
-  | "endDate"
-  | "paymentGatewayName"
-  | "partnerId"
-  | "paymentMethod";
-
-type RetrieveAListOfMonthlySalesRequestFields =
-  | "startMonth"
-  | "endMonth"
-  | "paymentGatewayName"
-  | "partnerId"
-  | "paymentMethod";
-
-type RetrieveHourlySalesStatisticsOfAStoreRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "collectionHour"
-  | "limit"
-  | "offset";
-
-type RetrieveHourlyProductSalesStatisticsOfAStoreRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "collectionHour"
-  | "limit"
-  | "offset";
-
-type RetrieveASalesReportRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "variantsCode"
-  | "categoryNo"
-  | "mobile"
-  | "deliveryType"
-  | "groupNo"
-  | "supplierId"
-  | "startDate"
-  | "endDate";
-
-type RetrieveAShoppingCartRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "offset"
-  | "limit";
-
-type RetrieveACountOfProductsInCustomerWishlistRequestFields =
-  | "memberId"
-  | "shopNo";
-
-type RetrieveAListOfProductsInCustomerWishlistRequestFields =
-  | "memberId"
-  | "shopNo";
-
-type RetrieveACountOfCartsContainingAProductRequestFields =
-  | "shopNo"
-  | "productNo";
-
-type RetrieveAListOfCartsContainingAProductRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "limit"
-  | "offset";
-
-type RetrieveAListOfCustomerInformationRequestFields =
-  | "shopNo"
-  | "searchType"
-  | "createdStartDate"
-  | "memberId"
-  | "newsMail"
-  | "sms"
-  | "thirdpartyAgree"
-  | "groupNo"
-  | "searchField"
-  | "keyword"
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "memberType"
-  | "memberClass"
-  | "residence"
-  | "gender"
-  | "memberAuthority"
-  | "joinPath"
-  | "useMobileApp"
-  | "fixedGroup"
-  | "limit"
-  | "offset";
-
-type RetrieveACountOfCustomerInformationRequestFields =
-  | "shopNo"
-  | "searchType"
-  | "createdStartDate"
-  | "memberId"
-  | "newsMail"
-  | "sms"
-  | "thirdpartyAgree"
-  | "groupNo"
-  | "searchField"
-  | "keyword"
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "memberType"
-  | "memberClass"
-  | "residence"
-  | "gender"
-  | "memberAuthority"
-  | "joinPath"
-  | "useMobileApp"
-  | "fixedGroup";
-
-type RetrieveACustomerInformationRequestFields = "shopNo" | "memberId";
-
-type UpdateACustomerInformationRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "cellphone"
-  | "email"
-  | "sms"
-  | "newsMail"
-  | "thirdpartyAgree"
-  | "birthday"
-  | "solarCalendar"
-  | "address1"
-  | "address2"
-  | "zipcode"
-  | "gender"
-  | "countryCode"
-  | "additionalInformation"
-  | "city"
-  | "state"
-  | "refundBankCode"
-  | "refundBankAccountNo"
-  | "refundBankAccountHolder"
-  | "fixedGroup";
-
-type RetrieveAListOfCustomersWithAProductInWishlistRequestFields =
-  | "productNo"
-  | "shopNo";
-
-type RetrieveACountOfCustomersWithAProductInWishlistRequestFields =
-  | "productNo"
-  | "shopNo";
-
-type RetrieveAListOfCreditsByDateRangeRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "type"
-  | "case"
-  | "adminId"
-  | "orderId"
-  | "searchField"
-  | "keyword"
-  | "limit"
-  | "offset";
-
-type RetrieveACreditReportByDateRangeRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate"
-  | "type"
-  | "case"
-  | "adminId"
-  | "searchField"
-  | "keyword";
-
-type RetrievePointsRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "email"
-  | "orderId"
-  | "groupNo"
-  | "startDate"
-  | "endDate"
-  | "case"
-  | "pointsCategory"
-  | "offset"
-  | "limit";
-
-type IssueAndDeductPointsRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "orderId"
-  | "amount"
-  | "type"
-  | "reason";
-
-type RetrieveAnAutomaticPointsExpirationRequestFields = "shopNo";
-
-type CreateAnAutomaticPointsExpirationRequestFields =
-  | "shopNo"
-  | "expirationDate"
-  | "intervalMonth"
-  | "targetPeriodMonth"
-  | "groupNo"
-  | "standardPoint"
-  | "sendEmail"
-  | "sendSms"
-  | "notificationTimeDay";
-
-type DeleteAnAutomaticPointsExpirationRequestFields = "shopNo";
-
-type RetrieveAPointsReportByDateRangeRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "email"
-  | "groupNo"
-  | "startDate"
-  | "endDate";
-
-type SendAnInvitationToActivateAccountRequestFields =
-  | "shopNo"
-  | "memberId"
-  | "invitationType";
-
-type RetrieveDistributionGroupListRequestFields = "shopNo" | "limit" | "offset";
-
-type RetrieveDistributionGroupDetailsRequestFields = "shopNo" | "groupNo";
-
-type CreateADistributionGroupRequestFields =
-  | "shopNo"
-  | "groupName"
-  | "groupDescription"
-  | "newsMail"
-  | "sms"
-  | "memberGroupNo"
-  | "memberClass"
-  | "memberType"
-  | "joinPath"
-  | "inflowPath"
-  | "inflowPathDetail"
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "solarCalendar"
-  | "ageMin"
-  | "ageMax"
-  | "gender"
-  | "availablePointsMin"
-  | "availablePointsMax"
-  | "useMobileApp"
-  | "plusappMemberJoin";
-
-type EditDistributionGroupRequestFields =
-  | "shopNo"
-  | "groupNo"
-  | "groupName"
-  | "groupDescription"
-  | "newsMail"
-  | "sms"
-  | "memberGroupNo"
-  | "memberClass"
-  | "memberType"
-  | "joinPath"
-  | "inflowPath"
-  | "inflowPathDetail"
-  | "dateType"
-  | "startDate"
-  | "endDate"
-  | "solarCalendar"
-  | "ageMin"
-  | "ageMax"
-  | "gender"
-  | "availablePointsMin"
-  | "availablePointsMax"
-  | "useMobileApp"
-  | "plusappMemberJoin";
-
-type DeleteDistributionGroupRequestFields = "shopNo" | "groupNo";
-
-type SendASmsRequestFields =
-  | "shopNo"
-  | "senderNo"
-  | "content"
-  | "recipients"
-  | "memberId"
-  | "groupNo"
-  | "excludeUnsubscriber"
-  | "type"
-  | "title";
-
-type RetrieveTheSmsBalanceRequestFields = string;
-
-type RetrieveAListOfSmsSendersRequestFields = "offset" | "limit";
-
-type RetrieveAListOfProductCategoryTranslationsRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "languageCode"
-  | "offset"
-  | "limit";
-
-type UpdateProductCategoryTranslationRequestFields =
-  | "shopNo"
-  | "categoryNo"
-  | "translations";
-
-type RetrieveAListOfProductTranslationsRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "productName"
-  | "languageCode"
-  | "offset"
-  | "limit";
-
-type UpdateProductTranslationRequestFields =
-  | "shopNo"
-  | "productNo"
-  | "translations";
-
-type RetrieveAListOfStoreTranslationsRequestFields = "shopNo" | "languageCode";
-
-type UpdateTheTranslationsOfAStoreRequestFields = "shopNo" | "translations";
-
-type RetrieveAListOfThemeTranslationsRequestFields = string;
-
-type RetrieveAThemeTranslationRequestFields = "skinNo" | "languageCode";
-
-type UpdateAThemeTranslationRequestFields = "skinNo" | "skinTranslation";
-
-type RetrieveACountOfDailyvisitsRequestFields =
-  | "shopNo"
-  | "startDate"
-  | "endDate";
-
-type RetrieveAListOfActionLogsRequestEmbeds = string;
-
-type RetrieveAnActionLogRequestEmbeds = string;
-
-type RetrieveTheListOfAvailableVariablesForAutomatedMessagesRequestEmbeds =
-  string;
-
-type RetrieveTheAutomatedMessageSettingsRequestEmbeds = string;
-
-type UpdateAnAutomatedMessageRequestEmbeds = string;
-
-type RetrieveCouponSettingsRequestEmbeds = string;
-
-type UpdateCouponSettingsRequestEmbeds = string;
-
-type RetrieveCurrencySettingsRequestEmbeds = string;
-
-type RetrieveMemberRelatedSettingsRequestEmbeds = string;
-
-type RetrieveADashboardRequestEmbeds = string;
-
-type RetrieveAListOfPaymentGatewayContractDetailsRequestEmbeds = string;
-
-type RetrieveTheTransactionInformationOfAStoreRequestEmbeds = string;
-
-type RetrieveProductImageSizeSettingsRequestEmbeds = string;
-
-type UpdateProductImageSizeSettingsRequestEmbeds = string;
-
-type RetrieveAKakaoChannelSenderProfileKeyRequestEmbeds = string;
-
-type RetrieveTheKakaoInfoTalkSettingsRequestEmbeds = string;
-
-type UpdateTheKakaoInfoTalkSettingsRequestEmbeds = string;
-
-type RetrieveSettingsForKakaopayOrdersRequestEmbeds = string;
-
-type UpdateSettingsForKakaopayOrdersRequestEmbeds = string;
-
-type RetrieveMenusRequestEmbeds = string;
-
-type RetrieveMobileSettingsRequestEmbeds = string;
-
-type RetrieveNaverPaySettingsRequestEmbeds = string;
-
-type CreateNaverPaySettingsRequestEmbeds = string;
-
-type UpdateNaverPaySettingsRequestEmbeds = string;
-
-type RetrieveOrderSettingsRequestEmbeds = string;
-
-type UpdateOrderSettingsRequestEmbeds = string;
-
-type RetrieveOrderStatusDisplayedRequestEmbeds = string;
-
-type UpdateOrderStatusDisplayedRequestEmbeds = string;
-
-type RetrieveEscrowSettingsRequestEmbeds = string;
-
-type UpdateEscrowSettingsRequestEmbeds = string;
-
-type CreateAPaymentGatewayRequestEmbeds = string;
-
-type UpdateAPaymentGatewayRequestEmbeds = string;
-
-type DeleteAPaymentGatewayRequestEmbeds = string;
-
-type RetrieveAListOfPaymentGatewayMethodsRequestEmbeds = string;
-
-type CreateAPaymentGatewayMethodRequestEmbeds = string;
-
-type UpdateAPaymentMethodOfAPaymentGatewayRequestEmbeds = string;
-
-type DeleteAPaymentMethodOfAPaymentGatewayRequestEmbeds = string;
-
-type RetrieveAListOfPaymentMethodsRequestEmbeds = string;
-
-type RetrieveAListOfProvidersByPaymentMethodRequestEmbeds = string;
-
-type UpdateTheDisplayStatusOfAPaymentMethodRequestEmbeds = string;
-
-type RetrievePointsSettingsRequestEmbeds = string;
-
-type UpdatePointsSettingsRequestEmbeds = string;
-
-type RetrieveProductSettingsRequestEmbeds = string;
-
-type RetrieveAListOfRedirectsRequestEmbeds = string;
-
-type CreateARedirectRequestEmbeds = string;
-
-type UpdateARedirectRequestEmbeds = string;
-
-type DeleteARedirectRequestEmbeds = string;
-
-type RetrieveSeoSettingsRequestEmbeds = string;
-
-type UpdateStoreSeoSettingsRequestEmbeds = string;
-
-type RetrieveActivationInformationForShippingManagerRequestEmbeds = string;
-
-type RetrieveAListOfShopsRequestEmbeds = string;
-
-type RetrieveAShopRequestEmbeds = string;
-
-type RetrieveSmsSettingsRequestEmbeds = string;
-
-type UpdateSmsSettingsRequestEmbeds = string;
-
-type AppleLoginSyncDetailsRequestEmbeds = string;
-
-type AppleLoginSyncSettingsRequestEmbeds = string;
-
-type KakaoSyncDetailsRequestEmbeds = string;
-
-type KakaoSyncUpdatesRequestEmbeds = string;
-
-type NaverLoginDetailsRequestEmbeds = string;
-
-type UpdateNaverLoginSettingsRequestEmbeds = string;
-
-type RetrieveStoreDetailsRequestEmbeds = string;
-
-type RetrieveAListOfStoreBankAccountsRequestEmbeds = string;
-
-type RetrieveAListOfSubscriptionProductsRequestEmbeds = string;
-
-type CreateASubscriptionPaymentRuleRequestEmbeds = string;
-
-type UpdateSubscriptionProductsRequestEmbeds = string;
-
-type DeleteSubscriptionProductsRequestEmbeds = string;
-
-type RetrieveActivationInformationForTaxManagerRequestEmbeds = string;
-
-type RetrieveAListOfAdminUsersRequestEmbeds = string;
-
-type RetrieveAdminUserDetailsRequestEmbeds = string;
-
-type RetrieveAListOfBundlesRequestEmbeds =
+type RetrieveAListOfActionLogsEmbeds = string;
+
+type RetrieveAnActionLogEmbeds = string;
+
+type RetrieveTheListOfAvailableVariablesForAutomatedMessagesEmbeds = string;
+
+type RetrieveTheAutomatedMessageSettingsEmbeds = string;
+
+type UpdateAnAutomatedMessageEmbeds = string;
+
+type RetrieveCouponSettingsEmbeds = string;
+
+type UpdateCouponSettingsEmbeds = string;
+
+type RetrieveCurrencySettingsEmbeds = string;
+
+type RetrieveMemberRelatedSettingsEmbeds = string;
+
+type RetrieveADashboardEmbeds = string;
+
+type RetrieveAListOfPaymentGatewayContractDetailsEmbeds = string;
+
+type RetrieveTheTransactionInformationOfAStoreEmbeds = string;
+
+type RetrieveProductImageSizeSettingsEmbeds = string;
+
+type UpdateProductImageSizeSettingsEmbeds = string;
+
+type RetrieveAKakaoChannelSenderProfileKeyEmbeds = string;
+
+type RetrieveTheKakaoInfoTalkSettingsEmbeds = string;
+
+type UpdateTheKakaoInfoTalkSettingsEmbeds = string;
+
+type RetrieveSettingsForKakaopayOrdersEmbeds = string;
+
+type UpdateSettingsForKakaopayOrdersEmbeds = string;
+
+type RetrieveMenusEmbeds = string;
+
+type RetrieveMobileSettingsEmbeds = string;
+
+type RetrieveNaverPaySettingsEmbeds = string;
+
+type CreateNaverPaySettingsEmbeds = string;
+
+type UpdateNaverPaySettingsEmbeds = string;
+
+type RetrieveOrderSettingsEmbeds = string;
+
+type UpdateOrderSettingsEmbeds = string;
+
+type RetrieveOrderStatusDisplayedEmbeds = string;
+
+type UpdateOrderStatusDisplayedEmbeds = string;
+
+type RetrieveEscrowSettingsEmbeds = string;
+
+type UpdateEscrowSettingsEmbeds = string;
+
+type CreateAPaymentGatewayEmbeds = string;
+
+type UpdateAPaymentGatewayEmbeds = string;
+
+type DeleteAPaymentGatewayEmbeds = string;
+
+type RetrieveAListOfPaymentGatewayMethodsEmbeds = string;
+
+type CreateAPaymentGatewayMethodEmbeds = string;
+
+type UpdateAPaymentMethodOfAPaymentGatewayEmbeds = string;
+
+type DeleteAPaymentMethodOfAPaymentGatewayEmbeds = string;
+
+type RetrieveAListOfPaymentMethodsEmbeds = string;
+
+type RetrieveAListOfProvidersByPaymentMethodEmbeds = string;
+
+type UpdateTheDisplayStatusOfAPaymentMethodEmbeds = string;
+
+type RetrievePointsSettingsEmbeds = string;
+
+type UpdatePointsSettingsEmbeds = string;
+
+type RetrieveProductSettingsEmbeds = string;
+
+type RetrieveAListOfRedirectsEmbeds = string;
+
+type CreateARedirectEmbeds = string;
+
+type UpdateARedirectEmbeds = string;
+
+type DeleteARedirectEmbeds = string;
+
+type RetrieveSeoSettingsEmbeds = string;
+
+type UpdateStoreSeoSettingsEmbeds = string;
+
+type RetrieveActivationInformationForShippingManagerEmbeds = string;
+
+type RetrieveAListOfShopsEmbeds = string;
+
+type RetrieveAShopEmbeds = string;
+
+type RetrieveSmsSettingsEmbeds = string;
+
+type UpdateSmsSettingsEmbeds = string;
+
+type AppleLoginSyncDetailsEmbeds = string;
+
+type AppleLoginSyncSettingsEmbeds = string;
+
+type KakaoSyncDetailsEmbeds = string;
+
+type KakaoSyncUpdatesEmbeds = string;
+
+type NaverLoginDetailsEmbeds = string;
+
+type UpdateNaverLoginSettingsEmbeds = string;
+
+type RetrieveStoreDetailsEmbeds = string;
+
+type RetrieveAListOfStoreBankAccountsEmbeds = string;
+
+type RetrieveAListOfSubscriptionProductsEmbeds = string;
+
+type CreateASubscriptionPaymentRuleEmbeds = string;
+
+type UpdateSubscriptionProductsEmbeds = string;
+
+type DeleteSubscriptionProductsEmbeds = string;
+
+type RetrieveActivationInformationForTaxManagerEmbeds = string;
+
+type RetrieveAListOfAdminUsersEmbeds = string;
+
+type RetrieveAdminUserDetailsEmbeds = string;
+
+type RetrieveAListOfBundlesEmbeds =
   /**
    * @description
    * 상품 할인판매가 리소스
@@ -45029,7 +41336,7 @@ type RetrieveAListOfBundlesRequestEmbeds =
    */
   | "additionalimages";
 
-type RetrieveABundleRequestEmbeds =
+type RetrieveABundleEmbeds =
   /**
    * @description
    * 상품 할인판매가 리소스
@@ -45079,33 +41386,33 @@ type RetrieveABundleRequestEmbeds =
    */
   | "additionalimages";
 
-type CreateABundleRequestEmbeds = string;
+type CreateABundleEmbeds = string;
 
-type UpdateABundleRequestEmbeds = string;
+type UpdateABundleEmbeds = string;
 
-type DeleteABundleRequestEmbeds = string;
+type DeleteABundleEmbeds = string;
 
-type RetrieveAListOfProductsByCategoryRequestEmbeds = string;
+type RetrieveAListOfProductsByCategoryEmbeds = string;
 
-type RetrieveACountOfProductsByCategoryRequestEmbeds = string;
+type RetrieveACountOfProductsByCategoryEmbeds = string;
 
-type AddProductsToACategoryRequestEmbeds = string;
+type AddProductsToACategoryEmbeds = string;
 
-type UpdateAProductInProductCategoryRequestEmbeds = string;
+type UpdateAProductInProductCategoryEmbeds = string;
 
-type DeleteAProductByCategoryRequestEmbeds = string;
+type DeleteAProductByCategoryEmbeds = string;
 
-type RetrieveAListOfProductsInMainCategoryRequestEmbeds = string;
+type RetrieveAListOfProductsInMainCategoryEmbeds = string;
 
-type RetrieveACountOfProductsInMainCategoryRequestEmbeds = string;
+type RetrieveACountOfProductsInMainCategoryEmbeds = string;
 
-type SetMainCategoryProductsRequestEmbeds = string;
+type SetMainCategoryProductsEmbeds = string;
 
-type UpdateFixedSortingOfProductsInMainCategoryRequestEmbeds = string;
+type UpdateFixedSortingOfProductsInMainCategoryEmbeds = string;
 
-type DeleteAProductInMainCategoryRequestEmbeds = string;
+type DeleteAProductInMainCategoryEmbeds = string;
 
-type RetrieveAListOfProductsRequestEmbeds =
+type RetrieveAListOfProductsEmbeds =
   /**
    * @description
    * 상품 할인판매가 리소스
@@ -45158,9 +41465,9 @@ type RetrieveAListOfProductsRequestEmbeds =
    */
   | "hits";
 
-type RetrieveACountOfProductsRequestEmbeds = string;
+type RetrieveACountOfProductsEmbeds = string;
 
-type RetrieveAProductResourceRequestEmbeds =
+type RetrieveAProductResourceEmbeds =
   /**
    * @description
    * 품목 리소스
@@ -45246,85 +41553,85 @@ type RetrieveAProductResourceRequestEmbeds =
    */
   | "customProperties";
 
-type CreateAProductRequestEmbeds = string;
+type CreateAProductEmbeds = string;
 
-type UpdateAProductRequestEmbeds = string;
+type UpdateAProductEmbeds = string;
 
-type DeleteAProductRequestEmbeds = string;
+type DeleteAProductEmbeds = string;
 
-type CreateAnAdditionalProductImageRequestEmbeds = string;
+type CreateAnAdditionalProductImageEmbeds = string;
 
-type UpdateAnAdditionalProductImageRequestEmbeds = string;
+type UpdateAnAdditionalProductImageEmbeds = string;
 
-type DeleteAnAdditionalProductImageRequestEmbeds = string;
+type DeleteAnAdditionalProductImageEmbeds = string;
 
-type RetrieveAProductApprovalStatusRequestEmbeds = string;
+type RetrieveAProductApprovalStatusEmbeds = string;
 
-type CreateAProductApprovalRequestRequestEmbeds = string;
+type CreateAProductApprovalRequestEmbeds = string;
 
-type UpdateAProductApprovalStatusRequestEmbeds = string;
+type UpdateAProductApprovalStatusEmbeds = string;
 
-type RetrieveUserDefinedPropertiesByProductRequestEmbeds = string;
+type RetrieveUserDefinedPropertiesByProductEmbeds = string;
 
-type UpdateUserDefinedPropertiesByProductRequestEmbeds = string;
+type UpdateUserDefinedPropertiesByProductEmbeds = string;
 
-type DeleteUserDefinedPropertiesByProductRequestEmbeds = string;
+type DeleteUserDefinedPropertiesByProductEmbeds = string;
 
-type RetrieveAListOfProductDecorationImagesRequestEmbeds = string;
+type RetrieveAListOfProductDecorationImagesEmbeds = string;
 
-type SetDecorationImagesForAProductRequestEmbeds = string;
+type SetDecorationImagesForAProductEmbeds = string;
 
-type UpdateProductDecorationImagesRequestEmbeds = string;
+type UpdateProductDecorationImagesEmbeds = string;
 
-type RemoveAProductDecorationImageRequestEmbeds = string;
+type RemoveAProductDecorationImageEmbeds = string;
 
-type RetrieveAProductDiscountedPriceRequestEmbeds = string;
+type RetrieveAProductDiscountedPriceEmbeds = string;
 
-type RetrieveACountOfProductViewsRequestEmbeds = string;
+type RetrieveACountOfProductViewsEmbeds = string;
 
-type RetrieveAListOfProductIconsRequestEmbeds = string;
+type RetrieveAListOfProductIconsEmbeds = string;
 
-type SetIconsForAProductRequestEmbeds = string;
+type SetIconsForAProductEmbeds = string;
 
-type UpdateProductIconsRequestEmbeds = string;
+type UpdateProductIconsEmbeds = string;
 
-type RemoveAProductIconRequestEmbeds = string;
+type RemoveAProductIconEmbeds = string;
 
-type UploadProductImagesRequestEmbeds = string;
+type UploadProductImagesEmbeds = string;
 
-type DeleteProductImagesRequestEmbeds = string;
+type DeleteProductImagesEmbeds = string;
 
-type RetrieveAListOfProductMemosRequestEmbeds = string;
+type RetrieveAListOfProductMemosEmbeds = string;
 
-type RetrieveAProductMemoRequestEmbeds = string;
+type RetrieveAProductMemoEmbeds = string;
 
-type CreateAProductMemoRequestEmbeds = string;
+type CreateAProductMemoEmbeds = string;
 
-type UpdateAProductMemoRequestEmbeds = string;
+type UpdateAProductMemoEmbeds = string;
 
-type DeleteAProductMemoRequestEmbeds = string;
+type DeleteAProductMemoEmbeds = string;
 
-type RetrieveAListOfProductOptionsRequestEmbeds = string;
+type RetrieveAListOfProductOptionsEmbeds = string;
 
-type CreateProductOptionsRequestEmbeds = string;
+type CreateProductOptionsEmbeds = string;
 
-type UpdateProductOptionsRequestEmbeds = string;
+type UpdateProductOptionsEmbeds = string;
 
-type DeleteAProductOptionRequestEmbeds = string;
+type DeleteAProductOptionEmbeds = string;
 
-type RetrieveAProductSSeoSettingsRequestEmbeds = string;
+type RetrieveAProductSSeoSettingsEmbeds = string;
 
-type UpdateProductSeoSettingsRequestEmbeds = string;
+type UpdateProductSeoSettingsEmbeds = string;
 
-type RetrieveACountOfAProductSProductTagsRequestEmbeds = string;
+type RetrieveACountOfAProductSProductTagsEmbeds = string;
 
-type RetrieveAListOfAProductSProductTagsRequestEmbeds = string;
+type RetrieveAListOfAProductSProductTagsEmbeds = string;
 
-type CreateProductTagsRequestEmbeds = string;
+type CreateProductTagsEmbeds = string;
 
-type DeleteAProductTagRequestEmbeds = string;
+type DeleteAProductTagEmbeds = string;
 
-type RetrieveAListOfProductVariantsRequestEmbeds =
+type RetrieveAListOfProductVariantsEmbeds =
   /**
    * @description
    * 재고 리소스
@@ -45337,7 +41644,7 @@ type RetrieveAListOfProductVariantsRequestEmbeds =
 
   "inventories";
 
-type RetrieveAProductVariantRequestEmbeds =
+type RetrieveAProductVariantEmbeds =
   /**
    * @description
    * 재고 리소스
@@ -45348,72 +41655,71 @@ type RetrieveAProductVariantRequestEmbeds =
 
   "inventories";
 
-type UpdateAProductVariantRequestEmbeds = string;
+type UpdateAProductVariantEmbeds = string;
 
-type UpdateMultipleProductVariantsRequestEmbeds = string;
+type UpdateMultipleProductVariantsEmbeds = string;
 
-type DeleteAProductVariantRequestEmbeds = string;
+type DeleteAProductVariantEmbeds = string;
 
-type RetrieveInventoryDetailsOfAProductVariantRequestEmbeds = string;
+type RetrieveInventoryDetailsOfAProductVariantEmbeds = string;
 
-type UpdateAProductVariantInventoryRequestEmbeds = string;
+type UpdateAProductVariantInventoryEmbeds = string;
 
-type RetrieveUserDefinedPropertiesRequestEmbeds = string;
+type RetrieveUserDefinedPropertiesEmbeds = string;
 
-type CreateUserDefinedPropertiesRequestEmbeds = string;
+type CreateUserDefinedPropertiesEmbeds = string;
 
-type UpdateUserDefinedPropertiesRequestEmbeds = string;
+type UpdateUserDefinedPropertiesEmbeds = string;
 
-type DeleteUserDefinedPropertiesRequestEmbeds = string;
+type DeleteUserDefinedPropertiesEmbeds = string;
 
-type RetrieveAListOfDecorationImagesRequestEmbeds = string;
+type RetrieveAListOfDecorationImagesEmbeds = string;
 
-type RetrieveAListOfIconsRequestEmbeds = string;
+type RetrieveAListOfIconsEmbeds = string;
 
-type UploadImagesRequestEmbeds = string;
+type UploadImagesEmbeds = string;
 
-type RetrieveAnOrderCancellationRequestEmbeds = string;
+type RetrieveAnOrderCancellationEmbeds = string;
 
-type CreateMultipleOrderCancellationsRequestEmbeds = string;
+type CreateMultipleOrderCancellationsEmbeds = string;
 
-type ChangeCancellationDetailsInBulkRequestEmbeds = string;
+type ChangeCancellationDetailsInBulkEmbeds = string;
 
-type CreateACancellationRequestForMultipleItemsRequestEmbeds = string;
+type CreateACancellationRequestForMultipleItemsEmbeds = string;
 
-type RejectACancellationRequestForMultipleItemsRequestEmbeds = string;
+type RejectACancellationRequestForMultipleItemsEmbeds = string;
 
-type RetrieveAListOfCashReceiptsRequestEmbeds = string;
+type RetrieveAListOfCashReceiptsEmbeds = string;
 
-type CreateACashReceiptRequestEmbeds = string;
+type CreateACashReceiptEmbeds = string;
 
-type UpdateACashReceiptRequestEmbeds = string;
+type UpdateACashReceiptEmbeds = string;
 
-type UpdateACashReceiptCancellationRequestEmbeds = string;
+type UpdateACashReceiptCancellationEmbeds = string;
 
-type UpdateACollectionRequestRequestEmbeds = string;
+type UpdateACollectionRequestEmbeds = string;
 
-type OrderControlRequestEmbeds = string;
+type OrderControlEmbeds = string;
 
-type CreateADraftOrderRequestEmbeds = string;
+type CreateADraftOrderEmbeds = string;
 
-type RetrieveAnExchangeRequestEmbeds = string;
+type RetrieveAnExchangeEmbeds = string;
 
-type CreateMultipleExchangesRequestEmbeds = string;
+type CreateMultipleExchangesEmbeds = string;
 
-type UpdateMultipleOrderExchangesRequestEmbeds = string;
+type UpdateMultipleOrderExchangesEmbeds = string;
 
-type BulkExchangeRequestApiRequestEmbeds = string;
+type BulkExchangeRequestApiEmbeds = string;
 
-type RejectAnExchangeRequestForMultipleItemsRequestEmbeds = string;
+type RejectAnExchangeRequestForMultipleItemsEmbeds = string;
 
-type CreateShippingInformationForMultipleOrdersViaFulfillmentRequestEmbeds =
-  string;
+type CreateShippingInformationForMultipleOrdersViaFulfillmentEmbeds = string;
 
-type RetrieveOrderLabelsRequestEmbeds = string;
+type RetrieveOrderLabelsEmbeds = string;
 
-type CreateMultipleOrderLabelsRequestEmbeds = string;
+type CreateMultipleOrderLabelsEmbeds = string;
 
-type RetrieveAListOfOrdersRequestEmbeds =
+type RetrieveAListOfOrdersEmbeds =
   /**
    * @description
    * 품주 리소스
@@ -45457,7 +41763,7 @@ type RetrieveAListOfOrdersRequestEmbeds =
    */
   | "exchange";
 
-type RetrieveAnOrderRequestEmbeds =
+type RetrieveAnOrderEmbeds =
   /**
    * @description
    * 품주 리소스
@@ -45515,129 +41821,129 @@ type RetrieveAnOrderRequestEmbeds =
    */
   | "refunds";
 
-type RetrieveACountOfOrdersRequestEmbeds = string;
+type RetrieveACountOfOrdersEmbeds = string;
 
-type UpdateStatusForMultipleOrdersRequestEmbeds = string;
+type UpdateStatusForMultipleOrdersEmbeds = string;
 
-type UpdateAnOrderStatusRequestEmbeds = string;
+type UpdateAnOrderStatusEmbeds = string;
 
-type RemoveAutoCalculationSettingOfAnOrderRequestEmbeds = string;
+type RemoveAutoCalculationSettingOfAnOrderEmbeds = string;
 
-type RetrieveCustomerDetailsOfAnOrderRequestEmbeds = string;
+type RetrieveCustomerDetailsOfAnOrderEmbeds = string;
 
-type UpdateCustomerInformationOfAnOrderRequestEmbeds = string;
+type UpdateCustomerInformationOfAnOrderEmbeds = string;
 
-type RetrieveAListOfCustomerHistoryOfAnOrderRequestEmbeds = string;
+type RetrieveAListOfCustomerHistoryOfAnOrderEmbeds = string;
 
-type CreateAnOrderCancellationRequestEmbeds = string;
+type CreateAnOrderCancellationEmbeds = string;
 
-type ChangeCancellationDetailsRequestEmbeds = string;
+type ChangeCancellationDetailsEmbeds = string;
 
-type CreateAnOrderExchangeRequestEmbeds = string;
+type CreateAnOrderExchangeEmbeds = string;
 
-type UpdateAnOrderExchangeRequestEmbeds = string;
+type UpdateAnOrderExchangeEmbeds = string;
 
-type RejectAnExchangeRequestRequestEmbeds = string;
+type RejectAnExchangeRequestEmbeds = string;
 
-type RetrieveAListOfOrderItemsRequestEmbeds = string;
+type RetrieveAListOfOrderItemsEmbeds = string;
 
-type CreateAnOrderItemRequestEmbeds = string;
+type CreateAnOrderItemEmbeds = string;
 
-type UpdateAnOrderItemRequestEmbeds = string;
+type UpdateAnOrderItemEmbeds = string;
 
-type RetrieveAnOrderLabelRequestEmbeds = string;
+type RetrieveAnOrderLabelEmbeds = string;
 
-type CreateAnOrderLabelRequestEmbeds = string;
+type CreateAnOrderLabelEmbeds = string;
 
-type UpdateAnOrderLabelRequestEmbeds = string;
+type UpdateAnOrderLabelEmbeds = string;
 
-type DeleteAnOrderLabelRequestEmbeds = string;
+type DeleteAnOrderLabelEmbeds = string;
 
-type CreateOrderItemOptionsRequestEmbeds = string;
+type CreateOrderItemOptionsEmbeds = string;
 
-type EditOrderItemOptionsRequestEmbeds = string;
+type EditOrderItemOptionsEmbeds = string;
 
-type RetrieveAListOfOrderMemosRequestEmbeds = string;
+type RetrieveAListOfOrderMemosEmbeds = string;
 
-type CreateAnOrderMemoRequestEmbeds = string;
+type CreateAnOrderMemoEmbeds = string;
 
-type UpdateAnOrderMemoRequestEmbeds = string;
+type UpdateAnOrderMemoEmbeds = string;
 
-type DeleteAnOrderMemoRequestEmbeds = string;
+type DeleteAnOrderMemoEmbeds = string;
 
-type UpdateAnOrderPaymentStatusRequestEmbeds = string;
+type UpdateAnOrderPaymentStatusEmbeds = string;
 
-type RetrievePaymentHistoryOfAnOrderRequestEmbeds = string;
+type RetrievePaymentHistoryOfAnOrderEmbeds = string;
 
-type RetrievePaymentDetailsOfAnOrderRequestEmbeds = string;
+type RetrievePaymentDetailsOfAnOrderEmbeds = string;
 
-type RetrieveAListOfRecipientsOfAnOrderRequestEmbeds = string;
+type RetrieveAListOfRecipientsOfAnOrderEmbeds = string;
 
-type UpdateOrderRecipientsRequestEmbeds = string;
+type UpdateOrderRecipientsEmbeds = string;
 
-type ChangeShippingInformationRequestEmbeds = string;
+type ChangeShippingInformationEmbeds = string;
 
-type RetrieveAListOfRecipientHistoryOfAnOrderRequestEmbeds = string;
+type RetrieveAListOfRecipientHistoryOfAnOrderEmbeds = string;
 
-type UpdateAnOrderRefundRequestEmbeds = string;
+type UpdateAnOrderRefundEmbeds = string;
 
-type CreateAnOrderReturnRequestEmbeds = string;
+type CreateAnOrderReturnEmbeds = string;
 
-type UpdateAnOrderReturnRequestEmbeds = string;
+type UpdateAnOrderReturnEmbeds = string;
 
-type RetrieveAListOfShippingInformationOfAnOrderRequestEmbeds = string;
+type RetrieveAListOfShippingInformationOfAnOrderEmbeds = string;
 
-type CreateAnOrderShippingInformationRequestEmbeds = string;
+type CreateAnOrderShippingInformationEmbeds = string;
 
-type UpdateAnOrderShippingRequestEmbeds = string;
+type UpdateAnOrderShippingEmbeds = string;
 
-type DeleteAnOrderShippingRequestEmbeds = string;
+type DeleteAnOrderShippingEmbeds = string;
 
-type RetrieveShippingFeeCancellationDetailsOfAnOrderRequestEmbeds = string;
+type RetrieveShippingFeeCancellationDetailsOfAnOrderEmbeds = string;
 
-type CreateAnOrderShippingFeeCancellationRequestEmbeds = string;
+type CreateAnOrderShippingFeeCancellationEmbeds = string;
 
-type CreateAnOrderCancellationOnStockShortageRequestEmbeds = string;
+type CreateAnOrderCancellationOnStockShortageEmbeds = string;
 
-type RetrieveAListOfOrderBenefitsAppliedToAnOrderRequestEmbeds = string;
+type RetrieveAListOfOrderBenefitsAppliedToAnOrderEmbeds = string;
 
-type CalculateTotalDueRequestEmbeds = string;
+type CalculateTotalDueEmbeds = string;
 
-type RetrieveAListOfCouponsAppliedToAnOrderRequestEmbeds = string;
+type RetrieveAListOfCouponsAppliedToAnOrderEmbeds = string;
 
-type RetrieveAListOfTrafficSourceGroupsRequestEmbeds = string;
+type RetrieveAListOfTrafficSourceGroupsEmbeds = string;
 
-type CreateATrafficSourceGroupRequestEmbeds = string;
+type CreateATrafficSourceGroupEmbeds = string;
 
-type UpdateATrafficSourceGroupRequestEmbeds = string;
+type UpdateATrafficSourceGroupEmbeds = string;
 
-type DeleteATrafficSourceGroupRequestEmbeds = string;
+type DeleteATrafficSourceGroupEmbeds = string;
 
-type RetrieveAListOfGroupTrafficSourcesRequestEmbeds = string;
+type RetrieveAListOfGroupTrafficSourcesEmbeds = string;
 
-type CreateAGroupTrafficSourceRequestEmbeds = string;
+type CreateAGroupTrafficSourceEmbeds = string;
 
-type UpdateAGroupTrafficSourceRequestEmbeds = string;
+type UpdateAGroupTrafficSourceEmbeds = string;
 
-type DeleteAGroupTrafficSourceRequestEmbeds = string;
+type DeleteAGroupTrafficSourceEmbeds = string;
 
-type RetrieveAListOfAdminMemosForAnOrderRequestEmbeds = string;
+type RetrieveAListOfAdminMemosForAnOrderEmbeds = string;
 
-type RetrieveAPaymentAmountRequestEmbeds = string;
+type RetrieveAPaymentAmountEmbeds = string;
 
-type RetrieveAListOfSalesChannelsRequestEmbeds = string;
+type RetrieveAListOfSalesChannelsEmbeds = string;
 
-type CreateASalesChannelRequestEmbeds = string;
+type CreateASalesChannelEmbeds = string;
 
-type UpdateASalesChannelRequestEmbeds = string;
+type UpdateASalesChannelEmbeds = string;
 
-type DeleteASalesChannelRequestEmbeds = string;
+type DeleteASalesChannelEmbeds = string;
 
-type UpdatePaymentStatusForMultipleOrdersRequestEmbeds = string;
+type UpdatePaymentStatusForMultipleOrdersEmbeds = string;
 
-type RetrieveAListOfRefundsRequestEmbeds = string;
+type RetrieveAListOfRefundsEmbeds = string;
 
-type RetrieveARefundRequestEmbeds =
+type RetrieveARefundEmbeds =
   /**
    * @description
    * 품주 리소스
@@ -45645,409 +41951,409 @@ type RetrieveARefundRequestEmbeds =
 
   "items";
 
-type RetrievePreOrderItemRequestEmbeds = string;
+type RetrievePreOrderItemEmbeds = string;
 
-type RetrieveAReturnRequestEmbeds = string;
+type RetrieveAReturnEmbeds = string;
 
-type CreateMultipleOrderReturnsRequestEmbeds = string;
+type CreateMultipleOrderReturnsEmbeds = string;
 
-type UpdateAReturnRequestEmbeds = string;
+type UpdateAReturnEmbeds = string;
 
-type CreateAReturnRequestForMultipleItemsRequestEmbeds = string;
+type CreateAReturnRequestForMultipleItemsEmbeds = string;
 
-type RejectAReturnRequestForMultipleItemsRequestEmbeds = string;
+type RejectAReturnRequestForMultipleItemsEmbeds = string;
 
-type CreateShippingInformationForMultipleOrdersRequestEmbeds = string;
+type CreateShippingInformationForMultipleOrdersEmbeds = string;
 
-type UpdateMultipleOrderShippingsRequestEmbeds = string;
+type UpdateMultipleOrderShippingsEmbeds = string;
 
-type RetrieveASubscriptionRequestEmbeds = string;
+type RetrieveASubscriptionEmbeds = string;
 
-type CreateASubscriptionRequestEmbeds = string;
+type CreateASubscriptionEmbeds = string;
 
-type UpdateASubscriptionRequestEmbeds = string;
+type UpdateASubscriptionEmbeds = string;
 
-type UpdateProductVariantsInSubscriptionRequestEmbeds = string;
+type UpdateProductVariantsInSubscriptionEmbeds = string;
 
-type RetrieveAListOfCustomerTiersRequestEmbeds = string;
+type RetrieveAListOfCustomerTiersEmbeds = string;
 
-type RetrieveACountOfCustomerTiersRequestEmbeds = string;
+type RetrieveACountOfCustomerTiersEmbeds = string;
 
-type RetrieveACustomerTierRequestEmbeds = string;
+type RetrieveACustomerTierEmbeds = string;
 
-type UpdateACustomerSCustomerTierRequestEmbeds = string;
+type UpdateACustomerSCustomerTierEmbeds = string;
 
-type RetrieveCustomerTierSettingsRequestEmbeds = string;
+type RetrieveCustomerTierSettingsEmbeds = string;
 
-type RetrieveAListOfCustomersRequestEmbeds = string;
+type RetrieveAListOfCustomersEmbeds = string;
 
-type DeleteAnAccountRequestEmbeds = string;
+type DeleteAnAccountEmbeds = string;
 
-type RetrieveCustomerTierAutoUpdateDetailsRequestEmbeds = string;
+type RetrieveCustomerTierAutoUpdateDetailsEmbeds = string;
 
-type RetrieveACountOfCustomerMemosRequestEmbeds = string;
+type RetrieveACountOfCustomerMemosEmbeds = string;
 
-type RetrieveAListOfCustomerMemosRequestEmbeds = string;
+type RetrieveAListOfCustomerMemosEmbeds = string;
 
-type RetrieveACustomerMemoRequestEmbeds = string;
+type RetrieveACustomerMemoEmbeds = string;
 
-type CreateACustomerMemoRequestEmbeds = string;
+type CreateACustomerMemoEmbeds = string;
 
-type UpdateACustomerMemoRequestEmbeds = string;
+type UpdateACustomerMemoEmbeds = string;
 
-type DeleteACustomerMemoRequestEmbeds = string;
+type DeleteACustomerMemoEmbeds = string;
 
-type RetrieveACustomerSListOfPaymentMethodsRequestEmbeds = string;
+type RetrieveACustomerSListOfPaymentMethodsEmbeds = string;
 
-type DeleteCustomerSPaymentInformationRequestEmbeds = string;
+type DeleteCustomerSPaymentInformationEmbeds = string;
 
-type DeleteCustomerSPaymentInformationByPaymentMethodIdRequestEmbeds = string;
+type DeleteCustomerSPaymentInformationByPaymentMethodIdEmbeds = string;
 
-type RetrieveAppInstallationInformationRequestEmbeds = string;
+type RetrieveAppInstallationInformationEmbeds = string;
 
-type RetrieveACustomerSSocialAccountRequestEmbeds = string;
+type RetrieveACustomerSSocialAccountEmbeds = string;
 
-type RetrieveAListOfBoardsRequestEmbeds = string;
+type RetrieveAListOfBoardsEmbeds = string;
 
-type RetrieveAListOfPostsForABoardRequestEmbeds = string;
+type RetrieveAListOfPostsForABoardEmbeds = string;
 
-type CreateABoardPostRequestEmbeds = string;
+type CreateABoardPostEmbeds = string;
 
-type UpdateABoardPostRequestEmbeds = string;
+type UpdateABoardPostEmbeds = string;
 
-type DeleteABoardPostRequestEmbeds = string;
+type DeleteABoardPostEmbeds = string;
 
-type RetrieveAListOfCommentsForABoardPostRequestEmbeds = string;
+type RetrieveAListOfCommentsForABoardPostEmbeds = string;
 
-type CreateACommentForABoardPostRequestEmbeds = string;
+type CreateACommentForABoardPostEmbeds = string;
 
-type DeleteACommentForABoardPostRequestEmbeds = string;
+type DeleteACommentForABoardPostEmbeds = string;
 
-type RetrieveCommentsInBulkRequestEmbeds = string;
+type RetrieveCommentsInBulkEmbeds = string;
 
-type RetrieveSeoSettingsForBoardRequestEmbeds = string;
+type RetrieveSeoSettingsForBoardEmbeds = string;
 
-type UpdateSeoSettingsForBoardRequestEmbeds = string;
+type UpdateSeoSettingsForBoardEmbeds = string;
 
-type RetrieveTheTotalCountForMonthlyReviewsAndRatingsRequestEmbeds = string;
+type RetrieveTheTotalCountForMonthlyReviewsAndRatingsEmbeds = string;
 
-type RetrieveAnUrgentInquiryPostRequestEmbeds = string;
+type RetrieveAnUrgentInquiryPostEmbeds = string;
 
-type RetrieveAReplyForUrgentInquiryPostRequestEmbeds = string;
+type RetrieveAReplyForUrgentInquiryPostEmbeds = string;
 
-type CreateAReplyForUrgentInquiryPostRequestEmbeds = string;
+type CreateAReplyForUrgentInquiryPostEmbeds = string;
 
-type UpdateAReplyForUrgentInquiryPostRequestEmbeds = string;
+type UpdateAReplyForUrgentInquiryPostEmbeds = string;
 
-type RetrieveAListOfDesginIconsRequestEmbeds = string;
+type RetrieveAListOfDesginIconsEmbeds = string;
 
-type RetrieveAListOfThemesRequestEmbeds = string;
+type RetrieveAListOfThemesEmbeds = string;
 
-type RetrieveACountOfThemesRequestEmbeds = string;
+type RetrieveACountOfThemesEmbeds = string;
 
-type RetrieveAThemeRequestEmbeds = string;
+type RetrieveAThemeEmbeds = string;
 
-type RetrieveAThemePageRequestEmbeds = string;
+type RetrieveAThemePageEmbeds = string;
 
-type CreateAThemePageRequestEmbeds = string;
+type CreateAThemePageEmbeds = string;
 
-type RetrieveAListOfCustomerBenefitsRequestEmbeds = string;
+type RetrieveAListOfCustomerBenefitsEmbeds = string;
 
-type RetrieveACountOfCustomerBenefitsRequestEmbeds = string;
+type RetrieveACountOfCustomerBenefitsEmbeds = string;
 
-type RetrieveACustomerBenefitRequestEmbeds = string;
+type RetrieveACustomerBenefitEmbeds = string;
 
-type CreateACustomerBenefitRequestEmbeds = string;
+type CreateACustomerBenefitEmbeds = string;
 
-type UpdateACustomerBenefitRequestEmbeds = string;
+type UpdateACustomerBenefitEmbeds = string;
 
-type DeleteACustomerBenefitRequestEmbeds = string;
+type DeleteACustomerBenefitEmbeds = string;
 
-type RetrieveAListOfCouponsRequestEmbeds = string;
+type RetrieveAListOfCouponsEmbeds = string;
 
-type RetrieveACountOfCouponsRequestEmbeds = string;
+type RetrieveACountOfCouponsEmbeds = string;
 
-type CreateACouponRequestEmbeds = string;
+type CreateACouponEmbeds = string;
 
-type CouponManagementRequestEmbeds = string;
+type CouponManagementEmbeds = string;
 
-type RetrieveAListOfIssuedCouponsRequestEmbeds = string;
+type RetrieveAListOfIssuedCouponsEmbeds = string;
 
-type CreateCouponIssuanceHistoryRequestEmbeds = string;
+type CreateCouponIssuanceHistoryEmbeds = string;
 
-type RetrieveAListOfCustomerCouponsRequestEmbeds = string;
+type RetrieveAListOfCustomerCouponsEmbeds = string;
 
-type RetrieveACountOfCustomerCouponsRequestEmbeds = string;
+type RetrieveACountOfCustomerCouponsEmbeds = string;
 
-type DeleteACustomerCouponRequestEmbeds = string;
+type DeleteACustomerCouponEmbeds = string;
 
-type RetrieveAListOfDiscountCodesRequestEmbeds = string;
+type RetrieveAListOfDiscountCodesEmbeds = string;
 
-type RetrieveADiscountCodeRequestEmbeds = string;
+type RetrieveADiscountCodeEmbeds = string;
 
-type CreateADiscountCodeRequestEmbeds = string;
+type CreateADiscountCodeEmbeds = string;
 
-type UpdateADiscountCodeRequestEmbeds = string;
+type UpdateADiscountCodeEmbeds = string;
 
-type DeleteADiscountCodeRequestEmbeds = string;
+type DeleteADiscountCodeEmbeds = string;
 
-type RetrieveCouponCodesRequestEmbeds = string;
+type RetrieveCouponCodesEmbeds = string;
 
-type GenerateCouponCodeRequestEmbeds = string;
+type GenerateCouponCodeEmbeds = string;
 
-type DeleteCouponCodeRequestEmbeds = string;
+type DeleteCouponCodeEmbeds = string;
 
-type RetrieveACodeOfCouponCodesRequestEmbeds = string;
+type RetrieveACodeOfCouponCodesEmbeds = string;
 
-type RegisterACodeOfCouponCodesRequestEmbeds = string;
+type RegisterACodeOfCouponCodesEmbeds = string;
 
-type RetrieveAnAppInformationRequestEmbeds = string;
+type RetrieveAnAppInformationEmbeds = string;
 
-type UpdateAnAppInformationRequestEmbeds = string;
+type UpdateAnAppInformationEmbeds = string;
 
-type RetreiveACafe24StoreOrderRequestEmbeds = string;
+type RetreiveACafe24StoreOrderEmbeds = string;
 
-type CreateACafe24StoreOrderRequestEmbeds = string;
+type CreateACafe24StoreOrderEmbeds = string;
 
-type RetrieveAListOfCafe24StorePaymentsRequestEmbeds = string;
+type RetrieveAListOfCafe24StorePaymentsEmbeds = string;
 
-type RetrieveACountOfCafe24StorePaymentsRequestEmbeds = string;
+type RetrieveACountOfCafe24StorePaymentsEmbeds = string;
 
-type RetrieveAListOfDatabridgeWebhookLogsRequestEmbeds = string;
+type RetrieveAListOfDatabridgeWebhookLogsEmbeds = string;
 
-type RetrieveAListOfRecipesRequestEmbeds = string;
+type RetrieveAListOfRecipesEmbeds = string;
 
-type CreateARecipeRequestEmbeds = string;
+type CreateARecipeEmbeds = string;
 
-type DeleteARecipeRequestEmbeds = string;
+type DeleteARecipeEmbeds = string;
 
-type RetrieveAListOfScriptTagsRequestEmbeds = string;
+type RetrieveAListOfScriptTagsEmbeds = string;
 
-type RetrieveACountOfScriptTagsRequestEmbeds = string;
+type RetrieveACountOfScriptTagsEmbeds = string;
 
-type RetrieveAScriptTagRequestEmbeds = string;
+type RetrieveAScriptTagEmbeds = string;
 
-type CreateAScriptTagRequestEmbeds = string;
+type CreateAScriptTagEmbeds = string;
 
-type UpdateAScriptTagRequestEmbeds = string;
+type UpdateAScriptTagEmbeds = string;
 
-type DeleteAScriptTagRequestEmbeds = string;
+type DeleteAScriptTagEmbeds = string;
 
-type RetrieveAListOfWebhookLogsRequestEmbeds = string;
+type RetrieveAListOfWebhookLogsEmbeds = string;
 
-type RetrieveWebhookSettingsRequestEmbeds = string;
+type RetrieveWebhookSettingsEmbeds = string;
 
-type EditWebhookSettingsRequestEmbeds = string;
+type EditWebhookSettingsEmbeds = string;
 
-type RetrieveAListOfAutoLayoutsRequestEmbeds = string;
+type RetrieveAListOfAutoLayoutsEmbeds = string;
 
-type CreateAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+type CreateAutoLayoutForSelectedProductCategoryEmbeds = string;
 
-type UpdateAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+type UpdateAutoLayoutForSelectedProductCategoryEmbeds = string;
 
-type DeleteAutoLayoutForSelectedProductCategoryRequestEmbeds = string;
+type DeleteAutoLayoutForSelectedProductCategoryEmbeds = string;
 
-type RetrieveAListOfProductCategoriesRequestEmbeds = string;
+type RetrieveAListOfProductCategoriesEmbeds = string;
 
-type RetrieveACountOfProductCategoriesRequestEmbeds = string;
+type RetrieveACountOfProductCategoriesEmbeds = string;
 
-type RetrieveAProductCategoryRequestEmbeds = string;
+type RetrieveAProductCategoryEmbeds = string;
 
-type CreateAProductCategoryRequestEmbeds = string;
+type CreateAProductCategoryEmbeds = string;
 
-type UpdateAProductCategoryRequestEmbeds = string;
+type UpdateAProductCategoryEmbeds = string;
 
-type DeleteAProductCategoryRequestEmbeds = string;
+type DeleteAProductCategoryEmbeds = string;
 
-type RetrieveDecorationImageSettingsByCategoryRequestEmbeds = string;
+type RetrieveDecorationImageSettingsByCategoryEmbeds = string;
 
-type UpdateDecorationImagesOfAProductCategoryRequestEmbeds = string;
+type UpdateDecorationImagesOfAProductCategoryEmbeds = string;
 
-type RetrieveSeoSettingsByCategoryRequestEmbeds = string;
+type RetrieveSeoSettingsByCategoryEmbeds = string;
 
-type UpdateAProductCategorySeoRequestEmbeds = string;
+type UpdateAProductCategorySeoEmbeds = string;
 
-type RetrieveAListOfMainCategoriesRequestEmbeds = string;
+type RetrieveAListOfMainCategoriesEmbeds = string;
 
-type RetrieveAListOfBrandsRequestEmbeds = string;
+type RetrieveAListOfBrandsEmbeds = string;
 
-type RetrieveACountOfBrandsRequestEmbeds = string;
+type RetrieveACountOfBrandsEmbeds = string;
 
-type CreateABrandRequestEmbeds = string;
+type CreateABrandEmbeds = string;
 
-type UpdateABrandRequestEmbeds = string;
+type UpdateABrandEmbeds = string;
 
-type DeleteABrandRequestEmbeds = string;
+type DeleteABrandEmbeds = string;
 
-type RetrieveAListOfCustomCategoriesRequestEmbeds = string;
+type RetrieveAListOfCustomCategoriesEmbeds = string;
 
-type RetrieveACountOfCustomCategoriesRequestEmbeds = string;
+type RetrieveACountOfCustomCategoriesEmbeds = string;
 
-type RetrieveAListOfManufacturersRequestEmbeds = string;
+type RetrieveAListOfManufacturersEmbeds = string;
 
-type RetrieveAManufacturerRequestEmbeds = string;
+type RetrieveAManufacturerEmbeds = string;
 
-type RetrieveACountOfManufacturersRequestEmbeds = string;
+type RetrieveACountOfManufacturersEmbeds = string;
 
-type CreateAManufacturerRequestEmbeds = string;
+type CreateAManufacturerEmbeds = string;
 
-type UpdateAManufacturerRequestEmbeds = string;
+type UpdateAManufacturerEmbeds = string;
 
-type RetrieveAListOfOriginsRequestEmbeds = string;
+type RetrieveAListOfOriginsEmbeds = string;
 
-type RetrieveAListOfTrendsRequestEmbeds = string;
+type RetrieveAListOfTrendsEmbeds = string;
 
-type RetrieveACountOfTrendsRequestEmbeds = string;
+type RetrieveACountOfTrendsEmbeds = string;
 
-type RetrieveASupplierSShippingSettingsRequestEmbeds = string;
+type RetrieveASupplierSShippingSettingsEmbeds = string;
 
-type UpdateASupplierSShippingSettingsRequestEmbeds = string;
+type UpdateASupplierSShippingSettingsEmbeds = string;
 
-type RetrieveAListOfSuppliersRequestEmbeds = string;
+type RetrieveAListOfSuppliersEmbeds = string;
 
-type RetrieveACountOfSuppliersRequestEmbeds = string;
+type RetrieveACountOfSuppliersEmbeds = string;
 
-type RetrieveASupplierRequestEmbeds = string;
+type RetrieveASupplierEmbeds = string;
 
-type CreateASupplierRequestEmbeds = string;
+type CreateASupplierEmbeds = string;
 
-type UpdateASupplierRequestEmbeds = string;
+type UpdateASupplierEmbeds = string;
 
-type DeleteASupplierRequestEmbeds = string;
+type DeleteASupplierEmbeds = string;
 
-type RetrieveAListOfSupplierUsersRequestEmbeds = string;
+type RetrieveAListOfSupplierUsersEmbeds = string;
 
-type RetrieveACountOfSupplierUsersRequestEmbeds = string;
+type RetrieveACountOfSupplierUsersEmbeds = string;
 
-type RetrieveSupplierUserDetailsRequestEmbeds = string;
+type RetrieveSupplierUserDetailsEmbeds = string;
 
-type CreateASupplierUserRequestEmbeds = string;
+type CreateASupplierUserEmbeds = string;
 
-type UpdateASupplierUserRequestEmbeds = string;
+type UpdateASupplierUserEmbeds = string;
 
-type DeleteASupplierUserRequestEmbeds = string;
+type DeleteASupplierUserEmbeds = string;
 
-type RetrieveASupplierUserSListOfRegionalShippingFeesRequestEmbeds = string;
+type RetrieveASupplierUserSListOfRegionalShippingFeesEmbeds = string;
 
-type CreateRegionalShippingFeeForASupplierUserRequestEmbeds = string;
+type CreateRegionalShippingFeeForASupplierUserEmbeds = string;
 
-type DeleteSupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+type DeleteSupplierUserSRegionalShippingFeeSettingsEmbeds = string;
 
-type RetrieveASupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+type RetrieveASupplierUserSRegionalShippingFeeSettingsEmbeds = string;
 
-type UpdateASupplierUserSRegionalShippingFeeSettingsRequestEmbeds = string;
+type UpdateASupplierUserSRegionalShippingFeeSettingsEmbeds = string;
 
-type RetrieveAListOfShippingCarriersRequestEmbeds = string;
+type RetrieveAListOfShippingCarriersEmbeds = string;
 
-type RetrieveAShippingCarrierRequestEmbeds = string;
+type RetrieveAShippingCarrierEmbeds = string;
 
-type CreateAShippingCarrierRequestEmbeds = string;
+type CreateAShippingCarrierEmbeds = string;
 
-type UpdateAShippingCarrierRequestEmbeds = string;
+type UpdateAShippingCarrierEmbeds = string;
 
-type DeleteAShippingCarrierRequestEmbeds = string;
+type DeleteAShippingCarrierEmbeds = string;
 
-type RetrieveShippingZoneRatesSettingsRequestEmbeds = string;
+type RetrieveShippingZoneRatesSettingsEmbeds = string;
 
-type RetrieveShippingReturnSettingsRequestEmbeds = string;
+type RetrieveShippingReturnSettingsEmbeds = string;
 
-type UpdateStoreShippingReturnSettingsRequestEmbeds = string;
+type UpdateStoreShippingReturnSettingsEmbeds = string;
 
-type RetrieveAListOfShippingOriginsRequestEmbeds = string;
+type RetrieveAListOfShippingOriginsEmbeds = string;
 
-type RetrieveAShippingOriginRequestEmbeds = string;
+type RetrieveAShippingOriginEmbeds = string;
 
-type CreateAShippingOriginRequestEmbeds = string;
+type CreateAShippingOriginEmbeds = string;
 
-type UpdateAShippingOriginRequestEmbeds = string;
+type UpdateAShippingOriginEmbeds = string;
 
-type DeleteAShippingOriginRequestEmbeds = string;
+type DeleteAShippingOriginEmbeds = string;
 
-type RetrieveAListOfDailySalesRequestEmbeds = string;
+type RetrieveAListOfDailySalesEmbeds = string;
 
-type RetrieveAListOfMonthlySalesRequestEmbeds = string;
+type RetrieveAListOfMonthlySalesEmbeds = string;
 
-type RetrieveHourlySalesStatisticsOfAStoreRequestEmbeds = string;
+type RetrieveHourlySalesStatisticsOfAStoreEmbeds = string;
 
-type RetrieveHourlyProductSalesStatisticsOfAStoreRequestEmbeds = string;
+type RetrieveHourlyProductSalesStatisticsOfAStoreEmbeds = string;
 
-type RetrieveASalesReportRequestEmbeds = string;
+type RetrieveASalesReportEmbeds = string;
 
-type RetrieveAShoppingCartRequestEmbeds = string;
+type RetrieveAShoppingCartEmbeds = string;
 
-type RetrieveACountOfProductsInCustomerWishlistRequestEmbeds = string;
+type RetrieveACountOfProductsInCustomerWishlistEmbeds = string;
 
-type RetrieveAListOfProductsInCustomerWishlistRequestEmbeds = string;
+type RetrieveAListOfProductsInCustomerWishlistEmbeds = string;
 
-type RetrieveACountOfCartsContainingAProductRequestEmbeds = string;
+type RetrieveACountOfCartsContainingAProductEmbeds = string;
 
-type RetrieveAListOfCartsContainingAProductRequestEmbeds = string;
+type RetrieveAListOfCartsContainingAProductEmbeds = string;
 
-type RetrieveAListOfCustomerInformationRequestEmbeds = string;
+type RetrieveAListOfCustomerInformationEmbeds = string;
 
-type RetrieveACountOfCustomerInformationRequestEmbeds = string;
+type RetrieveACountOfCustomerInformationEmbeds = string;
 
-type RetrieveACustomerInformationRequestEmbeds = string;
+type RetrieveACustomerInformationEmbeds = string;
 
-type UpdateACustomerInformationRequestEmbeds = string;
+type UpdateACustomerInformationEmbeds = string;
 
-type RetrieveAListOfCustomersWithAProductInWishlistRequestEmbeds = string;
+type RetrieveAListOfCustomersWithAProductInWishlistEmbeds = string;
 
-type RetrieveACountOfCustomersWithAProductInWishlistRequestEmbeds = string;
+type RetrieveACountOfCustomersWithAProductInWishlistEmbeds = string;
 
-type RetrieveAListOfCreditsByDateRangeRequestEmbeds = string;
+type RetrieveAListOfCreditsByDateRangeEmbeds = string;
 
-type RetrieveACreditReportByDateRangeRequestEmbeds = string;
+type RetrieveACreditReportByDateRangeEmbeds = string;
 
-type RetrievePointsRequestEmbeds = string;
+type RetrievePointsEmbeds = string;
 
-type IssueAndDeductPointsRequestEmbeds = string;
+type IssueAndDeductPointsEmbeds = string;
 
-type RetrieveAnAutomaticPointsExpirationRequestEmbeds = string;
+type RetrieveAnAutomaticPointsExpirationEmbeds = string;
 
-type CreateAnAutomaticPointsExpirationRequestEmbeds = string;
+type CreateAnAutomaticPointsExpirationEmbeds = string;
 
-type DeleteAnAutomaticPointsExpirationRequestEmbeds = string;
+type DeleteAnAutomaticPointsExpirationEmbeds = string;
 
-type RetrieveAPointsReportByDateRangeRequestEmbeds = string;
+type RetrieveAPointsReportByDateRangeEmbeds = string;
 
-type SendAnInvitationToActivateAccountRequestEmbeds = string;
+type SendAnInvitationToActivateAccountEmbeds = string;
 
-type RetrieveDistributionGroupListRequestEmbeds = string;
+type RetrieveDistributionGroupListEmbeds = string;
 
-type RetrieveDistributionGroupDetailsRequestEmbeds = string;
+type RetrieveDistributionGroupDetailsEmbeds = string;
 
-type CreateADistributionGroupRequestEmbeds = string;
+type CreateADistributionGroupEmbeds = string;
 
-type EditDistributionGroupRequestEmbeds = string;
+type EditDistributionGroupEmbeds = string;
 
-type DeleteDistributionGroupRequestEmbeds = string;
+type DeleteDistributionGroupEmbeds = string;
 
-type SendASmsRequestEmbeds = string;
+type SendASmsEmbeds = string;
 
-type RetrieveTheSmsBalanceRequestEmbeds = string;
+type RetrieveTheSmsBalanceEmbeds = string;
 
-type RetrieveAListOfSmsSendersRequestEmbeds = string;
+type RetrieveAListOfSmsSendersEmbeds = string;
 
-type RetrieveAListOfProductCategoryTranslationsRequestEmbeds = string;
+type RetrieveAListOfProductCategoryTranslationsEmbeds = string;
 
-type UpdateProductCategoryTranslationRequestEmbeds = string;
+type UpdateProductCategoryTranslationEmbeds = string;
 
-type RetrieveAListOfProductTranslationsRequestEmbeds = string;
+type RetrieveAListOfProductTranslationsEmbeds = string;
 
-type UpdateProductTranslationRequestEmbeds = string;
+type UpdateProductTranslationEmbeds = string;
 
-type RetrieveAListOfStoreTranslationsRequestEmbeds = string;
+type RetrieveAListOfStoreTranslationsEmbeds = string;
 
-type UpdateTheTranslationsOfAStoreRequestEmbeds = string;
+type UpdateTheTranslationsOfAStoreEmbeds = string;
 
-type RetrieveAListOfThemeTranslationsRequestEmbeds = string;
+type RetrieveAListOfThemeTranslationsEmbeds = string;
 
-type RetrieveAThemeTranslationRequestEmbeds = string;
+type RetrieveAThemeTranslationEmbeds = string;
 
-type UpdateAThemeTranslationRequestEmbeds = string;
+type UpdateAThemeTranslationEmbeds = string;
 
-type RetrieveACountOfDailyvisitsRequestEmbeds = string;
+type RetrieveACountOfDailyvisitsEmbeds = string;
 
 /**
  * @example
@@ -72579,3 +68885,1155 @@ interface RetrieveACountOfDailyvisitsResponse {
     visitorsCount: number;
   }>;
 }
+
+type RetrieveAListOfActionLogsFields =
+  keyof RetrieveAListOfActionLogsResponse["activitylogs"][number];
+
+type RetrieveAnActionLogFields =
+  keyof RetrieveAnActionLogResponse["activitylog"];
+
+type RetrieveTheListOfAvailableVariablesForAutomatedMessagesFields =
+  keyof RetrieveTheListOfAvailableVariablesForAutomatedMessagesResponse["arguments"][number];
+
+type RetrieveTheAutomatedMessageSettingsFields =
+  keyof RetrieveTheAutomatedMessageSettingsResponse["automessages"];
+
+type UpdateAnAutomatedMessageFields =
+  keyof UpdateAnAutomatedMessageResponse["automessages"];
+
+type RetrieveCouponSettingsFields =
+  keyof RetrieveCouponSettingsResponse["coupon"];
+
+type UpdateCouponSettingsFields = keyof UpdateCouponSettingsResponse["coupon"];
+
+type RetrieveCurrencySettingsFields =
+  keyof RetrieveCurrencySettingsResponse["currency"];
+
+type RetrieveMemberRelatedSettingsFields =
+  keyof RetrieveMemberRelatedSettingsResponse["customer"];
+
+type RetrieveADashboardFields =
+  keyof RetrieveADashboardResponse["dashboard"][number];
+
+type RetrieveAListOfPaymentGatewayContractDetailsFields =
+  keyof RetrieveAListOfPaymentGatewayContractDetailsResponse["paymentgateway"];
+
+type RetrieveTheTransactionInformationOfAStoreFields =
+  keyof RetrieveTheTransactionInformationOfAStoreResponse["store"];
+
+type RetrieveProductImageSizeSettingsFields =
+  keyof RetrieveProductImageSizeSettingsResponse["image"];
+
+type UpdateProductImageSizeSettingsFields =
+  keyof UpdateProductImageSizeSettingsResponse["image"];
+
+type RetrieveAKakaoChannelSenderProfileKeyFields =
+  keyof RetrieveAKakaoChannelSenderProfileKeyResponse["kakaoprofile"];
+
+type RetrieveTheKakaoInfoTalkSettingsFields =
+  keyof RetrieveTheKakaoInfoTalkSettingsResponse["kakaoalimtalk"];
+
+type UpdateTheKakaoInfoTalkSettingsFields =
+  keyof UpdateTheKakaoInfoTalkSettingsResponse["kakaoalimtalk"];
+
+type RetrieveSettingsForKakaopayOrdersFields =
+  keyof RetrieveSettingsForKakaopayOrdersResponse["kakaopay"];
+
+type UpdateSettingsForKakaopayOrdersFields =
+  keyof UpdateSettingsForKakaopayOrdersResponse["kakaopay"];
+
+type RetrieveMenusFields = keyof RetrieveMenusResponse["menus"][number];
+
+type RetrieveMobileSettingsFields =
+  keyof RetrieveMobileSettingsResponse["mobile"];
+
+type RetrieveNaverPaySettingsFields =
+  keyof RetrieveNaverPaySettingsResponse["naverpay"];
+
+type CreateNaverPaySettingsFields =
+  keyof CreateNaverPaySettingsResponse["naverpay"];
+
+type UpdateNaverPaySettingsFields =
+  keyof UpdateNaverPaySettingsResponse["naverpay"];
+
+type RetrieveOrderSettingsFields = keyof RetrieveOrderSettingsResponse["order"];
+
+type UpdateOrderSettingsFields = keyof UpdateOrderSettingsResponse["order"];
+
+type RetrieveOrderStatusDisplayedFields =
+  keyof RetrieveOrderStatusDisplayedResponse["status"][number];
+
+type UpdateOrderStatusDisplayedFields =
+  keyof UpdateOrderStatusDisplayedResponse["status"][number];
+
+type RetrieveEscrowSettingsFields =
+  keyof RetrieveEscrowSettingsResponse["setting"];
+
+type UpdateEscrowSettingsFields = keyof UpdateEscrowSettingsResponse["setting"];
+
+type CreateAPaymentGatewayFields =
+  keyof CreateAPaymentGatewayResponse["paymentgateway"];
+
+type UpdateAPaymentGatewayFields =
+  keyof UpdateAPaymentGatewayResponse["paymentgateway"];
+
+type DeleteAPaymentGatewayFields =
+  keyof DeleteAPaymentGatewayResponse["paymentgateway"];
+
+type RetrieveAListOfPaymentGatewayMethodsFields =
+  keyof RetrieveAListOfPaymentGatewayMethodsResponse["paymentmethods"][number];
+
+type CreateAPaymentGatewayMethodFields =
+  keyof CreateAPaymentGatewayMethodResponse["paymentmethod"];
+
+type UpdateAPaymentMethodOfAPaymentGatewayFields =
+  keyof UpdateAPaymentMethodOfAPaymentGatewayResponse["paymentmethod"];
+
+type DeleteAPaymentMethodOfAPaymentGatewayFields =
+  keyof DeleteAPaymentMethodOfAPaymentGatewayResponse["paymentmethod"];
+
+type RetrieveAListOfPaymentMethodsFields =
+  keyof RetrieveAListOfPaymentMethodsResponse["paymentmethods"][number];
+
+type RetrieveAListOfProvidersByPaymentMethodFields =
+  keyof RetrieveAListOfProvidersByPaymentMethodResponse["paymentproviders"][number];
+
+type UpdateTheDisplayStatusOfAPaymentMethodFields =
+  keyof UpdateTheDisplayStatusOfAPaymentMethodResponse["paymentprovider"];
+
+type RetrievePointsSettingsFields =
+  keyof RetrievePointsSettingsResponse["point"];
+
+type UpdatePointsSettingsFields = keyof UpdatePointsSettingsResponse["point"];
+
+type RetrieveProductSettingsFields =
+  keyof RetrieveProductSettingsResponse["product"];
+
+type RetrieveAListOfRedirectsFields =
+  keyof RetrieveAListOfRedirectsResponse["redirects"][number];
+
+type CreateARedirectFields = keyof CreateARedirectResponse["redirects"];
+
+type UpdateARedirectFields = keyof UpdateARedirectResponse["redirects"];
+
+type DeleteARedirectFields = keyof DeleteARedirectResponse["redirects"];
+
+type RetrieveSeoSettingsFields = keyof RetrieveSeoSettingsResponse["seo"];
+
+type UpdateStoreSeoSettingsFields = keyof UpdateStoreSeoSettingsResponse["seo"];
+
+type RetrieveActivationInformationForShippingManagerFields =
+  keyof RetrieveActivationInformationForShippingManagerResponse["shippingmanager"];
+
+type RetrieveAListOfShopsFields =
+  keyof RetrieveAListOfShopsResponse["shops"][number];
+
+type RetrieveAShopFields = keyof RetrieveAShopResponse["shop"];
+
+type RetrieveSmsSettingsFields = keyof RetrieveSmsSettingsResponse["sms"];
+
+type UpdateSmsSettingsFields = keyof UpdateSmsSettingsResponse["sms"];
+
+type AppleLoginSyncDetailsFields = keyof AppleLoginSyncDetailsResponse["apple"];
+
+type AppleLoginSyncSettingsFields =
+  keyof AppleLoginSyncSettingsResponse["apple"];
+
+type KakaoSyncDetailsFields = keyof KakaoSyncDetailsResponse["kakaosync"];
+
+type KakaoSyncUpdatesFields = keyof KakaoSyncUpdatesResponse["kakaosync"];
+
+type NaverLoginDetailsFields = keyof NaverLoginDetailsResponse["naverlogin"];
+
+type UpdateNaverLoginSettingsFields =
+  keyof UpdateNaverLoginSettingsResponse["naverlogin"];
+
+type RetrieveStoreDetailsFields = keyof RetrieveStoreDetailsResponse["store"];
+
+type RetrieveAListOfStoreBankAccountsFields =
+  keyof RetrieveAListOfStoreBankAccountsResponse["accounts"][number];
+
+type RetrieveAListOfSubscriptionProductsFields =
+  keyof RetrieveAListOfSubscriptionProductsResponse["shipments"][number];
+
+type CreateASubscriptionPaymentRuleFields =
+  keyof CreateASubscriptionPaymentRuleResponse["shipment"];
+
+type UpdateSubscriptionProductsFields =
+  keyof UpdateSubscriptionProductsResponse["shipment"];
+
+type DeleteSubscriptionProductsFields =
+  keyof DeleteSubscriptionProductsResponse["shipment"];
+
+type RetrieveActivationInformationForTaxManagerFields =
+  keyof RetrieveActivationInformationForTaxManagerResponse["taxmanager"];
+
+type RetrieveAListOfAdminUsersFields =
+  keyof RetrieveAListOfAdminUsersResponse["users"][number];
+
+type RetrieveAdminUserDetailsFields =
+  keyof RetrieveAdminUserDetailsResponse["user"];
+
+type RetrieveAListOfBundlesFields =
+  keyof RetrieveAListOfBundlesResponse["bundleproducts"][number];
+
+type RetrieveABundleFields = keyof RetrieveABundleResponse["bundleproduct"];
+
+type CreateABundleFields = keyof CreateABundleResponse["bundleproduct"];
+
+type UpdateABundleFields = keyof UpdateABundleResponse["bundleproduct"];
+
+type DeleteABundleFields = keyof DeleteABundleResponse["bundleproduct"];
+
+type RetrieveAListOfProductsByCategoryFields =
+  keyof RetrieveAListOfProductsByCategoryResponse["products"][number];
+
+type RetrieveACountOfProductsByCategoryFields = string;
+
+type AddProductsToACategoryFields =
+  keyof AddProductsToACategoryResponse["product"];
+
+type UpdateAProductInProductCategoryFields =
+  keyof UpdateAProductInProductCategoryResponse["product"];
+
+type DeleteAProductByCategoryFields =
+  keyof DeleteAProductByCategoryResponse["product"];
+
+type RetrieveAListOfProductsInMainCategoryFields =
+  keyof RetrieveAListOfProductsInMainCategoryResponse["products"][number];
+
+type RetrieveACountOfProductsInMainCategoryFields = string;
+
+type SetMainCategoryProductsFields =
+  keyof SetMainCategoryProductsResponse["product"];
+
+type UpdateFixedSortingOfProductsInMainCategoryFields =
+  keyof UpdateFixedSortingOfProductsInMainCategoryResponse["product"];
+
+type DeleteAProductInMainCategoryFields =
+  keyof DeleteAProductInMainCategoryResponse["product"];
+
+type RetrieveAListOfProductsFields =
+  keyof RetrieveAListOfProductsResponse["products"][number];
+
+type RetrieveACountOfProductsFields = string;
+
+type RetrieveAProductResourceFields =
+  keyof RetrieveAProductResourceResponse["product"];
+
+type CreateAProductFields = keyof CreateAProductResponse["product"];
+
+type UpdateAProductFields = keyof UpdateAProductResponse["product"];
+
+type DeleteAProductFields = keyof DeleteAProductResponse["product"];
+
+type CreateAnAdditionalProductImageFields =
+  keyof CreateAnAdditionalProductImageResponse["additionalimage"];
+
+type UpdateAnAdditionalProductImageFields =
+  keyof UpdateAnAdditionalProductImageResponse["additionalimage"];
+
+type DeleteAnAdditionalProductImageFields =
+  keyof DeleteAnAdditionalProductImageResponse["additionalimage"];
+
+type RetrieveAProductApprovalStatusFields =
+  keyof RetrieveAProductApprovalStatusResponse["approve"];
+
+type CreateAProductApprovalRequestFields =
+  keyof CreateAProductApprovalRequestResponse["approve"];
+
+type UpdateAProductApprovalStatusFields =
+  keyof UpdateAProductApprovalStatusResponse["approve"];
+
+type RetrieveUserDefinedPropertiesByProductFields =
+  keyof RetrieveUserDefinedPropertiesByProductResponse["products"];
+
+type UpdateUserDefinedPropertiesByProductFields =
+  keyof UpdateUserDefinedPropertiesByProductResponse["product"];
+
+type DeleteUserDefinedPropertiesByProductFields =
+  keyof DeleteUserDefinedPropertiesByProductResponse["product"];
+
+type RetrieveAListOfProductDecorationImagesFields =
+  keyof RetrieveAListOfProductDecorationImagesResponse["decorationimage"];
+
+type SetDecorationImagesForAProductFields =
+  keyof SetDecorationImagesForAProductResponse["decorationimage"];
+
+type UpdateProductDecorationImagesFields =
+  keyof UpdateProductDecorationImagesResponse["decorationimage"];
+
+type RemoveAProductDecorationImageFields =
+  keyof RemoveAProductDecorationImageResponse["decorationimage"];
+
+type RetrieveAProductDiscountedPriceFields =
+  keyof RetrieveAProductDiscountedPriceResponse["discountprice"];
+
+type RetrieveACountOfProductViewsFields = string;
+
+type RetrieveAListOfProductIconsFields =
+  keyof RetrieveAListOfProductIconsResponse["icons"];
+
+type SetIconsForAProductFields = keyof SetIconsForAProductResponse["icon"];
+
+type UpdateProductIconsFields = keyof UpdateProductIconsResponse["icon"];
+
+type RemoveAProductIconFields = keyof RemoveAProductIconResponse["icon"];
+
+type UploadProductImagesFields = keyof UploadProductImagesResponse["image"];
+
+type DeleteProductImagesFields = keyof DeleteProductImagesResponse["image"];
+
+type RetrieveAListOfProductMemosFields =
+  keyof RetrieveAListOfProductMemosResponse["memos"][number];
+
+type RetrieveAProductMemoFields = keyof RetrieveAProductMemoResponse["memo"];
+
+type CreateAProductMemoFields = keyof CreateAProductMemoResponse["memo"];
+
+type UpdateAProductMemoFields = keyof UpdateAProductMemoResponse["memo"];
+
+type DeleteAProductMemoFields = keyof DeleteAProductMemoResponse["memo"];
+
+type RetrieveAListOfProductOptionsFields =
+  keyof RetrieveAListOfProductOptionsResponse["option"];
+
+type CreateProductOptionsFields = keyof CreateProductOptionsResponse["option"];
+
+type UpdateProductOptionsFields = keyof UpdateProductOptionsResponse["option"];
+
+type DeleteAProductOptionFields = keyof DeleteAProductOptionResponse["option"];
+
+type RetrieveAProductSSeoSettingsFields =
+  keyof RetrieveAProductSSeoSettingsResponse["seo"];
+
+type UpdateProductSeoSettingsFields =
+  keyof UpdateProductSeoSettingsResponse["seo"];
+
+type RetrieveACountOfAProductSProductTagsFields = string;
+
+type RetrieveAListOfAProductSProductTagsFields =
+  keyof RetrieveAListOfAProductSProductTagsResponse["tags"];
+
+type CreateProductTagsFields = keyof CreateProductTagsResponse["tag"];
+
+type DeleteAProductTagFields = keyof DeleteAProductTagResponse["tag"];
+
+type RetrieveAListOfProductVariantsFields =
+  keyof RetrieveAListOfProductVariantsResponse["variants"][number];
+
+type RetrieveAProductVariantFields =
+  keyof RetrieveAProductVariantResponse["variant"];
+
+type UpdateAProductVariantFields =
+  keyof UpdateAProductVariantResponse["variant"];
+
+type UpdateMultipleProductVariantsFields =
+  keyof UpdateMultipleProductVariantsResponse["variants"][number];
+
+type DeleteAProductVariantFields =
+  keyof DeleteAProductVariantResponse["variant"];
+
+type RetrieveInventoryDetailsOfAProductVariantFields =
+  keyof RetrieveInventoryDetailsOfAProductVariantResponse["inventory"];
+
+type UpdateAProductVariantInventoryFields =
+  keyof UpdateAProductVariantInventoryResponse["inventory"];
+
+type RetrieveUserDefinedPropertiesFields =
+  keyof RetrieveUserDefinedPropertiesResponse["products"];
+
+type CreateUserDefinedPropertiesFields =
+  keyof CreateUserDefinedPropertiesResponse["product"];
+
+type UpdateUserDefinedPropertiesFields =
+  keyof UpdateUserDefinedPropertiesResponse["product"];
+
+type DeleteUserDefinedPropertiesFields =
+  keyof DeleteUserDefinedPropertiesResponse["product"];
+
+type RetrieveAListOfDecorationImagesFields =
+  keyof RetrieveAListOfDecorationImagesResponse["decorationimages"][number];
+
+type RetrieveAListOfIconsFields =
+  keyof RetrieveAListOfIconsResponse["icons"][number];
+
+type UploadImagesFields = keyof UploadImagesResponse["images"][number];
+
+type RetrieveAnOrderCancellationFields =
+  keyof RetrieveAnOrderCancellationResponse["cancellation"];
+
+type CreateMultipleOrderCancellationsFields =
+  keyof CreateMultipleOrderCancellationsResponse["cancellation"][number];
+
+type ChangeCancellationDetailsInBulkFields =
+  keyof ChangeCancellationDetailsInBulkResponse["cancellation"][number];
+
+type CreateACancellationRequestForMultipleItemsFields =
+  keyof CreateACancellationRequestForMultipleItemsResponse["cancellationrequests"][number];
+
+type RejectACancellationRequestForMultipleItemsFields =
+  keyof RejectACancellationRequestForMultipleItemsResponse["cancellationrequests"][number];
+
+type RetrieveAListOfCashReceiptsFields =
+  keyof RetrieveAListOfCashReceiptsResponse["cashreceipt"][number];
+
+type CreateACashReceiptFields = keyof CreateACashReceiptResponse["cashreceipt"];
+
+type UpdateACashReceiptFields = keyof UpdateACashReceiptResponse["cashreceipt"];
+
+type UpdateACashReceiptCancellationFields =
+  keyof UpdateACashReceiptCancellationResponse["cancellation"];
+
+type UpdateACollectionRequestFields =
+  keyof UpdateACollectionRequestResponse["collectrequest"];
+
+type OrderControlFields = keyof OrderControlResponse["control"];
+
+type CreateADraftOrderFields =
+  keyof CreateADraftOrderResponse["draftorders"][number];
+
+type RetrieveAnExchangeFields = keyof RetrieveAnExchangeResponse["exchange"];
+
+type CreateMultipleExchangesFields =
+  keyof CreateMultipleExchangesResponse["exchange"][number];
+
+type UpdateMultipleOrderExchangesFields =
+  keyof UpdateMultipleOrderExchangesResponse["exchange"][number];
+
+type BulkExchangeRequestApiFields =
+  keyof BulkExchangeRequestApiResponse["exchangerequests"][number];
+
+type RejectAnExchangeRequestForMultipleItemsFields =
+  keyof RejectAnExchangeRequestForMultipleItemsResponse["exchangerequests"][number];
+
+type CreateShippingInformationForMultipleOrdersViaFulfillmentFields =
+  keyof CreateShippingInformationForMultipleOrdersViaFulfillmentResponse["fulfillments"][number];
+
+type RetrieveOrderLabelsFields = keyof RetrieveOrderLabelsResponse["labels"];
+
+type CreateMultipleOrderLabelsFields =
+  keyof CreateMultipleOrderLabelsResponse["labels"][number];
+
+type RetrieveAListOfOrdersFields =
+  keyof RetrieveAListOfOrdersResponse["orders"][number];
+
+type RetrieveAnOrderFields = keyof RetrieveAnOrderResponse["order"];
+
+type RetrieveACountOfOrdersFields = string;
+
+type UpdateStatusForMultipleOrdersFields =
+  keyof UpdateStatusForMultipleOrdersResponse["orders"][number];
+
+type UpdateAnOrderStatusFields = keyof UpdateAnOrderStatusResponse["order"];
+
+type RemoveAutoCalculationSettingOfAnOrderFields =
+  keyof RemoveAutoCalculationSettingOfAnOrderResponse["autocalculation"];
+
+type RetrieveCustomerDetailsOfAnOrderFields =
+  keyof RetrieveCustomerDetailsOfAnOrderResponse["buyer"];
+
+type UpdateCustomerInformationOfAnOrderFields =
+  keyof UpdateCustomerInformationOfAnOrderResponse["buyer"];
+
+type RetrieveAListOfCustomerHistoryOfAnOrderFields =
+  keyof RetrieveAListOfCustomerHistoryOfAnOrderResponse["history"][number];
+
+type CreateAnOrderCancellationFields =
+  keyof CreateAnOrderCancellationResponse["cancellation"];
+
+type ChangeCancellationDetailsFields =
+  keyof ChangeCancellationDetailsResponse["cancellation"];
+
+type CreateAnOrderExchangeFields =
+  keyof CreateAnOrderExchangeResponse["exchange"];
+
+type UpdateAnOrderExchangeFields =
+  keyof UpdateAnOrderExchangeResponse["exchange"];
+
+type RejectAnExchangeRequestFields =
+  keyof RejectAnExchangeRequestResponse["exchangerequests"];
+
+type RetrieveAListOfOrderItemsFields =
+  keyof RetrieveAListOfOrderItemsResponse["items"][number];
+
+type CreateAnOrderItemFields = keyof CreateAnOrderItemResponse["items"][number];
+
+type UpdateAnOrderItemFields = keyof UpdateAnOrderItemResponse["item"];
+
+type RetrieveAnOrderLabelFields = keyof RetrieveAnOrderLabelResponse["labels"];
+
+type CreateAnOrderLabelFields = keyof CreateAnOrderLabelResponse["label"];
+
+type UpdateAnOrderLabelFields = keyof UpdateAnOrderLabelResponse["label"];
+
+type DeleteAnOrderLabelFields = keyof DeleteAnOrderLabelResponse["label"];
+
+type CreateOrderItemOptionsFields =
+  keyof CreateOrderItemOptionsResponse["item"];
+
+type EditOrderItemOptionsFields = keyof EditOrderItemOptionsResponse["item"];
+
+type RetrieveAListOfOrderMemosFields =
+  keyof RetrieveAListOfOrderMemosResponse["memos"][number];
+
+type CreateAnOrderMemoFields = keyof CreateAnOrderMemoResponse["memo"];
+
+type UpdateAnOrderMemoFields = keyof UpdateAnOrderMemoResponse["memo"];
+
+type DeleteAnOrderMemoFields = keyof DeleteAnOrderMemoResponse["memo"];
+
+type UpdateAnOrderPaymentStatusFields =
+  keyof UpdateAnOrderPaymentStatusResponse["payment"];
+
+type RetrievePaymentHistoryOfAnOrderFields =
+  keyof RetrievePaymentHistoryOfAnOrderResponse["paymenttimeline"][number];
+
+type RetrievePaymentDetailsOfAnOrderFields =
+  keyof RetrievePaymentDetailsOfAnOrderResponse["paymenttimeline"];
+
+type RetrieveAListOfRecipientsOfAnOrderFields =
+  keyof RetrieveAListOfRecipientsOfAnOrderResponse["receivers"][number];
+
+type UpdateOrderRecipientsFields =
+  keyof UpdateOrderRecipientsResponse["receivers"][number];
+
+type ChangeShippingInformationFields =
+  keyof ChangeShippingInformationResponse["receiver"];
+
+type RetrieveAListOfRecipientHistoryOfAnOrderFields =
+  keyof RetrieveAListOfRecipientHistoryOfAnOrderResponse["history"][number];
+
+type UpdateAnOrderRefundFields = keyof UpdateAnOrderRefundResponse["refund"];
+
+type CreateAnOrderReturnFields = keyof CreateAnOrderReturnResponse["return"];
+
+type UpdateAnOrderReturnFields = keyof UpdateAnOrderReturnResponse["return"];
+
+type RetrieveAListOfShippingInformationOfAnOrderFields =
+  keyof RetrieveAListOfShippingInformationOfAnOrderResponse["shipments"][number];
+
+type CreateAnOrderShippingInformationFields =
+  keyof CreateAnOrderShippingInformationResponse["shipments"][number];
+
+type UpdateAnOrderShippingFields =
+  keyof UpdateAnOrderShippingResponse["shipment"];
+
+type DeleteAnOrderShippingFields =
+  keyof DeleteAnOrderShippingResponse["shipment"];
+
+type RetrieveShippingFeeCancellationDetailsOfAnOrderFields =
+  keyof RetrieveShippingFeeCancellationDetailsOfAnOrderResponse["shippingfeecancellation"][number];
+
+type CreateAnOrderShippingFeeCancellationFields =
+  keyof CreateAnOrderShippingFeeCancellationResponse["shippingfeecancellation"];
+
+type CreateAnOrderCancellationOnStockShortageFields =
+  keyof CreateAnOrderCancellationOnStockShortageResponse["shortagecancellation"];
+
+type RetrieveAListOfOrderBenefitsAppliedToAnOrderFields =
+  keyof RetrieveAListOfOrderBenefitsAppliedToAnOrderResponse["benefits"][number];
+
+type CalculateTotalDueFields = keyof CalculateTotalDueResponse["calculation"];
+
+type RetrieveAListOfCouponsAppliedToAnOrderFields =
+  keyof RetrieveAListOfCouponsAppliedToAnOrderResponse["coupons"][number];
+
+type RetrieveAListOfTrafficSourceGroupsFields =
+  keyof RetrieveAListOfTrafficSourceGroupsResponse["inflowgroups"][number];
+
+type CreateATrafficSourceGroupFields =
+  keyof CreateATrafficSourceGroupResponse["inflowgroup"];
+
+type UpdateATrafficSourceGroupFields =
+  keyof UpdateATrafficSourceGroupResponse["inflowgroup"];
+
+type DeleteATrafficSourceGroupFields =
+  keyof DeleteATrafficSourceGroupResponse["inflowgroup"];
+
+type RetrieveAListOfGroupTrafficSourcesFields =
+  keyof RetrieveAListOfGroupTrafficSourcesResponse["inflows"][number];
+
+type CreateAGroupTrafficSourceFields =
+  keyof CreateAGroupTrafficSourceResponse["inflow"];
+
+type UpdateAGroupTrafficSourceFields =
+  keyof UpdateAGroupTrafficSourceResponse["inflow"];
+
+type DeleteAGroupTrafficSourceFields =
+  keyof DeleteAGroupTrafficSourceResponse["inflow"];
+
+type RetrieveAListOfAdminMemosForAnOrderFields =
+  keyof RetrieveAListOfAdminMemosForAnOrderResponse["memos"][number];
+
+type RetrieveAPaymentAmountFields =
+  keyof RetrieveAPaymentAmountResponse["paymentamount"][number];
+
+type RetrieveAListOfSalesChannelsFields =
+  keyof RetrieveAListOfSalesChannelsResponse["saleschannels"][number];
+
+type CreateASalesChannelFields =
+  keyof CreateASalesChannelResponse["saleschannel"];
+
+type UpdateASalesChannelFields =
+  keyof UpdateASalesChannelResponse["saleschannel"];
+
+type DeleteASalesChannelFields =
+  keyof DeleteASalesChannelResponse["saleschannel"];
+
+type UpdatePaymentStatusForMultipleOrdersFields =
+  keyof UpdatePaymentStatusForMultipleOrdersResponse["payments"][number];
+
+type RetrieveAListOfRefundsFields =
+  keyof RetrieveAListOfRefundsResponse["refunds"][number];
+
+type RetrieveARefundFields = keyof RetrieveARefundResponse["refund"];
+
+type RetrievePreOrderItemFields =
+  keyof RetrievePreOrderItemResponse["reservations"][number];
+
+type RetrieveAReturnFields = keyof RetrieveAReturnResponse["return"];
+
+type CreateMultipleOrderReturnsFields =
+  keyof CreateMultipleOrderReturnsResponse["return"][number];
+
+type UpdateAReturnFields = keyof UpdateAReturnResponse["return"][number];
+
+type CreateAReturnRequestForMultipleItemsFields =
+  keyof CreateAReturnRequestForMultipleItemsResponse["returnrequests"][number];
+
+type RejectAReturnRequestForMultipleItemsFields =
+  keyof RejectAReturnRequestForMultipleItemsResponse["returnrequests"][number];
+
+type CreateShippingInformationForMultipleOrdersFields =
+  keyof CreateShippingInformationForMultipleOrdersResponse["shipments"][number];
+
+type UpdateMultipleOrderShippingsFields =
+  keyof UpdateMultipleOrderShippingsResponse["shipments"][number];
+
+type RetrieveASubscriptionFields =
+  keyof RetrieveASubscriptionResponse["shipments"][number];
+
+type CreateASubscriptionFields =
+  keyof CreateASubscriptionResponse["shipments"][number];
+
+type UpdateASubscriptionFields = keyof UpdateASubscriptionResponse["shipments"];
+
+type UpdateProductVariantsInSubscriptionFields =
+  keyof UpdateProductVariantsInSubscriptionResponse["items"][number];
+
+type RetrieveAListOfCustomerTiersFields =
+  keyof RetrieveAListOfCustomerTiersResponse["customergroups"][number];
+
+type RetrieveACountOfCustomerTiersFields = string;
+
+type RetrieveACustomerTierFields =
+  keyof RetrieveACustomerTierResponse["customergroup"];
+
+type UpdateACustomerSCustomerTierFields =
+  keyof UpdateACustomerSCustomerTierResponse["customers"][number];
+
+type RetrieveCustomerTierSettingsFields =
+  keyof RetrieveCustomerTierSettingsResponse["customergroup"];
+
+type RetrieveAListOfCustomersFields =
+  keyof RetrieveAListOfCustomersResponse["customers"][number];
+
+type DeleteAnAccountFields = keyof DeleteAnAccountResponse["customer"];
+
+type RetrieveCustomerTierAutoUpdateDetailsFields =
+  keyof RetrieveCustomerTierAutoUpdateDetailsResponse["autoupdate"];
+
+type RetrieveACountOfCustomerMemosFields = string;
+
+type RetrieveAListOfCustomerMemosFields =
+  keyof RetrieveAListOfCustomerMemosResponse["memos"][number];
+
+type RetrieveACustomerMemoFields = keyof RetrieveACustomerMemoResponse["memo"];
+
+type CreateACustomerMemoFields = keyof CreateACustomerMemoResponse["memo"];
+
+type UpdateACustomerMemoFields = keyof UpdateACustomerMemoResponse["memo"];
+
+type DeleteACustomerMemoFields = keyof DeleteACustomerMemoResponse["memo"];
+
+type RetrieveACustomerSListOfPaymentMethodsFields =
+  keyof RetrieveACustomerSListOfPaymentMethodsResponse["paymentinformation"][number];
+
+type DeleteCustomerSPaymentInformationFields =
+  keyof DeleteCustomerSPaymentInformationResponse["paymentinformation"];
+
+type DeleteCustomerSPaymentInformationByPaymentMethodIdFields =
+  keyof DeleteCustomerSPaymentInformationByPaymentMethodIdResponse["paymentinformation"];
+
+type RetrieveAppInstallationInformationFields =
+  keyof RetrieveAppInstallationInformationResponse["plusapp"][number];
+
+type RetrieveACustomerSSocialAccountFields =
+  keyof RetrieveACustomerSSocialAccountResponse["social"];
+
+type RetrieveAListOfBoardsFields =
+  keyof RetrieveAListOfBoardsResponse["boards"][number];
+
+type RetrieveAListOfPostsForABoardFields =
+  keyof RetrieveAListOfPostsForABoardResponse["articles"][number];
+
+type CreateABoardPostFields =
+  keyof CreateABoardPostResponse["articles"][number];
+
+type UpdateABoardPostFields = keyof UpdateABoardPostResponse["article"];
+
+type DeleteABoardPostFields = keyof DeleteABoardPostResponse["article"];
+
+type RetrieveAListOfCommentsForABoardPostFields =
+  keyof RetrieveAListOfCommentsForABoardPostResponse["comments"][number];
+
+type CreateACommentForABoardPostFields =
+  keyof CreateACommentForABoardPostResponse["comment"];
+
+type DeleteACommentForABoardPostFields =
+  keyof DeleteACommentForABoardPostResponse["comment"];
+
+type RetrieveCommentsInBulkFields =
+  keyof RetrieveCommentsInBulkResponse["comments"][number];
+
+type RetrieveSeoSettingsForBoardFields =
+  keyof RetrieveSeoSettingsForBoardResponse["seo"];
+
+type UpdateSeoSettingsForBoardFields =
+  keyof UpdateSeoSettingsForBoardResponse["seo"];
+
+type RetrieveTheTotalCountForMonthlyReviewsAndRatingsFields =
+  keyof RetrieveTheTotalCountForMonthlyReviewsAndRatingsResponse["monthlyreviews"][number];
+
+type RetrieveAnUrgentInquiryPostFields =
+  keyof RetrieveAnUrgentInquiryPostResponse["urgentinquiry"][number];
+
+type RetrieveAReplyForUrgentInquiryPostFields =
+  keyof RetrieveAReplyForUrgentInquiryPostResponse["reply"];
+
+type CreateAReplyForUrgentInquiryPostFields =
+  keyof CreateAReplyForUrgentInquiryPostResponse["reply"];
+
+type UpdateAReplyForUrgentInquiryPostFields =
+  keyof UpdateAReplyForUrgentInquiryPostResponse["reply"];
+
+type RetrieveAListOfDesginIconsFields =
+  keyof RetrieveAListOfDesginIconsResponse["icons"][number];
+
+type RetrieveAListOfThemesFields =
+  keyof RetrieveAListOfThemesResponse["themes"][number];
+
+type RetrieveACountOfThemesFields = string;
+
+type RetrieveAThemeFields = keyof RetrieveAThemeResponse["theme"];
+
+type RetrieveAThemePageFields = keyof RetrieveAThemePageResponse["page"];
+
+type CreateAThemePageFields = keyof CreateAThemePageResponse["page"];
+
+type RetrieveAListOfCustomerBenefitsFields =
+  keyof RetrieveAListOfCustomerBenefitsResponse["benefits"][number];
+
+type RetrieveACountOfCustomerBenefitsFields = string;
+
+type RetrieveACustomerBenefitFields =
+  keyof RetrieveACustomerBenefitResponse["benefit"];
+
+type CreateACustomerBenefitFields =
+  keyof CreateACustomerBenefitResponse["benefit"];
+
+type UpdateACustomerBenefitFields =
+  keyof UpdateACustomerBenefitResponse["benefit"];
+
+type DeleteACustomerBenefitFields =
+  keyof DeleteACustomerBenefitResponse["benefit"];
+
+type RetrieveAListOfCouponsFields =
+  keyof RetrieveAListOfCouponsResponse["coupons"][number];
+
+type RetrieveACountOfCouponsFields = string;
+
+type CreateACouponFields = keyof CreateACouponResponse["coupon"];
+
+type CouponManagementFields = keyof CouponManagementResponse["coupon"];
+
+type RetrieveAListOfIssuedCouponsFields =
+  keyof RetrieveAListOfIssuedCouponsResponse["issues"][number];
+
+type CreateCouponIssuanceHistoryFields =
+  keyof CreateCouponIssuanceHistoryResponse["issues"];
+
+type RetrieveAListOfCustomerCouponsFields =
+  keyof RetrieveAListOfCustomerCouponsResponse["coupons"][number];
+
+type RetrieveACountOfCustomerCouponsFields = string;
+
+type DeleteACustomerCouponFields =
+  keyof DeleteACustomerCouponResponse["coupon"];
+
+type RetrieveAListOfDiscountCodesFields =
+  keyof RetrieveAListOfDiscountCodesResponse["discountcodes"][number];
+
+type RetrieveADiscountCodeFields =
+  keyof RetrieveADiscountCodeResponse["discountcode"];
+
+type CreateADiscountCodeFields =
+  keyof CreateADiscountCodeResponse["discountcode"];
+
+type UpdateADiscountCodeFields =
+  keyof UpdateADiscountCodeResponse["discountcode"];
+
+type DeleteADiscountCodeFields =
+  keyof DeleteADiscountCodeResponse["discountcode"];
+
+type RetrieveCouponCodesFields =
+  keyof RetrieveCouponCodesResponse["serialcoupons"][number];
+
+type GenerateCouponCodeFields =
+  keyof GenerateCouponCodeResponse["serialcoupons"];
+
+type DeleteCouponCodeFields = keyof DeleteCouponCodeResponse["serialcoupon"];
+
+type RetrieveACodeOfCouponCodesFields =
+  keyof RetrieveACodeOfCouponCodesResponse["serialcoupons"][number];
+
+type RegisterACodeOfCouponCodesFields =
+  keyof RegisterACodeOfCouponCodesResponse["serialcoupons"][number];
+
+type RetrieveAnAppInformationFields =
+  keyof RetrieveAnAppInformationResponse["app"];
+
+type UpdateAnAppInformationFields = keyof UpdateAnAppInformationResponse["app"];
+
+type RetreiveACafe24StoreOrderFields =
+  keyof RetreiveACafe24StoreOrderResponse["order"];
+
+type CreateACafe24StoreOrderFields =
+  keyof CreateACafe24StoreOrderResponse["order"];
+
+type RetrieveAListOfCafe24StorePaymentsFields =
+  keyof RetrieveAListOfCafe24StorePaymentsResponse["payments"][number];
+
+type RetrieveACountOfCafe24StorePaymentsFields = string;
+
+type RetrieveAListOfDatabridgeWebhookLogsFields =
+  keyof RetrieveAListOfDatabridgeWebhookLogsResponse["logs"][number];
+
+type RetrieveAListOfRecipesFields =
+  keyof RetrieveAListOfRecipesResponse["recipes"][number];
+
+type CreateARecipeFields = keyof CreateARecipeResponse["recipes"][number];
+
+type DeleteARecipeFields = keyof DeleteARecipeResponse["recipe"];
+
+type RetrieveAListOfScriptTagsFields =
+  keyof RetrieveAListOfScriptTagsResponse["scripttags"][number];
+
+type RetrieveACountOfScriptTagsFields = string;
+
+type RetrieveAScriptTagFields = keyof RetrieveAScriptTagResponse["scripttag"];
+
+type CreateAScriptTagFields = keyof CreateAScriptTagResponse["scripttag"];
+
+type UpdateAScriptTagFields = keyof UpdateAScriptTagResponse["scripttag"];
+
+type DeleteAScriptTagFields = keyof DeleteAScriptTagResponse["scripttag"];
+
+type RetrieveAListOfWebhookLogsFields =
+  keyof RetrieveAListOfWebhookLogsResponse["logs"][number];
+
+type RetrieveWebhookSettingsFields =
+  keyof RetrieveWebhookSettingsResponse["webhook"];
+
+type EditWebhookSettingsFields = keyof EditWebhookSettingsResponse["webhook"];
+
+type RetrieveAListOfAutoLayoutsFields =
+  keyof RetrieveAListOfAutoLayoutsResponse["autodisplay"][number];
+
+type CreateAutoLayoutForSelectedProductCategoryFields =
+  keyof CreateAutoLayoutForSelectedProductCategoryResponse["autodisplay"];
+
+type UpdateAutoLayoutForSelectedProductCategoryFields =
+  keyof UpdateAutoLayoutForSelectedProductCategoryResponse["autodisplay"];
+
+type DeleteAutoLayoutForSelectedProductCategoryFields =
+  keyof DeleteAutoLayoutForSelectedProductCategoryResponse["autodisplay"];
+
+type RetrieveAListOfProductCategoriesFields =
+  keyof RetrieveAListOfProductCategoriesResponse["categories"][number];
+
+type RetrieveACountOfProductCategoriesFields = string;
+
+type RetrieveAProductCategoryFields =
+  keyof RetrieveAProductCategoryResponse["category"];
+
+type CreateAProductCategoryFields =
+  keyof CreateAProductCategoryResponse["category"];
+
+type UpdateAProductCategoryFields =
+  keyof UpdateAProductCategoryResponse["category"];
+
+type DeleteAProductCategoryFields =
+  keyof DeleteAProductCategoryResponse["category"];
+
+type RetrieveDecorationImageSettingsByCategoryFields =
+  keyof RetrieveDecorationImageSettingsByCategoryResponse["decorationimage"];
+
+type UpdateDecorationImagesOfAProductCategoryFields =
+  keyof UpdateDecorationImagesOfAProductCategoryResponse["decorationimage"];
+
+type RetrieveSeoSettingsByCategoryFields =
+  keyof RetrieveSeoSettingsByCategoryResponse["seo"];
+
+type UpdateAProductCategorySeoFields =
+  keyof UpdateAProductCategorySeoResponse["seo"];
+
+type RetrieveAListOfMainCategoriesFields =
+  keyof RetrieveAListOfMainCategoriesResponse["mains"][number];
+
+type RetrieveAListOfBrandsFields =
+  keyof RetrieveAListOfBrandsResponse["brands"][number];
+
+type RetrieveACountOfBrandsFields = string;
+
+type CreateABrandFields = keyof CreateABrandResponse["brand"];
+
+type UpdateABrandFields = keyof UpdateABrandResponse["brand"];
+
+type DeleteABrandFields = keyof DeleteABrandResponse["brand"];
+
+type RetrieveAListOfCustomCategoriesFields =
+  keyof RetrieveAListOfCustomCategoriesResponse["classifications"][number];
+
+type RetrieveACountOfCustomCategoriesFields = string;
+
+type RetrieveAListOfManufacturersFields =
+  keyof RetrieveAListOfManufacturersResponse["manufacturers"][number];
+
+type RetrieveAManufacturerFields =
+  keyof RetrieveAManufacturerResponse["manufacturer"];
+
+type RetrieveACountOfManufacturersFields = string;
+
+type CreateAManufacturerFields =
+  keyof CreateAManufacturerResponse["manufacturer"];
+
+type UpdateAManufacturerFields =
+  keyof UpdateAManufacturerResponse["manufacturer"];
+
+type RetrieveAListOfOriginsFields =
+  keyof RetrieveAListOfOriginsResponse["origin"][number];
+
+type RetrieveAListOfTrendsFields =
+  keyof RetrieveAListOfTrendsResponse["trends"][number];
+
+type RetrieveACountOfTrendsFields = string;
+
+type RetrieveASupplierSShippingSettingsFields =
+  keyof RetrieveASupplierSShippingSettingsResponse["supplier"];
+
+type UpdateASupplierSShippingSettingsFields =
+  keyof UpdateASupplierSShippingSettingsResponse["supplier"];
+
+type RetrieveAListOfSuppliersFields =
+  keyof RetrieveAListOfSuppliersResponse["suppliers"][number];
+
+type RetrieveACountOfSuppliersFields = string;
+
+type RetrieveASupplierFields = keyof RetrieveASupplierResponse["supplier"];
+
+type CreateASupplierFields = keyof CreateASupplierResponse["supplier"];
+
+type UpdateASupplierFields = keyof UpdateASupplierResponse["supplier"];
+
+type DeleteASupplierFields = keyof DeleteASupplierResponse["supplier"];
+
+type RetrieveAListOfSupplierUsersFields =
+  keyof RetrieveAListOfSupplierUsersResponse["users"][number];
+
+type RetrieveACountOfSupplierUsersFields = string;
+
+type RetrieveSupplierUserDetailsFields =
+  keyof RetrieveSupplierUserDetailsResponse["user"];
+
+type CreateASupplierUserFields = keyof CreateASupplierUserResponse["user"];
+
+type UpdateASupplierUserFields = keyof UpdateASupplierUserResponse["user"];
+
+type DeleteASupplierUserFields = keyof DeleteASupplierUserResponse["user"];
+
+type RetrieveASupplierUserSListOfRegionalShippingFeesFields =
+  keyof RetrieveASupplierUserSListOfRegionalShippingFeesResponse["regionalsurcharges"][number];
+
+type CreateRegionalShippingFeeForASupplierUserFields =
+  keyof CreateRegionalShippingFeeForASupplierUserResponse["regionalsurcharge"];
+
+type DeleteSupplierUserSRegionalShippingFeeSettingsFields =
+  keyof DeleteSupplierUserSRegionalShippingFeeSettingsResponse["regionalsurcharge"];
+
+type RetrieveASupplierUserSRegionalShippingFeeSettingsFields =
+  keyof RetrieveASupplierUserSRegionalShippingFeeSettingsResponse["regionalsurcharge"];
+
+type UpdateASupplierUserSRegionalShippingFeeSettingsFields =
+  keyof UpdateASupplierUserSRegionalShippingFeeSettingsResponse["regionalsurcharge"];
+
+type RetrieveAListOfShippingCarriersFields =
+  keyof RetrieveAListOfShippingCarriersResponse["carriers"][number];
+
+type RetrieveAShippingCarrierFields =
+  keyof RetrieveAShippingCarrierResponse["carrier"];
+
+type CreateAShippingCarrierFields =
+  keyof CreateAShippingCarrierResponse["carrier"];
+
+type UpdateAShippingCarrierFields =
+  keyof UpdateAShippingCarrierResponse["carrier"];
+
+type DeleteAShippingCarrierFields =
+  keyof DeleteAShippingCarrierResponse["carrier"];
+
+type RetrieveShippingZoneRatesSettingsFields =
+  keyof RetrieveShippingZoneRatesSettingsResponse["regionalsurcharge"];
+
+type RetrieveShippingReturnSettingsFields =
+  keyof RetrieveShippingReturnSettingsResponse["shipping"];
+
+type UpdateStoreShippingReturnSettingsFields =
+  keyof UpdateStoreShippingReturnSettingsResponse["shipping"];
+
+type RetrieveAListOfShippingOriginsFields =
+  keyof RetrieveAListOfShippingOriginsResponse["shippingorigins"][number];
+
+type RetrieveAShippingOriginFields =
+  keyof RetrieveAShippingOriginResponse["shippingorigin"];
+
+type CreateAShippingOriginFields =
+  keyof CreateAShippingOriginResponse["shippingorigin"];
+
+type UpdateAShippingOriginFields =
+  keyof UpdateAShippingOriginResponse["shippingorigin"];
+
+type DeleteAShippingOriginFields =
+  keyof DeleteAShippingOriginResponse["shippingorigin"];
+
+type RetrieveAListOfDailySalesFields =
+  keyof RetrieveAListOfDailySalesResponse["dailysales"][number];
+
+type RetrieveAListOfMonthlySalesFields =
+  keyof RetrieveAListOfMonthlySalesResponse["monthlysales"][number];
+
+type RetrieveHourlySalesStatisticsOfAStoreFields =
+  keyof RetrieveHourlySalesStatisticsOfAStoreResponse["hourlysales"][number];
+
+type RetrieveHourlyProductSalesStatisticsOfAStoreFields =
+  keyof RetrieveHourlyProductSalesStatisticsOfAStoreResponse["productsales"][number];
+
+type RetrieveASalesReportFields =
+  keyof RetrieveASalesReportResponse["salesvolume"][number];
+
+type RetrieveAShoppingCartFields =
+  keyof RetrieveAShoppingCartResponse["carts"][number];
+
+type RetrieveACountOfProductsInCustomerWishlistFields = string;
+
+type RetrieveAListOfProductsInCustomerWishlistFields =
+  keyof RetrieveAListOfProductsInCustomerWishlistResponse["wishlist"][number];
+
+type RetrieveACountOfCartsContainingAProductFields = string;
+
+type RetrieveAListOfCartsContainingAProductFields =
+  keyof RetrieveAListOfCartsContainingAProductResponse["carts"][number];
+
+type RetrieveAListOfCustomerInformationFields =
+  keyof RetrieveAListOfCustomerInformationResponse["customersprivacy"][number];
+
+type RetrieveACountOfCustomerInformationFields = string;
+
+type RetrieveACustomerInformationFields =
+  keyof RetrieveACustomerInformationResponse["customersprivacy"];
+
+type UpdateACustomerInformationFields =
+  keyof UpdateACustomerInformationResponse["customersprivacy"];
+
+type RetrieveAListOfCustomersWithAProductInWishlistFields =
+  keyof RetrieveAListOfCustomersWithAProductInWishlistResponse["customers"][number];
+
+type RetrieveACountOfCustomersWithAProductInWishlistFields = string;
+
+type RetrieveAListOfCreditsByDateRangeFields =
+  keyof RetrieveAListOfCreditsByDateRangeResponse["credits"][number];
+
+type RetrieveACreditReportByDateRangeFields =
+  keyof RetrieveACreditReportByDateRangeResponse["report"];
+
+type RetrievePointsFields = keyof RetrievePointsResponse["points"][number];
+
+type IssueAndDeductPointsFields = keyof IssueAndDeductPointsResponse["points"];
+
+type RetrieveAnAutomaticPointsExpirationFields =
+  keyof RetrieveAnAutomaticPointsExpirationResponse["autoexpiration"];
+
+type CreateAnAutomaticPointsExpirationFields =
+  keyof CreateAnAutomaticPointsExpirationResponse["autoexpiration"];
+
+type DeleteAnAutomaticPointsExpirationFields =
+  keyof DeleteAnAutomaticPointsExpirationResponse["autoexpiration"];
+
+type RetrieveAPointsReportByDateRangeFields =
+  keyof RetrieveAPointsReportByDateRangeResponse["report"];
+
+type SendAnInvitationToActivateAccountFields =
+  keyof SendAnInvitationToActivateAccountResponse["invitation"];
+
+type RetrieveDistributionGroupListFields =
+  keyof RetrieveDistributionGroupListResponse["recipientgroups"][number];
+
+type RetrieveDistributionGroupDetailsFields =
+  keyof RetrieveDistributionGroupDetailsResponse["recipientgroup"];
+
+type CreateADistributionGroupFields =
+  keyof CreateADistributionGroupResponse["recipientgroup"];
+
+type EditDistributionGroupFields =
+  keyof EditDistributionGroupResponse["recipientgroup"];
+
+type DeleteDistributionGroupFields =
+  keyof DeleteDistributionGroupResponse["recipientgroup"];
+
+type SendASmsFields = keyof SendASmsResponse["sms"];
+
+type RetrieveTheSmsBalanceFields = keyof RetrieveTheSmsBalanceResponse["sms"];
+
+type RetrieveAListOfSmsSendersFields =
+  keyof RetrieveAListOfSmsSendersResponse["senders"][number];
+
+type RetrieveAListOfProductCategoryTranslationsFields =
+  keyof RetrieveAListOfProductCategoryTranslationsResponse["categories"][number];
+
+type UpdateProductCategoryTranslationFields =
+  keyof UpdateProductCategoryTranslationResponse["category"];
+
+type RetrieveAListOfProductTranslationsFields =
+  keyof RetrieveAListOfProductTranslationsResponse["products"][number];
+
+type UpdateProductTranslationFields =
+  keyof UpdateProductTranslationResponse["product"];
+
+type RetrieveAListOfStoreTranslationsFields =
+  keyof RetrieveAListOfStoreTranslationsResponse["store"];
+
+type UpdateTheTranslationsOfAStoreFields =
+  keyof UpdateTheTranslationsOfAStoreResponse["store"];
+
+type RetrieveAListOfThemeTranslationsFields =
+  keyof RetrieveAListOfThemeTranslationsResponse["themes"][number];
+
+type RetrieveAThemeTranslationFields =
+  keyof RetrieveAThemeTranslationResponse["theme"];
+
+type UpdateAThemeTranslationFields =
+  keyof UpdateAThemeTranslationResponse["theme"];
+
+type RetrieveACountOfDailyvisitsFields =
+  keyof RetrieveACountOfDailyvisitsResponse["dailyvisits"][number];

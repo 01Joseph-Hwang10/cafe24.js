@@ -34,6 +34,13 @@ describe("front.Client", () => {
       const fetch = createFetch();
       const client = createClient({ fetch });
 
+      await client.products.retrieveAListOfProducts(
+        {},
+        {
+          fields: ["adultCertification", "approveStatus"],
+          embed: ["additionalimages", "benefits"],
+        },
+      );
       await client.mainsproducts.retrieveAListOfProductsInMainCategory(
         {} as any,
       );
