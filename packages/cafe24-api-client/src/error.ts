@@ -6,7 +6,7 @@ export class Cafe24APIError extends Error {
     let message: string;
     try {
       const responseBody = await response.json();
-      message = responseBody?.error?.message;
+      message = responseBody?.error?.message ?? responseBody;
     } catch (error) {
       message = await response.text();
     }
