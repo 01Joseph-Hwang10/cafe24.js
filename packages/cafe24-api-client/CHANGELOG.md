@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.4.1...cafe24-api-client-v1.5.0) (2025-01-16)
+
+
+### Features
+
+* add support for typed fields & embeds ([4146344](https://github.com/01Joseph-Hwang10/cafe24.js/commit/41463443b0c85a3c0bbdaf4329b1bdc01c6940c3))
+
+
+### Bug Fixes
+
+* object case converter ([8c1e6d4](https://github.com/01Joseph-Hwang10/cafe24.js/commit/8c1e6d4ad7359504b17cedb46dba354e64338f65))
+
 ## [1.4.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.4.0...cafe24-api-client-v1.4.1) (2025-01-16)
 
 

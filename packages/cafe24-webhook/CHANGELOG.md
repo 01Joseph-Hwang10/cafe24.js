@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-webhook-v1.1.2...cafe24-webhook-v1.2.0) (2025-01-16)
+
+
+### Features
+
+* add support for typed fields & embeds ([4146344](https://github.com/01Joseph-Hwang10/cafe24.js/commit/41463443b0c85a3c0bbdaf4329b1bdc01c6940c3))
+
 ## [1.1.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-webhook-v1.1.1...cafe24-webhook-v1.1.2) (2025-01-16)
 
 
