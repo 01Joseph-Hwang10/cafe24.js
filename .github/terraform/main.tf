@@ -9,9 +9,10 @@ resource "github_repository" "cafe24js" {
     "cafe24",
     "javascript",
     "typescript",
+    "rest",
     "api",
     "client",
-    "type-safe"
+    "type-safe",
   ]
   has_issues      = true
   has_projects    = true
