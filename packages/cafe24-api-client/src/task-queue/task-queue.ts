@@ -80,7 +80,7 @@ export class TaskQueue {
     return this.queue.length;
   }
 
-  private async handleNextTask() {
+  protected async handleNextTask() {
     // Get the first task in the queue
     const task = this.queue.at(0);
     try {
