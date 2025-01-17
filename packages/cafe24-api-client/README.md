@@ -81,7 +81,7 @@ const front = new api.front.Client({
 
 const { products } = await front.categoriesproducts.retrieveAListOfProductsByCategory(
   {
-    category_no: 1,
+    categoryNo: 1,
     limit: 100,
   },
   { fetchPolicy: "queue" },
@@ -89,6 +89,7 @@ const { products } = await front.categoriesproducts.retrieveAListOfProductsByCat
 
 console.log(products);
 ```
+
 
 ### Request/Response 타입 가져오기
 
@@ -103,6 +104,12 @@ import api, { RequestType, ResponseType } from 'cafe24-api-client';
 type RetrieveAListOfProductsRequest = RequestType<api.admin.Client['products']['retrieveAListOfProducts']>;
 type RetrieveAListOfProductsResponse = ResponseType<api.admin.Client['products']['retrieveAListOfProducts']>;
 ```
+
+### Everything is `camelCased`
+
+모든 method의 request 타입, response 타입의 property는 `camelCase`로 변환되어 있습니다.
+
+이는 camelCase가 JS/TS에서 일반적으로 사용되는 네이밍 컨벤션이기 때문입니다.
 
 ## License
 
