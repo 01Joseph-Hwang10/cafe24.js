@@ -1,5 +1,8 @@
 # Cafe24 types
 
+[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/cafe24-types)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-types)
+
 Cafe24 API에서 활용하는 데이터 타입 정의를 제공하는 패키지입니다. 
 화면 코드(Display Code)나 필요 권한(Scope)이 포함되어 있습니다.
 

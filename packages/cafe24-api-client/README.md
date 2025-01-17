@@ -1,5 +1,8 @@
 # cafe24-api-client
 
+[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/cafe24-api-client)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-api-client)
+
 [카페24 REST API](https://developers.cafe24.com/docs/api) HTTP 클라이언트입니다.
 
 ## Installation

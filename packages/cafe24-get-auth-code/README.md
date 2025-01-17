@@ -1,5 +1,8 @@
 # cafe24-get-auth-code
 
+[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/cafe24-get-auth-code)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-get-auth-code)
+
 [cafe24 api의 auth code](https://developers.cafe24.com/docs/en/api/admin/#get-authentication-code)를
 가져오는 기능을 제공합니다.
 
