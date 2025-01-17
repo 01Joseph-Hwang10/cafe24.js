@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.5](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.4...cafe24-api-client-v1.5.5) (2025-01-17)
+
+
+### Bug Fixes
+
+* in error object as error ([a77fdc8](https://github.com/01Joseph-Hwang10/cafe24.js/commit/a77fdc89166ddc94e2b214bce23a606423ef00ed))
+* task queue ([c216842](https://github.com/01Joseph-Hwang10/cafe24.js/commit/c216842457611eece1f578e61407bfa04d1cedc4))
+
 ## [1.5.4](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.3...cafe24-api-client-v1.5.4) (2025-01-16)
 
 
