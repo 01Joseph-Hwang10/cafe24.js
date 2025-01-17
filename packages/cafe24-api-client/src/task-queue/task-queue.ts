@@ -101,7 +101,7 @@ export class TaskQueue {
       // stop executing the task and throw an error
       if (dayjs().isAfter(this.timeoutStopAt)) {
         this.stopRunning();
-        task?.callback("Task queue timeout");
+        task?.callback(new Error("Task queue timeout"));
         return;
       }
 
