@@ -27,3 +27,4 @@ npm install cafe24-types
 ## License
 
 [MIT](./LICENSE)
+

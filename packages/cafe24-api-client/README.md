@@ -121,3 +121,4 @@ type RetrieveAListOfProductsResponse = ResponseType<api.admin.Client['products']
 [d.collection]: https://developers.cafe24.com/docs/ko/api/dcollection
 [analytics]: https://developers.cafe24.com/docs/ko/api/cafe24data
 [Categories products]: https://developers.cafe24.com/docs/ko/api/front/#categories__products
+
