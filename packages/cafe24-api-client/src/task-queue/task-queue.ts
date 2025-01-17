@@ -33,6 +33,14 @@ export interface TaskQueueOptions {
    */
   maxRetryIgnoreStatus?: number[];
   /**
+   * @description Status codes that should be considered as backoff status.
+   *              If the error status is in this list, the task queue will wait
+   *              for a backoff amount of time before retrying.
+   *
+   * @default [429, 503]
+   */
+  backoffStatus?: number[];
+  /**
    * @description Maximum time span of the task queue in milliseconds.
    *              If the task queue is running for a long time,
    *              it will be stopped automatically after this time.
@@ -42,22 +50,24 @@ export interface TaskQueueOptions {
 }
 
 export class TaskQueue {
-  private interval: number;
-  private backoff: number;
-  private maxRetry: number;
-  private maxRetryIgnoreStatus: number[];
-  private maxTimeSpan?: number;
-  private timeoutStopAt?: dayjs.Dayjs;
+  protected interval: number;
+  protected backoff: number;
+  protected maxRetry: number;
+  protected maxRetryIgnoreStatus: number[];
+  protected backoffStatus: number[];
+  protected maxTimeSpan?: number;
+  protected timeoutStopAt?: dayjs.Dayjs;
 
-  private queue: Task[];
-  private shouldStop: boolean;
-  private retry: number;
+  protected queue: Task[];
+  protected shouldStop: boolean;
+  protected retry: number;
 
   constructor(options?: TaskQueueOptions) {
     this.interval = options?.interval ?? 500;
     this.backoff = options?.backoff ?? 10000;
     this.maxRetry = options?.maxRetry ?? 3;
     this.maxRetryIgnoreStatus = options?.maxRetryIgnoreStatus ?? [429, 503];
+    this.backoffStatus = options?.backoffStatus ?? [429, 503];
     this.maxTimeSpan = options?.maxTimeSpan ?? 1000 * 60 * 60 * 24 * 7;
     this.timeoutStopAt = dayjs().add(this.maxTimeSpan, "millisecond");
 
@@ -124,8 +134,14 @@ export class TaskQueue {
         this.retry++;
       }
 
-      // Wait for a while and try again
-      await wait(this.backoff);
+      // Wait for a backoff amount of time
+      // if the error status is in the backoff status list
+      if (this.backoffStatus.includes(error?.status)) {
+        await wait(this.backoff);
+      } else {
+        // Wait for a while and try again
+        await wait(this.interval);
+      }
     }
     this.handleNextTask();
   }
