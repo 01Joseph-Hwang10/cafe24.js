@@ -41,6 +41,18 @@ describe("admin.Client", () => {
     });
   });
 
+  describe("copy", () => {
+    it(
+      "should copy it in reasonable time",
+      () => {
+        const client = createClient();
+        const copy = client.copy();
+        expect(copy).not.toBe(client);
+      },
+      { timeout: 100 },
+    );
+  });
+
   describe("methods", () => {
     it("should call some methods", async () => {
       const fetch = createFetch();
