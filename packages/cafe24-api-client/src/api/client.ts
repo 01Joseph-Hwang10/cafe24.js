@@ -200,27 +200,29 @@ export class Client {
       segments => segments.join("/"),
     );
 
-    let request: () => Promise<Response>;
+    let fetcher: () => Promise<Response>;
     if (isQuery(method)) {
-      request = () =>
+      fetcher = () =>
         this.createQueryRequest(method, formattedPath, payload, options);
     } else if (isMutation(method)) {
-      request = () =>
+      fetcher = () =>
         this.createMutationRequest(method, formattedPath, payload, options);
     } else {
       throw new Error(`Unsupported method: ${method}`);
     }
 
+    let request: () => Promise<Response>;
     if (errorPolicy === "none") {
-      const originalRequest = request;
       request = async () => {
-        const response = await originalRequest();
+        const response = await fetcher();
         if (!response.ok) {
           const error = await Cafe24APIError.fromResonse(response);
           throw error;
         }
         return response;
       };
+    } else {
+      request = fetcher;
     }
 
     const resolve = async () => {
