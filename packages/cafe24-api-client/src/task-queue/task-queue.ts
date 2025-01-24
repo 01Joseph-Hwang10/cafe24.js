@@ -174,8 +174,11 @@ export class TaskQueue {
       this.queue.push({
         executor,
         callback: (error, result) => {
-          if (error) reject(error);
-          else resolve(result);
+          if (error) {
+            reject(error);
+          } else {
+            resolve(result);
+          }
         },
       });
     });
