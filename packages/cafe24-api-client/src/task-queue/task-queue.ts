@@ -58,7 +58,7 @@ export class TaskQueue {
   protected maxTimeSpan?: number;
   protected timeoutStopAt?: dayjs.Dayjs;
 
-  protected queue: Task[];
+  protected tasks: Task[];
   protected shouldStop: boolean;
   protected retry: number;
 
@@ -71,7 +71,7 @@ export class TaskQueue {
     this.maxTimeSpan = options?.maxTimeSpan ?? 1000 * 60 * 60 * 24 * 7;
     this.timeoutStopAt = dayjs().add(this.maxTimeSpan, "millisecond");
 
-    this.queue = [];
+    this.tasks = [];
     this.shouldStop = true;
     this.retry = 0;
 
@@ -87,12 +87,12 @@ export class TaskQueue {
   }
 
   public get length() {
-    return this.queue.length;
+    return this.tasks.length;
   }
 
   protected async handleNextTask() {
     // Get the first task in the queue
-    const task = this.queue.at(0);
+    const task = this.tasks.at(0);
     try {
       // Execute the task if exists
       if (task) {
@@ -100,7 +100,7 @@ export class TaskQueue {
         task.callback(undefined, result);
 
         // Remove the task from the queue and reset the number of retries
-        this.queue.shift();
+        this.tasks.shift();
         this.retry = 0;
       }
 
@@ -134,9 +134,9 @@ export class TaskQueue {
         this.retry++;
       }
 
-      // Wait for a backoff amount of time
-      // if the error status is in the backoff status list
       if (this.backoffStatus.includes(error?.status)) {
+        // Wait for a backoff amount of time
+        // if the error status is in the backoff status list
         await wait(this.backoff);
       } else {
         // Wait for a while and try again
@@ -165,13 +165,13 @@ export class TaskQueue {
     callback?: Task<D>["callback"],
   ): Promise<D | number> {
     if (typeof callback === "function") {
-      return this.queue.push({
+      return this.tasks.push({
         executor,
         callback,
       });
     }
     return new Promise<D>((resolve, reject) => {
-      this.queue.push({
+      this.tasks.push({
         executor,
         callback: (error, result) => {
           if (error) {
@@ -185,6 +185,6 @@ export class TaskQueue {
   }
 
   public clear() {
-    this.queue = [];
+    this.tasks = [];
   }
 }
