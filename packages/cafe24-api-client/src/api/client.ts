@@ -17,6 +17,7 @@ import {
   HTTPQueryMethod,
   URLBuilder,
 } from "../http-agent";
+import { Logger, NoopLogger } from "../logging";
 
 /**
  * @description
@@ -55,6 +56,14 @@ export interface ClientOptions {
    * @default AxiosHTTPAgent
    */
   agent?: HTTPAgent;
+  /**
+   * @description
+   * Logger instance to use for logging.
+   * If not provided, {@link NoopLogger} will be used.
+   *
+   * @default NoopLogger
+   */
+  logger?: Logger;
 }
 
 export class Client {
@@ -63,6 +72,7 @@ export class Client {
   protected readonly errorPolicy?: ErrorPolicy;
   protected readonly fetchPolicy?: FetchPolicy;
   protected readonly agent: HTTPAgent;
+  protected readonly logger: Logger;
   protected isDisposed: boolean;
 
   get url() {
@@ -90,6 +100,7 @@ export class Client {
 
     this.isDisposed = false;
     this.agent = options.agent ?? new AxiosHTTPAgent();
+    this.logger = options.logger ?? new NoopLogger();
   }
 
   public get taskQueueIsEnabled(): boolean {
@@ -216,17 +227,42 @@ export class Client {
       throw new Error(`Unsupported method: ${method}`);
     }
 
+    const withDebugger = (callback: () => PromiseLike<HTTPFetchResponse>) => {
+      return async (): Promise<HTTPFetchResponse> => {
+        const start = Date.now();
+        this.logger.debug(
+          `[cafe24-api-client] requesting - ${method} ${formattedPath}`,
+        );
+        this.logger.verbose(
+          `[cafe24-api-client] payload: ${JSON.stringify(payload, null, 2)}`,
+        );
+        this.logger.verbose(
+          `[cafe24-api-client] options: ${JSON.stringify(options, null, 2)}`,
+        );
+        const result = await callback();
+        const end = Date.now();
+        this.logger.debug(
+          `[cafe24-api-client] server responded with status ${result.status} - ${method} ${formattedPath}`,
+        );
+        this.logger.verbose(
+          `[cafe24-api-client] response: ${JSON.stringify(result.data, null, 2)}`,
+        );
+        this.logger.verbose(`[cafe24-api-client] took ${end - start}ms`);
+        return result;
+      };
+    };
+
     let request: () => Promise<HTTPFetchResponse>;
     if (errorPolicy === "none") {
-      request = async () => {
+      request = withDebugger(async () => {
         const response = await fetcher();
         if (!response.ok) {
           throw Cafe24APIError.fromResonse(response);
         }
         return response;
-      };
+      });
     } else {
-      request = fetcher;
+      request = withDebugger(fetcher);
     }
 
     const resolve = async () => {

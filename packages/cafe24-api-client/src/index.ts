@@ -5,4 +5,5 @@ export default api;
 export type { RequestType, ResponseType } from "./utils/types";
 export * from "./task-queue";
 export * from "./http-agent";
+export * from "./logging";
 export * from "./error";
