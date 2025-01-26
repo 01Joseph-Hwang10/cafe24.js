@@ -199,7 +199,11 @@ export class Client {
     const errorPolicy = options?.errorPolicy ?? this.errorPolicy;
     const fetchPolicy = options?.fetchPolicy ?? this.fetchPolicy;
 
-    const formattedPath = new URLBuilder().build(path, payload);
+    const formatSubstitutions = options?.format?.request ?? objectToSnakeCase;
+    const formattedPath = new URLBuilder().build(
+      path,
+      formatSubstitutions(payload),
+    );
 
     let fetcher: () => Promise<HTTPFetchResponse>;
     if (HTTPMethod.isQuery(method)) {
