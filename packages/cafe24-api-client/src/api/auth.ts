@@ -1,5 +1,6 @@
 import { Cafe24Datetime } from "cafe24-types";
 import * as base from "./client";
+import { identity } from "fp-ts/lib/function";
 
 export type Auth = ReturnType<typeof Auth>;
 export const Auth = (self: base.Client) => ({
@@ -30,6 +31,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
+        format: {
+          request: identity,
+        },
         headers,
       });
     },
@@ -64,6 +68,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
+        format: {
+          request: identity,
+        },
         headers,
       });
     },
@@ -93,6 +100,9 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/revoke", params, {
         ...options,
+        format: {
+          request: identity,
+        },
         headers,
       });
     },
