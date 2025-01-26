@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.6.1...cafe24-api-client-v1.6.2) (2025-01-26)
+
+
+### Bug Fixes
+
+* auth requests ([aef7972](https://github.com/01Joseph-Hwang10/cafe24.js/commit/aef7972161aa8c112c3335f8c12e534c2dfca809))
+* path substitutions ([0b3760f](https://github.com/01Joseph-Hwang10/cafe24.js/commit/0b3760f08b8f4da9e585790fa955b3227bc76db9))
+
 ## [1.6.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.6.0...cafe24-api-client-v1.6.1) (2025-01-26)
 
 
