@@ -1,5 +1,3 @@
-import qs from "qs";
-import fetch from "cross-fetch";
 import urljoin from "url-join";
 import { pipe } from "fp-ts/lib/function";
 import { TaskQueue, TaskQueueOptions } from "../task-queue";
@@ -9,9 +7,16 @@ import {
   objectToSnakeCase,
   unique,
 } from "../utils";
-import { map } from "fp-ts/lib/Array";
 import { Cafe24APIError } from "../error";
-import { camel } from "case";
+import {
+  AxiosHTTPAgent,
+  HTTPAgent,
+  HTTPFetchResponse,
+  HTTPMethod,
+  HTTPMutationMethod,
+  HTTPQueryMethod,
+  URLBuilder,
+} from "../http-agent";
 
 /**
  * @description
@@ -43,7 +48,13 @@ export interface ClientOptions {
   errorPolicy?: ErrorPolicy;
   /** @default 'none' */
   fetchPolicy?: FetchPolicy;
-  fetch?: typeof fetch;
+  /**
+   * @description
+   * Fetch agent instance to use for making requests.
+   *
+   * @default AxiosHTTPAgent
+   */
+  agent?: HTTPAgent;
 }
 
 export class Client {
@@ -51,7 +62,7 @@ export class Client {
   protected readonly taskQueue?: TaskQueue;
   protected readonly errorPolicy?: ErrorPolicy;
   protected readonly fetchPolicy?: FetchPolicy;
-  protected readonly fetch: typeof fetch;
+  protected readonly agent: HTTPAgent;
   protected isDisposed: boolean;
 
   get url() {
@@ -78,7 +89,7 @@ export class Client {
     this.taskQueue?.startRunning();
 
     this.isDisposed = false;
-    this.fetch = options.fetch ?? fetch;
+    this.agent = options.agent ?? new AxiosHTTPAgent();
   }
 
   public get taskQueueIsEnabled(): boolean {
@@ -133,23 +144,22 @@ export class Client {
     return pipe(
       body,
       valfilter(v => v !== undefined),
-      body => JSON.stringify(body),
     );
   }
 
   /**
    * @description
-   * Create a request params for those APIs
-   * that require a request params. (i.e. GET, DELETE)
+   * Create a request query params for those APIs
+   * that require a request query params. (i.e. GET, DELETE)
    *
    * @param data
    * @param fields Comma-separated list of fields to include in the response.
    */
-  public createParams(
+  public createQueries(
     data: Record<string, any>,
     fields?: string[],
     embeds?: string[],
-  ): string {
+  ): Record<string, any> {
     const params = {
       fields: objectToSnakeCase(fields)?.join(","),
       embed: objectToSnakeCase(embeds)?.join(","),
@@ -158,7 +168,6 @@ export class Client {
     return pipe(
       params,
       valfilter(v => v !== undefined),
-      params => qs.stringify(params, { encode: false }),
     );
   }
 
@@ -166,7 +175,7 @@ export class Client {
    * @description
    * Create a request headers for API requests.
    */
-  public createHeaders(headers?: Record<string, any>): HeadersInit {
+  public createHeaders(headers?: Record<string, any>): Record<string, any> {
     return {
       "Content-Type": "application/json",
       ...headers,
@@ -190,34 +199,25 @@ export class Client {
     const errorPolicy = options?.errorPolicy ?? this.errorPolicy;
     const fetchPolicy = options?.fetchPolicy ?? this.fetchPolicy;
 
-    const formattedPath = pipe(
-      path.split("/"),
-      map(
-        segment =>
-          (segment.startsWith("{") && payload[camel(segment.slice(1, -1))]) ||
-          segment,
-      ),
-      segments => segments.join("/"),
-    );
+    const formattedPath = new URLBuilder().build(path, payload);
 
-    let fetcher: () => Promise<Response>;
-    if (isQuery(method)) {
+    let fetcher: () => Promise<HTTPFetchResponse>;
+    if (HTTPMethod.isQuery(method)) {
       fetcher = () =>
         this.createQueryRequest(method, formattedPath, payload, options);
-    } else if (isMutation(method)) {
+    } else if (HTTPMethod.isMutation(method)) {
       fetcher = () =>
         this.createMutationRequest(method, formattedPath, payload, options);
     } else {
       throw new Error(`Unsupported method: ${method}`);
     }
 
-    let request: () => Promise<Response>;
+    let request: () => Promise<HTTPFetchResponse>;
     if (errorPolicy === "none") {
       request = async () => {
         const response = await fetcher();
         if (!response.ok) {
-          const error = await Cafe24APIError.fromResonse(response);
-          throw error;
+          throw Cafe24APIError.fromResonse(response);
         }
         return response;
       };
@@ -227,12 +227,8 @@ export class Client {
 
     const resolve = async () => {
       const response = await request();
-      const payload = await response.json().catch(() => null);
-      if (payload) {
-        const formatter = options?.format?.response ?? objectToCamelCase;
-        return formatter(payload);
-      }
-      return await response.text();
+      const formatter = options?.format?.response ?? objectToCamelCase;
+      return formatter(response.data);
     };
 
     if (this.taskQueueIsEnabled && fetchPolicy === "queue") {
@@ -248,7 +244,7 @@ export class Client {
     payload: Record<string, any>,
     options?: RequestOptions,
   ) {
-    const formatter = options?.format?.request ?? this.createParams;
+    const formatter = options?.format?.request ?? this.createQueries;
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
@@ -258,10 +254,12 @@ export class Client {
       options?.embed && unique(options.embed),
     );
 
-    return this.fetch(`${url}?${params}`, {
+    return this.agent.fetch({
+      url,
       method,
       headers,
-      ...options?.requestConfig,
+      params,
+      options: options?.requestConfig,
     });
   }
 
@@ -275,35 +273,16 @@ export class Client {
 
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
-    const body = formatter(payload, options?.fields && unique(options.fields));
+    const data = formatter(payload, options?.fields && unique(options.fields));
 
-    return this.fetch(url, {
+    return this.agent.fetch({
+      url,
       method,
       headers,
-      body,
-      ...options?.requestConfig,
+      data,
+      options: options?.requestConfig,
     });
   }
-}
-
-export type HTTPMethod = HTTPQueryMethod | HTTPMutationMethod;
-
-type HTTPQueryMethod =
-  | "GET"
-  | "DELETE"
-  | "HEAD"
-  | "OPTIONS"
-  | "CONNECT"
-  | "TRACE";
-
-type HTTPMutationMethod = "POST" | "PUT" | "PATCH";
-
-function isQuery(method: HTTPMethod): method is HTTPQueryMethod {
-  return !isMutation(method);
-}
-
-function isMutation(method: HTTPMethod): method is HTTPMutationMethod {
-  return ["POST", "PUT", "PATCH"].includes(method);
 }
 
 export interface RequestOptions<
@@ -329,7 +308,7 @@ export interface RequestOptions<
    * @description
    * Additional request configurations.
    */
-  requestConfig?: RequestInit;
+  requestConfig?: any;
   fetchPolicy?: FetchPolicy;
   errorPolicy?: ErrorPolicy;
   /**

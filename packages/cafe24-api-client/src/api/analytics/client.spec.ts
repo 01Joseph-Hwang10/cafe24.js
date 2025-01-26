@@ -1,3 +1,4 @@
+import { NoopHTTPAgent } from "../../http-agent";
 import { ClientOptions } from "./client";
 import { Client } from "./index";
 
@@ -20,8 +21,8 @@ describe("analytics.Client", () => {
 
   describe("methods", () => {
     it("should call some methods", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch, accessToken: "token" });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent, accessToken: "token" });
 
       await client.adeffectaddetails.listAllAdeffectAddetails({} as any);
       await client.cartsaction.listAllCartsAction({} as any);
@@ -36,8 +37,6 @@ function createClient(opts?: ClientOptions) {
   });
 }
 
-function createFetch() {
-  return vi
-    .fn()
-    .mockResolvedValue({ json: vi.fn().mockResolvedValue({}), ok: true });
+function createHTTPAgent() {
+  return new NoopHTTPAgent();
 }

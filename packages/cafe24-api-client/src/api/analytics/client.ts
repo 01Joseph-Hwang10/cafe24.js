@@ -1,6 +1,7 @@
 import { pipe } from "fp-ts/lib/function";
 import * as base from "../client";
 import { valfilter } from "../../utils";
+import { HTTPMethod } from "../../http-agent";
 
 export class Client extends base.Client {
   protected accessToken?: string;
@@ -29,7 +30,7 @@ export class Client extends base.Client {
     D extends Record<string, any>,
     R extends Record<string, any> = Record<string, any>,
   >(
-    method: base.HTTPMethod,
+    method: HTTPMethod,
     path: string,
     payload: D,
     options?: RequestOptions,

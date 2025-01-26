@@ -15,7 +15,9 @@ export class Client extends base.Client {
     return this;
   }
 
-  public override createHeaders(headers?: Record<string, any>): HeadersInit {
+  public override createHeaders(
+    headers?: Record<string, any>,
+  ): Record<string, any> {
     return pipe(
       {
         "X-Cafe24-Client-Id": this.clientId,

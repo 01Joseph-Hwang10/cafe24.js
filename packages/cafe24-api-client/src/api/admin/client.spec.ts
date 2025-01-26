@@ -1,5 +1,6 @@
 import { Client } from "./index";
 import { ClientOptions } from "./client";
+import { NoopHTTPAgent } from "../../http-agent";
 
 describe("admin.Client", () => {
   describe("constructor", () => {
@@ -55,8 +56,8 @@ describe("admin.Client", () => {
 
   describe("methods", () => {
     it("should call some methods", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch, accessToken: "token" });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent, accessToken: "token" });
 
       await client.activitylogs.retrieveAListOfActionLogs({} as any);
       await client.products.createAProduct({} as any);
@@ -71,8 +72,6 @@ function createClient(opts?: ClientOptions) {
   });
 }
 
-function createFetch() {
-  return vi
-    .fn()
-    .mockResolvedValue({ json: vi.fn().mockResolvedValue({}), ok: true });
+function createHTTPAgent() {
+  return new NoopHTTPAgent();
 }

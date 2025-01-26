@@ -1,5 +1,6 @@
 import { Client } from "./index";
 import { ClientOptions } from "./client";
+import { NoopHTTPAgent } from "../../http-agent";
 
 describe("front.Client", () => {
   describe("constructor", () => {
@@ -31,8 +32,8 @@ describe("front.Client", () => {
 
   describe("methods", () => {
     it("should be able to call some methods", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       await client.products.retrieveAListOfProducts(
         {},
@@ -57,8 +58,6 @@ function createClient(opts?: ClientOptions) {
   });
 }
 
-function createFetch() {
-  return vi
-    .fn()
-    .mockResolvedValue({ json: vi.fn().mockResolvedValue({}), ok: true });
+function createHTTPAgent() {
+  return new NoopHTTPAgent();
 }

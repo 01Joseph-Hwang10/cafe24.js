@@ -1,4 +1,3 @@
-import qs from "qs";
 import { Cafe24Datetime } from "cafe24-types";
 import * as base from "./client";
 
@@ -31,9 +30,6 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
-        format: {
-          request: data => new URLSearchParams(data),
-        },
         headers,
       });
     },
@@ -68,9 +64,6 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/token", params, {
         ...options,
-        format: {
-          request: data => new URLSearchParams(data),
-        },
         headers,
       });
     },
@@ -100,9 +93,6 @@ export const Auth = (self: base.Client) => ({
       };
       return self.createRequest("POST", "/api/v2/oauth/revoke", params, {
         ...options,
-        format: {
-          request: data => new URLSearchParams(data),
-        },
         headers,
       });
     },

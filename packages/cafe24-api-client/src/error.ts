@@ -1,19 +1,14 @@
+import { HTTPFetchResponse } from "./http-agent";
+
 export class Cafe24APIError extends Error {
   public readonly status: number;
   public readonly statusText: string;
 
-  static async fromResonse(response: Response) {
-    let message: string;
-    try {
-      const responseBody = await response.json();
-      message = responseBody?.error?.message ?? responseBody;
-    } catch (error) {
-      message = await response.text();
-    }
+  static fromResonse(response: HTTPFetchResponse) {
     return new Cafe24APIError({
       status: response.status,
       statusText: response.statusText,
-      message,
+      message: response.data?.error?.message ?? JSON.stringify(response.data),
     });
   }
 

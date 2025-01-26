@@ -1,6 +1,7 @@
 import btoa from "btoa";
 import { Client } from "./index";
 import { ClientOptions } from "./client";
+import { NoopHTTPAgent } from "../../http-agent";
 
 const credentials = {
   clientId: "test-client-id",
@@ -38,8 +39,8 @@ describe("dcollection.Client", () => {
 
   describe("methods", () => {
     it("should call some methods", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       await client.products.retrieveAListOfProducts({} as any);
       await client.productsstandardtags.retrieveAListOfProductTagProperties(
@@ -57,8 +58,6 @@ function createClient(opts?: ClientOptions) {
   });
 }
 
-function createFetch() {
-  return vi
-    .fn()
-    .mockResolvedValue({ json: vi.fn().mockResolvedValue({}), ok: true });
+function createHTTPAgent() {
+  return new NoopHTTPAgent();
 }

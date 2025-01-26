@@ -20,25 +20,23 @@
     "test": "vitest --config vitest.config.ts"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "btoa": "^1.2.1",
+    "cafe24-types": "workspace:^",
     "case": "^1.6.3",
-    "cross-fetch": "^4.1.0",
     "dayjs": "^1.11.13",
     "fp-ts": "^2.16.9",
-    "qs": "^6.13.1",
-    "url-join": "4",
-    "wait": "^0.4.2",
-    "cafe24-types": "workspace:^"
+    "url-join": "~4.0.1",
+    "wait": "^0.4.2"
   },
   "devDependencies": {
     "@types/btoa": "^1.2.5",
-    "@types/qs": "^6.9.17",
-    "@types/url-join": "4",
+    "@types/url-join": "~4.0.1",
     "acorn": "^8.14.0",
     "acorn-walk": "^8.3.4",
     "astring": "^1.9.0",
     "find-up": "^7.0.0",
-    "short-unique-id": "^5.2.0",
-    "internal": "workspace:^"
+    "internal": "workspace:^",
+    "short-unique-id": "^5.2.0"
   }
 }

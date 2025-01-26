@@ -1,5 +1,5 @@
-import qs from "qs";
 import { Client, ClientOptions } from "./client";
+import { HTTPFetchRequest, NoopHTTPAgent } from "../http-agent";
 
 const data = { foo: "bar" };
 const fields = ["foo", "bar"];
@@ -43,63 +43,53 @@ describe("base.Client", () => {
     it("should create body with default shop_no", () => {
       const client = createClient();
       const body = client.createBody(data, fields);
-      expect(body).toEqual(
-        JSON.stringify({
-          shop_no: 1,
-          fields: fields.join(","),
-          request: data,
-        }),
-      );
+      expect(body).toEqual({
+        shop_no: 1,
+        fields: fields.join(","),
+        request: data,
+      });
     });
 
     it("should create body with custom shop_no", () => {
       const client = createClient();
       const body = client.createBody({ foo: "bar", shop_no: 2 }, fields);
-      expect(body).toEqual(
-        JSON.stringify({
-          shop_no: 2,
-          fields: fields.join(","),
-          request: data,
-        }),
-      );
+      expect(body).toEqual({
+        shop_no: 2,
+        fields: fields.join(","),
+        request: data,
+      });
     });
   });
 
-  describe("createParams", () => {
-    it("should create params", () => {
+  describe("createQueries", () => {
+    it("should create queries", () => {
       const client = createClient();
-      const params = client.createParams(data, fields);
-      expect(params).toEqual(
-        qs.stringify(
-          {
-            fields: fields.join(","),
-            ...data,
-          },
-          { encode: false },
-        ),
-      );
+      const queries = client.createQueries(data, fields);
+      expect(queries).toEqual({
+        fields: fields.join(","),
+        ...data,
+      });
     });
   });
 
   describe("createRequest", () => {
     it("should create request with GET method", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       const result = await client.createRequest("GET", "/test", data, options);
       expect(result).toEqual(response);
-      expect(fetch).toHaveBeenCalledWith(
-        `${expectedUrl}?${qs.stringify(expectedParams, { encode: false })}`,
-        {
-          method: "GET",
-          headers: options.headers,
-        },
-      );
+      expect(agent.fetch).toHaveBeenCalledWith({
+        url: expectedUrl,
+        method: "GET",
+        headers: options.headers,
+        params: expectedParams,
+      });
     });
 
     it("should create request with DELETE method", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       const result = await client.createRequest(
         "DELETE",
@@ -108,34 +98,38 @@ describe("base.Client", () => {
         options,
       );
       expect(result).toEqual(response);
-      expect(fetch).toHaveBeenCalledWith(expect.any(String), {
+      expect(agent.fetch).toHaveBeenCalledWith({
+        url: expect.any(String),
         method: "DELETE",
         headers: options.headers,
+        params: expectedParams,
       });
     });
 
     it("should create request with POST method", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       const result = await client.createRequest("POST", "/test", data, options);
       expect(result).toEqual(response);
-      expect(fetch).toHaveBeenCalledWith(expectedUrl, {
+      expect(agent.fetch).toHaveBeenCalledWith({
+        url: expectedUrl,
         method: "POST",
-        body: JSON.stringify(expectedBody),
+        data: expectedBody,
         headers: options.headers,
       });
     });
 
     it("should create request with PUT method", async () => {
-      const fetch = createFetch();
-      const client = createClient({ fetch });
+      const agent = createHTTPAgent();
+      const client = createClient({ agent });
 
       const result = await client.createRequest("PUT", "/test", data, options);
       expect(result).toEqual(response);
-      expect(fetch).toHaveBeenCalledWith(expectedUrl, {
+      expect(agent.fetch).toHaveBeenCalledWith({
+        url: expectedUrl,
         method: "PUT",
-        body: JSON.stringify(expectedBody),
+        data: expectedBody,
         headers: options.headers,
       });
     });
@@ -146,8 +140,17 @@ function createClient(opts?: ClientOptions) {
   return new Client({ mallId: "test", taskQueue: true, ...opts });
 }
 
-function createFetch() {
-  return vi
-    .fn()
-    .mockResolvedValue({ json: vi.fn().mockResolvedValue(response), ok: true });
+function createHTTPAgent() {
+  const agent = new NoopHTTPAgent();
+  vi.spyOn(agent, "fetch").mockImplementation((config: HTTPFetchRequest) =>
+    Promise.resolve({
+      ok: true,
+      config,
+      data: response,
+      status: 200,
+      statusText: "OK",
+      headers: {},
+    }),
+  );
+  return agent;
 }
