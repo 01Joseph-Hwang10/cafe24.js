@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.5...cafe24-api-client-v1.6.0) (2025-01-26)
+
+
+### Features
+
+* customizable http agent ([bdd0862](https://github.com/01Joseph-Hwang10/cafe24.js/commit/bdd086247e2be7ee1335ff4b1ab5ae031fd35103))
+
+
+### Bug Fixes
+
+* obvious variable names ([0373574](https://github.com/01Joseph-Hwang10/cafe24.js/commit/0373574bd1f6d2d4657a75c58d78412cc5ede59e))
+
 ## [1.5.5](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.5.4...cafe24-api-client-v1.5.5) (2025-01-17)
 
 
