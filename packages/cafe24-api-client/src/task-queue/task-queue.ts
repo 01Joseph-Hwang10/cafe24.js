@@ -1,10 +1,9 @@
-import dayjs from "dayjs";
 import wait from "wait";
-
-type Task<D = any> = {
-  executor: () => Promise<D>;
-  callback: (error?: any, result?: D) => void;
-};
+import dayjs from "dayjs";
+import ShortUniqueId from "short-unique-id";
+import { Logger, NoopLogger } from "../logging";
+import { isTaskInit, Task, TaskInit } from "./task";
+import { raise } from "../error";
 
 export interface TaskQueueOptions {
   /**
@@ -41,22 +40,32 @@ export interface TaskQueueOptions {
    */
   backoffStatus?: number[];
   /**
-   * @description Maximum time span of the task queue in milliseconds.
-   *              If the task queue is running for a long time,
-   *              it will be stopped automatically after this time.
-   * @default 1000 * 60 * 60 * 24 * 7 (7 days)
+   * @description
+   * Timeout for each task in milliseconds.
+   *
+   * @default 1000 * 30 (30 seconds)
    */
-  maxTimeSpan?: number;
+  timeout?: number;
+  /**
+   * @description
+   * Logger instance to use for logging.
+   * If not provided, {@link NoopLogger} will be used.
+   *
+   * @default NoopLogger
+   */
+  logger?: Logger;
 }
 
+const { randomUUID: suuid } = new ShortUniqueId({ length: 6 });
+
 export class TaskQueue {
-  protected interval: number;
-  protected backoff: number;
-  protected maxRetry: number;
-  protected maxRetryIgnoreStatus: number[];
-  protected backoffStatus: number[];
-  protected maxTimeSpan?: number;
-  protected timeoutStopAt?: dayjs.Dayjs;
+  protected readonly interval: number;
+  protected readonly backoff: number;
+  protected readonly maxRetry: number;
+  protected readonly maxRetryIgnoreStatus: number[];
+  protected readonly backoffStatus: number[];
+  protected readonly taskTimeout: number;
+  protected readonly logger: Logger;
 
   protected tasks: Task[];
   protected shouldStop: boolean;
@@ -68,8 +77,8 @@ export class TaskQueue {
     this.maxRetry = options?.maxRetry ?? 3;
     this.maxRetryIgnoreStatus = options?.maxRetryIgnoreStatus ?? [429, 503];
     this.backoffStatus = options?.backoffStatus ?? [429, 503];
-    this.maxTimeSpan = options?.maxTimeSpan ?? 1000 * 60 * 60 * 24 * 7;
-    this.timeoutStopAt = dayjs().add(this.maxTimeSpan, "millisecond");
+    this.taskTimeout = options?.timeout ?? 1000 * 30;
+    this.logger = options?.logger ?? new NoopLogger();
 
     this.tasks = [];
     this.shouldStop = true;
@@ -91,87 +100,127 @@ export class TaskQueue {
   }
 
   protected async handleNextTask() {
+    // If we should stop, stop
+    if (this.shouldStop) {
+      this.logger.debug("Task queue stopped");
+      return;
+    }
+
     // Get the first task in the queue
     const task = this.tasks.at(0);
-    try {
-      // Execute the task if exists
-      if (task) {
-        const result = await task.executor();
+
+    // Execute the task if exists
+    if (task) {
+      try {
+        this.logger.debug(
+          `[${dayjs().toISOString()}] Task(${task.id}) started (attempt: ${this.retry + 1})`,
+        );
+        const result = await Promise.race([
+          task.executor(),
+          wait(this.taskTimeout).then(() =>
+            raise(new Error("Task timeout exceeded")),
+          ),
+        ]);
+        this.logger.debug(
+          `[${dayjs().toISOString()}] Task(${task.id}) completed`,
+        );
+        this.logger.verbose(
+          `Calling callback for Task(${task.id}) with result: ${result}`,
+        );
         task.callback(undefined, result);
 
         // Remove the task from the queue and reset the number of retries
         this.tasks.shift();
+        this.logger.verbose(`Removed Task(${task.id}) from the queue`);
         this.retry = 0;
-      }
+        this.logger.verbose(`Task queue states reset`);
+      } catch (error: any) {
+        // Error logging logic
+        this.logger.debug(
+          `[${dayjs().toISOString()}] Task(${task.id}) failed: ${formatError(error)}`,
+        );
 
-      // If we should stop, stop
-      if (this.shouldStop) return;
+        // If the number of retries exceeds the maximum number of retries,
+        // stop executing the task and throw an error
+        if (this.retry >= this.maxRetry) {
+          this.logger.verbose(
+            "Maximum number of retries exceeded. Stopping the queue.",
+          );
+          this.stopRunning();
+          task?.callback(error);
+          return;
+        }
 
-      // If the task queue is running for a long time,
-      // stop executing the task and throw an error
-      if (dayjs().isAfter(this.timeoutStopAt)) {
-        this.stopRunning();
-        task?.callback(new Error("Task queue timeout"));
-        return;
-      }
+        const status = error?.status;
+        this.logger.debug(`Received status code: ${status}`);
 
-      // Wait for a while and try again
-      await wait(this.interval);
-    } catch (error: any) {
-      // Error logging logic
+        // Only count up the number of retries
+        // when the error status is not in the ignore list
+        if (!this.maxRetryIgnoreStatus.includes(status)) {
+          this.retry++;
+          this.logger.verbose(
+            `Incremented the number of retries: ${this.retry}`,
+          );
+        }
 
-      // If the number of retries exceeds the maximum number of retries,
-      // stop executing the task and throw an error
-      if (this.retry >= this.maxRetry) {
-        this.stopRunning();
-        task?.callback(error);
-        return;
-      }
-
-      // Only count up the number of retries
-      // when the error status is not in the ignore list
-      if (!this.maxRetryIgnoreStatus.includes(error?.status)) {
-        this.retry++;
-      }
-
-      if (this.backoffStatus.includes(error?.status)) {
-        // Wait for a backoff amount of time
-        // if the error status is in the backoff status list
-        await wait(this.backoff);
-      } else {
-        // Wait for a while and try again
-        await wait(this.interval);
+        if (this.backoffStatus.includes(status)) {
+          // Wait for a backoff amount of time
+          // if the error status is in the backoff status list
+          this.logger.verbose(`Waiting ${this.backoff}ms for backoff`);
+          await wait(this.backoff);
+        }
       }
     }
+    // Wait for a while and try again
+    this.logger.verbose(`Waiting ${this.interval}ms before the next task`);
+    await wait(this.interval);
     this.handleNextTask();
   }
 
   public startRunning() {
     this.shouldStop = false;
     this.handleNextTask();
+    this.logger.debug("Task queue started");
   }
 
   public stopRunning() {
     this.shouldStop = true;
+    this.logger.debug("Task queue termination requested");
   }
 
-  async enqueue<D = any>(executor: Task<D>["executor"]): Promise<D>;
-  async enqueue<D = any>(
+  enqueue<D = any>(executor: Task<D>["executor"]): Promise<D>;
+  enqueue<D = any>(
     executor: Task<D>["executor"],
     callback: Task<D>["callback"],
-  ): Promise<number>;
-  async enqueue<D = any>(
-    executor: Task<D>["executor"],
-    callback?: Task<D>["callback"],
-  ): Promise<D | number> {
-    if (typeof callback === "function") {
-      return this.tasks.push({
-        executor,
-        callback,
-      });
+  ): Promise<string>;
+  enqueue<D = any>(task: TaskInit<D>): Promise<string>;
+  enqueue<D = any>(
+    executorOrTask: Task<D>["executor"] | TaskInit<D>,
+    callbackOrUndefined?: Task<D>["callback"],
+  ): Promise<D | string> {
+    let id: Task<D>["id"];
+    let executor: Task<D>["executor"];
+    let callback: Task<D>["callback"] | undefined;
+
+    if (isTaskInit(executorOrTask)) {
+      id = executorOrTask.id ?? suuid();
+      executor = executorOrTask.executor;
+      callback = executorOrTask.callback;
+    } else {
+      id = suuid();
+      executor = executorOrTask as Task<D>["executor"];
+      callback = callbackOrUndefined;
     }
-    return new Promise<D>((resolve, reject) => {
+
+    if (typeof callback === "function") {
+      this.tasks.push({ id, executor, callback });
+      this.logger.debug(`Task(${id}) enqueued`);
+      return Promise.resolve(id);
+    }
+
+    const promise = new Promise((resolve, reject) => {
       this.tasks.push({
+        id,
         executor,
         callback: (error, result) => {
           if (error) {
@@ -182,9 +231,15 @@ export class TaskQueue {
         },
       });
     });
+    this.logger.debug(`Task(${id}) enqueued`);
+    return promise as Promise<D>;
   }
 
   public clear() {
     this.tasks = [];
   }
+}
+
+function formatError(error: any) {
+  return error instanceof Error ? error : JSON.stringify(error);
 }

@@ -27,6 +27,7 @@
     "dayjs": "^1.11.13",
     "fp-ts": "^2.16.9",
     "url-join": "~4.0.1",
+    "short-unique-id": "^5.2.0",
     "wait": "^0.4.2"
   },
   "devDependencies": {
@@ -36,7 +37,6 @@
     "acorn-walk": "^8.3.4",
     "astring": "^1.9.0",
     "find-up": "^7.0.0",
-    "internal": "workspace:^",
-    "short-unique-id": "^5.2.0"
+    "internal": "workspace:^"
   }
 }

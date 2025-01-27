@@ -23,3 +23,7 @@ export class Cafe24APIError extends Error {
     this.statusText = statusText;
   }
 }
+
+export function raise(error: any) {
+  throw error;
+}

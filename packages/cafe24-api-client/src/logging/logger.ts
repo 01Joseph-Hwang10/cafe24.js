@@ -1,10 +1,10 @@
-export interface Logger {
-  verbose(message: string): void;
-  debug(message: string): void;
-  log(message: string): void;
-  warn(message: string): void;
-  error(message: string): void;
-  fatal(message: string): void;
+export abstract class Logger {
+  abstract verbose(message: string): void;
+  abstract debug(message: string): void;
+  abstract log(message: string): void;
+  abstract warn(message: string): void;
+  abstract error(message: string): void;
+  abstract fatal(message: string): void;
 }
 
 export type LogLevel = keyof Logger;

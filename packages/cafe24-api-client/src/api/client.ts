@@ -17,7 +17,8 @@ import {
   HTTPQueryMethod,
   URLBuilder,
 } from "../http-agent";
-import { Logger, NoopLogger } from "../logging";
+import { Logger, NoopLogger, LabeledLogger } from "../logging";
+import ShortUniqueId from "short-unique-id";
 
 /**
  * @description
@@ -43,6 +44,10 @@ export type ErrorPolicy = "none" | "all";
 export type FetchPolicy = "none" | "queue";
 
 export interface ClientOptions {
+  /**
+   * @description
+   * Cafe24 shopping mall ID.
+   */
   mallId?: string;
   taskQueue?: TaskQueue | TaskQueueOptions | boolean;
   /** @default 'none' */
@@ -66,13 +71,25 @@ export interface ClientOptions {
   logger?: Logger;
 }
 
+const { randomUUID: suuid } = new ShortUniqueId({ length: 6 });
+
 export class Client {
-  protected mallId?: string;
+  /**
+   * @description
+   * Unique identifier for the client
+   * for utility purposes.
+   */
+  public readonly id: string;
   protected readonly taskQueue?: TaskQueue;
   protected readonly errorPolicy?: ErrorPolicy;
   protected readonly fetchPolicy?: FetchPolicy;
   protected readonly agent: HTTPAgent;
   protected readonly logger: Logger;
+  /**
+   * @description
+   * Cafe24 shopping mall ID.
+   */
+  protected mallId?: string;
   protected isDisposed: boolean;
 
   get url() {
@@ -83,24 +100,35 @@ export class Client {
   }
 
   constructor(options: ClientOptions) {
+    this.id = suuid();
     this.mallId = options.mallId;
     this.errorPolicy = options.errorPolicy || "none";
     this.fetchPolicy = options.fetchPolicy || "none";
 
+    this.isDisposed = false;
+    this.agent = options.agent ?? new AxiosHTTPAgent();
+    const logger = new LabeledLogger({
+      label: ["cafe24-api-client", `Client(${this.id})`],
+      logger: options.logger ?? new NoopLogger(),
+    });
+    this.logger = logger;
+
+    const defaultTaskQueueOptions: TaskQueueOptions = {
+      logger: logger.extend("TaskQueue"),
+    };
     if (options.taskQueue instanceof TaskQueue) {
       this.taskQueue = options.taskQueue;
     } else if (typeof options.taskQueue === "object") {
-      this.taskQueue = new TaskQueue(options.taskQueue);
+      this.taskQueue = new TaskQueue({
+        ...defaultTaskQueueOptions,
+        ...options.taskQueue,
+      });
     } else if (options.taskQueue) {
-      this.taskQueue = new TaskQueue();
+      this.taskQueue = new TaskQueue(defaultTaskQueueOptions);
     } else {
       this.taskQueue = undefined;
     }
     this.taskQueue?.startRunning();
-
-    this.isDisposed = false;
-    this.agent = options.agent ?? new AxiosHTTPAgent();
-    this.logger = options.logger ?? new NoopLogger();
   }
 
   public get taskQueueIsEnabled(): boolean {
@@ -227,27 +255,19 @@ export class Client {
       throw new Error(`Unsupported method: ${method}`);
     }
 
-    const withDebugger = (callback: () => PromiseLike<HTTPFetchResponse>) => {
-      return async (): Promise<HTTPFetchResponse> => {
+    const withDebugger = <T extends HTTPFetchResponse>(
+      callback: () => T | Promise<T>,
+    ) => {
+      return async (): Promise<T> => {
         const start = Date.now();
-        this.logger.debug(
-          `[cafe24-api-client] requesting - ${method} ${formattedPath}`,
-        );
-        this.logger.verbose(
-          `[cafe24-api-client] payload: ${JSON.stringify(payload, null, 2)}`,
-        );
-        this.logger.verbose(
-          `[cafe24-api-client] options: ${JSON.stringify(options, null, 2)}`,
-        );
+        this.logger.log(`requesting - ${method} ${formattedPath}`);
         const result = await callback();
         const end = Date.now();
-        this.logger.debug(
-          `[cafe24-api-client] server responded with status ${result.status} - ${method} ${formattedPath}`,
+        this.logger.log(
+          `server responded with status ${result.status} - ` +
+            `${method} ${formattedPath}`,
         );
-        this.logger.verbose(
-          `[cafe24-api-client] response: ${JSON.stringify(result.data, null, 2)}`,
-        );
-        this.logger.verbose(`[cafe24-api-client] took ${end - start}ms`);
+        this.logger.debug(`took ${end - start}ms`);
         return result;
       };
     };
@@ -278,7 +298,7 @@ export class Client {
     return await resolve();
   }
 
-  protected async createQueryRequest(
+  protected createQueryRequest(
     method: HTTPQueryMethod,
     path: string,
     payload: Record<string, any>,
@@ -293,6 +313,9 @@ export class Client {
       options?.fields && unique(options.fields),
       options?.embed && unique(options.embed),
     );
+    this.logger.verbose(`headers: ${JSON.stringify(headers, null, 2)}`);
+    this.logger.verbose(`payload: ${JSON.stringify(params, null, 2)}`);
+    this.logger.verbose(`options: ${JSON.stringify(options, null, 2)}`);
 
     return this.agent.fetch({
       url,
@@ -303,7 +326,7 @@ export class Client {
     });
   }
 
-  protected async createMutationRequest(
+  protected createMutationRequest(
     method: HTTPMutationMethod,
     path: string,
     payload: Record<string, any>,
@@ -314,6 +337,9 @@ export class Client {
     const url = urljoin(this.url, path);
     const headers = this.createHeaders(options?.headers);
     const data = formatter(payload, options?.fields && unique(options.fields));
+    this.logger.verbose(`headers: ${JSON.stringify(headers, null, 2)}`);
+    this.logger.verbose(`payload: ${JSON.stringify(data, null, 2)}`);
+    this.logger.verbose(`options: ${JSON.stringify(options, null, 2)}`);
 
     return this.agent.fetch({
       url,

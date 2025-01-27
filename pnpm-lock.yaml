@@ -119,6 +119,9 @@ importers:
       fp-ts:
         specifier: ^2.16.9
         version: 2.16.9
+      short-unique-id:
+        specifier: ^5.2.0
+        version: 5.2.0
       url-join:
         specifier: ~4.0.1
         version: 4.0.1
@@ -147,9 +150,6 @@ importers:
       internal:
         specifier: workspace:^
         version: link:../internal
-      short-unique-id:
-        specifier: ^5.2.0
-        version: 5.2.0
 
   packages/cafe24-get-auth-code:
     dependencies:
@@ -5428,6 +5428,7 @@ packages:
   /short-unique-id@5.2.0:
     resolution: {integrity: sha512-cMGfwNyfDZ/nzJ2k2M+ClthBIh//GlZl1JEf47Uoa9XR11bz8Pa2T2wQO4bVrRdH48LrIDWJahQziKo3MjhsWg==}
     hasBin: true
+    dev: false
 
   /siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
