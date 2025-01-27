@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.7.0...cafe24-api-client-v1.8.0) (2025-01-27)
+
+
+### Features
+
+* more verbose logging ([fa30204](https://github.com/01Joseph-Hwang10/cafe24.js/commit/fa30204f51bbe07d14dea54816fa061cf649dc0e))
+
 ## [1.7.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.6.2...cafe24-api-client-v1.7.0) (2025-01-26)
 
 
