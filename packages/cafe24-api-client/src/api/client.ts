@@ -99,7 +99,7 @@ export class Client {
     return `https://${this.mallId}.cafe24api.com`;
   }
 
-  constructor(options: ClientOptions) {
+  constructor(protected readonly options: ClientOptions) {
     this.id = suuid();
     this.mallId = options.mallId;
     this.errorPolicy = options.errorPolicy || "none";
@@ -140,17 +140,13 @@ export class Client {
   }
 
   public copy() {
-    return new Client({
-      mallId: this.mallId,
-      taskQueue: this.taskQueue,
-      errorPolicy: this.errorPolicy,
-      fetchPolicy: this.fetchPolicy,
-    });
+    return new Client(this.options);
   }
 
-  public dispose(): void {
+  public dispose() {
     this.taskQueue?.stopRunning();
     this.isDisposed = true;
+    return this;
   }
 
   public getMallId() {

@@ -10,14 +10,7 @@ class Client extends BaseClient {
   }
 
   override copy() {
-    return new Client({
-      mallId: this.mallId,
-      taskQueue: this.taskQueue,
-      errorPolicy: this.errorPolicy,
-      fetchPolicy: this.fetchPolicy,
-      clientId: this.credentials.clientId,
-      clientSecret: this.credentials.clientSecret,
-    });
+    return new Client(this.options);
   }
 }
 
