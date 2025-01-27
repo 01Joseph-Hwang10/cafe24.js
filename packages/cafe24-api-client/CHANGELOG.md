@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.8.0...cafe24-api-client-v1.8.1) (2025-01-27)
+
+
+### Bug Fixes
+
+* copy ([0330c33](https://github.com/01Joseph-Hwang10/cafe24.js/commit/0330c33e6987edd0695fc0b2c9b26a9693828835))
+
 ## [1.8.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.7.0...cafe24-api-client-v1.8.0) (2025-01-27)
 
 
