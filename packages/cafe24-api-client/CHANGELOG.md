@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.8.1...cafe24-api-client-v1.8.2) (2025-01-27)
+
+
+### Bug Fixes
+
+* export base types ([da5b83f](https://github.com/01Joseph-Hwang10/cafe24.js/commit/da5b83ffe0f528feeeb847e5dbe05bfdf1a012e5))
+
 ## [1.8.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.8.0...cafe24-api-client-v1.8.1) (2025-01-27)
 
 
