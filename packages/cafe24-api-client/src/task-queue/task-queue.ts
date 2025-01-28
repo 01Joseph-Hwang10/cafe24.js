@@ -132,48 +132,51 @@ export class TaskQueue {
         // Remove the task from the queue and reset the number of retries
         this.tasks.shift();
         this.logger.verbose(`Removed Task(${task.id}) from the queue`);
-        this.retry = 0;
-        this.logger.verbose(`Task queue states reset`);
+        this.reset();
       } catch (error: any) {
-        // Error logging logic
         this.logger.debug(
           `[${dayjs().toISOString()}] Task(${task.id}) failed: ${formatError(error)}`,
         );
+
+        const status = error?.status;
+        this.logger.debug(`Received status code: ${status}`);
 
         // If the number of retries exceeds the maximum number of retries,
         // stop executing the task and throw an error
         if (this.retry >= this.maxRetry) {
           this.logger.verbose(
-            "Maximum number of retries exceeded. Stopping the queue.",
+            "Maximum number of retries exceeded. Throwing an error",
           );
-          this.stopRunning();
           task?.callback(error);
-          return;
-        }
 
-        const status = error?.status;
-        this.logger.debug(`Received status code: ${status}`);
+          // Remove the task from the queue and reset the states
+          this.tasks.shift();
+          this.logger.verbose(`Removed Task(${task.id}) from the queue`);
+          this.reset();
+        } else {
+          // Only count up the number of retries
+          // when the error status is not in the ignore list
+          if (!this.maxRetryIgnoreStatus.includes(status)) {
+            this.retry++;
+            this.logger.verbose(
+              `Incremented the number of retries: ${this.retry}`,
+            );
+          }
 
-        // Only count up the number of retries
-        // when the error status is not in the ignore list
-        if (!this.maxRetryIgnoreStatus.includes(status)) {
-          this.retry++;
-          this.logger.verbose(
-            `Incremented the number of retries: ${this.retry}`,
-          );
-        }
-
-        if (this.backoffStatus.includes(status)) {
-          // Wait for a backoff amount of time
-          // if the error status is in the backoff status list
-          this.logger.verbose(`Waiting ${this.backoff}ms for backoff`);
-          await wait(this.backoff);
+          if (this.backoffStatus.includes(status)) {
+            // Wait for a backoff amount of time
+            // if the error status is in the backoff status list
+            this.logger.verbose(`Waiting ${this.backoff}ms for backoff`);
+            await wait(this.backoff);
+          }
         }
       }
     }
-    // Wait for a while and try again
+    // Wait for a while
     this.logger.verbose(`Waiting ${this.interval}ms before the next task`);
     await wait(this.interval);
+
+    // Handle the next task
     this.handleNextTask();
   }
 
@@ -236,7 +239,14 @@ export class TaskQueue {
   }
 
   public clear() {
+    this.reset();
     this.tasks = [];
+    this.logger.verbose("Task queue cleared");
+  }
+
+  public reset() {
+    this.retry = 0;
+    this.logger.verbose(`Task queue states reset`);
   }
 }
 
