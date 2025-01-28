@@ -1,5 +1,5 @@
 {
-  "packages/cafe24-api-client": "1.8.2",
+  "packages/cafe24-api-client": "1.8.3",
   "packages/cafe24-webhook": "1.2.0",
   "packages/cafe24-types": "1.1.1",
   "packages/cafe24-get-auth-code": "1.1.2"
