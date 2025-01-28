@@ -125,7 +125,7 @@ export class TaskQueue {
           `[${dayjs().toISOString()}] Task(${task.id}) completed`,
         );
         this.logger.verbose(
-          `Calling callback for Task(${task.id}) with result: ${JSON.stringify(result)}`,
+          `Calling callback for Task(${task.id}) with result: ${JSON.stringify(result, null, 2)}`,
         );
         task.callback(undefined, result);
 
@@ -251,5 +251,5 @@ export class TaskQueue {
 }
 
 function formatError(error: any) {
-  return error instanceof Error ? error : JSON.stringify(error);
+  return error instanceof Error ? error : JSON.stringify(error, null, 2);
 }
