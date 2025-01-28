@@ -125,7 +125,7 @@ export class TaskQueue {
           `[${dayjs().toISOString()}] Task(${task.id}) completed`,
         );
         this.logger.verbose(
-          `Calling callback for Task(${task.id}) with result: ${result}`,
+          `Calling callback for Task(${task.id}) with result: ${JSON.stringify(result)}`,
         );
         task.callback(undefined, result);
 
