@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.3](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.8.2...cafe24-api-client-v1.8.3) (2025-01-28)
+
+
+### Bug Fixes
+
+* task queu does not stop when the task fails ([3970db0](https://github.com/01Joseph-Hwang10/cafe24.js/commit/3970db01f63e72e07da74fd52c9cbaf0804d4425))
+
 ## [1.8.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-api-client-v1.8.1...cafe24-api-client-v1.8.2) (2025-01-27)
 
 
