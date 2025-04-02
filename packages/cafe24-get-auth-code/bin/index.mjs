@@ -35,17 +35,17 @@ import dotenv from "dotenv";
 import { getAuthCode } from "../dist/index.js";
 
 dotenv.config({
-  path: argv.envFile || ".env",
+  path: argv["env-file"] || ".env",
 });
 
 const options = {
-  mallId: argv.mallId || process.env.CAFE24_MALL_ID,
-  password: argv.password || process.env.CAFE24_MALL_PASSWORD,
-  clientId: argv.clientId || process.env.CAFE24_CLIENT_ID,
-  scope: argv.scope || process.env.CAFE24_AUTH_SCOPE,
-  redirectUri: argv.redirectUri || process.env.CAFE24_AUTH_REDIRECT_URI,
-  state: argv.state || process.env.CAFE24_AUTH_STATE,
-  debug: argv.debug,
+  mallId: argv["mall-id"] || process.env.CAFE24_MALL_ID,
+  password: argv["password"] || process.env.CAFE24_MALL_PASSWORD,
+  clientId: argv["client-id"] || process.env.CAFE24_CLIENT_ID,
+  scope: argv["scope"] || process.env.CAFE24_AUTH_SCOPE,
+  redirectUri: argv["redirect-uri"] || process.env.CAFE24_AUTH_REDIRECT_URI,
+  state: argv["state"] || process.env.CAFE24_AUTH_STATE,
+  debug: argv["debug"],
 };
 
 const result = await getAuthCode(options);
