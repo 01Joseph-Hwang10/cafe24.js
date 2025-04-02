@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-get-auth-code-v1.1.2...cafe24-get-auth-code-v1.1.3) (2025-04-02)
+
+
+### Bug Fixes
+
+* cafe24 get auth code cli ([07bc4c9](https://github.com/01Joseph-Hwang10/cafe24.js/commit/07bc4c9c2df29850a671a9f5a70499072ad6e0d7))
+
 ## [1.1.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-get-auth-code-v1.1.1...cafe24-get-auth-code-v1.1.2) (2025-01-16)
 
 
