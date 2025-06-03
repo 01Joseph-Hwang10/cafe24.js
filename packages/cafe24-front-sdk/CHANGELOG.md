@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-front-sdk-v1.1.0...cafe24-front-sdk-v1.1.1) (2025-06-03)
+
+
+### Bug Fixes
+
+* version bump for front sdk ([e44a326](https://github.com/01Joseph-Hwang10/cafe24.js/commit/e44a3268c4c8272d6cb8cdffd8b16c4f9aec554f))
+
 ## [1.1.0](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-front-sdk-v1.0.0...cafe24-front-sdk-v1.1.0) (2025-06-03)
 
 
