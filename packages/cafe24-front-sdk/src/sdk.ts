@@ -20,14 +20,14 @@ export class Cafe24FrontSDK {
   /**
    * 현재 접속중인 쇼핑몰의 아이디 조회
    */
-  get MALL_ID() {
+  get MALL_ID(): string {
     return this.instance.MALL_ID;
   }
 
   /**
    * 현재 접속중인 멀티쇼핑몰 번호 조회
    */
-  get SHOP_NO() {
+  get SHOP_NO(): number {
     return this.instance.SHOP_NO;
   }
 
