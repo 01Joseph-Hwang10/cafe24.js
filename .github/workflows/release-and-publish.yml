@@ -16,7 +16,8 @@ env:
       "packages/cafe24-api-client",
       "packages/cafe24-webhook",
       "packages/cafe24-types",
-      "packages/cafe24-get-auth-code"
+      "packages/cafe24-get-auth-code",
+      "packages/cafe24-front-sdk"
     ]
 
 jobs:
@@ -91,7 +92,7 @@ jobs:
 
           pnpm nx run-many \
             -t build \
-            -p cafe24-api-client cafe24-webhook cafe24-get-auth-code
+            -p cafe24-api-client cafe24-webhook cafe24-get-auth-code cafe24-front-sdk
       - run: pnpm nx run-many -t publish --all
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

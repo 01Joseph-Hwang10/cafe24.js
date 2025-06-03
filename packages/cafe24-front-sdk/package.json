@@ -1,0 +1,20 @@
+{
+  "name": "cafe24-front-sdk",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://github.com/01Joseph-Hwang10/cafe24.js/tree/master/packages/cafe24-front-sdk",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rimraf dist *.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.lib.json",
+    "test": "vitest --config vitest.config.ts"
+  }
+}

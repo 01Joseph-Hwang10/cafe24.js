@@ -8,6 +8,7 @@ const internalPackages = [
   "cafe24-webhook",
   "cafe24-types",
   "cafe24-get-auth-code",
+  "cafe24-front-sdk",
   "internal",
 ];
 
@@ -17,6 +18,7 @@ const targets = [
   "packages/cafe24-webhook",
   "packages/cafe24-types",
   "packages/cafe24-get-auth-code",
+  "packages/cafe24-front-sdk",
   "packages/internal",
 ];
 
