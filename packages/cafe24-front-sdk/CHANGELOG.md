@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-front-sdk-v1.1.1...cafe24-front-sdk-v1.1.2) (2025-06-03)
+
+
+### Bug Fixes
+
+* type mall_id & shop_no ([cf9f601](https://github.com/01Joseph-Hwang10/cafe24.js/commit/cf9f601ad23b26d3c9c6300ea965418cbba1d729))
+
 ## [1.1.1](https://github.com/01Joseph-Hwang10/cafe24.js/compare/cafe24-front-sdk-v1.1.0...cafe24-front-sdk-v1.1.1) (2025-06-03)
 
 
