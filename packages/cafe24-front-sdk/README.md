@@ -28,5 +28,3 @@ await sdk.emptyCart({ basket_shipping_type: "A" }); // 회원 장바구니 비�
 ## License
 
 [MIT](./LICENSE)
-
-
